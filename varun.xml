@@ -7,11 +7,10 @@
                 id="rom"
                 title="Rom"
                 description="Download ResurrectionRemix builds">https://drive.google.com/file/d/</RomUrl>
-            <Filename>RRV2.7-20151127.zip</Filename>
             <KernelUrl
                 id="kernel"
                 title="Kernel"
-                description="Download ResurrectionRemix Oneplus kernel">https://drive.google.com/file/d/</KernelUrl>
+                description="Download ResurrectionRemix Oneplus kernel">https://drive.google.com/file/d/0BxFDLfZr1uMUcW02RGRmQmsyMTQ/view?usp=sharing</KernelUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
