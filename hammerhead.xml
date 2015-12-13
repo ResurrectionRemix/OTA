@@ -12,7 +12,7 @@
                 title="Changelog"
                 description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
             <SlimGappsUrl
-            	id="banks_gapps"
+            	id="gapps"
             	title="Gapps"
             	description="Download Slim latest GApps">https://www.androidfilehost.com/?fid=24269982087017010</SlimGappsUrl>
 	</hammerhead>
