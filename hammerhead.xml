@@ -14,7 +14,7 @@
             <SlimGappsUrl
             	id="gapps"
             	title="Gapps"
-            	description="Download Slim latest GApps">http://opengapps.org/</SlimGappsUrl>
+            	description="Download Open latest GApps">http://opengapps.org/</SlimGappsUrl>
 	</hammerhead>
     </Stable>
 </SlimOTA>
