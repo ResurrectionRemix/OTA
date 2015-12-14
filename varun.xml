@@ -38,4 +38,38 @@
             	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41043</SlimGappsUrl>
 	</i9300>
     </Stable>
+        <Stable>
+        <falcon>
+            <Filename></Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <SlimGappsUrl
+            	id="banks_gapps"
+            	title="Slim GApps"
+            	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41043</SlimGappsUrl>
+	</falcon>
+    </Stable>
+        <Stable>
+        <d802>
+            <Filename></Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <SlimGappsUrl
+            	id="banks_gapps"
+            	title="Slim GApps"
+            	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41043</SlimGappsUrl>
+	</d802>
+    </Stable>
 </SlimOTA>
