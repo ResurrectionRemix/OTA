@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <m8>
+            <Filename>ResurrectionRemix-M-v5.6.0-20151214-m8.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24269982087018445</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <BaNkSGappsUrl
+            	id="gapps"
+            	title="Gapps"
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+	</m8>
+    </Stable>
+</SlimOTA>
