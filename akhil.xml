@@ -20,5 +20,43 @@
             	title="BaNkS Dynamic GApps"
             	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</bacon>
+	<jfltexx>
+            <Filename>ResurrectionRemix-M-v5.6.0-20151230-jfltexx/Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Resurrection Remix jfltexx builds">https://www.androidfilehost.com/?w=files&flid=31561</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Resurrection Remix Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+            <BanksGappsUrl
+            	id="banks_gapps"
+            	title="BaNkS Dynamic GApps"
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+	</jfltexx>
+	<jfltetmo>
+            <Filename>ResurrectionRemix-M-v5.6.0-20151230-jfltetmo/Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download Resurrection Remix jfltetmo builds">https://www.androidfilehost.com/?w=files&flid=31561</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Resurrection Remix Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+            <BanksGappsUrl
+            	id="banks_gapps"
+            	title="BaNkS Dynamic GApps"
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+	</jfltetmo>
     </Stable>
 </SlimOTA>
