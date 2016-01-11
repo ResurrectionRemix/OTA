@@ -69,11 +69,11 @@
     </Stable>
         <Stable>
         <d802>
-            <Filename>ResurrectionRemix-M-v5.6.0-20151214-d802.zip</Filename>
+            <Filename>ResurrectionRemix-M-5.6.1-20160111-d802.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24269982087018566</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&dl=resurrectionremix/d802/ResurrectionRemix-M-v5.6.1-20160111-d802.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
