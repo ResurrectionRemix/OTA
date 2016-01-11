@@ -73,7 +73,7 @@
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&dl=resurrectionremix/d802/ResurrectionRemix-M-v5.6.1-20160111-d802.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/d802</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
