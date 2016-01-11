@@ -6,7 +6,7 @@
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.6.1-20160111-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/bacon</RomUrl>
             <KernelUrl
                 id="kernel"
                 title="Kernel"
