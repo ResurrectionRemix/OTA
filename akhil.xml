@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
-        <bacon>
+        <bullhead>
             <Filename>ResurrectionRemix-M-v5.6.0-20151128-bacon.zip</Filename>
             <RomUrl
                 id="rom"
@@ -19,13 +19,13 @@
             	id="banks_gapps"
             	title="BaNkS Dynamic GApps"
             	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
-	</bacon>
+	</bullhead>
 	<jfltexx>
-            <Filename>ResurrectionRemix-M-v5.6.0-20151230-jfltexx/Filename>
+            <Filename>ResurrectionRemix-M-v5.6.1-20160112-jfltexx/Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download Resurrection Remix jfltexx builds">https://www.androidfilehost.com/?w=files&amp;flid=31561</RomUrl>
+                description="Download Resurrection Remix jfltexx builds">http://bit.ly/1RJlpIZ</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
