@@ -52,7 +52,7 @@
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&dl=resurrectionremix/falcon/ResurrectionRemix-M-v5.6.1-20160112-falcon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/falcon/ResurrectionRemix-M-v5.6.1-20160112-falcon.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
