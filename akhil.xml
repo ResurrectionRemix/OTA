@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bullhead>
-            <Filename>ResurrectionRemix-M-v5.6.0-20151128-bacon.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.1-20160112-bullhead.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://sourceforge.net/projects/ResurrectionRemix/files/</RomUrl>
+                description="Download ResurrectionRemix builds">http://bit.ly/1nflRmY</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
