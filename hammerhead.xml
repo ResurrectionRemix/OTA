@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hammerhead>
-            <Filename>ResurrectionRemix-M-v5.6.2-20160122-hammerhead.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.2-20160123-hammerhead.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
