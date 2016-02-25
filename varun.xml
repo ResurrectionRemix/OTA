@@ -45,6 +45,25 @@
             	title="Open"
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
 	</i9300>
+	<i9100>
+            <Filename>ResurrectionRemix-v5.6.4-20160224-i9100.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.6.4-20160224-i9100.zip</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <SlimGappsUrl
+            	id="slim_gapps"
+            	title="Slim GApps"
+            	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=48213</SlimGappsUrl>
+            <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</i9100>
     </Stable>
         <Stable>
         <falcon>
