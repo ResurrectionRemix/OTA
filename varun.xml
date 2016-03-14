@@ -27,11 +27,11 @@
     </Stable>
         <Stable>
         <i9300>
-            <Filename>ResurrectionRemix-v5.6.5-20160312-i9300.zip</Filename>
+            <Filename>ResurrectionRemix-v5.6.5-20160314-i9300.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.6.5-20160312-i9300.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.6.5-20160314-i9300.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
