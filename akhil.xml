@@ -2,15 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bullhead>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160315-bullhead.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.7-20160409-bullhead.zip</Filename>
             <BuildsUrl
             	id="builds"
             	title="LatestBuild"
-            	description="Download Latest Build">http://bit.ly/1XuJsfn</BuildsUrl>
+            	description="Download Latest Build">http://bitly.com/23mLfdJ</BuildsUrl>
 	    <VendorUrl
 		id="vendor"
 		title="LatestVendorIMG"
-		description="MHC19J Vendor :'D">https://drive.google.com/file/d/0B4CKPG4NzMUMUFJJOUxTazRheFU/view?pref=2&pli=1</VendorUrl>
+		description="MHC19Q Bullhead Stuff">http://blazingphoenix.in/akhilnarang/bullhead-stock/MHC19Q/</VendorUrl>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -26,10 +26,10 @@
             <BanksGappsUrl
             	id="banks_gapps"
             	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/misc/misc/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</bullhead>
 	<jfltexx>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160311-jfltexx</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.7-20160410-jfltexx</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -45,10 +45,10 @@
             <BanksGappsUrl
             	id="banks_gapps"
             	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/misc/misc/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</jfltexx>
 	<jfltetmo>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160311-jfltetmo</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.7-20160410-jfltetmo</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -64,14 +64,14 @@
             <BanksGappsUrl
             	id="banks_gapps"
             	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/misc/misc/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</jfltetmo>
 	 <falcon>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160315-falcon.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.7-20160410-falcon.zip</Filename>
             <BuildUrl
             	id="build"
             	title="LatestBuild"
-            	description="Download Latest Build">http://bit.ly/1Lqh2CD</BuildUrl>
+            	description="Download Latest Build">http://bitly.com/1VdCePZ</BuildUrl>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -87,65 +87,7 @@
              <BanksGappsUrl
             	id="banks_gapps"
             	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
+            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/misc/misc/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</falcon>
-	<jfvelte>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160311-jfvelte</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/jfvelte</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Resurrection Remix Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
-            <OpenGappsUrl
-                id="open_gapps"
-                title="OpenGApps"
-                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
-            <BanksGappsUrl
-            	id="banks_gapps"
-            	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
-	</jfvelte>
-	<sprout4>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160312-sprout4</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/sprout4</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Resurrection Remix Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
-            <OpenGappsUrl
-                id="open_gapps"
-                title="OpenGApps"
-                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
-            <BanksGappsUrl
-            	id="banks_gapps"
-            	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
-	</sprout4>
-	<sprout8>
-            <Filename>ResurrectionRemix-M-v5.6.5-20160312-sprout8</Filename>
-            <RomUrl
-                id="rom"
-                title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/sprout8</RomUrl>
-            <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Resurrection Remix Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
-            <OpenGappsUrl
-                id="open_gapps"
-                title="OpenGApps"
-                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
-            <BanksGappsUrl
-            	id="banks_gapps"
-            	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/banks_gapps/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
-	</sprout8>
-	
     </Stable>
 </SlimOTA>
