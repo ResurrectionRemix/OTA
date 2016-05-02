@@ -67,11 +67,11 @@
             	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/misc/misc/BANKS_GAPPS_6.XX.zip</BanksGappsUrl>
 	</jfltetmo>
 	 <falcon>
-            <Filename>ResurrectionRemix-M-v5.6.7-20160409-falcon.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.6.8-2016502-falcon.zip</Filename>
             <BuildUrl
             	id="build"
             	title="LatestBuild"
-            	description="Download Latest Build">http://bitly.com/1VdCePZ</BuildUrl>
+            	description="Download Latest Build">http://bitly.com/1rNNMNt</BuildUrl>
             <RomUrl
                 id="rom"
                 title="Rom"
