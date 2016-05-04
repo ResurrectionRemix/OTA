@@ -212,4 +212,25 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
 	</d803>
     </Stable>
+           <Stable>
+        <cancro>
+            <Filename>ResurrectionRemix-M-v5.6.8-20160503-cancro.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24533103863136435</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <SlimGappsUrl
+            	id="slim_gapps"
+            	title="Slim GApps"
+            	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=48213</SlimGappsUrl>
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</cancro>
+    </Stable>
 </SlimOTA>
