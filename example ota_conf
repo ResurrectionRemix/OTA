@@ -1,7 +1,5 @@
 #
-# OTA XML
-#
-# See ota_lollipop.xml for example
+# ota_conf
 #
 # Note:
 # * Multiple devices can be added in the xml file
@@ -21,7 +19,7 @@ device_name=ro.rr.device
 #
 # Example with a property key 'ro.rr.version' : Parse the date 20150426 from 'ResurrectionRemix-M-v5.x.x-20150426-bacon'
 #
-# Version source: ro.modversion
+# Version source: ro.rr.version
 # Version delimiter: -
 # Version position: 3 (zero based)
 # Version format: yyyyMMdd
@@ -33,6 +31,8 @@ device_name=ro.rr.device
 # Version position: 3 (zero based)
 # Version format:
 #
+# uname -r will only be needed if using the app for kernels, not required here
+
 version_source=ro.rr.version
 version_delimiter=-
 version_position=3
