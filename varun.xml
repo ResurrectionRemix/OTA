@@ -233,5 +233,29 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
 	</cancro>
     </Stable>
-    
+     <Stable>
+        <angler>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160627-angler.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424942860</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <BanksGappsUrl
+            	id="banks_gapps"
+            	title="BaNkS Dynamic GApps"
+            	description="Download BaNkS latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41020</BanksGappsUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+            <AnglerVendorUrl
+            	id="angler_vendor"
+            	title="Angler Vendor"
+            	description="Download latest Vendor Image">https://www.androidfilehost.com/?w=files&amp;flid=49280</AnglerVendorUrl>
+	</angler>
+    </Stable>
 </SlimOTA>
