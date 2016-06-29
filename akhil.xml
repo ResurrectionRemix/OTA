@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bullhead>
-            <Filename>ResurrectionRemix-M-5.7.0-20160616-bullhead.zip</Filename>
+            <Filename>ResurrectionRemix-M-5.7.0-20160628-bullhead.zip</Filename>
             <BuildsUrl
             	id="builds"
             	title="LatestBuild"
-            	description="Download Latest Build [MTC19V]">https://basketbuild.com/uploads/devs/resurrectionremix/bullhead/ResurrectionRemix-M-v5.7.0-20160616-bullhead.zip</BuildsUrl>
+            	description="Download Latest Build [MTC19V]">https://basketbuild.com/uploads/devs/resurrectionremix/bullhead/ResurrectionRemix-M-v5.7.0-20160628-bullhead.zip</BuildsUrl>
 	     <RomUrl
                 id="rom"
                 title="Rom"
