@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160621-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160623-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.0-20160621-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.0-20160623-bacon.zip</RomUrl>
             <KernelUrl
                 id="kernel"
                 title="Kernel"
@@ -67,11 +67,11 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160621-shamu.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160623-shamu.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424941613</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591020540822541</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -88,11 +88,11 @@
     </Stable>
         <Stable>
         <d802>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160622-d802.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160623-d802.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.0-20160622-d802.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.0-20160623-d802.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -232,5 +232,30 @@
             	title="Open Gapps"
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
 	</cancro>
+    </Stable>
+     <Stable>
+        <angler>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160627-angler.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424942860</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
+            <BanksGappsUrl
+            	id="banks_gapps"
+            	title="BaNkS Dynamic GApps"
+            	description="Download BaNkS latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41020</BanksGappsUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+            <AnglerVendorUrl
+            	id="angler_vendor"
+            	title="Angler Vendor"
+            	description="Download latest Vendor Image">https://www.androidfilehost.com/?w=files&amp;flid=49280</AnglerVendorUrl>
+	</angler>
     </Stable>
 </SlimOTA>
