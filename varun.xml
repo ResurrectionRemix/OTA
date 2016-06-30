@@ -10,7 +10,15 @@
             <KernelUrl
                 id="kernel"
                 title="Kernel"
-                description="Download ResurrectionRemix Oneplus kernel">https://www.androidfilehost.com/?fid=24421527759880792</KernelUrl>
+                description="Download ResurrectionRemix Oneplus kernel">https://www.androidfilehost.com/?fid=24591000424942194</KernelUrl>
+              <Firmware1Url
+                id="firmware1"
+                title="Recommended Firmware"
+                description="Download ResurrectionRemix Oneplus c6 Firmware">https://www.androidfilehost.com/?fid=24052804347825946</Firmware1Url>
+              <Firmware2Url
+                id="firmware2"
+                title="Newer Firmware"
+                description="Download ResurrectionRemix Oneplus c7 Firmware">https://www.androidfilehost.com/?fid=24389512218018449</Firmware2Url>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -235,11 +243,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160629-angler.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.0-20160630-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424943439</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424943529</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
