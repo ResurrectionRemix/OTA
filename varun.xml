@@ -246,12 +246,12 @@
             <Filename>ResurrectionRemix-M-v5.7.1-20160711-angler.zip</Filename>
             <RomUrl
                 id="rom"
-                title="Alternate Link"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424946068</RomUrl>
+                title="Rom"
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.1-20160711-angler.zip</RomUrl>
             <RomUrl1
                 id="rom1"
-                title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.1-20160711-angler.zip</RomUrl1>
+                title="Alternate Link"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424946068</RomUrl1>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
