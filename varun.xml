@@ -2,15 +2,23 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160623-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160712-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.0-20160623-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.1-20160712-bacon.zip</RomUrl>
             <KernelUrl
                 id="kernel"
                 title="Kernel"
-                description="Download ResurrectionRemix Oneplus kernel">https://www.androidfilehost.com/?fid=24421527759880792</KernelUrl>
+                description="Download ResurrectionRemix Oneplus kernel">https://www.androidfilehost.com/?fid=24591000424942194</KernelUrl>
+              <Firmware1Url
+                id="firmware1"
+                title="Recommended Firmware"
+                description="Download ResurrectionRemix Oneplus c6 Firmware">https://www.androidfilehost.com/?fid=24052804347825946</Firmware1Url>
+              <Firmware2Url
+                id="firmware2"
+                title="Newer Firmware"
+                description="Download ResurrectionRemix Oneplus c7 Firmware">https://www.androidfilehost.com/?fid=24389512218018449</Firmware2Url>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -24,14 +32,14 @@
             	title="Open Gapps"
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
 	</bacon>
-    </Stable>
+    </Stable>d8
         <Stable>
         <i9300>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160617-i9300.zip</Filename>
+            <Filename>ResurrectionRemix-d8-i9300.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.7.0-20160617-i9300.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.7.1-20160711-i9300.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -67,11 +75,11 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160623-shamu.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160711-shamu.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591020540822541</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424946241</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -88,11 +96,11 @@
     </Stable>
         <Stable>
         <d802>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160623-d802.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160711-d802.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.0-20160623-d802.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.1-20160711-d802.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -109,11 +117,11 @@
     </Stable>
         <Stable>
         <d800>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160618-d800.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160711-d800.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d800/ResurrectionRemix-M-v5.7.0-20160618-d800.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d800/ResurrectionRemix-M-v5.7.1-20160711-d800.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -130,11 +138,11 @@
     </Stable>
          <Stable>
         <d801>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160618-d801.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160712-d801.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d801/ResurrectionRemix-M-v5.7.0-20160618-d801.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d801/ResurrectionRemix-M-v5.7.1-20160712-d801.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -151,11 +159,11 @@
     </Stable>
              <Stable>
         <ls980>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160616-ls980.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160712-ls980.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/ls980/ResurrectionRemix-M-v5.7.0-20160616-ls980.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/ls980/ResurrectionRemix-M-v5.7.1-20160712-ls980.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -172,11 +180,11 @@
     </Stable>
     <Stable>
         <vs980>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160618-vs980.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160712-vs980.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/vs980/ResurrectionRemix-M-v5.7.0-20160618-vs980.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/vs980/ResurrectionRemix-M-v5.7.1-20160712-vs980.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -193,11 +201,11 @@
     </Stable>
        <Stable>
         <d803>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160617-d803.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160712-d803.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d803/ResurrectionRemix-M-v5.7.0-20160617-d803.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d803/ResurrectionRemix-M-v5.7.1-20160712-d803.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -235,11 +243,15 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160627-angler.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160711-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424942860</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.1-20160711-angler.zip</RomUrl>
+            <RomUrl1
+                id="rom1"
+                title="Alternate Link"
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24591000424946068</RomUrl1>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
