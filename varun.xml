@@ -243,11 +243,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.7.1-20160711-angler.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160718-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.1-20160711-angler.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.1-20160718-angler.zip</RomUrl>
             <RomUrl1
                 id="rom1"
                 title="Alternate Link"
