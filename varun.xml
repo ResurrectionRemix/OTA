@@ -117,11 +117,11 @@
     </Stable>
         <Stable>
         <d800>
-            <Filename>ResurrectionRemix-M-v5.7.1-20160711-d800.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.1-20160719-d800.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d800/ResurrectionRemix-M-v5.7.1-20160711-d800.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d800/ResurrectionRemix-M-v5.7.1-20160719-d800.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
