@@ -35,11 +35,11 @@
     </Stable>d8
         <Stable>
         <i9300>
-            <Filename>ResurrectionRemix-d8-i9300.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.2-20160801-i9300</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.7.1-20160711-i9300.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/i9300/ResurrectionRemix-M-v5.7.2-201600801-i9300.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -251,7 +251,7 @@
             <AlternateLinkUrl
                 id="alternate"
                 title="Alternate Link"
-                description="Alternate Link to Download Builds">https://www.androidfilehost.com/?fid=24591000424948713</AlternateLinkUrl>
+                description="Alternate Link to Download Builds">https://www.androidfilehost.com/?fid=24591000424951373</AlternateLinkUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
