@@ -159,11 +159,11 @@
     </Stable>
              <Stable>
         <ls980>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160801-ls980.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.2-20160806-ls980.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/ls980/ResurrectionRemix-M-v5.7.2-20160801-ls980.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/ls980/ResurrectionRemix-M-v5.7.2-20160806-ls980.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -289,11 +289,11 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
 	</titan>
 	<falcon>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160802-falcon.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.2-20160806-falcon.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24659325368664511</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24659325368664794</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
