@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <m8>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160803-m8.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.3-20160807-m8.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://bit.ly/2aSXN89</RomUrl>
+                description="Download ResurrectionRemix builds">http://bit.ly/2aJKjKa</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
