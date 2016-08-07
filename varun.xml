@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160731-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.3-20160807-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.2-20160731-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/ResurrectionRemix-M-v5.7.3-20160807-bacon.zip</RomUrl>
             <KernelUrl
                 id="kernel"
                 title="Kernel"
@@ -96,11 +96,11 @@
     </Stable>
         <Stable>
         <d802>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160801-d802.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.3-20160807-d802.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.2-20160801-d802.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/d802/ResurrectionRemix-M-v5.7.3-20160807-d802.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
