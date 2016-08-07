@@ -243,11 +243,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160731-angler.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.2-20160807-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.2-20160731-angler.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/ResurrectionRemix-M-v5.7.2-20160807-angler.zip</RomUrl>
             <AlternateLinkUrl
                 id="alternate"
                 title="Alternate Link"
@@ -267,7 +267,11 @@
             <AnglerVendorUrl
             	id="angler_vendor"
             	title="Angler Vendor"
-            	description="Download latest Vendor Image">https://www.androidfilehost.com/?w=files&amp;flid=49280</AnglerVendorUrl>
+            	description="Download latest Vendor Image">https://www.androidfilehost.com/?fid=24651430732235283</AnglerVendorUrl>
+            <AnglerModemUrl
+            	id="angler_modem"
+            	title="Radio"
+            	description="Download Latest Radio and Bootloader">https://www.androidfilehost.com/?fid=24651442761499090</AnglerModemUrl>
 	</angler>
 	<titan>
             <Filename>ResurrectionRemix-M-v5.7.2-20160801-titan.zip</Filename>
