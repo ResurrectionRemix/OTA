@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <shamu>
-            <Filename>ResurrectionRemix-M-v5.7.0-20160621-shamu.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.3-20160821-shamu.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
