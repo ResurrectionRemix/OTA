@@ -278,11 +278,15 @@
             	description="Download Latest Radio and Bootloader">https://www.androidfilehost.com/?fid=24651442761499090</AnglerModemUrl>
 	</angler>
 	<titan>
-            <Filename>ResurrectionRemix-M-v5.7.3-20160809-titan.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.4-20160922-titan.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/titan/ResurrectionRemix-M-v5.7.3-20160809-titan.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/titan/ResurrectionRemix-M-v5.7.4-20160922-titan.zip</RomUrl>
+            <Rom2Url
+                id="rom2"
+                title="Alternate Link"
+                description="Mirror">https://www.androidfilehost.com/?fid=457084094631641105</Rom2Url>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -297,11 +301,11 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
 	</titan>
 	<falcon>
-            <Filename>ResurrectionRemix-M-v5.7.2-20160806-falcon.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.7.4-20160922-falcon.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=24659325368664794</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=457084094631641121</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
