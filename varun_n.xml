@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161117-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161125-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
