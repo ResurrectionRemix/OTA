@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <bacon>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161117-bacon</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+              <Firmware1Url
+                id="firmware1"
+                title="Recommended Firmware"
+                description="Download ResurrectionRemix Oneplus c6 Firmware">https://www.androidfilehost.com/?fid=24052804347825946</Firmware1Url>
+              <Firmware2Url
+                id="firmware2"
+                title="Newer Firmware"
+                description="Download ResurrectionRemix Oneplus c7 Firmware">https://www.androidfilehost.com/?fid=24389512218018449</Firmware2Url>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+           <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</bacon>
+    </Stable>d8
+        <Stable>
+        <i9300>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160920-i9300</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</i9300>
+    </Stable>
+        <Stable>
+        <shamu>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160920-shamu.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</shamu>
+    </Stable>
+        <Stable>
+        <d802>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160920-d802.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d802>
+    </Stable>
+        <Stable>
+        <d800>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160921-d800.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d800>
+    </Stable>
+         <Stable>
+        <d801>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160921-d801.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d801>
+    </Stable>
+             <Stable>
+        <ls980>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160921-ls980.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</ls980>
+    </Stable>
+    <Stable>
+        <vs980>
+            <Filename>ResurrectionRemix-M-v5.8.0-20160921-vs980.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</vs980>
+    </Stable>
+       <Stable>
+        <d803>
+            <Filename>ResurrectionRemixM-v5.8.0-20160921-d803.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d803>
+    </Stable>
+     <Stable>
+        <angler>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161008-angler.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <AlternateLinkUrl
+                id="alternate"
+                title="Alternate Link"
+                description="Alternate Link to Download Builds"></AlternateLinkUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <BanksGappsUrl
+            	id="banks_gapps"
+            	title="BaNkS Dynamic GApps"
+            	description="Download BaNkS latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41020</BanksGappsUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+	</angler>
+    </Stable>
+</SlimOTA>
