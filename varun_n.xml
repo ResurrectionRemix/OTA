@@ -6,7 +6,7 @@
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds"></RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161125-bacon.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
