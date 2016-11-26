@@ -7,6 +7,10 @@
                 id="rom"
                 title="Rom"
                 description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161125-bacon.zip</RomUrl>
+	     <Rom2Url
+                id="rom2"
+                title="Alternate Link"
+                description="Alternate link to download builds">https://www.androidfilehost.com/?fid=385035244224401520</Rom2Url>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
@@ -178,7 +182,7 @@
             <AlternateLinkUrl
                 id="alternate"
                 title="Alternate Link"
-                description="Alternate Link to Download Builds"></AlternateLinkUrl>
+                description="Alternate Link to Download Builds">https://www.androidfilehost.com/?fid=529152257862684611</AlternateLinkUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
