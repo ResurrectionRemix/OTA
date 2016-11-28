@@ -10,11 +10,11 @@
 	     <Rom2Url
                 id="rom2"
                 title="Alternate Link"
-                description="Alternate link to download builds">https://www.androidfilehost.com/?fid=385035244224401520</Rom2Url>
+                description="Alternate link to download builds">https://www.androidfilehost.com/?fid=385035244224402145</Rom2Url>
             <Rom3Url
                 id="rom3"
                 title="LLVM builds"
-                description="Same Build but compiled with snapdragon LLVM compiler">https://www.androidfilehost.com/?fid=385035244224401548</Rom3Url>
+                description="Same Build but compiled with snapdragon LLVM compiler">https://www.androidfilehost.com/?fid=385035244224402145</Rom3Url>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
