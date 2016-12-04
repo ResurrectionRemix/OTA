@@ -2,19 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161129-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161204-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161129-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161204-bacon.zip</RomUrl>
 	     <Rom2Url
                 id="rom2"
                 title="Alternate Link"
                 description="Alternate link to download builds">https://www.androidfilehost.com/?fid=529152257862685587</Rom2Url>
-            <Rom3Url
-                id="rom3"
-                title="LLVM builds"
-                description="Same Build but compiled with snapdragon LLVM compiler">https://www.androidfilehost.com/?fid=457095661767119648 </Rom3Url>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
