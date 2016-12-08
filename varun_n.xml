@@ -174,11 +174,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161204-angler.zip</Filename>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161208-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/Nougat/ResurrectionRemix-N-v5.8.0-20161204-angler.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/Nougat/ResurrectionRemix-N-v5.8.0-20161208-angler.zip</RomUrl>
             <AlternateLinkUrl
                 id="alternate"
                 title="Alternate Link"
@@ -187,10 +187,10 @@
                 id="changelog"
                 title="Changelog"
                 description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
-            <BanksGappsUrl
-            	id="banks_gapps"
-            	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41020</BanksGappsUrl>
+            <VendorUrl
+            	id="vendor_image"
+            	title="Vendor Image"
+            	description="Download latest vendor image">https://www.androidfilehost.com/?fid=457095661767121463</VendorUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
