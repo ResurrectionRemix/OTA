@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161209-bacon</Filename>
+            <Filename>ResurrectionRemix-M-v5.8.0-20161208-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161209-bacon.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161208-bacon_tethering_fixed.zip</RomUrl>
 	     <Rom2Url
                 id="rom2"
                 title="Alternate Link"
