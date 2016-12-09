@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161209-bacon</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20161209-bacon</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -31,11 +31,11 @@
     </Stable>
         <Stable>
         <i9300>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161128-i9300</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20161209-i9300</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161128-i9300.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161209-i9300.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -48,7 +48,7 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161129-shamu</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20161129-shamu</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -84,7 +84,7 @@
     </Stable>
         <Stable>
         <d800>
-            <Filename>ResurrectionRemix-M-v5.8.0-20160921-d800.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d800.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -102,7 +102,7 @@
     </Stable>
          <Stable>
         <d801>
-            <Filename>ResurrectionRemix-M-v5.8.0-20160921-d801.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d801.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -120,7 +120,7 @@
     </Stable>
              <Stable>
         <ls980>
-            <Filename>ResurrectionRemix-M-v5.8.0-20160921-ls980.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-ls980.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -138,7 +138,7 @@
     </Stable>
     <Stable>
         <vs980>
-            <Filename>ResurrectionRemix-M-v5.8.0-20160921-vs980.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-vs980.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -156,7 +156,7 @@
     </Stable>
        <Stable>
         <d803>
-            <Filename>ResurrectionRemixM-v5.8.0-20160921-d803.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d803.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -174,7 +174,7 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-M-v5.8.0-20161208-angler.zip</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.0-20161208-angler.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
