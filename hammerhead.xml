@@ -6,7 +6,7 @@
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/s.basketbuild.com/hammerhead/</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
