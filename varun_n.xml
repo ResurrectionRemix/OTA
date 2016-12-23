@@ -2,15 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>ResurrectionRemix-N-v5.8.0-20161217-bacon</Filename>
+            <Filename>RR-N-v5.8.0-20161223-bacon-official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161217.zip</RomUrl>
-	     <Rom2Url
-                id="rom2"
-                title="Alternate Link"
-                description="Alternate link to download builds">https://www.androidfilehost.com/?fid=673368273298917205</Rom2Url>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.0-20161223-bacon-official.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
