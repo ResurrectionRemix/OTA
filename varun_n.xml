@@ -170,15 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>ResurrectionRemix-N-v5.8.0-20161216-angler.zip</Filename>
+            <Filename>RR-N-v5.8.0-20161223-angler-official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/angler/Nougat/ResurrectionRemix-N-v5.8.0-20161216-angler.zip</RomUrl>
-            <AlternateLinkUrl
-                id="alternate"
-                title="Alternate Link"
-                description="Alternate Link to Download Builds">https://www.androidfilehost.com/?fid=745425885120694022</AlternateLinkUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.0-20161223-angler-official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
