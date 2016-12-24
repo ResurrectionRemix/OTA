@@ -5,8 +5,12 @@
             <Filename>RR-N-v5.8.0-20161224-hammerhead-xmas.zip</Filename>
             <RomUrl
                 id="rom"
-                title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
+                title="Downloads"
+                description="Download latest builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
+            <RomUrl2
+                id="rom2"
+                title="Downlad mirror"
+                description="Mirror links for the builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/</RomUrl2>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
