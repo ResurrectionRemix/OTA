@@ -9,7 +9,7 @@
                 description="Download latest builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
             <RommUrl
                 id="romm"
-                title="Downlad mirror"
+                title="Downloads mirror"
                 description="Mirror links for the builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/</RommUrl>
             <ChangelogUrl
                 id="changelog"
