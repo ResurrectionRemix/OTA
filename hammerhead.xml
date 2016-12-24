@@ -6,11 +6,11 @@
             <RomUrl
                 id="rom"
                 title="Downloads"
-                description="Download latest builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
+                description="Download latest builds">http://bit.ly/rr-hhead</RomUrl>
             <RommUrl
                 id="romm"
                 title="Downloads mirror"
-                description="Mirror links for the builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/</RommUrl>
+                description="Mirror links for the builds">http://bit.ly/2hcet8P</RommUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
