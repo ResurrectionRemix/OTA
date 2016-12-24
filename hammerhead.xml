@@ -7,10 +7,10 @@
                 id="rom"
                 title="Downloads"
                 description="Download latest builds">http://downloads.resurrectionremix.com/hammerhead/</RomUrl>
-            <RomUrl2
+            <RomUrl
                 id="rom2"
                 title="Downlad mirror"
-                description="Mirror links for the builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/</RomUrl2>
+                description="Mirror links for the builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
