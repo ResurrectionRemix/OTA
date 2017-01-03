@@ -27,11 +27,11 @@
     </Stable>
         <Stable>
         <i9300>
-            <Filename>ResurrectionRemix-N-v5.8.0-20161216-i9300</Filename>
+            <Filename>RR-N-v5.8.0-20161231-i9300-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/bacon/Nougat/ResurrectionRemix-N-v5.8.0-20161216-i9300.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/i9300/Nougat/RR-N-v5.8.0-20161231-i9300-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -44,11 +44,11 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>ResurrectionRemix-N-v5.8.0-20161129-shamu</Filename>
+            <Filename>RR-N-v5.8.0-20170103-shamu-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/filedl/devs?dev=resurrectionremix&amp;dl=resurrectionremix/shamu/Nougat/ResurrectionRemix-N-v5.8.0-20161129-shamu.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.0-20170103-shamu-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
