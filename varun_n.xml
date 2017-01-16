@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>RR-N-v5.8.0-20170104-bacon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.0-20170116-bacon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
