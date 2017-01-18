@@ -27,11 +27,11 @@
     </Stable>
         <Stable>
         <i9300>
-            <Filename>RR-N-v5.8.0-20161231-i9300-Official.zip</Filename>
+            <Filename>RR-N-v5.8.0-20170118-i9300-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/i9300/Nougat/RR-N-v5.8.0-20161231-i9300-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/i9300/Nougat/RR-N-v5.8.0-20170118-i9300-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
