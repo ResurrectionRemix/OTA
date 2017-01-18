@@ -182,7 +182,7 @@
             <VendorUrl
             	id="vendor_image"
             	title="Vendor Image"
-            	description="Download latest vendor image">https://www.androidfilehost.com/?fid=457095661767121463</VendorUrl>
+            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/vendor-n4f26j-angler.img</VendorUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
