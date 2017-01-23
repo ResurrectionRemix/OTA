@@ -7,10 +7,6 @@
                 id="rom"
                 title="Downloads"
                 description="Download latest builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/nougat/</RomUrl>
-            <RommUrl
-                id="romm"
-                title="Downloads mirror"
-                description="Mirror links for the builds">http://bit.ly/2hcet8P</RommUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
