@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hammerhead>
-            <Filename>RR-N-v5.8.0-20170119-hammerhead-Official.zip</Filename>
+            <Filename>RR-N-v5.8.0-20170123-hammerhead-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Downloads"
-                description="Download latest builds">https://www.androidfilehost.com/?fid=457095661767131069</RomUrl>
+                description="Download latest builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/nougat/</RomUrl>
             <RommUrl
                 id="romm"
                 title="Downloads mirror"
