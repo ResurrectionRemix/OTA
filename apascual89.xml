@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <Oneplus3T>
-            <Filename>RR-N-v5.8.0-20170110-oneplus3t-Official.zip</Filename>
+            <Filename>RR-N-v5.8.0-20170123-oneplus3t-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/oneplus3t/RR-N-v5.8.0-20170110-oneplus3t-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">https://www.androidfilehost.com/?fid=457095661767132091</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -18,7 +18,7 @@
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
-            	description="Build Download Archive">http://downloads.resurrectionremix.com/oneplus3t/</OldBuildsUrl>
+            	description="Build Download Archive">https://www.androidfilehost.com/?w=files&amp;flid=146372</OldBuildsUrl>
 	</Oneplus3T>
     </Stable>
 </SlimOTA>
