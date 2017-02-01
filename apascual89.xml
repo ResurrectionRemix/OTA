@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
-        <Oneplus3T>
-            <Filename>RR-N-v5.8.0-20170123-oneplus3t-Official.zip</Filename>
+        <oneplus3t>
+            <Filename>RR-N-v5.8.1-20170201-oneplus3t-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -19,6 +19,6 @@
             	id="Old_builds"
             	title="Build Folder"
             	description="Build Download Archive">https://www.androidfilehost.com/?w=files&amp;flid=146372</OldBuildsUrl>
-	</Oneplus3T>
+	</oneplus3t>
     </Stable>
 </SlimOTA>
