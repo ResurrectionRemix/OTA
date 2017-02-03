@@ -62,11 +62,11 @@
     </Stable>
         <Stable>
         <d802>
-            <Filename>RR-N-v5.8.1-20170131-d802-Official.zip</Filename>
+            <Filename>RR-N-v5.8.1-20170203-d802-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/d802/Nougat/RR-N-v5.8.1-20170131-d802-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/d802/Nougat/RR-N-v5.8.1-20170303-d802-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
