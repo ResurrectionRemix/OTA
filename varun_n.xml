@@ -44,11 +44,11 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>RR-N-v5.8.0-20170103-shamu-Official.zip</Filename>
+            <Filename>RR-N-v5.8.1-20170207-shamu-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.0-20170103-shamu-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.1-20170207-shamu-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
