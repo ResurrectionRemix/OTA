@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <oneplus3>
-            <Filename>RR-N-v5.8.1-20170211-oneplus3-Official.zip</Filename>
+            <Filename>RR-N-v5.8.1-20170213-oneplus3-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://www.androidfilehost.com/?fid=457095661767136663</RomUrl>
+                description="Latest ResurrectionRemix build">https://www.androidfilehost.com/?fid=457095661767137131</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
