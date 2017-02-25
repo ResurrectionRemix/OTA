@@ -170,11 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>RR-N-v5.8.2-20170222-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.2-20170225-angler-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.2-20170222-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.2-20170225-angler-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -182,7 +182,7 @@
             <VendorUrl
             	id="vendor_image"
             	title="Vendor Image"
-            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/vendor-n4f26j-angler.img</VendorUrl>
+            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/vendor-angler-N4F26O.img</VendorUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
