@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <hammerhead>
-            <Filename>RR-N-v5.8.2-20170227-hammerhead-Official.zip</Filename>
+            <Filename>RR-N-v5.8.2-20170305-hammerhead-Nightly.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Downloads"
