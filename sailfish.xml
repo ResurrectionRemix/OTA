@@ -1,39 +1,20 @@
-#
-# ota_conf
-#
-# Note:
-# * Multiple devices can be added in the xml file
-# * You can define any tags that end with 'Url'. These tags will be added in the UI automatically
-# * Chances are you only need to change the ota_url in this file 
-#
-ota_url=https://raw.githubusercontent.com/ResurrectionRemix/OTA/master/sailfish.xml
-release_type=Stable
-device_name=ro.rr.device
- 
-#
-# VERSION
-#
-# A version can be a date or a number with characters
-# A version source can be a 'property key' from build.prop or a 'uname -r' command line
-# If a version is a number, leave the version_format empty. Otherwise, provide the date format
-#
-# Example with a property key 'ro.rr.version' : Parse the date 20150426 from 'ResurrectionRemix-M-v5.x.x-20150426-bacon'
-#
-# Version source: ro.rr.version
-# Version delimiter: -
-# Version position: 3 (zero based)
-# Version format: yyyyMMdd
-#
-# Example with 'uname -r': Parse the number 239 from '3.4.107~AK.239.OPO.CM12.1'
-#
-# Version source: uname -r
-# Version delimiter: .
-# Version position: 3 (zero based)
-# Version format:
-#
-# uname -r will only be needed if using the app for kernels, not required here
-
-version_source=ro.rr.version
-version_delimiter=-
-version_position=3
-version_format=yyyyMMdd
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <sailfish>
+            <Filename>ResurrectionRemix-N-v5.8.2-20170307-sailfish</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://bit.ly/2n4b6Vt</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</sailfish>
+    </Stable>
+</SlimOTA>
