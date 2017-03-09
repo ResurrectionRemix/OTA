@@ -44,11 +44,11 @@
     </Stable>
         <Stable>
         <shamu>
-            <Filename>RR-N-v5.8.2-20170225-shamu-Official.zip</Filename>
+            <Filename>RR-N-v5.8.2-20170309-shamu-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.2-20170225-shamu-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.2-20170309-shamu-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -170,11 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>RR-N-v5.8.2-20170305-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.2-20170309-angler-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.2-20170305-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.2-20170309-angler-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -182,7 +182,7 @@
             <VendorUrl
             	id="vendor_image"
             	title="Vendor Image"
-            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/vendor-angler-N4F26O.img</VendorUrl>
+            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/vendor-angler-N4F26T.img</VendorUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
