@@ -7,6 +7,14 @@
                 id="rom"
                 title="Rom"
                 description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus-unified-3-3T/RR-N-v5.8.2-20170318-oneplus3-Official.zip/download</RomUrl>
+            <OP3FirmwareUrl
+                id="OP3Firmware"
+                title="OP3 Firmware"
+                description="OP3 Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=159883</OP3FirmwareUrl>
+            <OP3TFirmwareUrl
+                id="OP3TFirmware"
+                title="OP3T Firmware"
+                description="OP3T Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=159692</OP3TFirmwareUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -14,7 +22,7 @@
 	    <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
