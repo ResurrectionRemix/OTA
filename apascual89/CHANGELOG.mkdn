@@ -2,11 +2,191 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
- ▼ 03/19/2017
+ ▼ 03/23/2017
 
 
- ▪ project android/
- ▪ c4a1a79 Track Own Package Installer
+ ▪ project frameworks/base/
+ ▪ 0628201 Automatic translation import
+ ▪ 52ce3a3 Automatic translation import
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 20ca298 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ f76431f Automatic translation import
+
+ ▪ project packages/apps/Dialer/
+ ▪ 95ae356 Automatic translation import
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ ef15f62 OmniSwitch: on the fly update on dpi changes
+ ▪ bcfc4b1 OmniSwitch: multi window madness
+ ▪ 37c5b8f OmniSwitch: delay task info loading to speedup open
+
+ ▪ project packages/apps/Recorder/
+ ▪ 14c2858 Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ ff7b05f Automatic translation import
+ ▪ 28b1322 Batterybar Settings: Fix Color Previews
+ ▪ bb12331 Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 94bca5b Revert "Enable cool color temperature option"
+
+ ▪ project packages/apps/Snap/
+ ▪ 3deda7f Automatic translation import
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 72df1ce Automatic translation import
+
+ ▪ project packages/providers/DownloadProvider/
+ ▪ a9fa3b2 Automatic translation import
+
+ ▪ project packages/resources/devicesettings/
+ ▪ 8bbb278 Automatic translation import
+
+ ▪ project vendor/cm/
+ ▪ 24cd1a4 Revert "Update Magisk to V11.6"
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ d4703e3 Automatic translation import
+
+ ▼ 03/22/2017
+
+
+ ▪ project packages/apps/Dialer/
+ ▪ 7939a38 Automatic translation import
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 7b2042d Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ c4a0609 Add Nougat Maintainer of Lenovo P2(p2a42) (#720)
+ ▪ 58bfed9 Automatic translation import
+
+ ▪ project vendor/cm/
+ ▪ 4b42ac4 Update Magisk to V11.6
+
+ ▼ 03/21/2017
+
+
+ ▪ project frameworks/base/
+ ▪ d2d57c0 Add Compass tile
+ ▪ b54a260 Statusbar ticker: apply statusbar tint when set to white
+ ▪ 24dbac1 Location tile: add high accuracy state icon
+ ▪ e4d25c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
+ ▪ 41b8ae7 Location tile: dynamic icon state also when easy toggle enabled
+ ▪ 806928c Expose Screenshot flash and background colors
+ ▪ 2641bdd Expose temperature text in DetailedWeatherView
+
+ ▪ project hardware/qcom/fm/
+ ▪ 953af70 Automatic translation import
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ a631184 power: oneplus_fastcg: Silence log spam
+ ▪ 020458e misc: Sync with OxygenOS 4.1.0 kernel release
+ ▪ f0963d3 mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()
+
+ ▪ project packages/apps/AudioFX/
+ ▪ dc65a0c Automatic translation import
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ 888a04e Automatic translation import
+
+ ▪ project packages/apps/Calendar/
+ ▪ 1826775 Automatic translation import
+
+ ▪ project packages/apps/Camera2/
+ ▪ 8ee8d23 Automatic translation import
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ 6950f2b Automatic translation import
+
+ ▪ project packages/apps/Eleven/
+ ▪ d46453b Automatic translation import
+
+ ▪ project packages/apps/Email/
+ ▪ af2af0b Automatic translation import
+
+ ▪ project packages/apps/FMRadio/
+ ▪ 588a2ab Automatic translation import
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 900fb80 Automatic translation import
+
+ ▪ project packages/apps/Gello/
+ ▪ 18953eb Automatic translation import
+
+ ▪ project packages/apps/HTMLViewer/
+ ▪ eb1c5fa Automatic translation import
+
+ ▪ project packages/apps/Nfc/
+ ▪ 8bb1879 Automatic translation import
+
+ ▪ project packages/apps/Recorder/
+ ▪ 110c07c Automatic translation import
+
+ ▪ project packages/apps/SafetyRegulatoryInfo/
+ ▪ d458cf1 Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ 84b4eb1 AppOpsDetails: Check app permissions safely
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ f834d21 Automatic translation import
+
+ ▪ project packages/apps/Snap/
+ ▪ 9ee33a5 Automatic translation import
+
+ ▪ project packages/apps/Stk/
+ ▪ 3c27506 Automatic translation import
+
+ ▪ project packages/apps/Terminal/
+ ▪ 5937cbf Automatic translation import
+
+ ▪ project packages/apps/ThemeChooser/
+ ▪ 993da14 Automatic translation import
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ a536931 Automatic translation import
+
+ ▪ project packages/apps/TvSettings/
+ ▪ f58e1b2 Automatic translation import
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ c2e4f01 Automatic translation import
+
+ ▪ project packages/apps/WallpaperPicker/
+ ▪ cfbd067 Automatic translation import
+
+ ▪ project packages/inputmethods/LatinIME/
+ ▪ f59371a Automatic translation import
+
+ ▪ project packages/providers/BookmarkProvider/
+ ▪ 1b2cc77 Automatic translation import
+
+ ▪ project packages/providers/CalendarProvider/
+ ▪ a1aa622 Automatic translation import
+
+ ▪ project packages/providers/ContactsProvider/
+ ▪ e93ac19 Automatic translation import
+
+ ▪ project packages/providers/DownloadProvider/
+ ▪ ae34e55 Automatic translation import
+
+ ▪ project packages/providers/MediaProvider/
+ ▪ 4d1a21f Automatic translation import
+
+ ▪ project packages/resources/devicesettings/
+ ▪ b75c745 Automatic translation import
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ a940996 Automatic translation import
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ 459f3db Automatic translation import
+
+ ▼ 03/20/2017
+
 
  ▪ project device/oneplus/oneplus3/
  ▪ f7a820f op3: Update to OxygenOS 4.1.0 blobs
@@ -14,22 +194,13 @@
  ▪ b6a16a9 op3: Clean up camera shim library
 
  ▪ project frameworks/base/
- ▪ 4832fd7 SubscriptionManager: remove unprovisioned sims from the list of active subscriptions
- ▪ 2e5baa3 ThemeSafety: Introduce App Crash Intent
+ ▪ f93be09 Move wakelock option for flashlight to CameraManager.
+ ▪ 09c2f18 SingleHandWindow: Allow locking the rotation to 180°
+ ▪ 835fcfb Add VOLTE icon
+
+ ▪ project frameworks/opt/telephony/
+ ▪ c31cf84 telephony: Fix rebase mismerge breaking SIM detection when encrypted
 
  ▪ project kernel/oneplus/msm8996/
  ▪ 509b8f6 defconfig: enable conservative gov
- ▪ 6cfe8aa Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr
-
- ▪ project packages/apps/ExactCalculator/
- ▪ 99ebfe6 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_ExactCalculator into nougat
-
- ▪ project packages/apps/PackageInstaller/
- ▪ de2347a PackageInstaller: Add tint mode to icons
-
- ▪ project packages/services/Telephony/
- ▪ dce0e2f CallFeatureSettings: Fix NPE
-
- ▪ project vendor/oneplus/
- ▪ 004b16f op3: Update to OxygenOS 4.1.0 blobs
 
