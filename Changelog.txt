@@ -2,6 +2,63 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 03/23/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 2912415 msm8956: set media.camera.ts.monotonic to 1
+ ▪ cbd1955 msm8956: Roll back to init.qcom.post_boot.sh
+
+ ▪ project frameworks/base/
+ ▪ 42d1838 Ability to disable Do not Disturb mode when calling [1/3]
+ ▪ 8336296 Suspend Actions [1/3]
+ ▪ 0c5dbdc Make roaming indicator optional [1/2]
+ ▪ 0628201 Automatic translation import
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ f76431f Automatic translation import
+
+ ▪ project packages/apps/Dialer/
+ ▪ 95ae356 Automatic translation import
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ ef15f62 OmniSwitch: on the fly update on dpi changes
+ ▪ bcfc4b1 OmniSwitch: multi window madness
+ ▪ 37c5b8f OmniSwitch: delay task info loading to speedup open
+
+ ▪ project packages/apps/Recorder/
+ ▪ 14c2858 Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ ed6ad03 Fix Build due to bad Pull request
+ ▪ 5076e30 Ability to disable Do not Disturb mode when calling [3/3]
+ ▪ 75b6380 Suspend Actions [3/3]
+ ▪ 0269bd3 Make roaming indicator optional [2/2]
+ ▪ cb63132 add mising strings
+ ▪ 68d825d Add Nougat Maintainer of Nubia Z11(nx531j) (#722)
+ ▪ ff7b05f Automatic translation import
+
+ ▪ project packages/apps/Snap/
+ ▪ 3deda7f Automatic translation import
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 72df1ce Automatic translation import
+
+ ▪ project packages/providers/DownloadProvider/
+ ▪ a9fa3b2 Automatic translation import
+
+ ▪ project packages/resources/devicesettings/
+ ▪ 8bbb278 Automatic translation import
+
+ ▪ project packages/services/Telecomm/
+ ▪ b253df5 Ability to disable Do not Disturb mode when calling [2/3]
+
+ ▪ project packages/services/Telephony/
+ ▪ 3ac6537 Suspend Actions [2/3]
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ d4703e3 Automatic translation import
+
  ▼ 03/22/2017
 
 
@@ -17,7 +74,6 @@
  ▪ ee3078e Revert "msm8956-comon: use /dev/input/event subsystem to detect changes in jack"
 
  ▪ project frameworks/base/
- ▪ 0628201 Automatic translation import
  ▪ 52ce3a3 Automatic translation import
 
  ▪ project kernel/xiaomi/msm8956/
@@ -29,14 +85,17 @@
  ▪ 0cddc6f media: Use balika code to support kate cam sensor
 
  ▪ project packages/apps/Dialer/
- ▪ 95ae356 Automatic translation import
+ ▪ 7939a38 Automatic translation import
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 7b2042d Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ ff7b05f Automatic translation import
  ▪ 28b1322 Batterybar Settings: Fix Color Previews
  ▪ bb12331 Merge remote-tracking branch 'rr/nougat' into HEAD
  ▪ 94bca5b Revert "Enable cool color temperature option"
  ▪ c4a0609 Add Nougat Maintainer of Lenovo P2(p2a42) (#720)
+ ▪ 58bfed9 Automatic translation import
 
  ▪ project vendor/cm/
  ▪ 24cd1a4 Revert "Update Magisk to V11.6"
@@ -93,9 +152,6 @@
  ▪ project packages/apps/CellBroadcastReceiver/
  ▪ 6950f2b Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ 7939a38 Automatic translation import
-
  ▪ project packages/apps/Eleven/
  ▪ d46453b Automatic translation import
 
@@ -117,9 +173,6 @@
  ▪ project packages/apps/Nfc/
  ▪ 8bb1879 Automatic translation import
 
- ▪ project packages/apps/OmniSwitch/
- ▪ 7b2042d Automatic translation import
-
  ▪ project packages/apps/Recorder/
  ▪ 110c07c Automatic translation import
 
@@ -127,7 +180,6 @@
  ▪ d458cf1 Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ 58bfed9 Automatic translation import
  ▪ 84b4eb1 AppOpsDetails: Check app permissions safely
 
  ▪ project packages/apps/SetupWizard/
@@ -552,9 +604,6 @@
  ▪ project packages/apps/PackageInstaller/
  ▪ de2347a PackageInstaller: Add tint mode to icons
 
- ▪ project vendor/oneplus/
- ▪ 004b16f op3: Update to OxygenOS 4.1.0 blobs
-
  ▼ 03/17/2017
 
 
@@ -581,151 +630,4 @@
 
  ▪ project vendor/cm/
  ▪ 4e317ae Regen Changelog
-
- ▼ 03/16/2017
-
-
- ▪ project build/
- ▪ b7c9ded Use 'release-keys' for build tag
-
- ▪ project frameworks/av/
- ▪ 4c948e6 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
- ▪ ca2a687 Automatic translation import
- ▪ e3b0d96 Automatic translation import
- ▪ cb85791 Automatic translation import
- ▪ c1abc56 Fix intermittent slowness in resolver activity towards end of day.
- ▪ 560217c Clean Up Statusbar Weather Attirbutes.
-
- ▪ project hardware/qcom/fm/
- ▪ aa10afe Automatic translation import
-
- ▪ project packages/apps/AudioFX/
- ▪ 886a58b Automatic translation import
-
- ▪ project packages/apps/Bluetooth/
- ▪ 7e2fa3a Automatic translation import
-
- ▪ project packages/apps/Calendar/
- ▪ 3b9a669 Automatic translation import
-
- ▪ project packages/apps/Camera2/
- ▪ 3cdfa24 Automatic translation import
-
- ▪ project packages/apps/CellBroadcastReceiver/
- ▪ 7017de6 Automatic translation import
-
- ▪ project packages/apps/CertInstaller/
- ▪ 80a7820 Automatic translation import
-
- ▪ project packages/apps/Dialer/
- ▪ 8cc4294 Automatic translation import
-
- ▪ project packages/apps/Eleven/
- ▪ c0bf8fe Automatic translation import
-
- ▪ project packages/apps/Email/
- ▪ 4154e90 Automatic translation import
-
- ▪ project packages/apps/EmergencyInfo/
- ▪ f228c4a Automatic translation import
-
- ▪ project packages/apps/ExactCalculator/
- ▪ 64af117 Automatic translation import
-
- ▪ project packages/apps/FMRadio/
- ▪ f83a5d7 Automatic translation import
-
- ▪ project packages/apps/Gallery2/
- ▪ 6b1bcb3 Automatic translation import
-
- ▪ project packages/apps/Gello/
- ▪ 649f53d Automatic translation import
-
- ▪ project packages/apps/ManagedProvisioning/
- ▪ c858db8 Automatic translation import
-
- ▪ project packages/apps/Nfc/
- ▪ fce8ec8 Automatic translation import
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 6bb19eb Automatic translation import
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 2e2f0b2 Automatic translation import
-
- ▪ project packages/apps/Recorder/
- ▪ 3c64f0c Automatic translation import
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ d40511f Automatic translation import
-
- ▪ project packages/apps/Settings/
- ▪ 1753536 Fix Fling Settings Seekbar attrs
- ▪ 87b263d Automatic translation import
- ▪ a27dd98 Added Nougat Maintainer For Redmi Note 4(mido)
- ▪ 542c03e Fix possible NPE on SIM settings shutdown.
- ▪ 0464d0b Clean up SIM enable toggle implementation
- ▪ 242dcad Settings: port manual provisiong support
- ▪ e13c91c Update rr_strings.xml (#718)
-
- ▪ project packages/apps/SetupWizard/
- ▪ 27662e2 Automatic translation import
-
- ▪ project packages/apps/Snap/
- ▪ 91d6eab Automatic translation import
-
- ▪ project packages/apps/Stk/
- ▪ f91e479 Automatic translation import
-
- ▪ project packages/apps/ThemeChooser/
- ▪ 8542dd6 Automatic translation import
-
- ▪ project packages/apps/Trebuchet/
- ▪ e97e772 Automatic translation import
-
- ▪ project packages/apps/TvSettings/
- ▪ 4b1d8f7 Automatic translation import
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ cb0495f Automatic translation import
-
- ▪ project packages/inputmethods/LatinIME/
- ▪ 65903e0 Automatic translation import
-
- ▪ project packages/providers/DownloadProvider/
- ▪ e84d41d Automatic translation import
-
- ▪ project packages/providers/MediaProvider/
- ▪ 1261e19 Automatic translation import
-
- ▪ project packages/providers/TelephonyProvider/
- ▪ 04f4aad Automatic translation import
-
- ▪ project packages/providers/WeatherProvider/
- ▪ 558d3e5 Automatic translation import
-
- ▪ project packages/resources/devicesettings/
- ▪ 5a5b9c5 Automatic translation import
-
- ▪ project packages/screensavers/Basic/
- ▪ a8e56f3 Automatic translation import
-
- ▪ project packages/services/Telephony/
- ▪ 998dcdf Automatic translation import
- ▪ 90051f8 Telephony: Fix "Redirect to roaming SIM network setting(Dual SIM)"
- ▪ 37d3915 Automatic translation import
-
- ▪ project packages/wallpapers/LivePicker/
- ▪ 8a005bf Automatic translation import
-
- ▪ project system/core/
- ▪ 29ea1b5 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ 3aa2136 Automatic translation import
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
- ▪ d581a44 Automatic translation import
 
