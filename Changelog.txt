@@ -2,12 +2,186 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
- ▼ 03/23/2017
+ ▼ 03/28/2017
+
+
+ ▪ project android/
+ ▪ 0bcf782 crowdin: track the manifest
+ ▪ 23bb331 manifest: add in a crowdin.xml
+ ▪ 9f86f8b manifest: delete unnecessary file.
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 865b79a Revert "kenzo: Add support for goodix (1/3)"
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 2fcadf2 Revert "msm8956: Support goodix (2/3)"
+
+ ▪ project frameworks/base/
+ ▪ 293d63a Automatic translation import
+ ▪ c1391e8 Automatic translation import
+ ▪ 4442f2c Automatic translation import
+ ▪ 62535b2 Automatic translation import
+ ▪ 55241a8 Core: Make tethering notifications fully translatable
+ ▪ 918f9ba Automatic translation import
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ b5897ec disable goodix
+ ▪ 2275e25 Revert "Add goodix support"
+ ▪ c17b9f7 Revert "input: misc: goodix_fp: Add support to new reset ioctl"
+ ▪ 31187b6 Revert "kenzo: Only allow one fingerprint device to be created"
+ ▪ 4293865 Revert "input: misc: goodix_fp: Fix warning of unbalanced irq"
+ ▪ 2865180 Revert "input: misc: goodix_fp: Support use netlink to communicate with user app"
+ ▪ a6974a6 Revert "kenzo: fingerprint sensor default to goodix"
+ ▪ f65c21a Revert "Disable WLAN_FEATURE_RMC"
+
+ ▪ project packages/apps/Dialer/
+ ▪ 9272e56 Automatic translation import
+ ▪ 4562381 Revert "Revert "Use TabLayout for DSDA tabs.""
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 32a6bd4 Automatic translation import
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ e78c53a Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ dc2e3e4 Automatic translation import
+ ▪ 146385a Settings: fix build
+ ▪ febccd5 Add VEGA Sky A910 (#729)
+ ▪ ccfbedc1 Automatic translation import
+ ▪ 3feebfe Fix zen mode allowed event preference summary.
+ ▪ c9c382a Settings: Fix AOSP WiFi AP translations
+ ▪ f1567f0 Settings: Fix german string
+ ▪ 5f20a95 Automatic translation import
+ ▪ 22b073d Automatic translation import
+ ▪ 984ddc2 Automatic translation import
+ ▪ 5a9c6e3 Automatic translation import
+ ▪ 74cd539 Automatic translation import
+ ▪ 42a60ea Automatic translation import
+
+ ▪ project vendor/xiaomi/
+ ▪ 515ad62 Revert "kenzo: Update blobs and add goodix blobs (3/3)"
+
+ ▼ 03/27/2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 8174213 audio: Fix flac offload not working
+ ▪ d758485 policy_hal: Line up default features with rest of HAL
+
+ ▪ project hardware/ti/omap4/
+ ▪ 71be556 Include common omap4 vendor repo if available.
+ ▪ 02837a7 libEGL_POWERVR: Replace remaining LOCAL_LDLIBS (KK compatibility)
+ ▪ 115c4a4 pvrsrvinit/libEGL_POWERVR: Actually ready needed vendor libraries
+ ▪ aff0723 pvrsrvinit/libEGL_POWERVR: Link against generic library symlinks
+ ▪ b132a61 pvrsrvinit: PVRScopeServices symlink lives in vendor/ti now
+ ▪ 3c61176 pvrsrvinit: define the libraries to link against in LOCAL_LDFLAGS
+ ▪ ca79788 symlinks: Move Gralloc's to vendor/ti (together with processing)
+
+ ▪ project packages/apps/Settings/
+ ▪ a0124fc Add j5 (#728)
+
+ ▼ 03/26/2017
+
+
+ ▪ project bionic/
+ ▪ 6f130ca linker: Restore optional platform text relocations use
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 386889c kenzo: Add support for goodix (1/3)
+
+ ▪ project frameworks/base/
+ ▪ 65359b6 Fix Potential NPE on Msim
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ baabf8a audio: Fix msm8952-snd-card-mtp support
+
+ ▪ project packages/apps/Settings/
+ ▪ db1f9f0 Add Nougat Maintainer for LeEco Le 1s (X3) (#727)
+ ▪ b7874b1 Settings: Set correct default value to In-call DND switch (#725)
+ ▪ 964a86d Add Natrium maintainer (#723)
+ ▪ 727b7c8 Add Samsung Galaxy S7 maintainer (#724)
+ ▪ 5edc1d0 Option to Disable Blank network signal icons on Msim [2/2]
+
+ ▪ project vendor/xiaomi/
+ ▪ ff919cb kenzo: Update blobs and add goodix blobs (3/3)
+
+ ▼ 03/25/2017
 
 
  ▪ project device/xiaomi/msm8956-common/
- ▪ 2912415 msm8956: set media.camera.ts.monotonic to 1
- ▪ cbd1955 msm8956: Roll back to init.qcom.post_boot.sh
+ ▪ 1bba5fd msm8956: Support goodix (2/3)
+
+ ▪ project frameworks/base/
+ ▪ da1e367 Slim Recents: fix SystemUI fc
+ ▪ fb47dc9 Option to Disable Blank network signal icons on Msim [1/2]
+ ▪ 42f6626 SystemUI: Hide unprovisioned SIMs * There's no point of displaying null signal icon. clean up PSB while we're at it Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 1533473 Slim Recents: more fixes, cleanup and improvements
+ ▪ 5e02a9a Merge pull request #187 from ashoksoni/changes
+ ▪ 8b6ff71 Fix crash issue on Storage Manager app
+ ▪ 7bfdfda Fix for wakelock being held during bootup and idle scenario.
+ ▪ 4df2b2b SystemUI: Tiny expanding improvement Signed-off-by: BigBrother1984 <carlosavignano@aospa.co> Signed-off-by: xyyx <xyyx@mail.ru>
+ ▪ 4e0ee9f [BUG] fix NullPointerException in Notification.java
+
+ ▪ project hardware/qcom/fm/
+ ▪ aff061a FM: Fix KHz->kHz
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ ac9d953 Disable WLAN_FEATURE_RMC Change-Id: I46d4e2f23f5f50833683424b3353643586988977
+ ▪ 8431519 kenzo: fingerprint sensor default to goodix
+ ▪ 8b100ce input: misc: goodix_fp: Support use netlink to communicate with user app
+ ▪ 9a8f6e5 input: misc: goodix_fp: Fix warning of unbalanced irq
+ ▪ 1fff804 kenzo: Only allow one fingerprint device to be created
+ ▪ 6cca072 input: misc: goodix_fp: Add support to new reset ioctl
+ ▪ 6769659 Add goodix support
+
+ ▼ 03/24/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ d804a9b msm8956: Update power conf from caf
+ ▪ e8e2b96 msm8956: set media.camera.ts.monotonic to 1
+
+ ▪ project frameworks/base/
+ ▪ 738bd6e Slim Recents Membar Colors [1/2]
+ ▪ 5d257d2 Base: API to restart SystemUI without root
+ ▪ d9ea16f Weather tile longclick: alternative weather apps when google weather not installed
+ ▪ 5369e64 Slim Recents: fix multiwindow glitch when docking app to bottom
+ ▪ 9b7f8a4 Slim Recent new multiwindow when multiwindow already active: make it more robust
+ ▪ 728368c Cleanups after Slim recents Refactor
+ ▪ 0dec18d Allow themers to customize battery frame color on darkintensity
+ ▪ 9cb2b58 Slim Recents icon cache: clear it when changing scale factor
+ ▪ 9f09e14 Location tile: new icons
+ ▪ 838a66f Slim Recents: add icon cache to improve performances
+ ▪ 4cf1b49 Slim Recents icon pack: fallback to app icon if pack doesn't have any
+ ▪ 3cec48b Clean up a couple Uris in PSB
+ ▪ aac9a56 Slim recents: don't show content when screen is pinned
+ ▪ 9a7e481 Slim recents: fix sometimes icons being invisible when they should not
+ ▪ e4b1813 Slim Recents: fix multiwindow glitch when docking app to bottom
+ ▪ e9026c1 Slim Recents: fix toptask header layout and other ui improvements
+ ▪ 37c03e3 Slim recents: no need to vibrate twice on longclick
+ ▪ 55213dd Slim recents: Fix blinking cards on notifyDataSetChanged()
+ ▪ 02119f4 Slim recents style improvements
+ ▪ c4c2f58 Slim Recent: allow to dock new apps if a multiwindow session is already running
+ ▪ 54e0b02 Refactor SlimRecents (1/2)
+ ▪ 00d1fcc Slim Recents iconpack support [1/2]
+
+ ▪ project packages/apps/Recorder/
+ ▪ ed7a8b3 Recorder: add and fix missing copyrights
+ ▪ 779c197 Recorder: screen recorder overlay
+ ▪ 4bf3b75 Recorder: update gradle and support libraries
+
+ ▪ project packages/apps/Settings/
+ ▪ f0dd739 Slim Recents Membar Color [2/2]
+ ▪ bf21305 Refactor Slim Recents [2/2]
+ ▪ 0a64428 Update SlimRecentPanel.java
+ ▪ cce096d Slim Recents iconpack support [2/2]
+ ▪ ed6ad03 Fix Build due to bad Pull request
+ ▪ 5076e30 Ability to disable Do not Disturb mode when calling [3/3]
+ ▪ 75b6380 Suspend Actions [3/3]
+
+ ▼ 03/23/2017
+
 
  ▪ project frameworks/base/
  ▪ 42d1838 Ability to disable Do not Disturb mode when calling [1/3]
@@ -30,13 +204,11 @@
  ▪ 14c2858 Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ ed6ad03 Fix Build due to bad Pull request
- ▪ 5076e30 Ability to disable Do not Disturb mode when calling [3/3]
- ▪ 75b6380 Suspend Actions [3/3]
  ▪ 0269bd3 Make roaming indicator optional [2/2]
  ▪ cb63132 add mising strings
  ▪ 68d825d Add Nougat Maintainer of Nubia Z11(nx531j) (#722)
  ▪ ff7b05f Automatic translation import
+ ▪ 28b1322 Batterybar Settings: Fix Color Previews
 
  ▪ project packages/apps/Snap/
  ▪ 3deda7f Automatic translation import
@@ -91,7 +263,6 @@
  ▪ 7b2042d Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ 28b1322 Batterybar Settings: Fix Color Previews
  ▪ bb12331 Merge remote-tracking branch 'rr/nougat' into HEAD
  ▪ 94bca5b Revert "Enable cool color temperature option"
  ▪ c4a0609 Add Nougat Maintainer of Lenovo P2(p2a42) (#720)
@@ -99,535 +270,4 @@
 
  ▪ project vendor/cm/
  ▪ 24cd1a4 Revert "Update Magisk to V11.6"
-
- ▼ 03/21/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 608a27e support kate !!
- ▪ 7352cac kenzo: Use stock Acdb id's
- ▪ c0eed06 kenzo: Enable 24bit offload
- ▪ 818ed22 kenzo: Pin libmmcamera2_sensor_modules
- ▪ 0244438 kenzo: Use MIUI Global Stable build fingerprint
- ▪ 89c6c67 kenzo: Set media.camera.ts.monotonic to 1
- ▪ cab0737 kenzo: All hail Dominator
- ▪ a287d6a kenzo: Import oss camera hal from caf
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 2290ff7 msm8956: Add camera props
- ▪ b5c62a3 msm8956: Move libshims to device repo
- ▪ 6521e5d msm8956: Hide sRGB toggle in developer options
- ▪ e863402 msm8956: telephony: Enable conference support for video calls.
- ▪ 9e519f8 msm8956: Change the GLES version string to 3.2
- ▪ 56b549c msm8956: Enable WiFi Display
- ▪ 5789e45 msm8956: Fix Wi-Fi Direct/P2P
- ▪ 828fb5b msm8956-comon: use /dev/input/event subsystem to detect changes in jack
- ▪ 110ae85 No one lobs you gello
- ▪ 0969205 Revert "msm8956: Re-enable XML audio policy"
-
- ▪ project frameworks/base/
- ▪ d2d57c0 Add Compass tile
- ▪ b54a260 Statusbar ticker: apply statusbar tint when set to white
- ▪ 24dbac1 Location tile: add high accuracy state icon
- ▪ e4d25c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
- ▪ 41b8ae7 Location tile: dynamic icon state also when easy toggle enabled
- ▪ 806928c Expose Screenshot flash and background colors
- ▪ 2641bdd Expose temperature text in DetailedWeatherView
-
- ▪ project hardware/qcom/fm/
- ▪ 953af70 Automatic translation import
-
- ▪ project packages/apps/AudioFX/
- ▪ dc65a0c Automatic translation import
-
- ▪ project packages/apps/Bluetooth/
- ▪ 888a04e Automatic translation import
-
- ▪ project packages/apps/Calendar/
- ▪ 1826775 Automatic translation import
-
- ▪ project packages/apps/Camera2/
- ▪ 8ee8d23 Automatic translation import
-
- ▪ project packages/apps/CellBroadcastReceiver/
- ▪ 6950f2b Automatic translation import
-
- ▪ project packages/apps/Eleven/
- ▪ d46453b Automatic translation import
-
- ▪ project packages/apps/Email/
- ▪ af2af0b Automatic translation import
-
- ▪ project packages/apps/FMRadio/
- ▪ 588a2ab Automatic translation import
-
- ▪ project packages/apps/Gallery2/
- ▪ 900fb80 Automatic translation import
-
- ▪ project packages/apps/Gello/
- ▪ 18953eb Automatic translation import
-
- ▪ project packages/apps/HTMLViewer/
- ▪ eb1c5fa Automatic translation import
-
- ▪ project packages/apps/Nfc/
- ▪ 8bb1879 Automatic translation import
-
- ▪ project packages/apps/Recorder/
- ▪ 110c07c Automatic translation import
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
- ▪ d458cf1 Automatic translation import
-
- ▪ project packages/apps/Settings/
- ▪ 84b4eb1 AppOpsDetails: Check app permissions safely
-
- ▪ project packages/apps/SetupWizard/
- ▪ f834d21 Automatic translation import
-
- ▪ project packages/apps/Snap/
- ▪ 9ee33a5 Automatic translation import
-
- ▪ project packages/apps/Stk/
- ▪ 3c27506 Automatic translation import
-
- ▪ project packages/apps/Terminal/
- ▪ 5937cbf Automatic translation import
-
- ▪ project packages/apps/ThemeChooser/
- ▪ 993da14 Automatic translation import
-
- ▪ project packages/apps/Trebuchet/
- ▪ a536931 Automatic translation import
-
- ▪ project packages/apps/TvSettings/
- ▪ f58e1b2 Automatic translation import
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ c2e4f01 Automatic translation import
-
- ▪ project packages/apps/WallpaperPicker/
- ▪ cfbd067 Automatic translation import
-
- ▪ project packages/inputmethods/LatinIME/
- ▪ f59371a Automatic translation import
-
- ▪ project packages/providers/BookmarkProvider/
- ▪ 1b2cc77 Automatic translation import
-
- ▪ project packages/providers/CalendarProvider/
- ▪ a1aa622 Automatic translation import
-
- ▪ project packages/providers/ContactsProvider/
- ▪ e93ac19 Automatic translation import
-
- ▪ project packages/providers/DownloadProvider/
- ▪ ae34e55 Automatic translation import
-
- ▪ project packages/providers/MediaProvider/
- ▪ 4d1a21f Automatic translation import
-
- ▪ project packages/resources/devicesettings/
- ▪ b75c745 Automatic translation import
-
- ▪ project vendor/cm/
- ▪ 4b42ac4 Update Magisk to V11.6
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ a940996 Automatic translation import
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
- ▪ 459f3db Automatic translation import
-
- ▪ project vendor/xiaomi/
- ▪ c739cc3 kenzo: Regen makefiles
- ▪ e601b0b kenzo: Update to MIUI 7.3.16 global dev blobs
- ▪ ceeefd0 kenzo: Add bullhead widevine blobs
- ▪ 67d1af4 kenzo: Update blobs
- ▪ b988bd7 kenzo: Ship prebuilt wcnss_service
- ▪ 7909378 kenzo: Update blobs
- ▪ 67859d5 kenzo: Initial nougat checkout
- ▪ 6fa8bd6 kenzo: Update blobs (#15)
- ▪ e468049 kenzo: Regenerate makefiles (#14)
- ▪ 2bcff42 kenzo: Revert to previous radio blobs (#12)
- ▪ bd5492e kenzo: Update blobs (#11)
- ▪ 15a14ad kenzo: Update blobs
- ▪ ca8d9b2 kenzo: Update blobs (#9)
- ▪ 6209e1d Add kenzo (Redmi Note 3)
-
- ▼ 03/19/2017
-
-
- ▪ project frameworks/base/
- ▪ f93be09 Move wakelock option for flashlight to CameraManager.
- ▪ 09c2f18 SingleHandWindow: Allow locking the rotation to 180°
- ▪ 835fcfb Add VOLTE icon
-
- ▪ project frameworks/opt/telephony/
- ▪ c31cf84 telephony: Fix rebase mismerge breaking SIM detection when encrypted
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 8f4e5dd derp
- ▪ d8c3d12 Revert "fingerprint: Initial Goodix Support"
- ▪ 4c7cd5d media: Add support for s5k5e8_yx13 sensor
- ▪ 70d1ded input: Handle an additional framebuffer hint
- ▪ adfdcf7 fix base path
- ▪ e87e315 defconfig: Change Stack Protector to 'REGULAR'
- ▪ 29d767fe Fix Compilation Errors & Warnings
- ▪ 89de59f defconfig: Enable Board Thermal Sensor
- ▪ c0e4891 Fix missing boardtemp thermal sensor
- ▪ ed04b27 Dominator: set version in Makefile
- ▪ 909d7c7 Update prima
- ▪ ee4bb8c Revert "arm:dts:increase max curent"
- ▪ e08c38c mobicore: Fix section mismatch
- ▪ 41dc31a remove dual decleration
- ▪ 49b6be1 update build script
- ▪ f92cc09 fingerprint: Initial Goodix Support
- ▪ 7d245cc enable sound control and gestures
- ▪ aa647f2 DTS: Fix Qualcomm Typo Error
- ▪ f3f6828 Fix s5k3p3_f3p3man support
- ▪ dd48a22 cpufreq: cache tunables for ondemand and conservative governors
- ▪ 4188987 xiaomi: lct_tp_fm_info: fix warning about existing sysfs/procfs entries
- ▪ aa8273b platform/msm: haptic: expose vibrate function
- ▪ 4384104 wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep for Redmi Note 3
- ▪ 066d418 input: atmel_mxt_ts: Add double tap sysfs symlink
- ▪ 0d4bccd input: Create shared procfs nodes
- ▪ 88f652d input: atmel_mxt_ts: Add option to disable keypad
- ▪ 98e9f0b input: ft5x06: Add option to disable keypad
- ▪ cd5099d usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
- ▪ 6a8883c sound_control: add speaker gain
- ▪ 38b9db3 ASoC: wcd9335: add analog headphone gain
- ▪ b674637 ASoC: wcd9335: Sound control
- ▪ 62d20fb power: qpnp-fg: Coulomb Counting Error
- ▪ ed5f768 fix qpnp_fg_cap_learning wake lock no release
- ▪ aa415fe drivers:power: Fix the soc update delay
- ▪ 1bebd53 drivers:power: fix -2% bug
- ▪ d96213d Revert partial xiaomi changes
- ▪ 9a067e9 arm:dts: adapt to new aw2013 driver
- ▪ b29c747 leds-aw2013: Don't reset values when nothing has changed
- ▪ c5ad021 leds: aw2013: Reduce logging level
- ▪ bbabe04 leds: aw2013: Use an ordered workqueue for command processing
- ▪ d0d264c leds: aw2013_led: Don't reset the brightness level when setting blink
- ▪ d6a57c0 revert xiaomi changes
- ▪ 73e9275 kobject: Fix "add_uevent_var: too many keys" warn.
- ▪ 899289b power: qpnp-smbcharger: Fix the BMD algo. disable logic
- ▪ 4640b63 arm:dts:we want faster bootup
- ▪ 8fe2e40 Revert "msm: thermal: add a module param to change the thermal throttle temperature point to userspace"
- ▪ ad41646 config:enable exfat
- ▪ 90d3afa Add exFAT support
- ▪ 09e5fb4 config;Enable crc32 module
- ▪ 96478ed crypto: arm64/crc32 - bring in line with generic CRC32
- ▪ d0b8fe0 crypto: crc32 - Add ARM64 CRC32 hw accelerated module
- ▪ 237ee7a regenerate defconfig
- ▪ a7b71f7 Mondrianwifi: Fix compilation error with mdss_mdp_trace.h
- ▪ c576a6a underp merge
- ▪ f1ec35f fix f2fs compile
- ▪ 6abb333 Fix Cam for all
- ▪ d420e43 dominator:enable frandom
- ▪ a33f10b upgrade frandom to latest
- ▪ 19f1d70 drivers: Upgrade frandom from staging
- ▪ aaf8867 staging: frandom: Clear up checkpatch conflicts
- ▪ eaa4b79 staging: frandom: Dynamically allocate the char device numbers
- ▪ 29a85ef staging: Add frandom RNG driver
- ▪ d7443a8 drivers: camera: Fix camera sensor detection
- ▪ b5470a8 Revert "msm: mdss: kcal: Use PCC for negative display mode"
- ▪ d5a9ac7 Time to dominate
- ▪ c82083c dominator: Enable Powersuspend
- ▪ 85f0568 kernel/power/powersuspend: cumulative update to version 1.5
- ▪ fc52a7a kernel/power/powersuspend: LCD screen on/off hooks (Yank555.lu)
- ▪ 291293a kernel/power/powersuspend: default to userspace for now
- ▪ 4a119c3 kernel/power/powersuspend: add back userpace control w/ default kernel control
- ▪ e7df8ae kernel/power/powersuspend: remove userspace dependency from powersuspend
- ▪ 8d3bb9b powersuspend: fix logci derps :p
- ▪ a4ec88b powersuspend: new PM kernel driver for Android w/o early_suspend
- ▪ 2df8870 mdss: use an interruptible thread on edp to reduce load_average
- ▪ 16c7b18 msm: Fix high load average from uninterruptible waits
- ▪ 60a1d89 config:enable f2fs  * remove unused touchscreen  * remove ext2 and ext3
- ▪ ed40b74 Sysfs interface to Enable/Disable CRC [@Pafcholini] Signed-off-by: placiano <placiano80@gmail.com>
- ▪ 1f62fb7 dominator: Enable DYNAMIC FSYNC
- ▪ beca313 dominator: Add NTFS Support
- ▪ a3ee612 Forward port Dynamic Fsync to Linux 3.10
- ▪ 05f0866 Dynamic Fsync 1.2
- ▪ 3816725 msm: kgsl: Report correct GPU frequency in sysfs
- ▪ 5e4acd8 PM: devfreq: Use high priority workqueue
- ▪ 4c699eb dominator: Enable Arch Power
- ▪ 094b2b5 msm: thermal: add a module param to change the thermal throttle temperature point to userspace
- ▪ 93e970d dominator: Enable FIOPS
- ▪ 6396642 FIOPS: forward port for use on 3.10 Linux
- ▪ 401bfa2 block: fiops ioscheduler core
- ▪ 56b71b1 Remove '+' symbol from kernel version string
- ▪ 22d624a tick: don't update idle time if cpu offline
- ▪ cf961aa config:enable kcal
- ▪ 72bcc03 msm: mdss: kcal: Only apply updates on index 0
- ▪ f20f04b msm: mdss: kcal: Use PCC for negative display mode
- ▪ 0cab802 msm: mdss: KCAL: Send a pp display commit when changes are made
- ▪ d96399d msm: mdss: KCAL: Do not read from picture adjustment registers
- ▪ 936bf52 msm: mdss: KCAL: Read values from MDP registers wherever possible
- ▪ 588343b msm: mdss: KCAL: Apply default values on boot
- ▪ a08abe9 msm: mdss: KCAL: Queue changes when panel is powered off
- ▪ d167671e msm: mdss: KCAL: Remove MODULE_DESCRIPTION
- ▪ 6dd290a msm: mdss: KCAL: Update Kconfig description
- ▪ 9944a95 msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
- ▪ 4b736a6 msm: mdss: KCAL: Check panel power state before applying values
- ▪ e1f3cc4 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
- ▪ df3ab7a msm: mdss: Keep KCAL within its own source file
- ▪ a0f2923 msm: mdss: Remove deprecated __dev* markings
- ▪ 5c37e39 msm: mdss: Add pa_v2 support to KCAL
- ▪ 951d9f7 msm: mdss: Replace PGC implementation with PCC for KCAL
- ▪ ab888b5 msm: mdss: Add KCAL support for post processing control [v2]
- ▪ 627764b config:Expand def and remove unwanted modules
- ▪ 10abe03 msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
- ▪ 4e0ef44 qpnp-haptic: Add sysfs interface to control intensity
- ▪ 35687d5 arm:dts:let xiaomi be partial  * We are mankind's angel so will offer everyone equal freq
- ▪ 3ed031c arm:dts:increase max curent  * Therefore adjust thermal mitigation
- ▪ deee1ab scripts/sortextable: suppress warning: `relocs_size' may be used uninitialized
- ▪ 41a359c asoc: fix warning
- ▪ aad75d8 misc: Fix Kconfig warnings
- ▪ ceb8cbf devfreq_devbw: Assign labels to devbw nodes.
- ▪ ed75b1d block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+
- ▪ a885ddc block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
- ▪ dd9ab39 block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
- ▪ d797250 kenzo: defconfig: Update
- ▪ ce6620c ARM: dts: pstore: Match motorola configuration
- ▪ 5b6a268 arch/arm: dts: Add pstore DT
- ▪ ecc6df5 fs: pstore: Import Motorola pstore config
- ▪ 5002ea9 power: reset: Allow device to preserve memory on restart
- ▪ 26e42bd2 ARM: dts: kenzo: Only build device specific dtb
- ▪ ed0459d prima: Import QC prima wireless driver
- ▪ 94e9c5e fpc: Update fingerprint driver for MM HAL
- ▪ 6a8ba91 dominator:add Dtbtool  * Also Add buildscript
- ▪ 9a21dc0 Import RN3 misc changes
- ▪ 0ff8132 sound: wcd9335: Set correct wcd_ext_clk for HM Note 3
- ▪ 54c6fac sound: soc: Import Xiaomi code
- ▪ b2654fe drivers:video:Import RN3 video changes
- ▪ 2942c83 drivers:power:Import RN3 power changes
- ▪ d6ecdce drivers:mmc:Import RN3 mmc changes
- ▪ 8033f90 drivers:media:Import RN3 media changes
- ▪ 3ae1877 drivers:led:Import RN3 led changes
- ▪ 0c1da9b drivers:input:Import RN3 input changes
- ▪ 09fc8c3 arm:Import RN3 dts changes
- ▪ ba918d1 arm64:Import RN3 changes
- ▪ 766a29c update git ignore  * we need touch firmware files  * we dont need dt.img to be uploaded evey now and then
- ▪ 8801130 f2fs: use __set{__clear}_bit_le
- ▪ 154b7e3 f2fs: update_free_nid_bitmap() can be static
- ▪ 65e7516 f2fs: __update_nat_bits() can be static
- ▪ c7c4491 f2fs: le16_to_cpu for xattr->e_value_size
- ▪ d35e2a2 f2fs: don't overwrite node block by SSR
- ▪ 5441a89 f2fs: don't need to invalidate wrong node page
- ▪ 5791c01 f2fs: fix an error return value in truncate_partial_data_page
- ▪ 2f745f2 fscrypt: catch up to v4.11-rc1
- ▪ a900885 f2fs: avoid to flush nat journal entries
- ▪ e0d02da f2fs: avoid to issue redundant discard commands
- ▪ 1829ddd f2fs: fix a plint compile warning
- ▪ 5a08d4b f2fs: add f2fs_drop_inode tracepoint
- ▪ 12dcca0 f2fs: Fix zoned block device support
- ▪ 372ca4f f2fs: remove redundant set_page_dirty()
- ▪ 9ed1eb3 f2fs: fix to enlarge size of write_io_dummy mempool
- ▪ 2a325cc f2fs: fix memory leak of write_io_dummy mempool during umount
- ▪ 6b24634 f2fs: fix to update F2FS_{CP_}WB_DATA count correctly
- ▪ 5902c1f f2fs: use MAX_FREE_NIDS for the free nids target
- ▪ e7fa89e f2fs: introduce free nid bitmap
- ▪ f7c330f f2fs: new helper cur_cp_crc() getting crc in f2fs_checkpoint
- ▪ d36b062 f2fs: update the comment of default nr_pages to skipping
- ▪ eb73173 f2fs: drop the duplicate pval in f2fs_getxattr
- ▪ 4abe7d3 f2fs: Don't update the xattr data that same as the exist
- ▪ 476f5cc f2fs: kill __is_extent_same
- ▪ c22654f f2fs: avoid bggc->fggc when enough free segments are avaliable after cp
- ▪ 6e2b3b8 f2fs: select target segment with closer temperature in SSR mode
- ▪ 1d3268e f2fs: show simple call stack in fault injection message
- ▪ 675cd7d fscrypt: catch fscrypto_get_policy in v4.10-rc6
- ▪ 579d0b9 f2fs: use __clear_bit_le
- ▪ 832aded f2fs: no need lock_op in f2fs_write_inline_data
- ▪ cd5f075 f2fs: add bitmaps for empty or full NAT blocks
- ▪ ae6d0aa f2fs: replace rw semaphore extent_tree_lock with mutex lock
- ▪ f8a4440 f2fs: avoid m_flags overlay when allocating more data blocks
- ▪ aa891da f2fs: remove unsafe bitmap checking
- ▪ 0a44722 f2fs: init local extent_info to avoid stale stack info in tp
- ▪ 916c510 f2fs: remove unnecessary condition check for write_checkpoint in f2fs_gc
- ▪ 279af5c f2fs: do SSR for node segments more aggresively
- ▪ 6fcea51 f2fs: check discard alignment only for SEQWRITE zones
- ▪ 72bdb12 f2fs: wait for discard completion after submission
- ▪ d20945b f2fs: much larger batched trim_fs job
- ▪ 4881606 f2fs: avoid very large discard command
- ▪ d1a9d76 f2fs: find data segments across all the types
- ▪ b5696e58 f2fs: do SSR in higher priority
- ▪ e0ffbc8 f2fs: do SSR for data when there is enough free space
- ▪ f5e9389 f2fs: node segment is prior to data segment selected victim
- ▪ 53386bc f2fs: put allocate_segment after refresh_sit_entry
- ▪ db1b42c f2fs: add ovp valid_blocks check for bg gc victim to fg_gc
- ▪ e77b97c f2fs: do not wait for writeback in write_begin
- ▪ a58e7f8 f2fs: replace __get_victim by dirty_segments in FG_GC
- ▪ e293455 f2fs: fix multiple f2fs_add_link() calls having same name
- ▪ 2dabf79 f2fs: show actual device info in tracepoints
- ▪ 84cb6cb f2fs: use SSR for warm node as well
- ▪ 9a43a00 f2fs: enable inline_xattr by default
- ▪ 58d5d8f f2fs: introduce noinline_xattr mount option
- ▪ 68ddbea f2fs: avoid reading NAT page by get_node_info
- ▪ 51cfd8a f2fs: remove build_free_nids() during checkpoint
- ▪ e9c8820 f2fs: change recovery policy of xattr node block
- ▪ 4adb9d1 f2fs: super: constify fscrypt_operations structure
- ▪ 6eefec7 f2fs: show checkpoint version at mount time
- ▪ 14fdfe4 f2fs: remove preflush for nobarrier case
- ▪ 4e4335c f2fs: check last page index in cached bio to decide submission
- ▪ acfe476 f2fs: check io submission more precisely
- ▪ 2b6477b f2fs: fix missing bio_alloc(1)
- ▪ 120d350 f2fs: call internal __write_data_page directly
- ▪ 74781ad f2fs: avoid out-of-order execution of atomic writes
- ▪ e0af1f1 f2fs: move write_node_page above fsync_node_pages
- ▪ 3152203 f2fs: move flush tracepoint
- ▪ 3803f42 f2fs: show # of APPEND and UPDATE inodes
- ▪ b2a6995 f2fs: fix 446 coding style warnings in f2fs.h
- ▪ 4749767 f2fs: fix 3 coding style errors in f2fs.h
- ▪ 960020c f2fs: declare missing static function
- ▪ 6c25ad8 f2fs: show the fault injection mount option
- ▪ 17858a0 f2fs: fix null pointer dereference when issuing flush in ->fsync
- ▪ 35f1521 f2fs: fix to avoid overflow when left shifting page offset
- ▪ 8970f12 f2fs: enhance lookup xattr
- ▪ fdbd491 f2fs: fix a dead loop in f2fs_fiemap()
- ▪ 5d0f10e f2fs: show # of on-going flush and discard bios
- ▪ 5b2a7a2 f2fs: add a kernel thread to issue discard commands asynchronously
- ▪ abfb422 f2fs: factor out discard command info into discard_cmd_control
- ▪ 80096be f2fs: reorganize stat information
- ▪ 749fd25 f2fs: clean up flush/discard command namings
- ▪ f76700a f2fs: check in-memory sit version bitmap
- ▪ 7905caa f2fs: check in-memory nat version bitmap
- ▪ cdd30eb f2fs: check in-memory block bitmap
- ▪ 28acaf7 f2fs: introduce FI_ATOMIC_COMMIT
- ▪ fea0e18 f2fs: clean up with list_{first, last}_entry
- ▪ 6d258dd f2fs: return fs_trim if there is no candidate
- ▪ ffe715f f2fs: avoid needless checkpoint in f2fs_trim_fs
- ▪ 2abf1fd f2fs: relax async discard commands more
- ▪ f4d7444 f2fs: drop exist_data for inline_data when truncated to 0
- ▪ 154b450 f2fs: don't allow encrypted operations without keys
- ▪ 5073384 f2fs: add tmpfile and rename2 to avoid code conflict
- ▪ 650f509 f2fs: show the max number of atomic operations
- ▪ c997690 f2fs: get io size bit from mount option
- ▪ 3b6fadd f2fs: support IO alignment for DATA and NODE writes
- ▪ f6ef2a6 f2fs: add submit_bio tracepoint
- ▪ 8180b45 f2fs: reassign new segment for mode=lfs
- ▪ de3a14c f2fs: fix a missing discard prefree segments
- ▪ 06013e2 f2fs: use rb_entry_safe
- ▪ 09dd48e f2fs: add a case of no need to read a page in write begin
- ▪ 8ce54e6 f2fs: fix a problem of using memory after free
- ▪ ed2e3e7 f2fs: remove unneeded condition
- ▪ 5c757d4 f2fs: don't cache nat entry if out of memory
- ▪ 88e01a6 f2fs: remove unused values in recover_fsync_data
- ▪ dbbcf46 f2fs: add migrate_page to avoid patch conflicts
- ▪ 081b5ec Revert "f2fs: use percpu_counter for # of dirty pages in inode"
- ▪ 64f2d82 f2fs: support async discard based on v4.9
- ▪ 426bf4e f2fs: resolve op and op_flags confilcts
- ▪ 159fea4 f2fs: use file pointer for fscrypt_notsupp_process_policy
- ▪ f1f0bf8 f2fs: fix a missing size change in f2fs_setattr
- ▪ 453a436 fs/super.c: fix race between freeze_super() and thaw_super()
- ▪ 482d732 scripts/tags.sh: catch 4.9-rc6
- ▪ eec6b08 f2fs: fix to access nullified flush_cmd_control pointer
- ▪ 6c651cf f2fs: free meta pages if sanity check for ckpt is failed
- ▪ 7b75f89 f2fs: detect wrong layout
- ▪ 335f458 f2fs: call sync_fs when f2fs is idle
- ▪ c0b8f53 f2fs: return AOP_WRITEPAGE_ACTIVATE for writepage
- ▪ 5b699fc f2fs: do not activate auto_recovery for fallocated i_size
- ▪ 7addcfb f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack
- ▪ 3f5a94a f2fs: fix 32-bit build
- ▪ b040686 f2fs: set ->owner for debugfs status file's file_operations
- ▪ 1d257fa f2fs: fix incorrect free inode count in ->statfs
- ▪ fe090f6 f2fs: drop duplicate header timer.h
- ▪ e512aed f2fs: fix wrong AUTO_RECOVER condition
- ▪ c05ad86 f2fs: do not recover i_size if it's valid
- ▪ 1fed32b f2fs: fix fdatasync
- ▪ 68dbbe2 f2fs: fix to account total free nid correctly
- ▪ 1a573b4 f2fs: fix an infinite loop when flush nodes in cp
- ▪ 18bfe07 f2fs: don't wait writeback for datas during checkpoint
- ▪ 052327c f2fs: fix wrong written_valid_blocks counting
- ▪ b8528df f2fs: avoid BG_GC in f2fs_balance_fs
- ▪ 5060fbe f2fs: fix redundant block allocation
- ▪ 3e6b380 f2fs: use err for f2fs_preallocate_blocks
- ▪ a7838df f2fs: support multiple devices
- ▪ 90a8a05 f2fs: allow dio read for LFS mode
- ▪ b932c71 f2fs: revert segment allocation for direct IO
- ▪ 3416578 f2fs: return directly if block has been removed from the victim
- ▪ 4bc356e Revert "f2fs: do not recover from previous remained wrong dnodes"
- ▪ 1e7ee63 f2fs: remove checkpoint in f2fs_freeze
- ▪ c7b5882 f2fs: assign segments correctly for direct_io
- ▪ 46c121e f2fs: fix wrong i_atime recovery
- ▪ 358c3c1 f2fs: record inode updating status correctly
- ▪ a8e9e4a f2fs: Trace reset zone events
- ▪ f1c7d25 f2fs: Reset sequential zones on zoned block devices
- ▪ 9b69a5e f2fs: Cache zoned block devices zone type
- ▪ ab41312 f2fs: Do not allow adaptive mode for host-managed zoned block devices
- ▪ c039416 f2fs: Always enable discard for zoned blocks devices
- ▪ a73941c f2fs: Suppress discard warning message for zoned block devices
- ▪ 9c5ac99 f2fs: Check zoned block feature for host-managed zoned block devices
- ▪ ea97c1f f2fs: Use generic zoned block device terminology
- ▪ 40db73b f2fs: Add missing break in switch-case
- ▪ 959ed7e f2fs: avoid infinite loop in the EIO case on recover_orphan_inodes
- ▪ f9d2353 f2fs: report error of f2fs_fill_dentries
- ▪ f02610b fs/crypto: catch up 4.9-rc2
- ▪ 8012a84 f2fs: hide a maybe-uninitialized warning
- ▪ d48ca65 f2fs: remove percpu_count due to performance regression
- ▪ 836ee54 f2fs: make clean inodes when flushing inode page
- ▪ a19758b f2fs: keep dirty inodes selectively for checkpoint
- ▪ b9c725a f2fs: Replace CURRENT_TIME_SEC with current_time() for inode timestamps
- ▪ 728d968 f2fs: use BIO_MAX_PAGES for bio allocation
- ▪ 60c816d f2fs: declare static function for __build_free_nids
- ▪ b05fc84 f2fs: call f2fs_balance_fs for setattr
- ▪ b489f5f f2fs: count dirty inodes to flush node pages during checkpoint
- ▪ e487586 f2fs: avoid casted negative value as shrink count
- ▪ 947fe75 f2fs: don't interrupt free nids building during nid allocation
- ▪ 4c655c9 f2fs: clean up free nid list operations
- ▪ 38c280c f2fs: split free nid list
- ▪ 486a3b5 f2fs: clear nlink if fail to add_link
- ▪ 5eb963b f2fs: fix sparse warnings
- ▪ 92f0ca7 f2fs: fix error handling in fsync_node_pages
- ▪ 700a3c4 f2fs: fix to update largest extent under lock
- ▪ 8709878 f2fs: be aware of extent beyond EOF in fiemap
- ▪ 6b9365a f2fs: don't miss any f2fs_balance_fs cases
- ▪ 1c1d3fa f2fs: add missing f2fs_balance_fs in f2fs_zero_range
- ▪ 2bf4127 ASoC: wcd-mbhc: Don't report headphone until timout
-
- ▼ 03/18/2017
-
-
- ▪ project android/
- ▪ c4a1a79 Track Own Package Installer
-
- ▪ project frameworks/base/
- ▪ 2e5baa3 ThemeSafety: Introduce App Crash Intent
- ▪ 12880eb Fix issues of different phone objects sharing same mConnectionApns list.
- ▪ 1fac004 Revert "Ignore IMS type APN when notify data connection"
-
- ▪ project packages/apps/Bluetooth/
- ▪ d3c06ce Revert "Introduced Active device for volume updates and volume update in pause state"
-
- ▪ project packages/apps/ExactCalculator/
- ▪ 99ebfe6 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_ExactCalculator into nougat
-
- ▪ project packages/apps/PackageInstaller/
- ▪ de2347a PackageInstaller: Add tint mode to icons
-
- ▼ 03/17/2017
-
-
- ▪ project bionic/
- ▪ 08aff0d linker: Allow devices to force shim libs
-
- ▪ project frameworks/base/
- ▪ d2766bc Automatic translation import
- ▪ ad7a554 PackageManager: Always let UID 0 start FallbackHome
- ▪ d6a2f93 Add tile information to ACTION_QS_TILE_PREFERENCES intent
- ▪ ca9d9fa SystemUI: Dismiss keyguard on boot if disabled by current profile
- ▪ c717b21 {SQUASHED}Revert" Header Date+Time positions "
- ▪ 172def4 SB Weather: Dont Show Image always on Left when animate = true
-
- ▪ project packages/apps/Bluetooth/
- ▪ ff3d0d8 Bluetooth: AIRPLANE_MODE_ON has moved
-
- ▪ project packages/apps/OmniSwitch/
- ▪ e5ba172 Automatic translation import
-
- ▪ project packages/apps/Settings/
- ▪ 7d8b102 Automatic translation import
- ▪ 9a1b240 Revert" Header Date+Time positions [2/2]"
-
- ▪ project vendor/cm/
- ▪ 4e317ae Regen Changelog
 
