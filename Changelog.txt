@@ -2,6 +2,44 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 03/29/2017
+
+
+ ▪ project android/
+ ▪ 79626b1 manifest: show download stats
+ ▪ 3b9d716 manifest: show how much % localization is done!
+
+ ▪ project bionic/
+ ▪ 5848aaf libc: memcpy_base: Disable opt for certain targets
+
+ ▪ project frameworks/base/
+ ▪ 1e35ea2 Automatic translation import
+ ▪ 8f68368 Automatic translation import
+
+ ▪ project packages/apps/Dialer/
+ ▪ 6dbeeee Automatic translation import
+ ▪ 5c9a353 Automatic translation import
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 39d506d Automatic translation import
+ ▪ 0a83aa9 Automatic translation import
+
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ 772235a Automatic translation import
+ ▪ 9e1b4b4 Automatic translation import
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ f96984b Automatic translation import
+ ▪ 60aa1d2 Automatic translation import
+
+ ▪ project packages/apps/Settings/
+ ▪ c7d0663 Automatic translation import
+ ▪ 49bc1cc Automatic translation import
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 0f51d79 JobService: Fix inital font application
+ ▪ bed5f44 JobService: fix initial theme dir creation
+
  ▼ 03/28/2017
 
 
@@ -10,33 +48,18 @@
  ▪ 23bb331 manifest: add in a crowdin.xml
  ▪ 9f86f8b manifest: delete unnecessary file.
 
- ▪ project device/xiaomi/kenzo/
- ▪ 865b79a Revert "kenzo: Add support for goodix (1/3)"
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 2fcadf2 Revert "msm8956: Support goodix (2/3)"
-
  ▪ project frameworks/base/
+ ▪ 2da0591 FWB: SmartBar Color: Custom app color filter switch (1/3)
+ ▪ 37e82fc Automatic translation import
  ▪ 293d63a Automatic translation import
  ▪ c1391e8 Automatic translation import
  ▪ 4442f2c Automatic translation import
- ▪ 62535b2 Automatic translation import
- ▪ 55241a8 Core: Make tethering notifications fully translatable
- ▪ 918f9ba Automatic translation import
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ b5897ec disable goodix
- ▪ 2275e25 Revert "Add goodix support"
- ▪ c17b9f7 Revert "input: misc: goodix_fp: Add support to new reset ioctl"
- ▪ 31187b6 Revert "kenzo: Only allow one fingerprint device to be created"
- ▪ 4293865 Revert "input: misc: goodix_fp: Fix warning of unbalanced irq"
- ▪ 2865180 Revert "input: misc: goodix_fp: Support use netlink to communicate with user app"
- ▪ a6974a6 Revert "kenzo: fingerprint sensor default to goodix"
- ▪ f65c21a Revert "Disable WLAN_FEATURE_RMC"
+ ▪ project packages/apps/DUI/
+ ▪ d2872b6 DUI: SmartBar Color: Custom app color filter switch (2/3)
 
  ▪ project packages/apps/Dialer/
  ▪ 9272e56 Automatic translation import
- ▪ 4562381 Revert "Revert "Use TabLayout for DSDA tabs.""
 
  ▪ project packages/apps/OmniSwitch/
  ▪ 32a6bd4 Automatic translation import
@@ -45,29 +68,20 @@
  ▪ e78c53a Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ 3df288e Settings: SmartBar Color: Custom app color filter switch (3/3)
+ ▪ d63bec1 Automatic translation import
  ▪ dc2e3e4 Automatic translation import
  ▪ 146385a Settings: fix build
  ▪ febccd5 Add VEGA Sky A910 (#729)
  ▪ ccfbedc1 Automatic translation import
- ▪ 3feebfe Fix zen mode allowed event preference summary.
- ▪ c9c382a Settings: Fix AOSP WiFi AP translations
- ▪ f1567f0 Settings: Fix german string
- ▪ 5f20a95 Automatic translation import
- ▪ 22b073d Automatic translation import
- ▪ 984ddc2 Automatic translation import
- ▪ 5a9c6e3 Automatic translation import
- ▪ 74cd539 Automatic translation import
- ▪ 42a60ea Automatic translation import
-
- ▪ project vendor/xiaomi/
- ▪ 515ad62 Revert "kenzo: Update blobs and add goodix blobs (3/3)"
 
  ▼ 03/27/2017
 
 
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 8174213 audio: Fix flac offload not working
- ▪ d758485 policy_hal: Line up default features with rest of HAL
+ ▪ project frameworks/base/
+ ▪ 62535b2 Automatic translation import
+ ▪ 55241a8 Core: Make tethering notifications fully translatable
+ ▪ 918f9ba Automatic translation import
 
  ▪ project hardware/ti/omap4/
  ▪ 71be556 Include common omap4 vendor repo if available.
@@ -78,7 +92,19 @@
  ▪ 3c61176 pvrsrvinit: define the libraries to link against in LOCAL_LDFLAGS
  ▪ ca79788 symlinks: Move Gralloc's to vendor/ti (together with processing)
 
+ ▪ project packages/apps/Dialer/
+ ▪ 4562381 Revert "Revert "Use TabLayout for DSDA tabs.""
+
  ▪ project packages/apps/Settings/
+ ▪ 3feebfe Fix zen mode allowed event preference summary.
+ ▪ c9c382a Settings: Fix AOSP WiFi AP translations
+ ▪ f1567f0 Settings: Fix german string
+ ▪ 5f20a95 Automatic translation import
+ ▪ 22b073d Automatic translation import
+ ▪ 984ddc2 Automatic translation import
+ ▪ 5a9c6e3 Automatic translation import
+ ▪ 74cd539 Automatic translation import
+ ▪ 42a60ea Automatic translation import
  ▪ a0124fc Add j5 (#728)
 
  ▼ 03/26/2017
@@ -87,14 +113,12 @@
  ▪ project bionic/
  ▪ 6f130ca linker: Restore optional platform text relocations use
 
- ▪ project device/xiaomi/kenzo/
- ▪ 386889c kenzo: Add support for goodix (1/3)
-
- ▪ project frameworks/base/
- ▪ 65359b6 Fix Potential NPE on Msim
-
  ▪ project hardware/qcom/audio-caf/msm8952/
  ▪ baabf8a audio: Fix msm8952-snd-card-mtp support
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 8174213 audio: Fix flac offload not working
+ ▪ d758485 policy_hal: Line up default features with rest of HAL
 
  ▪ project packages/apps/Settings/
  ▪ db1f9f0 Add Nougat Maintainer for LeEco Le 1s (X3) (#727)
@@ -103,37 +127,20 @@
  ▪ 727b7c8 Add Samsung Galaxy S7 maintainer (#724)
  ▪ 5edc1d0 Option to Disable Blank network signal icons on Msim [2/2]
 
- ▪ project vendor/xiaomi/
- ▪ ff919cb kenzo: Update blobs and add goodix blobs (3/3)
+ ▪ project packages/apps/Trebuchet/
+ ▪ 315b2f9 Moving a few testing classes to a separate package
+ ▪ 3c58753 Trebuchet: Remove ambient SDK leftover
 
  ▼ 03/25/2017
 
 
- ▪ project device/xiaomi/msm8956-common/
- ▪ 1bba5fd msm8956: Support goodix (2/3)
-
  ▪ project frameworks/base/
+ ▪ 65359b6 Fix Potential NPE on Msim
  ▪ da1e367 Slim Recents: fix SystemUI fc
  ▪ fb47dc9 Option to Disable Blank network signal icons on Msim [1/2]
- ▪ 42f6626 SystemUI: Hide unprovisioned SIMs * There's no point of displaying null signal icon. clean up PSB while we're at it Signed-off-by: Varun Date <date.varun123@gmail.com>
- ▪ 1533473 Slim Recents: more fixes, cleanup and improvements
- ▪ 5e02a9a Merge pull request #187 from ashoksoni/changes
- ▪ 8b6ff71 Fix crash issue on Storage Manager app
- ▪ 7bfdfda Fix for wakelock being held during bootup and idle scenario.
- ▪ 4df2b2b SystemUI: Tiny expanding improvement Signed-off-by: BigBrother1984 <carlosavignano@aospa.co> Signed-off-by: xyyx <xyyx@mail.ru>
- ▪ 4e0ee9f [BUG] fix NullPointerException in Notification.java
 
  ▪ project hardware/qcom/fm/
  ▪ aff061a FM: Fix KHz->kHz
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ ac9d953 Disable WLAN_FEATURE_RMC Change-Id: I46d4e2f23f5f50833683424b3353643586988977
- ▪ 8431519 kenzo: fingerprint sensor default to goodix
- ▪ 8b100ce input: misc: goodix_fp: Support use netlink to communicate with user app
- ▪ 9a8f6e5 input: misc: goodix_fp: Fix warning of unbalanced irq
- ▪ 1fff804 kenzo: Only allow one fingerprint device to be created
- ▪ 6cca072 input: misc: goodix_fp: Add support to new reset ioctl
- ▪ 6769659 Add goodix support
 
  ▼ 03/24/2017
 
@@ -143,6 +150,13 @@
  ▪ e8e2b96 msm8956: set media.camera.ts.monotonic to 1
 
  ▪ project frameworks/base/
+ ▪ 42f6626 SystemUI: Hide unprovisioned SIMs * There's no point of displaying null signal icon. clean up PSB while we're at it Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 1533473 Slim Recents: more fixes, cleanup and improvements
+ ▪ 5e02a9a Merge pull request #187 from ashoksoni/changes
+ ▪ 8b6ff71 Fix crash issue on Storage Manager app
+ ▪ 7bfdfda Fix for wakelock being held during bootup and idle scenario.
+ ▪ 4df2b2b SystemUI: Tiny expanding improvement Signed-off-by: BigBrother1984 <carlosavignano@aospa.co> Signed-off-by: xyyx <xyyx@mail.ru>
+ ▪ 4e0ee9f [BUG] fix NullPointerException in Notification.java
  ▪ 738bd6e Slim Recents Membar Colors [1/2]
  ▪ 5d257d2 Base: API to restart SystemUI without root
  ▪ d9ea16f Weather tile longclick: alternative weather apps when google weather not installed
@@ -164,7 +178,6 @@
  ▪ 02119f4 Slim recents style improvements
  ▪ c4c2f58 Slim Recent: allow to dock new apps if a multiwindow session is already running
  ▪ 54e0b02 Refactor SlimRecents (1/2)
- ▪ 00d1fcc Slim Recents iconpack support [1/2]
 
  ▪ project packages/apps/Recorder/
  ▪ ed7a8b3 Recorder: add and fix missing copyrights
@@ -176,39 +189,29 @@
  ▪ bf21305 Refactor Slim Recents [2/2]
  ▪ 0a64428 Update SlimRecentPanel.java
  ▪ cce096d Slim Recents iconpack support [2/2]
- ▪ ed6ad03 Fix Build due to bad Pull request
- ▪ 5076e30 Ability to disable Do not Disturb mode when calling [3/3]
- ▪ 75b6380 Suspend Actions [3/3]
 
  ▼ 03/23/2017
 
 
  ▪ project frameworks/base/
+ ▪ 00d1fcc Slim Recents iconpack support [1/2]
  ▪ 42d1838 Ability to disable Do not Disturb mode when calling [1/3]
  ▪ 8336296 Suspend Actions [1/3]
  ▪ 0c5dbdc Make roaming indicator optional [1/2]
- ▪ 0628201 Automatic translation import
 
  ▪ project packages/apps/CellBroadcastReceiver/
  ▪ f76431f Automatic translation import
-
- ▪ project packages/apps/Dialer/
- ▪ 95ae356 Automatic translation import
-
- ▪ project packages/apps/OmniSwitch/
- ▪ ef15f62 OmniSwitch: on the fly update on dpi changes
- ▪ bcfc4b1 OmniSwitch: multi window madness
- ▪ 37c5b8f OmniSwitch: delay task info loading to speedup open
 
  ▪ project packages/apps/Recorder/
  ▪ 14c2858 Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ ed6ad03 Fix Build due to bad Pull request
+ ▪ 5076e30 Ability to disable Do not Disturb mode when calling [3/3]
+ ▪ 75b6380 Suspend Actions [3/3]
  ▪ 0269bd3 Make roaming indicator optional [2/2]
  ▪ cb63132 add mising strings
  ▪ 68d825d Add Nougat Maintainer of Nubia Z11(nx531j) (#722)
- ▪ ff7b05f Automatic translation import
- ▪ 28b1322 Batterybar Settings: Fix Color Previews
 
  ▪ project packages/apps/Snap/
  ▪ 3deda7f Automatic translation import
@@ -230,44 +233,4 @@
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
  ▪ d4703e3 Automatic translation import
-
- ▼ 03/22/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ f54928e kenzo: Disable fluence on voicerec
- ▪ b7d5001 Revert "kenzo: Pin libmmcamera2_sensor_modules"
- ▪ 193ec6b kenzo: Move camera props to msm8956-common
- ▪ a39082b kenzo: Add libc hax for camera
- ▪ 987183f kenzo: Move libshims from msm8956-common
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 234bbc6 msm8956-common: Nuke sdcardfs
- ▪ ee3078e Revert "msm8956-comon: use /dev/input/event subsystem to detect changes in jack"
-
- ▪ project frameworks/base/
- ▪ 52ce3a3 Automatic translation import
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ df663c1 include/linux/compiler-gcc.h: improve __visible documentation
- ▪ ad17e64 include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
- ▪ 7d6ee11 compiler.h: add support for function attribute assume_aligned
- ▪ 46ac70d compiler-gcc: disable -ftracer for __noclone functions
- ▪ 8220c08 compiler-gcc: integrate the various compiler-gcc[345].h files
- ▪ 0cddc6f media: Use balika code to support kate cam sensor
-
- ▪ project packages/apps/Dialer/
- ▪ 7939a38 Automatic translation import
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 7b2042d Automatic translation import
-
- ▪ project packages/apps/Settings/
- ▪ bb12331 Merge remote-tracking branch 'rr/nougat' into HEAD
- ▪ 94bca5b Revert "Enable cool color temperature option"
- ▪ c4a0609 Add Nougat Maintainer of Lenovo P2(p2a42) (#720)
- ▪ 58bfed9 Automatic translation import
-
- ▪ project vendor/cm/
- ▪ 24cd1a4 Revert "Update Magisk to V11.6"
 
