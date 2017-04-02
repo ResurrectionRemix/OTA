@@ -2,6 +2,37 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/02/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 53b0441 Automatic translation import
+ ▪ a574543 Automatic translation import
+ ▪ d5dc2ce Automatic translation import
+ ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
+ ▪ e021aa8 LTE Tile: Make it Visible for Msim As well
+
+ ▪ project packages/apps/DUI/
+ ▪ 13279b3 Make Smartbar Pixel Animation Durations Customizable [2/3]
+ ▪ 6f4e145 Unlock Home and Back Buttons from Smartbar
+
+ ▪ project packages/apps/Settings/
+ ▪ 71552ce Automatic translation import
+ ▪ d8db799 Automatic translation import
+ ▪ f996487 Update rr_strings.xml
+ ▪ fce0d71 Add more j5 models (#734)
+ ▪ f11b1ba Automatic translation import
+ ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
+
+ ▪ project packages/providers/CalendarProvider/
+ ▪ 94029d1 New Material icon
+
+ ▪ project packages/providers/TelephonyProvider/
+ ▪ 059380f TelephonyProvider: Update icon to Material
+
+ ▪ project packages/wallpapers/LivePicker/
+ ▪ bf06fdf New Material icon
+
  ▼ 04/01/2017
 
 
@@ -9,9 +40,6 @@
  ▪ bf14f32 Revert "cm: Remove ahbottomnavigation library"
 
  ▪ project frameworks/base/
- ▪ 8d2661e Automatic translation import
- ▪ b0155eb Smarbar Pixel Navbar Animation Duration Settings [1/3]
- ▪ f7d541b LTE Tile: Make it Visible for Msim As well
  ▪ 05a13f1 Better QS detail clip animation
 
  ▪ project hardware/qcom/audio-caf/msm8916/
@@ -22,14 +50,11 @@
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ d8958fb [dnm]: Merge dtsi changes from latest miui
- ▪ 65c6eae kenzo: Use caf hall driver
 
  ▪ project packages/apps/CMParts/
  ▪ 780f4ad CMParts:Make Button Settings and Hardware Key Settings Non Searchable
 
  ▪ project packages/apps/DUI/
- ▪ daf1aa1 Make Smartbar Pixel Animation Durations Customizable [2/3]
- ▪ fba3132 Unlock Home and Back Buttons from Smartbar
  ▪ 84da14e SmartBar: show arrows for next/previous track when playing audio [1/2]
 
  ▪ project packages/apps/Dialer/
@@ -45,8 +70,6 @@
  ▪ 3131d3c Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ a28f9d2 Automatic translation import
- ▪ 98d71c5 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
  ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
  ▪ 27cc5fe Fix Strings and whitespaces
  ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
@@ -87,18 +110,9 @@
  ▪ 8e802de Allow to set a different battery style for tile and statusbar [1/2]
  ▪ 61d4294 QS:Re-Enable Night Display Tile for devices that support it
  ▪ 7d73fb8 Suspend Actions Qs Tile
- ▪ 360e3fe Automatic translation import
- ▪ 1ed9957 DocumentsUI: make shapes great again
- ▪ 5e038ca Revert "[1/2] base: support separate encryption/lockscreen passwords"
- ▪ c895580 MountService: Don't run benchmarks after trimming
- ▪ 4c1bf3c BatteryService: add dash charging support
- ▪ 0b7f30e Fw_base - Night auto brightness: restore user brightness values also after reboot
- ▪ 46aba72 Fw_base - Night Light brightness mode options [1/2]
- ▪ c3c55c5 Fix NPE while performing NetworkStatsService.removeUidsLocked()
- ▪ 6151c0b4 Fix potential NULL dereference errors.
- ▪ f85af0b Frameworks/base: Fix old code in MediaPlayer
 
  ▪ project kernel/xiaomi/msm8956/
+ ▪ 65c6eae kenzo: Use caf hall driver
  ▪ a490919 kenzo: enable_spk_ext_pa STFU!!
  ▪ 4903bf1 kenzo: Remove useless charging debugging
  ▪ 81f8f20 kenzo: Enable cpuset
@@ -129,13 +143,6 @@
  ▪ 3e2370d StorageSettings: Fix Color derp
  ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
  ▪ f2c4953  Allow to set a different battery style for tile and statusbar [2/2]
- ▪ bcf2a23 Themes: Expose SmartBar Dialogs from manifest
- ▪ 27f2caa Redesigned Substratum icon
- ▪ 3827d80 Expose styles in the manifest for themes
- ▪ 79d3b9b Expose "ALL" hardcoded and @android colors
- ▪ c52bbe4 Suspend Actions as an Activity
- ▪ cb0a91c Revert "[2/2] settings: support setting a separate encryption password"
- ▪ 314bc9e Settings - Night Light brightness mode options [2/2]
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ ae4821c Fix failed authorization toast on restartService
@@ -148,31 +155,20 @@
  ▪ 303eae1 OmniJaws: manifest add DEFAULT category to activities
  ▪ 960d49f Revert "Remove Weather icon pack pref"
 
- ▪ project vendor/cm/
- ▪ b73b386 Fix APNs for Cyprus
- ▪ 089838d extract_utils: support extracting directly from an ota zip
- ▪ 9fa9f1f cm: remove special access to unused cmfm
- ▪ 12011bf cm: allow apps to find profile manager service
- ▪ 815c85a cm: build: Don't convert patchset to int if it's None
- ▪ 2b4fe98 cm: build: Fix cherry picking specific patchsets
- ▪ 58e0449 Make a data only config
- ▪ ecdbb93 APN: Fix TalkTalk
- ▪ 02ddc58 apn: Updating TelkomSA from 8ta South Africa APN
- ▪ 3e253ac repopick: encode commit subjects in utf-8 for printing
- ▪ b6087b8 overlay: Disable recovery updates
- ▪ e8f46e3 apns: Remove proxy for the "TIM WAP" APN
- ▪ f4c483e Add TvSettings to common tv config.
- ▪ 739b20c vendor: Add templates for proprietary extraction scripts
- ▪ efc99d4 extract_utils: Fix locale issue with sort
- ▪ b93ec4c vendor_cm : update Fastweb apn
- ▪ 04ffdec apns: Add Perfectum
- ▪ 3c2dada cm: build: tasks: Remove BUILD_TINY_ANDROID check
- ▪ 9184dd3 extract-utils: Fix handling of pulling src:dest pairs from dumps
-
  ▼ 03/30/2017
 
 
  ▪ project frameworks/base/
+ ▪ 360e3fe Automatic translation import
+ ▪ 1ed9957 DocumentsUI: make shapes great again
+ ▪ 5e038ca Revert "[1/2] base: support separate encryption/lockscreen passwords"
+ ▪ c895580 MountService: Don't run benchmarks after trimming
+ ▪ 4c1bf3c BatteryService: add dash charging support
+ ▪ 0b7f30e Fw_base - Night auto brightness: restore user brightness values also after reboot
+ ▪ 46aba72 Fw_base - Night Light brightness mode options [1/2]
+ ▪ c3c55c5 Fix NPE while performing NetworkStatsService.removeUidsLocked()
+ ▪ 6151c0b4 Fix potential NULL dereference errors.
+ ▪ f85af0b Frameworks/base: Fix old code in MediaPlayer
  ▪ 1e35ea2 Automatic translation import
 
  ▪ project packages/apps/AudioFX/
@@ -224,6 +220,13 @@
  ▪ f96984b Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ bcf2a23 Themes: Expose SmartBar Dialogs from manifest
+ ▪ 27f2caa Redesigned Substratum icon
+ ▪ 3827d80 Expose styles in the manifest for themes
+ ▪ 79d3b9b Expose "ALL" hardcoded and @android colors
+ ▪ c52bbe4 Suspend Actions as an Activity
+ ▪ cb0a91c Revert "[2/2] settings: support setting a separate encryption password"
+ ▪ 314bc9e Settings - Night Light brightness mode options [2/2]
  ▪ c7d0663 Automatic translation import
 
  ▪ project packages/apps/SetupWizard/
@@ -265,6 +268,27 @@
  ▪ project packages/resources/devicesettings/
  ▪ d653283 Automatic translation import
 
+ ▪ project vendor/cm/
+ ▪ b73b386 Fix APNs for Cyprus
+ ▪ 089838d extract_utils: support extracting directly from an ota zip
+ ▪ 9fa9f1f cm: remove special access to unused cmfm
+ ▪ 12011bf cm: allow apps to find profile manager service
+ ▪ 815c85a cm: build: Don't convert patchset to int if it's None
+ ▪ 2b4fe98 cm: build: Fix cherry picking specific patchsets
+ ▪ 58e0449 Make a data only config
+ ▪ ecdbb93 APN: Fix TalkTalk
+ ▪ 02ddc58 apn: Updating TelkomSA from 8ta South Africa APN
+ ▪ 3e253ac repopick: encode commit subjects in utf-8 for printing
+ ▪ b6087b8 overlay: Disable recovery updates
+ ▪ e8f46e3 apns: Remove proxy for the "TIM WAP" APN
+ ▪ f4c483e Add TvSettings to common tv config.
+ ▪ 739b20c vendor: Add templates for proprietary extraction scripts
+ ▪ efc99d4 extract_utils: Fix locale issue with sort
+ ▪ b93ec4c vendor_cm : update Fastweb apn
+ ▪ 04ffdec apns: Add Perfectum
+ ▪ 3c2dada cm: build: tasks: Remove BUILD_TINY_ANDROID check
+ ▪ 9184dd3 extract-utils: Fix handling of pulling src:dest pairs from dumps
+
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
  ▪ 77358cc Automatic translation import
 
@@ -283,7 +307,6 @@
 
  ▪ project frameworks/base/
  ▪ 8f68368 Automatic translation import
- ▪ 2da0591 FWB: SmartBar Color: Custom app color filter switch (1/3)
 
  ▪ project packages/apps/DUI/
  ▪ d2872b6 DUI: SmartBar Color: Custom app color filter switch (2/3)
@@ -302,7 +325,6 @@
 
  ▪ project packages/apps/Settings/
  ▪ 49bc1cc Automatic translation import
- ▪ 3df288e Settings: SmartBar Color: Custom app color filter switch (3/3)
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ 0f51d79 JobService: Fix inital font application
@@ -317,6 +339,7 @@
  ▪ 9f86f8b manifest: delete unnecessary file.
 
  ▪ project frameworks/base/
+ ▪ 2da0591 FWB: SmartBar Color: Custom app color filter switch (1/3)
  ▪ 37e82fc Automatic translation import
  ▪ 293d63a Automatic translation import
  ▪ c1391e8 Automatic translation import
@@ -336,6 +359,7 @@
  ▪ e78c53a Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ 3df288e Settings: SmartBar Color: Custom app color filter switch (3/3)
  ▪ d63bec1 Automatic translation import
  ▪ dc2e3e4 Automatic translation import
  ▪ 146385a Settings: fix build
@@ -348,8 +372,6 @@
  ▪ 22b073d Automatic translation import
  ▪ 984ddc2 Automatic translation import
  ▪ 5a9c6e3 Automatic translation import
- ▪ 74cd539 Automatic translation import
- ▪ 42a60ea Automatic translation import
 
  ▼ 03/27/2017
 
@@ -364,32 +386,11 @@
  ▪ ca79788 symlinks: Move Gralloc's to vendor/ti (together with processing)
 
  ▪ project packages/apps/Settings/
+ ▪ 74cd539 Automatic translation import
+ ▪ 42a60ea Automatic translation import
  ▪ a0124fc Add j5 (#728)
 
  ▪ project packages/apps/Trebuchet/
  ▪ 315b2f9 Moving a few testing classes to a separate package
  ▪ 3c58753 Trebuchet: Remove ambient SDK leftover
-
- ▼ 03/26/2017
-
-
- ▪ project bionic/
- ▪ 6f130ca linker: Restore optional platform text relocations use
-
- ▪ project hardware/qcom/audio-caf/msm8952/
- ▪ baabf8a audio: Fix msm8952-snd-card-mtp support
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 8174213 audio: Fix flac offload not working
- ▪ d758485 policy_hal: Line up default features with rest of HAL
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 2f02a3e Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.9' into cm-14.1-caf-8994
-
- ▪ project packages/apps/Settings/
- ▪ db1f9f0 Add Nougat Maintainer for LeEco Le 1s (X3) (#727)
- ▪ b7874b1 Settings: Set correct default value to In-call DND switch (#725)
- ▪ 964a86d Add Natrium maintainer (#723)
- ▪ 727b7c8 Add Samsung Galaxy S7 maintainer (#724)
- ▪ 5edc1d0 Option to Disable Blank network signal icons on Msim [2/2]
 
