@@ -2,27 +2,72 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/03/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ f9887a3 msm8956: Use Snapdragon LLVM toolchain
+
+ ▪ project external/DUtils/
+ ▪ e4af8c6 Smartbar media arrows: more code improvements [2/2]
+
+ ▪ project frameworks/base/
+ ▪ 3f2e218 Smartbar pixel animation: Ability to customize the dots [1/3]
+ ▪ a0e34fd FWB:Pulse: allow setting fading blocks opacity [1/3]
+ ▪ 1a7d654 Switch to Enable or disable Vol up to disable overlays during boot [1/2]
+ ▪ f0b8485 Hold "volume up" during boot to disable all overlays
+ ▪ cf709b8 Slim recent membar colors settings: obey themes [1/2]
+ ▪ 76f94b8 Fix partial screenshot not working when dragging from left or top border
+ ▪ 6ba4bf4 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
+
+ ▪ project packages/apps/DUI/
+ ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
+ ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
+ ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
+ ▪ 11115e9 Smartbar media arrows: fix it hiding sometimes
+ ▪ 107d69c SmartBar Media Arrows: add streaming music support
+ ▪ a687b71 Smartbar media arrows: more code improvements [1/2]
+ ▪ e6ddfe6 Smartbar media arrows: more code improvements
+ ▪ 4b13131 Smartbar track arrows: code cleanup and don't show them on video playing
+ ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
+ ▪ e02304c OmniSwitch: add missing docked task indicator for other views
+
+ ▪ project packages/apps/Settings/
+ ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
+ ▪ c1ebfd6 Settings:Pulse: allow setting fading blocks opacity [3/3]
+ ▪ be3d947 Add Reset Button to Pixel Animation Duration Settings
+ ▪ 6f35d50 Switch to Enable or disable Vol up to disable overlays during boot [2/2]
+ ▪ bbddeeb SlimRecents Membar Colors: Obey Themes when disabled [2/2]
+ ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
+ ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
+
+ ▪ project packages/providers/MediaProvider/
+ ▪ e0e756f New Material icon
+
+ ▪ project packages/services/Mms/
+ ▪ de8277e Add Material icon & app label
+
+ ▪ project packages/services/Telephony/
+ ▪ e14278b Revert "Add support to launch call barring"
+ ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
+ ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
+
+ ▪ project vendor/cm/
+ ▪ c09a03a rr: tools: improve changelog script
+
  ▼ 04/02/2017
 
 
  ▪ project frameworks/base/
- ▪ 53b0441 Automatic translation import
- ▪ a574543 Automatic translation import
- ▪ d5dc2ce Automatic translation import
- ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
- ▪ e021aa8 LTE Tile: Make it Visible for Msim As well
 
  ▪ project packages/apps/DUI/
  ▪ 13279b3 Make Smartbar Pixel Animation Durations Customizable [2/3]
- ▪ 6f4e145 Unlock Home and Back Buttons from Smartbar
 
  ▪ project packages/apps/Settings/
- ▪ 71552ce Automatic translation import
- ▪ d8db799 Automatic translation import
  ▪ f996487 Update rr_strings.xml
- ▪ fce0d71 Add more j5 models (#734)
- ▪ f11b1ba Automatic translation import
- ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
 
  ▪ project packages/providers/CalendarProvider/
  ▪ 94029d1 New Material icon
@@ -36,10 +81,9 @@
  ▼ 04/01/2017
 
 
- ▪ project android/
- ▪ bf14f32 Revert "cm: Remove ahbottomnavigation library"
-
  ▪ project frameworks/base/
+ ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
+ ▪ e021aa8 LTE Tile: Make it Visible for Msim As well
  ▪ 05a13f1 Better QS detail clip animation
 
  ▪ project hardware/qcom/audio-caf/msm8916/
@@ -55,30 +99,23 @@
  ▪ 780f4ad CMParts:Make Button Settings and Hardware Key Settings Non Searchable
 
  ▪ project packages/apps/DUI/
+ ▪ 6f4e145 Unlock Home and Back Buttons from Smartbar
  ▪ 84da14e SmartBar: show arrows for next/previous track when playing audio [1/2]
 
  ▪ project packages/apps/Dialer/
- ▪ 95ac186 Automatic translation import
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 86af05f Automatic translation import
 
  ▪ project packages/apps/ResurrectionOTA/
- ▪ 65a06bb Automatic translation import
 
  ▪ project packages/apps/ResurrectionStats/
- ▪ 3131d3c Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ fce0d71 Add more j5 models (#734)
+ ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
  ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
  ▪ 27cc5fe Fix Strings and whitespaces
  ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
-
- ▪ project packages/resources/devicesettings/
- ▪ a765ae0 Add strings for fingerprint pocketmode
-
- ▪ project vendor/cm/
- ▪ 05d7713 Update Prebuilts
 
  ▪ project vendor/xiaomi/
  ▪ 8221713 kenzo: Remove unused cnss blob
@@ -86,9 +123,8 @@
  ▼ 03/31/2017
 
 
- ▪ project build/
- ▪ 190f2fe Revert "ota: Remove cruft we don't care about"
- ▪ fae00af Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash
+ ▪ project android/
+ ▪ bf14f32 Revert "cm: Remove ahbottomnavigation library"
 
  ▪ project device/xiaomi/kenzo/
  ▪ 8f857c6 kenzo: Remove unused cnss blobs
@@ -98,18 +134,9 @@
  ▪ ed19344 msm8956: Fox fingerprintd denial
  ▪ 29e7cd0 msm8956-common: Disable Link Layer Statistics
 
- ▪ project external/DUtils/
- ▪ 93cc06a DUI: validate image size before attempting to set as icon [1/2]
- ▪ 52f7f6d Kill App action: remove the killed app from Recents list
-
  ▪ project frameworks/base/
  ▪ 42b1343 Themes: Expose Keyboard Shortcuts Dialog
  ▪ 9080b84 Statusbar Weather Image: Make it update when iconpacks are changed
- ▪ abdfead BatteryTile: make the icon apply
- ▪ ac183ba base: Apply roaming indicator changes instantly
- ▪ 8e802de Allow to set a different battery style for tile and statusbar [1/2]
- ▪ 61d4294 QS:Re-Enable Night Display Tile for devices that support it
- ▪ 7d73fb8 Suspend Actions Qs Tile
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 65c6eae kenzo: Use caf hall driver
@@ -132,34 +159,38 @@
  ▪ 79eb0c6 fix base path
  ▪ 6db12d4 defconfig: Change Stack Protector to 'REGULAR'
 
- ▪ project packages/apps/DUI/
- ▪ b9c7e39 SmartBar editor: Let's use the blue!
- ▪ 67522d0 Smartbar: expose SmartButton ripple color
-
  ▪ project packages/apps/Settings/
  ▪ 5875669 Fix Magisk and re-arrange themes and Magisk settings shortcut to be below RR configuration.
  ▪ 44aca00 String Updates
  ▪ a5e2537 Also Update RR dashboard theme icon
  ▪ 3e2370d StorageSettings: Fix Color derp
- ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
- ▪ f2c4953  Allow to set a different battery style for tile and statusbar [2/2]
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ ae4821c Fix failed authorization toast on restartService
 
- ▪ project packages/services/OmniJaws/
- ▪ 79faaf8 Build as privileged and "fix" applying icon packs
- ▪ 48ac8bd OmniJaws: Clean up unused imports, simpify few things
- ▪ 1c052e1 OmniJaws: Add menu item to search for Chronus icons
- ▪ 38f509f Fix potential actionbar npe
- ▪ 303eae1 OmniJaws: manifest add DEFAULT category to activities
- ▪ 960d49f Revert "Remove Weather icon pack pref"
+ ▪ project packages/resources/devicesettings/
+ ▪ a765ae0 Add strings for fingerprint pocketmode
+
+ ▪ project vendor/cm/
+ ▪ 05d7713 Update Prebuilts
 
  ▼ 03/30/2017
 
 
+ ▪ project build/
+ ▪ 190f2fe Revert "ota: Remove cruft we don't care about"
+ ▪ fae00af Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash
+
+ ▪ project external/DUtils/
+ ▪ 93cc06a DUI: validate image size before attempting to set as icon [1/2]
+ ▪ 52f7f6d Kill App action: remove the killed app from Recents list
+
  ▪ project frameworks/base/
- ▪ 360e3fe Automatic translation import
+ ▪ abdfead BatteryTile: make the icon apply
+ ▪ ac183ba base: Apply roaming indicator changes instantly
+ ▪ 8e802de Allow to set a different battery style for tile and statusbar [1/2]
+ ▪ 61d4294 QS:Re-Enable Night Display Tile for devices that support it
+ ▪ 7d73fb8 Suspend Actions Qs Tile
  ▪ 1ed9957 DocumentsUI: make shapes great again
  ▪ 5e038ca Revert "[1/2] base: support separate encryption/lockscreen passwords"
  ▪ c895580 MountService: Don't run benchmarks after trimming
@@ -169,57 +200,38 @@
  ▪ c3c55c5 Fix NPE while performing NetworkStatsService.removeUidsLocked()
  ▪ 6151c0b4 Fix potential NULL dereference errors.
  ▪ f85af0b Frameworks/base: Fix old code in MediaPlayer
- ▪ 1e35ea2 Automatic translation import
 
  ▪ project packages/apps/AudioFX/
- ▪ 2cd4a6e Automatic translation import
 
  ▪ project packages/apps/Bluetooth/
- ▪ f4196b3 Automatic translation import
 
  ▪ project packages/apps/CMBugReport/
- ▪ c3b040e Automatic translation import
 
  ▪ project packages/apps/Calendar/
- ▪ 918bd81 Automatic translation import
 
  ▪ project packages/apps/Camera2/
- ▪ e96a1aa Automatic translation import
 
  ▪ project packages/apps/CellBroadcastReceiver/
- ▪ 17e633f Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ 6dbeeee Automatic translation import
+ ▪ project packages/apps/DUI/
+ ▪ b9c7e39 SmartBar editor: Let's use the blue!
+ ▪ 67522d0 Smartbar: expose SmartButton ripple color
 
  ▪ project packages/apps/Eleven/
- ▪ 3f8bab8 Automatic translation import
 
  ▪ project packages/apps/Email/
- ▪ 92c2de4 Automatic translation import
 
  ▪ project packages/apps/FMRadio/
- ▪ bd6dd73 Automatic translation import
 
  ▪ project packages/apps/Gello/
- ▪ a80d06a Automatic translation import
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 39d506d Automatic translation import
 
  ▪ project packages/apps/Profiles/
- ▪ 2a86c63 Automatic translation import
 
  ▪ project packages/apps/Recorder/
- ▪ b427c2f Automatic translation import
-
- ▪ project packages/apps/ResurrectionOTA/
- ▪ 772235a Automatic translation import
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ f96984b Automatic translation import
 
  ▪ project packages/apps/Settings/
+ ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
+ ▪ f2c4953  Allow to set a different battery style for tile and statusbar [2/2]
  ▪ bcf2a23 Themes: Expose SmartBar Dialogs from manifest
  ▪ 27f2caa Redesigned Substratum icon
  ▪ 3827d80 Expose styles in the manifest for themes
@@ -227,46 +239,40 @@
  ▪ c52bbe4 Suspend Actions as an Activity
  ▪ cb0a91c Revert "[2/2] settings: support setting a separate encryption password"
  ▪ 314bc9e Settings - Night Light brightness mode options [2/2]
- ▪ c7d0663 Automatic translation import
 
  ▪ project packages/apps/SetupWizard/
- ▪ cd33504 Automatic translation import
 
  ▪ project packages/apps/Snap/
- ▪ 13d43d7 Automatic translation import
 
  ▪ project packages/apps/Terminal/
- ▪ 44781da Automatic translation import
 
  ▪ project packages/apps/ThemeChooser/
- ▪ 39343e1 Automatic translation import
 
  ▪ project packages/apps/Trebuchet/
- ▪ defe11d Automatic translation import
 
  ▪ project packages/apps/TvSettings/
- ▪ 952bf19 Automatic translation import
 
  ▪ project packages/apps/UnifiedEmail/
- ▪ 251c7bd Automatic translation import
 
  ▪ project packages/inputmethods/LatinIME/
- ▪ 53836b2 Automatic translation import
 
  ▪ project packages/providers/DataUsageProvider/
- ▪ 149eb22 Automatic translation import
 
  ▪ project packages/providers/DownloadProvider/
- ▪ 4f6cf59 Automatic translation import
 
  ▪ project packages/providers/ThemesProvider/
- ▪ 6d5910a Automatic translation import
 
  ▪ project packages/providers/WeatherProvider/
- ▪ fd0d410 Automatic translation import
 
  ▪ project packages/resources/devicesettings/
- ▪ d653283 Automatic translation import
+
+ ▪ project packages/services/OmniJaws/
+ ▪ 79faaf8 Build as privileged and "fix" applying icon packs
+ ▪ 48ac8bd OmniJaws: Clean up unused imports, simpify few things
+ ▪ 1c052e1 OmniJaws: Add menu item to search for Chronus icons
+ ▪ 38f509f Fix potential actionbar npe
+ ▪ 303eae1 OmniJaws: manifest add DEFAULT category to activities
+ ▪ 960d49f Revert "Remove Weather icon pack pref"
 
  ▪ project vendor/cm/
  ▪ b73b386 Fix APNs for Cyprus
@@ -290,10 +296,8 @@
  ▪ 9184dd3 extract-utils: Fix handling of pulling src:dest pairs from dumps
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ 77358cc Automatic translation import
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
- ▪ 7c8a02e Automatic translation import
 
  ▼ 03/29/2017
 
@@ -302,29 +306,17 @@
  ▪ 79626b1 manifest: show download stats
  ▪ 3b9d716 manifest: show how much % localization is done!
 
- ▪ project bionic/
- ▪ 5848aaf libc: memcpy_base: Disable opt for certain targets
-
  ▪ project frameworks/base/
- ▪ 8f68368 Automatic translation import
-
- ▪ project packages/apps/DUI/
- ▪ d2872b6 DUI: SmartBar Color: Custom app color filter switch (2/3)
 
  ▪ project packages/apps/Dialer/
- ▪ 5c9a353 Automatic translation import
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 0a83aa9 Automatic translation import
 
  ▪ project packages/apps/ResurrectionOTA/
- ▪ 9e1b4b4 Automatic translation import
 
  ▪ project packages/apps/ResurrectionStats/
- ▪ 60aa1d2 Automatic translation import
 
  ▪ project packages/apps/Settings/
- ▪ 49bc1cc Automatic translation import
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ 0f51d79 JobService: Fix inital font application
@@ -333,64 +325,17 @@
  ▼ 03/28/2017
 
 
- ▪ project android/
- ▪ 0bcf782 crowdin: track the manifest
- ▪ 23bb331 manifest: add in a crowdin.xml
- ▪ 9f86f8b manifest: delete unnecessary file.
+ ▪ project bionic/
+ ▪ 5848aaf libc: memcpy_base: Disable opt for certain targets
 
  ▪ project frameworks/base/
  ▪ 2da0591 FWB: SmartBar Color: Custom app color filter switch (1/3)
- ▪ 37e82fc Automatic translation import
- ▪ 293d63a Automatic translation import
- ▪ c1391e8 Automatic translation import
- ▪ 4442f2c Automatic translation import
- ▪ 62535b2 Automatic translation import
- ▪ 55241a8 Core: Make tethering notifications fully translatable
- ▪ 918f9ba Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ 9272e56 Automatic translation import
- ▪ 4562381 Revert "Revert "Use TabLayout for DSDA tabs.""
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 32a6bd4 Automatic translation import
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ e78c53a Automatic translation import
+ ▪ project packages/apps/DUI/
+ ▪ d2872b6 DUI: SmartBar Color: Custom app color filter switch (2/3)
 
  ▪ project packages/apps/Settings/
  ▪ 3df288e Settings: SmartBar Color: Custom app color filter switch (3/3)
- ▪ d63bec1 Automatic translation import
- ▪ dc2e3e4 Automatic translation import
  ▪ 146385a Settings: fix build
  ▪ febccd5 Add VEGA Sky A910 (#729)
- ▪ ccfbedc1 Automatic translation import
- ▪ 3feebfe Fix zen mode allowed event preference summary.
- ▪ c9c382a Settings: Fix AOSP WiFi AP translations
- ▪ f1567f0 Settings: Fix german string
- ▪ 5f20a95 Automatic translation import
- ▪ 22b073d Automatic translation import
- ▪ 984ddc2 Automatic translation import
- ▪ 5a9c6e3 Automatic translation import
-
- ▼ 03/27/2017
-
-
- ▪ project hardware/ti/omap4/
- ▪ 71be556 Include common omap4 vendor repo if available.
- ▪ 02837a7 libEGL_POWERVR: Replace remaining LOCAL_LDLIBS (KK compatibility)
- ▪ 115c4a4 pvrsrvinit/libEGL_POWERVR: Actually ready needed vendor libraries
- ▪ aff0723 pvrsrvinit/libEGL_POWERVR: Link against generic library symlinks
- ▪ b132a61 pvrsrvinit: PVRScopeServices symlink lives in vendor/ti now
- ▪ 3c61176 pvrsrvinit: define the libraries to link against in LOCAL_LDFLAGS
- ▪ ca79788 symlinks: Move Gralloc's to vendor/ti (together with processing)
-
- ▪ project packages/apps/Settings/
- ▪ 74cd539 Automatic translation import
- ▪ 42a60ea Automatic translation import
- ▪ a0124fc Add j5 (#728)
-
- ▪ project packages/apps/Trebuchet/
- ▪ 315b2f9 Moving a few testing classes to a separate package
- ▪ 3c58753 Trebuchet: Remove ambient SDK leftover
 
