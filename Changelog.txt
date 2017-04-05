@@ -2,12 +2,42 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/05/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 343e06a msm8956: Another denial
+
+ ▪ project frameworks/base/
+ ▪ f0757114 Fix permission description string for DE.
+ ▪ f143cd6 Merge pull request #188 from ashoksoni/changes
+ ▪ 15f89f6 Fix Bluetooth battery icon after reboot
+ ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
+ ▪ eda1e77 SettingsProvider: Update icon.
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ ba80452 Fix reboot issue after aboot update 7.3.9
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ 673547e CaptureUI: fix crash on setOrientation
+
+ ▪ project vendor/xiaomi/
+ ▪ 386ff93 kenzo: Add modified qcrilmsgtunnel
+
  ▼ 04/04/2017
 
 
  ▪ project frameworks/base/
- ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
- ▪ eda1e77 SettingsProvider: Update icon.
  ▪ 3f2e218 Smartbar pixel animation: Ability to customize the dots [1/3]
 
  ▪ project hardware/ti/omap4/
@@ -42,6 +72,14 @@
  ▪ 07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"
  ▪ 06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.
  ▪ d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied
+ ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
+ ▪ dbe532a board/init: Common PVR KM build target for reuse by devices
+ ▪ 492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere
+ ▪ 42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic
+ ▪ 55bfee6 libpower: Avoid overwriting custom user frequencies.
+ ▪ 357aaac libpower: Initialize inited variable.
+ ▪ 5ae1155 libpower: Add optional support for API 0.3
+ ▪ c55f2bb Add OMAP PowerHAL
 
  ▪ project packages/apps/DUI/
  ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
@@ -51,15 +89,10 @@
  ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
  ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
  ▪ project packages/apps/Settings/
  ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
 
  ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
  ▪ a8285ad Snap: Fix effect and picture program overlay buttons
  ▪ 65aa6fd Always apply frame size reduction to panorama pictures
  ▪ 9e8d919 Never ignore finger swipes in gallery mode
@@ -92,16 +125,6 @@
  ▪ cf709b8 Slim recent membar colors settings: obey themes [1/2]
  ▪ 76f94b8 Fix partial screenshot not working when dragging from left or top border
  ▪ 6ba4bf4 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
-
- ▪ project hardware/ti/omap4/
- ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
- ▪ dbe532a board/init: Common PVR KM build target for reuse by devices
- ▪ 492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere
- ▪ 42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic
- ▪ 55bfee6 libpower: Avoid overwriting custom user frequencies.
- ▪ 357aaac libpower: Initialize inited variable.
- ▪ 5ae1155 libpower: Add optional support for API 0.3
- ▪ c55f2bb Add OMAP PowerHAL
 
  ▪ project packages/apps/DUI/
  ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
@@ -140,6 +163,7 @@
  ▪ project packages/apps/Settings/
  ▪ f996487 Update rr_strings.xml
  ▪ fce0d71 Add more j5 models (#734)
+ ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
 
  ▪ project packages/providers/CalendarProvider/
  ▪ 94029d1 New Material icon
@@ -180,13 +204,15 @@
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
  ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
  ▪ 27cc5fe Fix Strings and whitespaces
  ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
 
  ▪ project packages/resources/devicesettings/
  ▪ a765ae0 Add strings for fingerprint pocketmode
+
+ ▪ project vendor/cm/
+ ▪ 05d7713 Update Prebuilts
 
  ▪ project vendor/xiaomi/
  ▪ 8221713 kenzo: Remove unused cnss blob
@@ -204,6 +230,10 @@
  ▪ 702499e msm8956: Remove unused cnss
  ▪ ed19344 msm8956: Fox fingerprintd denial
  ▪ 29e7cd0 msm8956-common: Disable Link Layer Statistics
+
+ ▪ project external/DUtils/
+ ▪ 93cc06a DUI: validate image size before attempting to set as icon [1/2]
+ ▪ 52f7f6d Kill App action: remove the killed app from Recents list
 
  ▪ project frameworks/base/
  ▪ 42b1343 Themes: Expose Keyboard Shortcuts Dialog
@@ -231,17 +261,19 @@
  ▪ 79eb0c6 fix base path
  ▪ 6db12d4 defconfig: Change Stack Protector to 'REGULAR'
 
+ ▪ project packages/apps/DUI/
+ ▪ b9c7e39 SmartBar editor: Let's use the blue!
+ ▪ 67522d0 Smartbar: expose SmartButton ripple color
+
  ▪ project packages/apps/Settings/
  ▪ 5875669 Fix Magisk and re-arrange themes and Magisk settings shortcut to be below RR configuration.
  ▪ 44aca00 String Updates
  ▪ a5e2537 Also Update RR dashboard theme icon
  ▪ 3e2370d StorageSettings: Fix Color derp
+ ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ ae4821c Fix failed authorization toast on restartService
-
- ▪ project vendor/cm/
- ▪ 05d7713 Update Prebuilts
 
  ▼ 03/30/2017
 
@@ -249,10 +281,6 @@
  ▪ project build/
  ▪ 190f2fe Revert "ota: Remove cruft we don't care about"
  ▪ fae00af Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash
-
- ▪ project external/DUtils/
- ▪ 93cc06a DUI: validate image size before attempting to set as icon [1/2]
- ▪ 52f7f6d Kill App action: remove the killed app from Recents list
 
  ▪ project frameworks/base/
  ▪ ac183ba base: Apply roaming indicator changes instantly
@@ -281,10 +309,6 @@
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/DUI/
- ▪ b9c7e39 SmartBar editor: Let's use the blue!
- ▪ 67522d0 Smartbar: expose SmartButton ripple color
-
  ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Eleven/
@@ -306,7 +330,6 @@
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
  ▪ f2c4953  Allow to set a different battery style for tile and statusbar [2/2]
  ▪ bcf2a23 Themes: Expose SmartBar Dialogs from manifest
  ▪ 27f2caa Redesigned Substratum icon
@@ -374,30 +397,4 @@
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 03/29/2017
-
-
- ▪ project android/
- ▪ 79626b1 manifest: show download stats
- ▪ 3b9d716 manifest: show how much % localization is done!
-
- ▪ project bionic/
- ▪ 5848aaf libc: memcpy_base: Disable opt for certain targets
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 0f51d79 JobService: Fix inital font application
- ▪ bed5f44 JobService: fix initial theme dir creation
 
