@@ -12,24 +12,14 @@
  ▪ f0757114 Fix permission description string for DE.
  ▪ f143cd6 Merge pull request #188 from ashoksoni/changes
  ▪ 15f89f6 Fix Bluetooth battery icon after reboot
- ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
- ▪ eda1e77 SettingsProvider: Update icon.
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ ba80452 Fix reboot issue after aboot update 7.3.9
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
  ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
+ ▪ 6fb2403 Fix magisk manager settings location
 
  ▪ project vendor/xiaomi/
  ▪ 386ff93 kenzo: Add modified qcrilmsgtunnel
@@ -38,6 +28,8 @@
 
 
  ▪ project frameworks/base/
+ ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
+ ▪ eda1e77 SettingsProvider: Update icon.
  ▪ 3f2e218 Smartbar pixel animation: Ability to customize the dots [1/3]
 
  ▪ project hardware/ti/omap4/
@@ -72,42 +64,26 @@
  ▪ 07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"
  ▪ 06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.
  ▪ d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied
- ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
- ▪ dbe532a board/init: Common PVR KM build target for reuse by devices
- ▪ 492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere
- ▪ 42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic
- ▪ 55bfee6 libpower: Avoid overwriting custom user frequencies.
- ▪ 357aaac libpower: Initialize inited variable.
- ▪ 5ae1155 libpower: Add optional support for API 0.3
- ▪ c55f2bb Add OMAP PowerHAL
 
  ▪ project packages/apps/DUI/
  ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
  ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
- ▪ e02304c OmniSwitch: add missing docked task indicator for other views
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
  ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
 
  ▪ project packages/apps/Snap/
+ ▪ 673547e CaptureUI: fix crash on setOrientation
  ▪ a8285ad Snap: Fix effect and picture program overlay buttons
  ▪ 65aa6fd Always apply frame size reduction to panorama pictures
  ▪ 9e8d919 Never ignore finger swipes in gallery mode
  ▪ b9da2b0 Fix record time sometimes not seen
-
- ▪ project packages/providers/MediaProvider/
- ▪ e0e756f New Material icon
-
- ▪ project packages/services/Mms/
- ▪ de8277e Add Material icon & app label
-
- ▪ project packages/services/Telephony/
- ▪ e14278b Revert "Add support to launch call barring"
- ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
- ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
 
  ▼ 04/03/2017
 
@@ -126,6 +102,16 @@
  ▪ 76f94b8 Fix partial screenshot not working when dragging from left or top border
  ▪ 6ba4bf4 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
 
+ ▪ project hardware/ti/omap4/
+ ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
+ ▪ dbe532a board/init: Common PVR KM build target for reuse by devices
+ ▪ 492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere
+ ▪ 42c669c SGX-BIN: buildvars: Compile PVR KM with -fno-pic
+ ▪ 55bfee6 libpower: Avoid overwriting custom user frequencies.
+ ▪ 357aaac libpower: Initialize inited variable.
+ ▪ 5ae1155 libpower: Add optional support for API 0.3
+ ▪ c55f2bb Add OMAP PowerHAL
+
  ▪ project packages/apps/DUI/
  ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
  ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
@@ -137,6 +123,8 @@
  ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
 
  ▪ project packages/apps/OmniSwitch/
+ ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
+ ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
  ▪ project packages/apps/Settings/
  ▪ c1ebfd6 Settings:Pulse: allow setting fading blocks opacity [3/3]
@@ -145,6 +133,17 @@
  ▪ bbddeeb SlimRecents Membar Colors: Obey Themes when disabled [2/2]
  ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
  ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
+
+ ▪ project packages/providers/MediaProvider/
+ ▪ e0e756f New Material icon
+
+ ▪ project packages/services/Mms/
+ ▪ de8277e Add Material icon & app label
+
+ ▪ project packages/services/Telephony/
+ ▪ e14278b Revert "Add support to launch call barring"
+ ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
+ ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
 
  ▪ project vendor/cm/
  ▪ c09a03a rr: tools: improve changelog script
@@ -163,7 +162,6 @@
  ▪ project packages/apps/Settings/
  ▪ f996487 Update rr_strings.xml
  ▪ fce0d71 Add more j5 models (#734)
- ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
 
  ▪ project packages/providers/CalendarProvider/
  ▪ 94029d1 New Material icon
@@ -204,15 +202,10 @@
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
+ ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
  ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
  ▪ 27cc5fe Fix Strings and whitespaces
  ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
-
- ▪ project packages/resources/devicesettings/
- ▪ a765ae0 Add strings for fingerprint pocketmode
-
- ▪ project vendor/cm/
- ▪ 05d7713 Update Prebuilts
 
  ▪ project vendor/xiaomi/
  ▪ 8221713 kenzo: Remove unused cnss blob
@@ -231,14 +224,9 @@
  ▪ ed19344 msm8956: Fox fingerprintd denial
  ▪ 29e7cd0 msm8956-common: Disable Link Layer Statistics
 
- ▪ project external/DUtils/
- ▪ 93cc06a DUI: validate image size before attempting to set as icon [1/2]
- ▪ 52f7f6d Kill App action: remove the killed app from Recents list
-
  ▪ project frameworks/base/
  ▪ 42b1343 Themes: Expose Keyboard Shortcuts Dialog
  ▪ 9080b84 Statusbar Weather Image: Make it update when iconpacks are changed
- ▪ abdfead BatteryTile: make the icon apply
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 65c6eae kenzo: Use caf hall driver
@@ -261,140 +249,18 @@
  ▪ 79eb0c6 fix base path
  ▪ 6db12d4 defconfig: Change Stack Protector to 'REGULAR'
 
- ▪ project packages/apps/DUI/
- ▪ b9c7e39 SmartBar editor: Let's use the blue!
- ▪ 67522d0 Smartbar: expose SmartButton ripple color
-
  ▪ project packages/apps/Settings/
  ▪ 5875669 Fix Magisk and re-arrange themes and Magisk settings shortcut to be below RR configuration.
  ▪ 44aca00 String Updates
  ▪ a5e2537 Also Update RR dashboard theme icon
  ▪ 3e2370d StorageSettings: Fix Color derp
- ▪ ca04793 DUI: validate image size before attempting to set as icon [2/2]
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ ae4821c Fix failed authorization toast on restartService
 
- ▼ 03/30/2017
-
-
- ▪ project build/
- ▪ 190f2fe Revert "ota: Remove cruft we don't care about"
- ▪ fae00af Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash
-
- ▪ project frameworks/base/
- ▪ ac183ba base: Apply roaming indicator changes instantly
- ▪ 8e802de Allow to set a different battery style for tile and statusbar [1/2]
- ▪ 61d4294 QS:Re-Enable Night Display Tile for devices that support it
- ▪ 7d73fb8 Suspend Actions Qs Tile
- ▪ 1ed9957 DocumentsUI: make shapes great again
- ▪ 5e038ca Revert "[1/2] base: support separate encryption/lockscreen passwords"
- ▪ c895580 MountService: Don't run benchmarks after trimming
- ▪ 4c1bf3c BatteryService: add dash charging support
- ▪ 0b7f30e Fw_base - Night auto brightness: restore user brightness values also after reboot
- ▪ 46aba72 Fw_base - Night Light brightness mode options [1/2]
- ▪ c3c55c5 Fix NPE while performing NetworkStatsService.removeUidsLocked()
- ▪ 6151c0b4 Fix potential NULL dereference errors.
- ▪ f85af0b Frameworks/base: Fix old code in MediaPlayer
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gello/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ f2c4953  Allow to set a different battery style for tile and statusbar [2/2]
- ▪ bcf2a23 Themes: Expose SmartBar Dialogs from manifest
- ▪ 27f2caa Redesigned Substratum icon
- ▪ 3827d80 Expose styles in the manifest for themes
- ▪ 79d3b9b Expose "ALL" hardcoded and @android colors
- ▪ c52bbe4 Suspend Actions as an Activity
- ▪ cb0a91c Revert "[2/2] settings: support setting a separate encryption password"
- ▪ 314bc9e Settings - Night Light brightness mode options [2/2]
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/ThemeChooser/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/ThemesProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
  ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/OmniJaws/
- ▪ 79faaf8 Build as privileged and "fix" applying icon packs
- ▪ 48ac8bd OmniJaws: Clean up unused imports, simpify few things
- ▪ 1c052e1 OmniJaws: Add menu item to search for Chronus icons
- ▪ 38f509f Fix potential actionbar npe
- ▪ 303eae1 OmniJaws: manifest add DEFAULT category to activities
- ▪ 960d49f Revert "Remove Weather icon pack pref"
+ ▪ a765ae0 Add strings for fingerprint pocketmode
 
  ▪ project vendor/cm/
- ▪ b73b386 Fix APNs for Cyprus
- ▪ 089838d extract_utils: support extracting directly from an ota zip
- ▪ 9fa9f1f cm: remove special access to unused cmfm
- ▪ 12011bf cm: allow apps to find profile manager service
- ▪ 815c85a cm: build: Don't convert patchset to int if it's None
- ▪ 2b4fe98 cm: build: Fix cherry picking specific patchsets
- ▪ 58e0449 Make a data only config
- ▪ ecdbb93 APN: Fix TalkTalk
- ▪ 02ddc58 apn: Updating TelkomSA from 8ta South Africa APN
- ▪ 3e253ac repopick: encode commit subjects in utf-8 for printing
- ▪ b6087b8 overlay: Disable recovery updates
- ▪ e8f46e3 apns: Remove proxy for the "TIM WAP" APN
- ▪ f4c483e Add TvSettings to common tv config.
- ▪ 739b20c vendor: Add templates for proprietary extraction scripts
- ▪ efc99d4 extract_utils: Fix locale issue with sort
- ▪ b93ec4c vendor_cm : update Fastweb apn
- ▪ 04ffdec apns: Add Perfectum
- ▪ 3c2dada cm: build: tasks: Remove BUILD_TINY_ANDROID check
- ▪ 9184dd3 extract-utils: Fix handling of pulling src:dest pairs from dumps
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ 05d7713 Update Prebuilts
 
