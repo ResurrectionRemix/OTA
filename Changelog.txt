@@ -2,11 +2,54 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/07/2017
+
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 099b549 kenzo: Pin qcrilmsgtunnel
+ ▪ 7c813d0 kenzo: Remove unused cnss blobs
+ ▪ 6b234ef kenzo: Disable fluence on voicerec
+ ▪ fad9d1f kenzo: Use stock Acdb id's
+ ▪ c19b42f kenzo: Enable 24bit offload
+ ▪ 02a6a06 kenzo: All hail Dominator
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 4aec783 msm8956: Remove unused cnss
+ ▪ e8a1cb4 msm8956: Fix fingerprintd denial
+ ▪ 599d495 msm8956: Update power conf from caf
+ ▪ 53ca00f msm8956-common: Nuke sdcardfs
+
+ ▪ project frameworks/base/
+ ▪ dc5c93a SystemUI: Fix "no notifications" font size
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ 8821cae Consider Q-TELECOM Greece as non-roaming
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 54654ae Fix spelling error
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project vendor/xiaomi/
+ ▪ 44c024b kenzo: Add modified qcrilmsgtunnel
+ ▪ 0d21a2c kenzo: Remove unused cnss blob
+ ▪ f73045d kenzo: Use OSS Camera HAL
+
+ ▼ 04/06/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 6fb2403 Fix magisk manager settings location
+
  ▼ 04/05/2017
 
 
- ▪ project device/xiaomi/msm8956-common/
- ▪ 343e06a msm8956: Another denial
+ ▪ project device/xiaomi/kenzo/
+ ▪ 30aac4d kenzo: Add kate to ota assert devices
 
  ▪ project frameworks/base/
  ▪ f0757114 Fix permission description string for DE.
@@ -18,11 +61,16 @@
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Settings/
- ▪ 6fb2403 Fix magisk manager settings location
+ ▪ project packages/apps/OmniSwitch/
 
- ▪ project vendor/xiaomi/
- ▪ 386ff93 kenzo: Add modified qcrilmsgtunnel
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ 673547e CaptureUI: fix crash on setOrientation
 
  ▼ 04/04/2017
 
@@ -64,32 +112,42 @@
  ▪ 07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"
  ▪ 06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.
  ▪ d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied
+ ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
 
  ▪ project packages/apps/DUI/
  ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
  ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
 
  ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
+ ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
+ ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
  ▪ project packages/apps/Settings/
  ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
 
  ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
  ▪ a8285ad Snap: Fix effect and picture program overlay buttons
  ▪ 65aa6fd Always apply frame size reduction to panorama pictures
  ▪ 9e8d919 Never ignore finger swipes in gallery mode
  ▪ b9da2b0 Fix record time sometimes not seen
 
+ ▪ project packages/providers/MediaProvider/
+ ▪ e0e756f New Material icon
+
+ ▪ project packages/services/Mms/
+ ▪ de8277e Add Material icon & app label
+
+ ▪ project packages/services/Telephony/
+ ▪ e14278b Revert "Add support to launch call barring"
+ ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
+ ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
+
  ▼ 04/03/2017
 
 
  ▪ project device/xiaomi/msm8956-common/
- ▪ f9887a3 msm8956: Use Snapdragon LLVM toolchain
+ ▪ 5a5c33d msm8956: Use Snapdragon LLVM toolchain
+ ▪ 5431943 Revert "msm8956: Let cameraservice close native handles"
 
  ▪ project external/DUtils/
  ▪ e4af8c6 Smartbar media arrows: more code improvements [2/2]
@@ -112,6 +170,9 @@
  ▪ 5ae1155 libpower: Add optional support for API 0.3
  ▪ c55f2bb Add OMAP PowerHAL
 
+ ▪ project packages/apps/CarrierConfig/
+ ▪ 65fe5ff Consider O2 and E-Plus as non-roaming
+
  ▪ project packages/apps/DUI/
  ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
  ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
@@ -123,8 +184,6 @@
  ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
- ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
  ▪ project packages/apps/Settings/
  ▪ c1ebfd6 Settings:Pulse: allow setting fading blocks opacity [3/3]
@@ -134,22 +193,18 @@
  ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
  ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
 
- ▪ project packages/providers/MediaProvider/
- ▪ e0e756f New Material icon
-
- ▪ project packages/services/Mms/
- ▪ de8277e Add Material icon & app label
-
- ▪ project packages/services/Telephony/
- ▪ e14278b Revert "Add support to launch call barring"
- ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
- ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
-
  ▪ project vendor/cm/
  ▪ c09a03a rr: tools: improve changelog script
 
  ▼ 04/02/2017
 
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 7786d64 kenzo: Update blob list for OSS camera HAL
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 5afaa07 msm8956: camera: Fix compatibility problem with old binary
+ ▪ 459f719 msm8956: Import OSS camera HAL
 
  ▪ project frameworks/base/
  ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
@@ -206,57 +261,6 @@
  ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
  ▪ 27cc5fe Fix Strings and whitespaces
  ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
-
- ▪ project vendor/xiaomi/
- ▪ 8221713 kenzo: Remove unused cnss blob
-
- ▼ 03/31/2017
-
-
- ▪ project android/
- ▪ bf14f32 Revert "cm: Remove ahbottomnavigation library"
-
- ▪ project device/xiaomi/kenzo/
- ▪ 8f857c6 kenzo: Remove unused cnss blobs
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 702499e msm8956: Remove unused cnss
- ▪ ed19344 msm8956: Fox fingerprintd denial
- ▪ 29e7cd0 msm8956-common: Disable Link Layer Statistics
-
- ▪ project frameworks/base/
- ▪ 42b1343 Themes: Expose Keyboard Shortcuts Dialog
- ▪ 9080b84 Statusbar Weather Image: Make it update when iconpacks are changed
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 65c6eae kenzo: Use caf hall driver
- ▪ a490919 kenzo: enable_spk_ext_pa STFU!!
- ▪ 4903bf1 kenzo: Remove useless charging debugging
- ▪ 81f8f20 kenzo: Enable cpuset
- ▪ 96115e6 cpuset: Make cpusets restore on hotplug
- ▪ 418925c cpuset: Add allow_attach hook for cpusets on android.
- ▪ ffe3477 kenzo: Disable goodix
- ▪ 0e5ec81 include/linux/compiler-gcc.h: improve __visible documentation
- ▪ 699e818 include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
- ▪ 31c0384 compiler.h: add support for function attribute assume_aligned
- ▪ cead8e1 compiler-gcc: disable -ftracer for __noclone functions
- ▪ c606956 compiler-gcc: integrate the various compiler-gcc[345].h files
- ▪ 6b67509 media: Use balika code to support kate cam sensor
- ▪ d70de33 derp
- ▪ efd353b Revert "fingerprint: Initial Goodix Support"
- ▪ 659ef6e media: Add support for s5k5e8_yx13 sensor
- ▪ 0f8b2c8 input: Handle an additional framebuffer hint
- ▪ 79eb0c6 fix base path
- ▪ 6db12d4 defconfig: Change Stack Protector to 'REGULAR'
-
- ▪ project packages/apps/Settings/
- ▪ 5875669 Fix Magisk and re-arrange themes and Magisk settings shortcut to be below RR configuration.
- ▪ 44aca00 String Updates
- ▪ a5e2537 Also Update RR dashboard theme icon
- ▪ 3e2370d StorageSettings: Fix Color derp
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ ae4821c Fix failed authorization toast on restartService
 
  ▪ project packages/resources/devicesettings/
  ▪ a765ae0 Add strings for fingerprint pocketmode
