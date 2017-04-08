@@ -2,6 +2,22 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/08/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ c63e0e1 msm8956: nuke that waste of space :D
+ ▪ 50eabad msm8956: One more denial ;_;
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 5e46162 prima: Roll back to LA.BR.1.3.3_rb2.26
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 04/07/2017
 
 
@@ -22,6 +38,9 @@
  ▪ project frameworks/base/
  ▪ dc5c93a SystemUI: Fix "no notifications" font size
 
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 6584bf3 panel dtsi changes
+
  ▪ project packages/apps/CarrierConfig/
  ▪ 8821cae Consider Q-TELECOM Greece as non-roaming
 
@@ -39,12 +58,6 @@
  ▪ 0d21a2c kenzo: Remove unused cnss blob
  ▪ f73045d kenzo: Use OSS Camera HAL
 
- ▼ 04/06/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 6fb2403 Fix magisk manager settings location
-
  ▼ 04/05/2017
 
 
@@ -61,16 +74,8 @@
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
  ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
+ ▪ 6fb2403 Fix magisk manager settings location
 
  ▼ 04/04/2017
 
@@ -112,35 +117,26 @@
  ▪ 07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"
  ▪ 06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.
  ▪ d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied
- ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
 
  ▪ project packages/apps/DUI/
  ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
  ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
- ▪ e02304c OmniSwitch: add missing docked task indicator for other views
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
  ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
 
  ▪ project packages/apps/Snap/
+ ▪ 673547e CaptureUI: fix crash on setOrientation
  ▪ a8285ad Snap: Fix effect and picture program overlay buttons
  ▪ 65aa6fd Always apply frame size reduction to panorama pictures
  ▪ 9e8d919 Never ignore finger swipes in gallery mode
  ▪ b9da2b0 Fix record time sometimes not seen
-
- ▪ project packages/providers/MediaProvider/
- ▪ e0e756f New Material icon
-
- ▪ project packages/services/Mms/
- ▪ de8277e Add Material icon & app label
-
- ▪ project packages/services/Telephony/
- ▪ e14278b Revert "Add support to launch call barring"
- ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
- ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
 
  ▼ 04/03/2017
 
@@ -170,9 +166,6 @@
  ▪ 5ae1155 libpower: Add optional support for API 0.3
  ▪ c55f2bb Add OMAP PowerHAL
 
- ▪ project packages/apps/CarrierConfig/
- ▪ 65fe5ff Consider O2 and E-Plus as non-roaming
-
  ▪ project packages/apps/DUI/
  ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
  ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
@@ -184,6 +177,8 @@
  ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
 
  ▪ project packages/apps/OmniSwitch/
+ ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
+ ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
  ▪ project packages/apps/Settings/
  ▪ c1ebfd6 Settings:Pulse: allow setting fading blocks opacity [3/3]
@@ -192,6 +187,17 @@
  ▪ bbddeeb SlimRecents Membar Colors: Obey Themes when disabled [2/2]
  ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
  ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
+
+ ▪ project packages/providers/MediaProvider/
+ ▪ e0e756f New Material icon
+
+ ▪ project packages/services/Mms/
+ ▪ de8277e Add Material icon & app label
+
+ ▪ project packages/services/Telephony/
+ ▪ e14278b Revert "Add support to launch call barring"
+ ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
+ ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
 
  ▪ project vendor/cm/
  ▪ c09a03a rr: tools: improve changelog script
@@ -210,6 +216,9 @@
  ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
  ▪ e021aa8 LTE Tile: Make it Visible for Msim As well
 
+ ▪ project packages/apps/CarrierConfig/
+ ▪ 65fe5ff Consider O2 and E-Plus as non-roaming
+
  ▪ project packages/apps/DUI/
  ▪ 13279b3 Make Smartbar Pixel Animation Durations Customizable [2/3]
  ▪ 6f4e145 Unlock Home and Back Buttons from Smartbar
@@ -226,45 +235,4 @@
 
  ▪ project packages/wallpapers/LivePicker/
  ▪ bf06fdf New Material icon
-
- ▼ 04/01/2017
-
-
- ▪ project frameworks/base/
- ▪ 05a13f1 Better QS detail clip animation
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ ab780a8 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.14' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ d062bdc Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.9' into cm-14.1-caf-8994
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ d8958fb [dnm]: Merge dtsi changes from latest miui
-
- ▪ project packages/apps/CMParts/
- ▪ 780f4ad CMParts:Make Button Settings and Hardware Key Settings Non Searchable
-
- ▪ project packages/apps/DUI/
- ▪ 84da14e SmartBar: show arrows for next/previous track when playing audio [1/2]
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 07ed706 Settings: Make Smartbar Pixel Animation Durations Customizable [3/3]
- ▪ 2903195 SmartBar: show arrows for next/previous track when playing audio [2/2]
- ▪ 27cc5fe Fix Strings and whitespaces
- ▪ 0341a61 Add Maintainer for Vibe P1a42 (#733)
-
- ▪ project packages/resources/devicesettings/
- ▪ a765ae0 Add strings for fingerprint pocketmode
-
- ▪ project vendor/cm/
- ▪ 05d7713 Update Prebuilts
 
