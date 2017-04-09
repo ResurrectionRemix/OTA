@@ -2,6 +2,28 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/09/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 1aca0f3 common: Enough is enough
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 25c1f71 staging: prima: Fix non-debug build and switch to it
+ ▪ 01c4158 net: rmnet_data: Silence "Unkown IOCTL" log spam
+ ▪ 5e46162 prima: Roll back to LA.BR.1.3.3_rb2.26
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3474907 Remove my name from A6020, osprey and falcon (#739)
+
  ▼ 04/08/2017
 
 
@@ -10,9 +32,7 @@
  ▪ 50eabad msm8956: One more denial ;_;
 
  ▪ project frameworks/base/
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 5e46162 prima: Roll back to LA.BR.1.3.3_rb2.26
+ ▪ dc5c93a SystemUI: Fix "no notifications" font size
 
  ▪ project packages/apps/Dialer/
 
@@ -36,7 +56,6 @@
  ▪ 53ca00f msm8956-common: Nuke sdcardfs
 
  ▪ project frameworks/base/
- ▪ dc5c93a SystemUI: Fix "no notifications" font size
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 6584bf3 panel dtsi changes
@@ -58,6 +77,19 @@
  ▪ 0d21a2c kenzo: Remove unused cnss blob
  ▪ f73045d kenzo: Use OSS Camera HAL
 
+ ▼ 04/06/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ cca216e Revert "Bluetooth: handle opening incoming APK files"
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 6fb2403 Fix magisk manager settings location
+
  ▼ 04/05/2017
 
 
@@ -68,22 +100,37 @@
  ▪ f0757114 Fix permission description string for DE.
  ▪ f143cd6 Merge pull request #188 from ashoksoni/changes
  ▪ 15f89f6 Fix Bluetooth battery icon after reboot
+ ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
+ ▪ eda1e77 SettingsProvider: Update icon.
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ ba80452 Fix reboot issue after aboot update 7.3.9
 
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ 6fb2403 Fix magisk manager settings location
+
+ ▪ project packages/apps/Snap/
+ ▪ 673547e CaptureUI: fix crash on setOrientation
+ ▪ a8285ad Snap: Fix effect and picture program overlay buttons
+ ▪ 65aa6fd Always apply frame size reduction to panorama pictures
+ ▪ 9e8d919 Never ignore finger swipes in gallery mode
+ ▪ b9da2b0 Fix record time sometimes not seen
 
  ▼ 04/04/2017
 
 
  ▪ project frameworks/base/
- ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
- ▪ eda1e77 SettingsProvider: Update icon.
  ▪ 3f2e218 Smartbar pixel animation: Ability to customize the dots [1/3]
+ ▪ a0e34fd FWB:Pulse: allow setting fading blocks opacity [1/3]
+
+ ▪ project hardware/qcom/media-caf/msm8960/
+ ▪ f462f4d mm-video-v4l2: vdec: add safety checks for freeing buffers
+ ▪ b040ed5 mm-video-v4l2: venc: add safety checks for freeing buffers
 
  ▪ project hardware/ti/omap4/
  ▪ 86ea9e8 omap4: add more common build properties
@@ -117,46 +164,6 @@
  ▪ 07c4577 Revert "camera: call camera CFLAGS should use CAMERAHAL_CFLAGS"
  ▪ 06ce617 omap4: Set TARGET_FORCE_SCREENSHOT_CPU_PATH.
  ▪ d1f876f SGX-BIN: build: android: Don't override PLATFORM_VERSION if supplied
-
- ▪ project packages/apps/DUI/
- ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
- ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
-
- ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
- ▪ a8285ad Snap: Fix effect and picture program overlay buttons
- ▪ 65aa6fd Always apply frame size reduction to panorama pictures
- ▪ 9e8d919 Never ignore finger swipes in gallery mode
- ▪ b9da2b0 Fix record time sometimes not seen
-
- ▼ 04/03/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 5a5c33d msm8956: Use Snapdragon LLVM toolchain
- ▪ 5431943 Revert "msm8956: Let cameraservice close native handles"
-
- ▪ project external/DUtils/
- ▪ e4af8c6 Smartbar media arrows: more code improvements [2/2]
-
- ▪ project frameworks/base/
- ▪ a0e34fd FWB:Pulse: allow setting fading blocks opacity [1/3]
- ▪ 1a7d654 Switch to Enable or disable Vol up to disable overlays during boot [1/2]
- ▪ f0b8485 Hold "volume up" during boot to disable all overlays
- ▪ cf709b8 Slim recent membar colors settings: obey themes [1/2]
- ▪ 76f94b8 Fix partial screenshot not working when dragging from left or top border
- ▪ 6ba4bf4 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
-
- ▪ project hardware/ti/omap4/
  ▪ eb70ea8 SGX-BIN: build: android: Add fallback PLATFORM_VERSION mechanism
  ▪ dbe532a board/init: Common PVR KM build target for reuse by devices
  ▪ 492610c SGX-BIN: build/srvkm: Drop SGX core/version suffixes everywhere
@@ -167,26 +174,17 @@
  ▪ c55f2bb Add OMAP PowerHAL
 
  ▪ project packages/apps/DUI/
+ ▪ da18051 Add Chrome to MediaMonitor Blacklist Change-Id: Iabb2ef209ed4ca8b98da5260df107433eb540308 Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 29d8861 Smartbar pixel animation: Ability to customize the dots [2/3]
  ▪ 645caf2 Pulse: allow setting fading blocks opacity [2/3]
- ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
- ▪ 11115e9 Smartbar media arrows: fix it hiding sometimes
- ▪ 107d69c SmartBar Media Arrows: add streaming music support
- ▪ a687b71 Smartbar media arrows: more code improvements [1/2]
- ▪ e6ddfe6 Smartbar media arrows: more code improvements
- ▪ 4b13131 Smartbar track arrows: code cleanup and don't show them on video playing
- ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
 
  ▪ project packages/apps/OmniSwitch/
  ▪ 2828e47 OmniSwitch: reduce vertical padding on app icons
  ▪ e02304c OmniSwitch: add missing docked task indicator for other views
 
  ▪ project packages/apps/Settings/
+ ▪ d3ad76f Smartbar pixel animation: Ability to customize the dots [3/3]
  ▪ c1ebfd6 Settings:Pulse: allow setting fading blocks opacity [3/3]
- ▪ be3d947 Add Reset Button to Pixel Animation Duration Settings
- ▪ 6f35d50 Switch to Enable or disable Vol up to disable overlays during boot [2/2]
- ▪ bbddeeb SlimRecents Membar Colors: Obey Themes when disabled [2/2]
- ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
- ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
 
  ▪ project packages/providers/MediaProvider/
  ▪ e0e756f New Material icon
@@ -199,40 +197,45 @@
  ▪ 895d764 Revert "CallFeatureSettings: Only show call barring option if QTI package installed"
  ▪ db1a9ac Telephony: AIRPLANE_MODE_ON has moved
 
- ▪ project vendor/cm/
- ▪ c09a03a rr: tools: improve changelog script
+ ▼ 04/03/2017
 
- ▼ 04/02/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 7786d64 kenzo: Update blob list for OSS camera HAL
 
  ▪ project device/xiaomi/msm8956-common/
- ▪ 5afaa07 msm8956: camera: Fix compatibility problem with old binary
- ▪ 459f719 msm8956: Import OSS camera HAL
+ ▪ 5a5c33d msm8956: Use Snapdragon LLVM toolchain
+ ▪ 5431943 Revert "msm8956: Let cameraservice close native handles"
+
+ ▪ project external/DUtils/
+ ▪ e4af8c6 Smartbar media arrows: more code improvements [2/2]
 
  ▪ project frameworks/base/
- ▪ 1e21950 Smarbar Pixel Navbar Animation Duration Settings [1/3]
- ▪ e021aa8 LTE Tile: Make it Visible for Msim As well
+ ▪ 1a7d654 Switch to Enable or disable Vol up to disable overlays during boot [1/2]
+ ▪ f0b8485 Hold "volume up" during boot to disable all overlays
+ ▪ cf709b8 Slim recent membar colors settings: obey themes [1/2]
+ ▪ 76f94b8 Fix partial screenshot not working when dragging from left or top border
+ ▪ 6ba4bf4 SmartBar: allow set custom buttons opacity when Pulse is active [3/3]
 
  ▪ project packages/apps/CarrierConfig/
  ▪ 65fe5ff Consider O2 and E-Plus as non-roaming
 
  ▪ project packages/apps/DUI/
+ ▪ 0ac9a97 Improve Pulse and MediaMonitor reliability
+ ▪ 11115e9 Smartbar media arrows: fix it hiding sometimes
+ ▪ 107d69c SmartBar Media Arrows: add streaming music support
+ ▪ a687b71 Smartbar media arrows: more code improvements [1/2]
+ ▪ e6ddfe6 Smartbar media arrows: more code improvements
+ ▪ 4b13131 Smartbar track arrows: code cleanup and don't show them on video playing
+ ▪ 3c7daeb SmartBar: allow set custom buttons opacity when Pulse is active [1/3]
  ▪ 13279b3 Make Smartbar Pixel Animation Durations Customizable [2/3]
- ▪ 6f4e145 Unlock Home and Back Buttons from Smartbar
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ f996487 Update rr_strings.xml
- ▪ fce0d71 Add more j5 models (#734)
+ ▪ be3d947 Add Reset Button to Pixel Animation Duration Settings
+ ▪ 6f35d50 Switch to Enable or disable Vol up to disable overlays during boot [2/2]
+ ▪ bbddeeb SlimRecents Membar Colors: Obey Themes when disabled [2/2]
+ ▪ 61354e2 SmartBar: allow set custom buttons opacity when Pulse is active [2/3]
+ ▪ 805e6da Move Magisk Manager Settings shortcut to below KA settings shortcut, westcripp implied (#735)
 
- ▪ project packages/providers/CalendarProvider/
- ▪ 94029d1 New Material icon
-
- ▪ project packages/providers/TelephonyProvider/
- ▪ 059380f TelephonyProvider: Update icon to Material
-
- ▪ project packages/wallpapers/LivePicker/
- ▪ bf06fdf New Material icon
+ ▪ project vendor/cm/
+ ▪ c09a03a rr: tools: improve changelog script
 
