@@ -2,12 +2,68 @@
  ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
 
 
+ ▼ 04/14/2017
+
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ fa7e4b9 kenzo: Enable offload
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ bb8df50 msm8956-common: Add tftp to wakelock group
+ ▪ f3f9cfd msm8956-common: Stop qmi logspam ;_;
+ ▪ 944b561 msm8956-common: Uncomment OSNLP_PACKAGE , OSNLP_ACTION
+ ▪ 85de176 msm8956-common: Change path for aanc
+
+ ▪ project frameworks/base/
+ ▪ 7cc867d ScreenshotEditor: Fix Navbar Glitch for Good.
+ ▪ 56e18f3 Ticker: allow to show music track info on new track being played [1/2]
+ ▪ a815c42 Keyguard:Remove null checks on weather changes
+ ▪ cbaf1a6 Option to Display Data Disabled Indicator Icon [1/2]
+ ▪ 92e6f16 Show lockscreen wallpaper when blur effect is enabled
+ ▪ 2671cdc Add Missing Permission to Keyguard
+ ▪ df2de85 Keyguard Weather : Refactor for new API[1/2]
+ ▪ b77c0ec Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 8a13d7e Merge pull request #192 from ashoksoni/changes
+ ▪ fcbe942 Dialer: show headsup on incoming call even if headsup are off and ticker on
+ ▪ a4af9da Revert "Dialer: show headsup on incoming call even if headsup are off and ticker on"
+ ▪ aa9f013 Merge pull request #189 from ashoksoni/changes
+ ▪ 03298c8 Dialer: show headsup on incoming call even if headsup are off and ticker on
+
+ ▪ project packages/apps/Settings/
+ ▪ 9903553 Update Oneplus2 maintainer (#746)
+ ▪ c2965b9 Ticker: allow to show music track info on new track being played [2/2]
+ ▪ 5a119f2 Option to Display Data Disabled indicator Icons [2/2]
+ ▪ e167289 Settings: Refactor Keyguard Weather [2/2]
+
+ ▼ 04/13/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ f42b8c2 Revert "msm8956: Re-enable XML audio policy"
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ cf7d454 net/packet: fix overflow in check for tp_frame_nr
+ ▪ 7d95a09 net/packet: fix overflow in check for tp_reserve
+ ▪ 8366845 scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ 72fe005 sg: relax 16 byte cdb restriction
+ ▪ 7c79b72 block: add blk_rq_set_block_pc()
+ ▪ e5df0ad platform: msm: spmi: Fix possible race condition in debugfs
+ ▪ bd8ec2e prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
+ ▪ b0619d0 crypto: msm: check integer overflow on total data len in qcedev.c
+ ▪ b316697 prima: Fix VHT-80 IBSS stops beaconing
+ ▪ ce9e837 msm-camera: Addressing possible overflow conditions
+ ▪ 6d2214c qcrypto: protect potential integer overflow.
+ ▪ 32e9b24 sdcardfs: limit stacking depth
+
+ ▪ project packages/apps/Settings/
+
  ▼ 04/12/2017
 
 
  ▪ project frameworks/av/
  ▪ eb06e41 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
- ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
 
  ▪ project frameworks/base/
  ▪ 500eed3 base: services: add config_fingerprintRemoveClientOnCancel
@@ -799,6 +855,9 @@
  ▼ 04/11/2017
 
 
+ ▪ project frameworks/av/
+ ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
+
  ▪ project frameworks/base/
 
  ▪ project hardware/qcom/display-caf/msm8960/
@@ -892,37 +951,4 @@
  ▪ 44c024b kenzo: Add modified qcrilmsgtunnel
  ▪ 0d21a2c kenzo: Remove unused cnss blob
  ▪ f73045d kenzo: Use OSS Camera HAL
-
- ▼ 04/07/2017
-
-
- ▪ project packages/apps/CarrierConfig/
- ▪ 8821cae Consider Q-TELECOM Greece as non-roaming
-
- ▪ project packages/apps/Gallery2/
- ▪ 54654ae Fix spelling error
-
- ▼ 04/06/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 30aac4d kenzo: Add kate to ota assert devices
-
- ▪ project frameworks/av/
- ▪ eb594c4 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
-
- ▪ project frameworks/base/
- ▪ f0757114 Fix permission description string for DE.
-
- ▪ project packages/apps/Bluetooth/
- ▪ cca216e Revert "Bluetooth: handle opening incoming APK files"
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ 6fb2403 Fix magisk manager settings location
-
- ▪ project vendor/motorola/
- ▪ 609ff78 shamu: update blobs from N6F26Y factory image
- ▪ d0f4ae0 omap4-common: Update DRM blobs from Z3 (via serrano)
 
