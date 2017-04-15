@@ -1,6 +1,2099 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
+
+ ▼ 04/15/2017
+
+
+ ▪ project android/
+ ▪ adb6be3 manifest: android-7.1.1_r25 -> android-7.1.2_r2
+ ▪ e14b742 Sync infra-related projects
+
+ ▪ project build/
+ ▪ f21b9cf build: allow to disable recovery-two-step.img generation
+
+ ▪ project frameworks/av/
+ ▪ 0859743 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_av into nougat
+ ▪ 88b9d78 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+ ▪ ea1d1ba Merge pull request #193 from Andersonmendes2016/nougat
+ ▪ 906201f fix build
+ ▪ 98e5dd7 Various fixes and cleanups after 7.1.2 merge
+ ▪ 5cbb803 Zygote: Fix GL preload property evaluation
+ ▪ f8a10c9 systemui: Fix DE translation for navbar buttons
+ ▪ f763c92 Dialer: show headsup on incoming call even if headsup are off [1/2]
+ ▪ c5e3b76 Statusbar ticker: use a gentle smooth fade animation
+ ▪ e96c0a7 Dialer: show headsup on incoming call even if headsup are off and ticker on
+
+ ▪ project frameworks/native/
+ ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
+ ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 229d1f9 Fix GCC6 Compilation Errors & Warnings
+ ▪ 6a3c39d mm: fix missing immediate expression at operand 1 dsb
+ ▪ a805cec Makefile: set ARCH
+ ▪ 5d3ad6d Makefile: remove REAL_CC and calls to gcc wrapper script
+ ▪ 94de40d staging: prima: Fix non-debug build and switch to it
+ ▪ 8374818 net: rmnet_data: Silence "Unkown IOCTL" log spam
+ ▪ 25734cf prima: Roll back to LA.BR.1.3.3_rb2.26
+ ▪ 05ae64d panel dtsi changes
+ ▪ 1088e65 Fix reboot issue after aboot update 7.3.9
+ ▪ 900117e [dnm]: Merge dtsi changes from latest miui
+ ▪ 99ff0fd kenzo: Use caf hall driver
+ ▪ d06d021 kenzo: enable_spk_ext_pa STFU!!
+ ▪ a2d5501 kenzo: Remove useless charging debugging
+ ▪ 256a8c7 kenzo: Enable cpuset
+ ▪ 9d1a663 cpuset: Make cpusets restore on hotplug
+ ▪ acc6ff7 cpuset: Add allow_attach hook for cpusets on android.
+ ▪ 1d01a6a kenzo: Disable goodix
+ ▪ a5d1aa6 include/linux/compiler-gcc.h: improve __visible documentation
+ ▪ bf200a9 include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
+ ▪ 30c9e6f compiler.h: add support for function attribute assume_aligned
+ ▪ 2d243ed media: Use balika code to support kate cam sensor
+ ▪ 35fa4f6 derp
+ ▪ 9f13e6f Revert "fingerprint: Initial Goodix Support"
+ ▪ 69621f4 media: Add support for s5k5e8_yx13 sensor
+ ▪ 0c4fb8a input: Handle an additional framebuffer hint
+ ▪ 401ba60 fix base path
+ ▪ 8425a6b defconfig: Change Stack Protector to 'REGULAR'
+ ▪ 18ca6ce Dominator: set version in Makefile
+ ▪ 61d0d72 Update prima
+ ▪ af5b2a4 Revert "arm:dts:increase max curent"
+ ▪ eab9b8b mobicore: Fix section mismatch
+ ▪ ed113b6 remove dual decleration
+ ▪ b194878 update build script
+ ▪ bd9f083 fingerprint: Initial Goodix Support
+ ▪ 6150dc1 enable sound control and gestures
+ ▪ f057455 DTS: Fix Qualcomm Typo Error
+ ▪ b592675 Fix s5k3p3_f3p3man support
+ ▪ 96e503b cpufreq: cache tunables for ondemand and conservative governors
+ ▪ e3eee27 xiaomi: lct_tp_fm_info: fix warning about existing sysfs/procfs entries
+ ▪ 8a7a0e8 platform/msm: haptic: expose vibrate function
+ ▪ a82a052 wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep for Redmi Note 3
+ ▪ 9e89ffb input: atmel_mxt_ts: Add double tap sysfs symlink
+ ▪ a105ba7 input: Create shared procfs nodes
+ ▪ 0bcd208 input: atmel_mxt_ts: Add option to disable keypad
+ ▪ 7527328 input: ft5x06: Add option to disable keypad
+ ▪ c65bee1 usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
+ ▪ b4e8ffe sound_control: add speaker gain
+ ▪ 24f4cf0 ASoC: wcd9335: add analog headphone gain
+ ▪ e45832e ASoC: wcd9335: Sound control
+ ▪ 17580e4 power: qpnp-fg: Coulomb Counting Error
+ ▪ bfebd69 fix qpnp_fg_cap_learning wake lock no release
+ ▪ 7161d7b drivers:power: Fix the soc update delay
+ ▪ 47439e1 drivers:power: fix -2% bug
+ ▪ e0b631a Revert partial xiaomi changes
+ ▪ 6c22af9 arm:dts: adapt to new aw2013 driver
+ ▪ 4fd1424 leds-aw2013: Don't reset values when nothing has changed
+ ▪ 93f5978 leds: aw2013: Reduce logging level
+ ▪ c0c2f0b leds: aw2013: Use an ordered workqueue for command processing
+ ▪ 861ee8a leds: aw2013_led: Don't reset the brightness level when setting blink
+ ▪ 77d544a revert xiaomi changes
+ ▪ 138cb94 kobject: Fix "add_uevent_var: too many keys" warn.
+ ▪ 3498ee3 power: qpnp-smbcharger: Fix the BMD algo. disable logic
+ ▪ 2ac77ce arm:dts:we want faster bootup
+ ▪ 326fb6c Revert "msm: thermal: add a module param to change the thermal throttle temperature point to userspace"
+ ▪ 448252c config:enable exfat
+ ▪ 06dae0a Add exFAT support
+ ▪ 19d94a7 config;Enable crc32 module
+ ▪ 330a08a crypto: arm64/crc32 - bring in line with generic CRC32
+ ▪ e669214 crypto: crc32 - Add ARM64 CRC32 hw accelerated module
+ ▪ 383c014 regenerate defconfig
+ ▪ e846e91 Mondrianwifi: Fix compilation error with mdss_mdp_trace.h
+ ▪ 96c4594 underp merge
+ ▪ 7c8d2af fix f2fs compile
+ ▪ 08a7c7a Fix Cam for all
+ ▪ 99b07dc dominator:enable frandom
+ ▪ 217f803 upgrade frandom to latest
+ ▪ 6d44225 drivers: Upgrade frandom from staging
+ ▪ c4411ac staging: frandom: Clear up checkpatch conflicts
+ ▪ 9ddd45d staging: frandom: Dynamically allocate the char device numbers
+ ▪ d86347a staging: Add frandom RNG driver
+ ▪ a342c4c drivers: camera: Fix camera sensor detection
+ ▪ 21c8ec8 Revert "msm: mdss: kcal: Use PCC for negative display mode"
+ ▪ 00f5660 Time to dominate
+ ▪ c7bdb9f3 dominator: Enable Powersuspend
+ ▪ 8a85b60 kernel/power/powersuspend: cumulative update to version 1.5
+ ▪ d607914 kernel/power/powersuspend: LCD screen on/off hooks (Yank555.lu)
+ ▪ 125c604 kernel/power/powersuspend: default to userspace for now
+ ▪ 8af3ecb kernel/power/powersuspend: add back userpace control w/ default kernel control
+ ▪ 1c8d482 kernel/power/powersuspend: remove userspace dependency from powersuspend
+ ▪ 9b875dd powersuspend: fix logci derps :p
+ ▪ d430e71 powersuspend: new PM kernel driver for Android w/o early_suspend
+ ▪ 04dcc8f mdss: use an interruptible thread on edp to reduce load_average
+ ▪ 480c5e9 msm: Fix high load average from uninterruptible waits
+ ▪ c660047 config:enable f2fs  * remove unused touchscreen  * remove ext2 and ext3
+ ▪ a0ad994 Sysfs interface to Enable/Disable CRC [@Pafcholini] Signed-off-by: placiano <placiano80@gmail.com>
+ ▪ d640849 dominator: Enable DYNAMIC FSYNC
+ ▪ aff77e4 dominator: Add NTFS Support
+ ▪ ac0aa35 Forward port Dynamic Fsync to Linux 3.10
+ ▪ 1712c47 Dynamic Fsync 1.2
+ ▪ 1bff6d8 msm: kgsl: Report correct GPU frequency in sysfs
+ ▪ d41cc9d PM: devfreq: Use high priority workqueue
+ ▪ 144e090 dominator: Enable Arch Power
+ ▪ e26fe41 msm: thermal: add a module param to change the thermal throttle temperature point to userspace
+ ▪ 858080f dominator: Enable FIOPS
+ ▪ 352dbe7 FIOPS: forward port for use on 3.10 Linux
+ ▪ e07e0a6 block: fiops ioscheduler core
+ ▪ c473b9f Remove '+' symbol from kernel version string
+ ▪ 7dab7ca tick: don't update idle time if cpu offline
+ ▪ 7bad30c config:enable kcal
+ ▪ 9d7a407 msm: mdss: kcal: Only apply updates on index 0
+ ▪ 02ed360 msm: mdss: kcal: Use PCC for negative display mode
+ ▪ 16113c4 msm: mdss: KCAL: Send a pp display commit when changes are made
+ ▪ 8a23c5d msm: mdss: KCAL: Do not read from picture adjustment registers
+ ▪ dadc5d4 msm: mdss: KCAL: Read values from MDP registers wherever possible
+ ▪ dceb130 msm: mdss: KCAL: Apply default values on boot
+ ▪ 4817f10 msm: mdss: KCAL: Queue changes when panel is powered off
+ ▪ 310bd4b msm: mdss: KCAL: Remove MODULE_DESCRIPTION
+ ▪ 300d505 msm: mdss: KCAL: Update Kconfig description
+ ▪ 81ea54f msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
+ ▪ 93c4d40 msm: mdss: KCAL: Check panel power state before applying values
+ ▪ 23bba92 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
+ ▪ 85ea12d msm: mdss: Keep KCAL within its own source file
+ ▪ e9544c5 msm: mdss: Remove deprecated __dev* markings
+ ▪ 856f100 msm: mdss: Add pa_v2 support to KCAL
+ ▪ cec1e69 msm: mdss: Replace PGC implementation with PCC for KCAL
+ ▪ ae39ac6 msm: mdss: Add KCAL support for post processing control [v2]
+ ▪ 53eff81 config:Expand def and remove unwanted modules
+ ▪ b7c8a89 msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
+ ▪ 94d6931 qpnp-haptic: Add sysfs interface to control intensity
+ ▪ ef68091 arm:dts:let xiaomi be partial  * We are mankind's angel so will offer everyone equal freq
+ ▪ c9e4e24 arm:dts:increase max curent  * Therefore adjust thermal mitigation
+ ▪ 78f4df9 scripts/sortextable: suppress warning: `relocs_size' may be used uninitialized
+ ▪ 394c937 asoc: fix warning
+ ▪ ef302b5 misc: Fix Kconfig warnings
+ ▪ 1336038 devfreq_devbw: Assign labels to devbw nodes.
+ ▪ ca80540 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+
+ ▪ 6784475 block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
+ ▪ d4a904d block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
+ ▪ 1545590 kenzo: defconfig: Update
+ ▪ 7a70511 ARM: dts: pstore: Match motorola configuration
+ ▪ c356fa1 arch/arm: dts: Add pstore DT
+ ▪ a700b4e fs: pstore: Import Motorola pstore config
+ ▪ 8f517a0 power: reset: Allow device to preserve memory on restart
+ ▪ 3624ad9 ARM: dts: kenzo: Only build device specific dtb
+ ▪ 5a45b1c prima: Import QC prima wireless driver
+ ▪ d1084f2 fpc: Update fingerprint driver for MM HAL
+ ▪ 108d83c dominator:add Dtbtool  * Also Add buildscript
+ ▪ 6011386 Import RN3 misc changes
+ ▪ 1e8a480 sound: wcd9335: Set correct wcd_ext_clk for HM Note 3
+ ▪ 7f88c93 sound: soc: Import Xiaomi code
+ ▪ 3423e26 drivers:video:Import RN3 video changes
+ ▪ 97cf20a drivers:power:Import RN3 power changes
+ ▪ ba4f6ce drivers:mmc:Import RN3 mmc changes
+ ▪ a4e5775 drivers:media:Import RN3 media changes
+ ▪ c648017 drivers:led:Import RN3 led changes
+ ▪ a380eab drivers:input:Import RN3 input changes
+ ▪ a7f373c arm:Import RN3 dts changes
+ ▪ 1696ddf arm64:Import RN3 changes
+ ▪ 9a821dc update git ignore  * we need touch firmware files  * we dont need dt.img to be uploaded evey now and then
+ ▪ ce384f8 f2fs: use __set{__clear}_bit_le
+ ▪ 448a946 f2fs: update_free_nid_bitmap() can be static
+ ▪ 746717e f2fs: __update_nat_bits() can be static
+ ▪ 65353f4 f2fs: le16_to_cpu for xattr->e_value_size
+ ▪ 6476df4 f2fs: don't overwrite node block by SSR
+ ▪ 89f705c f2fs: don't need to invalidate wrong node page
+ ▪ db280a6 f2fs: fix an error return value in truncate_partial_data_page
+ ▪ 6b1f292 fscrypt: catch up to v4.11-rc1
+ ▪ e6a61f6 f2fs: avoid to flush nat journal entries
+ ▪ aacb2dd f2fs: avoid to issue redundant discard commands
+ ▪ 7499a00 f2fs: fix a plint compile warning
+ ▪ e168ae7 f2fs: add f2fs_drop_inode tracepoint
+ ▪ eb60f41 f2fs: Fix zoned block device support
+ ▪ 032b735 f2fs: remove redundant set_page_dirty()
+ ▪ 8c30d4e f2fs: fix to enlarge size of write_io_dummy mempool
+ ▪ aaee343 f2fs: fix memory leak of write_io_dummy mempool during umount
+ ▪ fd5f78c f2fs: fix to update F2FS_{CP_}WB_DATA count correctly
+ ▪ 2ab76ba f2fs: use MAX_FREE_NIDS for the free nids target
+ ▪ 4e9fe9a f2fs: introduce free nid bitmap
+ ▪ 52f1463 f2fs: new helper cur_cp_crc() getting crc in f2fs_checkpoint
+ ▪ c66c1615 f2fs: update the comment of default nr_pages to skipping
+ ▪ 4081d0e f2fs: drop the duplicate pval in f2fs_getxattr
+ ▪ 153d5b6 f2fs: Don't update the xattr data that same as the exist
+ ▪ 7d95e3a f2fs: kill __is_extent_same
+ ▪ 99ee019 f2fs: avoid bggc->fggc when enough free segments are avaliable after cp
+ ▪ 89ee5df f2fs: select target segment with closer temperature in SSR mode
+ ▪ f47318f f2fs: show simple call stack in fault injection message
+ ▪ eba2b2f fscrypt: catch fscrypto_get_policy in v4.10-rc6
+ ▪ 0216edb f2fs: use __clear_bit_le
+ ▪ 2c3ef86 f2fs: no need lock_op in f2fs_write_inline_data
+ ▪ 11e17ce f2fs: add bitmaps for empty or full NAT blocks
+ ▪ 26b6945 f2fs: replace rw semaphore extent_tree_lock with mutex lock
+ ▪ ef9def6 f2fs: avoid m_flags overlay when allocating more data blocks
+ ▪ 1967f93 f2fs: remove unsafe bitmap checking
+ ▪ 46643ff f2fs: init local extent_info to avoid stale stack info in tp
+ ▪ 632d689 f2fs: remove unnecessary condition check for write_checkpoint in f2fs_gc
+ ▪ f889061 f2fs: do SSR for node segments more aggresively
+ ▪ e6eeec4 f2fs: check discard alignment only for SEQWRITE zones
+ ▪ 81ffc19 f2fs: wait for discard completion after submission
+ ▪ 4d74ca2 f2fs: much larger batched trim_fs job
+ ▪ 46d62c0 f2fs: avoid very large discard command
+ ▪ 62bbdf6 f2fs: find data segments across all the types
+ ▪ e24a51a f2fs: do SSR in higher priority
+ ▪ 93fdded f2fs: do SSR for data when there is enough free space
+ ▪ 5e2d3e6 f2fs: node segment is prior to data segment selected victim
+ ▪ cc85c9d f2fs: put allocate_segment after refresh_sit_entry
+ ▪ 2180064 f2fs: add ovp valid_blocks check for bg gc victim to fg_gc
+ ▪ 2d9513b f2fs: do not wait for writeback in write_begin
+ ▪ 55b61c9 f2fs: replace __get_victim by dirty_segments in FG_GC
+ ▪ e704ea3 f2fs: fix multiple f2fs_add_link() calls having same name
+ ▪ 1edee90 f2fs: show actual device info in tracepoints
+ ▪ 86aa066 f2fs: use SSR for warm node as well
+ ▪ 651c57a f2fs: enable inline_xattr by default
+ ▪ 2280de6 f2fs: introduce noinline_xattr mount option
+ ▪ 66c289b f2fs: avoid reading NAT page by get_node_info
+ ▪ bdad288 f2fs: remove build_free_nids() during checkpoint
+ ▪ b5d3bba f2fs: change recovery policy of xattr node block
+ ▪ 22a1d7b f2fs: super: constify fscrypt_operations structure
+ ▪ 6e46ab8 f2fs: show checkpoint version at mount time
+ ▪ 3f264e4 f2fs: remove preflush for nobarrier case
+ ▪ c2505bd f2fs: check last page index in cached bio to decide submission
+ ▪ d8a1a88 f2fs: check io submission more precisely
+ ▪ ad3dd84 f2fs: fix missing bio_alloc(1)
+ ▪ 53b0d61 f2fs: call internal __write_data_page directly
+ ▪ 82bb00e f2fs: avoid out-of-order execution of atomic writes
+ ▪ 4a11e0a f2fs: move write_node_page above fsync_node_pages
+ ▪ 97314fe f2fs: move flush tracepoint
+ ▪ 3f170aa f2fs: show # of APPEND and UPDATE inodes
+ ▪ 714bee2 f2fs: fix 446 coding style warnings in f2fs.h
+ ▪ 73bff54 f2fs: fix 3 coding style errors in f2fs.h
+ ▪ 087da17 f2fs: declare missing static function
+ ▪ 4fe1d00 f2fs: show the fault injection mount option
+ ▪ 8ae7e9d f2fs: fix null pointer dereference when issuing flush in ->fsync
+ ▪ 47705e9 f2fs: fix to avoid overflow when left shifting page offset
+ ▪ 4768942 f2fs: enhance lookup xattr
+ ▪ 312de1e f2fs: fix a dead loop in f2fs_fiemap()
+ ▪ ebd2aeb f2fs: show # of on-going flush and discard bios
+ ▪ 30674d4 f2fs: add a kernel thread to issue discard commands asynchronously
+ ▪ 1da1094 f2fs: factor out discard command info into discard_cmd_control
+ ▪ ea27362 f2fs: reorganize stat information
+ ▪ ce130ef f2fs: clean up flush/discard command namings
+ ▪ b750d1b f2fs: check in-memory sit version bitmap
+ ▪ c3c4d99 f2fs: check in-memory nat version bitmap
+ ▪ 867094f f2fs: check in-memory block bitmap
+ ▪ 9506953 f2fs: introduce FI_ATOMIC_COMMIT
+ ▪ 6e9f865 f2fs: clean up with list_{first, last}_entry
+ ▪ eb4b7cc f2fs: return fs_trim if there is no candidate
+ ▪ 9ba149f f2fs: avoid needless checkpoint in f2fs_trim_fs
+ ▪ 8f10940 f2fs: relax async discard commands more
+ ▪ dd2ed51 f2fs: drop exist_data for inline_data when truncated to 0
+ ▪ f5ffea8 f2fs: don't allow encrypted operations without keys
+ ▪ 837ff06 f2fs: add tmpfile and rename2 to avoid code conflict
+ ▪ db0c88a f2fs: show the max number of atomic operations
+ ▪ 245c06e f2fs: get io size bit from mount option
+ ▪ 921793f f2fs: support IO alignment for DATA and NODE writes
+ ▪ cc4b424 f2fs: add submit_bio tracepoint
+ ▪ ab263e33 f2fs: reassign new segment for mode=lfs
+ ▪ 1e2b448 f2fs: fix a missing discard prefree segments
+ ▪ 95f40d6 f2fs: use rb_entry_safe
+ ▪ f4b9551 f2fs: add a case of no need to read a page in write begin
+ ▪ f15f18a f2fs: fix a problem of using memory after free
+ ▪ dfa8ad5 f2fs: remove unneeded condition
+ ▪ dc9233d f2fs: don't cache nat entry if out of memory
+ ▪ 92dd3bf f2fs: remove unused values in recover_fsync_data
+ ▪ 0db36ef f2fs: add migrate_page to avoid patch conflicts
+ ▪ 6e7a66f Revert "f2fs: use percpu_counter for # of dirty pages in inode"
+ ▪ 9c1cbfd f2fs: support async discard based on v4.9
+ ▪ 12f3faa f2fs: resolve op and op_flags confilcts
+ ▪ b13ec32 f2fs: use file pointer for fscrypt_notsupp_process_policy
+ ▪ 71612bc f2fs: fix a missing size change in f2fs_setattr
+ ▪ 4061f75 scripts/tags.sh: catch 4.9-rc6
+ ▪ 69a3ef2 f2fs: fix to access nullified flush_cmd_control pointer
+ ▪ 0045246 f2fs: free meta pages if sanity check for ckpt is failed
+ ▪ 2f8e03a f2fs: detect wrong layout
+ ▪ 38fac0b f2fs: call sync_fs when f2fs is idle
+ ▪ 6bbf1fe f2fs: return AOP_WRITEPAGE_ACTIVATE for writepage
+ ▪ 481f555 f2fs: do not activate auto_recovery for fallocated i_size
+ ▪ 759f519 f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack
+ ▪ 896805f f2fs: fix 32-bit build
+ ▪ b393968 f2fs: set ->owner for debugfs status file's file_operations
+ ▪ 807c478 f2fs: fix incorrect free inode count in ->statfs
+ ▪ 15699af f2fs: drop duplicate header timer.h
+ ▪ e7540cd f2fs: fix wrong AUTO_RECOVER condition
+ ▪ 1d72c7f f2fs: do not recover i_size if it's valid
+ ▪ 1777c37 f2fs: fix fdatasync
+ ▪ e772f43 f2fs: fix to account total free nid correctly
+ ▪ ef20561 f2fs: fix an infinite loop when flush nodes in cp
+ ▪ 06b60f0 f2fs: don't wait writeback for datas during checkpoint
+ ▪ 8fe80f2 f2fs: fix wrong written_valid_blocks counting
+ ▪ 41da060 f2fs: avoid BG_GC in f2fs_balance_fs
+ ▪ 11fbd5e f2fs: fix redundant block allocation
+ ▪ 8478a51 f2fs: use err for f2fs_preallocate_blocks
+ ▪ 66c29bc f2fs: support multiple devices
+ ▪ 968d8c0 f2fs: allow dio read for LFS mode
+ ▪ 4bb0f26 f2fs: revert segment allocation for direct IO
+ ▪ f9bbdd3 f2fs: return directly if block has been removed from the victim
+ ▪ 1c64e7c Revert "f2fs: do not recover from previous remained wrong dnodes"
+ ▪ 50d643a f2fs: remove checkpoint in f2fs_freeze
+ ▪ 549aacc f2fs: assign segments correctly for direct_io
+ ▪ caaee38 f2fs: fix wrong i_atime recovery
+ ▪ 17f829b f2fs: record inode updating status correctly
+ ▪ 808b55e f2fs: Trace reset zone events
+ ▪ d66dacc f2fs: Reset sequential zones on zoned block devices
+ ▪ 9eff10e f2fs: Cache zoned block devices zone type
+ ▪ 53ce2fd f2fs: Do not allow adaptive mode for host-managed zoned block devices
+ ▪ c3469a9a f2fs: Always enable discard for zoned blocks devices
+ ▪ 35283f6 f2fs: Suppress discard warning message for zoned block devices
+ ▪ 65e067b f2fs: Check zoned block feature for host-managed zoned block devices
+ ▪ f2dde80 f2fs: Use generic zoned block device terminology
+ ▪ 7789403 f2fs: Add missing break in switch-case
+ ▪ 3cc708d f2fs: avoid infinite loop in the EIO case on recover_orphan_inodes
+ ▪ 7d0905b f2fs: report error of f2fs_fill_dentries
+ ▪ 2ff3a73 fs/crypto: catch up 4.9-rc2
+ ▪ 901f15d f2fs: hide a maybe-uninitialized warning
+ ▪ d8c2709 f2fs: remove percpu_count due to performance regression
+ ▪ a2acfcd f2fs: make clean inodes when flushing inode page
+ ▪ a9d02d6 f2fs: keep dirty inodes selectively for checkpoint
+ ▪ 35c4045 f2fs: Replace CURRENT_TIME_SEC with current_time() for inode timestamps
+ ▪ 3209e6a f2fs: use BIO_MAX_PAGES for bio allocation
+ ▪ 5392ac4 f2fs: declare static function for __build_free_nids
+ ▪ e552f04 f2fs: call f2fs_balance_fs for setattr
+ ▪ 73103ec f2fs: count dirty inodes to flush node pages during checkpoint
+ ▪ 8b87d30 f2fs: avoid casted negative value as shrink count
+ ▪ ce870b3 f2fs: don't interrupt free nids building during nid allocation
+ ▪ 82b180a f2fs: clean up free nid list operations
+ ▪ aef8c6d f2fs: split free nid list
+ ▪ 50d11b5 f2fs: clear nlink if fail to add_link
+ ▪ d771092 f2fs: fix sparse warnings
+ ▪ e8ddf65 f2fs: fix error handling in fsync_node_pages
+ ▪ 1d13306 f2fs: fix to update largest extent under lock
+ ▪ 3763b6a f2fs: be aware of extent beyond EOF in fiemap
+ ▪ 7e7b2f6 f2fs: don't miss any f2fs_balance_fs cases
+ ▪ e9191ae f2fs: add missing f2fs_balance_fs in f2fs_zero_range
+ ▪ 95bd3b0 ASoC: wcd-mbhc: Don't report headphone until timout
+ ▪ 150842e f2fs: give a chance to detach from dirty list
+ ▪ e974667 f2fs: fix to release discard entries during checkpoint
+ ▪ 96d5021 f2fs: exclude free nids building and allocation
+ ▪ 7b48574 f2fs: fix wrong sum_page pointer in f2fs_gc
+ ▪ cf6f2c9 f2fs: fix overflow due to condition check order
+ ▪ ea6cd84 posix_acl: Clear SGID bit when setting file permissions
+ ▪ dd3bf7f f2fs: introduce update_ckpt_flags to clean up
+ ▪ 38c8739 f2fs: don't submit irrelevant page
+ ▪ 7be8f34 f2fs: fix to commit bio cache after flushing node pages
+ ▪ ab01c4c f2fs: introduce get_checkpoint_version for cleanup
+ ▪ b9e2386 f2fs: remove dead variable
+ ▪ 0f39292 f2fs: remove redundant io plug
+ ▪ 4b66441 f2fs: support checkpoint error injection
+ ▪ 969220c f2fs: fix to recover old fault injection config in ->remount_fs
+ ▪ e59da34 f2fs: do fault injection initialization in default_options
+ ▪ 04ba061 f2fs: remove redundant value definition
+ ▪ 71c1f97 f2fs: support configuring fault injection per superblock
+ ▪ c1c5ef0 f2fs: adjust display format of segment bit
+ ▪ 8417776 f2fs: remove dirty inode pages in error path
+ ▪ 92163f2 f2fs: do not unnecessarily null-terminate encrypted symlink data
+ ▪ 1fecaa5 f2fs: handle errors during recover_orphan_inodes
+ ▪ 20ba5b3 f2fs: avoid gc in cp_error case
+ ▪ f7bf78e f2fs: should put_page for summary page
+ ▪ bb1bd54 f2fs: assign return value in f2fs_gc
+ ▪ 684a5a8 f2fs: introduce cp_lock to protect updating of ckpt_flags
+ ▪ 7070537 f2fs: fix to avoid race condition when updating sbi flag
+ ▪ 87f48e9 f2fs: put directory inodes before checkpoint in roll-forward recovery
+ ▪ 1b026b3 f2fs: use crc and cp version to determine roll-forward recovery
+ ▪ fef7e2a f2fs: preallocate blocks for encrypted file
+ ▪ 0539675 f2fs: show dirty inode number
+ ▪ 05d844d f2fs: support IO error injection
+ ▪ 2e70de2 f2fs: fix to return error number of read_all_xattrs correctly
+ ▪ dafe1f2 f2fs: make f2fs_filetype_table static
+ ▪ a362a7d f2fs: handle error in recover_orphan_inode
+ ▪ 4d116be f2fs: remove dead code f2fs_check_acl
+ ▪ e2a36db f2fs: exclude special cases for f2fs_move_file_range
+ ▪ 00e68e1 f2fs: fix to set PageUptodate in f2fs_write_end correctly
+ ▪ 67b8803 f2fs: fix parameters of __exchange_data_block
+ ▪ 80af737 f2fs: avoid ENOMEM during roll-forward recovery
+ ▪ 08c1e5c f2fs: add common iget in add_fsync_inode
+ ▪ 801e80f f2fs: check free_sections for defragmentation
+ ▪ ea8f80e f2fs: forbid to do fstrim if fs has some error
+ ▪ 4c2b821 f2fs: avoid page allocation for truncating partial inline_data
+ ▪ d63fa9d f2fs: no need to make zeros beyond i_size
+ ▪ ebf3f12 f2fs: fix to detect temporary name of multimedia file
+ ▪ 9f525d4 f2fs: set dentry bits on random location in memory
+ ▪ 361665a f2fs: fix to set superblock dirty correctly
+ ▪ 7b035fc f2fs: add roll-forward recovery process for encrypted dentry
+ ▪ 2fd3acc f2fs: fix lost xattrs of directories
+ ▪ a4c5dda f2fs: set encryption name flag in add inline entry path
+ ▪ 2443a58 f2fs crypto: avoid unneeded memory allocation in ->readdir
+ ▪ 07ea872 f2fs: fix to do security initialization of encrypted inode with original filename
+ ▪ 3189227 f2fs: do in batch synchronously readahead during GC
+ ▪ 7e1c57e f2fs: schedule in between two continous batch discards
+ ▪ 9c4e4a5 f2fs: enable inline_dentry by default and add noinline_dentry option
+ ▪ 377f342 f2fs: fix a bug when using namehash to locate dentry bucket
+ ▪ a9f2b7b f2fs: fix to preallocate block only aligned to 4K
+ ▪ ee207cbe3 f2fs: fix non static symbol warning
+ ▪ ee357e6 f2fs: remove unnecessary initialization
+ ▪ 1da8803 f2fs: remove redundant judgement condition in available_free_memory
+ ▪ 40b9673 f2fs: check return value of write_checkpoint during fstrim
+ ▪ 79e813f f2fs: fix to do f2fs_balance_fs in f2fs_map_blocks correctly
+ ▪ 0059af6 f2fs: avoid unneeded loop in build_sit_entries
+ ▪ 708c3b6 f2fs: clean up foreground GC flow
+ ▪ 0a5db2b f2fs: set dirty state for filesystem only when updating meta data
+ ▪ 5caff9e f2fs: skip new checkpoint when doing fstrim without fs change
+ ▪ 3c33eea f2fs: add discard info to sys entry of f2fs status
+ ▪ 9c61391 f2fs: reduce batch size of fstrim
+ ▪ 5300cf6 f2fs: do not use discard_map for hard disks
+ ▪ 12aa175 f2fs: not allow to write illegal blkaddr
+ ▪ d7a7242 Revert "f2fs: move i_size_write in f2fs_write_end"
+ ▪ 29cd508 f2fs: fix build for v3.10
+ ▪ 06450e6 f2fs: adjust other changes
+ ▪ 68abf29 f2fs: get victim segment again after new cp
+ ▪ 3988e75 f2fs: handle error case with f2fs_bug_on
+ ▪ 32eb07f f2fs: avoid data race when deciding checkpoin in f2fs_sync_file
+ ▪ 1839aba f2fs: support an ioctl to move a range of data blocks
+ ▪ 8910a32 f2fs: fix to report error number of f2fs_find_entry
+ ▪ ebf67eb f2fs: avoid memory allocation failure due to a long length
+ ▪ 48f94c3 f2fs: reset default idle interval value
+ ▪ ab6b7a1 f2fs: use blk_plug in all the possible paths
+ ▪ d7702da f2fs: fix to avoid data update racing between GC and DIO
+ ▪ 35556c0 f2fs: add maximum prefree segments
+ ▪ c9e4321 f2fs: disable extent_cache for fcollapse/finsert inodes
+ ▪ b592a7d f2fs: refactor __exchange_data_block for speed up
+ ▪ de0763c f2fs: fix ERR_PTR returned by bio
+ ▪ 52eeb2f f2fs: avoid mark_inode_dirty
+ ▪ ce5be6b f2fs: move i_size_write in f2fs_write_end
+ ▪ 1b20190 f2fs: fix to avoid redundant discard during fstrim
+ ▪ d8fa063 f2fs: avoid mismatching block range for discard
+ ▪ e2e2d8d f2fs: fix incorrect f_bfree calculation in ->statfs
+ ▪ 7b9e14d f2fs: skip to check the block address of node page
+ ▪ c1d2259 f2fs: shrink critical region in spin_lock
+ ▪ 19bb614 f2fs: call SetPageUptodate if needed
+ ▪ 38237e5 f2fs: introduce f2fs_set_page_dirty_nobuffer
+ ▪ b0ccfa4 f2fs: remove unnecessary goto statement
+ ▪ c26a128 f2fs: add nodiscard mount option
+ ▪ f971623 f2fs: fix to redirty page if fail to gc data page
+ ▪ f82f4b5 f2fs: fix to detect truncation prior rather than EIO during read
+ ▪ 16d1dc0 f2fs: fix to avoid reading out encrypted data in page cache
+ ▪ a8a7986 f2fs: avoid latency-critical readahead of node pages
+ ▪ c2099c2 f2fs: avoid writing node/metapages during writes
+ ▪ 8071486 f2fs: produce more nids and reduce readahead nats
+ ▪ d72a337 f2fs: detect host-managed SMR by feature flag
+ ▪ 0943b11 f2fs: call update_inode_page for orphan inodes
+ ▪ 56a8454 f2fs: report error for f2fs_parent_dir
+ ▪ df4b19c f2fs: find parent dentry correctly
+ ▪ 35a4573 f2fs: fix deadlock in add_link failure
+ ▪ d2e03e6 f2fs: introduce mode=lfs mount option
+ ▪ 0f0eff1 f2fs: skip clean segment for gc
+ ▪ 6183c7f f2fs: drop any block plugging
+ ▪ 19162cb f2fs: avoid reverse IO order for NODE and DATA
+ ▪ 5abf8cf f2fs: set mapping error for EIO
+ ▪ e088b39 f2fs: control not to exceed # of cached nat entries
+ ▪ 7d7d1e4 f2fs: fix wrong percentage
+ ▪ 86a9029 f2fs: avoid data race between FI_DIRTY_INODE flag and update_inode
+ ▪ b0bc55c f2fs: remove obsolete parameter in f2fs_truncate
+ ▪ 10aecab f2fs: avoid wrong count on dirty inodes
+ ▪ 79676a9 f2fs: remove deprecated parameter
+ ▪ 21b039a f2fs: handle writepage correctly
+ ▪ 019d1b0 f2fs: return error of f2fs_lookup
+ ▪ e5e7b4a f2fs: return the errno to the caller to avoid using a wrong page
+ ▪ c4629d1 f2fs: remove two steps to flush dirty data pages
+ ▪ d58835b f2fs: do not skip writing data pages
+ ▪ 72f46b8 f2fs: inject to produce some orphan inodes
+ ▪ c9c7943 f2fs: propagate error given by f2fs_find_entry
+ ▪ a17fbaf f2fs: remove writepages lock
+ ▪ e02f039 f2fs: set flush_merge by default
+ ▪ 749fe2f f2fs: detect congestion of flush command issues
+ ▪ 437764d f2fs: avoid unnecessary updating inode during fsync
+ ▪ af21260 f2fs: remove syncing inode page in all the cases
+ ▪ b237115 f2fs: flush inode metadata when checkpoint is doing
+ ▪ 52c551c f2fs: call mark_inode_dirty_sync for i_field changes
+ ▪ 8bff262 f2fs: introduce f2fs_i_links_write with mark_inode_dirty_sync
+ ▪ 637c9dc f2fs: introduce f2fs_i_blocks_write with mark_inode_dirty_sync
+ ▪ ceda45e f2fs: introduce f2fs_i_size_write with mark_inode_dirty_sync
+ ▪ f62279f f2fs: use inode pointer for {set, clear}_inode_flag
+ ▪ 4f24351 Revert "f2fs: no need inc dirty pages under inode lock"
+ ▪ 7640102 f2fs: adjust other changes
+ ▪ a29525d f2fs: fix to update dirty page count correctly
+ ▪ 863ec8b f2fs: flush pending bios right away when error occurs
+ ▪ 8a1a3e7 f2fs: avoid ENOSPC fault in the recovery process
+ ▪ 911db66 f2fs: make exit_f2fs_fs more clear
+ ▪ 5bfdf6f f2fs: use percpu_counter for total_valid_inode_count
+ ▪ f44683b f2fs: use percpu_counter for alloc_valid_block_count
+ ▪ 0554c52 f2fs: use percpu_counter for # of dirty pages in inode
+ ▪ 338733b f2fs: use percpu_counter for page counters
+ ▪ 610ddeb f2fs: use bio count instead of F2FS_WRITEBACK page count
+ ▪ aa25be3 f2fs: manipulate dirty file inodes when DATA_FLUSH is set
+ ▪ e5b1764 f2fs: add fault injection to sysfs
+ ▪ 8781229 f2fs: no need inc dirty pages under inode lock
+ ▪ 241967d f2fs: fix incorrect error path handling in f2fs_move_rehashed_dirents
+ ▪ 3e919b4 f2fs: fix i_current_depth during inline dentry conversion
+ ▪ 77bb73d f2fs: correct return value type of f2fs_fill_super
+ ▪ 5ebbffa f2fs: fix deadlock when flush inline data
+ ▪ 9b54d84 f2fs: avoid f2fs_bug_on during recovery
+ ▪ d05c2ec f2fs: show # of orphan inodes
+ ▪ e9a6f84 f2fs: support in batch fzero in dnode page
+ ▪ 6bead10 f2fs: support in batch multi blocks preallocation
+ ▪ deacbf4 f2fs: make atomic/volatile operation exclusive
+ ▪ 9bccff0 f2fs: use mnt_{want,drop}_write_file in ioctl
+ ▪ f8d2027 f2fs: do not preallocate block unaligned to 4KB
+ ▪ a8eee90 f2fs: read node blocks ahead when truncating blocks
+ ▪ 46b04e8 f2fs: fallocate data blocks in single locked node page
+ ▪ 64957e8 f2fs: fix inode cache leak
+ ▪ 34b6e39 fscrypto/f2fs: allow fs-specific key prefix for fs encryption
+ ▪ bf9d947 f2fs: avoid panic when truncating to max filesize
+ ▪ 63c1539 f2fs: fix incorrect mapping in ->bmap
+ ▪ 0306e94 f2fs: remove an obsolete variable
+ ▪ f56b553 f2fs: don't worry about inode leak in evict_inode
+ ▪ ae3a408 f2fs: shrink size of struct seg_entry
+ ▪ 89d3c67 f2fs: reuse get_extent_info
+ ▪ b4bf5b9 f2fs: remove unneeded memset when updating xattr
+ ▪ 6027bdd f2fs: remove unneeded readahead in find_fsync_dnodes
+ ▪ bf3c243 f2fs: retry to truncate blocks in -ENOMEM case
+ ▪ 87914c4 f2fs: fix leak of orphan inode objects
+ ▪ 3d9e2a9 f2fs: revisit error handling flows
+ ▪ a5bf395 f2fs: inject ENOSPC failures
+ ▪ d586847 f2fs: inject page allocation failures
+ ▪ 2892371 f2fs: inject kmalloc failure
+ ▪ 3690186 f2fs: add mount option to select fault injection ratio
+ ▪ 7217566 f2fs: use f2fs_grab_cache_page instead of grab_cache_page
+ ▪ 35fca45 f2fs: introduce f2fs_kmalloc to wrap kmalloc
+ ▪ 545f1ba f2fs: add proc entry to show valid block bitmap
+ ▪ f842a9d f2fs: introduce macros for proc entries
+ ▪ b8abf18 f2fs: factor out fsync inode entry operations
+ ▪ 5fcd043 f2fs: fix to clear page private flag
+ ▪ 60556bf f2fs: fix to clear private data in page
+ ▪ 94085a6 f2fs: fix to return 0 if err == -ENOENT in f2fs_readdir
+ ▪ 535ffff f2fs: move node pages only in victim section during GC
+ ▪ 4b4897f f2fs: be aware of invalid filename length
+ ▪ 41b03d5 f2fs: issue cache flush on direct IO
+ ▪ 18c3473 f2fs: set fsync mark only for the last dnode
+ ▪ 2195b55 f2fs: report unwritten status in fsync_node_pages
+ ▪ 76f6ebf f2fs: split sync_node_pages with fsync_node_pages
+ ▪ 6c07973 f2fs: avoid writing 0'th page in volatile writes
+ ▪ 056c5f6 f2fs: avoid needless lock for node pages when fsyncing a file
+ ▪ 0dce00e f2fs: flush dirty pages before starting atomic writes
+ ▪ ae84ff7 f2fs: don't invalidate atomic page if successful
+ ▪ b7ab07a f2fs: give -E2BIG for no space in xattr
+ ▪ a529972 f2fs: remove redundant condition check
+ ▪ 1ffe5ad f2fs: unset atomic/volatile flag in f2fs_release_file
+ ▪ e42e0aa f2fs: fix dropping inmemory pages in a wrong time
+ ▪ 1c62f24 f2fs: add BUG_ON to avoid unnecessary flow
+ ▪ f6ddda8 f2fs: fix to convert inline directory correctly
+ ▪ 7f1a5ed f2fs: show current mount status
+ ▪ b69b950 f2fs: treat as a normal umount when remounting ro
+ ▪ c59ef78 f2fs: give -EINVAL for norecovery and rw mount
+ ▪ 13cb10f f2fs: recover superblock at RW remounts
+ ▪ 82f9af6 f2fs: give RO message when recovering superblock
+ ▪ b65dc2d ext4/fscrypto: avoid RCU lookup in d_revalidate
+ ▪ d91682d fscrypto: don't let data integrity writebacks fail with ENOMEM
+ ▪ f757fbc f2fs: use dget_parent and file_dentry in f2fs_file_open
+ ▪ 132b1c38 fscrypto: use dget_parent() in fscrypt_d_revalidate()
+ ▪ 58cb609 f2fs: retrieve IO write stat from the right place
+ ▪ 491ba9b f2fs crypto: fix corrupted symlink in encrypted case
+ ▪ a50444f f2fs: cover large section in sanity check of super
+ ▪ 1ef16cd f2fs/crypto: fix xts_tweak initialization
+ ▪ 49bbbae f2fs: submit node page write bios when really required
+ ▪ fb0880b f2fs: add missing argument to f2fs_setxattr stub
+ ▪ 4168ba0 f2fs: fix to avoid unneeded unlock_new_inode
+ ▪ 7a680b2 f2fs: clean up opened code with f2fs_update_dentry
+ ▪ eb1892e f2fs: declare static functions
+ ▪ 7531e5d f2fs: use cryptoapi crc32 functions
+ ▪ 6734980 f2fs: modify the readahead method in ra_node_page()
+ ▪ 22f197d f2fs crypto: sync ext4_lookup and ext4_file_open
+ ▪ 6d1e38f f2fs: define not-set fallocate flags
+ ▪ 22aa049 fs crypto: move per-file encryption from f2fs tree to fs/crypto
+ ▪ 2712cb0 f2fs: mutex can't be used by down_write_nest_lock()
+ ▪ b531dfd f2fs: recovery missing dot dentries in root directory
+ ▪ 4dfda41 f2fs: fix to avoid deadlock when merging inline data
+ ▪ ff86d7e f2fs: introduce f2fs_flush_merged_bios for cleanup
+ ▪ baaa484 f2fs: introduce f2fs_update_data_blkaddr for cleanup
+ ▪ b898713 f2fs crypto: fix incorrect positioning for GCing encrypted data page
+ ▪ 08aa343 f2fs: fix incorrect upper bound when iterating inode mapping tree
+ ▪ a24d40d f2fs: avoid hungtask problem caused by losing wake_up
+ ▪ c25015b f2fs: trace old block address for CoWed page
+ ▪ 2d492fc f2fs: try to flush inode after merging inline data
+ ▪ a8fcffb4 f2fs: show more info about superblock recovery
+ ▪ 8630ddb f2fs: fix the wrong stat count of calling gc
+ ▪ 6b973e62 f2fs: remain last victim segment number ascending order
+ ▪ 70ecb9d f2fs: reuse read_inline_data for f2fs_convert_inline_page
+ ▪ d41fc9d f2fs: fix to delete old dirent in converted inline directory in ->rename
+ ▪ c2ef76e f2fs: detect error of update_dent_inode in ->rename
+ ▪ 3ee5058 f2fs: move sanity checking of cp into get_valid_checkpoint
+ ▪ b12f4bf f2fs: slightly reorganize read_raw_super_block
+ ▪ 8184a6a f2fs: reorder nat cache lock in cache_nat_entry
+ ▪ 69573af f2fs: split journal cache from curseg cache
+ ▪ 668d8d2 f2fs: enhance IO path with block plug
+ ▪ 141c907 f2fs: introduce f2fs_journal struct to wrap journal info
+ ▪ 0f9b039 f2fs crypto: avoid unneeded memory allocation when {en/de}crypting symlink
+ ▪ aacdff2 f2fs crypto: handle unexpected lack of encryption keys
+ ▪ ad4b3db f2fs crypto: make sure the encryption info is initialized on opendir(2)
+ ▪ c1f1266 f2fs: support revoking atomic written pages
+ ▪ caa7666 f2fs: split drop_inmem_pages from commit_inmem_pages
+ ▪ c1f013d f2fs: avoid garbage lenghs in dentries
+ ▪ d0f987c f2fs crypto: sync with ext4's fname padding
+ ▪ 2a908df f2fs: use correct errno
+ ▪ eefb6ae f2fs crypto: add missing locking for keyring_key access
+ ▪ 4ee88a3 f2fs crypto: check for too-short encrypted file names
+ ▪ 0dc227f f2fs crypto: f2fs_page_crypto() doesn't need a encryption context
+ ▪ ab16c88 f2fs crypto: fix spelling typo in comment
+ ▪ 48956ff f2fs crypto: replace some BUG_ON()'s with error checks
+ ▪ c2fc87f f2fs: increase i_size to avoid missing data
+ ▪ bdb0bd9 f2fs: preallocate blocks for buffered aio writes
+ ▪ 2ce0d4d f2fs: move dio preallocation into f2fs_file_write_iter
+ ▪ 6935b1d f2fs: fix missing skip pages info
+ ▪ e0094c9 f2fs: introduce f2fs_submit_merged_bio_cond
+ ▪ 8320c5b f2fs: fix conflict on page->private usage
+ ▪ a6f91b7 f2fs: flush bios to handle cp_error in put_super
+ ▪ 9f43312 f2fs: wait on page's writeback in writepages path
+ ▪ 8dddc00 f2fs: fix endianness of on-disk summary_footer
+ ▪ f04c097 f2fs: speed up handling holes in fiemap
+ ▪ d92d43f f2fs: introduce get_next_page_offset to speed up SEEK_DATA
+ ▪ 02828d1 f2fs: remove unneeded pointer conversion
+ ▪ d3f6609 f2fs: simplify __allocate_data_blocks
+ ▪ 2f11e83 f2fs: simplify f2fs_map_blocks
+ ▪ 8859995 f2fs: introduce lifetime write IO statistics
+ ▪ a9cc277 f2fs: give scheduling point in shrinking path
+ ▪ e86d8dc f2fs: improve shrink performance of extent nodes
+ ▪ 848e760 f2fs: don't set cached_en if it will be freed
+ ▪ abe0e71 f2fs: move extent_node list operations being coupled with rbtree operation
+ ▪ af3339a f2fs: reconstruct the code to free an extent_node
+ ▪ 395e72e f2fs: use wq_has_sleeper for cp_wait wait_queue
+ ▪ c236507 f2fs: avoid unnecessary search while finding victim in gc
+ ▪ 0a01560 f2fs: delete unnecessary wait for page writeback
+ ▪ cc20e3d f2fs: use wait_for_stable_page to avoid contention
+ ▪ 1cf754f f2fs: enhance foreground GC
+ ▪ 6f6fdc8 f2fs: don't need to call set_page_dirty for io error
+ ▪ bef59b5 f2fs: avoid needless sync_inode_page when reading inline_data
+ ▪ 666509f f2fs: don't need to sync node page at every time
+ ▪ 2cf517b f2fs: avoid multiple node page writes due to inline_data
+ ▪ da95bb9 f2fs: do f2fs_balance_fs when block is allocated
+ ▪ fcc15d3 f2fs: fix to overcome inline_data floods
+ ▪ 1259d97 f2fs: use writepages->lock for WB_SYNC_ALL
+ ▪ eb5ed8a f2fs: remove needless condition check
+ ▪ 31f22a5 f2fs: correct search area in get_new_segment
+ ▪ dc009ab f2fs: export dirty_nats_ratio in sysfs
+ ▪ adf60af f2fs: flush dirty nat entries when exceeding threshold
+ ▪ a81b4b1 f2fs: relocate is_merged_page
+ ▪ 5f27627 f2fs: should unset atomic flag after successful commit
+ ▪ 3131500 f2fs: fix wrong memory condition check
+ ▪ 407a35b f2fs: monitor the number of background checkpoint
+ ▪ c5ff8ca f2fs: detect idle time depending on user behavior
+ ▪ ab2c6ff f2fs: introduce time and interval facility
+ ▪ ad9d22b f2fs: skip releasing nodes in chindless extent tree
+ ▪ 5b1c021 f2fs: use atomic type for node count in extent tree
+ ▪ d9ae837 f2fs: recognize encrypted data in f2fs_fiemap
+ ▪ 9c23ada f2fs: clean up f2fs_balance_fs
+ ▪ cc87575 f2fs: remove redundant calls
+ ▪ 237648a f2fs: avoid unnecessary f2fs_balance_fs calls
+ ▪ 0afbd3d f2fs: check the page status filled from disk
+ ▪ 9ad3807 f2fs: introduce __get_node_page to reuse common code
+ ▪ bb1c6a3 f2fs: check node id earily when readaheading node page
+ ▪ 287c934 f2fs: read isize while holding i_mutex in fiemap
+ ▪ 8a88abd Revert "f2fs: check the node block address of newly allocated nid"
+ ▪ b6d17ae f2fs: cover more area with nat_tree_lock
+ ▪ 0d20373 f2fs: introduce max_file_blocks in sbi
+ ▪ ca62c67 f2fs crypto: check CONFIG_F2FS_FS_XATTR for encrypted symlink
+ ▪ 7c51f6a f2fs: introduce zombie list for fast shrinking extent trees
+ ▪ ea83caa f2fs: monitor zombie_tree count
+ ▪ a6682a2 f2fs: use IPU for fdatasync
+ ▪ a9c906c f2fs: write pending bios when cp_error is set
+ ▪ 2069965 f2fs: remove f2fs_bug_on in terms of max_depth
+ ▪ 8426250 f2fs: fix f2fs_ioc_abort_volatile_write
+ ▪ 4236371 f2fs: fix to skip recovering dot dentries in a readonly fs
+ ▪ c33bc1f f2fs: load largest extent all the time
+ ▪ 98a777f f2fs: use i_size_read to get i_size
+ ▪ 79d29c9 f2fs: early check broken symlink length in the encrypted case
+ ▪ 33e0edd f2fs: clean up f2fs_ioc_write_checkpoint
+ ▪ 9e81769 f2fs: add a max block check for get_data_block_bmap
+ ▪ 15d544a f2fs: fix bugs and simplify codes of f2fs_fiemap
+ ▪ 662c822 f2fs: let user being aware of IO error
+ ▪ c33cd4c f2fs: add missing f2fs_balance_fs in __recover_dot_dentries
+ ▪ 7288c07 f2fs: declare static function
+ ▪ beb8e29 f2fs: avoid f2fs_lock_op in f2fs_write_begin
+ ▪ 06e27b0 f2fs: return early when trying to read null nid
+ ▪ a07213e f2fs: introduce prepare_write_begin to clean up
+ ▪ 3c66322 f2fs: don't convert inline inode when inline_data option is disable
+ ▪ f5020a3 f2fs: report error of do_checkpoint
+ ▪ 3f1c098 f2fs: call f2fs_balance_fs only when node was changed
+ ▪ ebb75b3 f2fs: reduce covered region of sbi->cp_rwsem in f2fs_map_blocks
+ ▪ d048ea5 f2fs: record node block allocation in dnode_of_data
+ ▪ 0cc9e88 f2fs: avoid unnecessary f2fs_gc for dir operations
+ ▪ f3c1748 f2fs: check inline_data flag at converting time
+ ▪ ecc7c04 f2fs: speed up shrinking extent tree entries
+ ▪ bff5496 f2fs: use atomic variable for total_extent_tree
+ ▪ 007a567 f2fs: add a tracepoint for sync_dirty_inodes
+ ▪ 5cb6c0d f2fs: optimize the flow of f2fs_map_blocks
+ ▪ 977dafd f2fs: support data flush in background
+ ▪ d33009f f2fs: stat dirty regular/symlink inodes
+ ▪ 6c3eac7 f2fs: introduce new option for controlling data flush
+ ▪ 2dab5f3 f2fs: record dirty status of regular/symlink inode
+ ▪ bd6e881 f2fs: introduce __f2fs_commit_super
+ ▪ 5d0c718 f2fs: relocate tracepoint of write_checkpoint
+ ▪ fd6a32a f2fs: don't grab super block buffer header all the time
+ ▪ 952ea80 f2fs: backup raw_super in sbi
+ ▪ 6be89cb f2fs: fix to reset variable correctlly
+ ▪ 05b43df f2fs: introduce __remove_dirty_inode
+ ▪ dbf338b f2fs: introduce dirty list node in inode info
+ ▪ edbfa41 f2fs: rename {add,remove,release}_dirty_inode to {add,remove,release}_ino_entry
+ ▪ b0bf939 f2fs: add symbol to avoid any confusion with tools
+ ▪ f2cb7e5 f2fs: do more integrity verification for superblock
+ ▪ 2c182dc f2fs: fix to update variable correctly when skip a unmapped block
+ ▪ 24a2b51 f2fs: write only the pages in range during defragment
+ ▪ 28796b7 f2fs: clean up node page updating flow
+ ▪ 62e4a77 f2fs: use lock_buffer when changing superblock
+ ▪ b7c2608 f2fs: refactor f2fs_commit_super
+ ▪ 2c6a7b8 f2fs: enhance the bit operation for SSR
+ ▪ aa1c35b f2fs: fix to convert inline inode in ->setattr
+ ▪ ce33128 f2fs: use sbi->blocks_per_seg to avoid unnecessary calculation
+ ▪ 8cec224 f2fs: kill f2fs_drop_largest_extent
+ ▪ 4c59751 f2fs: clean up argument of recover_data
+ ▪ 29bebef f2fs: clean up code with __has_cursum_space
+ ▪ 25c6fb4 f2fs: clean up error path in f2fs_readdir
+ ▪ 40991e9 f2fs: do not recover from previous remained wrong dnodes
+ ▪ 5693820 f2fs: avoid deadlock in f2fs_shrink_extent_tree
+ ▪ fe6d087 f2fs: fix to report error in f2fs_readdir
+ ▪ 92a5864 f2fs: clear page uptodate when dropping cache for atomic write
+ ▪ 32ac3d6 f2fs: optimize __find_rev_next_bit
+ ▪ cf72dc5 f2fs: fix to remove directory inode from dirty list
+ ▪ 699d24b f2fs: fix to enable missing ioctl interfaces in ->compat_ioctl
+ ▪ 2ca4007 f2fs: fix memory leak of kobject in error path of fill_super
+ ▪ 428c654 f2fs: support file defragment
+ ▪ 0854ddb f2fs: commit atomic written page in LFS mode
+ ▪ 6a72cf4 f2fs: report error of f2fs_create_root_stats
+ ▪ 8ca7af50 f2fs: Fix a system panic caused by f2fs_follow_link
+ ▪ cee1542 f2fs: catch up to v4.4-rc1
+ ▪ b7453aa Linux 3.10.105
+ ▪ 0deca68 metag: Only define atomic_dec_if_positive conditionally
+ ▪ 5dbea00 fbdev/efifb: Fix 16 color palette entry calculation
+ ▪ a13fcdc dm: mark request_queue dead before destroying the DM device
+ ▪ 526c34c regulator: tps65910: Work around silicon erratum SWCZ010
+ ▪ ec89059a ASoC: omap-mcpdm: Fix irq resource handling
+ ▪ 5e812fc mfd: 88pm80x: Double shifting bug in suspend/resume
+ ▪ de0f4ca hwmon: (adt7411) set bit 3 in CFG1 register
+ ▪ 3249b0c can: dev: fix deadlock reported after bus-off
+ ▪ 6b9c974 mm,ksm: fix endless looping in allocating memory when ksm enable
+ ▪ cc31a33 dm flakey: fix reads to be issued if drop_writes configured
+ ▪ 9d0dad1 tile: avoid using clocksource_cyc2ns with absolute cycle count
+ ▪ c173759 PCI: Handle read-only BARs on AMD CS553x devices
+ ▪ 4808c22 ACPI / APEI: Fix incorrect return value of ghes_proc()
+ ▪ 3c111ec mei: bus: fix received data size check in NFC fixup
+ ▪ 0db3bae staging: iio: ad5933: avoid uninitialized variable in error case
+ ▪ 7e400ad hv: do not lose pending heartbeat vmbus packets
+ ▪ fced21a uio: fix dmem_region_start computation
+ ▪ b07d36a gpio: mpc8xxx: Correct irq handler function
+ ▪ f49295a cx231xx: fix GPIOs for Pixelview SBTVD hybrid
+ ▪ 41682a1 cx231xx: don't return error on success
+ ▪ b913918 mb86a20s: fix demod settings
+ ▪ e8a0e3a mb86a20s: fix the locking logic
+ ▪ 8ac9030 pstore/ram: Use memcpy_fromio() to save old buffer
+ ▪ 74d11ae pstore/ram: Use memcpy_toio instead of memcpy
+ ▪ 570bed9 pstore/core: drop cmpxchg based updates
+ ▪ e91dea2 mmc: block: don't use CMD23 with very old MMC cards
+ ▪ b6e2595 mmc: mxs: Initialize the spinlock prior to using it
+ ▪ b5aafcb PM / sleep: fix device reference leak in test_suspend
+ ▪ 4d1b602 mfd: core: Fix device reference leak in mfd_clone_cell
+ ▪ c6cb7d5 ratelimit: fix bug in time interval by resetting right begin time
+ ▪ b576597 rcu: Fix soft lockup for rcu_nocb_kthread
+ ▪ 65a9df5 tools/vm/slabinfo: fix an unintentional printf
+ ▪ 2da39e8 drbd: Fix kernel_sendmsg() usage - potential NULL deref
+ ▪ aed3a2d cfq: fix starvation of asynchronous writes
+ ▪ 6848214 Revert "ipc/sem.c: optimize sem_lock()"
+ ▪ ab1f18d kernel/fork: fix CLONE_CHILD_CLEARTID regression in nscd
+ ▪ 65c07ea tracing: Move mutex to protect against resetting of seq data
+ ▪ 0142821 kaweth: fix firmware download
+ ▪ 42f47c8 net: sky2: Fix shutdown crash
+ ▪ 3776ee5 ipv4: Set skb->protocol properly for local output
+ ▪ 609e960 mwifiex: printk() overflow with 32-byte SSIDs
+ ▪ 1b40f11 cfg80211: limit scan results cache size
+ ▪ d401ec3 mac80211: discard multicast and 4-addr A-MSDUs
+ ▪ b6d1765 mac80211: fix purging multicast PS buffer queue
+ ▪ 7e99587 ipv4: use new_gw for redirect neigh lookup
+ ▪ f348901 neigh: check error pointer instead of NULL for ipv4_neigh_lookup()
+ ▪ 221d3bb sctp: assign assoc_id earlier in __sctp_connect
+ ▪ af05d63 dccp: fix out of bound access in dccp_v4_err()
+ ▪ 75d938f dccp: do not send reset to already closed sockets
+ ▪ 03c5d46 net: mangle zero checksum in skb_checksum_help()
+ ▪ e1f7f7f net: clear sk_err_soft in sk_clone_lock()
+ ▪ 15b4b97 sctp: validate chunk len before actually using it
+ ▪ 49359b0 net: sctp, forbid negative length
+ ▪ c5235df packet: call fanout_release, while UNREGISTERING a netdev
+ ▪ 640ac0a ipmr, ip6mr: fix scheduling while atomic and a deadlock with ipmr_get_route
+ ▪ 593e2ca net: avoid sk_forward_alloc overflows
+ ▪ ce28d0a net: fix sk_mem_reclaim_partial()
+ ▪ c9b644e can: bcm: fix warning in bcm_connect/proc_register
+ ▪ e1da8b0 netfilter: fix namespace handling in nf_log_proc_dostring
+ ▪ 8b8dba0 firewire: net: fix fragmented datagram_size off-by-one
+ ▪ e3c9d9d firewire: net: guard against rx buffer overflows
+ ▪ ea2ecd8 net/mlx4_core: Allow resetting VF admin mac to zero
+ ▪ 9cba097 pstore: Fix buffer overflow while write offset equal to buffer size
+ ▪ 8f3fd9d brcmfmac: avoid potential stack overflow in brcmf_cfg80211_start_ap()
+ ▪ 0281a83 brcmsmac: Initialize power in brcms_c_stf_ss_algo_channel_get()
+ ▪ 1e73baf brcmsmac: Free packet if dma_mapping_error() fails in dma_rxfill
+ ▪ 557f556 svc: Avoid garbage replies when pc_func() returns rpc_drop_reply
+ ▪ 1632d50 iwlwifi: pcie: fix access to scratch buffer
+ ▪ 379c78f ipvs: count pre-established TCP states as active
+ ▪ ba4b383 net: disable fragment reassembly if high_thresh is set to zero
+ ▪ 5cf2a6a8 mISDN: Fixing missing validation in base_sock_bind()
+ ▪ 80fff59 mISDN: Support DR6 indication in mISDNipac driver
+ ▪ 6aa2b4d net: ratelimit warnings about dst entry refcount underflow or overflow
+ ▪ 2de76aa bonding: Fix bonding crash
+ ▪ 39826a2 tcp: take care of truncations done by sk_filter()
+ ▪ adf0ccd tcp: fix wrong checksum calculation on MTU probing
+ ▪ cd2822f tcp: fix overflow in __tcp_retransmit_skb()
+ ▪ 280a81a tcp: properly scale window in tcp_v[46]_reqsk_send_ack()
+ ▪ efdde28 net/irda: handle iriap_register_lsap() allocation failure
+ ▪ a9b929a ip6_tunnel: disable caching when the traffic class is inherited
+ ▪ 800bd33 ip6_tunnel: Clear IP6CB in ip6tunnel_xmit()
+ ▪ 5c528ae ipv6: dccp: add missing bind_conflict to dccp_ipv6_mapped
+ ▪ c0d321a ipv6: dccp: fix out of bound access in dccp_v6_err()
+ ▪ 36cfe78 ipv6: correctly add local routes when lo goes up
+ ▪ 14fe757 ip6_gre: fix flowi6_proto value in ip6gre_xmit_other()
+ ▪ 3af9975 ipv6: fix rtnl locking in setsockopt for anycast and multicast
+ ▪ 4999804 ipv6: addrconf: fix dev refcont leak when DAD failed
+ ▪ 4739c7a ipv6: move DAD and addrconf_verify processing to workqueue
+ ▪ 2ba3c91 ipv6: split duplicate address detection and router solicitation timer
+ ▪ 5e0ee64 ipv6: don't call fib6_run_gc() until routing is ready
+ ▪ 3071b8f stddef.h: move offsetofend inside #ifndef/#endif guard, neaten
+ ▪ da2a70c include/stddef.h: Move offsetofend() from vfio.h to a generic kernel header
+ ▪ 7652ccc drivers/vfio: Rework offsetofend()
+ ▪ bb5e4eb vt: clear selection before resizing
+ ▪ 2063955 tty: vt, fix bogus division in csi_J
+ ▪ 66e50c2 tty: limit terminal size to 4M chars
+ ▪ 1c2af78 perf symbols: Fixup symbol sizes before picking best ones
+ ▪ 6240e20 mtd: nand: davinci: Reinitialize the HW ECC engine in 4bit hwctl
+ ▪ 3b3b1a9 mtd: pmcmsp-flash: Allocating too much in init_msp_flash()
+ ▪ 172b0b3 mtd: blkdevs: fix potential deadlock + lockdep warnings
+ ▪ 5b6e00b IB/cm: Mark stale CM id's whenever the mad agent was unregistered
+ ▪ a8bed81 IB/uverbs: Fix leak of XRC target QPs
+ ▪ c6d8e96 IB/mlx4: Fix create CQ error flow
+ ▪ 3a0cc7d IB/mlx4: Fix incorrect MC join state bit-masking on SR-IOV
+ ▪ c3af2ec IB/ipoib: Don't allow MC joins during light MC flush
+ ▪ a6c85d8 IB/core: Fix use after free in send_leave function
+ ▪ 35322e6 IB/ipoib: Fix memory corruption in ipoib cm mode connect flow
+ ▪ 07a65fc EDAC: Increment correct counter in edac_inc_ue_error()
+ ▪ e0c308c timers: Use proper base migration in add_timer_on()
+ ▪ 8180ddc cdc-acm: fix wrong pipe type on rx interrupt xfers
+ ▪ 6b27024 thermal: hwmon: Properly report critical temperature in sysfs
+ ▪ cd68dc3 iio: accel: kxsd9: Fix scaling bug
+ ▪ a7b56e8 iio: accel: kxsd9: Fix raw read return
+ ▪ 79ca60c i2c: at91: fix write transfers by clearing pending interrupt first
+ ▪ 8763b4f i2c: core: fix NULL pointer dereference under race condition
+ ▪ ba3fb11 em28xx-i2c: rt_mutex_trylock() returns zero on failure
+ ▪ 607ac89 i2c-eg20t: fix race between i2c init and interrupt enable
+ ▪ 264c0d8 hwrng: omap - Only fail if pm_runtime_get_sync returns < 0
+ ▪ 341a2a9 hwrng: omap - Fix assumption that runtime_get_sync will always succeed
+ ▪ 42feb45 hwrng: exynos - Disable runtime PM on probe failure
+ ▪ d3b85c1 Input: ili210x - fix permissions on "calibrate" attribute
+ ▪ 69700a6 Input: i8042 - set up shared ps2_cmd_mutex for AUX ports
+ ▪ a78ee56 Input: i8042 - break load dependency between atkbd/psmouse and i8042
+ ▪ b9fcfc3 qxl: check for kmap failures
+ ▪ d0a991d drm/radeon: Ensure vblank interrupt is enabled on DPMS transition to on
+ ▪ ddbf0a6 drm: Reject page_flip for !DRIVER_MODESET
+ ▪ 1199396 drm/radeon: fix radeon_move_blit on 32bit systems
+ ▪ f219540 driver core: Delete an unnecessary check before the function call "put_device"
+ ▪ 33d510b hostfs: Freeing an ERR_PTR in hostfs_fill_sb_common()
+ ▪ 1c492c9 isofs: Do not return EACCES for unknown filesystems
+ ▪ 9036aa5 fs/super.c: fix race between freeze_super() and thaw_super()
+ ▪ 51b3e95 fs/seq_file: fix out-of-bounds read
+ ▪ e8288c7 NFSv4: Open state recovery must account for file permission changes
+ ▪ f16c7f4 NFS: Don't drop CB requests with invalid principals
+ ▪ 30e483f NFSD: Using free_conn free connection
+ ▪ d8a1dd0 NFSv4.x: Fix a refcount leak in nfs_callback_up_net
+ ▪ 3732a52 UBI: fastmap: scrub PEB when bitflips are detected in a free PEB EC header
+ ▪ 5700c01 ubifs: Fix regression in ubifs_readdir()
+ ▪ 2abad54 ubifs: Abort readdir upon error
+ ▪ fc9fabc UBIFS: Fix possible memory leak in ubifs_readdir()
+ ▪ 08538e5 ubifs: Fix xattr_names length in exit paths
+ ▪ 7599dd8 ubifs: Fix assertion in layout_in_gaps()
+ ▪ e5fe579 ocfs2: fix start offset to ocfs2_zero_range_for_truncate()
+ ▪ ab6fb1a ocfs2/dlm: fix race between convert and migration
+ ▪ 1d6688e btrfs: ensure that file descriptor used with subvol ioctls is a dir
+ ▪ ff41b7f libxfs: clean up _calc_dquots_per_chunk
+ ▪ 4574671 xfs: fix superblock inprogress check
+ ▪ 4e8b155 reiserfs: Unlock superblock before calling reiserfs_quota_on_mount()
+ ▪ 0aeca79 reiserfs: fix "new_insert_key may be used uninitialized ..."
+ ▪ bb171ba ext4: sanity check the block and cluster size at mount time
+ ▪ 30ee89a ext4: allow DAX writeback for hole punch
+ ▪ d621cd5 ext4: reinforce check of i_dtime when clearing high fields of uid and gid
+ ▪ 736f52b ext4: use __GFP_NOFAIL in ext4_free_blocks()
+ ▪ 6b4eaaa ext4: avoid modifying checksum fields directly during checksum verification
+ ▪ 5eb0fd3 ext4: validate that metadata blocks do not overlap superblock
+ ▪ 2ffd4c7 scsi: arcmsr: Send SYNCHRONIZE_CACHE command to firmware
+ ▪ 6eb8365 scsi: scsi_debug: Fix memory leak if LBP enabled and module is unloaded
+ ▪ 0be4c54 scsi: arcmsr: Buffer overflow in arcmsr_iop_message_xfer()
+ ▪ 55c5099 scsi: Fix use-after-free
+ ▪ 1dd29b7 scsi: ibmvfc: Fix I/O hang when port is not mapped
+ ▪ dc14746 scsi: megaraid_sas: fix macro MEGASAS_IS_LOGICAL to avoid regression
+ ▪ f2ec68e scsi: megaraid_sas: Fix data integrity failure for JBOD (passthrough) devices
+ ▪ 32899d3 mpt2sas: Fix secure erase premature termination
+ ▪ 4a1c554 scsi: mpt3sas: fix hang on ata passthrough commands
+ ▪ bf46a63 scsi: mpt3sas: Unblock device after controller reset
+ ▪ 1273315 scsi: mpt3sas: Fix secure erase premature termination
+ ▪ 2fbdabc scsi: zfcp: spin_lock_irqsave() is not nestable
+ ▪ d7428c5 zfcp: trace full payload of all SAN records (req,resp,iels)
+ ▪ f55dd3b zfcp: fix payload trace length for SAN request&response
+ ▪ 3e0c65c zfcp: fix D_ID field with actual value on tracing SAN responses
+ ▪ 0789bb2 zfcp: restore tracing of handle for port and LUN with HBA records
+ ▪ 84e65e8 zfcp: trace on request for open and close of WKA port
+ ▪ 15fbe93 zfcp: restore: Dont use 0 to indicate invalid LUN in rec trace
+ ▪ b182e65 zfcp: retain trace level for SCSI and HBA FSF response records
+ ▪ 6a6449a zfcp: close window with unblocked rport during rport gone
+ ▪ a66e3aa zfcp: fix ELS/GS request&response length for hardware data router
+ ▪ e99faa7 zfcp: fix fc_host port_type with NPIV
+ ▪ 539e5de ALSA: pcm : Call kill_fasync() in stream lock
+ ▪ 10b4189 ALSA: ali5451: Fix out-of-bound position reporting
+ ▪ 87ab261 ALSA: timer: fix NULL pointer dereference on memory allocation failure
+ ▪ b5b1831 ALSA: timer: fix division by zero after SNDRV_TIMER_IOCTL_CONTINUE
+ ▪ 63da0ed ALSA: timer: fix NULL pointer dereference in read()/ioctl() race
+ ▪ 836e89c ALSA: rawmidi: Fix possible deadlock with virmidi registration
+ ▪ fd64a6a Fix USB CB/CBI storage devices with CONFIG_VMAP_STACK=y
+ ▪ eed7260 usb: chipidea: move the lock initialization to core file
+ ▪ 32a1ef7 USB: serial: cp210x: fix tiocmget error handling
+ ▪ 03003a1 usb: misc: legousbtower: Fix NULL pointer deference
+ ▪ 808e490 USB: serial: cp210x: fix hardware flow-control disable
+ ▪ eeeb712 usb: gadget: fsl_qe_udc: signedness bug in qe_get_frame()
+ ▪ 923f406 USB: change bInterval default to 10 ms
+ ▪ 41fced5 usb: renesas_usbhs: fix clearing the {BRDY,BEMP}STS condition
+ ▪ 2cf7805 USB: serial: mos7840: fix non-atomic allocation in write path
+ ▪ 1f0ca8c USB: serial: mos7720: fix non-atomic allocation in write path
+ ▪ 0c72ca5 USB: kobil_sct: fix non-atomic allocation in write path
+ ▪ f6e0efb USB: serial: fix memleak in driver-registration error path
+ ▪ 076bc5f usb: xhci: Fix panic if disconnect
+ ▪ 958642c USB: fix typo in wMaxPacketSize validation
+ ▪ 28c35a0 USB: validate wMaxPacketValue entries in endpoint descriptors
+ ▪ 14a1d9a coredump: fix unfreezable coredumping task
+ ▪ b600e9d swapfile: fix memory corruption via malformed swapfile
+ ▪ faf27d7 Fix potential infoleak in older kernels
+ ▪ 0a293de arc: don't leak bits of kernel stack into coredump
+ ▪ d290868 fix memory leaks in tracing_buffers_splice_read()
+ ▪ 06a7417 fix fault_in_multipages_...() on architectures with no-op access_ok()
+ ▪ 01c686a ia64: copy_from_user() should zero the destination on access_ok() failure
+ ▪ 95facba ppc32: fix copy_from_user()
+ ▪ 58e0ce0 sparc32: fix copy_from_user()
+ ▪ ad1776d mn10300: copy_from_user() should zero on access_ok() failure...
+ ▪ 36eb32f openrisc: fix the fix of copy_from_user()
+ ▪ ebbe45a openrisc: fix copy_from_user()
+ ▪ 1c31229 parisc: fix copy_from_user()
+ ▪ b0238db metag: copy_from_user() should zero the destination on access_ok() failure
+ ▪ 1e1be11 alpha: fix copy_from_user()
+ ▪ 7c018be asm-generic: make copy_from_user() zero the destination properly
+ ▪ 6757b00 mips: copy_from_user() must zero the destination on access_ok() failure
+ ▪ 1dda258 hexagon: fix strncpy_from_user() error return
+ ▪ 1ba9906 sh: fix copy_from_user()
+ ▪ 83a590e score: fix copy_from_user() and friends
+ ▪ 614839b blackfin: fix copy_from_user()
+ ▪ 207a921 cris: buggered copy_from_user/copy_to_user/clear_user
+ ▪ 7d9481b frv: fix clear_user()
+ ▪ 220aab1 asm-generic: make get_user() clear the destination on errors
+ ▪ d77986c ARC: uaccess: get_user to zero out dest in cause of fault
+ ▪ 7e7d7d2 s390: get_user() should zero on failure
+ ▪ 106dc05 score: fix __get_user/get_user
+ ▪ f5e7857 sh64: failing __get_user() should zero
+ ▪ a1ec27c m32r: fix __get_user()
+ ▪ 51dd0a0 mn10300: failing __get_user() and get_user() should zero
+ ▪ 5a7945b microblaze: fix copy_from_user()
+ ▪ b5d2860 microblaze: fix __get_user()
+ ▪ 381353c parisc: Ensure consistent state when switching to kernel stack at syscall entry
+ ▪ e4c9fba s390/dasd: fix hanging device after clear subchannel
+ ▪ 312b9f7 avr32: off by one in at32_init_pio()
+ ▪ 15bf7b0 avr32: fix 'undefined reference to `___copy_from_user'
+ ▪ fdf9f83 avr32: fix copy_from_user()
+ ▪ bb84273 powerpc/nvram: Fix an incorrect partition merge
+ ▪ 7183d24 powerpc/64: Fix incorrect return value from __copy_tofrom_user
+ ▪ bb14a1a8 powerpc/powernv: Use CPU-endian PEST in pnv_pci_dump_p7ioc_diag_data()
+ ▪ 999fe30 powerpc/vdso64: Use double word compare on pointers
+ ▪ 0ae4990 powerpc/mm: Don't alias user region to other regions below PAGE_OFFSET
+ ▪ bf426cd MIPS: ptrace: Fix regs_return_value for kernel context
+ ▪ cfe6756 MIPS: Malta: Fix IOCU disable switch read for MIPS64
+ ▪ 6f67a3a arm64: debug: avoid resetting stepping state machine when TIF_SINGLESTEP
+ ▪ 0826770 arm64: spinlocks: implement smp_mb__before_spinlock() as smp_mb()
+ ▪ 450668e arm64: Define AT_VECTOR_SIZE_ARCH for ARCH_DLINFO
+ ▪ 1e31327 arm64: avoid returning from bad_mode
+ ▪ 4179c9e ARM: sa1111: fix pcmcia suspend/resume
+ ▪ b4b377e ARM: sa1100: clear reset status prior to reboot
+ ▪ de23bb5 ARM: 8618/1: decompressor: reset ttbcr fields to use TTBR0 on ARMv7
+ ▪ 4439d7e ARM: 8616/1: dt: Respect property size when parsing CPUs
+ ▪ cb01d4a iommu/amd: Free domain id when free a domain of struct dma_ops_domain
+ ▪ 206cfb6 iommu/amd: Update Alias-DTE in update_device_table()
+ ▪ cde0db3 x86/um: reuse asm-generic/barrier.h
+ ▪ 3b49805 x86/build: Build compressed x86 kernels as PIE
+ ▪ ff2d603 x86/paravirt: Do not trace _paravirt_ident_*() functions
+ ▪ 170a993 x86/mm/pat, /dev/mem: Remove superfluous error message
+ ▪ 9e8c1f1 x86/apic: Do not init irq remapping if ioapic is disabled
+ ▪ 30ef08a x86/traps: Ignore high word of regs->cs in early_idt_handler_common
+ ▪ 949e39f x86/xen: fix upper bound of pmd loop in xen_cleanhighmap()
+ ▪ bf57fc2 xen-pciback: Add name prefix to global 'permissive' variable
+ ▪ f9b216c xen/pciback: Don't allow MSI-X ops if PCI_COMMAND_MEMORY is not set.
+ ▪ 267ab3b xen/pciback: For XEN_PCI_OP_disable_msi[|x] only disable if device has MSI(X) enabled.
+ ▪ ad23098 xen/pciback: Do not install an IRQ handler for MSI interrupts.
+ ▪ 417437b xen/pciback: Return error on XEN_PCI_OP_enable_msix when device has MSI or MSI-X enabled
+ ▪ c3eaef9 xen/pciback: Return error on XEN_PCI_OP_enable_msi when device has MSI or MSI-X enabled
+ ▪ cb51841 xen/pciback: Save the number of MSI-X entries to be copied later.
+ ▪ 54bdea2 xen/pciback: Save xen_pci_op commands before processing it
+ ▪ 5fb098b xen-blkback: only read request operation from shared ring once
+ ▪ 082e2c3 xen-netback: use RING_COPY_REQUEST() throughout
+ ▪ 82af19a xen-netback: don't use last request to determine minimum Tx credit
+ ▪ 2a90022 xen: Add RING_COPY_REQUEST()
+ ▪ faafd93 x86/mm/xen: Suppress hugetlbfs in PV guests
+ ▪ b6dc491 ppp: defer netns reference release for ppp channel
+ ▪ 2f84010 KVM: Disable irq while unregistering user notifier
+ ▪ 38fed83 KVM: x86: fix missed SRCU usage in kvm_lapic_set_vapic_addr
+ ▪ 9930b95 KVM: x86: fix wbinvd_dirty_mask use-after-free
+ ▪ 9d50d7e KVM: MIPS: Make ERET handle ERL before EXL
+ ▪ 7efcf9d KVM: nVMX: postpone VMCS changes on MSR_IA32_APICBASE write
+ ▪ 7d87c90 KVM: MIPS: Drop other CPU ASIDs on guest MMU changes
+ ▪ 5c976cb KVM: MIPS: Precalculate MMIO load resume PC
+ ▪ 80aa772 MIPS: KVM: Fix unused variable build warning
+ ▪ 7eff749 crypto: gcm - Fix IV buffer size in crypto_gcm_setkey
+ ▪ c6b5d14 crypto: skcipher - Fix blkcipher walk OOM crash
+ ▪ 1505497 crypto: cryptd - initialize child shash_desc on import
+ ▪ 13e0520 crypto: algif_skcipher - Load TX SG list after waiting
+ ▪ 0aca279 crypto: algif_skcipher - Fix race condition in skcipher_check_key
+ ▪ df7e230 crypto: algif_hash - Fix race condition in hash_check_key
+ ▪ 849ebf4 crypto: af_alg - Forbid bind(2) when nokey child sockets are present
+ ▪ 13a0a97 crypto: algif_skcipher - Remove custom release parent function
+ ▪ 0681bd9 crypto: algif_hash - Remove custom release parent function
+ ▪ 22d9bea crypto: af_alg - Allow af_af_alg_release_parent to be called on nokey path
+ ▪ 9dc3a67 crypto: algif_skcipher - Add key check exception for cipher_null
+ ▪ 0a89d73 crypto: skcipher - Add crypto_skcipher_has_setkey
+ ▪ bca57cc crypto: algif_hash - Require setkey before accept(2)
+ ▪ a8e681c crypto: shash - Fix has_key setting
+ ▪ 6cb74ad crypto: hash - Add crypto_ahash_has_setkey
+ ▪ cc260ae crypto: algif_skcipher - Add nokey compatibility path
+ ▪ 36e50f5 crypto: af_alg - Add nokey compatibility path
+ ▪ 52cc8d2 crypto: af_alg - Disallow bind/setkey/... after accept(2)
+ ▪ d0327ce crypto: algif_skcipher - Require setkey before accept(2)
+ ▪ 2bf1f90 sched/core: Fix an SMP ordering race in try_to_wake_up() vs. schedule()
+ ▪ 413d7bf sched/core: Fix a race between try_to_wake_up() and a woken up task
+ ▪ 7bd1ffc Linux 3.10.104
+ ▪ f45bad5 xen-netback: ref count shared rings
+ ▪ b96db69 security: let security modules use PTRACE_MODE_* with bitmasks
+ ▪ d114fd2 MIPS: KVM: Check for pfn noslot case
+ ▪ 6c57ae4 mm: thp: fix SMP race condition between THP page fault and MADV_DONTNEED
+ ▪ ec7a3bd ACPI / sysfs: fix error code in get_status()
+ ▪ 24cb6ab staging: comedi: daqboard2000: bug fix board type matching code
+ ▪ 3d7e008 crypto: nx - off by one bug in nx_of_update_msc()
+ ▪ c0b46f8 megaraid_sas: Fix probing cards without io port
+ ▪ df7274d aacraid: Check size values after double-fetch from user
+ ▪ 3e083d5 PCI: Limit config space size for Netronome NFP4000
+ ▪ 3833efc PCI: Add Netronome NFP4000 PF device ID
+ ▪ 4f6d183 PCI: Limit config space size for Netronome NFP6000 family
+ ▪ 5e0fb2e PCI: Add Netronome vendor and device IDs
+ ▪ deaa2f7 PCI: Support PCIe devices with short cfg_size
+ ▪ 68cd8da Revert "powerpc/tm: Always reclaim in start_thread() for exec() class syscalls"
+ ▪ e87c939 Linux 3.10.103
+ ▪ bad6aa4 spi: spi-xilinx: cleanup a check in xilinx_spi_txrx_bufs()
+ ▪ ba7dbd7 stb6100: fix buffer length check in stb6100_write_reg_range()
+ ▪ 0ad32f2 isdn: hfcpci_softirq: get func return to suppress compiler warning
+ ▪ f3bec16 net: rfkill: Do not ignore errors from regulator_enable()
+ ▪ 47f08ed ALSA: oxygen: Fix logical-not-parentheses warning
+ ▪ 1e4db56 HID: hid-input: Add parentheses to quell gcc warning
+ ▪ 07fdb4d squash mm: Export migrate_page_... : also make it non-static
+ ▪ a975715 be2iscsi: Fix bogus WARN_ON length check
+ ▪ 128431d module: Invalidate signatures on force-loaded modules
+ ▪ c3bd954 dm flakey: error READ bios during the down_interval
+ ▪ 432abd6 ubi: Fix race condition between ubi device creation and udev
+ ▪ 5edd605 ubi: Make volume resize power cut aware
+ ▪ a450313 metag: Fix __cmpxchg_u32 asm constraint for CMP
+ ▪ a7f606c ftrace/recordmcount: Work around for addition of metag magic but not relocations
+ ▪ 7eb6fae balloon: check the number of available pages in leak balloon
+ ▪ fdc7408 netlabel: add address family checks to netlbl_{sock,req}_delattr()
+ ▪ c2d55f0 cifs: Check for existing directory when opening file with O_CREAT
+ ▪ aaf70cb Bluetooth: Fix l2cap_sock_setsockopt() with optname BT_RCVMTU
+ ▪ 821ef6c s5p-mfc: Add release callback for memory region devs
+ ▪ 4fea48a s5p-mfc: Set device name for reserved memory region devs
+ ▪ 9903afd hp-wmi: Fix wifi cannot be hard-unblocked
+ ▪ f8d9f3b gpio: pca953x: Fix NBANK calculation for PCA9536
+ ▪ c0601cb net/irda: fix NULL pointer dereference on memory allocation failure
+ ▪ 0c9542e scsi_lib: correctly retry failed zero length REQ_TYPE_FS commands
+ ▪ 0f88e7e KEYS: 64-bit MIPS needs to use compat_sys_keyctl for 32-bit userspace
+ ▪ 0720787 x86/mm: Improve switch_mm() barrier comments
+ ▪ d96b18b sctp: Prevent soft lockup when sctp_accept() is called during a timeout event
+ ▪ 9194e26 net: mvneta: set real interrupt per packet for tx_done
+ ▪ 342097b ipr: Clear interrupt on croc/crocodile when running with LSI
+ ▪ 6c21655 can: fix oops caused by wrong rtnl dellink usage
+ ▪ 0207033 can: at91_can: RX queue could get stuck at high bus load
+ ▪ c1d090e mmc: block: fix packed command header endianness
+ ▪ 3a8d7ba qeth: delete napi struct when removing a qeth device
+ ▪ f5b2d5d ARC: use ASL assembler mnemonic
+ ▪ 896bc80 Revert "ecryptfs: forbid opening files without mmap handler"
+ ▪ 044ac61 xen/pciback: Fix conf_space read/write overlap check.
+ ▪ 7e67f0a arc: unwind: warn only once if DW2_UNWIND is disabled
+ ▪ cda7130 fs/nilfs2: fix potential underflow in call to crc32_le
+ ▪ 07fb8d1 s390/seccomp: fix error return for filtered system calls
+ ▪ 48fc750 xen/acpi: allow xen-acpi-processor driver to load on Xen 4.7
+ ▪ 984c0e5 Fix reconnect to not defer smb3 session reconnect long after socket reconnect
+ ▪ dea0925 scsi: remove scsi_end_request
+ ▪ 89b0866 scsi: fix race between simultaneous decrements of ->host_failed
+ ▪ ee9ac77 ALSA: au88x0: Fix calculation in vortex_wtdma_bufshift()
+ ▪ 5e3cc69 ALSA: dummy: Fix a use-after-free at closing
+ ▪ da77613 tty/vt/keyboard: fix OOB access in do_compute_shiftstate()
+ ▪ d772e01 iio:ad7266: Fix probe deferral for vref
+ ▪ ec7b622 iio:ad7266: Fix broken regulator error handling
+ ▪ 4fa7843 iio: accel: kxsd9: fix the usage of spi_w8r8()
+ ▪ 69e7984 staging: iio: accel: fix error check
+ ▪ 60719b3 iio: Fix error handling in iio_trigger_attach_poll_func
+ ▪ dc889cb base: make module_create_drivers_dir race-free
+ ▪ eb8dac7 tracing: Handle NULL formats in hold_module_trace_bprintk_format()
+ ▪ 1c52b16 kvm: Fix irq route entries exceeding KVM_MAX_IRQ_ROUTES
+ ▪ ed03480 cdc_ncm: workaround for EM7455 "silent" data interface
+ ▪ 3346c4f UBIFS: Implement ->migratepage()
+ ▪ ff8f742 mm: Export migrate_page_move_mapping and migrate_page_copy
+ ▪ c256971 NFS: Fix another OPEN_DOWNGRADE bug
+ ▪ b191a2c x86/amd_nb: Fix boot crash on non-AMD systems
+ ▪ aae1ba2 kprobes/x86: Clear TF bit in fault on single-stepping
+ ▪ ab243af x86, build: copy ldlinux.c32 to image.iso
+ ▪ b4c8f84 IB/mlx4: Fix the SQ size of an RC QP
+ ▪ 2a47d17 IB/IPoIB: Don't update neigh validity for unresolved entries
+ ▪ 864219d9 IB/security: Restrict use of the write() interface
+ ▪ c532499 IB/mlx4: Properly initialize GRH TClass and FlowLabel in AHs
+ ▪ 0c5a159 mac80211_hwsim: Add missing check for HWSIM_ATTR_SIGNAL
+ ▪ f19e549d mac80211: mesh: flush mesh paths unconditionally
+ ▪ 43c75b7 net: alx: Work around the DMA RX overflow issue
+ ▪ 90f402b ipmr/ip6mr: Initialize the last assert time of mfc entries.
+ ▪ e7cdd82 sit: correct IP protocol used in ipip6_err
+ ▪ 38edb94 crypto: scatterwalk - Fix test in scatterwalk_done
+ ▪ 77a3794 crypto: gcm - Filter out async ghash if necessary
+ ▪ 4dd232c crypto: ux500 - memmove the right size
+ ▪ f2177bc fix d_walk()/non-delayed __d_free() race
+ ▪ d0feb8b ecryptfs: forbid opening files without mmap handler
+ ▪ 31c02b7 parisc: Fix pagefault crash in unaligned __get_user() call
+ ▪ fc5ae53 arm: oabi compat: add missing access checks
+ ▪ cb4d37f ARM: fix PTRACE_SETVFPREGS on SMP systems
+ ▪ 396a17d KVM: x86: fix OOPS after invalid KVM_SET_DEBUGREGS
+ ▪ 531f579 xfs: skip stale inodes in xfs_iflush_cluster
+ ▪ e23d1f9 xfs: fix inode validity check in xfs_iflush_cluster
+ ▪ 67a71c3 xfs: xfs_iflush_cluster fails to abort on error
+ ▪ 32b19f5 dma-debug: avoid spinlock recursion when disabling dma-debug
+ ▪ aba6e99 ext4: fix reference counting bug on block allocation error
+ ▪ e8edced ext4: short-cut orphan cleanup on error
+ ▪ aecccde ext4: don't call ext4_should_journal_data() on the journal inode
+ ▪ 377f39c ext4: check for extents that wrap around
+ ▪ d8bb8c7 ext4: verify extent header depth
+ ▪ 4835759 ext4: silence UBSAN in ext4_mb_init()
+ ▪ ab8d1a6 ext4: address UBSAN warning in mb_find_order_for_block()
+ ▪ e86ff83 ext4: fix hang when processing corrupted orphaned inode list
+ ▪ a8e18a3 drm/radeon: fix firmware info version checks
+ ▪ aae8ee3 drm/radeon: Poll for both connect/disconnect on analog connectors
+ ▪ 7a76be71 drm/radeon: add a delay after ATPX dGPU power off
+ ▪ c8b63f8 drm/radeon: fix asic initialization for virtualized environments
+ ▪ 8c6e2a0 drm/fb_helper: Fix references to dev->mode_config.num_connector
+ ▪ f1c1ccd drm/gma500: Fix possible out of bounds read
+ ▪ 874fea9 sunrpc: fix stripping of padded MIC tokens
+ ▪ 278ffdb powerpc/tm: Always reclaim in start_thread() for exec() class syscalls
+ ▪ d0afbee powerpc/pseries: Fix PCI config address for DDW
+ ▪ 531cb12 powerpc/iommu: Remove the dependency on EEH struct in DDW mechanism
+ ▪ 9906ca0 powerpc/pseries/eeh: Handle RTAS delay requests in configure_bridge
+ ▪ aebc333 powerpc: Use privileged SPR number for MMCR2
+ ▪ ecf9aa8 powerpc: Fix definition of SIAR and SDAR registers
+ ▪ f3d0fe5 powerpc/book3s64: Fix branching to OOL handlers in relocatable kernel
+ ▪ e9caab9 rtlwifi: Fix logic error in enter/exit power-save mode
+ ▪ 3f0c1ae PCI: Disable all BAR sizing for devices with non-compliant BARs
+ ▪ 402952c aacraid: Fix for aac_command_thread hang
+ ▪ f8a9abd aacraid: Relinquish CPU during timeout wait
+ ▪ 3f5163df ath5k: Change led pin configuration for compaq c700 laptop
+ ▪ e56340d Input: xpad - validate USB endpoint count during probe
+ ▪ 8ba8ca3 Input: wacom_w8001 - w8001_MAX_LENGTH should be 13
+ ▪ 5206087 Input: uinput - handle compat ioctl for UI_SET_PHYS
+ ▪ 4e223ab MIPS: KVM: Fix modular KVM under QEMU
+ ▪ cc897c6 MIPS: Fix 64k page support for 32 bit kernels.
+ ▪ 70c4c3a MIPS: ath79: make bootconsole wait for both THRE and TEMT
+ ▪ 6586806 MIPS: Fix siginfo.h to use strict posix types
+ ▪ 28024ec MIPS: math-emu: Fix jalr emulation when rd == $0
+ ▪ a75861c MIPS: KVM: Propagate kseg0/mapped tlb fault errors
+ ▪ dd2a1e3 MIPS: KVM: Fix gfn range check in kseg0 tlb faults
+ ▪ 41132b9 MIPS: KVM: Add missing gfn range check
+ ▪ 0b496d1 MIPS: KVM: Fix mapped fault broken commpage handling
+ ▪ 21639bf tcp: consider recv buf for the initial window scale
+ ▪ 3eec5f5 tcp: record TLP and ER timer stats in v6 stats
+ ▪ 06bf577 tmpfs: fix regression hang in fallocate undo
+ ▪ 2a202ff tmpfs: don't undo fallocate past its last page
+ ▪ 882d747 libceph: apply new_state before new_up_client on incrementals
+ ▪ bb6b398 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+ ▪ 652e745 printk: do cond_resched() between lines while outputting to consoles
+ ▪ c8b45e5 mm: migrate dirty page without clear_page_dirty_for_io etc
+ ▪ d5ee647 pipe: limit the per-user amount of pages allocated in pipes
+ ▪ 7744909 x86/mm: Add barriers and document switch_mm()-vs-flush synchronization
+ ▪ 4de2d2b usb: renesas_usbhs: protect the CFIFOSEL setting in usbhsg_ep_enable()
+ ▪ 6dd4e17 usb: musb: Ensure rx reinit occurs for shared_fifo endpoints
+ ▪ 2b16ea7 usb: musb: Stop bulk endpoint while queue is rotated
+ ▪ 9c15d93 USB: serial: option: add support for Telit LE910 PID 0x1206
+ ▪ 6756a27 USB: EHCI: declare hostpc register as zero-length array
+ ▪ b70d065 USB: fix up faulty backports
+ ▪ ea25c52 udp: properly support MSG_PEEK with truncated buffers
+ ▪ af02acf PCI/ACPI: Fix _OSC ordering to allow PCIe hotplug use when available
+ ▪ 49ef6a4 signal: remove warning about using SI_TKILL in rt_[tg]sigqueueinfo
+ ▪ 47b72df perf/x86: Fix undefined shift on 32-bit kernels
+ ▪ 26f91da perf/x86: Honor the architectural performance monitoring version
+ ▪ 8651228 netfilter: x_tables: introduce and use xt_copy_counters_from_user
+ ▪ 3bad406 Revert "netfilter: ensure number of counters is >0 in do_replace()"
+ ▪ 0b3d005 netfilter: x_tables: do compat validation via translate_table
+ ▪ 13b2ad9 netfilter: ensure number of counters is >0 in do_replace()
+ ▪ 178f983 netfilter: x_tables: xt_compat_match_from_user doesn't need a retval
+ ▪ 4d3673b netfilter: ip6_tables: simplify translate_compat_table args
+ ▪ ae7f3cb netfilter: ip_tables: simplify translate_compat_table args
+ ▪ 68f3712 netfilter: arp_tables: simplify translate_compat_table args
+ ▪ 797a4ee netfilter: x_tables: don't reject valid target size on some architectures
+ ▪ c93a662 netfilter: x_tables: validate all offsets and sizes in a rule
+ ▪ 0c45293 netfilter: x_tables: check for bogus target offset
+ ▪ 27471da netfilter: x_tables: check standard target size too
+ ▪ 51bdd8a netfilter: x_tables: add compat version of xt_check_entry_offsets
+ ▪ 91451cd netfilter: x_tables: assert minimum target size
+ ▪ 6151fdf netfilter: x_tables: kill check_entry helper
+ ▪ ad532c4 netfilter: x_tables: add and use xt_check_entry_offsets
+ ▪ c0132c8 netfilter: x_tables: don't move to non-existent next rule
+ ▪ 9134192 x86, asmlinkage, apm: Make APM data structure used from assembler visible
+ ▪ 298cf7d X.509: remove possible code fragility: enumeration values not handled
+ ▪ 4c3df42 Linux 3.10.102
+ ▪ 9f34904 serial: samsung: Reorder the sequence of clock control when call s3c24xx_serial_set_termios()
+ ▪ 89a8e88 tty: vt, return error when con_startup fails
+ ▪ 33caefc USB: serial: option: add support for Cinterion PH8 and AHxx
+ ▪ 992ae86 USB: serial: io_edgeport: fix memory leaks in probe error path
+ ▪ c38ec83 USB: serial: quatech2: fix use-after-free in probe error path
+ ▪ 5ceaf91 USB: serial: keyspan: fix use-after-free in probe error path
+ ▪ 21e1bd5 Bluetooth: vhci: purge unhandled skbs
+ ▪ 026a2f2 mmc: longer timeout for long read time quirk
+ ▪ 3e22e8a mmc: mmc: Fix partition switch timeout for some eMMCs
+ ▪ 2dc5f90 mfd: omap-usb-tll: Fix scheduling while atomic BUG
+ ▪ 684d397 ring-buffer: Use long for nr_pages to avoid overflow failures
+ ▪ 9e060e4 fs/cifs: correctly to anonymous authentication via NTLMSSP
+ ▪ 338e70d net: fix a kernel infoleak in x25 module
+ ▪ 21b96d4 net: bridge: fix old ioctl unlocked net device walk
+ ▪ 4a7b335e VSOCK: do not disconnect socket when peer has shutdown SEND only
+ ▪ 01b929b net: fix infoleak in llc
+ ▪ f842202 atl2: Disable unimplemented scatter/gather feature
+ ▪ 8347d49 packet: fix heap info leak in PACKET_DIAG_MCLIST sock_diag interface
+ ▪ 9365032 route: do not cache fib route info on local routes with oif
+ ▪ f2ade5e decnet: Do not build routes to devices without decnet private data.
+ ▪ b5a0714 ARM: OMAP3: Fix booting with thumb2 kernel
+ ▪ 304a68c asmlinkage, pnp: Make variables used from assembler code visible
+ ▪ bfe6799 Input: max8997-haptic - fix NULL pointer dereference
+ ▪ 777fb0e get_rock_ridge_filename(): handle malformed NM entries
+ ▪ 9b7944d crypto: hash - Fix page length clamping in hash walk
+ ▪ eb5dbd7 powerpc: scan_features() updates incorrect bits for REAL_LE
+ ▪ 10ad6e2 Input: ads7846 - correct the value got from SPI
+ ▪ 697466d USB: serial: cp210x: add Straizona Focusers device ids
+ ▪ ff7d89f USB: serial: cp210x: add ID for Link ECU
+ ▪ 919324c ACPICA: Dispatcher: Update thread ID for recursive method calls
+ ▪ d89a35c MAINTAINERS: Remove asterisk from EFI directory names
+ ▪ 26f31b6 batman-adv: Fix broadcast/ogm queue limit on a removed interface
+ ▪ 312ad81 ARM: SoCFPGA: Fix secondary CPU startup in thumb2 kernel
+ ▪ 6867ba4 lpfc: fix misleading indentation
+ ▪ bfdc951 clk: versatile: sp810: support reentrance
+ ▪ 3f8ab17 nbd: ratelimit error msgs after socket close
+ ▪ 9c25d14 ipvs: correct initial offset of Call-ID header search in SIP persistence engine
+ ▪ 1fe2949c compiler-gcc: disable -ftracer for __noclone functions
+ ▪ 8e1e398 ARM: OMAP3: Add cpuidle parameters table for omap3430
+ ▪ 87c5a37 perf stat: Document --detailed option
+ ▪ 95a9ff6 Drivers: hv: vmbus: prevent cpu offlining on newer hypervisors
+ ▪ 93fe1fd drivers/misc/ad525x_dpot: AD5274 fix RDAC read back errors
+ ▪ 4ea5f55 rtc: vr41xx: Wire up alarm_irq_enable
+ ▪ 91743c8 misc/bmp085: Enable building as a module
+ ▪ 8eb92b1 fbdev: da8xx-fb: fix videomodes of lcd panels
+ ▪ 8751578 paride: make 'verbose' parameter an 'int' again
+ ▪ 90467f4 USB: usbip: fix potential out-of-bounds write
+ ▪ 85cc68c workqueue: fix ghost PENDING flag while doing MQ IO
+ ▪ 963abbc efi: Fix out-of-bounds read in variable_matches()
+ ▪ 4d18a1c ASoC: s3c24xx: use const snd_soc_component_driver pointer
+ ▪ 472c277c EDAC: i7core, sb_edac: Don't return NOTIFY_BAD from mce_decoder callback
+ ▪ 6c8d10da i2c: cpm: Fix build break due to incompatible pointer types
+ ▪ 9fc2f1d Input: gtco - fix crash on detecting device without endpoints
+ ▪ dec7d66 nl80211: check netlink protocol in socket release notification
+ ▪ 5f79a2b6 crypto: gcm - Fix rfc4543 decryption crash
+ ▪ dfc7d77 usb: hcd: out of bounds access in for_each_companion
+ ▪ 22540da usb: xhci: fix wild pointers in xhci_mem_cleanup
+ ▪ 3ae5cce usbvision: fix crash on detecting device with invalid configuration
+ ▪ b2942c0 usbvision: fix leak of usb_dev on failure paths in usbvision_probe()
+ ▪ 043a648 usbvision-video: fix memory leak of alt_max_pkt_size
+ ▪ c366f6f drm/radeon: hold reference to fences in radeon_sa_bo_new (3.17 and older)
+ ▪ 0e7a12b HID: usbhid: fix inconsistent reset/resume/reset-resume behavior
+ ▪ e725672 ext4: add lockdep annotations for i_data_sem
+ ▪ 72badb9 usb: renesas_usbhs: disable TX IRQ before starting TX DMAC transfer
+ ▪ ffb9451 usb: renesas_usbhs: avoid NULL pointer derefernce in usbhsf_pkt_handler()
+ ▪ 53bdba5 ip6_tunnel: set rtnl_link_ops before calling register_netdevice
+ ▪ ff35b25 ipv6: l2tp: fix a potential issue in l2tp_ip6_recv
+ ▪ 2758af4 ipv4: l2tp: fix a potential issue in l2tp_ip_recv
+ ▪ a12e2ce qmi_wwan: add "D-Link DWM-221 B1" device id
+ ▪ 1f01bc8 qlge: Fix receive packets drop.
+ ▪ 7acb146 ath9k: fix buffer overrun for ar9287
+ ▪ c92dc8b farsync: fix off-by-one bug in fst_add_one
+ ▪ a62f3bb sh_eth: fix NULL pointer dereference in sh_eth_ring_format()
+ ▪ d717183 udp6: fix UDP/IPv6 encap resubmit path
+ ▪ 946354f usbnet: cleanup after bind() in probe()
+ ▪ 3600406 cdc_ncm: toggle altsetting to force reset before setup
+ ▪ 2f21851 ipv6: re-enable fragment header matching in ipv6_find_hdr
+ ▪ cc692b0 sctp: lack the check for ports in sctp_v6_cmp_addr
+ ▪ 3cff1c6 net: jme: fix suspend/resume on JMC260
+ ▪ 55cb2bf ALSA: timer: Use mod_timer() for rearming the system timer
+ ▪ e3a44bd parisc: Fix kernel crash with reversed copy_from_user()
+ ▪ e1bb88c parisc: Avoid function pointers for kernel exception routines
+ ▪ f51a82e hwmon: (max1111) Return -ENODEV from max1111_read_channel if not instantiated
+ ▪ a06c353 perf/x86/intel: Fix PEBS data source interpretation on Nehalem/Westmere
+ ▪ 650ef17 sched/cputime: Fix steal time accounting vs. CPU hotplug
+ ▪ 98a4bdd mtd: onenand: fix deadlock in onenand_block_markbad
+ ▪ b0d4eee ocfs2/dlm: fix BUG in dlm_move_lockres_to_recovery_list
+ ▪ 30e990b ocfs2/dlm: fix race between convert and recovery
+ ▪ 6bb149d Input: ati_remote2 - fix crashes on detecting device with invalid descriptor
+ ▪ cc811e8 Input: ims-pcu - sanity check against missing interfaces
+ ▪ ea90d25 scripts/coccinelle: modernize &
+ ▪ 7345318 tracing: Fix trace_printk() to print when not using bprintk()
+ ▪ 0a63b99 tracing: Fix crash from reading trace_pipe with sendfile
+ ▪ e3aa958 tracing: Have preempt(irqs)off trace preempt disabled functions
+ ▪ f7d23c0 drm/radeon: Don't drop DP 2.7 Ghz link setup on some cards.
+ ▪ e6bc742 ipr: Fix regression when loading firmware
+ ▪ 24880a1 ipr: Fix out-of-bounds null overwrite
+ ▪ 4d6bda6 rapidio/rionet: fix deadlock on SMP
+ ▪ 2c06b16 md/raid5: Compare apples to apples (or sectors to sectors)
+ ▪ 030f86d xtensa: clear all DBREAKC registers on start
+ ▪ 28b44e0 xtensa: ISS: don't hang if stdin EOF is reached
+ ▪ a4d016d splice: handle zero nr_pages in splice_to_pipe()
+ ▪ 1933f50 watchdog: rc32434_wdt: fix ioctl error handling
+ ▪ 3a511c8 bcache: fix cache_set_flush() NULL pointer dereference on OOM
+ ▪ 8885c4a jbd2: fix FS corruption possibility in jbd2_journal_destroy() on umount path
+ ▪ b0cb015 ALSA: intel8x0: Add clock quirk entry for AD1981B on IBM ThinkPad X41.
+ ▪ 3289859 media: v4l2-compat-ioctl32: fix missing length copy in put_v4l2_buffer32
+ ▪ 9641913 bttv: Width must be a multiple of 16 when capturing planar formats
+ ▪ 505c71e 8250: use callbacks to access UART_DLL/UART_DLM
+ ▪ f591022 net: irda: Fix use-after-free in irtty_open()
+ ▪ 054587f Input: powermate - fix oops with malicious USB descriptors
+ ▪ 67fc513 pwc: Add USB id for Philips Spc880nc webcam
+ ▪ f708424 USB: option: add "D-Link DWM-221 B1" device id
+ ▪ cc45071 USB: serial: cp210x: Adding GE Healthcare Device ID
+ ▪ c8fa6a9 USB: cypress_m8: add endpoint sanity check
+ ▪ 5cceb45 USB: digi_acceleport: do sanity checking for the number of ports
+ ▪ a851d79 USB: mct_u232: add sanity checking in probe
+ ▪ ad593b1 USB: usb_driver_claim_interface: add sanity checking
+ ▪ bffda8f6 USB: iowarrior: fix oops with malicious USB descriptors
+ ▪ 5e02c9b USB: cdc-acm: more sanity checking
+ ▪ 0207f36 usb: retry reset if a device times out
+ ▪ 54234a5 be2iscsi: set the boot_kset pointer to NULL in case of failure
+ ▪ c9425bc aacraid: Fix memory leak in aac_fib_map_free
+ ▪ 31da2ff sg: fix dxferp in from_to case
+ ▪ 58b620b x86/iopl: Fix iopl capability check on Xen PV
+ ▪ 8a19270 x86, processor-flags: Fix the datatypes and add bit number defines
+ ▪ d1eaffc x86: Rename X86_CR4_RDWRGSFS to X86_CR4_FSGSBASE
+ ▪ 6cfd463 linux/const.h: Add _BITUL() and _BITULL()
+ ▪ c6efd6c PCI: Disable IO/MEM decoding for devices with non-compliant BARs
+ ▪ 5626686 EDAC, amd64_edac: Shift wrapping issue in f1x_get_norm_dct_addr()
+ ▪ d312087 KVM: fix spin_lock_init order on x86
+ ▪ 7e4fc76f KVM: i8254: change PIT discard tick policy
+ ▪ ffd2040 x86: LLVMLinux: Fix "incomplete type const struct x86cpu_device_id"
+ ▪ c611b62 compiler-gcc: integrate the various compiler-gcc[345].h files
+ ▪ 41c6b01 ext4: fix NULL pointer dereference in ext4_mark_inode_dirty()
+ ▪ b90ad9a x86/iopl/64: Properly context-switch IOPL on Xen PV
+ ▪ 33883e0 Linux 3.10.101
+ ▪ 0b64ae4 Revert: "crypto: af_alg - Disallow bind/setkey/... after accept(2)"
+ ▪ 1024186 modules: fix longstanding /proc/kallsyms vs module insertion race.
+ ▪ a7fbb50 lib/ucs2_string: Correct ucs2 -> utf8 conversion
+ ▪ d8af341 efi: Add pstore variables to the deletion whitelist
+ ▪ 5a29d10 efi: Make efivarfs entries immutable by default
+ ▪ a19578c efi: Make our variable validation list include the guid
+ ▪ 5532819 efi: Do variable name validation tests in utf8
+ ▪ 71e74bc efi: Use ucs2_as_utf8 in efivarfs instead of open coding a bad version
+ ▪ e79c41c lib/ucs2_string: Add ucs2 -> utf8 helper functions
+ ▪ b9af992 KVM: x86: move steal time initialization to vcpu entry time
+ ▪ 6836701 powerpc: Fix dedotify for binutils >= 2.26
+ ▪ 8beac62 mac80211: minstrel_ht: set default tx aggregation timeout to 0
+ ▪ c255dd2 mac80211: fix use of uninitialised values in RX aggregation
+ ▪ dfea058 wext: fix message delay/ordering
+ ▪ 5c203b5 ASoC: wm8958: Fix enum ctl accesses in a wrong type
+ ▪ 1c073f3 ASoC: wm8994: Fix enum ctl accesses in a wrong type
+ ▪ 536ae1f tracing: Fix check for cpu online when event is disabled
+ ▪ b497cf3 KVM: VMX: disable PEBS before a guest entry
+ ▪ 946ae36 Linux 3.10.100
+ ▪ 2767758 Revert "drm/radeon: hold reference to fences in radeon_sa_bo_new"
+ ▪ 329ab0c ubi: Fix out of bounds write in volume update code
+ ▪ fa90bd1 USB: serial: option: add support for Quectel UC20
+ ▪ c5f47c0 USB: serial: option: add support for Telit LE922 PID 0x1045
+ ▪ a87f71b USB: cp210x: Add ID for Parrot NMEA GPS Flight Recorder
+ ▪ 5a41e0e ALSA: timer: Fix broken compat timer user status ioctl
+ ▪ 2d37f15 ALSA: hdspm: Fix zero-division
+ ▪ 2d6c547 ALSA: hdsp: Fix wrong boolean ctl value accesses
+ ▪ a92c5c5 ALSA: hdspm: Fix wrong boolean ctl value accesses
+ ▪ 4482b0f ALSA: seq: oss: Don't drain at closing a client
+ ▪ 3f70d9c ALSA: timer: Fix ioctls for X32 ABI
+ ▪ 0d41ed1 ALSA: rawmidi: Fix ioctls X32 ABI
+ ▪ b0055a9 ALSA: ctl: Fix ioctls for X32 ABI
+ ▪ df3f798 Fix directory hardlinks from deleted directories
+ ▪ efd514e jffs2: Fix page lock / f->sem deadlock
+ ▪ 18acf64 Revert "jffs2: Fix lock acquisition order bug in jffs2_write_begin"
+ ▪ 2b996f1 PM / sleep / x86: Fix crash on graph trace through x86 suspend
+ ▪ d27a765 libata: Align ata_device's id on a cacheline
+ ▪ be1c4c7 libata: fix HDIO_GET_32BIT ioctl
+ ▪ 156974f drm/ast: Fix incorrect register check for DRAM width
+ ▪ 3bb02ed x86/entry/compat: Add missing CLAC to entry_INT80_32
+ ▪ cb4f97d CIFS: Fix SMB2+ interim response processing for read requests
+ ▪ 55f5886 EDAC, mc_sysfs: Fix freeing bus' name
+ ▪ c2bf38e locks: fix unlock when fcntl_setlk races with a close
+ ▪ 7025b3c Linux 3.10.99
+ ▪ 6babe5f xen/pcifront: Fix mysterious crashes when NUMA locality information was extracted.
+ ▪ 182411d do_last(): don't let a bogus return value from ->open() et.al. to confuse us
+ ▪ 4c06f02 kernel/resource.c: fix muxed resource handling in __request_region()
+ ▪ 8b1f5a8 sunrpc/cache: fix off-by-one in qword_get()
+ ▪ 96b8e84 tracing: Fix showing function event in available_events
+ ▪ 62d6682 KVM: async_pf: do not warn on page allocation failures
+ ▪ 2fc5877 nfs: fix nfs_size_to_loff_t
+ ▪ 21464a7 PCI/AER: Flush workqueue on device remove to avoid use-after-free
+ ▪ 172e3d4 libata: fix sff host state machine locking while polling
+ ▪ ead2efe Revert "workqueue: make sure delayed work run in local cpu"
+ ▪ 5dfe8f5 rfkill: fix rfkill_fop_read wait_event usage
+ ▪ 1e63794 cdc-acm:exclude Samsung phone 04e8:685d
+ ▪ 4be6009 libceph: don't bail early from try_read() when skipping a message
+ ▪ a9ffb68 IB/qib: fix mcast detach when qp not attached
+ ▪ fad798e drm/radeon: use post-decrement in error handling
+ ▪ 299c457 drm/radeon: hold reference to fences in radeon_sa_bo_new
+ ▪ d229c7d drm/radeon: clean up fujitsu quirks
+ ▪ d782f7f drm/vmwgfx: respect 'nomodeset'
+ ▪ e88579c sparc64: fix incorrect sign extension in sys_sparc64_personality
+ ▪ d7238c2 mmc: mmci: fix an ages old detection error
+ ▪ a512266 posix-clock: Fix return code on the poll method's error path
+ ▪ 13f3cf8 dm snapshot: fix hung bios when copy error occurs
+ ▪ 89b1648 tda1004x: only update the frontend properties if locked
+ ▪ b6a8c8e gspca: ov534/topro: prevent a division by 0
+ ▪ d600e66 media: dvb-core: Don't force CAN_INVERSION_AUTO in oneshot mode
+ ▪ 2558f01 uml: fix hostfs mknod()
+ ▪ 5ae2d64 uml: flush stdout before forking
+ ▪ 5da476c s390/dasd: fix refcount for PAV reassignment
+ ▪ 6459734 s390/dasd: prevent incorrect length error under z/VM after PAV changes
+ ▪ 0ff49a6 s390: fix normalization bug in exception table sorting
+ ▪ 551bfc3 Btrfs: fix number of transaction units required to create symlink
+ ▪ d21a06b Btrfs: send, don't BUG_ON() when an empty symlink is found
+ ▪ eb9cd85 Btrfs: igrab inode in writepage
+ ▪ ba4a4c3 Btrfs: add missing brelse when superblock checksum fails
+ ▪ 3e44382 scripts: recordmcount: break hardlinks
+ ▪ c5b1b56 ses: fix additional element traversal bug
+ ▪ f389bef ses: Fix problems with simple enclosures
+ ▪ 8c45003 rfkill: copy the name into the rfkill struct
+ ▪ 5f74c73 vgaarb: fix signal handling in vga_get()
+ ▪ e79910c dm btree: fix bufio buffer leaks in dm_btree_del() error path
+ ▪ 2afde09 sata_sil: disable trim
+ ▪ e51acc6 sched/core: Remove false-positive warning from wake_up_process()
+ ▪ 15b73ff can: sja1000: clear interrupts on start
+ ▪ 4e3a8ed RDS: fix race condition when sending a message on unbound socket
+ ▪ 54de692 mac80211: mesh: fix call_rcu() usage
+ ▪ ef5b4ad virtio: fix memory leak of virtio ida cache layers
+ ▪ 8f452a7 ring-buffer: Update read stamp with first real commit on page
+ ▪ 802d731 vfs: Avoid softlockups with sendfile(2)
+ ▪ e370a6f ARC: dw2 unwind: Remove falllback linear search thru FDE entries
+ ▪ 402b1d0 mac: validate mac_partition is within sector
+ ▪ 0c4d813 mmc: remove bondage between REQ_META and reliable write
+ ▪ 6476582 megaraid_sas : SMAP restriction--do not access user memory from IOCTL code
+ ▪ eabb257 megaraid_sas: Do not use PAGE_SIZE for max_sectors
+ ▪ 7748ad9 wm831x_power: Use IRQF_ONESHOT to request threaded IRQs
+ ▪ f49a27e devres: fix a for loop bounds check
+ ▪ ed264a5 lockd: create NSM handles per net namespace
+ ▪ 6abc102 clocksource/drivers/vt8500: Increase the minimum delta
+ ▪ b9a42f8 genirq: Prevent chip buslock deadlock
+ ▪ 2b9e0553 unix: correctly track in-flight fds in sending process user_struct
+ ▪ 386e02d Failing to send a CLOSE if file is opened WRONLY and server reboots on a 4.x mount
+ ▪ 7156312 splice: sendfile() at once fails for big files
+ ▪ 5fefe8d MIPS: KVM: Uninit VCPU in vcpu_create error path
+ ▪ f6d2562 MIPS: KVM: Fix CACHE immediate offset sign extension
+ ▪ cace5cd MIPS: KVM: Fix ASID restoration logic
+ ▪ f4ea782 iw_cxgb3: Fix incorrectly returning error on success
+ ▪ da880ab proc: Fix ptrace-based permission checks for accessing task maps
+ ▪ 24fcd83 USB: option: add "4G LTE usb-modem U901"
+ ▪ 75448b8 USB: option: add support for SIM7100E
+ ▪ 9e29029 USB: cp210x: add IDs for GE B650V3 and B850V3 boards
+ ▪ 66c5f6c can: ems_usb: Fix possible tx overflow
+ ▪ fed5b3c dm thin: fix race condition when destroying thin pool workqueue
+ ▪ 5328f70 dm thin metadata: fix bug when taking a metadata snapshot
+ ▪ 094db95 efi: Disable interrupts around EFI calls, not in the epilog/prolog calls
+ ▪ 9c83aaa drm/radeon: fix hotplug race at startup
+ ▪ ee48b45 tools: Add a "make all" rule
+ ▪ 2f1d2cd bcache: unregister reboot notifier if bcache fails to unregister device
+ ▪ 5873c10 netfilter: nf_conntrack: fix RCU race in nf_conntrack_find_get
+ ▪ 9434d10 drm/ast: Initialized data needed to map fbdev memory
+ ▪ d35bd0b tracepoints: Do not trace when cpu is offline
+ ▪ 9fdd670 Linux 3.10.98
+ ▪ adcf513 module: wrapper for symbol name.
+ ▪ d4f8e64 ip6mr: call del_timer_sync() in ip6mr_free_table()
+ ▪ 4a9f372 futex: Drop refcount if requeue_pi() acquired the rtmutex
+ ▪ b4ebd1d x86/asm/irq: Stop relying on magic JMP behavior for early_idt_handlers
+ ▪ dff9c11 intel_scu_ipcutil: underflow in scu_reg_access()
+ ▪ f2807ca radix-tree: fix oops after radix_tree_iter_retry
+ ▪ a12b1e5 radix-tree: fix race in gang lookup
+ ▪ 7a317e8 scripts/bloat-o-meter: fix python3 syntax error
+ ▪ e533c5a dma-debug: switch check from _text to _stext
+ ▪ 0160cc9 m32r: fix m32104ut_defconfig build fail
+ ▪ 8ddc41c xhci: Fix list corruption in urb dequeue at host removal
+ ▪ 7a97574 mm/memory_hotplug.c: check for missing sections in test_pages_in_a_zone()
+ ▪ baa6b01 iommu/vt-d: Fix 64-bit accesses to 32-bit DMAR_GSTS_REG
+ ▪ 234bef4 Input: i8042 - add Fujitsu Lifebook U745 to the nomux list
+ ▪ e50fda4 Input: elantech - mark protocols v2 and v3 as semi-mt
+ ▪ e32e292 Input: elantech - add Fujitsu Lifebook U745 to force crc_enabled
+ ▪ b7ca2f8 mm: soft-offline: check return value in second __get_any_page() call
+ ▪ b4f646f fuse: break infinite loop in fuse_fill_write_pages()
+ ▪ 9c10ab3 ARM: 8517/1: ICST: avoid arithmetic overflow in icst_hz()
+ ▪ 6d049f6 ARM: 8519/1: ICST: try other dividends than 1
+ ▪ 5661cfb udf: Check output buffer length when converting name to CS0
+ ▪ 29ed92c udf: Prevent buffer overrun with multi-byte characters
+ ▪ 2cae243 udf: limit the maximum number of indirect extents in a row
+ ▪ 14c3a3d nfs: Fix race in __update_open_stateid()
+ ▪ 6728ef3 cifs: fix erroneous return value
+ ▪ 6632ae2 iio: dac: mcp4725: set iio name property in sysfs
+ ▪ fd394f9a iio: adis_buffer: Fix out-of-bounds memory access
+ ▪ 81be766 iio:ad5064: Make sure ad5064_i2c_write() returns 0 on success
+ ▪ ae32e43 iio: lpc32xx_adc: fix warnings caused by enabling unprepared clock
+ ▪ a6d15b0 iio:ad7793: Fix ad7785 product ID
+ ▪ 80523d2 scsi: fix soft lockup in scsi_remove_target() on module removal
+ ▪ 243b1ed scsi_dh_rdac: always retry MODE SELECT on command lock violation
+ ▪ e65c0c8 drivers/scsi/sg.c: mark VMA as VM_IO to prevent migration
+ ▪ 91118b1 SCSI: fix crashes in sd and sr runtime PM
+ ▪ 3940318 iscsi-target: Fix potential dead-lock during node acl delete
+ ▪ 555c5c7 SCSI: Fix NULL pointer dereference in runtime PM
+ ▪ 720486d Fix a memory leak in scsi_host_dev_release()
+ ▪ 3cd1f51 iscsi-target: Fix rx_login_comp hang after login failure
+ ▪ bbaf01d scsi_sysfs: Fix queue_ramp_up_period return code
+ ▪ dc8303f scsi: restart list search after unlock in scsi_remove_target
+ ▪ 307a444 klist: fix starting point removed bug in klist iterators
+ ▪ 9600b49 tracing: Fix freak link error caused by branch tracer
+ ▪ a387c33 tools lib traceevent: Fix output of %llu for 64 bit values read on 32 bit machines
+ ▪ b889866 ptrace: use fsuid, fsgid, effective creds for fs access checks
+ ▪ 4f8c877 perf: Fix inherited events vs. tracepoint filters
+ ▪ f586d50 Btrfs: fix hang on extent buffer lock caused by the inode_paths ioctl
+ ▪ 546308f ext4: fix potential integer overflow
+ ▪ e651ba8 pty: make sure super_block is still valid in final /dev/tty close
+ ▪ 7d647ba pty: fix possible use after free of tty->driver_data
+ ▪ 28b6288 staging/speakup: Use tty_ldisc_ref() for paste kworker
+ ▪ e19363c wan/x25: Fix use-after-free in x25_asy_open_tty()
+ ▪ 154a7c1 ALSA: seq: Fix double port list deletion
+ ▪ 7f2088c Linux 3.10.97
+ ▪ 5c824ae binfmt_elf: Don't clobber passed executable's file header
+ ▪ 3ce9806 FS-Cache: Increase reference of parent after registering, netfs success
+ ▪ d7d33c4 crypto: user - lock crypto_alg_list on alg dump
+ ▪ fafaccd crypto: algif_hash - wait for crypto_ahash_init() to complete
+ ▪ 0519b48 ahci: Intel DNV device IDs SATA
+ ▪ 5aa76b6 libata: disable forced PORTS_IMPL for >= AHCI 1.3
+ ▪ f743838 AHCI: Fix softreset failed issue of Port Multiplier
+ ▪ c7e125a crypto: af_alg - Fix socket double-free when accept fails
+ ▪ 554ceb5 crypto: af_alg - Disallow bind/setkey/... after accept(2)
+ ▪ 7a56fdc ext4: Fix handling of extended tv_sec
+ ▪ e0acbf2 USB: option: fix Cinterion AHxx enumeration
+ ▪ b0a50c2 USB: serial: option: Adding support for Telit LE922
+ ▪ 49117f1 USB: cp210x: add ID for IAI USB to RS485 adaptor
+ ▪ 8c139a6 USB: serial: ftdi_sio: add support for Yaesu SCU-18 cable
+ ▪ e3604f0 USB: visor: fix null-deref at probe
+ ▪ 34b9a99 USB: serial: visor: fix crash on detecting device without write_urbs
+ ▪ 0a3ca6e USB: ti_usb_3410_502: Fix ID table size
+ ▪ 0064c08 saa7134-alsa: Only frees registered sound cards
+ ▪ 2185b617 ALSA: timer: Fix race between stop and interrupt
+ ▪ d6e5a07 ALSA: dummy: Implement timer backend switching more safely
+ ▪ 3d17dd6 ALSA: hda - Fix speaker output from VAIO AiO machines
+ ▪ e7d4e90 ALSA: timer: Fix wrong instance passed to slave callbacks
+ ▪ cacbf4f ALSA: timer: Fix link corruption due to double start or stop
+ ▪ 1846289 ALSA: timer: Fix leftover link at closing
+ ▪ f558239 ALSA: timer: Code cleanup
+ ▪ b8564dd ALSA: seq: Fix lockdep warnings due to double mutex locks
+ ▪ 54d008c ALSA: seq: Fix race at closing in virmidi driver
+ ▪ 85e89ce ALSA: seq: Fix yet another races among ALSA timer accesses
+ ▪ df7c071 ASoC: dpcm: fix the BE state on hw_free
+ ▪ 2cdcd3a ALSA: pcm: Fix potential deadlock in OSS emulation
+ ▪ f8ec858 ALSA: rawmidi: Fix race at copying & updating the position
+ ▪ 320aafc ALSA: rawmidi: Remove kernel WARNING for NULL user-space buffer check
+ ▪ 878a138 ALSA: seq: Fix incorrect sanity check at snd_seq_oss_synth_cleanup()
+ ▪ 1094397 ALSA: dummy: Disable switching timer backend via sysfs
+ ▪ 2574fb1 ALSA: compress: Disable GET_CODEC_CAPS ioctl for some architectures
+ ▪ fe520fa ALSA: usb-audio: avoid freeing umidi object twice
+ ▪ e1cca9e ALSA: usb-audio: Fix TEAC UD-501/UD-503/NT-503 usb delay
+ ▪ 886c6ce fix sysvfs symlinks
+ ▪ 48851ee media: vb2 dma-contig: Fully cache synchronise buffers in prepare and finish
+ ▪ 50560d7 v4l2-compat-ioctl32: fix alignment for ARM64
+ ▪ a613532 parisc: Fix __ARCH_SI_PREAMBLE_SIZE
+ ▪ 989d8e1 parisc: Fix syscall restarts
+ ▪ 82dcaae parisc: Drop unused MADV_xxxK_PAGES flags from asm/mman.h
+ ▪ ebb25f2 fix calculation of meta_bg descriptor backups
+ ▪ f6e0fec jbd2: Fix unreclaimed pages after truncate in data=journal mode
+ ▪ 6291a09 mtd: mtdpart: fix add_mtd_partitions error path
+ ▪ 3633754 vTPM: fix memory allocation flag for rtce buffer at kernel boot
+ ▪ 7619cc2 wlcore/wl12xx: spi: fix NULL pointer dereference (Oops)
+ ▪ 5e13f12 wlcore/wl12xx: spi: fix oops on firmware load
+ ▪ 02f6ccd spi: fix parent-device reference leak
+ ▪ dfecd8d spi: atmel: Fix DMA-setup for transfers with more than 8 bits per word
+ ▪ bb3d6d4 Revert "dm mpath: fix stalls when handling invalid ioctls"
+ ▪ a1d88b5 sh64: fix __NR_fgetxattr
+ ▪ 645b31f ocfs2/dlm: clear refmap bit of recovery lock while doing local recovery cleanup
+ ▪ 5e6682f ocfs2/dlm: ignore cleaning the migration mle that is inuse
+ ▪ 98cc6fc kernel/signal.c: unexport sigsuspend()
+ ▪ b96a495 remoteproc: avoid stack overflow in debugfs file
+ ▪ 306d370 HID: usbhid: fix recursive deadlock
+ ▪ 188ae10 dm btree: fix leak of bufio-backed block in btree_split_sibling error path
+ ▪ c576018 crypto: algif_hash - Only export and import on sockets with data
+ ▪ 04e394d xhci: fix placement of call to usb_disabled()
+ ▪ b6fb077 recordmcount: Fix endianness handling bug for nop_mcount
+ ▪ 5a3a8bf Linux 3.10.96
+ ▪ a72292a mn10300: Select CONFIG_HAVE_UID16 to fix build failure
+ ▪ 273e7c5 openrisc: fix CONFIG_UID16 setting
+ ▪ 9ef1d17 HID: core: Avoid uninitialized buffer access
+ ▪ 498d93d parisc iommu: fix panic due to trying to allocate too large region
+ ▪ 735cb17 arm64: mm: ensure that the zero page is visible to the page table walker
+ ▪ 65b9496 arm64: Clear out any singlestep state on a ptrace detach operation
+ ▪ cb28f56 arm64: fix building without CONFIG_UID16
+ ▪ f5e9c8f scripts/recordmcount.pl: support data in text section on powerpc
+ ▪ 7c6f21e powerpc: Make {cmp}xchg* and their atomic_ versions fully ordered
+ ▪ 94f18a6 powerpc: Make value-returning atomics fully ordered
+ ▪ 2abe6d4 powerpc/tm: Block signal return setting invalid MSR state
+ ▪ 123e3b8 team: Replace rcu_read_lock with a mutex in team_vlan_rx_kill_vid
+ ▪ 554de1c ppp, slip: Validate VJ compression slot parameters completely
+ ▪ b05721d isdn_ppp: Add checks for allocation failure in isdn_ppp_open()
+ ▪ fc1a23f phonet: properly unshare skbs in phonet_rcv()
+ ▪ e10f565 tcp_yeah: don't set ssthresh below 2
+ ▪ 05f996c net: possible use after free in dst_release
+ ▪ 347d00e bridge: Only call /sbin/bridge-stp for the initial network namespace
+ ▪ b1816360 unix: properly account for FDs passed over unix sockets
+ ▪ 0254cf7 connector: bump skb->users before callback invocation
+ ▪ f72890e sctp: sctp should release assoc when sctp_make_abort_user return NULL in sctp_close
+ ▪ 5caa880 ipv6/addrlabel: fix ip6addrlbl_get()
+ ▪ 59104e2 veth: don’t modify ip_summed; doing so treats packets with bad checksums as good.
+ ▪ cdddde9 xhci: refuse loading if nousb is used
+ ▪ 42c9236 USB: cp210x: add ID for ELV Marble Sound Board 1
+ ▪ 72a1903 USB: ipaq.c: fix a timeout loop
+ ▪ 7ee6c7c usb: xhci: fix config fail of FS hub behind a HS hub with MTT
+ ▪ 1d01541 ASoC: compress: Fix compress device direction check
+ ▪ 5879cc4 ASoC: arizona: Fix bclk for sample rates that are multiple of 4kHz
+ ▪ fbc967e ASoC: wm8962: correct addresses for HPF_C_0/1
+ ▪ 17c0f30 ALSA: control: Avoid kernel warnings from tlv ioctl with numid 0
+ ▪ 403d76b ALSA: hrtimer: Fix stall by hrtimer_cancel()
+ ▪ 2c56a89 ALSA: pcm: Fix snd_pcm_hw_params struct copy in compat mode
+ ▪ fb3bfc0 ALSA: seq: Fix snd_seq_call_port_info_ioctl in compat mode
+ ▪ cb6f8ff ALSA: timer: Fix double unlink of active_list
+ ▪ 75712f8 ALSA: seq: Fix missing NULL check at remove_events ioctl
+ ▪ eaa42f5 ALSA: hda/realtek - Fix silent headphone output on MacPro 4,1 (v2)
+ ▪ b4a632e ALSA: hda - Set SKL+ hda controller power at freeze() and thaw()
+ ▪ 05fe542c ALSA: hda - Add inverted dmic for Packard Bell DOTS
+ ▪ 2962d7f ALSA: rme96: Fix unexpected volume reset after rate changes
+ ▪ b8e7b9a ALSA: hda - Apply pin fixup for HP ProBook 6550b
+ ▪ ab16438 ALSA: hda - Add Intel Lewisburg device IDs Audio
+ ▪ b6e32b4 ipmi: move timer init to before irq is setup
+ ▪ 3468410 x86/boot: Double BOOT_HEAP_SIZE to 64KB
+ ▪ 502588f x86/reboot/quirks: Add iMac10,1 to pci_reboot_dmi_table[]
+ ▪ 4f0db7a KVM: PPC: Book3S HV: Prohibit setting illegal transaction state in MSR
+ ▪ ea3e29a x86/xen: don't reset vcpu_info on a cancelled suspend
+ ▪ 0fe75d7 xen/gntdev: Grant maps should not be subject to NUMA balancing
+ ▪ 013255c x86/signal: Fix restart_syscall number for x32 tasks
+ ▪ 573e65d af_unix: fix incorrect revert of 'lock_interruptible' in stream receive code
+ ▪ dccd4bd Linux 3.10.95
+ ▪ 2aee399 KEYS: Fix race between read and revoke
+ ▪ 8efda0b af_unix: Revert 'lock_interruptible' in stream receive code
+ ▪ aa4bc2e pptp: verify sockaddr_len in pptp_bind() and pptp_connect()
+ ▪ f2871c5 sh_eth: fix kernel oops in skb_put()
+ ▪ 2aa0b74 net: add validation for the socket syscall protocol argument
+ ▪ 423a10b ipv6: sctp: clone options to avoid use after free
+ ▪ c301ba5 sctp: update the netstamp_needed counter when copying sockets
+ ▪ de39609 atl1c: Improve driver not to do order 4 GFP_ATOMIC allocation
+ ▪ 5bbf328 gre6: allow to update all parameters via rtnl
+ ▪ d0d90fe usb: Use the USB_SS_MULT() macro to decode burst multiplier for log message
+ ▪ 4c04ed3 USB: whci-hcd: add check for dma mapping error
+ ▪ 02eb136 USB: add quirk for devices with broken LPM
+ ▪ 2eecbc3 USB: cp210x: Remove CP2110 ID from compatibility list
+ ▪ 3599448 USB: cdc_acm: Ignore Infineon Flash Loader utility
+ ▪ ef3c478 nfs: if we have no valid attrs, then don't declare the attribute cache valid
+ ▪ 06ea8f2 nfs4: start callback_ident at idr 1
+ ▪ 8daed83 firewire: ohci: fix JMicron JMB38x IT context discovery
+ ▪ 38e5035 ext4, jbd2: ensure entering into panic after recording an error in superblock
+ ▪ ec4a846 Btrfs: fix race leading to BUG_ON when running delalloc for nodatacow
+ ▪ 59fe3b6 ipv6: sctp: implement sctp_v6_destroy_sock()
+ ▪ c4dda41 ipv6: distinguish frag queues by device for multicast and link-local packets
+ ▪ 6129aee broadcom: fix PHY_ID_BCM5481 entry in the id table
+ ▪ 81300f9 net: ip6mr: fix static mfc/dev leaks on table destruction
+ ▪ d17584f net: ipmr: fix static mfc/dev leaks on table destruction
+ ▪ 638e1da net, scm: fix PaX detected msg_controllen overflow in scm_detach_fds
+ ▪ 9376872 tcp: initialize tp->copied_seq in case of cross SYN connection
+ ▪ fb78da5 tcp: md5: fix lockdep annotation
+ ▪ 58207f8 net: qmi_wwan: add XS Stick W100-2 from 4G Systems
+ ▪ 467d374 snmp: Remove duplicate OUTMCAST stat increment
+ ▪ 9fa2111 sctp: translate host order to network order when setting a hmacid
+ ▪ 24416f5 Linux 3.10.94
+ ▪ d8d80ea ALSA: usb-audio: work around CH345 input SysEx corruption
+ ▪ 2a05a5a ALSA: usb-audio: prevent CH345 multiport output SysEx corruption
+ ▪ bc88af7 ALSA: usb-audio: add packet size quirk for the Medeli DD305
+ ▪ 6e0c2cf USB: option: add XS Stick W100-2 from 4G Systems
+ ▪ f9c017e USB: serial: option: add support for Novatel MiFi USB620L
+ ▪ 6ced44e usb: musb: core: fix order of arguments to ulpi write callback
+ ▪ ec44b1c usblp: do not set TASK_INTERRUPTIBLE before lock
+ ▪ da7f707 arm64: Fix compat register mappings
+ ▪ f0f0df6 can: sja1000: clear interrupts on start
+ ▪ 11f7279 Bluetooth: hidp: fix device disconnect on idle timeout
+ ▪ ec09248 staging: rtl8712: Add device ID for Sitecom WLA2100
+ ▪ ac3bf78 mwifiex: fix mwifiex_rdeeprom_read()
+ ▪ 6a69426 net: mvneta: Fix CPU_MAP registers initialisation
+ ▪ 6039ce6 mac80211: fix driver RSSI event calculations
+ ▪ 55786b0 x86/cpu: Fix SMAP check in PVOPS environments
+ ▪ 32e1618 x86/cpu: Call verify_cpu() after having entered long mode too
+ ▪ 2914750 x86/setup: Fix low identity map for >= 2GB kernel range
+ ▪ 4453944 x86/setup: Extend low identity map to cover whole kernel range
+ ▪ 488372c ARM: orion: Fix DSA platform device after mvmdio conversion
+ ▪ 58ca082 ARM: 8427/1: dma-mapping: add support for offset parameter in dma_mmap()
+ ▪ 56e63ff ARM: 8426/1: dma-mapping: add missing range check in dma_mmap()
+ ▪ 2c7b58b RDS: verify the underlying transport exists before creating a connection
+ ▪ ceff511 virtio-net: drop NETIF_F_FRAGLIST
+ ▪ 4f512d1 net: fix a race in dst_release()
+ ▪ 274abdf net: avoid NULL deref in inet_ctl_sock_destroy()
+ ▪ 8f1d323 ipmr: fix possible race resulting from improper usage of IP_INC_STATS_BH() in preemptible context.
+ ▪ 441f205 stmmac: Correctly report PTP capabilities.
+ ▪ 23da902 net/mlx4: Copy/set only sizeof struct mlx4_eqe bytes
+ ▪ 1e175ef RDS-TCP: Recover correctly from pskb_pull()/pksb_trim() failure in rds_tcp_data_recv
+ ▪ d3453d1 ppp: fix pppoe_dev deletion condition in pppoe_release()
+ ▪ 25b78fb irda: precedence bug in irlmp_seq_hb_idx()
+ ▪ 083c9d2 Linux 3.10.93
+ ▪ 1eeef3e xen: fix backport of previous kexec patch
+ ▪ 337f46e IB/cm: Fix rb-tree duplicate free and use-after-free
+ ▪ d93abc0 mvsas: Fix NULL pointer dereference in mvs_slot_task_free
+ ▪ f98e5eb md/raid10: submit_bio_wait() returns 0 on success
+ ▪ f13e372 md/raid1: submit_bio_wait() returns 0 on success
+ ▪ f729e92 crypto: api - Only abort operations on fatal signal
+ ▪ d187c6f module: Fix locking in symbol_put_addr()
+ ▪ 0ecfc51 xen-blkfront: check for null drvdata in blkback_changed (XenbusStateClosing)
+ ▪ 7878a86 xhci: handle no ping response error properly
+ ▪ 4002ffb dm btree: fix leak of bufio-backed block in btree_split_beneath error path
+ ▪ d5986c7 dm btree remove: fix a bug when rebalancing nodes after removal
+ ▪ e126ade Revert "ARM64: unwind: Fix PC calculation"
+ ▪ e8a5893 rbd: prevent kernel stack blow up on rbd map
+ ▪ 423e3a1 rbd: don't leak parent_spec in rbd_dev_probe_parent()
+ ▪ cc8ceb4 rbd: require stable pages if message data CRCs are enabled
+ ▪ 3b528a9 drm/nouveau/gem: return only valid domain when there's only one
+ ▪ f4a4005 mm: make sendfile(2) killable
+ ▪ 36a0495 ASoC: wm8904: Correct number of EQ registers
+ ▪ fbf0354 powerpc/rtas: Validate rtas.entry before calling enter_rtas()
+ ▪ 95a0861 iommu/amd: Don't clear DTE flags when modifying it
+ ▪ af27d6b iwlwifi: mvm: fix D3 firmware PN programming
+ ▪ 9586aa0 iwlwifi: dvm: fix D3 firmware PN programming
+ ▪ 02f34cf ath9k: declare required extra tx headroom
+ ▪ 379563f Linux 3.10.92
+ ▪ 253d911 rbd: fix double free on rbd_dev->header_name
+ ▪ 9783af0 dm thin: fix missing pool reference count decrement in pool_ctr error path
+ ▪ 17d99d0 workqueue: make sure delayed work run in local cpu
+ ▪ 139d600 i2c: rcar: enable RuntimePM before registering to the core
+ ▪ 5b96e50 crypto: ahash - ensure statesize is non-zero
+ ▪ 2b6812d crypto: sparc - initialize blkcipher.ivsize
+ ▪ 1bea13a m68k/uaccess: Fix asm constraints for userspace access
+ ▪ 0f3956d asix: Do full reset during ax88772_bind
+ ▪ b1f305f asix: Don't reset PHY on if_up for ASIX 88772
+ ▪ 7a0cbb7 ethtool: Use kcalloc instead of kmalloc for ethtool_get_strings
+ ▪ 3be61b7 ppp: don't override sk->sk_state in pppoe_flush_dev()
+ ▪ 58c15b0 net: add pfmemalloc check in sk_add_backlog()
+ ▪ 68e4c56 skbuff: Fix skb checksum partial check.
+ ▪ 53048de skbuff: Fix skb checksum flag on skb pull
+ ▪ 8a30844 af_unix: return data from multiple SKBs on recv() with MSG_PEEK flag
+ ▪ 755c0a7 af_unix: Convert the unix_sk macro to an inline function for type safety
+ ▪ aa7db2d l2tp: protect tunnel->del_work by ref_count
+ ▪ d1fea02 Linux 3.10.91
+ ▪ 42c3424 3w-9xxx: don't unmap bounce buffered commands
+ ▪ 6fd62a4 staging: speakup: fix speakup-r regression
+ ▪ ce4c04f dm cache: fix NULL pointer when switching from cleaner policy
+ ▪ fc6fd3d x86: Add 1/2/4/8 byte optimization to 64bit __copy_{from,to}_user_inatomic
+ ▪ 3894a83 fib_rules: Fix dump_rules() not to exit early
+ ▪ 599f57b bonding: correct the MAC address for "follow" fail_over_mac policy
+ ▪ 8bf966b m68k: Define asmlinkage_protect
+ ▪ 9a2b4ea vfs: Test for and handle paths that are unreachable from their mnt_root
+ ▪ 9d60752 dcache: Handle escaped paths in prepend_path
+ ▪ b1a51e3 IB/qib: Change lkey table allocation to support more MRs
+ ▪ e4986e4 UBI: return ENOSPC if no enough space available
+ ▪ 385d42e UBI: Validate data_size
+ ▪ a0d74e4 powerpc/MSI: Fix race condition in tearing down MSI interrupts
+ ▪ 5d0a0cb md: flush ->event_work before stopping array.
+ ▪ cfa6c3b MIPS: dma-default: Fix 32-bit fall back to GFP_DMA
+ ▪ c094240 USB: Add reset-resume quirk for two Plantronics usb headphones.
+ ▪ 68defd7 usb: Add device quirk for Logitech PTZ cameras
+ ▪ d1a96bc usb: Use the USB_SS_MULT() macro to get the burst multiplier.
+ ▪ ea52d5a security: fix typo in security_task_prctl
+ ▪ 91af09b regmap: debugfs: Don't bother actually printing when calculating max length
+ ▪ e513514 regmap: debugfs: Ensure we don't underflow when printing access masks
+ ▪ 48fd87e udf: Check length of extended attributes and allocation descriptors
+ ▪ 97b367c ipvs: fix crash with sync protocol v0 and FTP
+ ▪ e6033d4 ipvs: do not use random local source address for tunnels
+ ▪ 64c62c3 xhci: change xhci 1.0 only restrictions to support xhci 1.1
+ ▪ b754625 usb: xhci: Clear XHCI_STATE_DYING on start
+ ▪ 59aaf42 USB: whiteheat: fix potential null-deref at probe
+ ▪ 9672b4e drm: Reject DRI1 hw lock ioctl functions for kms drivers
+ ▪ fa34f4b disabling oplocks/leases via module parm enable_oplocks broken for SMB3
+ ▪ 908e915 netfilter: nf_conntrack: Support expectations in different zones
+ ▪ fdb2457 dm raid: fix round up of default region size
+ ▪ ed901a3 USB: option: add ZTE PIDs
+ ▪ 6cd43ca dm btree: add ref counting ops for the leaves of top level btrees
+ ▪ f42cff7 staging: comedi: adl_pci7x3x: fix digital output on PCI-7230
+ ▪ 63c1b87 btrfs: skip waiting on ordered range for special files
+ ▪ 9d7dc42 ASoC: dwc: correct irq clear method
+ ▪ c2b40a6 ASoC: fix broken pxa SoC support
+ ▪ 8bfa6f0 ALSA: synth: Fix conflicting OSS device registration on AWE32
+ ▪ 18146ff mm: hugetlbfs: skip shared VMAs when unmapping private pages to satisfy a fault
+ ▪ fff3508 spi: spi-pxa2xx: Check status register to determine if SSSR_TINT is disabled
+ ▪ 1d7f67e spi: Fix documentation of spi_alloc_master()
+ ▪ ad27c9e x86/xen: Support kexec/kdump in HVM guests by doing a soft reset
+ ▪ 57b794d x86/mm: Set NX on gap between __ex_table and rodata
+ ▪ cdcc176 Use WARN_ON_ONCE for missing X86_FEATURE_NRIPS
+ ▪ 39d8cfb x86/platform: Fix Geode LX timekeeping in the generic x86 build
+ ▪ b49bfc4 x86/apic: Serialize LVTT and TSC_DEADLINE writes
+ ▪ 160fa04 windfarm: decrement client count when unregistering
+ ▪ 8136a33 ARM: 8429/1: disable GCC SRA optimization
+ ▪ a5c3335 perf header: Fixup reading of HEADER_NRCPUS feature
+ ▪ 4753712 scsi: fix scsi_error_handler vs. scsi_host_dev_release race
+ ▪ f27664d Linux 3.10.90
+ ▪ eec4af3 Revert "iio: bmg160: IIO_BUFFER and IIO_TRIGGERED_BUFFER are required"
+ ▪ 8601cf6 vfs: Remove incorrect debugging WARN in prepend_path
+ ▪ a9649a4 fib_rules: fix fib rule dumps across multiple skbs
+ ▪ 3e5f139 sctp: fix race on protocol/netns initialization
+ ▪ 6621c10 net/ipv6: Correct PIM6 mrt_lock handling
+ ▪ b5a92dd ipv6: fix exthdrs offload registration in out_rt path
+ ▪ ccf3182 usbnet: Get EVENT_NO_RUNTIME_PM bit before it is cleared
+ ▪ c664278a ip6_gre: release cached dst on tunnel removal
+ ▪ 0915bf9 rds: fix an integer overflow test in rds_info_getsockopt()
+ ▪ 28fb27f netlink: don't hold mutex in rcu callback when releasing mmapd ring
+ ▪ b66c868 inet: frags: fix defragmented packet's IP header for af_packet
+ ▪ 149ddd9 bonding: fix destruction of bond with devices different from arphrd_ether
+ ▪ d3b11b7 ipv6: lock socket in ip6_datagram_connect()
+ ▪ eba37e5 isdn/gigaset: reset tty->receive_room when attaching ser_gigaset
+ ▪ f5bd7ff bridge: mdb: fix double add notification
+ ▪ 6c13743 net: Fix skb_set_peeked use-after-free bug
+ ▪ 6f20b05 net: Fix skb csum races when peeking
+ ▪ 04e56a4 net: Clone skb before setting peeked flag
+ ▪ 22590c4 net: call rcu_read_lock early in process_backlog
+ ▪ 18629eb net: pktgen: fix race between pktgen_thread_worker() and kthread_stop()
+ ▪ 6556d90 bridge: mdb: zero out the local br_ip variable before use
+ ▪ 387e561 net/tipc: initialize security state for new connection socket
+ ▪ 4d47f81 ipv6: Make MLD packets to only be processed locally
+ ▪ 1d79791 x86: bpf_jit: fix compilation of large bpf programs
+ ▪ cd94510 vhost/scsi: potential memory corruption
+ ▪ 9d1fab0 sctp: fix ASCONF list handling
+ ▪ d5e6b6c hfs,hfsplus: cache pages correctly between bnode_create and bnode_free
+ ▪ 6971a2b IB/mlx4: Use correct SL on AH query under RoCE
+ ▪ 810be24 IB/mlx4: Forbid using sysfs to change RoCE pkeys
+ ▪ 0ca7174 IB/uverbs: Fix race between ib_uverbs_open and remove_one
+ ▪ 8a84f3f IB/uverbs: reject invalid or unknown opcodes
+ ▪ f95f81c hfs: fix B-tree corruption after insertion at position 0
+ ▪ 7f9df85 xen/gntdev: convert priv->lock to a mutex
+ ▪ 47b6f2a md/raid10: always set reshape_safe when initializing reshape_position.
+ ▪ 3f7ff18 fs: if a coredump already exists, unlink and recreate with O_EXCL
+ ▪ 9ae2d41 parisc: Filter out spurious interrupts in PA-RISC irq handler
+ ▪ 10a0d9b NFS: nfs_set_pgio_error sometimes misses errors
+ ▪ 1a59431 NFSv4: don't set SETATTR for O_RDONLY|O_EXCL
+ ▪ 4b49bc9 rc-core: fix remove uevent generation
+ ▪ d65140b x86/mm: Initialize pmd_idx in page_table_range_init_count()
+ ▪ c5274dc Add radeon suspend/resume quirk for HP Compaq dc5750.
+ ▪ 484b32f powerpc/rtas: Introduce rtas_get_sensor_fast() for IRQ handlers
+ ▪ c2bfef1 powerpc/mm: Fix pte_pagesize_index() crash on 4K w/64K hash
+ ▪ dfa25f0 ALSA: hda - Use ALC880_FIXUP_FUJITSU for FSC Amilo M1437
+ ▪ dc73567 ALSA: hda - Enable headphone jack detect on old Fujitsu laptops
+ ▪ ff03981 arm64: head.S: initialise mdcr_el2 in el2_setup
+ ▪ 7211b14 arm64: compat: fix vfp save/restore across signal handlers in big-endian
+ ▪ 396ee8a arm64: kconfig: Move LIST_POISON to a safe value
+ ▪ 576e5110 mac80211: enable assoc check for mesh interfaces
+ ▪ 56414e2 tg3: Fix temperature reporting
+ ▪ 6069d17 rtlwifi: rtl8192cu: Add new device ID
+ ▪ db6a094 unshare: Unsharing a thread does not require unsharing a vm
+ ▪ d9268af Linux 3.10.89
+ ▪ 2f21bbb xtensa: don't use echo -e needlessly
+ ▪ 54a2a59 hpfs: update ctime and mtime on directory modification
+ ▪ f4d4969 drivercore: Fix unregistration path of platform devices
+ ▪ 7d6bd8d of/address: Don't loop forever in of_find_matching_node_by_address().
+ ▪ 48765a3 auxdisplay: ks0108: fix refcount
+ ▪ a6e50cf devres: fix devres_get()
+ ▪ fe5f720 xtensa: fix kernel register spilling
+ ▪ 324c206 xtensa: fix threadptr reload on return to userspace
+ ▪ d97a75a HID: usbhid: Fix the check for HID_RESET_PENDING in hid_io_error
+ ▪ 9502e92 crypto: ghash-clmulni: specify context size for ghash async algorithm
+ ▪ 45f362b serial: 8250: don't bind to SMSC IrCC IR port
+ ▪ 84c9216 usb: host: ehci-sys: delete useless bus_to_hcd conversion
+ ▪ 85ce2c0 usb: dwc3: ep0: Fix mem corruption on OUT transfers of more than 512 bytes
+ ▪ 4f2a283 USB: ftdi_sio: Added custom PID for CustomWare products
+ ▪ 47ab244 USB: symbolserial: Use usb_get_serial_port_data
+ ▪ f9beb2f PCI: Fix TI816X class code quirk
+ ▪ 04c16b8 clk: versatile: off by one in clk_sp810_timerclken_of_get()
+ ▪ bf6951c iio: adis16480: Fix scale factors
+ ▪ 506ca26 iio: Add inverse unit conversion macros
+ ▪ 83eb06e iio: bmg160: IIO_BUFFER and IIO_TRIGGERED_BUFFER are required
+ ▪ ab6df17 DRM - radeon: Don't link train DisplayPort on HPD until we get the dpcd
+ ▪ bae96ff Linux 3.10.88
+ ▪ f19df57 crypto: caam - fix memory corruption in ahash_final_ctx
+ ▪ 4a5bfcd libfc: Fix fc_fcp_cleanup_each_cmd()
+ ▪ 7725971 drm/radeon: add new OLAND pci id
+ ▪ fcc7291 EDAC, ppc4xx: Access mci->csrows array elements properly
+ ▪ b33b923 localmodconfig: Use Kbuild files too
+ ▪ fa8ce35 dm thin metadata: delete btrees when releasing metadata snapshot
+ ▪ 6a69e9d perf: Fix fasync handling on inherited events
+ ▪ c4a8db6 mm/hwpoison: fix page refcount of unknown non LRU page
+ ▪ 9cd9e4b ipc/sem.c: update/correct memory barriers
+ ▪ e1ae046 ipc,sem: fix use after free on IPC_RMID after a task using same semaphore set exits
+ ▪ c765213 Linux 3.10.87
+ ▪ 28bb309 md/bitmap: return an error when bitmap superblock is corrupt.
+ ▪ b633960 kvm: x86: fix kvm_apic_has_events to check for NULL pointer
+ ▪ 2a7cd80 signal: fix information leak in copy_siginfo_from_user32
+ ▪ df1bc03 signal: fix information leak in copy_siginfo_to_user
+ ▪ ccd15b35 signalfd: fix information leak in signalfd_copyinfo
+ ▪ 02f5799 ARM: Fix !kuser helpers case
+ ▪ 2542768 sg_start_req(): make sure that there's not too many elements in iovec
+ ▪ 600a5df md/raid1: extend spinlock to protect raid1_end_read_request against inconsistencies
+ ▪ f3823dc ocfs2: fix BUG in ocfs2_downconvert_thread_do_work()
+ ▪ 52a806c ipc: modify message queue accounting to not take kernel data structures into account
+ ▪ 2ed5871 ALSA: hda - fix cs4210_spdif_automute()
+ ▪ 6867f97 iscsi-target: Fix iscsit_start_kthreads failure OOPs
+ ▪ ae266aa rbd: fix copyup completion race
+ ▪ 17bcc3f crypto: ixp4xx - Remove bogus BUG_ON on scattered dst buffer
+ ▪ 687f28e xen/gntdevt: Fix race condition in gntdev_release()
+ ▪ b09d304 x86/xen: Probe target addresses in set_aliased_prot() before the hypercall
+ ▪ 22fe3ed sparc64: Fix userspace FPU register corruptions.
+ ▪ 38aa332 sparc64: Fix FPU register corruption with AES crypto offload.
+ ▪ 2a932c3 perf/x86/amd: Rework AMD PMU init code
+ ▪ 08721fe mfd: sm501: dbg_regs attribute must be read-only
+ ▪ cb62d654 ipmi: fix timeout calculation when bmc is disconnected
+ ▪ 7923f42 md: use kzalloc() when bitmap is disabled
+ ▪ f533a55 USB: sierra: add 1199:68AB device ID
+ ▪ 41b0868 xhci: fix off by one error in TRB DMA address boundary check
+ ▪ 3f6bcf8 ipr: Fix invalid array indexing for HRRQ
+ ▪ 59e4a58 ipr: Fix incorrect trace indexing
+ ▪ 3a48f37 ipr: Fix locking for unit attention handling
+ ▪ 1ef5567 drm/radeon/combios: add some validation of lvds values
+ ▪ d5fca01 MIPS: Make set_pte() SMP safe.
+ ▪ 23d5d54 MIPS: Fix sched_getaffinity with MT FPAFF enabled
+ ▪ f2ea2f6 ARM: realview: fix sparsemem build
+ ▪ e89a989 Linux 3.10.86
+ ▪ a074d9b efi: fix 32bit kernel boot failed problem using efi
+ ▪ c9fbe59 iscsi-target: Fix iser explicit logout TX kthread leak
+ ▪ 98e0deb iscsi-target: Fix use-after-free during TPG session shutdown
+ ▪ a051801 vhost: actually track log eventfd file
+ ▪ 6815022 rds: rds_ib_device.refcount overflow
+ ▪ 30b7084 xhci: prevent bus_suspend if SS port resuming in phase 1
+ ▪ dbf3467 xhci: report U3 when link is in resume state
+ ▪ ca332c2 xhci: Calculate old endpoints correctly on device reset
+ ▪ 7cbc158 usb-storage: ignore ZTE MF 823 card reader in mode 0x1225
+ ▪ ce4780f ata: pmp: add quirk for Marvell 4140 SATA PMP
+ ▪ d3be70d blkcg: fix gendisk reference leak in blkg_conf_prep()
+ ▪ 7c4e757 Input: usbtouchscreen - avoid unresponsive TSC-30 touch screen
+ ▪ 6302a73 tile: use free_bootmem_late() for initrd
+ ▪ 0f727da md/raid1: fix test for 'was read error from last working device'.
+ ▪ 2ed0e17 mmc: sdhci-pxav3: fix platform_data is not initialized
+ ▪ 182a0e0 mmc: sdhci-esdhc: Make 8BIT bus work
+ ▪ e1ceb77 mac80211: clear subdir_stations when removing debugfs
+ ▪ 688300c st: null pointer dereference panic caused by use after kref_put by st_open
+ ▪ 28d4f50 ALSA: hda - Fix MacBook Pro 5,2 quirk
+ ▪ d9ddcf9 ALSA: usb-audio: add dB range mapping for some devices
+ ▪ 07573f2 ALSA: usb-audio: Add MIDI support for Steinberg MI2/MI4
+ ▪ fbc40b4 genirq: Prevent resend to interrupts marked IRQ_NESTED_THREAD
+ ▪ bd9a801 ARC: make sure instruction_pointer() returns unsigned value
+ ▪ ca89195 s390/sclp: clear upper register halves in _sclp_print_early
+ ▪ 50e1eb2 freeing unlinked file indefinitely delayed
+ ▪ b792402 Linux 3.10.85
+ ▪ 65ac3d6 MIPS: KVM: Do not sign extend on unsigned MMIO load
+ ▪ e69d016 qla2xxx: Mark port lost when we receive an RSCN for it.
+ ▪ 0a79f5b Fix firmware loader uevent buffer NULL pointer dereference
+ ▪ a8aabbc hpfs: hpfs_error: Remove static buffer, use vsprintf extension %pV instead
+ ▪ 9605811 agp/intel: Fix typo in needs_ilk_vtd_wa()
+ ▪ 03a7c2c rbd: use GFP_NOIO in rbd_obj_request_create()
+ ▪ adac037 9p: don't leave a half-initialized inode sitting around
+ ▪ bc105e8 9p: forgetting to cancel request on interrupted zero-copy RPC
+ ▪ 2a42e78 SUNRPC: Fix a memory leak in the backchannel code
+ ▪ 71c07a5 nfs: increase size of EXCHANGE_ID name string buffer
+ ▪ a80ae39 fixing infinite OPEN loop in 4.0 stateid recovery
+ ▪ a81f0eb NFS: Fix size of NFSACL SETACL operations
+ ▪ c6b7eab watchdog: omap: assert the counter being stopped before reprogramming
+ ▪ 6ab7d70 USB: usbfs: allow URBs to be reaped after disconnection
+ ▪ 1c3f7bf mac80211: prevent possible crypto tx tailroom corruption
+ ▪ 8bcf10a __bitmap_parselist: fix bug in empty string handling
+ ▪ 2379a40 iser-target: release stale iser connections
+ ▪ 9156fa3 iser-target: Fix possible deadlock in RDMA_CM connection error
+ ▪ 797c74b iscsi-target: Convert iscsi_thread_set usage to kthread.h
+ ▪ 6b12aa7 ACPICA: Tables: Fix an issue that FACS initialization is performed twice
+ ▪ dfddf3c crush: fix a bug in tree bucket decode
+ ▪ d68d427 fuse: initialize fc->release before calling it
+ ▪ 1e52d12 Btrfs: use kmem_cache_free when freeing entry in inode cache
+ ▪ f210325 md: fix a build warning
+ ▪ dfe099c hwmon: (mcp3021) Fix broken output scaling
+ ▪ 09f6f59 dmaengine: mv_xor: bug fix for racing condition in descriptors cleanup
+ ▪ 0fd5f84 tracing: Have branch tracer use recursive field of task struct
+ ▪ 2c1036c tracing/filter: Do not allow infix to exceed end of string
+ ▪ f51ef3d tracing/filter: Do not WARN on operand count going below zero
+ ▪ 25ff594 libata: force disable trim for SuperSSpeed S238
+ ▪ e953c65 libata: add ATA_HORKAGE_NOTRIM
+ ▪ 70b8d56 vTPM: set virtual device before passing to ibmvtpm_reset_crq
+ ▪ a7ca87f xfs: fix remote symlinks on V5/CRC filesystems
+ ▪ d7d89e2 drm: add a check for x/y in drm_mode_setcrtc
+ ▪ c9a898c drm/radeon: Don't flush the GART TLB if rdev->gart.ptr == NULL
+ ▪ 03b8aba drm/radeon: take the mode_config mutex when dealing with hpds (v2)
+ ▪ 8e9b4b0 drm/qxl: Do not cause spice-server to clean our objects
+ ▪ ebee52f mmc: block: Add missing mmc_blk_put() in power_ro_lock_show()
+ ▪ 7fbdfcc dm btree: silence lockdep lock inversion in dm_btree_del()
+ ▪ 661b28d dm btree remove: fix bug in redistribute3
+ ▪ 4c5db8dc usb: xhci: Bugfix for NULL pointer deference in xhci_endpoint_init() function
+ ▪ 5c462c8 USB: option: add 2020:4000 ID
+ ▪ 943ba14 USB: cp210x: add ID for Aruba Networks controllers
+ ▪ d3c22c2 USB: devio: fix a condition in async_completed()
+ ▪ d947add usb: dwc3: Reset the transfer resource index on SET_INTERFACE
+ ▪ e0a1ea9 libata: increase the timeout when setting transfer mode
+ ▪ cfbfc2c libata: add ATA_HORKAGE_BROKEN_FPDMA_AA quirk for HP 250GB SATA disk VB0250EAVER
+ ▪ 9d192bb ASoC: wm8960: the enum of "DAC Polarity" should be wm8960_enum[1]
+ ▪ 5877e6a ASoC: wm8903: Fix define for WM8903_VMID_RES_250K
+ ▪ 7ca9879 ASoC: wm8955: Fix setting wrong register for WM8955_K_8_0_MASK bits
+ ▪ 824af94 ASoC: wm8737: Fixup setting VMID Impedance control register
+ ▪ 3ed50a3 cx24116: fix a buffer overflow when checking userspace params
+ ▪ 4b2012d s5h1420: fix a buffer overflow when checking userspace params
+ ▪ ff90477 af9013: Don't accept invalid bandwidth
+ ▪ 82e8ec4 iio: DAC: ad5624r_spi: fix bit shift of output data value
+ ▪ 91f93b5 i2c: at91: fix a race condition when using the DMA controller
+ ▪ 9a908bb jbd2: fix ocfs2 corrupt when updating journal superblock fails
+ ▪ 421ecf7 jbd2: use GFP_NOFS in jbd2_cleanup_journal_tail()
+ ▪ 73fb083 ext4: replace open coded nofail allocation in ext4_free_blocks()
+ ▪ 43b8d45 ext4: correctly migrate a file with a hole at the beginning
+ ▪ 823751c ext4: be more strict when migrating to non-extent based file
+ ▪ e12bd92 ext4: fix reservation release on invalidatepage for delalloc fs
+ ▪ ef2bfee ext4: don't retry file block mapping on bigalloc fs with non-extent file
+ ▪ 1ab4fad ext4: call sync_blockdev() before invalidate_bdev() in put_super()
+ ▪ 274a8a0 ext4: fix race between truncate and __ext4_journalled_writepage()
+ ▪ e983264 staging: rtl8712: prevent buffer overrun in recvbuf2recvframe
+ ▪ 4a9fe47 ath9k: fix DMA stop sequence for AR9003+
+ ▪ 86cf344 Bluetooth: btusb: Fix memory leak in Intel setup routine
+ ▪ d8e65b6 pinctrl: mvebu: armada-xp: fix functions of MPP48
+ ▪ 6caa488 pinctrl: mvebu: armada-xp: remove non-existing VDD cpu_pd functions
+ ▪ 1a71bac pinctrl: mvebu: armada-xp: remove non-existing NAND pins
+ ▪ 23b2245 pinctrl: mvebu: armada-370: fix spi0 pin description
+ ▪ 72682a5 mtd: dc21285: use raw spinlock functions for nw_gpio_lock
+ ▪ eb67081 mtd: fix: avoid race condition when accessing mtd->usecount
+ ▪ 644f9c2 spi: pl022: Specify 'num-cs' property as required in devicetree binding
+ ▪ a22521d regulator: core: fix constraints output buffer
+ ▪ ae1aad2 regmap: Fix regmap_bulk_read in BE mode
+ ▪ da7ec1d cpuidle / menu: Return (-1) if there are no suitable states
+ ▪ 99b9633 arm64: vdso: work-around broken ELF toolchains in Makefile
+ ▪ ee72b6f arm64: mm: Fix freeing of the wrong memmap entries with !SPARSEMEM_VMEMMAP
+ ▪ 8c00911 arm64: Do not attempt to use init_mm in reset_context()
+ ▪ db24269 ARC: add compiler barrier to LLSC based cmpxchg
+ ▪ cfc8504 ALSA: hda - Fix the dock headphone output on Fujitsu Lifebook E780
+ ▪ 9c2af94 ALSA: hda - Add headset support to Acer Aspire V5
+ ▪ 313ca0e Disable write buffering on Toshiba ToPIC95
+ ▪ 0a5620a ipr: Increase default adapter init stage change timeout
+
+ ▪ project lineage/wiki/
+ ▪ dda1c6b wiki: import gts210 family, ham, i9305, n51xx
+ ▪ d42c3c6 wiki: Add essentials for making a device official
+
+ ▪ project packages/apps/Contacts/
+ ▪ 143e1fe Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into nougat
+
+ ▪ project packages/apps/ContactsCommon/
+ ▪ f97eb22 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_ContactsCommon into nougat
+
+ ▪ project packages/apps/Dialer/
+ ▪ 8c9e2ae Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ c11d753 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_PackageInstaller into nougat
+
+ ▪ project packages/apps/PhoneCommon/
+ ▪ 75e864f Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_PhoneCommon into nougat
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 3bd814e Merge branch 'nougat' of https://github.com/ResurrectionRemix/packages_apps_ResurrectionStats into nougat
+ ▪ 17c21f3 Bump version to 5.8.3
+ ▪ 443ab3f Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 384acbc stats: RR 5.8.3
+
+ ▪ project packages/apps/Settings/
+ ▪ 4329c68 fix build
+ ▪ bae9fe3 Update resurrection_device_maintainers_strings.xml (#747)
+ ▪ 0b7046f Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 0a56e28 Dialer: show headsup on incoming call even if headsup are off [2/2]
+ ▪ 9903553 Update Oneplus2 maintainer (#746)
+
+ ▪ project packages/services/Telecomm/
+ ▪ 357ff90 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telecomm into nougat
+
+ ▪ project packages/services/Telephony/
+ ▪ 6d1d221 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telephony into nougat
+
+ ▪ project system/core/
+ ▪ ae467ca Merge branch '7.1.2' of https://github.com/ResurrectionRemix/system_core into nougat
+
+ ▪ project vendor/cm/
+ ▪ 5ff1809 Update 5.8.2 to 5.8.3
+ ▪ c04ffd6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat
 
  ▼ 04/14/2017
 
@@ -13,35 +2106,46 @@
  ▪ f3f9cfd msm8956-common: Stop qmi logspam ;_;
  ▪ 944b561 msm8956-common: Uncomment OSNLP_PACKAGE , OSNLP_ACTION
  ▪ 85de176 msm8956-common: Change path for aanc
+ ▪ f42b8c2 Revert "msm8956: Re-enable XML audio policy"
+
+ ▪ project frameworks/av/
+ ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
  ▪ project frameworks/base/
- ▪ 7cc867d ScreenshotEditor: Fix Navbar Glitch for Good.
- ▪ 56e18f3 Ticker: allow to show music track info on new track being played [1/2]
- ▪ a815c42 Keyguard:Remove null checks on weather changes
- ▪ cbaf1a6 Option to Display Data Disabled Indicator Icon [1/2]
- ▪ 92e6f16 Show lockscreen wallpaper when blur effect is enabled
- ▪ 2671cdc Add Missing Permission to Keyguard
- ▪ df2de85 Keyguard Weather : Refactor for new API[1/2]
- ▪ b77c0ec Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
- ▪ 8a13d7e Merge pull request #192 from ashoksoni/changes
- ▪ fcbe942 Dialer: show headsup on incoming call even if headsup are off and ticker on
- ▪ a4af9da Revert "Dialer: show headsup on incoming call even if headsup are off and ticker on"
+ ▪ 1d4c574 SystemUI : port performance profile toggle from M
+ ▪ b09764e Keyguard:Remove null checks on weather changes
+ ▪ 548a696 Option to Display Data Disabled Indicator Icon [1/2]
+ ▪ c5c1fed Show lockscreen wallpaper when blur effect is enabled
+ ▪ 195f7a7 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into 7.1.2
  ▪ aa9f013 Merge pull request #189 from ashoksoni/changes
  ▪ 03298c8 Dialer: show headsup on incoming call even if headsup are off and ticker on
+ ▪ dcd25f9 Add Missing Permission to Keyguard
+ ▪ 7e1ad6a Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into 7.1.2
+ ▪ 7f5fafd Keyguard Weather : Refactor for new API[1/2]
+
+ ▪ project lineage/jenkins/
+ ▪ b67e81e hudson: bring back w7
+
+ ▪ project lineage/mirror/
+ ▪ 4d8cf8c mirror: Updated to 13-Apr-17 16:40:00 UTC
+
+ ▪ project lineage/wiki/
+ ▪ 245cbb0 wiki: Less external main-links
+ ▪ f0d0eb3 wiki: Don't break mid-word
 
  ▪ project packages/apps/Settings/
- ▪ 9903553 Update Oneplus2 maintainer (#746)
  ▪ c2965b9 Ticker: allow to show music track info on new track being played [2/2]
  ▪ 5a119f2 Option to Display Data Disabled indicator Icons [2/2]
  ▪ e167289 Settings: Refactor Keyguard Weather [2/2]
+ ▪ d29b925 Option to Display Data Disabled indicator Icons [2/2]
+ ▪ 04b9721 Port "Battery Usage Alerts" feature from factory images to aosp
+ ▪ 15fbd71 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into 7.1.2
 
  ▼ 04/13/2017
 
 
- ▪ project device/xiaomi/msm8956-common/
- ▪ f42b8c2 Revert "msm8956: Re-enable XML audio policy"
-
  ▪ project frameworks/base/
+ ▪ 8d317f5 Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
 
  ▪ project kernel/motorola/msm8226/
  ▪ cf7d454 net/packet: fix overflow in check for tp_frame_nr
@@ -57,750 +2161,66 @@
  ▪ 6d2214c qcrypto: protect potential integer overflow.
  ▪ 32e9b24 sdcardfs: limit stacking depth
 
+ ▪ project lineage/jenkins/
+ ▪ cf9e05d hudson: Temporarily remove ether until it gets cleaned up
+
+ ▪ project lineage/wiki/
+ ▪ 803c0a3 devices: Add lt02ltespr
+ ▪ 7ffdf08 wiki: Underp filtering of peripherals
+ ▪ 21ed3ac wiki: contributors: Add other projects
+ ▪ 0b84053 wiki: Pimp "Contributors" page
+ ▪ b799ed7 devices: unify korean galaxy note 2
+
+ ▪ project packages/apps/Nfc/
+ ▪ 3090980 Nfc: Include android-support-v4 for the NXP stack
+
  ▪ project packages/apps/Settings/
+ ▪ 18a189f Settings: Refactor Keyguard Weather [2/2]
 
  ▼ 04/12/2017
 
 
  ▪ project frameworks/av/
+ ▪ 18a402d stagefright: Remove the HAL3 limitation from the video reference clock selection
  ▪ eb06e41 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+ ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
 
  ▪ project frameworks/base/
  ▪ 500eed3 base: services: add config_fingerprintRemoveClientOnCancel
  ▪ 5d314c8 Revert "SystemUI: Add SlotId for MultiSim"
  ▪ 5f48e30 PowerManager: Bring back the compatibility with AOSP
+ ▪ 7d3e01c Slim Recents: refresh sizes on dpi change
+ ▪ b39537d base: services: add config_fingerprintRemoveClientOnCancel
 
  ▪ project frameworks/native/
  ▪ 0dd3703 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 5f6c91f Makefile: remove REAL_CC and calls to gcc wrapper script
- ▪ 93a440c staging: prima: Fix non-debug build and switch to it
- ▪ 222be2a net: rmnet_data: Silence "Unkown IOCTL" log spam
- ▪ 0c76e49 prima: Roll back to LA.BR.1.3.3_rb2.26
- ▪ 13347bf panel dtsi changes
- ▪ 4cde589 Fix reboot issue after aboot update 7.3.9
- ▪ e0aaf3d [dnm]: Merge dtsi changes from latest miui
- ▪ 3fd6cf9 kenzo: Use caf hall driver
- ▪ 24fd411 kenzo: enable_spk_ext_pa STFU!!
- ▪ 123138f kenzo: Remove useless charging debugging
- ▪ c3f67e8 kenzo: Enable cpuset
- ▪ 32ed689 cpuset: Make cpusets restore on hotplug
- ▪ 710f844 cpuset: Add allow_attach hook for cpusets on android.
- ▪ 0fe9c38 kenzo: Disable goodix
- ▪ c3fa0bf include/linux/compiler-gcc.h: improve __visible documentation
- ▪ 2322fb2 include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
- ▪ 3c879c3 compiler.h: add support for function attribute assume_aligned
- ▪ 4d920d3 compiler-gcc: disable -ftracer for __noclone functions
- ▪ f9cdf31 compiler-gcc: integrate the various compiler-gcc[345].h files
- ▪ 4e0f495 media: Use balika code to support kate cam sensor
- ▪ 8383e52 derp
- ▪ 86a8ea3 Revert "fingerprint: Initial Goodix Support"
- ▪ 0ecd47b media: Add support for s5k5e8_yx13 sensor
- ▪ 3242f63 input: Handle an additional framebuffer hint
- ▪ 42499c9 fix base path
- ▪ 8c6e72e defconfig: Change Stack Protector to 'REGULAR'
- ▪ 6cae3ce Dominator: set version in Makefile
- ▪ 73d9a38 Update prima
- ▪ 7bfc004 Revert "arm:dts:increase max curent"
- ▪ 5e63e8e mobicore: Fix section mismatch
- ▪ 1d14f82 remove dual decleration
- ▪ 13fe116 update build script
- ▪ d6c5cd5 fingerprint: Initial Goodix Support
- ▪ 2fd8a8d enable sound control and gestures
- ▪ 7a0ec94 DTS: Fix Qualcomm Typo Error
- ▪ fb199b1 Fix s5k3p3_f3p3man support
- ▪ 1519f88 cpufreq: cache tunables for ondemand and conservative governors
- ▪ 24c4b8a xiaomi: lct_tp_fm_info: fix warning about existing sysfs/procfs entries
- ▪ d942efc platform/msm: haptic: expose vibrate function
- ▪ 431e6cd wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep for Redmi Note 3
- ▪ 7dd4967 input: atmel_mxt_ts: Add double tap sysfs symlink
- ▪ 5aef935 input: Create shared procfs nodes
- ▪ 8e97755 input: atmel_mxt_ts: Add option to disable keypad
- ▪ fc83243 input: ft5x06: Add option to disable keypad
- ▪ c18f3bd usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
- ▪ 53241ef sound_control: add speaker gain
- ▪ 76606ca ASoC: wcd9335: add analog headphone gain
- ▪ 70e8811 ASoC: wcd9335: Sound control
- ▪ 5432ee2 power: qpnp-fg: Coulomb Counting Error
- ▪ 2ed01da fix qpnp_fg_cap_learning wake lock no release
- ▪ 313944f drivers:power: Fix the soc update delay
- ▪ 4234f32 drivers:power: fix -2% bug
- ▪ 8eab5b8 Revert partial xiaomi changes
- ▪ 358aaf3 arm:dts: adapt to new aw2013 driver
- ▪ c402658 leds-aw2013: Don't reset values when nothing has changed
- ▪ 929ed35 leds: aw2013: Reduce logging level
- ▪ a5b8b66 leds: aw2013: Use an ordered workqueue for command processing
- ▪ c425d19 leds: aw2013_led: Don't reset the brightness level when setting blink
- ▪ ace46a3 revert xiaomi changes
- ▪ a7c14e3 kobject: Fix "add_uevent_var: too many keys" warn.
- ▪ b946f06 power: qpnp-smbcharger: Fix the BMD algo. disable logic
- ▪ 5e22da6 arm:dts:we want faster bootup
- ▪ 0679ca3 Revert "msm: thermal: add a module param to change the thermal throttle temperature point to userspace"
- ▪ 5cf0a56 config:enable exfat
- ▪ 702149e Add exFAT support
- ▪ bd3ed57 config;Enable crc32 module
- ▪ 20bd699 crypto: arm64/crc32 - bring in line with generic CRC32
- ▪ 234c8d9 crypto: crc32 - Add ARM64 CRC32 hw accelerated module
- ▪ 06dd97c regenerate defconfig
- ▪ 2614c68 Mondrianwifi: Fix compilation error with mdss_mdp_trace.h
- ▪ c5cb01f underp merge
- ▪ 7b27971 fix f2fs compile
- ▪ 550bda9 Fix Cam for all
- ▪ b1d7279 dominator:enable frandom
- ▪ 477f52f upgrade frandom to latest
- ▪ 05079be drivers: Upgrade frandom from staging
- ▪ eeb298f staging: frandom: Clear up checkpatch conflicts
- ▪ abd3dfd staging: frandom: Dynamically allocate the char device numbers
- ▪ 5b1b6fb staging: Add frandom RNG driver
- ▪ 4f2dd73 drivers: camera: Fix camera sensor detection
- ▪ 99d13ea Revert "msm: mdss: kcal: Use PCC for negative display mode"
- ▪ 3b3bd29 Time to dominate
- ▪ eafc593 dominator: Enable Powersuspend
- ▪ aa5c955 kernel/power/powersuspend: cumulative update to version 1.5
- ▪ 61305e8 kernel/power/powersuspend: LCD screen on/off hooks (Yank555.lu)
- ▪ e173cea kernel/power/powersuspend: default to userspace for now
- ▪ bff4e10 kernel/power/powersuspend: add back userpace control w/ default kernel control
- ▪ 313e0a4 kernel/power/powersuspend: remove userspace dependency from powersuspend
- ▪ 533ba23 powersuspend: fix logci derps :p
- ▪ 6691fc2 powersuspend: new PM kernel driver for Android w/o early_suspend
- ▪ d123ce7 mdss: use an interruptible thread on edp to reduce load_average
- ▪ 65a790a msm: Fix high load average from uninterruptible waits
- ▪ f0d9e2f config:enable f2fs  * remove unused touchscreen  * remove ext2 and ext3
- ▪ 0cf348a Sysfs interface to Enable/Disable CRC [@Pafcholini] Signed-off-by: placiano <placiano80@gmail.com>
- ▪ 90a95d0 dominator: Enable DYNAMIC FSYNC
- ▪ c7d8d90 dominator: Add NTFS Support
- ▪ d3a8716 Forward port Dynamic Fsync to Linux 3.10
- ▪ 04719aa Dynamic Fsync 1.2
- ▪ 20b74b5 msm: kgsl: Report correct GPU frequency in sysfs
- ▪ e193c17 PM: devfreq: Use high priority workqueue
- ▪ 9e1e762 dominator: Enable Arch Power
- ▪ 9acc6d9 msm: thermal: add a module param to change the thermal throttle temperature point to userspace
- ▪ 721a5b2 dominator: Enable FIOPS
- ▪ 3516ab3 FIOPS: forward port for use on 3.10 Linux
- ▪ da41e7f block: fiops ioscheduler core
- ▪ b869b6a Remove '+' symbol from kernel version string
- ▪ 09008a9 tick: don't update idle time if cpu offline
- ▪ 070b5db config:enable kcal
- ▪ 2be5bef msm: mdss: kcal: Only apply updates on index 0
- ▪ f59fb8f msm: mdss: kcal: Use PCC for negative display mode
- ▪ f0db701 msm: mdss: KCAL: Send a pp display commit when changes are made
- ▪ 1edfae6 msm: mdss: KCAL: Do not read from picture adjustment registers
- ▪ 7741345d msm: mdss: KCAL: Read values from MDP registers wherever possible
- ▪ 1d9c63b msm: mdss: KCAL: Apply default values on boot
- ▪ 35bbcca msm: mdss: KCAL: Queue changes when panel is powered off
- ▪ fd22aa3 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
- ▪ b69a946 msm: mdss: KCAL: Update Kconfig description
- ▪ 7e13f75 msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
- ▪ e6c4181 msm: mdss: KCAL: Check panel power state before applying values
- ▪ a754829 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
- ▪ f6c950c msm: mdss: Keep KCAL within its own source file
- ▪ 31cf154 msm: mdss: Remove deprecated __dev* markings
- ▪ aeba60c msm: mdss: Add pa_v2 support to KCAL
- ▪ 2946eeb msm: mdss: Replace PGC implementation with PCC for KCAL
- ▪ 22d1fa0 msm: mdss: Add KCAL support for post processing control [v2]
- ▪ d7b995b config:Expand def and remove unwanted modules
- ▪ 71bd16e msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
- ▪ 614f799 qpnp-haptic: Add sysfs interface to control intensity
- ▪ d92f2251 arm:dts:let xiaomi be partial  * We are mankind's angel so will offer everyone equal freq
- ▪ ff00fd6 arm:dts:increase max curent  * Therefore adjust thermal mitigation
- ▪ a6952f7 scripts/sortextable: suppress warning: `relocs_size' may be used uninitialized
- ▪ c40e4da asoc: fix warning
- ▪ 5273d6b misc: Fix Kconfig warnings
- ▪ 6ff8563 devfreq_devbw: Assign labels to devbw nodes.
- ▪ ef44153 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+
- ▪ f76530e block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
- ▪ e413694 block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
- ▪ 481e42c kenzo: defconfig: Update
- ▪ 40a41c8 ARM: dts: pstore: Match motorola configuration
- ▪ 2371a51 arch/arm: dts: Add pstore DT
- ▪ ce7d103 fs: pstore: Import Motorola pstore config
- ▪ 7adc209 power: reset: Allow device to preserve memory on restart
- ▪ 33220d1 ARM: dts: kenzo: Only build device specific dtb
- ▪ 8e174aa prima: Import QC prima wireless driver
- ▪ 8f6dabf fpc: Update fingerprint driver for MM HAL
- ▪ da4a5a5 dominator:add Dtbtool  * Also Add buildscript
- ▪ 4f8d0ae Import RN3 misc changes
- ▪ 005dcbc sound: wcd9335: Set correct wcd_ext_clk for HM Note 3
- ▪ 3243f73 sound: soc: Import Xiaomi code
- ▪ 6f26788 drivers:video:Import RN3 video changes
- ▪ 33a6ac3 drivers:power:Import RN3 power changes
- ▪ 1834c16 drivers:mmc:Import RN3 mmc changes
- ▪ 0a26ea5 drivers:media:Import RN3 media changes
- ▪ 22b034c drivers:led:Import RN3 led changes
- ▪ be2b134 drivers:input:Import RN3 input changes
- ▪ f24e695 arm:Import RN3 dts changes
- ▪ 8ace940 arm64:Import RN3 changes
- ▪ 378bfe0 update git ignore  * we need touch firmware files  * we dont need dt.img to be uploaded evey now and then
- ▪ 55dfc2e f2fs: use __set{__clear}_bit_le
- ▪ 1d638ce f2fs: update_free_nid_bitmap() can be static
- ▪ 703cb2e f2fs: __update_nat_bits() can be static
- ▪ 37b54b7 f2fs: le16_to_cpu for xattr->e_value_size
- ▪ 740abea f2fs: don't overwrite node block by SSR
- ▪ 3ac2122 f2fs: don't need to invalidate wrong node page
- ▪ 2e0b7a9 f2fs: fix an error return value in truncate_partial_data_page
- ▪ 3022679 fscrypt: catch up to v4.11-rc1
- ▪ 162f4c5 f2fs: avoid to flush nat journal entries
- ▪ a52d84f f2fs: avoid to issue redundant discard commands
- ▪ 5faefd0 f2fs: fix a plint compile warning
- ▪ ae01eb6 f2fs: add f2fs_drop_inode tracepoint
- ▪ 78b164e f2fs: Fix zoned block device support
- ▪ c504d62 f2fs: remove redundant set_page_dirty()
- ▪ 4670f41 f2fs: fix to enlarge size of write_io_dummy mempool
- ▪ 292d279 f2fs: fix memory leak of write_io_dummy mempool during umount
- ▪ 5253bdf f2fs: fix to update F2FS_{CP_}WB_DATA count correctly
- ▪ 1c09da3 f2fs: use MAX_FREE_NIDS for the free nids target
- ▪ a77cf31 f2fs: introduce free nid bitmap
- ▪ 7b0ea78 f2fs: new helper cur_cp_crc() getting crc in f2fs_checkpoint
- ▪ a3d9246 f2fs: update the comment of default nr_pages to skipping
- ▪ 9a262d7 f2fs: drop the duplicate pval in f2fs_getxattr
- ▪ 23dd2be f2fs: Don't update the xattr data that same as the exist
- ▪ aead59c f2fs: kill __is_extent_same
- ▪ cd29867 f2fs: avoid bggc->fggc when enough free segments are avaliable after cp
- ▪ 959b4b9 f2fs: select target segment with closer temperature in SSR mode
- ▪ 7b5f5d4 f2fs: show simple call stack in fault injection message
- ▪ 88ae10e fscrypt: catch fscrypto_get_policy in v4.10-rc6
- ▪ 22c2a33 f2fs: use __clear_bit_le
- ▪ 6473747 f2fs: no need lock_op in f2fs_write_inline_data
- ▪ 49b5db5 f2fs: add bitmaps for empty or full NAT blocks
- ▪ c9f4c7d f2fs: replace rw semaphore extent_tree_lock with mutex lock
- ▪ 182b0a1 f2fs: avoid m_flags overlay when allocating more data blocks
- ▪ 4f23093 f2fs: remove unsafe bitmap checking
- ▪ d1e4891 f2fs: init local extent_info to avoid stale stack info in tp
- ▪ bf6b16d f2fs: remove unnecessary condition check for write_checkpoint in f2fs_gc
- ▪ 62d555a f2fs: do SSR for node segments more aggresively
- ▪ 7e2d1c3 f2fs: check discard alignment only for SEQWRITE zones
- ▪ ea355e4 f2fs: wait for discard completion after submission
- ▪ 96ebc81 f2fs: much larger batched trim_fs job
- ▪ d3d4446 f2fs: avoid very large discard command
- ▪ c5a8cd9 f2fs: find data segments across all the types
- ▪ 122385e f2fs: do SSR in higher priority
- ▪ 1bb39b1 f2fs: do SSR for data when there is enough free space
- ▪ 7a4979a f2fs: node segment is prior to data segment selected victim
- ▪ ee3cce5 f2fs: put allocate_segment after refresh_sit_entry
- ▪ 7f091cb f2fs: add ovp valid_blocks check for bg gc victim to fg_gc
- ▪ 3704782 f2fs: do not wait for writeback in write_begin
- ▪ 25e111e f2fs: replace __get_victim by dirty_segments in FG_GC
- ▪ 8bec101 f2fs: fix multiple f2fs_add_link() calls having same name
- ▪ aa8616e f2fs: show actual device info in tracepoints
- ▪ eca81ab f2fs: use SSR for warm node as well
- ▪ 8dca2b2 f2fs: enable inline_xattr by default
- ▪ 9c0de36 f2fs: introduce noinline_xattr mount option
- ▪ ceb5d52 f2fs: avoid reading NAT page by get_node_info
- ▪ 257041c f2fs: remove build_free_nids() during checkpoint
- ▪ d88facc f2fs: change recovery policy of xattr node block
- ▪ 6c409de f2fs: super: constify fscrypt_operations structure
- ▪ a91505b f2fs: show checkpoint version at mount time
- ▪ c72ff51 f2fs: remove preflush for nobarrier case
- ▪ 4b7e425 f2fs: check last page index in cached bio to decide submission
- ▪ 402eb5d f2fs: check io submission more precisely
- ▪ 0364351 f2fs: fix missing bio_alloc(1)
- ▪ d4c490d f2fs: call internal __write_data_page directly
- ▪ 752a208 f2fs: avoid out-of-order execution of atomic writes
- ▪ c554627 f2fs: move write_node_page above fsync_node_pages
- ▪ c956e0f f2fs: move flush tracepoint
- ▪ 8e1927a f2fs: show # of APPEND and UPDATE inodes
- ▪ d4987a7 f2fs: fix 446 coding style warnings in f2fs.h
- ▪ f72f97f f2fs: fix 3 coding style errors in f2fs.h
- ▪ 52a5664 f2fs: declare missing static function
- ▪ 92e42bc f2fs: show the fault injection mount option
- ▪ f24fff5 f2fs: fix null pointer dereference when issuing flush in ->fsync
- ▪ 38e39ba f2fs: fix to avoid overflow when left shifting page offset
- ▪ 32ca8e7 f2fs: enhance lookup xattr
- ▪ 790d707 f2fs: fix a dead loop in f2fs_fiemap()
- ▪ 05ff4a6 f2fs: show # of on-going flush and discard bios
- ▪ 1e68561 f2fs: add a kernel thread to issue discard commands asynchronously
- ▪ f9a0d0f f2fs: factor out discard command info into discard_cmd_control
- ▪ 7995b40 f2fs: reorganize stat information
- ▪ 9edc1f5 f2fs: clean up flush/discard command namings
- ▪ 02ef093 f2fs: check in-memory sit version bitmap
- ▪ a6570d8 f2fs: check in-memory nat version bitmap
- ▪ 05904a6 f2fs: check in-memory block bitmap
- ▪ b5ba2b6 f2fs: introduce FI_ATOMIC_COMMIT
- ▪ 33ec4a4 f2fs: clean up with list_{first, last}_entry
- ▪ b7c206b f2fs: return fs_trim if there is no candidate
- ▪ 8aa5f6c f2fs: avoid needless checkpoint in f2fs_trim_fs
- ▪ 6bf7676 f2fs: relax async discard commands more
- ▪ 19a5838 f2fs: drop exist_data for inline_data when truncated to 0
- ▪ 1b21a5e f2fs: don't allow encrypted operations without keys
- ▪ 1fb15f5 f2fs: add tmpfile and rename2 to avoid code conflict
- ▪ daa670b f2fs: show the max number of atomic operations
- ▪ 4659867 f2fs: get io size bit from mount option
- ▪ caba6c4 f2fs: support IO alignment for DATA and NODE writes
- ▪ 6ce7253 f2fs: add submit_bio tracepoint
- ▪ 9753f1a f2fs: reassign new segment for mode=lfs
- ▪ 848a3355 f2fs: fix a missing discard prefree segments
- ▪ 3ac62af f2fs: use rb_entry_safe
- ▪ aeb994c f2fs: add a case of no need to read a page in write begin
- ▪ b12a3ab f2fs: fix a problem of using memory after free
- ▪ 3b19ebd f2fs: remove unneeded condition
- ▪ d27f9c5 f2fs: don't cache nat entry if out of memory
- ▪ ea2b711 f2fs: remove unused values in recover_fsync_data
- ▪ 4bd9b25 f2fs: add migrate_page to avoid patch conflicts
- ▪ 4f77861 Revert "f2fs: use percpu_counter for # of dirty pages in inode"
- ▪ d5af696 f2fs: support async discard based on v4.9
- ▪ 6e925f6 f2fs: resolve op and op_flags confilcts
- ▪ 7924106 f2fs: use file pointer for fscrypt_notsupp_process_policy
- ▪ 092bd1f f2fs: fix a missing size change in f2fs_setattr
- ▪ b7ed5a0 fs/super.c: fix race between freeze_super() and thaw_super()
- ▪ 7b79784 scripts/tags.sh: catch 4.9-rc6
- ▪ f6567a7 f2fs: fix to access nullified flush_cmd_control pointer
- ▪ 3630508 f2fs: free meta pages if sanity check for ckpt is failed
- ▪ 729be1c f2fs: detect wrong layout
- ▪ b822fe8 f2fs: call sync_fs when f2fs is idle
- ▪ 1e1e287 f2fs: return AOP_WRITEPAGE_ACTIVATE for writepage
- ▪ 37487e3 f2fs: do not activate auto_recovery for fallocated i_size
- ▪ 2f8c5a1 f2fs: fix to determine start_cp_addr by sbi->cur_cp_pack
- ▪ a30e189 f2fs: fix 32-bit build
- ▪ 76b04a0 f2fs: set ->owner for debugfs status file's file_operations
- ▪ 4f465d4 f2fs: fix incorrect free inode count in ->statfs
- ▪ 3f3e5c2 f2fs: drop duplicate header timer.h
- ▪ 2e35cd1 f2fs: fix wrong AUTO_RECOVER condition
- ▪ 745746c f2fs: do not recover i_size if it's valid
- ▪ 5764128 f2fs: fix fdatasync
- ▪ 89adc54 f2fs: fix to account total free nid correctly
- ▪ ddd1935 f2fs: fix an infinite loop when flush nodes in cp
- ▪ 31426c7 f2fs: don't wait writeback for datas during checkpoint
- ▪ 746a4c19 f2fs: fix wrong written_valid_blocks counting
- ▪ 571278c f2fs: avoid BG_GC in f2fs_balance_fs
- ▪ 6430d49 f2fs: fix redundant block allocation
- ▪ 52494ff f2fs: use err for f2fs_preallocate_blocks
- ▪ 601348a f2fs: support multiple devices
- ▪ a863448 f2fs: allow dio read for LFS mode
- ▪ 53e46fc f2fs: revert segment allocation for direct IO
- ▪ b6b0d4d f2fs: return directly if block has been removed from the victim
- ▪ 9b1064b Revert "f2fs: do not recover from previous remained wrong dnodes"
- ▪ ad9c62e f2fs: remove checkpoint in f2fs_freeze
- ▪ dce94f0 f2fs: assign segments correctly for direct_io
- ▪ ae5a9dc f2fs: fix wrong i_atime recovery
- ▪ 2c0c82d f2fs: record inode updating status correctly
- ▪ 6f881f2 f2fs: Trace reset zone events
- ▪ bef4c73 f2fs: Reset sequential zones on zoned block devices
- ▪ 80b19a8 f2fs: Cache zoned block devices zone type
- ▪ a4fe9df f2fs: Do not allow adaptive mode for host-managed zoned block devices
- ▪ c101c67 f2fs: Always enable discard for zoned blocks devices
- ▪ 5d1e1e6 f2fs: Suppress discard warning message for zoned block devices
- ▪ 331757c f2fs: Check zoned block feature for host-managed zoned block devices
- ▪ 1e45985 f2fs: Use generic zoned block device terminology
- ▪ 0e08a9e f2fs: Add missing break in switch-case
- ▪ d9c9454 f2fs: avoid infinite loop in the EIO case on recover_orphan_inodes
- ▪ 944652b f2fs: report error of f2fs_fill_dentries
- ▪ e321618 fs/crypto: catch up 4.9-rc2
- ▪ 3964543 f2fs: hide a maybe-uninitialized warning
- ▪ 5fd5325 f2fs: remove percpu_count due to performance regression
- ▪ 0d5b69c f2fs: make clean inodes when flushing inode page
- ▪ 7c90eaf4 f2fs: keep dirty inodes selectively for checkpoint
- ▪ ec6dee5 f2fs: Replace CURRENT_TIME_SEC with current_time() for inode timestamps
- ▪ 8ab586d f2fs: use BIO_MAX_PAGES for bio allocation
- ▪ 47cbc6b f2fs: declare static function for __build_free_nids
- ▪ 16f2961 f2fs: call f2fs_balance_fs for setattr
- ▪ 3dbc6f8 f2fs: count dirty inodes to flush node pages during checkpoint
- ▪ 53256a0 f2fs: avoid casted negative value as shrink count
- ▪ 635d7ff f2fs: don't interrupt free nids building during nid allocation
- ▪ 87862e6 f2fs: clean up free nid list operations
- ▪ e71abd5 f2fs: split free nid list
- ▪ 4272478 f2fs: clear nlink if fail to add_link
- ▪ 6ed2194 f2fs: fix sparse warnings
- ▪ 3bec9cf f2fs: fix error handling in fsync_node_pages
- ▪ e0262cf f2fs: fix to update largest extent under lock
- ▪ c35a12a f2fs: be aware of extent beyond EOF in fiemap
- ▪ 856916d f2fs: don't miss any f2fs_balance_fs cases
- ▪ c66449f f2fs: add missing f2fs_balance_fs in f2fs_zero_range
- ▪ e5c08e1 ASoC: wcd-mbhc: Don't report headphone until timout
- ▪ 783aec8 f2fs: give a chance to detach from dirty list
- ▪ 2deedec f2fs: fix to release discard entries during checkpoint
- ▪ 608100e f2fs: exclude free nids building and allocation
- ▪ 9cef91b f2fs: fix wrong sum_page pointer in f2fs_gc
- ▪ cf45491 f2fs: fix overflow due to condition check order
- ▪ c3a4025 posix_acl: Clear SGID bit when setting file permissions
- ▪ 39e0dbe f2fs: introduce update_ckpt_flags to clean up
- ▪ 5a53b96 f2fs: don't submit irrelevant page
- ▪ 397a275 f2fs: fix to commit bio cache after flushing node pages
- ▪ 0bce792 f2fs: introduce get_checkpoint_version for cleanup
- ▪ e4aa1cd f2fs: remove dead variable
- ▪ 4876ac7 f2fs: remove redundant io plug
- ▪ 8fcaee8 f2fs: support checkpoint error injection
- ▪ 784bb23 f2fs: fix to recover old fault injection config in ->remount_fs
- ▪ 9ff29be f2fs: do fault injection initialization in default_options
- ▪ 0af9796 f2fs: remove redundant value definition
- ▪ b09ccd7 f2fs: support configuring fault injection per superblock
- ▪ 2cb97ac f2fs: adjust display format of segment bit
- ▪ d629a83 f2fs: remove dirty inode pages in error path
- ▪ 78a574a f2fs: do not unnecessarily null-terminate encrypted symlink data
- ▪ d99679f f2fs: handle errors during recover_orphan_inodes
- ▪ b92121c f2fs: avoid gc in cp_error case
- ▪ 95ea7ee f2fs: should put_page for summary page
- ▪ d9a6478 f2fs: assign return value in f2fs_gc
- ▪ e03b17a f2fs: introduce cp_lock to protect updating of ckpt_flags
- ▪ 48f628f f2fs: fix to avoid race condition when updating sbi flag
- ▪ 078ef60 f2fs: put directory inodes before checkpoint in roll-forward recovery
- ▪ 395fba3 f2fs: use crc and cp version to determine roll-forward recovery
- ▪ 985db76 f2fs: preallocate blocks for encrypted file
- ▪ f517ea7 f2fs: show dirty inode number
- ▪ 16ac4fc f2fs: support IO error injection
- ▪ b45c5f1 f2fs: fix to return error number of read_all_xattrs correctly
- ▪ aabd45d f2fs: make f2fs_filetype_table static
- ▪ e92795d f2fs: handle error in recover_orphan_inode
- ▪ fdd5d8e f2fs: remove dead code f2fs_check_acl
- ▪ 2a67667 f2fs: exclude special cases for f2fs_move_file_range
- ▪ 0645084 f2fs: fix to set PageUptodate in f2fs_write_end correctly
- ▪ bbf798a f2fs: fix parameters of __exchange_data_block
- ▪ 5ed3dc0 f2fs: avoid ENOMEM during roll-forward recovery
- ▪ 0287351 f2fs: add common iget in add_fsync_inode
- ▪ 39ab93cf0 f2fs: check free_sections for defragmentation
- ▪ 817196d f2fs: forbid to do fstrim if fs has some error
- ▪ 583e785 f2fs: avoid page allocation for truncating partial inline_data
- ▪ 7119f92 f2fs: no need to make zeros beyond i_size
- ▪ a106586 f2fs: fix to detect temporary name of multimedia file
- ▪ 3c2d1ba f2fs: set dentry bits on random location in memory
- ▪ 3cdd48b f2fs: fix to set superblock dirty correctly
- ▪ d38479b f2fs: add roll-forward recovery process for encrypted dentry
- ▪ e608258 f2fs: fix lost xattrs of directories
- ▪ 7681387 f2fs: set encryption name flag in add inline entry path
- ▪ a6a9eaf f2fs crypto: avoid unneeded memory allocation in ->readdir
- ▪ 97d0949 f2fs: fix to do security initialization of encrypted inode with original filename
- ▪ 65202fc f2fs: do in batch synchronously readahead during GC
- ▪ fa232c3 f2fs: schedule in between two continous batch discards
- ▪ e536931 f2fs: enable inline_dentry by default and add noinline_dentry option
- ▪ 4e68606 f2fs: fix a bug when using namehash to locate dentry bucket
- ▪ a3d26a1 f2fs: fix to preallocate block only aligned to 4K
- ▪ 9a91e8d f2fs: fix non static symbol warning
- ▪ 71df9b2 f2fs: remove unnecessary initialization
- ▪ c6df092 f2fs: remove redundant judgement condition in available_free_memory
- ▪ d8af554 f2fs: check return value of write_checkpoint during fstrim
- ▪ abafd3c f2fs: fix to do f2fs_balance_fs in f2fs_map_blocks correctly
- ▪ a2f0791 f2fs: avoid unneeded loop in build_sit_entries
- ▪ 293ec94 f2fs: clean up foreground GC flow
- ▪ 9f9f6d8 f2fs: set dirty state for filesystem only when updating meta data
- ▪ 1bd5d9f f2fs: skip new checkpoint when doing fstrim without fs change
- ▪ 73dae49 f2fs: add discard info to sys entry of f2fs status
- ▪ b22f946 f2fs: reduce batch size of fstrim
- ▪ 62a5ddc f2fs: do not use discard_map for hard disks
- ▪ 516b2e3 f2fs: not allow to write illegal blkaddr
- ▪ 78e020b Revert "f2fs: move i_size_write in f2fs_write_end"
- ▪ 235c156 f2fs: fix build for v3.10
- ▪ 0d33967 f2fs: adjust other changes
- ▪ a0e9589 f2fs: get victim segment again after new cp
- ▪ e16362e f2fs: handle error case with f2fs_bug_on
- ▪ 551be1f f2fs: avoid data race when deciding checkpoin in f2fs_sync_file
- ▪ ac9a63f f2fs: support an ioctl to move a range of data blocks
- ▪ bf16dc2 f2fs: fix to report error number of f2fs_find_entry
- ▪ e25b6deb f2fs: avoid memory allocation failure due to a long length
- ▪ a5e7a82 f2fs: reset default idle interval value
- ▪ 3e7ba0f f2fs: use blk_plug in all the possible paths
- ▪ 36da58c f2fs: fix to avoid data update racing between GC and DIO
- ▪ 5037e24 f2fs: add maximum prefree segments
- ▪ 72eb68a f2fs: disable extent_cache for fcollapse/finsert inodes
- ▪ a36143c f2fs: refactor __exchange_data_block for speed up
- ▪ 6bb9dc6 f2fs: fix ERR_PTR returned by bio
- ▪ 9a0f233 f2fs: avoid mark_inode_dirty
- ▪ 07c1075 f2fs: move i_size_write in f2fs_write_end
- ▪ cdb6f8b f2fs: fix to avoid redundant discard during fstrim
- ▪ 019b42b f2fs: avoid mismatching block range for discard
- ▪ 227a8a2 f2fs: fix incorrect f_bfree calculation in ->statfs
- ▪ db7cb82 f2fs: skip to check the block address of node page
- ▪ af17950 f2fs: shrink critical region in spin_lock
- ▪ 2a9d55c f2fs: call SetPageUptodate if needed
- ▪ 62b5030 f2fs: introduce f2fs_set_page_dirty_nobuffer
- ▪ c64b04d f2fs: remove unnecessary goto statement
- ▪ b1d0019 f2fs: add nodiscard mount option
- ▪ 5172466 f2fs: fix to redirty page if fail to gc data page
- ▪ 4c6aa8e f2fs: fix to detect truncation prior rather than EIO during read
- ▪ 002fc51 f2fs: fix to avoid reading out encrypted data in page cache
- ▪ 1d3f6cb f2fs: avoid latency-critical readahead of node pages
- ▪ 82d27e3 f2fs: avoid writing node/metapages during writes
- ▪ 9be270c f2fs: produce more nids and reduce readahead nats
- ▪ 818f6ac f2fs: detect host-managed SMR by feature flag
- ▪ c99f96a f2fs: call update_inode_page for orphan inodes
- ▪ 05c579d f2fs: report error for f2fs_parent_dir
- ▪ 9a27d05 f2fs: find parent dentry correctly
- ▪ 6937971 f2fs: fix deadlock in add_link failure
- ▪ 60371f5 f2fs: introduce mode=lfs mount option
- ▪ 91f6dd1 f2fs: skip clean segment for gc
- ▪ ccaf94b f2fs: drop any block plugging
- ▪ 9b79b0d f2fs: avoid reverse IO order for NODE and DATA
- ▪ 6d3efa4 f2fs: set mapping error for EIO
- ▪ 7ddeea4 f2fs: control not to exceed # of cached nat entries
- ▪ 7844ad9 f2fs: fix wrong percentage
- ▪ ccf5a96 f2fs: avoid data race between FI_DIRTY_INODE flag and update_inode
- ▪ d3f06e1 f2fs: remove obsolete parameter in f2fs_truncate
- ▪ e4c7917 f2fs: avoid wrong count on dirty inodes
- ▪ 6c365f2 f2fs: remove deprecated parameter
- ▪ dc58903 f2fs: handle writepage correctly
- ▪ ceb0f4a f2fs: return error of f2fs_lookup
- ▪ 2593ccf f2fs: return the errno to the caller to avoid using a wrong page
- ▪ f13d60e f2fs: remove two steps to flush dirty data pages
- ▪ 808b5af f2fs: do not skip writing data pages
- ▪ c396b1c f2fs: inject to produce some orphan inodes
- ▪ 7fd5e8f f2fs: propagate error given by f2fs_find_entry
- ▪ 8c9a3b9 f2fs: remove writepages lock
- ▪ b510fce f2fs: set flush_merge by default
- ▪ 492472c f2fs: detect congestion of flush command issues
- ▪ 77c0a1a f2fs: avoid unnecessary updating inode during fsync
- ▪ e17f9b8 f2fs: remove syncing inode page in all the cases
- ▪ 2f25b8b f2fs: flush inode metadata when checkpoint is doing
- ▪ 8c26839 f2fs: call mark_inode_dirty_sync for i_field changes
- ▪ 5c6b16f f2fs: introduce f2fs_i_links_write with mark_inode_dirty_sync
- ▪ b38eb61 f2fs: introduce f2fs_i_blocks_write with mark_inode_dirty_sync
- ▪ c87c759 f2fs: introduce f2fs_i_size_write with mark_inode_dirty_sync
- ▪ def522a f2fs: use inode pointer for {set, clear}_inode_flag
- ▪ 995714a Revert "f2fs: no need inc dirty pages under inode lock"
- ▪ 36312ae f2fs: adjust other changes
- ▪ 56c3d72b f2fs: fix to update dirty page count correctly
- ▪ 2281ff0 f2fs: flush pending bios right away when error occurs
- ▪ ef2947b f2fs: avoid ENOSPC fault in the recovery process
- ▪ c2513f4 f2fs: make exit_f2fs_fs more clear
- ▪ 9a02d0d f2fs: use percpu_counter for total_valid_inode_count
- ▪ e479854 f2fs: use percpu_counter for alloc_valid_block_count
- ▪ 716e14e f2fs: use percpu_counter for # of dirty pages in inode
- ▪ 38be8c0 f2fs: use percpu_counter for page counters
- ▪ 5c686a4 f2fs: use bio count instead of F2FS_WRITEBACK page count
- ▪ 4de2e45 f2fs: manipulate dirty file inodes when DATA_FLUSH is set
- ▪ afd5109 f2fs: add fault injection to sysfs
- ▪ e1a4b4b f2fs: no need inc dirty pages under inode lock
- ▪ 727ed2b f2fs: fix incorrect error path handling in f2fs_move_rehashed_dirents
- ▪ 71acdcc f2fs: fix i_current_depth during inline dentry conversion
- ▪ 77f9894 f2fs: correct return value type of f2fs_fill_super
- ▪ a8936a6 f2fs: fix deadlock when flush inline data
- ▪ f52bb88 f2fs: avoid f2fs_bug_on during recovery
- ▪ 7f615cc f2fs: show # of orphan inodes
- ▪ f197798 f2fs: support in batch fzero in dnode page
- ▪ 58c8353 f2fs: support in batch multi blocks preallocation
- ▪ 99f3311 f2fs: make atomic/volatile operation exclusive
- ▪ 2aa79d6 f2fs: use mnt_{want,drop}_write_file in ioctl
- ▪ fd621de f2fs: do not preallocate block unaligned to 4KB
- ▪ d23c1b6 f2fs: read node blocks ahead when truncating blocks
- ▪ 36daea0 f2fs: fallocate data blocks in single locked node page
- ▪ d82471b f2fs: fix inode cache leak
- ▪ f61c560 fscrypto/f2fs: allow fs-specific key prefix for fs encryption
- ▪ 121cf68 f2fs: avoid panic when truncating to max filesize
- ▪ 5011688 f2fs: fix incorrect mapping in ->bmap
- ▪ 2315dd5 f2fs: remove an obsolete variable
- ▪ 51c3272 f2fs: don't worry about inode leak in evict_inode
- ▪ 0e71c1d f2fs: shrink size of struct seg_entry
- ▪ d63f6ec f2fs: reuse get_extent_info
- ▪ 512d535 f2fs: remove unneeded memset when updating xattr
- ▪ 706456f f2fs: remove unneeded readahead in find_fsync_dnodes
- ▪ e8e1dbb f2fs: retry to truncate blocks in -ENOMEM case
- ▪ 45dd7f2 f2fs: fix leak of orphan inode objects
- ▪ e4d77a2 f2fs: revisit error handling flows
- ▪ 116c9c4 f2fs: inject ENOSPC failures
- ▪ 34be975 f2fs: inject page allocation failures
- ▪ 5dca3b5 f2fs: inject kmalloc failure
- ▪ 94a4999 f2fs: add mount option to select fault injection ratio
- ▪ 18566b7 f2fs: use f2fs_grab_cache_page instead of grab_cache_page
- ▪ 987cef1 f2fs: introduce f2fs_kmalloc to wrap kmalloc
- ▪ f7f339a f2fs: add proc entry to show valid block bitmap
- ▪ 0e73a20 f2fs: introduce macros for proc entries
- ▪ 4285cc0 f2fs: factor out fsync inode entry operations
- ▪ 0c679c0 f2fs: fix to clear page private flag
- ▪ 0cecb89 f2fs: fix to clear private data in page
- ▪ 48d521a f2fs: fix to return 0 if err == -ENOENT in f2fs_readdir
- ▪ 4758ff4 f2fs: move node pages only in victim section during GC
- ▪ c1323b5 f2fs: be aware of invalid filename length
- ▪ c600b52 f2fs: issue cache flush on direct IO
- ▪ bc47012 f2fs: set fsync mark only for the last dnode
- ▪ 209f1f6 f2fs: report unwritten status in fsync_node_pages
- ▪ a8fd737 f2fs: split sync_node_pages with fsync_node_pages
- ▪ 5668c5c f2fs: avoid writing 0'th page in volatile writes
- ▪ e6ec5ec f2fs: avoid needless lock for node pages when fsyncing a file
- ▪ dfe7e5a f2fs: flush dirty pages before starting atomic writes
- ▪ ebf9289 f2fs: don't invalidate atomic page if successful
- ▪ 1bc82de f2fs: give -E2BIG for no space in xattr
- ▪ a4e7791 f2fs: remove redundant condition check
- ▪ 7434f68 f2fs: unset atomic/volatile flag in f2fs_release_file
- ▪ 15fbe5f f2fs: fix dropping inmemory pages in a wrong time
- ▪ cec3706 f2fs: add BUG_ON to avoid unnecessary flow
- ▪ 27c4896 f2fs: fix to convert inline directory correctly
- ▪ 7cd37fd f2fs: show current mount status
- ▪ 324a29d f2fs: treat as a normal umount when remounting ro
- ▪ 3ba5ef5 f2fs: give -EINVAL for norecovery and rw mount
- ▪ 5f62e79 f2fs: recover superblock at RW remounts
- ▪ 83188b6 f2fs: give RO message when recovering superblock
- ▪ 94f2d82 ext4/fscrypto: avoid RCU lookup in d_revalidate
- ▪ 3d54fba fscrypto: don't let data integrity writebacks fail with ENOMEM
- ▪ a0f06c5 f2fs: use dget_parent and file_dentry in f2fs_file_open
- ▪ c5bfe18 fscrypto: use dget_parent() in fscrypt_d_revalidate()
- ▪ 81908be f2fs: retrieve IO write stat from the right place
- ▪ 376569c f2fs crypto: fix corrupted symlink in encrypted case
- ▪ 2b0b812 f2fs: cover large section in sanity check of super
- ▪ b4a0f6e f2fs/crypto: fix xts_tweak initialization
- ▪ 0c4e787 f2fs: submit node page write bios when really required
- ▪ fba1755 f2fs: add missing argument to f2fs_setxattr stub
- ▪ 0e90708 f2fs: fix to avoid unneeded unlock_new_inode
- ▪ c54a890 f2fs: clean up opened code with f2fs_update_dentry
- ▪ efc26c7 f2fs: declare static functions
- ▪ ff2d201 f2fs: use cryptoapi crc32 functions
- ▪ c6d10ef f2fs: modify the readahead method in ra_node_page()
- ▪ e674a03 f2fs crypto: sync ext4_lookup and ext4_file_open
- ▪ 94d28d6 f2fs: define not-set fallocate flags
- ▪ 1fcb6d2 fs crypto: move per-file encryption from f2fs tree to fs/crypto
- ▪ ddc5b10 f2fs: mutex can't be used by down_write_nest_lock()
- ▪ 359eddd f2fs: recovery missing dot dentries in root directory
- ▪ c32a89a f2fs: fix to avoid deadlock when merging inline data
- ▪ 945d14b f2fs: introduce f2fs_flush_merged_bios for cleanup
- ▪ fdd6ccc f2fs: introduce f2fs_update_data_blkaddr for cleanup
- ▪ eb7df53 f2fs crypto: fix incorrect positioning for GCing encrypted data page
- ▪ 96c0bde f2fs: fix incorrect upper bound when iterating inode mapping tree
- ▪ b9692f2 f2fs: avoid hungtask problem caused by losing wake_up
- ▪ ceae8c1 f2fs: trace old block address for CoWed page
- ▪ c3585a7 f2fs: try to flush inode after merging inline data
- ▪ efa5924 f2fs: show more info about superblock recovery
- ▪ eddb632 f2fs: fix the wrong stat count of calling gc
- ▪ 0b6a579 f2fs: remain last victim segment number ascending order
- ▪ f33eaa1 f2fs: reuse read_inline_data for f2fs_convert_inline_page
- ▪ 89a8ed4 f2fs: fix to delete old dirent in converted inline directory in ->rename
- ▪ 7e4497b f2fs: detect error of update_dent_inode in ->rename
- ▪ b94553d f2fs: move sanity checking of cp into get_valid_checkpoint
- ▪ abd63ee f2fs: slightly reorganize read_raw_super_block
- ▪ 6585f59 f2fs: reorder nat cache lock in cache_nat_entry
- ▪ a16a35b f2fs: split journal cache from curseg cache
- ▪ d09d398 f2fs: enhance IO path with block plug
- ▪ 2de886d f2fs: introduce f2fs_journal struct to wrap journal info
- ▪ 4a75832 f2fs crypto: avoid unneeded memory allocation when {en/de}crypting symlink
- ▪ 34c27ae f2fs crypto: handle unexpected lack of encryption keys
- ▪ 192a29d f2fs crypto: make sure the encryption info is initialized on opendir(2)
- ▪ e4cf71e f2fs: support revoking atomic written pages
- ▪ bee18a4 f2fs: split drop_inmem_pages from commit_inmem_pages
- ▪ 1e6a530 f2fs: avoid garbage lenghs in dentries
- ▪ f264900 f2fs crypto: sync with ext4's fname padding
- ▪ 0e4360a f2fs: use correct errno
- ▪ 8cd85fb f2fs crypto: add missing locking for keyring_key access
- ▪ 079d405 f2fs crypto: check for too-short encrypted file names
- ▪ 32b5c12 f2fs crypto: f2fs_page_crypto() doesn't need a encryption context
- ▪ 9f58f93 f2fs crypto: fix spelling typo in comment
- ▪ cf00b26 f2fs crypto: replace some BUG_ON()'s with error checks
- ▪ 5c11fd7 f2fs: increase i_size to avoid missing data
- ▪ 50565f4 f2fs: preallocate blocks for buffered aio writes
- ▪ c7b89c1 f2fs: move dio preallocation into f2fs_file_write_iter
- ▪ 5d483be f2fs: fix missing skip pages info
- ▪ dfe4295 f2fs: introduce f2fs_submit_merged_bio_cond
- ▪ 09352ac f2fs: fix conflict on page->private usage
- ▪ bb96379 f2fs: flush bios to handle cp_error in put_super
- ▪ eec5e7f f2fs: wait on page's writeback in writepages path
- ▪ 6c501c8 f2fs: fix endianness of on-disk summary_footer
- ▪ a7361d2 f2fs: speed up handling holes in fiemap
- ▪ 6e1f4e2 f2fs: introduce get_next_page_offset to speed up SEEK_DATA
- ▪ 876721c f2fs: remove unneeded pointer conversion
- ▪ 1ce9849 f2fs: simplify __allocate_data_blocks
- ▪ edfaa6a f2fs: simplify f2fs_map_blocks
- ▪ d89d6fb f2fs: introduce lifetime write IO statistics
- ▪ f3b4de0 f2fs: give scheduling point in shrinking path
- ▪ b6b28ea f2fs: improve shrink performance of extent nodes
- ▪ 5983391 f2fs: don't set cached_en if it will be freed
- ▪ 75c8a4c f2fs: move extent_node list operations being coupled with rbtree operation
- ▪ 10a1653 f2fs: reconstruct the code to free an extent_node
- ▪ eb12c16 f2fs: use wq_has_sleeper for cp_wait wait_queue
- ▪ 9804a85 f2fs: avoid unnecessary search while finding victim in gc
- ▪ 819cc35 f2fs: delete unnecessary wait for page writeback
- ▪ 52a95f2 f2fs: use wait_for_stable_page to avoid contention
- ▪ ab5c751 f2fs: enhance foreground GC
- ▪ e538295 f2fs: don't need to call set_page_dirty for io error
- ▪ 81fb344 f2fs: avoid needless sync_inode_page when reading inline_data
- ▪ ef546cc f2fs: don't need to sync node page at every time
- ▪ cf08c56 f2fs: avoid multiple node page writes due to inline_data
- ▪ 265d3de f2fs: do f2fs_balance_fs when block is allocated
- ▪ e72f8b8 f2fs: fix to overcome inline_data floods
- ▪ d027d1d f2fs: use writepages->lock for WB_SYNC_ALL
- ▪ f66f1ba f2fs: remove needless condition check
- ▪ 2b74e2d f2fs: correct search area in get_new_segment
- ▪ b04e7e9 f2fs: export dirty_nats_ratio in sysfs
- ▪ 6171e28 f2fs: flush dirty nat entries when exceeding threshold
- ▪ e292775 f2fs: relocate is_merged_page
- ▪ e4e5667 f2fs: should unset atomic flag after successful commit
- ▪ 90baadb f2fs: fix wrong memory condition check
- ▪ 3c5bb12 f2fs: monitor the number of background checkpoint
- ▪ 2ce31a7 f2fs: detect idle time depending on user behavior
- ▪ 378e079 f2fs: introduce time and interval facility
- ▪ dcf91ee f2fs: skip releasing nodes in chindless extent tree
- ▪ 3a34a884 f2fs: use atomic type for node count in extent tree
- ▪ 2a897f5 f2fs: recognize encrypted data in f2fs_fiemap
- ▪ 1fb76b2 f2fs: clean up f2fs_balance_fs
- ▪ 65bf796 f2fs: remove redundant calls
- ▪ 21e0985 f2fs: avoid unnecessary f2fs_balance_fs calls
- ▪ 888aa59 f2fs: check the page status filled from disk
- ▪ e952c79 f2fs: introduce __get_node_page to reuse common code
- ▪ 3697daa f2fs: check node id earily when readaheading node page
- ▪ 60e8c2c f2fs: read isize while holding i_mutex in fiemap
- ▪ a94c427 Revert "f2fs: check the node block address of newly allocated nid"
- ▪ 274724a f2fs: cover more area with nat_tree_lock
- ▪ 2a2b4b2 f2fs: introduce max_file_blocks in sbi
- ▪ fee1f2c f2fs crypto: check CONFIG_F2FS_FS_XATTR for encrypted symlink
- ▪ 20c1830 f2fs: introduce zombie list for fast shrinking extent trees
- ▪ 105fcda f2fs: monitor zombie_tree count
- ▪ e8cc808 f2fs: use IPU for fdatasync
- ▪ 84dfb84 f2fs: write pending bios when cp_error is set
- ▪ d746f07 f2fs: remove f2fs_bug_on in terms of max_depth
- ▪ fe2f659 f2fs: fix f2fs_ioc_abort_volatile_write
- ▪ 77d3818 f2fs: fix to skip recovering dot dentries in a readonly fs
- ▪ 5e3d6fe f2fs: load largest extent all the time
- ▪ 8f6b93d f2fs: use i_size_read to get i_size
- ▪ 6fe912c f2fs: early check broken symlink length in the encrypted case
- ▪ 2a3ed03 f2fs: clean up f2fs_ioc_write_checkpoint
- ▪ e779069 f2fs: add a max block check for get_data_block_bmap
- ▪ 150ac39 f2fs: fix bugs and simplify codes of f2fs_fiemap
- ▪ 8da2b13 f2fs: let user being aware of IO error
- ▪ 0d4fc0a f2fs: add missing f2fs_balance_fs in __recover_dot_dentries
- ▪ 4ae0cf9 f2fs: declare static function
- ▪ 8da2ad4 f2fs: avoid f2fs_lock_op in f2fs_write_begin
- ▪ 7c685ef f2fs: return early when trying to read null nid
- ▪ 178e97f f2fs: introduce prepare_write_begin to clean up
- ▪ b899c47 f2fs: don't convert inline inode when inline_data option is disable
- ▪ d7ea047 f2fs: report error of do_checkpoint
- ▪ bc48719 f2fs: call f2fs_balance_fs only when node was changed
- ▪ 0fb8d36 f2fs: reduce covered region of sbi->cp_rwsem in f2fs_map_blocks
- ▪ e358a0c f2fs: record node block allocation in dnode_of_data
- ▪ d09ea45 f2fs: avoid unnecessary f2fs_gc for dir operations
- ▪ 2846242 f2fs: check inline_data flag at converting time
- ▪ 1ae8e40 f2fs: speed up shrinking extent tree entries
- ▪ 58cad8a f2fs: use atomic variable for total_extent_tree
- ▪ acb11b1 f2fs: add a tracepoint for sync_dirty_inodes
- ▪ 9bfd58b f2fs: optimize the flow of f2fs_map_blocks
- ▪ 6aefc58 f2fs: support data flush in background
- ▪ b9a3a61 f2fs: stat dirty regular/symlink inodes
- ▪ a75b934 f2fs: introduce new option for controlling data flush
- ▪ 59f30ce f2fs: record dirty status of regular/symlink inode
- ▪ b52137e f2fs: introduce __f2fs_commit_super
- ▪ 332d19c f2fs: relocate tracepoint of write_checkpoint
- ▪ b3afed0 f2fs: don't grab super block buffer header all the time
- ▪ 3bed815 f2fs: backup raw_super in sbi
- ▪ df008e6 f2fs: fix to reset variable correctlly
- ▪ fef3698 f2fs: introduce __remove_dirty_inode
- ▪ c9db920 f2fs: introduce dirty list node in inode info
- ▪ 07a03ff f2fs: rename {add,remove,release}_dirty_inode to {add,remove,release}_ino_entry
- ▪ 168cf44 f2fs: add symbol to avoid any confusion with tools
- ▪ c77fc9e f2fs: do more integrity verification for superblock
- ▪ b37258c f2fs: fix to update variable correctly when skip a unmapped block
- ▪ 3eaada6 f2fs: write only the pages in range during defragment
- ▪ d82419a f2fs: clean up node page updating flow
- ▪ f37966b f2fs: use lock_buffer when changing superblock
- ▪ 3633cbd f2fs: refactor f2fs_commit_super
- ▪ 3aaf9c9 f2fs: enhance the bit operation for SSR
- ▪ f309be5 f2fs: fix to convert inline inode in ->setattr
- ▪ 1b7c8c3 f2fs: use sbi->blocks_per_seg to avoid unnecessary calculation
- ▪ 4655030 f2fs: kill f2fs_drop_largest_extent
- ▪ dfa9262 f2fs: clean up argument of recover_data
- ▪ 9b56831 f2fs: clean up code with __has_cursum_space
- ▪ e07982c f2fs: clean up error path in f2fs_readdir
- ▪ 4cc4cb4 f2fs: do not recover from previous remained wrong dnodes
- ▪ 9ab7ce1 f2fs: avoid deadlock in f2fs_shrink_extent_tree
- ▪ 206ae12 f2fs: fix to report error in f2fs_readdir
- ▪ 1000633 f2fs: clear page uptodate when dropping cache for atomic write
- ▪ c64a61d f2fs: optimize __find_rev_next_bit
- ▪ 9b24182 f2fs: fix to remove directory inode from dirty list
- ▪ e267a68 f2fs: fix to enable missing ioctl interfaces in ->compat_ioctl
- ▪ e195aed f2fs: fix memory leak of kobject in error path of fill_super
- ▪ 4642007 f2fs: support file defragment
- ▪ 31fbc1d f2fs: commit atomic written page in LFS mode
- ▪ 2c738ec f2fs: report error of f2fs_create_root_stats
- ▪ 2854e32 f2fs: Fix a system panic caused by f2fs_follow_link
- ▪ 7c6cd83 f2fs: catch up to v4.4-rc1
+ ▪ project lineage/jenkins/
+ ▪ 82f2b72 Unify Galaxy Note 2 Korean variants
+ ▪ 00f12d0 Add lt02ltespr
+
+ ▪ project lineage/mirror/
+ ▪ 99f749e Add support for t0ltekor
+
+ ▪ project lineage/updater/
+ ▪ fb1b2fa Unify Galaxy Note 2 Korean variants
+
+ ▪ project lineage/wiki/
+ ▪ c44d7d9 wiki: Move hima family to 14.1
+ ▪ 91d3fe9 Remove CNAME, no longer using github pages
+ ▪ bb53cb4 wiki: Bump jalebi to 14.1
+ ▪ 6d26ab6 wiki: Fix wrong device information
+ ▪ 820dd11 wiki: Update "adding device" page
+ ▪ 2ebb536 wiki : Group pages in folders
 
  ▪ project packages/apps/CMParts/
  ▪ 4e7219f PerfProfileSettings: Update slider on powersave mode change
  ▪ 5f7bb78 CMParts: Update quick QS pull-down summary for translation
  ▪ 2bad1e9 Fix reorientation of volume buttons on portrait tablets
  ▪ 7d8197d CMParts: update contributors db
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ fd64a03 Consider O2 and E-Plus as non-roaming
 
  ▪ project packages/apps/Contacts/
  ▪ e2478c8 contacts: Add support for import contacts to local phone storage
@@ -817,6 +2237,11 @@
  ▪ eaecbaa Dialer: AIRPLANE_MODE_ON has moved
  ▪ 8d60bbe Dialer: Fix strings
 
+ ▪ project packages/apps/Gallery2/
+ ▪ aad548e Gallery2: support the newly added media file types in MTP mode
+ ▪ 99a5354 Gallery2: Fix use of uninitialized stack variables
+ ▪ 7959af6 Gallery2: Remove unused renderscript class
+
  ▪ project packages/apps/PackageInstaller/
  ▪ 0e58481 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into nougat
 
@@ -830,6 +2255,7 @@
  ▪ e6df73e Add ZTE Axon7 dev to the mix (#741)
 
  ▪ project packages/apps/ThemeInterfacer/
+ ▪ 754b6ea restartService --> forceStopService
  ▪ 31b36ca Polish copyright
 
  ▪ project packages/services/Telephony/
@@ -855,15 +2281,21 @@
  ▼ 04/11/2017
 
 
- ▪ project frameworks/av/
- ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
-
  ▪ project frameworks/base/
+ ▪ 3cb15ae Ticker: allow to show music track info on new track being played [1/2]
+ ▪ 2d5f98e Fix Aosp bug on custom apps tiles: color not changing on tile state change
 
  ▪ project hardware/qcom/display-caf/msm8960/
  ▪ 09cce1b hwcomposer: Fix regression in hwc_sync
 
+ ▪ project lineage/jenkins/
+ ▪ 96e020e hudson: Kill D2
+
+ ▪ project lineage/mirror/
+ ▪ 471449d mirror: Updated to 10-Apr-17 06:30:00 UTC
+
  ▪ project packages/apps/Settings/
+ ▪ 56612e3 Ticker: allow to show music track info on new track being played [2/2]
 
  ▪ project packages/apps/Snap/
  ▪ 2ecc334 CameraControls: Toggle the status of disabled views
@@ -873,6 +2305,9 @@
  ▪ project packages/services/Telecomm/
  ▪ 100bc18 Merge pull request #2 from SoUnd001/nougat
 
+ ▪ project vendor/cm/
+ ▪ 36cd412 Bump version to 5.8.3
+
  ▪ project vendor/motorola/
  ▪ 77658b4 qcom-common: Restore libs used by qseecomd
  ▪ 913a226 griffin: add com.qualcomm.location & QtiTetherService
@@ -880,25 +2315,114 @@
  ▼ 04/10/2017
 
 
+ ▪ project art/
+ ▪ e4e0c7c Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_art into HEAD
+
+ ▪ project build/
+ ▪ eeb2354 Merge tag 'android-7.1.2_r2' into cm-14.1
+
  ▪ project device/motorola/msm8226-common/
  ▪ 03e3402 libshims: Add libshims_camera for proper EXIF data
 
  ▪ project device/xiaomi/msm8956-common/
  ▪ 1aca0f3 common: Enough is enough
 
+ ▪ project external/skia/
+ ▪ d28e5a2 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_external_skia into HEAD
+
+ ▪ project frameworks/av/
+ ▪ d664926 Merge tag 'android-7.1.2_r2' into cm-14.1
+ ▪ 9da10a0 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
+
  ▪ project frameworks/base/
+ ▪ b1463e1 ScreenshotEditor: Fix Navbar Glitch for Good.
+ ▪ 736724c Themes: Expose Keyguard affordance circle background
+ ▪ 03284ee Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+ ▪ project frameworks/native/
+ ▪ a8ac4e5 Merge tag 'android-7.1.2_r2' into cm-14.1
+ ▪ e7456d6 sensorservice: Register orientation sensor if HAL doesn't provide it
+
+ ▪ project lineage/jenkins/
+ ▪ 77d4492 Rebalance build targets
+
+ ▪ project lineage/stats/
+ ▪ bb7e276 Enable stats dumps to json
+
+ ▪ project lineage/wiki/
+ ▪ eada6f2 devices: lettuce and tomato now on 14.1
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ dd3c70c Revert "Bluetooth: handle opening incoming APK files"
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ 14d3bb7 Consider Q-TELECOM Greece as non-roaming
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ 4c0252f CellBroadcastReceiver: fix channel 50 not disabling
+
+ ▪ project packages/apps/Contacts/
+ ▪ f12b9ea Merge tag 'android-7.1.2_r2' into cm-14.1
+ ▪ 20c4d1a contacts: Add support for import contacts to local phone storage
+
+ ▪ project packages/apps/ContactsCommon/
+ ▪ 4ef2fb5 Merge tag 'android-7.1.2_r2' into cm-14.1
+ ▪ 813476e AccountType: use a pretty phone account icon for local storage account
+ ▪ 41b042b SelectAccountActivity : Support local phone account
+ ▪ 3a17fd8 Add local phone account as a writable AccountTypes.
+ ▪ 78872dd Store all local contacts in only one account.
+ ▪ 63e4adf contacts-common: Add support for import contacts to local phone storage
 
  ▪ project packages/apps/Dialer/
+ ▪ 144efc0 Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/apps/ExactCalculator/
+ ▪ e235f6d Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/apps/Messaging/
+ ▪ 800e075 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_packages_apps_messaging into HEAD
 
  ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ db5453a Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/apps/PhoneCommon/
+ ▪ ae769b0 Merge tag 'android-7.1.2_r2' into cm-14.1
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
+ ▪ 62a4be7 Settings: Expose and add tint mode to custom icons
+ ▪ c4089ff Settings: Expose bluetooth pin confirm dialog text colors
+ ▪ 0ce6798 Merge tag 'android-7.1.2_r2' into nougat
 
  ▪ project packages/apps/Snap/
  ▪ f262e1a Snap: CaptureModule: set switcher index on resume
  ▪ 0540403 Snap: CaptureUI: fix ModuleSwitcher being invisible
+
+ ▪ project packages/apps/StorageManager/
+ ▪ 2814a00 Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/providers/ContactsProvider/
+ ▪ 8546493 Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/services/Telecomm/
+ ▪ 3bf1dfe Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project packages/services/Telephony/
+ ▪ 84cc1c5 Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 560d700 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project system/sepolicy/
+ ▪ 825c019 Merge tag 'android-7.1.2_r2' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ de269ec kernel: Include openssl headers and dylibs on darwin
+ ▪ d75180b build: Update smali and baksmali to 2.2.0
+ ▪ 2070293 charger: updates for 7.1.2 minui
 
  ▪ project vendor/motorola/
  ▪ 3e84c84 qcom-common: Update widevine
@@ -913,42 +2437,17 @@
 
  ▪ project frameworks/base/
 
+ ▪ project lineage/mirror/
+ ▪ 7ae79d8 mirror: Update to 08-Apr-17 16:02:57 UTC
+
+ ▪ project lineage/website/
+ ▪ 92b99f5 Add gemfile for jenkins deployments
+
+ ▪ project lineage/wiki/
+ ▪ f28d3e9 Add costs page
+
  ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Settings/
  ▪ 3474907 Remove my name from A6020, osprey and falcon (#739)
-
- ▼ 04/08/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 099b549 kenzo: Pin qcrilmsgtunnel
- ▪ 7c813d0 kenzo: Remove unused cnss blobs
- ▪ 6b234ef kenzo: Disable fluence on voicerec
- ▪ fad9d1f kenzo: Use stock Acdb id's
- ▪ c19b42f kenzo: Enable 24bit offload
- ▪ 02a6a06 kenzo: All hail Dominator
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 4aec783 msm8956: Remove unused cnss
- ▪ e8a1cb4 msm8956: Fix fingerprintd denial
- ▪ 599d495 msm8956: Update power conf from caf
- ▪ 53ca00f msm8956-common: Nuke sdcardfs
-
- ▪ project frameworks/base/
- ▪ dc5c93a SystemUI: Fix "no notifications" font size
-
- ▪ project frameworks/native/
- ▪ 82c4726 sensorservice: Register orientation sensor if HAL doesn't provide it
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project vendor/xiaomi/
- ▪ 44c024b kenzo: Add modified qcrilmsgtunnel
- ▪ 0d21a2c kenzo: Remove unused cnss blob
- ▪ f73045d kenzo: Use OSS Camera HAL
 
