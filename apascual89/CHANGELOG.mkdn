@@ -1,188 +1,215 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.2 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 04/11/2017
+ ▼ 04/16/2017
 
 
- ▪ project device/oneplus/oneplus3/
- ▪ 47dad43 op3(t): overlay: enable config_fingerprintRemoveClientOnCancel
- ▪ 040d451 Merge pull request #5 from Joshndroid/apascual89
+ ▪ project android/
+ ▪ 34db8bf Revert "Sync infra-related projects"
 
- ▪ project frameworks/av/
- ▪ 3601ef3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
- ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
+ ▪ project device/oppo/common/
+ ▪ 5cd6e50 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_oppo_common into rr
 
  ▪ project frameworks/base/
- ▪ f826258 base: services: add config_fingerprintRemoveClientOnCancel
- ▪ 218ca16 Revert "SystemUI: Add SlotId for MultiSim"
- ▪ 572c45a PowerManager: Bring back the compatibility with AOSP
+ ▪ 57858e8 Basestatusbar:Fix Headsup Not Working
+ ▪ c74a2d4 Fix Another Illegal Argument Exception when Changing DPI
+ ▪ b118d77 base:Optional weather info in expanded header [1/2]
+ ▪ cca1591 QSTileHost: Dont Show Performance tile if No power profiles present
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 8593121 defconfig:enable usb fastcharge
+ ▪ d821074 drivers: misc: implement usb fast charge mode
+ ▪ 16c0b53 tri state key fixes
+ ▪ d6014b9 tri_state_key: allow more key codes for extra modes
+ ▪ 2fdf413 op3: Remove 'androidboot.verifiedbootstate' flag from command line
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 8a346c2 Add Headsup Settings as an Activity
+ ▪ cad32b8 Update Z2 Tablet Maintainer
+ ▪ 1e7d35b Optional Expanded statusbar Weather info [2/2]
+ ▪ ad9f195 Add Xperia Z Ultra Maintainer
+ ▪ e79fca4 Add my name as maintainer for moto g 2015 (osprey) (#749)
+
+ ▼ 04/15/2017
+
+
+ ▪ project android/
+ ▪ adb6be3 manifest: android-7.1.1_r25 -> android-7.1.2_r2
+ ▪ e14b742 Sync infra-related projects
+
+ ▪ project build/
+ ▪ f21b9cf build: allow to disable recovery-two-step.img generation
+
+ ▪ project frameworks/av/
+ ▪ 0859743 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_av into nougat
+ ▪ 88b9d78 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+ ▪ 904ce14 fix build
+ ▪ cda086a Various fixes and cleanups after 7.1.2 merge
+ ▪ e06c6ea Zygote: Fix GL preload property evaluation
+ ▪ 1b051d8 systemui: Fix DE translation for navbar buttons
+ ▪ 94fd330 Dialer: show headsup on incoming call even if headsup are off [1/2]
+ ▪ 6585850 Statusbar ticker: use a gentle smooth fade animation
+ ▪ 3a2552b SystemUI : port performance profile toggle from M
+ ▪ 6bc95dd Option to Display Data Disabled Indicator Icon [1/2]
+ ▪ e7443eb Show lockscreen wallpaper when blur effect is enabled
+ ▪ c7b3d2e Keyguard Weather : Refactor for new API[1/2]
+ ▪ 76c3eee Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 0f67b83 Revert "SystemUI: Add SlotId for MultiSim"
+ ▪ ff5103e PowerManager: Bring back the compatibility with AOSP
+ ▪ 4e641ad Slim Recents: refresh sizes on dpi change
+ ▪ 9af66a6 base: services: add config_fingerprintRemoveClientOnCancel
+ ▪ 49c3c91 Ticker: allow to show music track info on new track being played [1/2]
+ ▪ 6bfc714 Fix Aosp bug on custom apps tiles: color not changing on tile state change
+ ▪ 7aa24a2 ScreenshotEditor: Fix Navbar Glitch for Good.
+ ▪ f0cc961 Themes: Expose Keyguard affordance circle background
+ ▪ 7f5e8e4 Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
 
  ▪ project frameworks/native/
- ▪ a6e6113 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
- ▪ project packages/apps/CMParts/
- ▪ e2b60aa PerfProfileSettings: Update slider on powersave mode change
- ▪ cb9fde3 CMParts: Update quick QS pull-down summary for translation
- ▪ 76f87ce Fix reorientation of volume buttons on portrait tablets
- ▪ f123558 CMParts: update contributors db
+ ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
+ ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
 
  ▪ project packages/apps/Contacts/
- ▪ 319c347 contacts: Add support for import contacts to local phone storage
- ▪ 9d32751 Contacts: Fix strings
+ ▪ 143e1fe Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into nougat
 
  ▪ project packages/apps/ContactsCommon/
- ▪ 3cc3b34 AccountType: use a pretty phone account icon for local storage account
- ▪ 7ee3074 SelectAccountActivity : Support local phone account
- ▪ fa927df Add local phone account as a writable AccountTypes.
- ▪ ca0fcde Store all local contacts in only one account.
- ▪ fc2dbee contacts-common: Add support for import contacts to local phone storage
+ ▪ f97eb22 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_ContactsCommon into nougat
 
  ▪ project packages/apps/Dialer/
- ▪ 67e8986 Dialer: AIRPLANE_MODE_ON has moved
+ ▪ 8c9e2ae Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
 
  ▪ project packages/apps/PackageInstaller/
- ▪ 93c854f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
+ ▪ c11d753 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_PackageInstaller into nougat
 
  ▪ project packages/apps/PhoneCommon/
- ▪ 6c7b2b2 PhoneCommon: Another round of qtistring fixes
-
- ▪ project packages/apps/Settings/
- ▪ a550dd0 Fix required strings
- ▪ e6df73e Add ZTE Axon7 dev to the mix (#741)
-
- ▪ project packages/apps/Snap/
- ▪ 2ecc334 CameraControls: Toggle the status of disabled views
- ▪ 7e10f00 Never remove unsupported controls
- ▪ 30ba558 WideAnglePanoramaUI: Correctly position the progressbar
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 31b36ca Polish copyright
-
- ▪ project packages/services/Telephony/
- ▪ bff4b16 telephony: fix crash when missing simcard
- ▪ 7a609d5 VoicemailSettingsActivity: Fix NPE
-
- ▪ project system/core/
- ▪ 179a4a5 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into HEAD
-
- ▪ project vendor/cm/
- ▪ 0fbaaa0 Add email app to device idle whitelist.
- ▪ 3601ab1 kernel: Include openssl headers and dylibs on darwin
- ▪ a79180b build: Update smali and baksmali to 2.2.0
- ▪ c72ae6b roomservice: handle devices with underscores
-
- ▪ project vendor/cmsdk/
- ▪ 6b4fbc6 PerformanceManager: Don't override the user preference
- ▪ 20d9f5b PerformanceManager: Don't force powersave mode with powersave profile
-
- ▼ 04/10/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ f262e1a Snap: CaptureModule: set switcher index on resume
- ▪ 0540403 Snap: CaptureUI: fix ModuleSwitcher being invisible
-
- ▪ project packages/services/Telecomm/
- ▪ 100bc18 Merge pull request #2 from SoUnd001/nougat
-
- ▼ 04/09/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 1d97ffd op3: Doze: Refactor
- ▪ c476ea0 op3: Doze: Perform operations as current user
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
+ ▪ 75e864f Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_PhoneCommon into nougat
 
  ▪ project packages/apps/ResurrectionStats/
+ ▪ 3833cd4 Constants: update stats reporting/viewing URL   * http://resurrectionremix.sourceforge.net -> https://resurrectionremix.sourceforge.io
+ ▪ 8fde88f ResurrectionStats: cleanup
+ ▪ 3bd814e Merge branch 'nougat' of https://github.com/ResurrectionRemix/packages_apps_ResurrectionStats into nougat
+ ▪ 17c21f3 Bump version to 5.8.3
+ ▪ 443ab3f Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 384acbc stats: RR 5.8.3
 
  ▪ project packages/apps/Settings/
- ▪ 3474907 Remove my name from A6020, osprey and falcon (#739)
+ ▪ d5a421a Update resurrection_device_maintainers_strings.xml (#747)
+ ▪ 889c5ac Dialer: show headsup on incoming call even if headsup are off [2/2]
+ ▪ b0b7663 Update Oneplus2 maintainer (#746)
+ ▪ 7fd0f34 Option to Display Data Disabled indicator Icons [2/2]
+ ▪ 2c57984 Port "Battery Usage Alerts" feature from factory images to aosp
+ ▪ cbea28d Settings: Refactor Keyguard Weather [2/2]
+ ▪ 1bcad64 Rename ZUK Z1 mainatainer (#745)
+ ▪ f1962b7 Fixed device_maintainers_fragment.xml (#743)
+ ▪ e863204 Fix required strings
+ ▪ 02d0b19 Add ZTE Axon7 dev to the mix (#741)
+ ▪ cebfd40 Ticker: allow to show music track info on new track being played [2/2]
+ ▪ 31a9d2d Settings: Expose and add tint mode to custom icons
 
- ▼ 04/08/2017
+ ▪ project packages/services/Telecomm/
+ ▪ 357ff90 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telecomm into nougat
 
+ ▪ project packages/services/Telephony/
+ ▪ 6d1d221 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telephony into nougat
 
- ▪ project frameworks/base/
- ▪ dc5c93a SystemUI: Fix "no notifications" font size
+ ▪ project system/core/
+ ▪ ae467ca Merge branch '7.1.2' of https://github.com/ResurrectionRemix/system_core into nougat
 
- ▪ project frameworks/native/
- ▪ 82c4726 sensorservice: Register orientation sensor if HAL doesn't provide it
+ ▪ project vendor/cm/
+ ▪ c6c708c rr: clean up Makefiles
+ ▪ 04d30ef [SQUASH] rr: update changelog script for 5.8.3 and to work with anyone's source dir
+ ▪ 5ff1809 Update 5.8.2 to 5.8.3
+ ▪ c04ffd6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat
 
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
-
- ▼ 04/07/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/CarrierConfig/
- ▪ 8821cae Consider Q-TELECOM Greece as non-roaming
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Gallery2/
- ▪ 54654ae Fix spelling error
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▼ 04/06/2017
+ ▼ 04/14/2017
 
 
  ▪ project frameworks/av/
- ▪ eb594c4 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
-
- ▪ project frameworks/base/
- ▪ f0757114 Fix permission description string for DE.
-
- ▪ project packages/apps/Bluetooth/
- ▪ cca216e Revert "Bluetooth: handle opening incoming APK files"
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ 6fb2403 Fix magisk manager settings location
-
- ▼ 04/05/2017
-
-
- ▪ project frameworks/base/
- ▪ f143cd6 Merge pull request #188 from ashoksoni/changes
- ▪ 15f89f6 Fix Bluetooth battery icon after reboot
- ▪ 89d8e6b Fix Hotspot tile is shown on Guest user
- ▪ eda1e77 SettingsProvider: Update icon.
-
- ▪ project hardware/ti/omap4/
- ▪ 86ea9e8 omap4: add more common build properties
- ▪ 368f365 omap4: define BOARD_CANT_REALLOCATE_OMX_BUFFERS
-
- ▪ project packages/apps/CellBroadcastReceiver/
- ▪ fa4d7a7 CellBroadcastReceiver: fix channel 50 not disabling
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
+ ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
  ▪ project packages/apps/ResurrectionStats/
 
- ▪ project packages/apps/Settings/
+ ▼ 04/13/2017
 
- ▪ project packages/apps/Snap/
- ▪ 673547e CaptureUI: fix crash on setOrientation
- ▪ a8285ad Snap: Fix effect and picture program overlay buttons
- ▪ 65aa6fd Always apply frame size reduction to panorama pictures
- ▪ 9e8d919 Never ignore finger swipes in gallery mode
- ▪ b9da2b0 Fix record time sometimes not seen
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ c675d5c input: synaptics: fw_update: Fix various memory leaks
+ ▪ 2c32cf5 BACKPORT: tcp: avoid infinite loop in tcp_splice_read()
+ ▪ e4c429c BACKPORT: posix_acl: Clear SGID bit when setting file permissions
+
+ ▪ project packages/apps/Nfc/
+ ▪ 3090980 Nfc: Include android-support-v4 for the NXP stack
+
+ ▼ 04/12/2017
+
+
+ ▪ project frameworks/av/
+ ▪ 18a402d stagefright: Remove the HAL3 limitation from the video reference clock selection
+ ▪ eb06e41 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/native/
+ ▪ 0dd3703 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project packages/apps/CMParts/
+ ▪ 4e7219f PerfProfileSettings: Update slider on powersave mode change
+ ▪ 5f7bb78 CMParts: Update quick QS pull-down summary for translation
+ ▪ 2bad1e9 Fix reorientation of volume buttons on portrait tablets
+ ▪ 7d8197d CMParts: update contributors db
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ fd64a03 Consider O2 and E-Plus as non-roaming
+
+ ▪ project packages/apps/Contacts/
+ ▪ e2478c8 contacts: Add support for import contacts to local phone storage
+ ▪ 61abda0 Contacts: Fix strings
+
+ ▪ project packages/apps/ContactsCommon/
+ ▪ 3dd19dc AccountType: use a pretty phone account icon for local storage account
+ ▪ 60791ad SelectAccountActivity : Support local phone account
+ ▪ 2445ce7 Add local phone account as a writable AccountTypes.
+ ▪ 6113000 Store all local contacts in only one account.
+ ▪ ad3262b contacts-common: Add support for import contacts to local phone storage
+
+ ▪ project packages/apps/Dialer/
+ ▪ eaecbaa Dialer: AIRPLANE_MODE_ON has moved
+ ▪ 8d60bbe Dialer: Fix strings
+
+ ▪ project packages/apps/Gallery2/
+ ▪ aad548e Gallery2: support the newly added media file types in MTP mode
+ ▪ 99a5354 Gallery2: Fix use of uninitialized stack variables
+ ▪ 7959af6 Gallery2: Remove unused renderscript class
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 0e58481 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into nougat
+
+ ▪ project packages/apps/PhoneCommon/
+ ▪ 64bae44 PhoneCommon: Another round of qtistring fixes
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 754b6ea restartService --> forceStopService
+
+ ▪ project packages/services/Telephony/
+ ▪ 3087a7d VoicemailSettingsActivity: Fix NPE
+ ▪ 9923974 telephony: fix crash when missing simcard
+
+ ▪ project system/core/
+ ▪ 918f328 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cm/
+ ▪ fcf5cff Add email app to device idle whitelist.
+ ▪ b7a56d2 kernel: Include openssl headers and dylibs on darwin
+ ▪ c665a88 build: Update smali and baksmali to 2.2.0
+ ▪ 6e0481c roomservice: handle devices with underscores
+
+ ▪ project vendor/cmsdk/
+ ▪ 62576c7 PerformanceManager: Don't override the user preference
+ ▪ ef95847 PerformanceManager: Don't force powersave mode with powersave profile
 
