@@ -2,6 +2,72 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/16/2017
+
+
+ ▪ project device/motorola/msm8226-common/
+ ▪ 124e943 Enable svelte configuration for jemalloc
+
+ ▪ project frameworks/base/
+ ▪ af7d488 Basestatusbar:Fix Headsup Not Working
+ ▪ c74a2d4 Fix Another Illegal Argument Exception when Changing DPI
+ ▪ b118d77 base:Optional weather info in expanded header [1/2]
+ ▪ cca1591 QSTileHost: Dont Show Performance tile if No power profiles present
+ ▪ 904ce14 fix build
+ ▪ cda086a Various fixes and cleanups after 7.1.2 merge
+ ▪ e06c6ea Zygote: Fix GL preload property evaluation
+ ▪ 1b051d8 systemui: Fix DE translation for navbar buttons
+ ▪ 94fd330 Dialer: show headsup on incoming call even if headsup are off [1/2]
+ ▪ 6585850 Statusbar ticker: use a gentle smooth fade animation
+ ▪ 3a2552b SystemUI : port performance profile toggle from M
+ ▪ 6bc95dd Option to Display Data Disabled Indicator Icon [1/2]
+ ▪ e7443eb Show lockscreen wallpaper when blur effect is enabled
+ ▪ c7b3d2e Keyguard Weather : Refactor for new API[1/2]
+ ▪ 76c3eee Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
+ ▪ 0f67b83 Revert "SystemUI: Add SlotId for MultiSim"
+ ▪ ff5103e PowerManager: Bring back the compatibility with AOSP
+ ▪ 4e641ad Slim Recents: refresh sizes on dpi change
+ ▪ 9af66a6 base: services: add config_fingerprintRemoveClientOnCancel
+ ▪ 49c3c91 Ticker: allow to show music track info on new track being played [1/2]
+ ▪ 6bfc714 Fix Aosp bug on custom apps tiles: color not changing on tile state change
+ ▪ 7aa24a2 ScreenshotEditor: Fix Navbar Glitch for Good.
+ ▪ f0cc961 Themes: Expose Keyguard affordance circle background
+ ▪ 7f5e8e4 Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
+
+ ▪ project lineage/wiki/
+ ▪ 246dc02 devices: add lg l90 (w7)
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 3833cd4 Constants: update stats reporting/viewing URL   * http://resurrectionremix.sourceforge.net -> https://resurrectionremix.sourceforge.io
+ ▪ 8fde88f ResurrectionStats: cleanup
+
+ ▪ project packages/apps/Settings/
+ ▪ 8a346c2 Add Headsup Settings as an Activity
+ ▪ cad32b8 Update Z2 Tablet Maintainer
+ ▪ 1e7d35b Optional Expanded statusbar Weather info [2/2]
+ ▪ ad9f195 Add Xperia Z Ultra Maintainer
+ ▪ e79fca4 Add my name as maintainer for moto g 2015 (osprey) (#749)
+ ▪ d5a421a Update resurrection_device_maintainers_strings.xml (#747)
+ ▪ 889c5ac Dialer: show headsup on incoming call even if headsup are off [2/2]
+ ▪ b0b7663 Update Oneplus2 maintainer (#746)
+ ▪ 7fd0f34 Option to Display Data Disabled indicator Icons [2/2]
+ ▪ 2c57984 Port "Battery Usage Alerts" feature from factory images to aosp
+ ▪ cbea28d Settings: Refactor Keyguard Weather [2/2]
+ ▪ 1bcad64 Rename ZUK Z1 mainatainer (#745)
+ ▪ f1962b7 Fixed device_maintainers_fragment.xml (#743)
+ ▪ e863204 Fix required strings
+ ▪ 02d0b19 Add ZTE Axon7 dev to the mix (#741)
+ ▪ cebfd40 Ticker: allow to show music track info on new track being played [2/2]
+ ▪ 31a9d2d Settings: Expose and add tint mode to custom icons
+
+ ▪ project vendor/cm/
+ ▪ c6c708c rr: clean up Makefiles
+ ▪ 04d30ef [SQUASH] rr: update changelog script for 5.8.3 and to work with anyone's source dir
+
  ▼ 04/15/2017
 
 
@@ -15,16 +81,6 @@
  ▪ project frameworks/av/
  ▪ 0859743 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_av into nougat
  ▪ 88b9d78 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
- ▪ ea1d1ba Merge pull request #193 from Andersonmendes2016/nougat
- ▪ 906201f fix build
- ▪ 98e5dd7 Various fixes and cleanups after 7.1.2 merge
- ▪ 5cbb803 Zygote: Fix GL preload property evaluation
- ▪ f8a10c9 systemui: Fix DE translation for navbar buttons
- ▪ f763c92 Dialer: show headsup on incoming call even if headsup are off [1/2]
- ▪ c5e3b76 Statusbar ticker: use a gentle smooth fade animation
- ▪ e96c0a7 Dialer: show headsup on incoming call even if headsup are off and ticker on
 
  ▪ project frameworks/native/
  ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
@@ -55,12 +111,6 @@
  ▪ 443ab3f Merge remote-tracking branch 'rr/nougat' into HEAD
  ▪ 384acbc stats: RR 5.8.3
 
- ▪ project packages/apps/Settings/
- ▪ 4329c68 fix build
- ▪ bae9fe3 Update resurrection_device_maintainers_strings.xml (#747)
- ▪ 0b7046f Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 0a56e28 Dialer: show headsup on incoming call even if headsup are off [2/2]
-
  ▪ project packages/services/Telecomm/
  ▪ 357ff90 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telecomm into nougat
 
@@ -77,9 +127,6 @@
  ▼ 04/14/2017
 
 
- ▪ project device/xiaomi/kenzo/
- ▪ fa7e4b9 kenzo: Enable offload
-
  ▪ project device/xiaomi/msm8956-common/
  ▪ bb8df50 msm8956-common: Add tftp to wakelock group
  ▪ f3f9cfd msm8956-common: Stop qmi logspam ;_;
@@ -88,16 +135,6 @@
 
  ▪ project frameworks/av/
  ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
-
- ▪ project frameworks/base/
- ▪ 1d4c574 SystemUI : port performance profile toggle from M
- ▪ b09764e Keyguard:Remove null checks on weather changes
- ▪ 548a696 Option to Display Data Disabled Indicator Icon [1/2]
- ▪ c5c1fed Show lockscreen wallpaper when blur effect is enabled
- ▪ 195f7a7 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into 7.1.2
- ▪ aa9f013 Merge pull request #189 from ashoksoni/changes
- ▪ 03298c8 Dialer: show headsup on incoming call even if headsup are off and ticker on
- ▪ dcd25f9 Add Missing Permission to Keyguard
 
  ▪ project lineage/jenkins/
  ▪ b67e81e hudson: bring back w7
@@ -111,24 +148,11 @@
 
  ▪ project packages/apps/ResurrectionStats/
 
- ▪ project packages/apps/Settings/
- ▪ 9903553 Update Oneplus2 maintainer (#746)
- ▪ c2965b9 Ticker: allow to show music track info on new track being played [2/2]
- ▪ 5a119f2 Option to Display Data Disabled indicator Icons [2/2]
- ▪ e167289 Settings: Refactor Keyguard Weather [2/2]
- ▪ d29b925 Option to Display Data Disabled indicator Icons [2/2]
- ▪ 04b9721 Port "Battery Usage Alerts" feature from factory images to aosp
-
  ▼ 04/13/2017
 
 
  ▪ project device/xiaomi/msm8956-common/
  ▪ f42b8c2 Revert "msm8956: Re-enable XML audio policy"
-
- ▪ project frameworks/base/
- ▪ 7e1ad6a Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into 7.1.2
- ▪ 7f5fafd Keyguard Weather : Refactor for new API[1/2]
- ▪ 8d317f5 Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
 
  ▪ project kernel/motorola/msm8226/
  ▪ cf7d454 net/packet: fix overflow in check for tp_frame_nr
@@ -157,23 +181,12 @@
  ▪ project packages/apps/Nfc/
  ▪ 3090980 Nfc: Include android-support-v4 for the NXP stack
 
- ▪ project packages/apps/Settings/
- ▪ 15fbd71 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into 7.1.2
- ▪ 18a189f Settings: Refactor Keyguard Weather [2/2]
-
  ▼ 04/12/2017
 
 
  ▪ project frameworks/av/
  ▪ 18a402d stagefright: Remove the HAL3 limitation from the video reference clock selection
  ▪ eb06e41 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
- ▪ 500eed3 base: services: add config_fingerprintRemoveClientOnCancel
- ▪ 5d314c8 Revert "SystemUI: Add SlotId for MultiSim"
- ▪ 5f48e30 PowerManager: Bring back the compatibility with AOSP
- ▪ 7d3e01c Slim Recents: refresh sizes on dpi change
- ▪ b39537d base: services: add config_fingerprintRemoveClientOnCancel
 
  ▪ project frameworks/native/
  ▪ 0dd3703 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
@@ -953,12 +966,6 @@
  ▪ project packages/apps/PhoneCommon/
  ▪ 64bae44 PhoneCommon: Another round of qtistring fixes
 
- ▪ project packages/apps/Settings/
- ▪ e59efec Rename ZUK Z1 mainatainer (#745)
- ▪ f164a31 Fixed device_maintainers_fragment.xml (#743)
- ▪ a550dd0 Fix required strings
- ▪ e6df73e Add ZTE Axon7 dev to the mix (#741)
-
  ▪ project packages/apps/ThemeInterfacer/
  ▪ 754b6ea restartService --> forceStopService
 
@@ -988,16 +995,12 @@
  ▪ project frameworks/av/
  ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
 
- ▪ project frameworks/base/
-
  ▪ project hardware/qcom/display-caf/msm8960/
  ▪ 09cce1b hwcomposer: Fix regression in hwc_sync
 
  ▪ project lineage/jenkins/
  ▪ 00f12d0 Add lt02ltespr
  ▪ 96e020e hudson: Kill D2
-
- ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/Snap/
  ▪ 2ecc334 CameraControls: Toggle the status of disabled views
@@ -1037,13 +1040,6 @@
 
  ▪ project frameworks/av/
  ▪ d664926 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project frameworks/base/
- ▪ 3cb15ae Ticker: allow to show music track info on new track being played [1/2]
- ▪ 2d5f98e Fix Aosp bug on custom apps tiles: color not changing on tile state change
- ▪ b1463e1 ScreenshotEditor: Fix Navbar Glitch for Good.
- ▪ 736724c Themes: Expose Keyguard affordance circle background
- ▪ 03284ee Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
 
  ▪ project frameworks/native/
  ▪ a8ac4e5 Merge tag 'android-7.1.2_r2' into cm-14.1
@@ -1094,8 +1090,6 @@
  ▪ ae769b0 Merge tag 'android-7.1.2_r2' into cm-14.1
 
  ▪ project packages/apps/Settings/
- ▪ 56612e3 Ticker: allow to show music track info on new track being played [2/2]
- ▪ 62a4be7 Settings: Expose and add tint mode to custom icons
  ▪ c4089ff Settings: Expose bluetooth pin confirm dialog text colors
  ▪ 0ce6798 Merge tag 'android-7.1.2_r2' into nougat
 
@@ -1126,40 +1120,4 @@
  ▪ project vendor/motorola/
  ▪ 3e84c84 qcom-common: Update widevine
  ▪ 6165562 msm8960: Move firmware to qcom-common
-
- ▼ 04/09/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ c63e0e1 msm8956: nuke that waste of space :D
- ▪ 50eabad msm8956: One more denial ;_;
-
- ▪ project frameworks/av/
- ▪ 9da10a0 Revert "Revert "mediacodec: minijail: Enable exporting of policy files""
-
- ▪ project frameworks/base/
-
- ▪ project frameworks/native/
- ▪ e7456d6 sensorservice: Register orientation sensor if HAL doesn't provide it
-
- ▪ project lineage/mirror/
- ▪ 7ae79d8 mirror: Update to 08-Apr-17 16:02:57 UTC
-
- ▪ project lineage/wiki/
- ▪ f28d3e9 Add costs page
-
- ▪ project packages/apps/CarrierConfig/
- ▪ 14d3bb7 Consider Q-TELECOM Greece as non-roaming
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 3474907 Remove my name from A6020, osprey and falcon (#739)
-
- ▪ project packages/providers/ContactsProvider/
- ▪ 8546493 Merge tag 'android-7.1.2_r2' into cm-14.1
 
