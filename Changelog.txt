@@ -2,6 +2,23 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/17/2017
+
+
+ ▪ project android/
+ ▪ 34db8bf Revert "Sync infra-related projects"
+
+ ▪ project frameworks/base/
+ ▪ e00404a Fix missing lockscreen shortcut icons after reboot
+ ▪ fcbe7d1 Themes: Allow volume slider and thumb to work with custom images.
+ ▪ dbc1dda Separate tile label color from icon drawable color
+ ▪ 57858e8 Basestatusbar:Fix Headsup Not Working
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project vendor/motorola/
+ ▪ 108aa97 shamu: add faceunlock proprietary file libfrsdk.so
+
  ▼ 04/16/2017
 
 
@@ -9,7 +26,6 @@
  ▪ 124e943 Enable svelte configuration for jemalloc
 
  ▪ project frameworks/base/
- ▪ af7d488 Basestatusbar:Fix Headsup Not Working
  ▪ c74a2d4 Fix Another Illegal Argument Exception when Changing DPI
  ▪ b118d77 base:Optional weather info in expanded header [1/2]
  ▪ cca1591 QSTileHost: Dont Show Performance tile if No power profiles present
@@ -33,9 +49,6 @@
  ▪ 7aa24a2 ScreenshotEditor: Fix Navbar Glitch for Good.
  ▪ f0cc961 Themes: Expose Keyguard affordance circle background
  ▪ 7f5e8e4 Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
- ▪ project lineage/wiki/
- ▪ 246dc02 devices: add lg l90 (w7)
 
  ▪ project packages/apps/Dialer/
 
@@ -86,10 +99,6 @@
  ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
  ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
 
- ▪ project lineage/wiki/
- ▪ dda1c6b wiki: import gts210 family, ham, i9305, n51xx
- ▪ d42c3c6 wiki: Add essentials for making a device official
-
  ▪ project packages/apps/Contacts/
  ▪ 143e1fe Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into nougat
 
@@ -136,16 +145,6 @@
  ▪ project frameworks/av/
  ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
- ▪ project lineage/jenkins/
- ▪ b67e81e hudson: bring back w7
-
- ▪ project lineage/mirror/
- ▪ 4d8cf8c mirror: Updated to 13-Apr-17 16:40:00 UTC
-
- ▪ project lineage/wiki/
- ▪ 245cbb0 wiki: Less external main-links
- ▪ f0d0eb3 wiki: Don't break mid-word
-
  ▪ project packages/apps/ResurrectionStats/
 
  ▼ 04/13/2017
@@ -167,16 +166,6 @@
  ▪ ce9e837 msm-camera: Addressing possible overflow conditions
  ▪ 6d2214c qcrypto: protect potential integer overflow.
  ▪ 32e9b24 sdcardfs: limit stacking depth
-
- ▪ project lineage/jenkins/
- ▪ cf9e05d hudson: Temporarily remove ether until it gets cleaned up
-
- ▪ project lineage/wiki/
- ▪ 803c0a3 devices: Add lt02ltespr
- ▪ 7ffdf08 wiki: Underp filtering of peripherals
- ▪ 21ed3ac wiki: contributors: Add other projects
- ▪ 0b84053 wiki: Pimp "Contributors" page
- ▪ b799ed7 devices: unify korean galaxy note 2
 
  ▪ project packages/apps/Nfc/
  ▪ 3090980 Nfc: Include android-support-v4 for the NXP stack
@@ -914,23 +903,6 @@
  ▪ 2854e32 f2fs: Fix a system panic caused by f2fs_follow_link
  ▪ 7c6cd83 f2fs: catch up to v4.4-rc1
 
- ▪ project lineage/jenkins/
- ▪ 82f2b72 Unify Galaxy Note 2 Korean variants
-
- ▪ project lineage/mirror/
- ▪ 99f749e Add support for t0ltekor
-
- ▪ project lineage/updater/
- ▪ fb1b2fa Unify Galaxy Note 2 Korean variants
-
- ▪ project lineage/wiki/
- ▪ c44d7d9 wiki: Move hima family to 14.1
- ▪ 91d3fe9 Remove CNAME, no longer using github pages
- ▪ bb53cb4 wiki: Bump jalebi to 14.1
- ▪ 6d26ab6 wiki: Fix wrong device information
- ▪ 820dd11 wiki: Update "adding device" page
- ▪ 2ebb536 wiki : Group pages in folders
-
  ▪ project packages/apps/CMParts/
  ▪ 4e7219f PerfProfileSettings: Update slider on powersave mode change
  ▪ 5f7bb78 CMParts: Update quick QS pull-down summary for translation
@@ -998,10 +970,6 @@
  ▪ project hardware/qcom/display-caf/msm8960/
  ▪ 09cce1b hwcomposer: Fix regression in hwc_sync
 
- ▪ project lineage/jenkins/
- ▪ 00f12d0 Add lt02ltespr
- ▪ 96e020e hudson: Kill D2
-
  ▪ project packages/apps/Snap/
  ▪ 2ecc334 CameraControls: Toggle the status of disabled views
  ▪ 7e10f00 Never remove unsupported controls
@@ -1019,105 +987,4 @@
  ▪ project vendor/motorola/
  ▪ 77658b4 qcom-common: Restore libs used by qseecomd
  ▪ 913a226 griffin: add com.qualcomm.location & QtiTetherService
-
- ▼ 04/10/2017
-
-
- ▪ project art/
- ▪ e4e0c7c Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_art into HEAD
-
- ▪ project build/
- ▪ eeb2354 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project device/motorola/msm8226-common/
- ▪ 03e3402 libshims: Add libshims_camera for proper EXIF data
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 1aca0f3 common: Enough is enough
-
- ▪ project external/skia/
- ▪ d28e5a2 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_external_skia into HEAD
-
- ▪ project frameworks/av/
- ▪ d664926 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project frameworks/native/
- ▪ a8ac4e5 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project lineage/jenkins/
- ▪ 77d4492 Rebalance build targets
-
- ▪ project lineage/mirror/
- ▪ 471449d mirror: Updated to 10-Apr-17 06:30:00 UTC
-
- ▪ project lineage/stats/
- ▪ bb7e276 Enable stats dumps to json
-
- ▪ project lineage/wiki/
- ▪ eada6f2 devices: lettuce and tomato now on 14.1
-
- ▪ project packages/apps/Bluetooth/
- ▪ dd3c70c Revert "Bluetooth: handle opening incoming APK files"
-
- ▪ project packages/apps/CellBroadcastReceiver/
- ▪ 4c0252f CellBroadcastReceiver: fix channel 50 not disabling
-
- ▪ project packages/apps/Contacts/
- ▪ f12b9ea Merge tag 'android-7.1.2_r2' into cm-14.1
- ▪ 20c4d1a contacts: Add support for import contacts to local phone storage
-
- ▪ project packages/apps/ContactsCommon/
- ▪ 4ef2fb5 Merge tag 'android-7.1.2_r2' into cm-14.1
- ▪ 813476e AccountType: use a pretty phone account icon for local storage account
- ▪ 41b042b SelectAccountActivity : Support local phone account
- ▪ 3a17fd8 Add local phone account as a writable AccountTypes.
- ▪ 78872dd Store all local contacts in only one account.
- ▪ 63e4adf contacts-common: Add support for import contacts to local phone storage
-
- ▪ project packages/apps/Dialer/
- ▪ 144efc0 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/apps/ExactCalculator/
- ▪ e235f6d Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/apps/Messaging/
- ▪ 800e075 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_packages_apps_messaging into HEAD
-
- ▪ project packages/apps/PackageInstaller/
- ▪ db5453a Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/apps/PhoneCommon/
- ▪ ae769b0 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/apps/Settings/
- ▪ c4089ff Settings: Expose bluetooth pin confirm dialog text colors
- ▪ 0ce6798 Merge tag 'android-7.1.2_r2' into nougat
-
- ▪ project packages/apps/Snap/
- ▪ f262e1a Snap: CaptureModule: set switcher index on resume
- ▪ 0540403 Snap: CaptureUI: fix ModuleSwitcher being invisible
-
- ▪ project packages/apps/StorageManager/
- ▪ 2814a00 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/services/Telecomm/
- ▪ 3bf1dfe Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project packages/services/Telephony/
- ▪ 84cc1c5 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project system/core/
- ▪ 560d700 Merge branch 'staging/cm-14.1_android-7.1.2_r2' of https://github.com/LineageOS/android_system_core into nougat
-
- ▪ project system/sepolicy/
- ▪ 825c019 Merge tag 'android-7.1.2_r2' into cm-14.1
-
- ▪ project vendor/cm/
- ▪ de269ec kernel: Include openssl headers and dylibs on darwin
- ▪ d75180b build: Update smali and baksmali to 2.2.0
- ▪ 2070293 charger: updates for 7.1.2 minui
-
- ▪ project vendor/motorola/
- ▪ 3e84c84 qcom-common: Update widevine
- ▪ 6165562 msm8960: Move firmware to qcom-common
 
