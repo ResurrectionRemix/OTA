@@ -2,6 +2,42 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/18/2017
+
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 506e34b kenzo: show correct charging current value on lockscreen
+
+ ▪ project frameworks/base/
+ ▪ 43d8599 Improve Hw keys Tile
+ ▪ 451889a QuickStatusbarHeader: Fix issues with No weather image being seen all the time
+ ▪ 9813653 Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
+ ▪ d6ed58e Make Data/Wifi activity icon in statusbar optional [1/2]
+ ▪ 1eb99d9 Data activity icon in statusbar
+ ▪ 802a93f SystemUI: Add tile for enable/disable HW keys
+ ▪ 755b7b2 fix wrong algorithm in WifiPowerPerPacket()
+ ▪ 4f39fad FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+ ▪ 70a9450 Ticker:Set default color to White [1/2]
+
+ ▪ project packages/apps/Dialer/
+ ▪ a5b497f Dialpad: option to show dialpad automatically (#1)
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ e2bb742 Fix 7.1.2 mismerge
+ ▪ b6aa3ee Option to disable data & wifi indicators
+ ▪ cf61891 Add HWkeys Settings as an activity
+ ▪ 08a6aa1 Ticker:Set default colors to white [2/2]
+
+ ▪ project system/extras/
+ ▪ b5332df Update verity_verifier from master branch
+ ▪ 196ed2f verity: Include libcrypto_utils_static
+ ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
+ ▪ 442b784 Revert "Switch to BoringSSL for crypto."
+
  ▼ 04/17/2017
 
 
@@ -98,6 +134,9 @@
  ▪ project frameworks/native/
  ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
  ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ 2627639 msm8960: define HFP_ASM_RX_TX 24
 
  ▪ project packages/apps/Contacts/
  ▪ 143e1fe Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into nougat
@@ -960,31 +999,4 @@
 
  ▪ project vendor/motorola/
  ▪ b7fcb2b Add Moto Z Play (addison)
-
- ▼ 04/11/2017
-
-
- ▪ project frameworks/av/
- ▪ bcfb7ac stagefright: Remove the HAL3 limitation from the video reference clock selection
-
- ▪ project hardware/qcom/display-caf/msm8960/
- ▪ 09cce1b hwcomposer: Fix regression in hwc_sync
-
- ▪ project packages/apps/Snap/
- ▪ 2ecc334 CameraControls: Toggle the status of disabled views
- ▪ 7e10f00 Never remove unsupported controls
- ▪ 30ba558 WideAnglePanoramaUI: Correctly position the progressbar
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 31b36ca Polish copyright
-
- ▪ project packages/services/Telecomm/
- ▪ 100bc18 Merge pull request #2 from SoUnd001/nougat
-
- ▪ project vendor/cm/
- ▪ 36cd412 Bump version to 5.8.3
-
- ▪ project vendor/motorola/
- ▪ 77658b4 qcom-common: Restore libs used by qseecomd
- ▪ 913a226 griffin: add com.qualcomm.location & QtiTetherService
 
