@@ -2,6 +2,28 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/20/2017
+
+
+ ▪ project android/
+ ▪ 30d3069 crowdin: fix sync
+
+ ▪ project frameworks/base/
+ ▪ f1e008a SystemUI:Notification bar custom notification display problems
+ ▪ d44c3f3 BT: Update wait function in ManagerService to handle  BLE states
+ ▪ e5e5b09 SystemUI: Fix QSTileHost exception
+ ▪ 8a62038 SystemUI: [RJIL new function] AutoBrightness
+ ▪ 3f767d0 SystemUI: Fix SystemUI ANR
+
+ ▪ project packages/apps/DUI/
+ ▪ eaf848b DUI: Basenavigationbar: Catch Slippery Exception
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/19/2017
 
 
@@ -205,27 +227,4 @@
  ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
 
  ▪ project packages/apps/ResurrectionStats/
-
- ▼ 04/13/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ f42b8c2 Revert "msm8956: Re-enable XML audio policy"
-
- ▪ project kernel/motorola/msm8226/
- ▪ cf7d454 net/packet: fix overflow in check for tp_frame_nr
- ▪ 7d95a09 net/packet: fix overflow in check for tp_reserve
- ▪ 8366845 scsi: sg: check length passed to SG_NEXT_CMD_LEN
- ▪ 72fe005 sg: relax 16 byte cdb restriction
- ▪ 7c79b72 block: add blk_rq_set_block_pc()
- ▪ e5df0ad platform: msm: spmi: Fix possible race condition in debugfs
- ▪ bd8ec2e prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
- ▪ b0619d0 crypto: msm: check integer overflow on total data len in qcedev.c
- ▪ b316697 prima: Fix VHT-80 IBSS stops beaconing
- ▪ ce9e837 msm-camera: Addressing possible overflow conditions
- ▪ 6d2214c qcrypto: protect potential integer overflow.
- ▪ 32e9b24 sdcardfs: limit stacking depth
-
- ▪ project packages/apps/Nfc/
- ▪ 3090980 Nfc: Include android-support-v4 for the NXP stack
 
