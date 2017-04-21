@@ -2,6 +2,109 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/21/2017
+
+
+ ▪ project device/motorola/msm8226-common/
+ ▪ 5cf162a CMActions: Add option to pulse only if device is on a flat surface
+ ▪ d339ce8 overlay: Disable SIM batch operations
+
+ ▪ project device/oppo/common/
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 41cd40d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.15' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ ce39c30 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 5f3d105 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Gello/
+
+ ▪ project packages/apps/Profiles/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/Settings/
+ ▪ 71280d1 Add me as Sirius maintainer (#758)
+ ▪ 304dc77 Fix the build up !
+ ▪ 7b807dc Add Capricorn maintanier (#757)
+ ▪ 9f4c631 Add Nougat Maintainer for LeEco Le Max2 (x2) (#755)
+ ▪ 1257948 Settings: update string
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/ThemeChooser/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/ThemesProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/services/CMAudioService/
+
+ ▪ project packages/services/LiveLockScreenService/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project packages/services/ThemeManagerService/
+
+ ▪ project packages/services/WeatherService/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
  ▼ 04/20/2017
 
 
@@ -155,6 +258,9 @@
  ▪ cebfd40 Ticker: allow to show music track info on new track being played [2/2]
  ▪ 31a9d2d Settings: Expose and add tint mode to custom icons
 
+ ▪ project system/bt/
+ ▪ d17396c bt: fix build for non-BLE after the 7.1.2 merge
+
  ▪ project vendor/cm/
  ▪ c6c708c rr: clean up Makefiles
  ▪ 04d30ef [SQUASH] rr: update changelog script for 5.8.3 and to work with anyone's source dir
@@ -176,6 +282,9 @@
  ▪ project frameworks/native/
  ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
  ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 51b5ae4 Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.01.258.022 on remote branch
 
  ▪ project hardware/qcom/audio/default/
  ▪ 2627639 msm8960: define HFP_ASM_RX_TX 24
@@ -213,18 +322,4 @@
  ▪ project vendor/cm/
  ▪ 5ff1809 Update 5.8.2 to 5.8.3
  ▪ c04ffd6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat
-
- ▼ 04/14/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ bb8df50 msm8956-common: Add tftp to wakelock group
- ▪ f3f9cfd msm8956-common: Stop qmi logspam ;_;
- ▪ 944b561 msm8956-common: Uncomment OSNLP_PACKAGE , OSNLP_ACTION
- ▪ 85de176 msm8956-common: Change path for aanc
-
- ▪ project frameworks/av/
- ▪ 4a98590 stagefright: Fix SurfaceMediaSource buffer search condition when buffer return
-
- ▪ project packages/apps/ResurrectionStats/
 

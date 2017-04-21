@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
     <kenzo>
-    <Filename>RR-N-v5.8.3-20170420-kenzo-Nightly.zip</Filename>
+    <Filename>RR-N-v5.8.3-20170421-kenzo-Nightly.zip</Filename>
     <LatestBuildUrl
     id="latestbuild"
     title="LatestBuild"
-    description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170420-kenzo-Nightly.zip</LatestBuildUrl>
+    description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170421-kenzo-Nightly.zip</LatestBuildUrl>
     <BuildUrl
     id="build"
     title="Build"
