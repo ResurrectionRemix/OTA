@@ -2,6 +2,24 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
+ ▪ 22974ab Fix screenshots delay default value
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/21/2017
 
 
@@ -264,62 +282,4 @@
  ▪ project vendor/cm/
  ▪ c6c708c rr: clean up Makefiles
  ▪ 04d30ef [SQUASH] rr: update changelog script for 5.8.3 and to work with anyone's source dir
-
- ▼ 04/15/2017
-
-
- ▪ project android/
- ▪ adb6be3 manifest: android-7.1.1_r25 -> android-7.1.2_r2
- ▪ e14b742 Sync infra-related projects
-
- ▪ project build/
- ▪ f21b9cf build: allow to disable recovery-two-step.img generation
-
- ▪ project frameworks/av/
- ▪ 0859743 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_av into nougat
- ▪ 88b9d78 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/native/
- ▪ 450e5a1 Merge branch 'nougat' of https://github.com/ResurrectionRemix/frameworks_native into nougat
- ▪ 005ce14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 51b5ae4 Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.01.258.022 on remote branch
-
- ▪ project hardware/qcom/audio/default/
- ▪ 2627639 msm8960: define HFP_ASM_RX_TX 24
-
- ▪ project packages/apps/Contacts/
- ▪ 143e1fe Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into nougat
-
- ▪ project packages/apps/ContactsCommon/
- ▪ f97eb22 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_ContactsCommon into nougat
-
- ▪ project packages/apps/Dialer/
- ▪ 8c9e2ae Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
-
- ▪ project packages/apps/PackageInstaller/
- ▪ c11d753 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_apps_PackageInstaller into nougat
-
- ▪ project packages/apps/PhoneCommon/
- ▪ 75e864f Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_PhoneCommon into nougat
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 3bd814e Merge branch 'nougat' of https://github.com/ResurrectionRemix/packages_apps_ResurrectionStats into nougat
- ▪ 17c21f3 Bump version to 5.8.3
- ▪ 443ab3f Merge remote-tracking branch 'rr/nougat' into HEAD
- ▪ 384acbc stats: RR 5.8.3
-
- ▪ project packages/services/Telecomm/
- ▪ 357ff90 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telecomm into nougat
-
- ▪ project packages/services/Telephony/
- ▪ 6d1d221 Merge branch '7.1.2' of https://github.com/ResurrectionRemix/android_packages_services_Telephony into nougat
-
- ▪ project system/core/
- ▪ ae467ca Merge branch '7.1.2' of https://github.com/ResurrectionRemix/system_core into nougat
-
- ▪ project vendor/cm/
- ▪ 5ff1809 Update 5.8.2 to 5.8.3
- ▪ c04ffd6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat
 
