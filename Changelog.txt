@@ -2,23 +2,36 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 04/22/2017
+ ▼ 04/23/2017
 
+
+ ▪ project external/stagefright-plugins/
+ ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
 
  ▪ project frameworks/base/
- ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
 
  ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
- ▪ 22974ab Fix screenshots delay default value
+ ▪ e27dd96 Add Galaxy S7/edge maintainer (#761)
 
  ▪ project packages/services/OmniJaws/
+
+ ▼ 04/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
+
+ ▪ project packages/apps/Settings/
+ ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
+ ▪ 22974ab Fix screenshots delay default value
 
  ▼ 04/21/2017
 
@@ -36,6 +49,9 @@
 
  ▪ project hardware/qcom/audio-caf/msm8994/
  ▪ ce39c30 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+
+ ▪ project hardware/qcom/display-caf/msm8994/
+ ▪ 434068f Fix duplicate copy file rules
 
  ▪ project hardware/qcom/fm/
 
@@ -154,6 +170,12 @@
  ▪ project device/motorola/msm8226-common/
  ▪ 2c6b60f power: Minor code optimization
 
+ ▪ project external/boringssl/
+ ▪ 84b7017 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
+ ▪ 7609007 Don't set a default armcap state in dynamic armcap modes.
+ ▪ 733592a Rewrite ARM feature detection.
+ ▪ d50af31 Remove CRYPTO_set_NEON_functional.
+
  ▪ project frameworks/base/
  ▪ 3da5ccc Improve Hw keys Tile
  ▪ 9703f9a Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
@@ -215,71 +237,4 @@
 
  ▪ project vendor/motorola/
  ▪ 108aa97 shamu: add faceunlock proprietary file libfrsdk.so
-
- ▼ 04/16/2017
-
-
- ▪ project device/motorola/msm8226-common/
- ▪ 124e943 Enable svelte configuration for jemalloc
-
- ▪ project device/oneplus/bacon/
- ▪ cfa2b93 bacon: Remove references to dead ppd service
- ▪ afb6e50 bacon: Remove non existant qcom_oncrpc group UID
-
- ▪ project frameworks/base/
- ▪ cca1591 QSTileHost: Dont Show Performance tile if No power profiles present
- ▪ 904ce14 fix build
- ▪ cda086a Various fixes and cleanups after 7.1.2 merge
- ▪ e06c6ea Zygote: Fix GL preload property evaluation
- ▪ 1b051d8 systemui: Fix DE translation for navbar buttons
- ▪ 94fd330 Dialer: show headsup on incoming call even if headsup are off [1/2]
- ▪ 6585850 Statusbar ticker: use a gentle smooth fade animation
- ▪ 3a2552b SystemUI : port performance profile toggle from M
- ▪ 6bc95dd Option to Display Data Disabled Indicator Icon [1/2]
- ▪ e7443eb Show lockscreen wallpaper when blur effect is enabled
- ▪ c7b3d2e Keyguard Weather : Refactor for new API[1/2]
- ▪ 76c3eee Extend OmniJaws Client to Keyguard Signed-off-by: Varun Date <date.varun123@gmail.com>
- ▪ 0f67b83 Revert "SystemUI: Add SlotId for MultiSim"
- ▪ ff5103e PowerManager: Bring back the compatibility with AOSP
- ▪ 4e641ad Slim Recents: refresh sizes on dpi change
- ▪ 9af66a6 base: services: add config_fingerprintRemoveClientOnCancel
- ▪ 49c3c91 Ticker: allow to show music track info on new track being played [1/2]
- ▪ 6bfc714 Fix Aosp bug on custom apps tiles: color not changing on tile state change
- ▪ 7aa24a2 ScreenshotEditor: Fix Navbar Glitch for Good.
- ▪ f0cc961 Themes: Expose Keyguard affordance circle background
- ▪ 7f5e8e4 Merge tag 'android-7.1.2_r2' of https://android.googlesource.com/platform//frameworks/base into HEAD
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 3833cd4 Constants: update stats reporting/viewing URL   * http://resurrectionremix.sourceforge.net -> https://resurrectionremix.sourceforge.io
- ▪ 8fde88f ResurrectionStats: cleanup
-
- ▪ project packages/apps/Settings/
- ▪ 8a346c2 Add Headsup Settings as an Activity
- ▪ cad32b8 Update Z2 Tablet Maintainer
- ▪ 1e7d35b Optional Expanded statusbar Weather info [2/2]
- ▪ ad9f195 Add Xperia Z Ultra Maintainer
- ▪ e79fca4 Add my name as maintainer for moto g 2015 (osprey) (#749)
- ▪ d5a421a Update resurrection_device_maintainers_strings.xml (#747)
- ▪ 889c5ac Dialer: show headsup on incoming call even if headsup are off [2/2]
- ▪ b0b7663 Update Oneplus2 maintainer (#746)
- ▪ 7fd0f34 Option to Display Data Disabled indicator Icons [2/2]
- ▪ 2c57984 Port "Battery Usage Alerts" feature from factory images to aosp
- ▪ cbea28d Settings: Refactor Keyguard Weather [2/2]
- ▪ 1bcad64 Rename ZUK Z1 mainatainer (#745)
- ▪ f1962b7 Fixed device_maintainers_fragment.xml (#743)
- ▪ e863204 Fix required strings
- ▪ 02d0b19 Add ZTE Axon7 dev to the mix (#741)
- ▪ cebfd40 Ticker: allow to show music track info on new track being played [2/2]
- ▪ 31a9d2d Settings: Expose and add tint mode to custom icons
-
- ▪ project system/bt/
- ▪ d17396c bt: fix build for non-BLE after the 7.1.2 merge
-
- ▪ project vendor/cm/
- ▪ c6c708c rr: clean up Makefiles
- ▪ 04d30ef [SQUASH] rr: update changelog script for 5.8.3 and to work with anyone's source dir
 
