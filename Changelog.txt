@@ -2,6 +2,24 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/24/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ fc1c0d9 Add special case for stereo camcorder
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/oneplus/
+ ▪ 2b571b4 op3: Add missing & remove unused blobs
+ ▪ bc1b928 op3: Update to OB14 blobs
+
  ▼ 04/23/2017
 
 
@@ -9,6 +27,9 @@
  ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
 
  ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
 
  ▪ project packages/apps/Dialer/
 
@@ -226,15 +247,4 @@
  ▪ 196ed2f verity: Include libcrypto_utils_static
  ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
  ▪ 442b784 Revert "Switch to BoringSSL for crypto."
-
- ▼ 04/17/2017
-
-
- ▪ project android/
- ▪ 34db8bf Revert "Sync infra-related projects"
-
- ▪ project packages/apps/Settings/
-
- ▪ project vendor/motorola/
- ▪ 108aa97 shamu: add faceunlock proprietary file libfrsdk.so
 
