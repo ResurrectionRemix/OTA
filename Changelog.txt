@@ -2,6 +2,33 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/26/2017
+
+
+ ▪ project frameworks/base/
+ ▪ b250de6 Fix animation duration for custom animations
+
+ ▪ project frameworks/opt/telephony/
+ ▪ bc43228 Create cdma dummy apns.
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
+
+ ▪ project packages/apps/Settings/
+ ▪ 52d6890 Settings: Custom animation duration settings [2/2]
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 99649a5 Don't show market links if market app is protected
+ ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/25/2017
 
 
@@ -81,6 +108,10 @@
 
  ▪ project frameworks/base/
  ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
+
+ ▪ project hardware/qcom/fm/
+ ▪ 51e71fd libfm_jni: Fix strchr implicit char* typecast in ConfFileParser
+ ▪ 56dd18a libjm_jni: Missing liblog dependency and jni core headers
 
  ▪ project packages/apps/Settings/
  ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
@@ -213,42 +244,4 @@
  ▪ project packages/apps/Settings/
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 04/19/2017
-
-
- ▪ project android/
- ▪ d1362da [2/2] crowdin: add OmniJaws
-
- ▪ project device/motorola/msm8226-common/
- ▪ 2c6b60f power: Minor code optimization
-
- ▪ project external/boringssl/
- ▪ 84b7017 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
- ▪ 7609007 Don't set a default armcap state in dynamic armcap modes.
- ▪ 733592a Rewrite ARM feature detection.
- ▪ d50af31 Remove CRYPTO_set_NEON_functional.
-
- ▪ project frameworks/base/
- ▪ 3da5ccc Improve Hw keys Tile
- ▪ 9703f9a Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
- ▪ a04a27f Make Data/Wifi activity icon in statusbar optional [1/2]
- ▪ 6591688 Data activity icon in statusbar
- ▪ 88921e1 SystemUI: Add tile for enable/disable HW keys
- ▪ bc651fe fix wrong algorithm in WifiPowerPerPacket()
- ▪ 2313020 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
- ▪ 8776352 Ticker:Set default color to White [1/2]
- ▪ f8609ef Fix missing lockscreen shortcut icons after reboot
- ▪ 0d36175 Themes: Allow volume slider and thumb to work with custom images.
- ▪ 8355307 Separate tile label color from icon drawable color
- ▪ 11576a8 Basestatusbar:Fix Headsup Not Working
- ▪ 036a71d Fix Another Illegal Argument Exception when Changing DPI
- ▪ 0c31a30 base:Optional weather info in expanded header [1/2]
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ dea4c30 add device vega (#754)
- ▪ c5ce86a Settings: Fix ugly whitespacing and build
- ▪ 5e5d45c add maintainer for clark, flounder, manta, vs980, d2lte, and tenderloin (#753)
 
