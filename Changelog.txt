@@ -2,6 +2,20 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/27/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Settings/
+ ▪ c50d9a6 added zuk Z2 plus (#768)
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 3f3c33b Add a looper to the locale change handler
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 29b0b0a Trebuchet: lineage launcher icon
+
  ▼ 04/26/2017
 
 
@@ -24,6 +38,7 @@
  ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
 
  ▪ project packages/apps/Trebuchet/
+ ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
  ▪ 99649a5 Don't show market links if market app is protected
  ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
 
@@ -222,26 +237,4 @@
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 04/20/2017
-
-
- ▪ project android/
- ▪ 30d3069 crowdin: fix sync
-
- ▪ project frameworks/base/
- ▪ f1e008a SystemUI:Notification bar custom notification display problems
- ▪ d44c3f3 BT: Update wait function in ManagerService to handle  BLE states
- ▪ e5e5b09 SystemUI: Fix QSTileHost exception
- ▪ 8a62038 SystemUI: [RJIL new function] AutoBrightness
- ▪ 3f767d0 SystemUI: Fix SystemUI ANR
-
- ▪ project packages/apps/DUI/
- ▪ eaf848b DUI: Basenavigationbar: Catch Slippery Exception
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
 
