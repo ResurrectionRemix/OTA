@@ -2,52 +2,51 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 04/27/2017
+ ▼ 04/29/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/libhardware_legacy/
+ ▪ ec33ac3 wifi: add firmware loader support for the non-LKM case
+
+ ▪ project packages/apps/Settings/
+ ▪ 57fbef2 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
+ ▪ 800c80e Fix SB ticker icon and text default color
+
+ ▼ 04/28/2017
 
 
  ▪ project frameworks/base/
 
  ▪ project packages/apps/Settings/
- ▪ c50d9a6 added zuk Z2 plus (#768)
 
  ▪ project packages/apps/ThemeInterfacer/
+ ▪ 40e3809 JobService: Expose configuration shim refresh delay
  ▪ 3f3c33b Add a looper to the locale change handler
+
+ ▼ 04/27/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
+
+ ▪ project packages/apps/Settings/
+ ▪ c50d9a6 added zuk Z2 plus (#768)
 
  ▪ project packages/apps/Trebuchet/
  ▪ 29b0b0a Trebuchet: lineage launcher icon
+ ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
+
+ ▪ project packages/services/OmniJaws/
 
  ▼ 04/26/2017
 
 
  ▪ project frameworks/base/
  ▪ b250de6 Fix animation duration for custom animations
-
- ▪ project frameworks/opt/telephony/
- ▪ bc43228 Create cdma dummy apns.
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
-
- ▪ project packages/apps/Gallery2/
- ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
-
- ▪ project packages/apps/Settings/
- ▪ 52d6890 Settings: Custom animation duration settings [2/2]
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
-
- ▪ project packages/apps/Trebuchet/
- ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
- ▪ 99649a5 Don't show market links if market app is protected
- ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/25/2017
-
-
- ▪ project frameworks/base/
  ▪ 4863e25 Fix DUI slippery flag logic and IllegalArgumentException [2/2]
  ▪ 1650a12 Need to resize new created stack to fullscreen after docked stack tasks has moved into it.
  ▪ cda2cbe Fix race condition when writing UidState of appops.
@@ -61,17 +60,45 @@
  ▪ 94a3bb6 fingerprint: notify client when cancelling succeeded
  ▪ 2e7a838 Revert "base: services: add config_fingerprintRemoveClientOnCancel"
 
+ ▪ project frameworks/opt/telephony/
+ ▪ bc43228 Create cdma dummy apns.
+
  ▪ project packages/apps/DUI/
  ▪ 8f840c5 Fix DUI slippery flag logic and IllegalArgumentException [1/2]
 
  ▪ project packages/apps/Dialer/
 
+ ▪ project packages/apps/Gallery2/
+ ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
+
  ▪ project packages/apps/Settings/
+ ▪ 52d6890 Settings: Custom animation duration settings [2/2]
  ▪ 4382afd Screenshot Delay:Make it faster optionally
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 99649a5 Don't show market links if market app is protected
+ ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
 
  ▪ project packages/services/OmniJaws/
  ▪ 772c1b8 OmniJaws: remove separation between force and not force update
  ▪ 7193cd8 OmniJaws: add fetch weather data retry loop
+
+ ▼ 04/25/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
+
+ ▪ project packages/services/OmniJaws/
 
  ▼ 04/24/2017
 
@@ -80,13 +107,12 @@
 
  ▪ project hardware/qcom/audio-caf/msm8996/
  ▪ fc1c0d9 Add special case for stereo camcorder
+ ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
 
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
+ ▪ e27dd96 Add Galaxy S7/edge maintainer (#761)
 
  ▪ project packages/services/OmniJaws/
 
@@ -101,140 +127,16 @@
  ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
 
  ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
+ ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
 
  ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ e27dd96 Add Galaxy S7/edge maintainer (#761)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/22/2017
-
-
- ▪ project frameworks/base/
- ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
-
- ▪ project hardware/qcom/fm/
- ▪ 51e71fd libfm_jni: Fix strchr implicit char* typecast in ConfFileParser
- ▪ 56dd18a libjm_jni: Missing liblog dependency and jni core headers
-
- ▪ project packages/apps/Settings/
  ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
- ▪ 22974ab Fix screenshots delay default value
-
- ▼ 04/21/2017
-
-
- ▪ project device/motorola/msm8226-common/
- ▪ 5cf162a CMActions: Add option to pulse only if device is on a flat surface
- ▪ d339ce8 overlay: Disable SIM batch operations
-
- ▪ project device/oppo/common/
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 41cd40d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.15' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ ce39c30 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 434068f Fix duplicate copy file rules
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 5f3d105 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Gello/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/Settings/
- ▪ 71280d1 Add me as Sirius maintainer (#758)
- ▪ 304dc77 Fix the build up !
- ▪ 7b807dc Add Capricorn maintanier (#757)
- ▪ 9f4c631 Add Nougat Maintainer for LeEco Le Max2 (x2) (#755)
- ▪ 1257948 Settings: update string
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/ThemeChooser/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/ThemesProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/LiveLockScreenService/
 
  ▪ project packages/services/OmniJaws/
-
- ▪ project packages/services/ThemeManagerService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
