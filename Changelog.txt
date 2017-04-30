@@ -2,8 +2,36 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/30/2017
+
+
+ ▪ project bootable/recovery/
+ ▪ 5d701cc recovery: Complete project pathmap usage
+
+ ▪ project build/
+ ▪ 1856c8b Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
+ ▪ 3796928 build: fix verity generation
+
+ ▪ project frameworks/base/
+ ▪ 42c3f58 am: Handle unchecked activity starts for protected components (2)
+
+ ▪ project packages/apps/Dialer/
+ ▪ 8c8f139 InCallUI: Don't force enable the prox sensor for incoming calls
+
+ ▪ project packages/apps/Settings/
+ ▪ 4a73b1b Added Device Maintainer For K3 Note (K50a40) (#771)
+
  ▼ 04/29/2017
 
+
+ ▪ project bootable/recovery/
+ ▪ 39ce741 Revert "recovery:updater: Changes to support 32->64 bit upgrades"
+
+ ▪ project device/oppo/common/
+ ▪ a141dca recovery: Use project pathmap for recovery
+
+ ▪ project device/qcom/common/
+ ▪ 0dc3673 recovery: Use project pathmap for recovery
 
  ▪ project frameworks/base/
 
@@ -13,6 +41,9 @@
  ▪ project packages/apps/Settings/
  ▪ 57fbef2 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
  ▪ 800c80e Fix SB ticker icon and text default color
+
+ ▪ project system/extras/
+ ▪ f30ae7f Use project pathmap for recovery
 
  ▼ 04/28/2017
 
@@ -119,24 +150,4 @@
  ▪ project vendor/oneplus/
  ▪ 2b571b4 op3: Add missing & remove unused blobs
  ▪ bc1b928 op3: Update to OB14 blobs
-
- ▼ 04/23/2017
-
-
- ▪ project external/stagefright-plugins/
- ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
-
- ▪ project frameworks/base/
- ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
-
- ▪ project packages/services/OmniJaws/
 
