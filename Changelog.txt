@@ -2,6 +2,26 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/01/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ a64e601 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 2b7ef00 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 66fa46b KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 51e4af0 mm: migrate dirty page without clear_page_dirty_for_io etc
+ ▪ 38e1eb4 mm: fix warning in __set_page_dirty_nobuffers
+ ▪ b81b030 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 864971d BACKPORT: signal: allow to send any siginfo to itself
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/30/2017
 
 
@@ -130,24 +150,4 @@
  ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 04/24/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ fc1c0d9 Add special case for stereo camcorder
- ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ e27dd96 Add Galaxy S7/edge maintainer (#761)
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/oneplus/
- ▪ 2b571b4 op3: Add missing & remove unused blobs
- ▪ bc1b928 op3: Update to OB14 blobs
 
