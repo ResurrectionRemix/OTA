@@ -2,6 +2,145 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 04/30/2017
+
+
+ ▪ project build/
+ ▪ 1856c8b Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
+ ▪ 3796928 build: fix verity generation
+
+ ▪ project packages/apps/Dialer/
+ ▪ 8c8f139 InCallUI: Don't force enable the prox sensor for incoming calls
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 04/29/2017
+
+
+ ▪ project bootable/recovery/
+ ▪ 5d701cc recovery: Complete project pathmap usage
+ ▪ 39ce741 Revert "recovery:updater: Changes to support 32->64 bit upgrades"
+
+ ▪ project device/qcom/common/
+ ▪ 0dc3673 recovery: Use project pathmap for recovery
+
+ ▪ project frameworks/base/
+ ▪ 42c3f58 am: Handle unchecked activity starts for protected components (2)
+
+ ▪ project hardware/libhardware_legacy/
+ ▪ ec33ac3 wifi: add firmware loader support for the non-LKM case
+
+ ▪ project packages/apps/Settings/
+ ▪ 4a73b1b Added Device Maintainer For K3 Note (K50a40) (#771)
+
+ ▪ project system/extras/
+ ▪ f30ae7f Use project pathmap for recovery
+
+ ▼ 04/28/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 57fbef2 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
+ ▪ 800c80e Fix SB ticker icon and text default color
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 40e3809 JobService: Expose configuration shim refresh delay
+
+ ▼ 04/27/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ e0ef0c7 op3: Remove fpc delays after authentication cancelled
+ ▪ 144ea5a Merge pull request #6 from Joshndroid/apascual89
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 3f3c33b Add a looper to the locale change handler
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 29b0b0a Trebuchet: lineage launcher icon
+
+ ▼ 04/26/2017
+
+
+ ▪ project frameworks/base/
+ ▪ b250de6 Fix animation duration for custom animations
+
+ ▪ project frameworks/opt/telephony/
+ ▪ bc43228 Create cdma dummy apns.
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
+
+ ▪ project packages/apps/Settings/
+ ▪ c50d9a6 added zuk Z2 plus (#768)
+ ▪ 52d6890 Settings: Custom animation duration settings [2/2]
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
+ ▪ 99649a5 Don't show market links if market app is protected
+ ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 04/25/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ f002837 Revert "op3(t): overlay: enable config_fingerprintRemoveClientOnCancel"
+
+ ▪ project frameworks/base/
+ ▪ 4863e25 Fix DUI slippery flag logic and IllegalArgumentException [2/2]
+ ▪ 1650a12 Need to resize new created stack to fullscreen after docked stack tasks has moved into it.
+ ▪ cda2cbe Fix race condition when writing UidState of appops.
+ ▪ 000c5b8 Fix PacketKeepalive.stop() crash
+ ▪ deef943 ActivityStack index OOB cause device restart
+ ▪ 07a5433 Remove force weather update bits
+ ▪ 48f1315 Redundant waiting time of keyguard unlocking after reboot
+ ▪ 7911e22 Make sure that the device name is not null before returning it
+ ▪ 8c3fb3b Fix a null pointer exception in FragmentManager
+ ▪ aa5f6e6 Keyguard: Move CAF strings to cm_strings.xml.
+ ▪ 94a3bb6 fingerprint: notify client when cancelling succeeded
+ ▪ 2e7a838 Revert "base: services: add config_fingerprintRemoveClientOnCancel"
+
+ ▪ project packages/apps/DUI/
+ ▪ 8f840c5 Fix DUI slippery flag logic and IllegalArgumentException [1/2]
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4382afd Screenshot Delay:Make it faster optionally
+
+ ▪ project packages/services/OmniJaws/
+ ▪ 772c1b8 OmniJaws: remove separation between force and not force update
+ ▪ 7193cd8 OmniJaws: add fetch weather data retry loop
+
+ ▼ 04/24/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ fc1c0d9 Add special case for stereo camcorder
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 04/23/2017
 
 
@@ -11,10 +150,12 @@
  ▪ f77730d op3: Update to OB14 blobs
  ▪ 68d0267 op3: use stock aptX libraries from ob14
 
+ ▪ project external/stagefright-plugins/
+ ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
+
  ▪ project frameworks/base/
 
  ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ fc1c0d9 Add special case for stereo camcorder
  ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
 
  ▪ project kernel/oneplus/msm8996/
@@ -30,214 +171,4 @@
  ▪ project vendor/oneplus/
  ▪ 2b571b4 op3: Add missing & remove unused blobs
  ▪ bc1b928 op3: Update to OB14 blobs
-
- ▼ 04/22/2017
-
-
- ▪ project external/stagefright-plugins/
- ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
-
- ▪ project frameworks/base/
- ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/21/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ 22974ab Fix screenshots delay default value
- ▪ 71280d1 Add me as Sirius maintainer (#758)
- ▪ 304dc77 Fix the build up !
- ▪ 7b807dc Add Capricorn maintanier (#757)
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 04/20/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ ad30eca Enable dash charge flag
-
- ▪ project frameworks/base/
- ▪ f1e008a SystemUI:Notification bar custom notification display problems
- ▪ d44c3f3 BT: Update wait function in ManagerService to handle  BLE states
- ▪ e5e5b09 SystemUI: Fix QSTileHost exception
- ▪ 8a62038 SystemUI: [RJIL new function] AutoBrightness
- ▪ 3f767d0 SystemUI: Fix SystemUI ANR
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 41cd40d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.15' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ ce39c30 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 434068f Fix duplicate copy file rules
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 5f3d105 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/DUI/
- ▪ eaf848b DUI: Basenavigationbar: Catch Slippery Exception
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Gello/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/Settings/
- ▪ 9f4c631 Add Nougat Maintainer for LeEco Le Max2 (x2) (#755)
- ▪ 1257948 Settings: update string
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/ThemeChooser/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/ThemesProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/LiveLockScreenService/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project packages/services/ThemeManagerService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▼ 04/19/2017
-
-
- ▪ project android/
- ▪ 30d3069 crowdin: fix sync
-
- ▪ project packages/apps/Dialer/
-
- ▼ 04/18/2017
-
-
- ▪ project android/
- ▪ d1362da [2/2] crowdin: add OmniJaws
-
- ▪ project external/boringssl/
- ▪ 84b7017 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
- ▪ 7609007 Don't set a default armcap state in dynamic armcap modes.
- ▪ 733592a Rewrite ARM feature detection.
- ▪ d50af31 Remove CRYPTO_set_NEON_functional.
-
- ▪ project frameworks/base/
- ▪ 3da5ccc Improve Hw keys Tile
- ▪ 9703f9a Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
- ▪ a04a27f Make Data/Wifi activity icon in statusbar optional [1/2]
- ▪ 6591688 Data activity icon in statusbar
- ▪ 88921e1 SystemUI: Add tile for enable/disable HW keys
- ▪ bc651fe fix wrong algorithm in WifiPowerPerPacket()
- ▪ 2313020 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
- ▪ 8776352 Ticker:Set default color to White [1/2]
- ▪ f8609ef Fix missing lockscreen shortcut icons after reboot
- ▪ 0d36175 Themes: Allow volume slider and thumb to work with custom images.
- ▪ 8355307 Separate tile label color from icon drawable color
- ▪ 11576a8 Basestatusbar:Fix Headsup Not Working
- ▪ 036a71d Fix Another Illegal Argument Exception when Changing DPI
- ▪ 0c31a30 base:Optional weather info in expanded header [1/2]
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ dea4c30 add device vega (#754)
- ▪ c5ce86a Settings: Fix ugly whitespacing and build
- ▪ 5e5d45c add maintainer for clark, flounder, manta, vs980, d2lte, and tenderloin (#753)
-
- ▪ project system/extras/
- ▪ b5332df Update verity_verifier from master branch
-
- ▼ 04/17/2017
-
-
- ▪ project packages/apps/Dialer/
- ▪ a5b497f Dialpad: option to show dialpad automatically (#1)
-
- ▪ project packages/apps/Settings/
- ▪ e2bb742 Fix 7.1.2 mismerge
- ▪ b6aa3ee Option to disable data & wifi indicators
- ▪ cf61891 Add HWkeys Settings as an activity
- ▪ 08a6aa1 Ticker:Set default colors to white [2/2]
-
- ▪ project system/extras/
- ▪ 196ed2f verity: Include libcrypto_utils_static
- ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
- ▪ 442b784 Revert "Switch to BoringSSL for crypto."
 
