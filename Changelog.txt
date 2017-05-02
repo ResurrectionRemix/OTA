@@ -2,6 +2,69 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/02/2017
+
+
+ ▪ project android/
+ ▪ 7c6e872 manifests: 7.1.2_r2-> r8
+ ▪ 16e5022 android: nuke browser, welcome jelly
+ ▪ 8ead0d4 Manifest : Stop syncing blank intel sensor repo.
+ ▪ 1aaf24e manifest: Track our external/libchrome
+
+ ▪ project build/
+ ▪ fab5d1d Merge tag 'android-7.1.2_r8' into nougat
+ ▪ e6c0264 Revert "We want Browser"
+
+ ▪ project external/boringssl/
+ ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
+
+ ▪ project frameworks/av/
+ ▪ 24697a3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+ ▪ 16dcaaa Merge tag 'android-7.1.2_r8' into cm-14.1
+
+ ▪ project frameworks/base/
+ ▪ 0501270 Merge tag 'android-7.1.2_r8' into nougat
+ ▪ e8d78b4 fix anr when concurrent request provider
+ ▪ d0d7aee Ensure that the decor view is attached to window.
+ ▪ 119e0d3 Bad token of activity when do the launch work at the app process side.
+ ▪ 0555835 Query geo description in worker thread to prevent ANR
+ ▪ a87340f remove duplicated incorrectly code in ProcessRecord
+ ▪ 3f19033 fix foreground process will be mistakenly killed when it uses content provider.
+ ▪ 1e33d08 Restart persistent process if start timeout.
+ ▪ 88fd7c1 fix system_server crash issue caused by fd leak.
+ ▪ 2f5069e Compass qs tile: Fix icon in edit mode
+
+ ▪ project frameworks/native/
+ ▪ c544fcc Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+ ▪ b8fb318 Merge tag 'android-7.1.2_r8' into cm-14.1
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2f41ee6 Jelly: expose toolbar elevation
+ ▪ 74270cc Jelly: history: swipe to delete
+ ▪ 244fab9 Jelly: use custom dialog for home page selection
+
+ ▪ project packages/apps/Messaging/
+ ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
+
+ ▪ project packages/apps/Settings/
+ ▪ e6d2f89 Merge tag 'android-7.1.2_r8' into nougat
+ ▪ f69dd8c Revert "Settings: Lost cached BT devices in found devices list"
+ ▪ 226f681 Settings[Wifi]: fix the input invalid length for WEP encryption.
+ ▪ 20f7649 Settings: Fix internal storage summary for non-emulated storage
+ ▪ a8ca4b4 Add v521 device and maintainer  (#774)
+ ▪ 9283d7e Add Galaxy Grand Prime As Official. (#773)
+
+ ▪ project system/bt/
+ ▪ 85d4e42 Merge tag 'android-7.1.2_r8' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 259efc1 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+ ▪ d7cbf4b Merge tag 'android-7.1.2_r8' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ 137c340 cm: nuke browser, welcome jelly
+ ▪ b43a798 cm: Remove obsolete and unused overlays and configs
+
  ▼ 05/01/2017
 
 
@@ -16,11 +79,17 @@
  ▪ b81b030 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
  ▪ 864971d BACKPORT: signal: allow to send any siginfo to itself
 
+ ▪ project packages/apps/Jelly/
+ ▪ 17755b3 Jelly: add option to clear cookies
+
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
 
  ▪ project packages/services/OmniJaws/
+
+ ▪ project system/extras/su/
+ ▪ 7344440 su: Don't start daemon for adb only mode
 
  ▼ 04/30/2017
 
@@ -37,6 +106,9 @@
 
  ▪ project packages/apps/Dialer/
  ▪ 8c8f139 InCallUI: Don't force enable the prox sensor for incoming calls
+
+ ▪ project packages/apps/Jelly/
+ ▪ 13c1311 Jelly: Fix typo
 
  ▪ project packages/apps/Settings/
  ▪ 4a73b1b Added Device Maintainer For K3 Note (K50a40) (#771)
@@ -58,12 +130,32 @@
  ▪ project hardware/libhardware_legacy/
  ▪ ec33ac3 wifi: add firmware loader support for the non-LKM case
 
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Recorder/
+
  ▪ project packages/apps/Settings/
  ▪ 57fbef2 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
  ▪ 800c80e Fix SB ticker icon and text default color
 
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project system/core/
+ ▪ 3efb4ec fs_mgr: Use project pathmap for recovery
+ ▪ 783cb54 healthd: Use project pathmap for recovery
+
  ▪ project system/extras/
  ▪ f30ae7f Use project pathmap for recovery
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 
  ▼ 04/28/2017
 
@@ -78,6 +170,9 @@
 
  ▼ 04/27/2017
 
+
+ ▪ project device/oneplus/bacon/
+ ▪ 4730417 bacon: we have a device with 3GB RAM
 
  ▪ project frameworks/base/
 
@@ -136,18 +231,4 @@
  ▪ project packages/services/OmniJaws/
  ▪ 772c1b8 OmniJaws: remove separation between force and not force update
  ▪ 7193cd8 OmniJaws: add fetch weather data retry loop
-
- ▼ 04/25/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
-
- ▪ project packages/services/OmniJaws/
 
