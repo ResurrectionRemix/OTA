@@ -2,6 +2,63 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/03/2017
+
+
+ ▪ project bionic/
+ ▪ 22d6b5b libc: ARM: Add 32-bit Kryo memcpy
+ ▪ 45a3987 libc: use Cortex-A7/A53 memset on Kryo
+ ▪ ba97f82 Add kryo support.
+
+ ▪ project bootable/recovery/
+ ▪ 8011e66 recovery: Fix UI freezing
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 9ab33c4 kenzo: show correct charging current value on lockscreen
+ ▪ 2321e00 kenzo: Pin qcrilmsgtunnel
+ ▪ e93bc2a kenzo: Disable fluence on voicerec
+ ▪ eb56f9b kenzo: Enable 24bit offload
+ ▪ 281c666 kenzo: All hail Dominator
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 63fa3ed msm8956: Disable LLStats
+ ▪ 1753503 msm8956: Add aanc_tuning_mixer_wcd9335
+ ▪ c92ca83 Revert "msm8956: Re-enable XML audio policy"
+ ▪ 3ad6b9f msm8956: Fix Fingerprintd Denial
+ ▪ cc811f1 msm8956: nuke that waste of space :D
+ ▪ 18c9ba9 msm8956-common: Nuke sdcardfs
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 24ad86e ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
+ ▪ 3048b61 kenzo: Fix & enable Goodix GF318M fingerprint support
+ ▪ b2bd74b uapi: export lirc.h header
+ ▪ b863541 lirc.h: remove several unused ioctls
+ ▪ 9ae5e85 bz#75751: Move internal header file lirc.h to uapi/
+ ▪ ba2692a Makefile: remove REAL_CC and calls to gcc wrapper script
+ ▪ b7dc4d9 staging: prima: Fix non-debug build and switch to it
+ ▪ 9b9b2d7 net: rmnet_data: Silence "Unkown IOCTL" log spam
+
+ ▪ project packages/apps/DUI/
+ ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
+
+ ▪ project packages/apps/Dialer/
+ ▪ b239b70 Dialer: InCallUI: Enable Sustained Performance Mode We should make sure that thermals are stable during active calls, so we should enable Sustained Performance Mode for the InCallActivity.
+
+ ▪ project packages/apps/Settings/
+ ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
+ ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/motorola/
+ ▪ 43d0c43 shamu: update blobs from N6F27C factory image
+
+ ▪ project vendor/xiaomi/
+ ▪ a70f79f kenzo: Add modified qcrilmsgtunnel
+ ▪ 07b38c4 kenzo: Update
+
  ▼ 05/02/2017
 
 
@@ -16,22 +73,9 @@
  ▪ e6c0264 Revert "We want Browser"
 
  ▪ project device/xiaomi/kenzo/
- ▪ 9ab33c4 kenzo: show correct charging current value on lockscreen
- ▪ 2321e00 kenzo: Pin qcrilmsgtunnel
- ▪ e93bc2a kenzo: Disable fluence on voicerec
- ▪ eb56f9b kenzo: Enable 24bit offload
- ▪ 281c666 kenzo: All hail Dominator
  ▪ 87e84e3 kenzo: Add goodix services and sepolicy
  ▪ 8594e2e kenzo: Support Goodix fingerprint
  ▪ 84e67a6 kenzo: Remove unused fpc firmware
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 63fa3ed msm8956: Disable LLStats
- ▪ 1753503 msm8956: Add aanc_tuning_mixer_wcd9335
- ▪ c92ca83 Revert "msm8956: Re-enable XML audio policy"
- ▪ 3ad6b9f msm8956: Fix Fingerprintd Denial
- ▪ cc811f1 msm8956: nuke that waste of space :D
- ▪ 18c9ba9 msm8956-common: Nuke sdcardfs
 
  ▪ project external/boringssl/
  ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
@@ -56,16 +100,6 @@
  ▪ c544fcc Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
  ▪ b8fb318 Merge tag 'android-7.1.2_r8' into cm-14.1
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 24ad86e ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
- ▪ 3048b61 kenzo: Fix & enable Goodix GF318M fingerprint support
- ▪ b2bd74b uapi: export lirc.h header
- ▪ b863541 lirc.h: remove several unused ioctls
- ▪ 9ae5e85 bz#75751: Move internal header file lirc.h to uapi/
- ▪ ba2692a Makefile: remove REAL_CC and calls to gcc wrapper script
- ▪ b7dc4d9 staging: prima: Fix non-debug build and switch to it
- ▪ 9b9b2d7 net: rmnet_data: Silence "Unkown IOCTL" log spam
-
  ▪ project packages/apps/Jelly/
  ▪ 2f41ee6 Jelly: expose toolbar elevation
  ▪ 74270cc Jelly: history: swipe to delete
@@ -75,8 +109,6 @@
  ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
 
  ▪ project packages/apps/Settings/
- ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
- ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
  ▪ e6d2f89 Merge tag 'android-7.1.2_r8' into nougat
  ▪ f69dd8c Revert "Settings: Lost cached BT devices in found devices list"
  ▪ 226f681 Settings[Wifi]: fix the input invalid length for WEP encryption.
@@ -95,15 +127,11 @@
  ▪ 137c340 cm: nuke browser, welcome jelly
  ▪ b43a798 cm: Remove obsolete and unused overlays and configs
 
- ▪ project vendor/motorola/
- ▪ 43d0c43 shamu: update blobs from N6F27C factory image
-
- ▪ project vendor/xiaomi/
- ▪ a70f79f kenzo: Add modified qcrilmsgtunnel
- ▪ 07b38c4 kenzo: Update
-
  ▼ 05/01/2017
 
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ d10c67a msm8956: Start qseecomd on post-fs
 
  ▪ project frameworks/base/
 
@@ -137,9 +165,6 @@
  ▪ project build/
  ▪ 1856c8b Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
  ▪ 3796928 build: fix verity generation
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ d10c67a msm8956: Start qseecomd on post-fs
 
  ▪ project frameworks/base/
  ▪ 42c3f58 am: Handle unchecked activity starts for protected components (2)
@@ -180,6 +205,7 @@
 
  ▪ project packages/apps/Settings/
  ▪ 57fbef2 Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects (#770)
+ ▪ 800c80e Fix SB ticker icon and text default color
 
  ▪ project packages/apps/SetupWizard/
 
@@ -199,11 +225,13 @@
  ▼ 04/28/2017
 
 
+ ▪ project frameworks/base/
+
  ▪ project packages/apps/Settings/
- ▪ 800c80e Fix SB ticker icon and text default color
 
  ▪ project packages/apps/ThemeInterfacer/
  ▪ 40e3809 JobService: Expose configuration shim refresh delay
+ ▪ 3f3c33b Add a looper to the locale change handler
 
  ▼ 04/27/2017
 
@@ -216,40 +244,15 @@
 
  ▪ project frameworks/base/
 
- ▪ project packages/apps/Settings/
- ▪ c50d9a6 added zuk Z2 plus (#768)
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 3f3c33b Add a looper to the locale change handler
-
- ▪ project packages/apps/Trebuchet/
- ▪ 29b0b0a Trebuchet: lineage launcher icon
-
- ▼ 04/26/2017
-
-
- ▪ project frameworks/base/
- ▪ b250de6 Fix animation duration for custom animations
-
- ▪ project frameworks/opt/telephony/
- ▪ bc43228 Create cdma dummy apns.
-
  ▪ project hardware/qcom/audio-caf/msm8996/
  ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
 
- ▪ project packages/apps/Gallery2/
- ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
-
  ▪ project packages/apps/Settings/
- ▪ 52d6890 Settings: Custom animation duration settings [2/2]
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
+ ▪ c50d9a6 added zuk Z2 plus (#768)
 
  ▪ project packages/apps/Trebuchet/
+ ▪ 29b0b0a Trebuchet: lineage launcher icon
  ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
- ▪ 99649a5 Don't show market links if market app is protected
- ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
 
  ▪ project packages/services/OmniJaws/
 
