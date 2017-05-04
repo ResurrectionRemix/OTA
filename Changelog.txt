@@ -2,6 +2,64 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/04/2017
+
+
+ ▪ project bootable/recovery/
+ ▪ 616bf9a recovery: Fix event system
+
+ ▪ project frameworks/base/
+ ▪ a2925b4 Base:WeatherView Should go on error not Entire View
+ ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
+ ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
+ ▪ d9c5ba7 base: SystemUI: dont hide navbar for screenshot crop
+ ▪ 9fa52a5 base: SystemUI: qs: location tile quickbar press is just toggle
+ ▪ 3db7979 base: SystemUI: dont hide weather forcast data on errors
+ ▪ 4c60572 base: SystemUI: use new OmniJaws error broadcasts
+ ▪ ad493bf Fix keyguard is black background while screen turning off/on quickly
+ ▪ 41d90ba Reboot/Recovery QS Tile: Use vectorized icons
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ 1a18e02 fs/proc/array.c: make safe access to group_leader
+ ▪ f29e875 ALSA: info: Check for integer overflow in snd_info_entry_write()
+ ▪ ff57117 perf: don't leave group_entry on sibling list (use-after-free)
+ ▪ 9a56042 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+ ▪ 176e3d5 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ 37308e4 input: touchscreen: gt9xx: fix memory corruption in Goodix driver
+ ▪ 8304341 soc: qcom: scm: add check to avoid buffer overflow
+ ▪ 49b3d1d ASoC: soc: prevent risk of buffer overflow
+ ▪ 41cc25c ASoC: msm: qdsp6v2: return error when copy from userspace fails
+ ▪ 81c5e81 ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
+ ▪ eb958e7 trace: resolve stack corruption due to string copy
+ ▪ e4b58a8 ASoC: wcd9320: Fix out of bounds for mad input value
+ ▪ 02ab642 slim-msm: Synchronize SSR callbacks
+ ▪ 6084099 crypto: msm: check length before copying to buf in _debug_stats_read
+ ▪ 3f70bb8 prima: Trim operation classes to max supported in change station
+ ▪ 2ea1026 perf: Tighten (and fix) the grouping condition
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 33f769f Add device_maintainers_fragment for device thea (#780)
+ ▪ 3e9cabc Add Device Maintainer for motorola moto g2 LTE (#781)
+ ▪ a2cd85e update a string
+
+ ▪ project packages/services/OmniJaws/
+ ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
+ ▪ a169929 OmniJaws: weather widget fixes
+ ▪ a9b5863 OmniJaws: add weather widget
+ ▪ d106dcd OmniJaws: add error broadcast
+
+ ▪ project vendor/motorola/
+ ▪ 9b10207 victara: Hexedit libqc-opt.so for N
+ ▪ 35319b9 victara: Switch to using libqc-opt
+
  ▼ 05/03/2017
 
 
@@ -28,7 +86,9 @@
  ▪ cc811f1 msm8956: nuke that waste of space :D
  ▪ 18c9ba9 msm8956-common: Nuke sdcardfs
 
- ▪ project frameworks/base/
+ ▪ project kernel/motorola/msm8226/
+ ▪ f033a00 net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
+ ▪ 4e441ac Fix "Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs"
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 24ad86e ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
@@ -49,8 +109,6 @@
  ▪ project packages/apps/Settings/
  ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
  ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
-
- ▪ project packages/services/OmniJaws/
 
  ▪ project vendor/motorola/
  ▪ 43d0c43 shamu: update blobs from N6F27C factory image
@@ -232,27 +290,4 @@
  ▪ project packages/apps/ThemeInterfacer/
  ▪ 40e3809 JobService: Expose configuration shim refresh delay
  ▪ 3f3c33b Add a looper to the locale change handler
-
- ▼ 04/27/2017
-
-
- ▪ project device/oneplus/bacon/
- ▪ 4730417 bacon: we have a device with 3GB RAM
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ c3a0901 msm8956: rootdir: Update power configs
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
-
- ▪ project packages/apps/Settings/
- ▪ c50d9a6 added zuk Z2 plus (#768)
-
- ▪ project packages/apps/Trebuchet/
- ▪ 29b0b0a Trebuchet: lineage launcher icon
- ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
-
- ▪ project packages/services/OmniJaws/
 
