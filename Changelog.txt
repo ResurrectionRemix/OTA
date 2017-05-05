@@ -2,6 +2,38 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/05/2017
+
+
+ ▪ project frameworks/base/
+ ▪ ed3936e Make Scrolling for TaskManager list a lot easier
+ ▪ 03a9a2e Base:Dont do anything on weather errors for header & keyguard
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ eabaaf5 netlink: Fix dump skb leak/double free
+ ▪ 742bd0e msm: crypto: set CLR_CNTXT bit for crypto operations
+ ▪ de9679e qseecom: check buffer size when loading firmware images
+ ▪ 5a4f8bd ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions
+ ▪ bf35e60 tcp: do not lock listener to process SYN packets
+ ▪ 750f6a0 input: synaptics_dsx: protect tmpbuf allocation.
+ ▪ ae466fb tmpfs: clear S_ISGID when setting posix ACLs
+ ▪ 1ea2480 BACKPORT: posix_acl: Clear SGID bit when setting file permissions
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ a3acbae Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into nougat
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2006774 Jelly: no need of using srcCompat for imageviews
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 008a015 Update resurrection_device_maintainers_strings.xml (#782)
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/04/2017
 
 
@@ -9,7 +41,6 @@
  ▪ 616bf9a recovery: Fix event system
 
  ▪ project frameworks/base/
- ▪ a2925b4 Base:WeatherView Should go on error not Entire View
  ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
  ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
  ▪ d9c5ba7 base: SystemUI: dont hide navbar for screenshot crop
@@ -38,6 +69,10 @@
  ▪ 2ea1026 perf: Tighten (and fix) the grouping condition
 
  ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
+ ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
 
  ▪ project packages/apps/OmniSwitch/
 
@@ -279,15 +314,4 @@
  ▪ f30ae7f Use project pathmap for recovery
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▼ 04/28/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 40e3809 JobService: Expose configuration shim refresh delay
- ▪ 3f3c33b Add a looper to the locale change handler
 
