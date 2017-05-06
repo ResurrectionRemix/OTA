@@ -2,169 +2,32 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/05/2017
+ ▼ 05/06/2017
 
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 1e970f9 op3: Update decoder profiling result
+ ▪ 7b6faa0 op3: Unpin fpc hal
 
  ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ de1b3bb Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into HEAD
+ ▪ b39c146 mm: Tighten x86 /dev/mem with zeroing reads
+ ▪ 94c9fb3 crypto: ahash - Fix EINPROGRESS notification callback
+ ▪ 49a755e mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 13914d6 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 412f71f scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ 5af6f27 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ d9b5566 KEYS: Change the name of the dead type to ".dead" to prevent user access
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Jelly/
- ▪ 2006774 Jelly: no need of using srcCompat for imageviews
-
- ▪ project packages/apps/OmniSwitch/
-
  ▪ project packages/apps/Settings/
+ ▪ 34a8e66 Change codename of K3 Note (#783)
 
  ▪ project packages/services/OmniJaws/
 
- ▪ project system/bt/
- ▪ 0ebf465 Do not include the trailing NULL from the C-String in the SDP service name
-
- ▼ 05/04/2017
-
-
- ▪ project bootable/recovery/
- ▪ 616bf9a recovery: Fix event system
-
- ▪ project frameworks/base/
- ▪ ed3936e Make Scrolling for TaskManager list a lot easier
- ▪ 03a9a2e Base:Dont do anything on weather errors for header & keyguard
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
- ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 008a015 Update resurrection_device_maintainers_strings.xml (#782)
- ▪ 33f769f Add device_maintainers_fragment for device thea (#780)
- ▪ 3e9cabc Add Device Maintainer for motorola moto g2 LTE (#781)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/03/2017
-
-
- ▪ project bionic/
- ▪ 22d6b5b libc: ARM: Add 32-bit Kryo memcpy
- ▪ 45a3987 libc: use Cortex-A7/A53 memset on Kryo
- ▪ ba97f82 Add kryo support.
-
- ▪ project bootable/recovery/
- ▪ 8011e66 recovery: Fix UI freezing
-
- ▪ project frameworks/base/
- ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
- ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
- ▪ d9c5ba7 base: SystemUI: dont hide navbar for screenshot crop
- ▪ 9fa52a5 base: SystemUI: qs: location tile quickbar press is just toggle
- ▪ 3db7979 base: SystemUI: dont hide weather forcast data on errors
- ▪ 4c60572 base: SystemUI: use new OmniJaws error broadcasts
- ▪ ad493bf Fix keyguard is black background while screen turning off/on quickly
- ▪ 41d90ba Reboot/Recovery QS Tile: Use vectorized icons
-
- ▪ project packages/apps/DUI/
- ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
-
- ▪ project packages/apps/Dialer/
- ▪ b239b70 Dialer: InCallUI: Enable Sustained Performance Mode We should make sure that thermals are stable during active calls, so we should enable Sustained Performance Mode for the InCallActivity.
-
- ▪ project packages/apps/Settings/
- ▪ a2cd85e update a string
-
- ▪ project packages/services/OmniJaws/
- ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
- ▪ a169929 OmniJaws: weather widget fixes
- ▪ a9b5863 OmniJaws: add weather widget
- ▪ d106dcd OmniJaws: add error broadcast
-
- ▼ 05/02/2017
-
-
- ▪ project android/
- ▪ 7c6e872 manifests: 7.1.2_r2-> r8
- ▪ 16e5022 android: nuke browser, welcome jelly
- ▪ 8ead0d4 Manifest : Stop syncing blank intel sensor repo.
- ▪ 1aaf24e manifest: Track our external/libchrome
-
- ▪ project build/
- ▪ fab5d1d Merge tag 'android-7.1.2_r8' into nougat
- ▪ e6c0264 Revert "We want Browser"
-
- ▪ project external/boringssl/
- ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/av/
- ▪ 24697a3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
- ▪ 16dcaaa Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/base/
- ▪ 0501270 Merge tag 'android-7.1.2_r8' into nougat
- ▪ e8d78b4 fix anr when concurrent request provider
- ▪ d0d7aee Ensure that the decor view is attached to window.
- ▪ 119e0d3 Bad token of activity when do the launch work at the app process side.
- ▪ 0555835 Query geo description in worker thread to prevent ANR
- ▪ a87340f remove duplicated incorrectly code in ProcessRecord
- ▪ 3f19033 fix foreground process will be mistakenly killed when it uses content provider.
- ▪ 1e33d08 Restart persistent process if start timeout.
- ▪ 88fd7c1 fix system_server crash issue caused by fd leak.
- ▪ 2f5069e Compass qs tile: Fix icon in edit mode
-
- ▪ project frameworks/native/
- ▪ c544fcc Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
- ▪ b8fb318 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project packages/apps/Jelly/
- ▪ 2f41ee6 Jelly: expose toolbar elevation
- ▪ 74270cc Jelly: history: swipe to delete
- ▪ 244fab9 Jelly: use custom dialog for home page selection
-
- ▪ project packages/apps/Messaging/
- ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
-
- ▪ project packages/apps/Settings/
- ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
- ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
- ▪ e6d2f89 Merge tag 'android-7.1.2_r8' into nougat
- ▪ f69dd8c Revert "Settings: Lost cached BT devices in found devices list"
- ▪ 226f681 Settings[Wifi]: fix the input invalid length for WEP encryption.
- ▪ 20f7649 Settings: Fix internal storage summary for non-emulated storage
- ▪ a8ca4b4 Add v521 device and maintainer  (#774)
- ▪ 9283d7e Add Galaxy Grand Prime As Official. (#773)
-
- ▪ project system/bt/
- ▪ 85d4e42 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project system/core/
- ▪ 259efc1 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
- ▪ d7cbf4b Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project vendor/cm/
- ▪ 137c340 cm: nuke browser, welcome jelly
- ▪ b43a798 cm: Remove obsolete and unused overlays and configs
-
- ▼ 05/01/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Jelly/
- ▪ 17755b3 Jelly: add option to clear cookies
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/extras/su/
- ▪ 7344440 su: Don't start daemon for adb only mode
+ ▪ project vendor/oneplus/
+ ▪ 1a181b5 op3: Update fpc hal from OB15
 
