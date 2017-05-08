@@ -2,6 +2,160 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/08/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ b7a3010 display: Add color metadata definition
+
+ ▪ project hardware/qcom/media-caf/msm8937/
+ ▪ de0c52e media: libOmxSw encoders require prop headers :(
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 372d14f Add missing string
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/motorola/
+ ▪ 5f8b3e6 addison: Display blobs update
+ ▪ 12285bf addison: Drop unneeded blobs
+ ▪ 17d357d addison: Switch to OSS GPS
+ ▪ 3a43b3d victara: Add libtqi-perfd-client.so
+
+ ▼ 05/07/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 948bba9 base: SystemUI: use content observer for recent grid config
+ ▪ 73dbc18 base:refactor recents code to switch between recents
+ ▪ b0f2122 [1/2] base: featureize ro.recents.grid
+ ▪ 319c5f7 Update OmniSwitch string
+ ▪ 9733626 OmniJawsClient : Move to framework
+ ▪ e2192bc SysUI : Use a different approach to Make perf profile tile invisible
+ ▪ 7805dad base: SystemUI: add dedicated TextView for OmniJaws error marker
+ ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
+ ▪ 6191804 hal: remove redundant logs from utils.c
+ ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
+
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ 26cd504 display: Add color metadata definition
+ ▪ eb49512 sdm: Use ColorMetadata in SDM
+ ▪ 37d5aff display: Add support for Rec.2020
+ ▪ b6a2bfb sdm: Use safe mode on External display on low end device
+ ▪ 9c64210 HWC: Set skip to layers with Non Integral Source Crop
+ ▪ 93afadf sdm: skip null commit on command mode panels
+ ▪ 2428bc4 libmemtrack: Fix integer overflow in kgsl function
+
+ ▪ project hardware/qcom/media-caf/msm8937/
+ ▪ fcd1cfd mm-video-v4l2: serialize FTB's for dropped frames
+ ▪ 057d1c7 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
+ ▪ a5da2d3 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
+ ▪ 76dd49f mm-video-v4l2: Update max level for h264 decoder to 5.1
+ ▪ 46aa731 mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
+ ▪ 5dc8e7e mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
+ ▪ 0a4ad7e mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
+ ▪ 9e702ea mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
+ ▪ 6076eb6 mm-video-v4l2: vdec: Support for HDR Info extension
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 41f45c5 ANDROID: sdcardfs: Call lower fs's revalidate
+ ▪ cd2ca02 ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
+ ▪ 9676dad Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
+ ▪ d11b9f5 ANDROID: sdcardfs: Use filesystem specific hash
+ ▪ 6af7f10 Revert "Android: sdcardfs: Don't do d_add for lower fs"
+ ▪ 863c452 Android: sdcardfs: Don't complain in fixup_lower_ownership
+ ▪ 98e1cba Android: sdcardfs: Don't do d_add for lower fs
+ ▪ fbfbd31 ANDROID: sdcardfs: ->iget fixes
+ ▪ 812568e Android: sdcardfs: Change cache GID value
+ ▪ 1baf74d ANDROID: sdcardfs: Directly pass lower file for mmap
+ ▪ 3ca3fae ANDROID: sdcardfs: update module info
+ ▪ 5d8fc69 ANDROID: sdcardfs: use d_splice_alias
+ ▪ d39f992 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
+ ▪ 9639893 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
+ ▪ a8142ed ANDROID: sdcardfs: remove unnecessary call to do_munmap
+ ▪ eff36cf ANDROID: sdcardfs: Fix style issues in macros
+ ▪ b398068 ANDROID: sdcardfs: Use seq_puts over seq_printf
+ ▪ 82c13ed ANDROID: sdcardfs: Use to kstrout
+ ▪ a721969 ANDROID: sdcardfs: Use pr_[...] instead of printk
+ ▪ ca7b147 ANDROID: sdcardfs: remove unneeded null check
+ ▪ c0fb5ae ANDROID: sdcardfs: Fix style issues with comments
+ ▪ e728532 ANDROID: sdcardfs: Fix formatting
+ ▪ 4a30fb3 ANDROID: sdcardfs: correct order of descriptors
+ ▪ 922f5b1 ANDROID: sdcardfs: Fix gid issue
+ ▪ 9a6e356 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
+ ▪ 3d6c730 ANDROID: sdcardfs: Remove uninformative prints
+ ▪ 30c7414 ANDROID: sdcardfs: move path_put outside of spinlock
+ ▪ 98d0544 ANDROID: sdcardfs: Use case insensitive hash function
+ ▪ 0ccb5cb ANDROID: sdcardfs: declare MODULE_ALIAS_FS
+ ▪ 00abe85 ANDROID: sdcardfs: Get the blocksize from the lower fs
+ ▪ 536b0eb ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
+ ▪ 9fa9ebd ANDROID: sdcardfs: Switch to internal case insensitive compare
+ ▪ 0e7f2b1 ANDROID: sdcardfs: Use spin_lock_nested
+ ▪ 7c568c6 ANDROID: sdcardfs: Replace get/put with d_lock
+ ▪ b29f5bc ANDROID: sdcardfs: rate limit warning print
+ ▪ b451e70 ANDROID: sdcardfs: Fix case insensitive lookup
+ ▪ 74c37ab ANDROID: sdcardfs: support direct-IO (DIO) operations
+ ▪ e882cad ANDROID: sdcardfs: implement vm_ops->page_mkwrite
+ ▪ 0dabebb ANDROID: sdcardfs: Don't bother deleting freelist
+ ▪ d393270 ANDROID: sdcardfs: Add missing path_put
+ ▪ 53476b0 ANDROID: sdcardfs: Fix incorrect hash
+ ▪ 3adbe7b ANDROID: sdcardfs: Switch strcasecmp for internal call
+ ▪ bcfdb4c ANDROID: sdcardfs: switch to full_name_hash and qstr
+ ▪ 511e762 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
+ ▪ b56ac50 ANDROID: sdcardfs: Remove redundant operation
+ ▪ 31d97c6 ANDROID: sdcardfs: add support for user permission isolation
+ ▪ b797d9d ANDROID: sdcardfs: Refactor configfs interface
+ ▪ 6b90450 ANDROID: sdcardfs: Allow non-owners to touch
+ ▪ 5b58d3e ANDROID: sdcardfs: Fix locking issue with permision fix up
+ ▪ 2a166b6 sdcardfs: Flag files as non-mappable
+ ▪ 1158f79 sdcardfs: Use per mount permissions
+ ▪ f12e9ee sdcardfs: Add gid and mask to private mount data
+ ▪ 03e5eff sdcardfs: User new permission2 functions
+ ▪ 1925e71 sdcardfs: Move directory unlock before touch
+ ▪ ea0659e sdcardfs: fix external storage exporting incorrect uid
+ ▪ 0130e93 sdcardfs: Added top to sdcardfs_inode_info
+ ▪ 30cae61 sdcardfs: Switch package list to RCU
+ ▪ 661ea34 sdcardfs: Fix locking for permission fix up
+ ▪ b742d13 sdcardfs: Check for other cases on path lookup
+ ▪ d25073b1 sdcardfs: override umask on mkdir and create
+ ▪ c9498d1 ANDROID: sdcardfs: fix itnull.cocci warnings
+ ▪ 5face15 sdcardfs: Truncate packages_gid.list on overflow
+ ▪ 99f6748 vfs: change d_canonical_path to take two paths
+ ▪ 8c12f54 sdcardfs: remove unneeded __init and __exit
+ ▪ 7af3cdb sdcardfs: Remove unused code
+ ▪ 03f632b sdcardfs: remove effectless config option
+ ▪ af1b02a sdcardfs: Add support for d_canonicalize
+ ▪ cfeb2ed vfs: add d_canonical_path for stacked filesystem support
+ ▪ 65cffcf sdcardfs: Bring up to date with Android M permissions:
+ ▪ 5b7fd0e sdcardfs: Changed type-cast in packagelist management
+ ▪ 1d239e3 sdcardfs: port to 3.10
+ ▪ 3a0a91e Initial port of sdcardfs
+
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ b0b0b4a ResurrectionOTA: squash all translations
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 20ea10d ROMStats: modify for ResurrectionRemix
+
+ ▪ project packages/apps/Settings/
+ ▪ 048aad9 Refactor Recents Category
+ ▪ d55ce18 Settings:featurize ro.recents.grid [2/2]
+ ▪ c415aa0 Mantainers: Delete WinKarbik from ido mantainer (#784)
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/06/2017
 
 
@@ -10,6 +164,19 @@
  ▪ 75504af op3: Unpin fpc hal
 
  ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ b39c146 mm: Tighten x86 /dev/mem with zeroing reads
+ ▪ 94c9fb3 crypto: ahash - Fix EINPROGRESS notification callback
+ ▪ 49a755e mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 13914d6 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 412f71f scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ 5af6f27 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ d9b5566 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 4a4bddf ANDROID: ion: Protect kref from userspace manipulation
+ ▪ ffcb9ac Kconfig: msm: disable ultrasound driver
+ ▪ f090ea2 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 20a5627 mm: migrate dirty page without clear_page_dirty_for_io etc
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 2477220 ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
@@ -822,10 +989,6 @@
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
  ▪ project packages/apps/Settings/
  ▪ 33f769f Add device_maintainers_fragment for device thea (#780)
  ▪ 3e9cabc Add Device Maintainer for motorola moto g2 LTE (#781)
@@ -871,6 +1034,30 @@
  ▪ f033a00 net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
  ▪ 4e441ac Fix "Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs"
 
+ ▪ project kernel/oneplus/msm8974/
+ ▪ d4508e4 sdcardfs: limit stacking depth
+ ▪ 1b28a35 BACKPORT: fs: limit filesystem stacking depth
+ ▪ d12bb42 crypto: msm: check integer overflow on total data len in qcedev.c
+ ▪ 5f749b9 msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c
+ ▪ 82576a6 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 131689d KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 4ba5bf6 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 2f0bb26 mm: migrate dirty page without clear_page_dirty_for_io etc
+ ▪ ac70037 mm: fix warning in __set_page_dirty_nobuffers
+ ▪ 5e630ee mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ c1fefda net/packet: fix overflow in check for tp_frame_nr
+ ▪ 0cd9e53 net/packet: fix overflow in check for tp_reserve
+ ▪ 7aff671 scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ 867e646 sg: relax 16 byte cdb restriction
+ ▪ e873e7a block: add blk_rq_set_block_pc()
+ ▪ e50fa78 platform: msm: spmi: Fix possible race condition in debugfs
+ ▪ 0448624 prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
+ ▪ 3b6be56 prima: Fix VHT-80 IBSS stops beaconing
+ ▪ d707ab1 msm-camera: Addressing possible overflow conditions
+ ▪ cae283e qcrypto: protect potential integer overflow.
+ ▪ b49d1a1 l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()
+ ▪ d863cfb fix mismerge: packet: fix races in fanout_add()
+
  ▪ project packages/apps/DUI/
  ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
 
@@ -880,6 +1067,9 @@
  ▪ project packages/apps/Settings/
  ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
  ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ c69c736 Trebuchet: Add Jelly to hotseat
 
  ▪ project vendor/motorola/
  ▪ 43d0c43 shamu: update blobs from N6F27C factory image
@@ -958,55 +1148,4 @@
  ▪ project vendor/cm/
  ▪ 137c340 cm: nuke browser, welcome jelly
  ▪ b43a798 cm: Remove obsolete and unused overlays and configs
-
- ▼ 05/01/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ d10c67a msm8956: Start qseecomd on post-fs
-
- ▪ project frameworks/base/
-
- ▪ project kernel/motorola/msm8226/
- ▪ a64e601 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
- ▪ 2b7ef00 KEYS: Change the name of the dead type to ".dead" to prevent user access
- ▪ 66fa46b KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
- ▪ 51e4af0 mm: migrate dirty page without clear_page_dirty_for_io etc
- ▪ 38e1eb4 mm: fix warning in __set_page_dirty_nobuffers
- ▪ b81b030 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
- ▪ 864971d BACKPORT: signal: allow to send any siginfo to itself
-
- ▪ project packages/apps/Jelly/
- ▪ 17755b3 Jelly: add option to clear cookies
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/extras/su/
- ▪ 7344440 su: Don't start daemon for adb only mode
-
- ▼ 04/30/2017
-
-
- ▪ project bootable/recovery/
- ▪ 5d701cc recovery: Complete project pathmap usage
-
- ▪ project build/
- ▪ 1856c8b Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
- ▪ 3796928 build: fix verity generation
-
- ▪ project frameworks/base/
- ▪ 42c3f58 am: Handle unchecked activity starts for protected components (2)
-
- ▪ project packages/apps/Dialer/
- ▪ 8c8f139 InCallUI: Don't force enable the prox sensor for incoming calls
-
- ▪ project packages/apps/Jelly/
- ▪ 13c1311 Jelly: Fix typo
-
- ▪ project packages/apps/Settings/
- ▪ 4a73b1b Added Device Maintainer For K3 Note (K50a40) (#771)
 
