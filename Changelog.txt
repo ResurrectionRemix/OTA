@@ -2,10 +2,52 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/09/2017
+
+
+ ▪ project device/motorola/msm8226-common/
+ ▪ 7e69136 libsensors: peregrine: Report correct gyroscope range and resolution
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 0c652f5 Merge remote-tracking branch 'remotes/laos/cm-14.1' into nougat
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ ff9dfa7 Merge remote-tracking branch 'remotes/laos/cm-14.1' into nougat
+ ▪ a21c907 msm8956: Add modem assertion check
+ ▪ c9c34c1 msm8956: Write USB device info only once
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ f281963 msm: qpnp-haptic: Process haptics asynchronously
+ ▪ 16b758a qpnp-haptic: Dejank the haptics
+ ▪ 7dd25ea Makefile: set ARCH
+ ▪ 380c95d UPSTREAM: timerfd: Protect the might cancel mechanism proper
+ ▪ dca0950 BACKPORT: UPSTREAM: HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+ ▪ 1a85fe3 UPSTREAM: char: lack of bool string made CONFIG_DEVPORT always on
+ ▪ 1296095f UPSTREAM: char: Drop bogus dependency of DEVPORT on !M68K
+ ▪ a4deda4 Fix GCC6 Compilation Errors & Warnings
+ ▪ 399ddd2 Disable "maybe-uninitialized" warning globally
+ ▪ 5485cea Makefile: Use ccache for compilation
+ ▪ 6ee997b6 Makefile: Disable unused constant variable warning
+ ▪ 48cc3c7 UPSTREAM: staging: ion: Fix error handling in ion_buffer_create
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/xiaomi/
+ ▪ 5a2e8b8 kenzo: Rename fingerprint HALs
+
  ▼ 05/08/2017
 
 
  ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
 
  ▪ project hardware/qcom/display-caf/msm8937/
  ▪ b7a3010 display: Add color metadata definition
@@ -44,7 +86,6 @@
  ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
 
  ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 99617f9 Configs: remove audio sink buffer size property
  ▪ a9f2c00 hal: fix kw issue in hal
  ▪ 6191804 hal: remove redundant logs from utils.c
  ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
@@ -68,80 +109,6 @@
  ▪ 0a4ad7e mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
  ▪ 9e702ea mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
  ▪ 6076eb6 mm-video-v4l2: vdec: Support for HDR Info extension
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 41f45c5 ANDROID: sdcardfs: Call lower fs's revalidate
- ▪ cd2ca02 ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
- ▪ 9676dad Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
- ▪ d11b9f5 ANDROID: sdcardfs: Use filesystem specific hash
- ▪ 6af7f10 Revert "Android: sdcardfs: Don't do d_add for lower fs"
- ▪ 863c452 Android: sdcardfs: Don't complain in fixup_lower_ownership
- ▪ 98e1cba Android: sdcardfs: Don't do d_add for lower fs
- ▪ fbfbd31 ANDROID: sdcardfs: ->iget fixes
- ▪ 812568e Android: sdcardfs: Change cache GID value
- ▪ 1baf74d ANDROID: sdcardfs: Directly pass lower file for mmap
- ▪ 3ca3fae ANDROID: sdcardfs: update module info
- ▪ 5d8fc69 ANDROID: sdcardfs: use d_splice_alias
- ▪ d39f992 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
- ▪ 9639893 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
- ▪ a8142ed ANDROID: sdcardfs: remove unnecessary call to do_munmap
- ▪ eff36cf ANDROID: sdcardfs: Fix style issues in macros
- ▪ b398068 ANDROID: sdcardfs: Use seq_puts over seq_printf
- ▪ 82c13ed ANDROID: sdcardfs: Use to kstrout
- ▪ a721969 ANDROID: sdcardfs: Use pr_[...] instead of printk
- ▪ ca7b147 ANDROID: sdcardfs: remove unneeded null check
- ▪ c0fb5ae ANDROID: sdcardfs: Fix style issues with comments
- ▪ e728532 ANDROID: sdcardfs: Fix formatting
- ▪ 4a30fb3 ANDROID: sdcardfs: correct order of descriptors
- ▪ 922f5b1 ANDROID: sdcardfs: Fix gid issue
- ▪ 9a6e356 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
- ▪ 3d6c730 ANDROID: sdcardfs: Remove uninformative prints
- ▪ 30c7414 ANDROID: sdcardfs: move path_put outside of spinlock
- ▪ 98d0544 ANDROID: sdcardfs: Use case insensitive hash function
- ▪ 0ccb5cb ANDROID: sdcardfs: declare MODULE_ALIAS_FS
- ▪ 00abe85 ANDROID: sdcardfs: Get the blocksize from the lower fs
- ▪ 536b0eb ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
- ▪ 9fa9ebd ANDROID: sdcardfs: Switch to internal case insensitive compare
- ▪ 0e7f2b1 ANDROID: sdcardfs: Use spin_lock_nested
- ▪ 7c568c6 ANDROID: sdcardfs: Replace get/put with d_lock
- ▪ b29f5bc ANDROID: sdcardfs: rate limit warning print
- ▪ b451e70 ANDROID: sdcardfs: Fix case insensitive lookup
- ▪ 74c37ab ANDROID: sdcardfs: support direct-IO (DIO) operations
- ▪ e882cad ANDROID: sdcardfs: implement vm_ops->page_mkwrite
- ▪ 0dabebb ANDROID: sdcardfs: Don't bother deleting freelist
- ▪ d393270 ANDROID: sdcardfs: Add missing path_put
- ▪ 53476b0 ANDROID: sdcardfs: Fix incorrect hash
- ▪ 3adbe7b ANDROID: sdcardfs: Switch strcasecmp for internal call
- ▪ bcfdb4c ANDROID: sdcardfs: switch to full_name_hash and qstr
- ▪ 511e762 ANDROID: sdcardfs: Add GID Derivation to sdcardfs
- ▪ b56ac50 ANDROID: sdcardfs: Remove redundant operation
- ▪ 31d97c6 ANDROID: sdcardfs: add support for user permission isolation
- ▪ b797d9d ANDROID: sdcardfs: Refactor configfs interface
- ▪ 6b90450 ANDROID: sdcardfs: Allow non-owners to touch
- ▪ 5b58d3e ANDROID: sdcardfs: Fix locking issue with permision fix up
- ▪ 2a166b6 sdcardfs: Flag files as non-mappable
- ▪ 1158f79 sdcardfs: Use per mount permissions
- ▪ f12e9ee sdcardfs: Add gid and mask to private mount data
- ▪ 03e5eff sdcardfs: User new permission2 functions
- ▪ 1925e71 sdcardfs: Move directory unlock before touch
- ▪ ea0659e sdcardfs: fix external storage exporting incorrect uid
- ▪ 0130e93 sdcardfs: Added top to sdcardfs_inode_info
- ▪ 30cae61 sdcardfs: Switch package list to RCU
- ▪ 661ea34 sdcardfs: Fix locking for permission fix up
- ▪ b742d13 sdcardfs: Check for other cases on path lookup
- ▪ d25073b1 sdcardfs: override umask on mkdir and create
- ▪ c9498d1 ANDROID: sdcardfs: fix itnull.cocci warnings
- ▪ 5face15 sdcardfs: Truncate packages_gid.list on overflow
- ▪ 99f6748 vfs: change d_canonical_path to take two paths
- ▪ 8c12f54 sdcardfs: remove unneeded __init and __exit
- ▪ 7af3cdb sdcardfs: Remove unused code
- ▪ 03f632b sdcardfs: remove effectless config option
- ▪ af1b02a sdcardfs: Add support for d_canonicalize
- ▪ cfeb2ed vfs: add d_canonical_path for stacked filesystem support
- ▪ 65cffcf sdcardfs: Bring up to date with Android M permissions:
- ▪ 5b7fd0e sdcardfs: Changed type-cast in packagelist management
- ▪ 1d239e3 sdcardfs: port to 3.10
- ▪ 3a0a91e Initial port of sdcardfs
 
  ▪ project packages/apps/ResurrectionOTA/
  ▪ b0b0b4a ResurrectionOTA: squash all translations
@@ -921,6 +888,9 @@
  ▼ 05/05/2017
 
 
+ ▪ project device/xiaomi/kenzo/
+ ▪ 005e9ae kenzo: Only support modem from marshmallow release
+
  ▪ project frameworks/base/
  ▪ ed3936e Make Scrolling for TaskManager list a lot easier
  ▪ 03a9a2e Base:Dont do anything on weather errors for header & keyguard
@@ -953,6 +923,9 @@
  ▪ project bootable/recovery/
  ▪ 616bf9a recovery: Fix event system
 
+ ▪ project device/xiaomi/kenzo/
+ ▪ 02b49ff kenzo: Drop fp wrapper to dynamically select fp HAL
+
  ▪ project frameworks/base/
  ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
  ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
@@ -962,6 +935,9 @@
  ▪ 4c60572 base: SystemUI: use new OmniJaws error broadcasts
  ▪ ad493bf Fix keyguard is black background while screen turning off/on quickly
  ▪ 41d90ba Reboot/Recovery QS Tile: Use vectorized icons
+
+ ▪ project hardware/qcom/media-caf/apq8084/
+ ▪ b49f2c0 Fix duplicated OMX.qcom.audio.decoder.aac entry
 
  ▪ project kernel/motorola/msm8226/
  ▪ 1a18e02 fs/proc/array.c: make safe access to group_leader
@@ -1023,6 +999,7 @@
  ▪ 281c666 kenzo: All hail Dominator
 
  ▪ project device/xiaomi/msm8956-common/
+ ▪ 6c14b03 msm8956: Clean up kernel cmdline
  ▪ 63fa3ed msm8956: Disable LLStats
  ▪ 1753503 msm8956: Add aanc_tuning_mixer_wcd9335
  ▪ c92ca83 Revert "msm8956: Re-enable XML audio policy"
@@ -1077,75 +1054,4 @@
  ▪ project vendor/xiaomi/
  ▪ a70f79f kenzo: Add modified qcrilmsgtunnel
  ▪ 07b38c4 kenzo: Update
-
- ▼ 05/02/2017
-
-
- ▪ project android/
- ▪ 7c6e872 manifests: 7.1.2_r2-> r8
- ▪ 16e5022 android: nuke browser, welcome jelly
- ▪ 8ead0d4 Manifest : Stop syncing blank intel sensor repo.
- ▪ 1aaf24e manifest: Track our external/libchrome
-
- ▪ project build/
- ▪ fab5d1d Merge tag 'android-7.1.2_r8' into nougat
- ▪ e6c0264 Revert "We want Browser"
-
- ▪ project device/sony/huashan/
- ▪ 265470e products: Add Jelly to the products list
-
- ▪ project device/xiaomi/kenzo/
- ▪ 87e84e3 kenzo: Add goodix services and sepolicy
- ▪ 8594e2e kenzo: Support Goodix fingerprint
- ▪ 84e67a6 kenzo: Remove unused fpc firmware
-
- ▪ project external/boringssl/
- ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/av/
- ▪ 24697a3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
- ▪ 16dcaaa Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/base/
- ▪ 0501270 Merge tag 'android-7.1.2_r8' into nougat
- ▪ e8d78b4 fix anr when concurrent request provider
- ▪ d0d7aee Ensure that the decor view is attached to window.
- ▪ 119e0d3 Bad token of activity when do the launch work at the app process side.
- ▪ 0555835 Query geo description in worker thread to prevent ANR
- ▪ a87340f remove duplicated incorrectly code in ProcessRecord
- ▪ 3f19033 fix foreground process will be mistakenly killed when it uses content provider.
- ▪ 1e33d08 Restart persistent process if start timeout.
- ▪ 88fd7c1 fix system_server crash issue caused by fd leak.
- ▪ 2f5069e Compass qs tile: Fix icon in edit mode
-
- ▪ project frameworks/native/
- ▪ c544fcc Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
- ▪ b8fb318 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project packages/apps/Jelly/
- ▪ 2f41ee6 Jelly: expose toolbar elevation
- ▪ 74270cc Jelly: history: swipe to delete
- ▪ 244fab9 Jelly: use custom dialog for home page selection
-
- ▪ project packages/apps/Messaging/
- ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
-
- ▪ project packages/apps/Settings/
- ▪ e6d2f89 Merge tag 'android-7.1.2_r8' into nougat
- ▪ f69dd8c Revert "Settings: Lost cached BT devices in found devices list"
- ▪ 226f681 Settings[Wifi]: fix the input invalid length for WEP encryption.
- ▪ 20f7649 Settings: Fix internal storage summary for non-emulated storage
- ▪ a8ca4b4 Add v521 device and maintainer  (#774)
- ▪ 9283d7e Add Galaxy Grand Prime As Official. (#773)
-
- ▪ project system/bt/
- ▪ 85d4e42 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project system/core/
- ▪ 259efc1 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
- ▪ d7cbf4b Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project vendor/cm/
- ▪ 137c340 cm: nuke browser, welcome jelly
- ▪ b43a798 cm: Remove obsolete and unused overlays and configs
 
