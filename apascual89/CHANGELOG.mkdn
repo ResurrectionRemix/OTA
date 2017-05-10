@@ -2,29 +2,123 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/06/2017
+ ▼ 05/10/2017
 
-
- ▪ project device/oneplus/oneplus3/
- ▪ 1e970f9 op3: Update decoder profiling result
- ▪ 7b6faa0 op3: Unpin fpc hal
 
  ▪ project frameworks/base/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ de1b3bb Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into HEAD
- ▪ b39c146 mm: Tighten x86 /dev/mem with zeroing reads
- ▪ 94c9fb3 crypto: ahash - Fix EINPROGRESS notification callback
- ▪ 49a755e mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
- ▪ 13914d6 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
- ▪ 412f71f scsi: sg: check length passed to SG_NEXT_CMD_LEN
- ▪ 5af6f27 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
- ▪ d9b5566 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
+ ▪ 6fd71cf telecom: Fix order of arguments when creating Details object
+ ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
 
  ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Settings/
- ▪ 34a8e66 Change codename of K3 Note (#783)
+ ▪ d37d080 Add Maintainer for Coolpad Note 3 Lite(CP8298_I00) (#788)
+ ▪ aeb3245 Settings:Allow to disable qs footer warnings [2/2]
+ ▪ ed3445d Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
+
+ ▼ 05/09/2017
+
+
+ ▪ project frameworks/av/
+ ▪ 5d49fde Merge pull request #3 from github-cygwin/nougat
+ ▪ a930183 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/08/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ b7a3010 display: Add color metadata definition
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/07/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 948bba9 base: SystemUI: use content observer for recent grid config
+ ▪ 73dbc18 base:refactor recents code to switch between recents
+ ▪ b0f2122 [1/2] base: featureize ro.recents.grid
+ ▪ 319c5f7 Update OmniSwitch string
+ ▪ 9733626 OmniJawsClient : Move to framework
+ ▪ e2192bc SysUI : Use a different approach to Make perf profile tile invisible
+ ▪ 7805dad base: SystemUI: add dedicated TextView for OmniJaws error marker
+ ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
+ ▪ 6191804 hal: remove redundant logs from utils.c
+ ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
+
+ ▪ project hardware/qcom/display-caf/msm8937/
+ ▪ 26cd504 display: Add color metadata definition
+ ▪ eb49512 sdm: Use ColorMetadata in SDM
+ ▪ 37d5aff display: Add support for Rec.2020
+ ▪ b6a2bfb sdm: Use safe mode on External display on low end device
+ ▪ 9c64210 HWC: Set skip to layers with Non Integral Source Crop
+ ▪ 93afadf sdm: skip null commit on command mode panels
+ ▪ 2428bc4 libmemtrack: Fix integer overflow in kgsl function
+
+ ▪ project hardware/qcom/media-caf/msm8937/
+ ▪ de0c52e media: libOmxSw encoders require prop headers :(
+ ▪ fcd1cfd mm-video-v4l2: serialize FTB's for dropped frames
+ ▪ 057d1c7 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
+ ▪ a5da2d3 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
+ ▪ 76dd49f mm-video-v4l2: Update max level for h264 decoder to 5.1
+ ▪ 46aa731 mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
+ ▪ 5dc8e7e mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
+ ▪ 0a4ad7e mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
+ ▪ 9e702ea mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
+ ▪ 6076eb6 mm-video-v4l2: vdec: Support for HDR Info extension
+
+ ▪ project packages/apps/ResurrectionOTA/
+ ▪ b0b0b4a ResurrectionOTA: squash all translations
+
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 20ea10d ROMStats: modify for ResurrectionRemix
+
+ ▪ project packages/apps/Settings/
+ ▪ 372d14f Add missing string
+ ▪ 048aad9 Refactor Recents Category
+ ▪ d55ce18 Settings:featurize ro.recents.grid [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/06/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ cf9aea9 op3: Update decoder profiling result
+ ▪ 84c61b7 op3: Unpin fpc hal
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 907e76e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr-rebase
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ c415aa0 Mantainers: Delete WinKarbik from ido mantainer (#784)
 
  ▪ project packages/services/OmniJaws/
 
