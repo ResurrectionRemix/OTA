@@ -2,6 +2,20 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/10/2017
+
+
+ ▪ project frameworks/av/
+ ▪ 5d49fde Merge pull request #3 from github-cygwin/nougat
+ ▪ a930183 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ ed3445d Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
+
  ▼ 05/09/2017
 
 
@@ -48,6 +62,7 @@
 
  ▪ project hardware/qcom/audio-caf/msm8937/
  ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
 
  ▪ project hardware/qcom/display-caf/msm8937/
  ▪ b7a3010 display: Add color metadata definition
@@ -86,7 +101,6 @@
  ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
 
  ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ a9f2c00 hal: fix kw issue in hal
  ▪ 6191804 hal: remove redundant logs from utils.c
  ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
 
@@ -926,6 +940,9 @@
  ▪ project device/xiaomi/kenzo/
  ▪ 02b49ff kenzo: Drop fp wrapper to dynamically select fp HAL
 
+ ▪ project frameworks/av/
+ ▪ faa8b85 seccomp: Fix policy for ffmpeg
+
  ▪ project frameworks/base/
  ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
  ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
@@ -979,79 +996,4 @@
  ▪ project vendor/motorola/
  ▪ 9b10207 victara: Hexedit libqc-opt.so for N
  ▪ 35319b9 victara: Switch to using libqc-opt
-
- ▼ 05/03/2017
-
-
- ▪ project bionic/
- ▪ 22d6b5b libc: ARM: Add 32-bit Kryo memcpy
- ▪ 45a3987 libc: use Cortex-A7/A53 memset on Kryo
- ▪ ba97f82 Add kryo support.
-
- ▪ project bootable/recovery/
- ▪ 8011e66 recovery: Fix UI freezing
-
- ▪ project device/xiaomi/kenzo/
- ▪ 9ab33c4 kenzo: show correct charging current value on lockscreen
- ▪ 2321e00 kenzo: Pin qcrilmsgtunnel
- ▪ e93bc2a kenzo: Disable fluence on voicerec
- ▪ eb56f9b kenzo: Enable 24bit offload
- ▪ 281c666 kenzo: All hail Dominator
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 6c14b03 msm8956: Clean up kernel cmdline
- ▪ 63fa3ed msm8956: Disable LLStats
- ▪ 1753503 msm8956: Add aanc_tuning_mixer_wcd9335
- ▪ c92ca83 Revert "msm8956: Re-enable XML audio policy"
- ▪ 3ad6b9f msm8956: Fix Fingerprintd Denial
- ▪ cc811f1 msm8956: nuke that waste of space :D
- ▪ 18c9ba9 msm8956-common: Nuke sdcardfs
-
- ▪ project kernel/motorola/msm8226/
- ▪ f033a00 net: avoid signed overflows for SO_{SND|RCV}BUFFORCE
- ▪ 4e441ac Fix "Add PR_{GET,SET}_NO_NEW_PRIVS to prevent execve from granting privs"
-
- ▪ project kernel/oneplus/msm8974/
- ▪ d4508e4 sdcardfs: limit stacking depth
- ▪ 1b28a35 BACKPORT: fs: limit filesystem stacking depth
- ▪ d12bb42 crypto: msm: check integer overflow on total data len in qcedev.c
- ▪ 5f749b9 msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c
- ▪ 82576a6 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
- ▪ 131689d KEYS: Change the name of the dead type to ".dead" to prevent user access
- ▪ 4ba5bf6 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
- ▪ 2f0bb26 mm: migrate dirty page without clear_page_dirty_for_io etc
- ▪ ac70037 mm: fix warning in __set_page_dirty_nobuffers
- ▪ 5e630ee mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
- ▪ c1fefda net/packet: fix overflow in check for tp_frame_nr
- ▪ 0cd9e53 net/packet: fix overflow in check for tp_reserve
- ▪ 7aff671 scsi: sg: check length passed to SG_NEXT_CMD_LEN
- ▪ 867e646 sg: relax 16 byte cdb restriction
- ▪ e873e7a block: add blk_rq_set_block_pc()
- ▪ e50fa78 platform: msm: spmi: Fix possible race condition in debugfs
- ▪ 0448624 prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
- ▪ 3b6be56 prima: Fix VHT-80 IBSS stops beaconing
- ▪ d707ab1 msm-camera: Addressing possible overflow conditions
- ▪ cae283e qcrypto: protect potential integer overflow.
- ▪ b49d1a1 l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()
- ▪ d863cfb fix mismerge: packet: fix races in fanout_add()
-
- ▪ project packages/apps/DUI/
- ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
-
- ▪ project packages/apps/Dialer/
- ▪ b239b70 Dialer: InCallUI: Enable Sustained Performance Mode We should make sure that thermals are stable during active calls, so we should enable Sustained Performance Mode for the InCallActivity.
-
- ▪ project packages/apps/Settings/
- ▪ 2c2376a Change username of Github from PixlernBlitz to PainKiller3 (#776)
- ▪ 38863c0 Fix typo in resurrection_device_maintainers.xml (#775)
-
- ▪ project packages/apps/Trebuchet/
- ▪ c69c736 Trebuchet: Add Jelly to hotseat
-
- ▪ project vendor/motorola/
- ▪ 43d0c43 shamu: update blobs from N6F27C factory image
-
- ▪ project vendor/xiaomi/
- ▪ a70f79f kenzo: Add modified qcrilmsgtunnel
- ▪ 07b38c4 kenzo: Update
 
