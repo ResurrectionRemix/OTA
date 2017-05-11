@@ -2,6 +2,31 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/11/2017
+
+
+ ▪ project android/
+ ▪ 62ddd14 Update crowdin.xml
+ ▪ 0ba92b4 crowdin: add DUI [1/2]
+
+ ▪ project frameworks/base/
+ ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
+ ▪ 6fd71cf telecom: Fix order of arguments when creating Details object
+ ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 1485df8 staging: prima: Fix non-debug build and switch to it
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ d37d080 Add Maintainer for Coolpad Note 3 Lite(CP8298_I00) (#788)
+ ▪ aeb3245 Settings:Allow to disable qs footer warnings [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/10/2017
 
 
@@ -60,10 +85,6 @@
 
  ▪ project frameworks/base/
 
- ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 99617f9 Configs: remove audio sink buffer size property
- ▪ a9f2c00 hal: fix kw issue in hal
-
  ▪ project hardware/qcom/display-caf/msm8937/
  ▪ b7a3010 display: Add color metadata definition
 
@@ -101,6 +122,8 @@
  ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
 
  ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
  ▪ 6191804 hal: remove redundant logs from utils.c
  ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
 
@@ -123,6 +146,11 @@
  ▪ 0a4ad7e mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
  ▪ 9e702ea mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
  ▪ 6076eb6 mm-video-v4l2: vdec: Support for HDR Info extension
+
+ ▪ project kernel/sony/msm8960t/
+ ▪ c1a0671 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 40992b7 qseecom: check buffer size when loading firmware images
+ ▪ b8c74c2 kernel.h: define u8, s8, u32, etc. limits
 
  ▪ project packages/apps/ResurrectionOTA/
  ▪ b0b0b4a ResurrectionOTA: squash all translations
@@ -919,6 +947,26 @@
  ▪ ae466fb tmpfs: clear S_ISGID when setting posix ACLs
  ▪ 1ea2480 BACKPORT: posix_acl: Clear SGID bit when setting file permissions
 
+ ▪ project kernel/sony/msm8960t/
+ ▪ d2fe272 fs/proc/array.c: make safe access to group_leader
+ ▪ 4870e41 mm: Tighten x86 /dev/mem with zeroing reads
+ ▪ 079b07f x86/mm/init.c: Fix devmem_is_allowed() off by one
+ ▪ 3c91bed mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 2402d430 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+ ▪ 2343402 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ 95eeaac prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
+ ▪ 33efe66 ASoC: msm: qdsp6: return error when copy from userspace fails
+ ▪ 77947e0 ASoC: msm: qdsp6: Add range checking in msm_dai_q6_set_channel_map
+ ▪ eb08942 trace: resolve stack corruption due to string copy
+ ▪ 710a9e7 crypto: msm: check integer overflow on total data len in qcedev.c
+ ▪ ba22189 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 0a914fc BACKPORT: posix_acl: Clear SGID bit when setting file permissions
+ ▪ 33064ad hid: usbhid: Changes to prevent buffer overflow
+ ▪ 7522aba mm: migrate dirty page without clear_page_dirty_for_io etc
+ ▪ b89b4fc mm: fix warning in __set_page_dirty_nobuffers
+ ▪ 49eebea crypto: msm: check length before copying to buf in _debug_stats_read
+ ▪ e6049d2 perf: Tighten (and fix) the grouping condition
+
  ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Jelly/
@@ -930,70 +978,4 @@
  ▪ 008a015 Update resurrection_device_maintainers_strings.xml (#782)
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 05/04/2017
-
-
- ▪ project bootable/recovery/
- ▪ 616bf9a recovery: Fix event system
-
- ▪ project device/xiaomi/kenzo/
- ▪ 02b49ff kenzo: Drop fp wrapper to dynamically select fp HAL
-
- ▪ project frameworks/av/
- ▪ faa8b85 seccomp: Fix policy for ffmpeg
-
- ▪ project frameworks/base/
- ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
- ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
- ▪ d9c5ba7 base: SystemUI: dont hide navbar for screenshot crop
- ▪ 9fa52a5 base: SystemUI: qs: location tile quickbar press is just toggle
- ▪ 3db7979 base: SystemUI: dont hide weather forcast data on errors
- ▪ 4c60572 base: SystemUI: use new OmniJaws error broadcasts
- ▪ ad493bf Fix keyguard is black background while screen turning off/on quickly
- ▪ 41d90ba Reboot/Recovery QS Tile: Use vectorized icons
-
- ▪ project hardware/qcom/media-caf/apq8084/
- ▪ b49f2c0 Fix duplicated OMX.qcom.audio.decoder.aac entry
-
- ▪ project kernel/motorola/msm8226/
- ▪ 1a18e02 fs/proc/array.c: make safe access to group_leader
- ▪ f29e875 ALSA: info: Check for integer overflow in snd_info_entry_write()
- ▪ ff57117 perf: don't leave group_entry on sibling list (use-after-free)
- ▪ 9a56042 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
- ▪ 176e3d5 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
- ▪ 37308e4 input: touchscreen: gt9xx: fix memory corruption in Goodix driver
- ▪ 8304341 soc: qcom: scm: add check to avoid buffer overflow
- ▪ 49b3d1d ASoC: soc: prevent risk of buffer overflow
- ▪ 41cc25c ASoC: msm: qdsp6v2: return error when copy from userspace fails
- ▪ 81c5e81 ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
- ▪ eb958e7 trace: resolve stack corruption due to string copy
- ▪ e4b58a8 ASoC: wcd9320: Fix out of bounds for mad input value
- ▪ 02ab642 slim-msm: Synchronize SSR callbacks
- ▪ 6084099 crypto: msm: check length before copying to buf in _debug_stats_read
- ▪ 3f70bb8 prima: Trim operation classes to max supported in change station
- ▪ 2ea1026 perf: Tighten (and fix) the grouping condition
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
- ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 33f769f Add device_maintainers_fragment for device thea (#780)
- ▪ 3e9cabc Add Device Maintainer for motorola moto g2 LTE (#781)
- ▪ a2cd85e update a string
-
- ▪ project packages/services/OmniJaws/
- ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
- ▪ a169929 OmniJaws: weather widget fixes
- ▪ a9b5863 OmniJaws: add weather widget
- ▪ d106dcd OmniJaws: add error broadcast
-
- ▪ project vendor/motorola/
- ▪ 9b10207 victara: Hexedit libqc-opt.so for N
- ▪ 35319b9 victara: Switch to using libqc-opt
 
