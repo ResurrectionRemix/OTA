@@ -8,13 +8,25 @@
  ▪ project android/
  ▪ 6bab65e crowdin: add DUI [1/2]
 
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 05/11/2017
 
 
  ▪ project frameworks/base/
  ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
  ▪ 6fd71cf telecom: Fix order of arguments when creating Details object
- ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
+
+ ▪ project hardware/qcom/display/
+ ▪ 03afd10 hwc2: Only set display_width and display_height when equal to zero
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 1485df8 staging: prima: Fix non-debug build and switch to it
@@ -37,6 +49,7 @@
  ▪ a930183 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
 
  ▪ project frameworks/base/
+ ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
 
  ▪ project packages/apps/Dialer/
 
@@ -87,15 +100,8 @@
 
  ▪ project frameworks/base/
 
- ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 99617f9 Configs: remove audio sink buffer size property
- ▪ a9f2c00 hal: fix kw issue in hal
-
  ▪ project hardware/qcom/display-caf/msm8937/
  ▪ b7a3010 display: Add color metadata definition
-
- ▪ project hardware/qcom/media-caf/msm8937/
- ▪ de0c52e media: libOmxSw encoders require prop headers :(
 
  ▪ project packages/apps/Dialer/
 
@@ -105,6 +111,9 @@
 
  ▪ project packages/apps/Settings/
  ▪ 372d14f Add missing string
+
+ ▪ project packages/apps/Snap/
+ ▪ 31499ec Snap: Fix crash switching from back to front cam in video mode
 
  ▪ project packages/services/OmniJaws/
 
@@ -128,6 +137,8 @@
  ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
 
  ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
  ▪ 6191804 hal: remove redundant logs from utils.c
  ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
 
@@ -141,6 +152,7 @@
  ▪ 2428bc4 libmemtrack: Fix integer overflow in kgsl function
 
  ▪ project hardware/qcom/media-caf/msm8937/
+ ▪ de0c52e media: libOmxSw encoders require prop headers :(
  ▪ fcd1cfd mm-video-v4l2: serialize FTB's for dropped frames
  ▪ 057d1c7 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
  ▪ a5da2d3 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
@@ -187,9 +199,6 @@
  ▪ 5af6f27 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
  ▪ d9b5566 KEYS: Change the name of the dead type to ".dead" to prevent user access
  ▪ 4a4bddf ANDROID: ion: Protect kref from userspace manipulation
- ▪ ffcb9ac Kconfig: msm: disable ultrasound driver
- ▪ f090ea2 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
- ▪ 20a5627 mm: migrate dirty page without clear_page_dirty_for_io etc
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 2477220 ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
@@ -924,9 +933,6 @@
  ▪ 34a8e66 Change codename of K3 Note (#783)
 
  ▪ project packages/services/OmniJaws/
-
- ▪ project system/bt/
- ▪ 0ebf465 Do not include the trailing NULL from the C-String in the SDP service name
 
  ▪ project vendor/oneplus/
  ▪ 1a181b5 op3: Update fpc hal from OB15
