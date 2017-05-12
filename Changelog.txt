@@ -2,12 +2,14 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/11/2017
+ ▼ 05/12/2017
 
 
  ▪ project android/
- ▪ 62ddd14 Update crowdin.xml
- ▪ 0ba92b4 crowdin: add DUI [1/2]
+ ▪ 6bab65e crowdin: add DUI [1/2]
+
+ ▼ 05/11/2017
+
 
  ▪ project frameworks/base/
  ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
@@ -85,6 +87,10 @@
 
  ▪ project frameworks/base/
 
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 99617f9 Configs: remove audio sink buffer size property
+ ▪ a9f2c00 hal: fix kw issue in hal
+
  ▪ project hardware/qcom/display-caf/msm8937/
  ▪ b7a3010 display: Add color metadata definition
 
@@ -122,8 +128,6 @@
  ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
 
  ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 99617f9 Configs: remove audio sink buffer size property
- ▪ a9f2c00 hal: fix kw issue in hal
  ▪ 6191804 hal: remove redundant logs from utils.c
  ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
 
@@ -926,56 +930,4 @@
 
  ▪ project vendor/oneplus/
  ▪ 1a181b5 op3: Update fpc hal from OB15
-
- ▼ 05/05/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 005e9ae kenzo: Only support modem from marshmallow release
-
- ▪ project frameworks/base/
- ▪ ed3936e Make Scrolling for TaskManager list a lot easier
- ▪ 03a9a2e Base:Dont do anything on weather errors for header & keyguard
-
- ▪ project kernel/motorola/msm8226/
- ▪ eabaaf5 netlink: Fix dump skb leak/double free
- ▪ 742bd0e msm: crypto: set CLR_CNTXT bit for crypto operations
- ▪ de9679e qseecom: check buffer size when loading firmware images
- ▪ 5a4f8bd ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions
- ▪ bf35e60 tcp: do not lock listener to process SYN packets
- ▪ 750f6a0 input: synaptics_dsx: protect tmpbuf allocation.
- ▪ ae466fb tmpfs: clear S_ISGID when setting posix ACLs
- ▪ 1ea2480 BACKPORT: posix_acl: Clear SGID bit when setting file permissions
-
- ▪ project kernel/sony/msm8960t/
- ▪ d2fe272 fs/proc/array.c: make safe access to group_leader
- ▪ 4870e41 mm: Tighten x86 /dev/mem with zeroing reads
- ▪ 079b07f x86/mm/init.c: Fix devmem_is_allowed() off by one
- ▪ 3c91bed mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
- ▪ 2402d430 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
- ▪ 2343402 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
- ▪ 95eeaac prima: Fix buffer overflow in WLANSAP_Set_WPARSNIes()
- ▪ 33efe66 ASoC: msm: qdsp6: return error when copy from userspace fails
- ▪ 77947e0 ASoC: msm: qdsp6: Add range checking in msm_dai_q6_set_channel_map
- ▪ eb08942 trace: resolve stack corruption due to string copy
- ▪ 710a9e7 crypto: msm: check integer overflow on total data len in qcedev.c
- ▪ ba22189 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
- ▪ 0a914fc BACKPORT: posix_acl: Clear SGID bit when setting file permissions
- ▪ 33064ad hid: usbhid: Changes to prevent buffer overflow
- ▪ 7522aba mm: migrate dirty page without clear_page_dirty_for_io etc
- ▪ b89b4fc mm: fix warning in __set_page_dirty_nobuffers
- ▪ 49eebea crypto: msm: check length before copying to buf in _debug_stats_read
- ▪ e6049d2 perf: Tighten (and fix) the grouping condition
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 2006774 Jelly: no need of using srcCompat for imageviews
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 008a015 Update resurrection_device_maintainers_strings.xml (#782)
-
- ▪ project packages/services/OmniJaws/
 
