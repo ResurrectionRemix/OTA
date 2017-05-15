@@ -2,6 +2,60 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/15/2017
+
+
+ ▪ project device/oneplus/bacon/
+ ▪ a821e28 Revert "bacon: let Gello take part of the builds"
+
+ ▪ project device/zuk/ham/
+ ▪ ce590ef ham: Kill Gello
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/media-caf/msm8996/
+ ▪ 87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ c6c3cb0 kernel: Only expose su when daemon is running
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 3226264 Dominator: regenerate defconfig
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ eab04da Jelly: lint cleanup
+ ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
+ ▪ 5e5fb97 Jelly: Fix storage permission check
+ ▪ c315497 Jelly: add Desktop mode toggle
+ ▪ 5859bc6 Jelly: Actually disable cookies
+ ▪ fd7418e Jelly: Flush cookies when calling onStop()
+ ▪ eb6375d Jelly: Don't make app persistent
+ ▪ 2d4853b Jelly: Add proguard rules
+ ▪ d583aad Jelly: Improve URL/search query handling
+ ▪ 21c6894 Jelly: strings: Various pedantics
+
+ ▪ project packages/apps/Settings/
+ ▪ 565e211 Add Scorpio & Lithium maintanier (#790)
+
+ ▪ project vendor/nxp-nfc/opensource/Nfc/
+ ▪ cb09714 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project vendor/nxp-nfc/opensource/frameworks/
+ ▪ 6933f27 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
+ ▪ e2d0d62 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
  ▼ 05/14/2017
 
 
@@ -19,6 +73,9 @@
 
  ▼ 05/13/2017
 
+
+ ▪ project device/oneplus/bacon/
+ ▪ 2360001 Revert "bacon: let Gello take part of the builds"
 
  ▪ project frameworks/base/
  ▪ 59afca8 fix build
@@ -73,6 +130,12 @@
 
  ▪ project android/
  ▪ 6bab65e crowdin: add DUI [1/2]
+
+ ▪ project device/motorola/msm8226-common/
+ ▪ 65047ed msm8226-common: Kill Gello
+
+ ▪ project device/sony/huashan/
+ ▪ a44b797 Revert: "huashan: let Gello take part of the builds"
 
  ▪ project frameworks/base/
 
@@ -141,6 +204,12 @@
 
  ▪ project frameworks/base/
 
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ a381889 Merge 39da5ccbb3f7903f95fada214a90a5f8f043b54a on remote branch
+
+ ▪ project hardware/qcom/media-caf/msm8996/
+ ▪ 585ec96 Merge 3b743576569bb08c1efa416300aee4243a198c8f on remote branch
+
  ▪ project kernel/xiaomi/msm8956/
  ▪ f281963 msm: qpnp-haptic: Process haptics asynchronously
  ▪ 16b758a qpnp-haptic: Dejank the haptics
@@ -164,34 +233,15 @@
 
  ▪ project packages/services/OmniJaws/
 
+ ▪ project vendor/nxp-nfc/opensource/Nfc/
+ ▪ 56baa33 Merge 8eb1a0dee336510ba1768c9b55fbd8ab53497f4c on remote branch
+
+ ▪ project vendor/nxp-nfc/opensource/frameworks/
+ ▪ 9982608 Merge a8087ac9bbe83c11081812dda9274b469eb15885 on remote branch
+
+ ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
+ ▪ 134ac45 Merge 42ef4288c8633722baf64b0f36c618e6dbc0038f on remote branch
+
  ▪ project vendor/xiaomi/
  ▪ 5a2e8b8 kenzo: Rename fingerprint HALs
-
- ▼ 05/08/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/display-caf/msm8937/
- ▪ b7a3010 display: Add color metadata definition
-
- ▪ project hardware/qcom/media-caf/msm8937/
- ▪ de0c52e media: libOmxSw encoders require prop headers :(
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 372d14f Add missing string
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/motorola/
- ▪ 5f8b3e6 addison: Display blobs update
- ▪ 12285bf addison: Drop unneeded blobs
- ▪ 17d357d addison: Switch to OSS GPS
- ▪ 3a43b3d victara: Add libtqi-perfd-client.so
 
