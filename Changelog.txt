@@ -2,6 +2,37 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/16/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ c10da2c op3: Remove QVOP service
+ ▪ c930264 op3: Enforce vendor tree presence
+ ▪ b1cfadd op3: Kill Gello
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ e723084 drivers: staging: Update qcacld-2.0 driver
+ ▪ 5f583f3 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD
+ ▪ d3dac65 misc: Squashed revert upstream applied security patches
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ dbaab37 ASoC: wcd-mbhc: correct lineout detection
+ ▪ 5840153 Revert "ASoC: wcd-mbhc: Don't report headphone until timout"
+ ▪ b63dbb0 kenzo: fix reboot to recovery for guys who had issue
+ ▪ f574518 kenzo: update versioning for my build script
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
+
+ ▪ project vendor/oneplus/
+ ▪ 8d64f72 op3: Remove QVOP blobs
+
  ▼ 05/15/2017
 
 
@@ -183,65 +214,24 @@
 
  ▪ project frameworks/base/
 
+ ▪ project kernel/oneplus/msm8996/
+ ▪ acb553d Merge "msm: mdss: fix race condition during mdp debugfs release"
+ ▪ 9741fce Merge "soc: qcom: pil: Avoid possible buffer overflow during Modem boot"
+ ▪ 541f872 Merge "soc: qcom: pil: Explicitly clear the subsystem loading address"
+ ▪ a6ddf4b Merge "soc: qcom: Do not clear segments if pil boot failed in memory allocation"
+ ▪ a45cd5a Merge "msm: mdss: Validating data values before passing on as operand"
+ ▪ 08c0d1b Merge "mmc: card: block: check the user controlled parameters to avoid overflow"
+ ▪ 8afa4ae Merge "msm: camera: Add regulator enable and disable independent of CSID"
+ ▪ 2758c3b Merge "msm: camera: isp: Check userspace parameters"
+ ▪ 2bbe679 Merge "crypto: msm: check invalid src and dst vbuf in qcedev.c"
+ ▪ e30f62c Merge "mmc: cmdq_hci: Avoid releasing clock twice during DCMD error"
+ ▪ 3fd4a41 Merge "mmc: queue: Remove BUG_ON() in cmdq_thread"
+ ▪ 9ba289a soc: qcom: pil: Explicitly clear the subsystem loading address
+ ▪ b5e927e soc: qcom: Do not clear segments if pil boot failed in memory allocation
+ ▪ b41684d soc: qcom: Skip clearing modem FW region post load failure
+
  ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Settings/
  ▪ ed3445d Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
-
- ▼ 05/09/2017
-
-
- ▪ project device/motorola/msm8226-common/
- ▪ 7e69136 libsensors: peregrine: Report correct gyroscope range and resolution
-
- ▪ project device/xiaomi/kenzo/
- ▪ 0c652f5 Merge remote-tracking branch 'remotes/laos/cm-14.1' into nougat
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ ff9dfa7 Merge remote-tracking branch 'remotes/laos/cm-14.1' into nougat
- ▪ a21c907 msm8956: Add modem assertion check
- ▪ c9c34c1 msm8956: Write USB device info only once
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ a381889 Merge 39da5ccbb3f7903f95fada214a90a5f8f043b54a on remote branch
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 585ec96 Merge 3b743576569bb08c1efa416300aee4243a198c8f on remote branch
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ f281963 msm: qpnp-haptic: Process haptics asynchronously
- ▪ 16b758a qpnp-haptic: Dejank the haptics
- ▪ 7dd25ea Makefile: set ARCH
- ▪ 380c95d UPSTREAM: timerfd: Protect the might cancel mechanism proper
- ▪ dca0950 BACKPORT: UPSTREAM: HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
- ▪ 1a85fe3 UPSTREAM: char: lack of bool string made CONFIG_DEVPORT always on
- ▪ 1296095f UPSTREAM: char: Drop bogus dependency of DEVPORT on !M68K
- ▪ a4deda4 Fix GCC6 Compilation Errors & Warnings
- ▪ 399ddd2 Disable "maybe-uninitialized" warning globally
- ▪ 5485cea Makefile: Use ccache for compilation
- ▪ 6ee997b6 Makefile: Disable unused constant variable warning
- ▪ 48cc3c7 UPSTREAM: staging: ion: Fix error handling in ion_buffer_create
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ 31499ec Snap: Fix crash switching from back to front cam in video mode
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/nxp-nfc/opensource/Nfc/
- ▪ 56baa33 Merge 8eb1a0dee336510ba1768c9b55fbd8ab53497f4c on remote branch
-
- ▪ project vendor/nxp-nfc/opensource/frameworks/
- ▪ 9982608 Merge a8087ac9bbe83c11081812dda9274b469eb15885 on remote branch
-
- ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
- ▪ 134ac45 Merge 42ef4288c8633722baf64b0f36c618e6dbc0038f on remote branch
-
- ▪ project vendor/xiaomi/
- ▪ 5a2e8b8 kenzo: Rename fingerprint HALs
 
