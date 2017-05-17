@@ -2,6 +2,31 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/17/2017
+
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 189c999 kenzo: show correct charging current value on lockscreen
+ ▪ 5edddd4 kenzo: Pin qcrilmsgtunnel
+ ▪ da597b1 kenzo: Disable fluence on voicerec
+ ▪ 2acd05c kenzo: Enable 24bit offload
+ ▪ 06d4fdc kenzo: All hail Dominator
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ e9ffa96 msm8956: Add aanc_tuning_mixer_wcd9335
+ ▪ bdaa2b8 Revert "msm8956: Re-enable XML audio policy"
+ ▪ 7606bdb msm8956: Fix Fingerprintd Denial
+ ▪ e3d14f4 msm8956-common: Nuke sdcardfs
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3774bb8 add Jiayu S3 maintainer (#793)
+
+ ▪ project system/sepolicy/
+ ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
+ ▪ a688894 sepolicy: Allow system_server to set theme_prop
+
  ▼ 05/16/2017
 
 
@@ -29,6 +54,9 @@
 
  ▪ project packages/apps/Settings/
  ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
+
+ ▪ project system/keymaster/
+ ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
 
  ▪ project vendor/oneplus/
  ▪ 8d64f72 op3: Remove QVOP blobs
@@ -58,6 +86,9 @@
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 3226264 Dominator: regenerate defconfig
+
+ ▪ project packages/apps/AudioFX/
+ ▪ e696bf0 AudioFX: Fix choppy preset transitions
 
  ▪ project packages/apps/DUI/
 
@@ -168,6 +199,9 @@
  ▪ project device/sony/huashan/
  ▪ a44b797 Revert: "huashan: let Gello take part of the builds"
 
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ b8d7a59 msm8956: Kill Gello
+
  ▪ project frameworks/base/
 
  ▪ project kernel/oneplus/msm8974/
@@ -204,34 +238,4 @@
  ▪ aeb3245 Settings:Allow to disable qs footer warnings [2/2]
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 05/10/2017
-
-
- ▪ project frameworks/av/
- ▪ 5d49fde Merge pull request #3 from github-cygwin/nougat
- ▪ a930183 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ acb553d Merge "msm: mdss: fix race condition during mdp debugfs release"
- ▪ 9741fce Merge "soc: qcom: pil: Avoid possible buffer overflow during Modem boot"
- ▪ 541f872 Merge "soc: qcom: pil: Explicitly clear the subsystem loading address"
- ▪ a6ddf4b Merge "soc: qcom: Do not clear segments if pil boot failed in memory allocation"
- ▪ a45cd5a Merge "msm: mdss: Validating data values before passing on as operand"
- ▪ 08c0d1b Merge "mmc: card: block: check the user controlled parameters to avoid overflow"
- ▪ 8afa4ae Merge "msm: camera: Add regulator enable and disable independent of CSID"
- ▪ 2758c3b Merge "msm: camera: isp: Check userspace parameters"
- ▪ 2bbe679 Merge "crypto: msm: check invalid src and dst vbuf in qcedev.c"
- ▪ e30f62c Merge "mmc: cmdq_hci: Avoid releasing clock twice during DCMD error"
- ▪ 3fd4a41 Merge "mmc: queue: Remove BUG_ON() in cmdq_thread"
- ▪ 9ba289a soc: qcom: pil: Explicitly clear the subsystem loading address
- ▪ b5e927e soc: qcom: Do not clear segments if pil boot failed in memory allocation
- ▪ b41684d soc: qcom: Skip clearing modem FW region post load failure
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ ed3445d Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
 
