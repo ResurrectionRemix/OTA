@@ -2,45 +2,168 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/10/2017
+ ▼ 05/18/2017
 
 
- ▪ project frameworks/base/
- ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
- ▪ 6fd71cf telecom: Fix order of arguments when creating Details object
- ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
+ ▪ project device/oneplus/oneplus3/
+ ▪ 51f8dab Merge pull request #7 from Joshndroid/apascual89
 
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ d37d080 Add Maintainer for Coolpad Note 3 Lite(CP8298_I00) (#788)
- ▪ aeb3245 Settings:Allow to disable qs footer warnings [2/2]
- ▪ ed3445d Add Maintainer for Coolpad Note 3(CP8676_I02) (#787)
-
- ▼ 05/09/2017
-
-
- ▪ project frameworks/av/
- ▪ 5d49fde Merge pull request #3 from github-cygwin/nougat
- ▪ a930183 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Settings/
 
- ▪ project packages/services/OmniJaws/
+ ▼ 05/17/2017
 
- ▼ 05/08/2017
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+ ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
+ ▪ 3774bb8 add Jiayu S3 maintainer (#793)
+
+ ▪ project system/sepolicy/
+ ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
+ ▪ a688894 sepolicy: Allow system_server to set theme_prop
+
+ ▼ 05/16/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 7f4c861 op3: Remove QVOP service
+ ▪ f6cad45 op3: Enforce vendor tree presence
+ ▪ 2093c50 op3: Kill Gello
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
+
+ ▪ project vendor/oneplus/
+ ▪ 8d64f72 op3: Remove QVOP blobs
+
+ ▼ 05/15/2017
 
 
  ▪ project frameworks/base/
 
- ▪ project hardware/qcom/display-caf/msm8937/
- ▪ b7a3010 display: Add color metadata definition
+ ▪ project packages/apps/AudioFX/
+ ▪ e696bf0 AudioFX: Fix choppy preset transitions
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ eab04da Jelly: lint cleanup
+ ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
+ ▪ 5e5fb97 Jelly: Fix storage permission check
+ ▪ c315497 Jelly: add Desktop mode toggle
+ ▪ 5859bc6 Jelly: Actually disable cookies
+ ▪ fd7418e Jelly: Flush cookies when calling onStop()
+ ▪ eb6375d Jelly: Don't make app persistent
+ ▪ 2d4853b Jelly: Add proguard rules
+ ▪ d583aad Jelly: Improve URL/search query handling
+ ▪ 21c6894 Jelly: strings: Various pedantics
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project system/keymaster/
+ ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
+
+ ▼ 05/14/2017
+
+
+ ▪ project external/chromium-webview/
+ ▪ b544e48 Update README
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/media-caf/msm8996/
+ ▪ 87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+ ▪ 565e211 Add Scorpio & Lithium maintanier (#790)
+
+ ▪ project vendor/nxp-nfc/opensource/Nfc/
+ ▪ cb09714 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project vendor/nxp-nfc/opensource/frameworks/
+ ▪ 6933f27 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
+ ▪ e2d0d62 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▼ 05/13/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+ ▪ project packages/apps/DUI/
+ ▪ 5d95ee1 Improve MediaMonitor readability
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+ ▪ debffd2 Settings:Incall Vibration options [3/3]
+
+ ▼ 05/12/2017
+
+
+ ▪ project android/
+ ▪ 6bab65e crowdin: add DUI [1/2]
+
+ ▪ project frameworks/base/
+ ▪ 59afca8 fix build
+ ▪ d3fff6c incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
+ ▪ 6a61a8f frameworks/base: reduce the setTransactions
+ ▪ 4c50d5e hwui: skip draw empty frame
+ ▪ 9a1acd4 Stop holding mProxyLock while downloading PAC script data.
+ ▪ c065fdd sensors: fix native crash when dynamic sensor is removed
+ ▪ c5b1119 sensors: intern jstrings for memory savings
+ ▪ b8ca031 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+ ▪ 147dc3b Keyguard: disable logspilling debug
+ ▪ 9ba0ce5 Fix carrier label not getting scaled properly
+ ▪ 33c5cab StatusBar: Catch OOM caused by third-party icons
+ ▪ 3d1c711 The network event should be an asynchronous callback.
+ ▪ ebf3cbe wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+ ▪ b79fd00 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+ ▪ 492cf86 Destroy Allocation right away on exception
+ ▪ 2e58436 Destroy Allocation with ScriptIntrinsicLut
+ ▪ 4c1a6e9 Aapt2: Fix png leak
+ ▪ e5e4571 Deadlock in PackageInstallerSession
+ ▪ 8465fcf Save "mState.restored" in onSaveInstanceState of FilesActivity
+ ▪ c0d9ee2 Avoid deadlock when installing app
+ ▪ e7be227 Resolve deadlock between ActivityManagerService and PowerManagerService
+ ▪ d2a6ccc OBEX : Handle Negative index Exception
+ ▪ 7492ebd ExtShared build as priv-app
+ ▪ 8b797f8 Fix dead lock in Tethering state machine
+ ▪ 3383e64 Skip ListPopupWindow position update if detached
+ ▪ 385f7d6 Fix system server crash caused by CME in usage stats
+ ▪ 11ef661 Fix NPE while attempting to get length of null array in FileRotator
+ ▪ 3b26d60 Fix NPE in SettingsLib
+ ▪ 6c32d05 Validate handler of wakelock option for flashlight.
+
+ ▪ project packages/apps/DUI/
+ ▪ d450ac0 DUI: Fix Smartbar back button hiding on lockscreen intents
+
+ ▪ project packages/apps/Dialer/
+ ▪ 24f39ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
+ ▪ 4ad8faa Dialer:Remove redundant vibration options for InCallUI
 
  ▪ project packages/apps/OmniSwitch/
 
@@ -48,80 +171,7 @@
 
  ▪ project packages/apps/Settings/
 
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/07/2017
-
-
- ▪ project frameworks/base/
- ▪ 948bba9 base: SystemUI: use content observer for recent grid config
- ▪ 73dbc18 base:refactor recents code to switch between recents
- ▪ b0f2122 [1/2] base: featureize ro.recents.grid
- ▪ 319c5f7 Update OmniSwitch string
- ▪ 9733626 OmniJawsClient : Move to framework
- ▪ e2192bc SysUI : Use a different approach to Make perf profile tile invisible
- ▪ 7805dad base: SystemUI: add dedicated TextView for OmniJaws error marker
- ▪ 9bdaacf base: SystemUI: dont show OmniJaws error that prominent
-
- ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 99617f9 Configs: remove audio sink buffer size property
- ▪ a9f2c00 hal: fix kw issue in hal
- ▪ 6191804 hal: remove redundant logs from utils.c
- ▪ 905d1d8 audiod: Skip enumerating non-ADSP sound cards
-
- ▪ project hardware/qcom/display-caf/msm8937/
- ▪ 26cd504 display: Add color metadata definition
- ▪ eb49512 sdm: Use ColorMetadata in SDM
- ▪ 37d5aff display: Add support for Rec.2020
- ▪ b6a2bfb sdm: Use safe mode on External display on low end device
- ▪ 9c64210 HWC: Set skip to layers with Non Integral Source Crop
- ▪ 93afadf sdm: skip null commit on command mode panels
- ▪ 2428bc4 libmemtrack: Fix integer overflow in kgsl function
-
- ▪ project hardware/qcom/media-caf/msm8937/
- ▪ de0c52e media: libOmxSw encoders require prop headers :(
- ▪ fcd1cfd mm-video-v4l2: serialize FTB's for dropped frames
- ▪ 057d1c7 mm-video-v4l2: vidc: venc: Free buffer FDs and handles
- ▪ a5da2d3 mm-video-v4l2: vdec: Support for HEVCMain10HDR10 profile
- ▪ 76dd49f mm-video-v4l2: Update max level for h264 decoder to 5.1
- ▪ 46aa731 mm-video-v4l2: venc: Disable Pframes incase of resolution 5k/6k
- ▪ 5dc8e7e mm-video-v4l2: Reset drv_ctx o/p buffer requirements in loaded state
- ▪ 0a4ad7e mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2
- ▪ 9e702ea mm-video-v4l2: vdec:Metadata for HDR and ColorAspects
- ▪ 6076eb6 mm-video-v4l2: vdec: Support for HDR Info extension
-
- ▪ project packages/apps/ResurrectionOTA/
- ▪ b0b0b4a ResurrectionOTA: squash all translations
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 20ea10d ROMStats: modify for ResurrectionRemix
-
- ▪ project packages/apps/Settings/
- ▪ 372d14f Add missing string
- ▪ 048aad9 Refactor Recents Category
- ▪ d55ce18 Settings:featurize ro.recents.grid [2/2]
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 05/06/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ cf9aea9 op3: Update decoder profiling result
- ▪ 84c61b7 op3: Unpin fpc hal
-
- ▪ project frameworks/base/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 907e76e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr-rebase
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
- ▪ c415aa0 Mantainers: Delete WinKarbik from ido mantainer (#784)
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/oneplus/
- ▪ 1a181b5 op3: Update fpc hal from OB15
+ ▪ project packages/services/Telecomm/
+ ▪ 566782e Use double vibration on hang-up call
+ ▪ 14a1774 incall vibration options [2/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
 
