@@ -2,6 +2,25 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/18/2017
+
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ 6a07430 kenzo: pin sharp qdcm config
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ aad785d input: synaptics_dsx (MMI): Remove some sysfs nodes
+ ▪ cbecea4 usb: diag: change %p to %pK in debug messages
+ ▪ a27021f msm: camera: restructure data handling to be more robust
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+ ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
+
+ ▪ project vendor/xiaomi/
+ ▪ 3995d08 kenzo: Set default mode to paper_mode_off
+
  ▼ 05/17/2017
 
 
@@ -214,28 +233,4 @@
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
-
- ▼ 05/11/2017
-
-
- ▪ project frameworks/base/
- ▪ 695bd5c base: Allow to disable qs footer warnings [1/2]
- ▪ 6fd71cf telecom: Fix order of arguments when creating Details object
- ▪ 299da89 NetworkTraffic: Dont show wrong values when connected to VPN
-
- ▪ project hardware/qcom/display/
- ▪ 03afd10 hwc2: Only set display_width and display_height when equal to zero
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 1485df8 staging: prima: Fix non-debug build and switch to it
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ d37d080 Add Maintainer for Coolpad Note 3 Lite(CP8298_I00) (#788)
- ▪ aeb3245 Settings:Allow to disable qs footer warnings [2/2]
-
- ▪ project packages/services/OmniJaws/
 
