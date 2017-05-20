@@ -189,11 +189,11 @@
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
 	</angler>
 	<oneplus3>
-            <Filename>RR-N-v5.8.3-20170512-oneplus3-Weekly.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170520-oneplus3-Weekly.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://drive.google.com/file/d/0BxFDLfZr1uMUaG1ici1UNnNicmM/view?usp=drivesdk</RomUrl>
+                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0BxFDLfZr1uMUUEtITVM4aXZMQ2s</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
