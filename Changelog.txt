@@ -2,6 +2,110 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/20/2017
+
+
+ ▪ project build/
+ ▪ c698ef7 envsetup: fix small derp calling root method chooser script
+ ▪ 1985266 Merge branch 'optional-root-method' into nougat
+ ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ 2057638 qseecom: improve input validatation for qseecom_send_service_cmd
+
+ ▪ project kernel/oneplus/msm8974/
+ ▪ 0f29566 kernel: Fix potential refcount leak in su check
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
+ ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
+
+ ▪ project packages/apps/Settings/
+ ▪ bf8c859 Add J500Y (#795)
+
+ ▪ project packages/apps/ThemeInterfacer/
+ ▪ 5aeba49 Add interface to get API version and app authentication status
+ ▪ 069e629 Fix permissions for CTS [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
+
+ ▼ 05/19/2017
+
+
+ ▪ project build/
+ ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
+ ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
+
+ ▪ project device/oppo/common/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ 1890c5c qseecom: Change format specifier %p to %pK
+ ▪ de017e7 qseecom: Add checks for send_cmd inputs
+ ▪ 2c28b5d qseecom: Add boundary checks for offset within message.
+ ▪ e806103 qseecom: fix secure app loading failure by kernel client -- part 2
+ ▪ 3b04b27 qseecom: Fix memory leak
+ ▪ c479d6b qseecom: fix secure app loading failure by kernel mode qseecom client
+ ▪ ec3da8f qseecom: change the number of bytes to compare app names
+ ▪ bf20f59 qseecom: fix an issue related to search app when unloading an app
+ ▪ 82656b1 qseecom: change return value to 0 if app id exists when loading app
+ ▪ 5d495e7 qseecom: Remove the incorrect client handle setting
+ ▪ b6c214e qseecom: Add support to handle multiple app load & unload
+ ▪ 4ddfb0b qseecom: Fix issues with failure to release client handle
+ ▪ afbe538 qseecom: Unload the app upon receiving qseecom_release.
+ ▪ ce9f768 dccp/tcp: do not inherit mc_list from parent
+ ▪ b255a07 ANDROID: ion: Protect kref from userspace manipulation
+ ▪ 19b8e16 ion: Fix use after free during ION_IOC_ALLOC
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/ThemeChooser/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cm/
+ ▪ 0901e93 extract_utils: fix extracting XML files containing binary characters
+ ▪ ac48cb6 cm: Remove Gello
+ ▪ 782912b rr: add in a script to choose root variant
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
  ▼ 05/18/2017
 
 
@@ -49,6 +153,9 @@
  ▼ 05/16/2017
 
 
+ ▪ project build/
+ ▪ ca236d8 rr: optional root methods [2/2]
+
  ▪ project device/oneplus/oneplus3/
  ▪ c10da2c op3: Remove QVOP service
  ▪ c930264 op3: Enforce vendor tree presence
@@ -76,6 +183,9 @@
 
  ▪ project system/keymaster/
  ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
+
+ ▪ project vendor/cm/
+ ▪ 2bfdf69 rr: add optional root methods [1/2]
 
  ▪ project vendor/oneplus/
  ▪ 8d64f72 op3: Remove QVOP blobs
@@ -149,88 +259,6 @@
  ▪ 23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
 
  ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
-
- ▼ 05/13/2017
-
-
- ▪ project device/oneplus/bacon/
- ▪ 2360001 Revert "bacon: let Gello take part of the builds"
-
- ▪ project frameworks/base/
- ▪ 59afca8 fix build
- ▪ d3fff6c incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
- ▪ 6a61a8f frameworks/base: reduce the setTransactions
- ▪ 4c50d5e hwui: skip draw empty frame
- ▪ 9a1acd4 Stop holding mProxyLock while downloading PAC script data.
- ▪ c065fdd sensors: fix native crash when dynamic sensor is removed
- ▪ c5b1119 sensors: intern jstrings for memory savings
- ▪ b8ca031 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
- ▪ 147dc3b Keyguard: disable logspilling debug
- ▪ 9ba0ce5 Fix carrier label not getting scaled properly
- ▪ 33c5cab StatusBar: Catch OOM caused by third-party icons
- ▪ 3d1c711 The network event should be an asynchronous callback.
- ▪ ebf3cbe wifi: catch UnsupportedOperationException for getMatchingWifiConfig
- ▪ b79fd00 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
- ▪ 492cf86 Destroy Allocation right away on exception
- ▪ 2e58436 Destroy Allocation with ScriptIntrinsicLut
- ▪ 4c1a6e9 Aapt2: Fix png leak
- ▪ e5e4571 Deadlock in PackageInstallerSession
- ▪ 8465fcf Save "mState.restored" in onSaveInstanceState of FilesActivity
- ▪ c0d9ee2 Avoid deadlock when installing app
- ▪ e7be227 Resolve deadlock between ActivityManagerService and PowerManagerService
- ▪ d2a6ccc OBEX : Handle Negative index Exception
- ▪ 7492ebd ExtShared build as priv-app
- ▪ 8b797f8 Fix dead lock in Tethering state machine
- ▪ 3383e64 Skip ListPopupWindow position update if detached
- ▪ 385f7d6 Fix system server crash caused by CME in usage stats
- ▪ 11ef661 Fix NPE while attempting to get length of null array in FileRotator
- ▪ 3b26d60 Fix NPE in SettingsLib
- ▪ 6c32d05 Validate handler of wakelock option for flashlight.
-
- ▪ project packages/apps/DUI/
- ▪ 5d95ee1 Improve MediaMonitor readability
- ▪ d450ac0 DUI: Fix Smartbar back button hiding on lockscreen intents
-
- ▪ project packages/apps/Dialer/
- ▪ 24f39ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
- ▪ 4ad8faa Dialer:Remove redundant vibration options for InCallUI
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
- ▪ debffd2 Settings:Incall Vibration options [3/3]
-
- ▪ project packages/services/Telecomm/
- ▪ 566782e Use double vibration on hang-up call
- ▪ 14a1774 incall vibration options [2/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
-
- ▼ 05/12/2017
-
-
- ▪ project android/
- ▪ 6bab65e crowdin: add DUI [1/2]
-
- ▪ project device/motorola/msm8226-common/
- ▪ 65047ed msm8226-common: Kill Gello
-
- ▪ project device/sony/huashan/
- ▪ a44b797 Revert: "huashan: let Gello take part of the builds"
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ b8d7a59 msm8956: Kill Gello
-
- ▪ project frameworks/base/
-
- ▪ project kernel/oneplus/msm8974/
- ▪ 219f6fc kernel: Only expose su when daemon is running
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
 
