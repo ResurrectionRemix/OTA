@@ -2,6 +2,54 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/21/2017
+
+
+ ▪ project android/
+ ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 175fdb4 init.qcom.rc : Add time_daemon in init.qcom.rc
+ ▪ 8bf1494 op3: rootdir: Update fs tune from marlin
+ ▪ 7e8fa2b op3: Use kryo 32-bit routines
+ ▪ 079e43f op3: Set camera package name to OnePlus Camera
+ ▪ 46b7928 op3: Add specific camera parameter library
+ ▪ d498608 op3: Remove camera shim library
+ ▪ baae4eb op3: Update to OB16 blobs
+ ▪ 2b544b7 op3: Re-enable camera HAL3
+ ▪ 774d8eb op3: Disable tethering provisioning for all carriers
+
+ ▪ project frameworks/base/
+ ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
+ ▪ 22d2286 Add protected broadcast for app crash broadcast
+ ▪ 452eb37 Update Drawer header
+ ▪ 185d71e Dont use CMSettings for Headset intents[1/2]
+ ▪ c711fa3 Settings left drawer: make the view more compact and show more entries per page
+ ▪ 6afb2ae Fix lag when opening an entry from the Settings left drawer
+ ▪ 08ad038 Option to Show Custom header in settings drawer [1/2]
+ ▪ 9efa551 Add SettingsDrawerActivity header
+ ▪ eccc096 Fix the Wi-Fi wrong status when turning Wi-Fi on
+ ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
+ ▪ 313bf88 Add navigation disabled notification [1/2]
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 178808f Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
+ ▪ 516fd61 op3: Set cfq as default I/O scheduler
+ ▪ e6fda3c kernel: Fix potential refcount leak in su check
+ ▪ b0856c3 kernel: Only expose su when daemon is running
+
+ ▪ project packages/apps/Settings/
+ ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 8b85edf cm: Remove root access prop
+
+ ▪ project vendor/oneplus/
+ ▪ 602b6ed op3: Update to OB16 blobs
+
  ▼ 05/20/2017
 
 
@@ -9,8 +57,6 @@
  ▪ c698ef7 envsetup: fix small derp calling root method chooser script
  ▪ 1985266 Merge branch 'optional-root-method' into nougat
  ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
-
- ▪ project frameworks/base/
 
  ▪ project kernel/motorola/msm8226/
  ▪ 2057638 qseecom: improve input validatation for qseecom_send_service_cmd
@@ -26,12 +72,18 @@
  ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
  ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
 
- ▪ project packages/apps/Settings/
- ▪ bf8c859 Add J500Y (#795)
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
 
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 5aeba49 Add interface to get API version and app authentication status
- ▪ 069e629 Fix permissions for CTS [2/2]
+ ▪ project packages/apps/Settings/
+ ▪ 397950c Fix expandable desktop
+ ▪ 5af5556 Make sure to rebuild on app entries loaded
+ ▪ beff6c3 Don't re-populate the app list in rebuild()
+ ▪ 1a4cf52 Move Headset Settings out of CMSettings
+ ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
+ ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
+ ▪ bf8c859 Add J500Y (#795)
 
  ▪ project packages/services/OmniJaws/
 
@@ -141,6 +193,124 @@
  ▪ 7606bdb msm8956: Fix Fingerprintd Denial
  ▪ e3d14f4 msm8956-common: Nuke sdcardfs
 
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 396a296 f2fs: switch to using fscrypt_match_name()
+ ▪ c5ab4eb fscrypt: introduce helper function for filename matching
+ ▪ ba8661c fscrypt: fix context consistency check when key(s) unavailable
+ ▪ ae8ffd3 fscrypt: Move key structure and constants to uapi
+ ▪ 0cb2fd2 fscrypt: remove unnecessary checks for NULL operations
+ ▪ 6b332b9 fscrypt: eliminate ->prepare_context() operation
+ ▪ a9244cc fscrypt: remove broken support for detecting keyring key revocation
+ ▪ 43d2cb9 fscrypt: avoid collisions when presenting long encrypted filenames
+ ▪ 9f0ac4a f2fs: check entire encrypted bigname when finding a dentry
+ ▪ ef9980d f2fs: sync f2fs_lookup() with ext4_lookup()
+ ▪ ce6e24e f2fs: fix a mount fail for wrong next_scan_nid
+ ▪ 0bd2e75 f2fs: relocate inode_{,un}lock in F2FS_IOC_SETFLAGS
+ ▪ c7ffd6d f2fs: show available_nids in f2fs/status
+ ▪ 57708b7 f2fs: flush dirty nats periodically
+ ▪ 39b3840 f2fs: introduce CP_TRIMMED_FLAG to avoid unneeded discard
+ ▪ eee6a96 f2fs: allow cpc->reason to indicate more than one reason
+ ▪ 46a8ca8 f2fs: release cp and dnode lock before IPU
+ ▪ 1095698 f2fs: shrink size of struct discard_cmd
+ ▪ ade8dd5 f2fs: don't hold cmd_lock during waiting discard command
+ ▪ ef0d56e f2fs: nullify fio->encrypted_page for each writes
+ ▪ 24b316e f2fs: sanity check segment count
+ ▪ 4a8cf45 f2fs: introduce valid_ipu_blkaddr to clean up
+ ▪ a69dbfd f2fs: lookup extent cache first under IPU scenario
+ ▪ 4c660c4 f2fs: reconstruct code to write a data page
+ ▪ 9875a1b f2fs: introduce __wait_discard_cmd
+ ▪ a9711d6 f2fs: introduce __issue_discard_cmd
+ ▪ e6e3b6a f2fs: enable small discard by default
+ ▪ 7ab07b5 f2fs: delay awaking discard thread
+ ▪ 0c5081e f2fs: seperate read nat page from nat_tree_lock
+ ▪ dfccf3a f2fs: fix multiple f2fs_add_link() having same name for inline dentry
+ ▪ 174241e f2fs: skip encrypted inode in ASYNC IPU policy
+ ▪ 40cd2e9 f2fs: fix out-of free segments
+ ▪ c9d01c3 f2fs: improve definition of statistic macros
+ ▪ 2e06ed5 f2fs: assign allocation hint for warm/cold data
+ ▪ 48036ed f2fs: fix _IOW usage
+ ▪ 29e4eed f2fs: add ioctl to flush data from faster device to cold area
+ ▪ 67716cd f2fs: introduce async IPU policy
+ ▪ cf54a09 f2fs: add undiscard blocks stat
+ ▪ ce97d27 f2fs: unlock cp_rwsem early for IPU writes
+ ▪ 3cb8d1a f2fs: introduce __check_rb_tree_consistence
+ ▪ 95ae34b f2fs: trace __submit_discard_cmd
+ ▪ 3c901dd f2fs: in prior to issue big discard
+ ▪ 8444898 f2fs: clean up discard_cmd_control structure
+ ▪ 38d4655 f2fs: use rb-tree to track pending discard commands
+ ▪ 95e0d0d f2fs: avoid dirty node pages in check_only recovery
+ ▪ 9d796e5 f2fs: fix not to set fsync/dentry mark
+ ▪ dcb7188 f2fs: allocate hot_data for atomic writes
+ ▪ c460977 f2fs: give time to flush dirty pages for checkpoint
+ ▪ 785b192 f2fs: fix fs corruption due to zero inode page
+ ▪ 4a74657 f2fs: shrink blk plug region
+ ▪ 3728be9 f2fs: extract rb-tree operation infrastructure
+ ▪ 4a511a3 f2fs: avoid frequent checkpoint during f2fs_gc
+ ▪ eacf10a f2fs: clean up some macros in terms of GET_SEGNO
+ ▪ 5a9345c f2fs: clean up get_valid_blocks with consistent parameter
+ ▪ 7548d30 f2fs: use segment number for get_valid_blocks
+ ▪ 1e7c3aa f2fs: guard macro variables with braces
+ ▪ 648c287 f2fs: fix comment on f2fs_flush_merged_bios() after 86531d6b
+ ▪ fc5aa04 f2fs: prevent waiter encountering incorrect discard states
+ ▪ ce4f972 f2fs: introduce f2fs_wait_discard_bios
+ ▪ 2f2774d f2fs: split discard_cmd_list
+ ▪ 1ab7acd Revert "f2fs: put allocate_segment after refresh_sit_entry"
+ ▪ 223fb7d f2fs: split make_dentry_ptr() into block and inline versions
+ ▪ c7873f9 f2fs: submit bio of in-place-update pages
+ ▪ 66e005d f2fs: remove the redundant variable definition
+ ▪ c873cf9 f2fs: avoid IO split due to mixed WB_SYNC_ALL and WB_SYNC_NONE
+ ▪ d3d480b f2fs: write small sized IO to hot log
+ ▪ b08f1e8 f2fs: use bitmap in discard_entry
+ ▪ 4a6712f f2fs: clean up destroy_discard_cmd_control
+ ▪ 8912c9e f2fs: count discard command entry
+ ▪ 40605ac f2fs: show issued flush/discard count
+ ▪ 540bbb1 f2fs: relax node version check for victim data in gc
+ ▪ e1ca40a f2fs: start SSR much eariler to avoid FG_GC
+ ▪ 882323d f2fs: allocate node and hot data in the beginning of partition
+ ▪ 8ba8540 f2fs: fix wrong max cost initialization
+ ▪ 50bc8de f2fs: allow write page cache when writting cp
+ ▪ 655a400 f2fs: don't reserve additional space in xattr block
+ ▪ e79c49f f2fs: clean up xattr operation
+ ▪ d912071 f2fs: don't track volatile file in dirty inode list
+ ▪ b60940e f2fs: show the max number of volatile operations
+ ▪ fa53a53 f2fs: fix race condition in between free nid allocator/initializer
+ ▪ ecf9ef3 f2fs: use set_page_private marcro in f2fs_trace_pid
+ ▪ 85dc038 f2fs: fix recording invalid last_victim
+ ▪ b993b82 f2fs: more reasonable mem_size calculating of ino_entry
+ ▪ 03544d5 f2fs: calculate the f2fs_stat_info into base_mem
+ ▪ 9403193 f2fs: avoid stat_inc_atomic_write for non-atomic file
+ ▪ cfa4937 f2fs: sanity check of crc_offset from raw checkpoint
+ ▪ 1139ced f2fs: cleanup the disk level filename updating
+ ▪ 99d14c6 f2fs: cover update_free_nid_bitmap with nid_list_lock
+ ▪ 980f1ae f2fs: fix bad prefetchw of NULL page
+ ▪ 7ffc7d7 f2fs: clear FI_DATA_EXIST flag in truncate_inline_inode
+ ▪ 7501b57 f2fs: move mnt_want_write_file after arguments checking
+ ▪ 376554c f2fs: check new size by inode_newsize_ok in f2fs_insert_range
+ ▪ b85713f f2fs: avoid copy date to user-space if move file range fail
+ ▪ dfcdf0a f2fs: drop duplicate new_size assign in f2fs_zero_range
+ ▪ fb56043 f2fs: adjust the way of calculating nat block
+ ▪ b8dd635 f2fs: add fault injection on f2fs_truncate
+ ▪ 7d00727 f2fs: check range before defragment
+ ▪ f097fad f2fs: use parameter max_items instead of PIDVEC_SIZE
+ ▪ 59acb96 f2fs: add a punch discard command function
+ ▪ 40dd3c7 f2fs: allocate a bio for discarding when actually issuing it
+ ▪ 02ccaef f2fs: skip writeback meta pages if cp_mutex acquire failed
+ ▪ d8f9c77 f2fs: show more precise message on orphan recovery failure
+ ▪ fb0cf25 f2fs: remove dead macro PGOFS_OF_NEXT_DNODE
+ ▪ cd93c1a f2fs: drop duplicate radix tree lookup of nat_entry_set
+ ▪ 1141564 f2fs: make sure trace all f2fs_issue_flush
+ ▪ 02b385d f2fs: don't allow volatile writes for non-regular file
+ ▪ fb98d82 f2fs: don't allow atomic writes for not regular files
+ ▪ 253d19f f2fs: fix stale ATOMIC_WRITTEN_PAGE private pointer
+ ▪ 4ee9334 f2fs: build stat_info before orphan inode recovery
+ ▪ c3f4b2a f2fs: fix the fault of calculating blkstart twice
+ ▪ 277a5ab f2fs: fix the fault of checking F2FS_LINK_MAX for rename inode
+ ▪ d94c16b f2fs: don't allow to get pino when filename is encrypted
+ ▪ 968d314 f2fs: fix wrong error injection for evict_inode
+ ▪ 2599845 f2fs: le32_to_cpu for ckpt->cp_pack_total_block_count
+ ▪ b2de468 f2fs: combine nat_bits and free_nid_bitmap cache
+ ▪ 8834c93 f2fs: skip scanning free nid bitmap of full NAT blocks
+
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Settings/
@@ -246,19 +416,4 @@
 
  ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
  ▪ e2d0d62 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▼ 05/14/2017
-
-
- ▪ project external/chromium-webview/
- ▪ b544e48 Update README
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
 
