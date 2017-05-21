@@ -2,17 +2,149 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/18/2017
+ ▼ 05/21/2017
 
+
+ ▪ project android/
+ ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 64c0f68 Merge branch 'rr' of https://github.com/apascual89/android_device_oneplus_oneplus3 into rr
+ ▪ 9e73ac0 init.qcom.rc : Add time_daemon in init.qcom.rc
+ ▪ 11304d0 op3: rootdir: Update fs tune from marlin
+ ▪ 3f36afe op3: Use kryo 32-bit routines
+ ▪ f1f4dec op3: Update to OB16 blobs
+ ▪ 958a187 op3: Re-enable camera HAL3
+ ▪ 5199ed0 op3: Disable tethering provisioning for all carriers
+ ▪ b6d8949 op3: Set camera package name to OnePlus Camera
+ ▪ 7151473 op3: Add specific camera parameter library
+ ▪ 695a798 op3: Remove camera shim library
+
+ ▪ project device/oppo/common/
+ ▪ 4b4ef25 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_oppo_common into rr
+
+ ▪ project frameworks/base/
+ ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
+ ▪ 22d2286 Add protected broadcast for app crash broadcast
+ ▪ 452eb37 Update Drawer header
+ ▪ 185d71e Dont use CMSettings for Headset intents[1/2]
+ ▪ c711fa3 Settings left drawer: make the view more compact and show more entries per page
+ ▪ 6afb2ae Fix lag when opening an entry from the Settings left drawer
+ ▪ 08ad038 Option to Show Custom header in settings drawer [1/2]
+ ▪ 9efa551 Add SettingsDrawerActivity header
+ ▪ eccc096 Fix the Wi-Fi wrong status when turning Wi-Fi on
+ ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
+ ▪ 313bf88 Add navigation disabled notification [1/2]
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 4b49609 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr-rebase
+ ▪ 178808f Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
+ ▪ 516fd61 op3: Set cfq as default I/O scheduler
+ ▪ e6fda3c kernel: Fix potential refcount leak in su check
+ ▪ b0856c3 kernel: Only expose su when daemon is running
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 8b85edf cm: Remove root access prop
+
+ ▪ project vendor/oneplus/
+ ▪ 602b6ed op3: Update to OB16 blobs
+
+ ▼ 05/20/2017
+
+
+ ▪ project build/
+ ▪ c698ef7 envsetup: fix small derp calling root method chooser script
+ ▪ 1985266 Merge branch 'optional-root-method' into nougat
+ ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
+
+ ▪ project packages/apps/Jelly/
+ ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
+ ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
+
+ ▪ project packages/apps/Settings/
+ ▪ 397950c Fix expandable desktop
+ ▪ 5af5556 Make sure to rebuild on app entries loaded
+ ▪ beff6c3 Don't re-populate the app list in rebuild()
+ ▪ 1a4cf52 Move Headset Settings out of CMSettings
+ ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
+ ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
+ ▪ bf8c859 Add J500Y (#795)
+
+ ▪ project vendor/cm/
+ ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
+
+ ▼ 05/19/2017
+
+
+ ▪ project build/
+ ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
+ ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
 
  ▪ project device/oneplus/oneplus3/
  ▪ 51f8dab Merge pull request #7 from Joshndroid/apascual89
 
+ ▪ project device/oppo/common/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
  ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
 
- ▼ 05/17/2017
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/ThemeChooser/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cm/
+ ▪ 0901e93 extract_utils: fix extracting XML files containing binary characters
+ ▪ ac48cb6 cm: Remove Gello
+ ▪ 782912b rr: add in a script to choose root variant
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 05/18/2017
 
 
  ▪ project packages/apps/DUI/
@@ -20,158 +152,4 @@
  ▪ project packages/apps/Settings/
  ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
  ▪ 3774bb8 add Jiayu S3 maintainer (#793)
-
- ▪ project system/sepolicy/
- ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
- ▪ a688894 sepolicy: Allow system_server to set theme_prop
-
- ▼ 05/16/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 7f4c861 op3: Remove QVOP service
- ▪ f6cad45 op3: Enforce vendor tree presence
- ▪ 2093c50 op3: Kill Gello
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
-
- ▪ project vendor/oneplus/
- ▪ 8d64f72 op3: Remove QVOP blobs
-
- ▼ 05/15/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/AudioFX/
- ▪ e696bf0 AudioFX: Fix choppy preset transitions
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ eab04da Jelly: lint cleanup
- ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
- ▪ 5e5fb97 Jelly: Fix storage permission check
- ▪ c315497 Jelly: add Desktop mode toggle
- ▪ 5859bc6 Jelly: Actually disable cookies
- ▪ fd7418e Jelly: Flush cookies when calling onStop()
- ▪ eb6375d Jelly: Don't make app persistent
- ▪ 2d4853b Jelly: Add proguard rules
- ▪ d583aad Jelly: Improve URL/search query handling
- ▪ 21c6894 Jelly: strings: Various pedantics
-
- ▪ project packages/apps/Settings/
-
- ▪ project system/keymaster/
- ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
-
- ▼ 05/14/2017
-
-
- ▪ project external/chromium-webview/
- ▪ b544e48 Update README
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
- ▪ 565e211 Add Scorpio & Lithium maintanier (#790)
-
- ▪ project vendor/nxp-nfc/opensource/Nfc/
- ▪ cb09714 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project vendor/nxp-nfc/opensource/frameworks/
- ▪ 6933f27 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
- ▪ e2d0d62 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▼ 05/13/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
-
- ▪ project packages/apps/DUI/
- ▪ 5d95ee1 Improve MediaMonitor readability
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
- ▪ debffd2 Settings:Incall Vibration options [3/3]
-
- ▼ 05/12/2017
-
-
- ▪ project android/
- ▪ 6bab65e crowdin: add DUI [1/2]
-
- ▪ project frameworks/base/
- ▪ 59afca8 fix build
- ▪ d3fff6c incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
- ▪ 6a61a8f frameworks/base: reduce the setTransactions
- ▪ 4c50d5e hwui: skip draw empty frame
- ▪ 9a1acd4 Stop holding mProxyLock while downloading PAC script data.
- ▪ c065fdd sensors: fix native crash when dynamic sensor is removed
- ▪ c5b1119 sensors: intern jstrings for memory savings
- ▪ b8ca031 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
- ▪ 147dc3b Keyguard: disable logspilling debug
- ▪ 9ba0ce5 Fix carrier label not getting scaled properly
- ▪ 33c5cab StatusBar: Catch OOM caused by third-party icons
- ▪ 3d1c711 The network event should be an asynchronous callback.
- ▪ ebf3cbe wifi: catch UnsupportedOperationException for getMatchingWifiConfig
- ▪ b79fd00 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
- ▪ 492cf86 Destroy Allocation right away on exception
- ▪ 2e58436 Destroy Allocation with ScriptIntrinsicLut
- ▪ 4c1a6e9 Aapt2: Fix png leak
- ▪ e5e4571 Deadlock in PackageInstallerSession
- ▪ 8465fcf Save "mState.restored" in onSaveInstanceState of FilesActivity
- ▪ c0d9ee2 Avoid deadlock when installing app
- ▪ e7be227 Resolve deadlock between ActivityManagerService and PowerManagerService
- ▪ d2a6ccc OBEX : Handle Negative index Exception
- ▪ 7492ebd ExtShared build as priv-app
- ▪ 8b797f8 Fix dead lock in Tethering state machine
- ▪ 3383e64 Skip ListPopupWindow position update if detached
- ▪ 385f7d6 Fix system server crash caused by CME in usage stats
- ▪ 11ef661 Fix NPE while attempting to get length of null array in FileRotator
- ▪ 3b26d60 Fix NPE in SettingsLib
- ▪ 6c32d05 Validate handler of wakelock option for flashlight.
-
- ▪ project packages/apps/DUI/
- ▪ d450ac0 DUI: Fix Smartbar back button hiding on lockscreen intents
-
- ▪ project packages/apps/Dialer/
- ▪ 24f39ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
- ▪ 4ad8faa Dialer:Remove redundant vibration options for InCallUI
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/Telecomm/
- ▪ 566782e Use double vibration on hang-up call
- ▪ 14a1774 incall vibration options [2/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
 
