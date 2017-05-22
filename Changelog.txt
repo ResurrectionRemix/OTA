@@ -2,6 +2,52 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 3e04527c base: update updateUsbStateBroadcastIfNeeded types
+ ▪ fe1cfd9 Check and send usb state broadcast when devices boots
+ ▪ 7373362 Only send usb disconnect intents after boot.
+ ▪ ef0fcc2 fix KeyEvent can't correctly finish when inputmethod time out happened
+ ▪ 779a3e9 Fixed NPE in canAddMoreManagedProfiles
+ ▪ 60a339e Fix permissions for CTS [1/2]
+
+ ▪ project frameworks/native/
+ ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ 657b0a4 kernel: Fix potential refcount leak in su check
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 0ad12ce ion: adjust system heap pool orders
+ ▪ 33b6f21 ANDROID: mmc: move to a SCHED_FIFO thread
+ ▪ 33bd17d sched: avoid migrating when softint on tgt cpu should be short
+ ▪ 4df8d30 sched: avoid scheduling RT threads on cores currently handling softirqs
+ ▪ 4bc39cc sched/rt: Avoid moving rt task if destination CPU does not run low priority task.
+ ▪ 57ce978 lowmemorykiller: account for unevictable pages
+ ▪ dd742f1 android: binder: remove useless preemption disable on target_wait
+
+ ▪ project packages/apps/Dialer/
+ ▪ afc79eb Dialer: lock screen appear before incoming call screen
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 1f45da1 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
+
+ ▪ project packages/services/OmniJaws/
+ ▪ c4e406d OwmniJaws Use own API key
+ ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
+ ▪ 299c137 OmniJaws: widget layout madness
+ ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
+
+ ▪ project packages/services/ThemeInterfacer/
+ ▪ 2a46d48 Add interface to get API version and app authentication status
+ ▪ 8e55d57 Fix permissions for CTS [2/2]
+
  ▼ 05/21/2017
 
 
@@ -34,6 +80,13 @@
  ▪ 313bf88 Add navigation disabled notification [1/2]
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ 4e6bb14 net/packet: fix overflow in check for tp_reserve
+ ▪ 0e0a89a net/packet: fix overflow in check for tp_frame_nr
+ ▪ 3c1cc5c net/packet: fix overflow in check for priv area size
+ ▪ a63bc81 dccp/tcp: do not inherit mc_list from parent
+ ▪ 8f475aa ip6_gre: fix ip6gre_err() invalid reads
+ ▪ f5dbfd2 tty: n_hdlc: get rid of racy n_hdlc.tbuf
+ ▪ 79a275b TTY: n_hdlc, fix lockdep false positive
  ▪ 178808f Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
  ▪ 516fd61 op3: Set cfq as default I/O scheduler
  ▪ e6fda3c kernel: Fix potential refcount leak in su check
@@ -163,6 +216,9 @@
 
  ▪ project device/xiaomi/kenzo/
  ▪ 6a07430 kenzo: pin sharp qdcm config
+
+ ▪ project frameworks/native/
+ ▪ c68520a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
 
  ▪ project kernel/motorola/msm8226/
  ▪ aad785d input: synaptics_dsx (MMI): Remove some sysfs nodes
@@ -359,61 +415,4 @@
 
  ▪ project vendor/oneplus/
  ▪ 8d64f72 op3: Remove QVOP blobs
-
- ▼ 05/15/2017
-
-
- ▪ project device/oneplus/bacon/
- ▪ a821e28 Revert "bacon: let Gello take part of the builds"
-
- ▪ project device/zuk/ham/
- ▪ ce590ef ham: Kill Gello
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project kernel/motorola/msm8226/
- ▪ c6c3cb0 kernel: Only expose su when daemon is running
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 3226264 Dominator: regenerate defconfig
-
- ▪ project packages/apps/AudioFX/
- ▪ e696bf0 AudioFX: Fix choppy preset transitions
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ eab04da Jelly: lint cleanup
- ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
- ▪ 5e5fb97 Jelly: Fix storage permission check
- ▪ c315497 Jelly: add Desktop mode toggle
- ▪ 5859bc6 Jelly: Actually disable cookies
- ▪ fd7418e Jelly: Flush cookies when calling onStop()
- ▪ eb6375d Jelly: Don't make app persistent
- ▪ 2d4853b Jelly: Add proguard rules
- ▪ d583aad Jelly: Improve URL/search query handling
- ▪ 21c6894 Jelly: strings: Various pedantics
-
- ▪ project packages/apps/Settings/
- ▪ 565e211 Add Scorpio & Lithium maintanier (#790)
-
- ▪ project vendor/nxp-nfc/opensource/Nfc/
- ▪ cb09714 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project vendor/nxp-nfc/opensource/frameworks/
- ▪ 6933f27 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
-
- ▪ project vendor/nxp-nfc/opensource/libnfc-nci/
- ▪ e2d0d62 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
 
