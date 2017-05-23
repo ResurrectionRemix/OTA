@@ -2,6 +2,18 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/23/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/motorola/msm8226/
+ ▪ 88c6ce0 ASoC: msm: initialize the params array before using it
+ ▪ 14f4684 msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
+ ▪ 1422cd1 msm: camera: sensor: Fix use after free condition
+
+ ▪ project packages/apps/Settings/
+
  ▼ 05/22/2017
 
 
@@ -92,6 +104,9 @@
  ▪ e6fda3c kernel: Fix potential refcount leak in su check
  ▪ b0856c3 kernel: Only expose su when daemon is running
 
+ ▪ project kernel/sony/msm8960t/
+ ▪ b097f5c kernel: Fix potential refcount leak in su check
+
  ▪ project packages/apps/Settings/
  ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
 
@@ -116,6 +131,9 @@
 
  ▪ project kernel/oneplus/msm8974/
  ▪ 0f29566 kernel: Fix potential refcount leak in su check
+
+ ▪ project kernel/sony/msm8960t/
+ ▪ d3b024a kernel: Only expose su when daemon is running
 
  ▪ project packages/apps/DUI/
 
@@ -375,44 +393,4 @@
  ▪ project system/sepolicy/
  ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
  ▪ a688894 sepolicy: Allow system_server to set theme_prop
-
- ▼ 05/16/2017
-
-
- ▪ project build/
- ▪ ca236d8 rr: optional root methods [2/2]
-
- ▪ project device/oneplus/oneplus3/
- ▪ c10da2c op3: Remove QVOP service
- ▪ c930264 op3: Enforce vendor tree presence
- ▪ b1cfadd op3: Kill Gello
-
- ▪ project frameworks/base/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ e723084 drivers: staging: Update qcacld-2.0 driver
- ▪ 5f583f3 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into HEAD
- ▪ d3dac65 misc: Squashed revert upstream applied security patches
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ dbaab37 ASoC: wcd-mbhc: correct lineout detection
- ▪ 5840153 Revert "ASoC: wcd-mbhc: Don't report headphone until timout"
- ▪ b63dbb0 kenzo: fix reboot to recovery for guys who had issue
- ▪ f574518 kenzo: update versioning for my build script
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
-
- ▪ project system/keymaster/
- ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
-
- ▪ project vendor/cm/
- ▪ 2bfdf69 rr: add optional root methods [1/2]
-
- ▪ project vendor/oneplus/
- ▪ 8d64f72 op3: Remove QVOP blobs
 
