@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
-	 <falcon>
-            <Filename>ResurrectionRemix-M-v5.7.3-20160807-falcon.zip</Filename>
-            <BuildUrl
-            	id="build"
-            	title="LatestBuild"
-            	description="Download Latest Build">https://basketbuild.com/uploads/devs/resurrectionremix/falcon/ResurrectionRemix-M-v5.7.3-20160807-falcon.zip</BuildUrl>
+        <oneplus3>
+            <Filename>RR-N-v5.8.3-20170522-oneplus3-Sultan.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">https://basketbuild.com/devs/resurrectionremix/falcon</RomUrl>
-            <ChangelogUrl
+                description="Latest ResurrectionRemix build">https://www.androidfilehost.com/?fid=673368273298956737</RomUrl>
+            <OP3FirmwareUrl
+                id="OP3Firmware"
+                title="OP3 Firmware"
+                description="OP3 Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=139137</OP3FirmwareUrl>
+            <OP3TFirmwareUrl
+                id="OP3TFirmware"
+                title="OP3T Firmware"
+                description="OP3T Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=171162</OP3TFirmwareUrl>
+            <BeansGappsUrl
+                id="beans_gapps"
+                title="BeansGApps"
+                description="Download latest BeansGApps">https://www.androidfilehost.com/?w=files&amp;flid=171925</BeansGappsUrl>
+	    <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/marshmallow/CHANGELOG.mkdn</ChangelogUrl>
-            <SlimGappsUrl
-            	id="slim_gapps"
-            	title="Slim GApps"
-            	description="Download Slim latest GApps">https://www.androidfilehost.com/?w=files&amp;flid=41043</SlimGappsUrl>
-             <BanksGappsUrl
-            	id="banks_gapps"
-            	title="BaNkS Dynamic GApps"
-            	description="Download BaNkS latest GApps">http://download.dirtyunicorns.com/files/gapps/Banks/banks_dynamic_gapps-6.x.x-20160729.zip</BanksGappsUrl>
-	</falcon>
+                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
+            <OldBuildsUrl
+            	id="Old_builds"
+            	title="Build Folder"
+            	description="Build Download Archive">https://www.androidfilehost.com/?a=show&amp;w=files&amp;flid=182475</OldBuildsUrl>
+	</oneplus3>
     </Stable>
 </SlimOTA>
