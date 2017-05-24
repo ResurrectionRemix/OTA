@@ -2,6 +2,39 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/24/2017
+
+
+ ▪ project external/DUtils/
+ ▪ 52668d8 Killapp action: restore home screen before killing the app
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+ ▪ 59a68e6 SmartBar editor: block quick popup when dragging the button
+
+ ▪ project packages/apps/Settings/
+ ▪ 46b451a Configurations:Add Some more Settings to Reset
+ ▪ 841d40b Avoid a NullPointerException in security
+ ▪ ad8e931 Optimized Code: call direct method to get integer extra
+ ▪ fef2b3d RejectedExecutionException  in DataUsageLIst
+ ▪ fb41cfd Optimize code on get UidDetail in AppDataUsage
+ ▪ e774dc4 Settings: Fix wrong wifi drawable in screen zooming preview
+ ▪ fab5b35 Avoid FC when entering Accessibility Settings with a font size of 100%
+ ▪ 4f798e7 DisplaySettings: font size in 5% steps from 80% to 130%
+ ▪ f6fe632 Correct fingerprint position during setup
+ ▪ f83f0cb PowerUsageFeatureProviderImpl: little cleanup
+ ▪ cdbcb1b Fix synchronization of Wi-Fi hotspot switch
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project system/core/
+ ▪ 8f5e34c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cmsdk/
+ ▪ af33af3 cmsdk: Add CMSettings option for QS auto brightness
+ ▪ 6bd7762 Protect system profiles related broadcasts
+
  ▼ 05/23/2017
 
 
@@ -92,6 +125,13 @@
  ▪ 313bf88 Add navigation disabled notification [1/2]
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ 0ad12ce ion: adjust system heap pool orders
+ ▪ 33b6f21 ANDROID: mmc: move to a SCHED_FIFO thread
+ ▪ 33bd17d sched: avoid migrating when softint on tgt cpu should be short
+ ▪ 4df8d30 sched: avoid scheduling RT threads on cores currently handling softirqs
+ ▪ 4bc39cc sched/rt: Avoid moving rt task if destination CPU does not run low priority task.
+ ▪ 57ce978 lowmemorykiller: account for unevictable pages
+ ▪ dd742f1 android: binder: remove useless preemption disable on target_wait
  ▪ 4e6bb14 net/packet: fix overflow in check for tp_reserve
  ▪ 0e0a89a net/packet: fix overflow in check for tp_frame_nr
  ▪ 3c1cc5c net/packet: fix overflow in check for priv area size
@@ -250,147 +290,4 @@
 
  ▪ project vendor/xiaomi/
  ▪ 3995d08 kenzo: Set default mode to paper_mode_off
-
- ▼ 05/17/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 189c999 kenzo: show correct charging current value on lockscreen
- ▪ 5edddd4 kenzo: Pin qcrilmsgtunnel
- ▪ da597b1 kenzo: Disable fluence on voicerec
- ▪ 2acd05c kenzo: Enable 24bit offload
- ▪ 06d4fdc kenzo: All hail Dominator
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ e9ffa96 msm8956: Add aanc_tuning_mixer_wcd9335
- ▪ bdaa2b8 Revert "msm8956: Re-enable XML audio policy"
- ▪ 7606bdb msm8956: Fix Fingerprintd Denial
- ▪ e3d14f4 msm8956-common: Nuke sdcardfs
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 396a296 f2fs: switch to using fscrypt_match_name()
- ▪ c5ab4eb fscrypt: introduce helper function for filename matching
- ▪ ba8661c fscrypt: fix context consistency check when key(s) unavailable
- ▪ ae8ffd3 fscrypt: Move key structure and constants to uapi
- ▪ 0cb2fd2 fscrypt: remove unnecessary checks for NULL operations
- ▪ 6b332b9 fscrypt: eliminate ->prepare_context() operation
- ▪ a9244cc fscrypt: remove broken support for detecting keyring key revocation
- ▪ 43d2cb9 fscrypt: avoid collisions when presenting long encrypted filenames
- ▪ 9f0ac4a f2fs: check entire encrypted bigname when finding a dentry
- ▪ ef9980d f2fs: sync f2fs_lookup() with ext4_lookup()
- ▪ ce6e24e f2fs: fix a mount fail for wrong next_scan_nid
- ▪ 0bd2e75 f2fs: relocate inode_{,un}lock in F2FS_IOC_SETFLAGS
- ▪ c7ffd6d f2fs: show available_nids in f2fs/status
- ▪ 57708b7 f2fs: flush dirty nats periodically
- ▪ 39b3840 f2fs: introduce CP_TRIMMED_FLAG to avoid unneeded discard
- ▪ eee6a96 f2fs: allow cpc->reason to indicate more than one reason
- ▪ 46a8ca8 f2fs: release cp and dnode lock before IPU
- ▪ 1095698 f2fs: shrink size of struct discard_cmd
- ▪ ade8dd5 f2fs: don't hold cmd_lock during waiting discard command
- ▪ ef0d56e f2fs: nullify fio->encrypted_page for each writes
- ▪ 24b316e f2fs: sanity check segment count
- ▪ 4a8cf45 f2fs: introduce valid_ipu_blkaddr to clean up
- ▪ a69dbfd f2fs: lookup extent cache first under IPU scenario
- ▪ 4c660c4 f2fs: reconstruct code to write a data page
- ▪ 9875a1b f2fs: introduce __wait_discard_cmd
- ▪ a9711d6 f2fs: introduce __issue_discard_cmd
- ▪ e6e3b6a f2fs: enable small discard by default
- ▪ 7ab07b5 f2fs: delay awaking discard thread
- ▪ 0c5081e f2fs: seperate read nat page from nat_tree_lock
- ▪ dfccf3a f2fs: fix multiple f2fs_add_link() having same name for inline dentry
- ▪ 174241e f2fs: skip encrypted inode in ASYNC IPU policy
- ▪ 40cd2e9 f2fs: fix out-of free segments
- ▪ c9d01c3 f2fs: improve definition of statistic macros
- ▪ 2e06ed5 f2fs: assign allocation hint for warm/cold data
- ▪ 48036ed f2fs: fix _IOW usage
- ▪ 29e4eed f2fs: add ioctl to flush data from faster device to cold area
- ▪ 67716cd f2fs: introduce async IPU policy
- ▪ cf54a09 f2fs: add undiscard blocks stat
- ▪ ce97d27 f2fs: unlock cp_rwsem early for IPU writes
- ▪ 3cb8d1a f2fs: introduce __check_rb_tree_consistence
- ▪ 95ae34b f2fs: trace __submit_discard_cmd
- ▪ 3c901dd f2fs: in prior to issue big discard
- ▪ 8444898 f2fs: clean up discard_cmd_control structure
- ▪ 38d4655 f2fs: use rb-tree to track pending discard commands
- ▪ 95e0d0d f2fs: avoid dirty node pages in check_only recovery
- ▪ 9d796e5 f2fs: fix not to set fsync/dentry mark
- ▪ dcb7188 f2fs: allocate hot_data for atomic writes
- ▪ c460977 f2fs: give time to flush dirty pages for checkpoint
- ▪ 785b192 f2fs: fix fs corruption due to zero inode page
- ▪ 4a74657 f2fs: shrink blk plug region
- ▪ 3728be9 f2fs: extract rb-tree operation infrastructure
- ▪ 4a511a3 f2fs: avoid frequent checkpoint during f2fs_gc
- ▪ eacf10a f2fs: clean up some macros in terms of GET_SEGNO
- ▪ 5a9345c f2fs: clean up get_valid_blocks with consistent parameter
- ▪ 7548d30 f2fs: use segment number for get_valid_blocks
- ▪ 1e7c3aa f2fs: guard macro variables with braces
- ▪ 648c287 f2fs: fix comment on f2fs_flush_merged_bios() after 86531d6b
- ▪ fc5aa04 f2fs: prevent waiter encountering incorrect discard states
- ▪ ce4f972 f2fs: introduce f2fs_wait_discard_bios
- ▪ 2f2774d f2fs: split discard_cmd_list
- ▪ 1ab7acd Revert "f2fs: put allocate_segment after refresh_sit_entry"
- ▪ 223fb7d f2fs: split make_dentry_ptr() into block and inline versions
- ▪ c7873f9 f2fs: submit bio of in-place-update pages
- ▪ 66e005d f2fs: remove the redundant variable definition
- ▪ c873cf9 f2fs: avoid IO split due to mixed WB_SYNC_ALL and WB_SYNC_NONE
- ▪ d3d480b f2fs: write small sized IO to hot log
- ▪ b08f1e8 f2fs: use bitmap in discard_entry
- ▪ 4a6712f f2fs: clean up destroy_discard_cmd_control
- ▪ 8912c9e f2fs: count discard command entry
- ▪ 40605ac f2fs: show issued flush/discard count
- ▪ 540bbb1 f2fs: relax node version check for victim data in gc
- ▪ e1ca40a f2fs: start SSR much eariler to avoid FG_GC
- ▪ 882323d f2fs: allocate node and hot data in the beginning of partition
- ▪ 8ba8540 f2fs: fix wrong max cost initialization
- ▪ 50bc8de f2fs: allow write page cache when writting cp
- ▪ 655a400 f2fs: don't reserve additional space in xattr block
- ▪ e79c49f f2fs: clean up xattr operation
- ▪ d912071 f2fs: don't track volatile file in dirty inode list
- ▪ b60940e f2fs: show the max number of volatile operations
- ▪ fa53a53 f2fs: fix race condition in between free nid allocator/initializer
- ▪ ecf9ef3 f2fs: use set_page_private marcro in f2fs_trace_pid
- ▪ 85dc038 f2fs: fix recording invalid last_victim
- ▪ b993b82 f2fs: more reasonable mem_size calculating of ino_entry
- ▪ 03544d5 f2fs: calculate the f2fs_stat_info into base_mem
- ▪ 9403193 f2fs: avoid stat_inc_atomic_write for non-atomic file
- ▪ cfa4937 f2fs: sanity check of crc_offset from raw checkpoint
- ▪ 1139ced f2fs: cleanup the disk level filename updating
- ▪ 99d14c6 f2fs: cover update_free_nid_bitmap with nid_list_lock
- ▪ 980f1ae f2fs: fix bad prefetchw of NULL page
- ▪ 7ffc7d7 f2fs: clear FI_DATA_EXIST flag in truncate_inline_inode
- ▪ 7501b57 f2fs: move mnt_want_write_file after arguments checking
- ▪ 376554c f2fs: check new size by inode_newsize_ok in f2fs_insert_range
- ▪ b85713f f2fs: avoid copy date to user-space if move file range fail
- ▪ dfcdf0a f2fs: drop duplicate new_size assign in f2fs_zero_range
- ▪ fb56043 f2fs: adjust the way of calculating nat block
- ▪ b8dd635 f2fs: add fault injection on f2fs_truncate
- ▪ 7d00727 f2fs: check range before defragment
- ▪ f097fad f2fs: use parameter max_items instead of PIDVEC_SIZE
- ▪ 59acb96 f2fs: add a punch discard command function
- ▪ 40dd3c7 f2fs: allocate a bio for discarding when actually issuing it
- ▪ 02ccaef f2fs: skip writeback meta pages if cp_mutex acquire failed
- ▪ d8f9c77 f2fs: show more precise message on orphan recovery failure
- ▪ fb0cf25 f2fs: remove dead macro PGOFS_OF_NEXT_DNODE
- ▪ cd93c1a f2fs: drop duplicate radix tree lookup of nat_entry_set
- ▪ 1141564 f2fs: make sure trace all f2fs_issue_flush
- ▪ 02b385d f2fs: don't allow volatile writes for non-regular file
- ▪ fb98d82 f2fs: don't allow atomic writes for not regular files
- ▪ 253d19f f2fs: fix stale ATOMIC_WRITTEN_PAGE private pointer
- ▪ 4ee9334 f2fs: build stat_info before orphan inode recovery
- ▪ c3f4b2a f2fs: fix the fault of calculating blkstart twice
- ▪ 277a5ab f2fs: fix the fault of checking F2FS_LINK_MAX for rename inode
- ▪ d94c16b f2fs: don't allow to get pino when filename is encrypted
- ▪ 968d314 f2fs: fix wrong error injection for evict_inode
- ▪ 2599845 f2fs: le32_to_cpu for ckpt->cp_pack_total_block_count
- ▪ b2de468 f2fs: combine nat_bits and free_nid_bitmap cache
- ▪ 8834c93 f2fs: skip scanning free nid bitmap of full NAT blocks
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
- ▪ 3774bb8 add Jiayu S3 maintainer (#793)
-
- ▪ project system/sepolicy/
- ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
- ▪ a688894 sepolicy: Allow system_server to set theme_prop
 
