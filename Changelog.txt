@@ -2,6 +2,26 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/25/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Email/
+ ▪ c0e5d54 Search in folder specified via URI parameter, if possible.
+
+ ▪ project packages/apps/Jelly/
+ ▪ c9f336c Jelly: Pause WebView along with the activity
+ ▪ c23c013 Jelly: Don't claim to be a simple WebView
+ ▪ c218521 Jelly: Define base class for Activities containing WebViewExt
+ ▪ 1607c0d Jelly: Make it easier to initiate gestures
+ ▪ 978e74e Jelly: Don't leak fileoutputstream if bm is null
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 5462df5 Pass selected folder to message search.
+
  ▼ 05/24/2017
 
 
@@ -40,11 +60,6 @@
 
  ▪ project frameworks/base/
 
- ▪ project kernel/motorola/msm8226/
- ▪ 88c6ce0 ASoC: msm: initialize the params array before using it
- ▪ 14f4684 msm: vidc: use %pK instead of %p which respects kptr_restrict sysctl
- ▪ 1422cd1 msm: camera: sensor: Fix use after free condition
-
  ▪ project packages/apps/Settings/
 
  ▼ 05/22/2017
@@ -60,18 +75,6 @@
 
  ▪ project frameworks/native/
  ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project kernel/motorola/msm8226/
- ▪ 657b0a4 kernel: Fix potential refcount leak in su check
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 0ad12ce ion: adjust system heap pool orders
- ▪ 33b6f21 ANDROID: mmc: move to a SCHED_FIFO thread
- ▪ 33bd17d sched: avoid migrating when softint on tgt cpu should be short
- ▪ 4df8d30 sched: avoid scheduling RT threads on cores currently handling softirqs
- ▪ 4bc39cc sched/rt: Avoid moving rt task if destination CPU does not run low priority task.
- ▪ 57ce978 lowmemorykiller: account for unevictable pages
- ▪ dd742f1 android: binder: remove useless preemption disable on target_wait
 
  ▪ project packages/apps/Dialer/
  ▪ afc79eb Dialer: lock screen appear before incoming call screen
@@ -99,17 +102,6 @@
  ▪ project android/
  ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
 
- ▪ project device/oneplus/oneplus3/
- ▪ 175fdb4 init.qcom.rc : Add time_daemon in init.qcom.rc
- ▪ 8bf1494 op3: rootdir: Update fs tune from marlin
- ▪ 7e8fa2b op3: Use kryo 32-bit routines
- ▪ 079e43f op3: Set camera package name to OnePlus Camera
- ▪ 46b7928 op3: Add specific camera parameter library
- ▪ d498608 op3: Remove camera shim library
- ▪ baae4eb op3: Update to OB16 blobs
- ▪ 2b544b7 op3: Re-enable camera HAL3
- ▪ 774d8eb op3: Disable tethering provisioning for all carriers
-
  ▪ project frameworks/base/
  ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
  ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
@@ -124,29 +116,6 @@
  ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
  ▪ 313bf88 Add navigation disabled notification [1/2]
 
- ▪ project kernel/oneplus/msm8996/
- ▪ 0ad12ce ion: adjust system heap pool orders
- ▪ 33b6f21 ANDROID: mmc: move to a SCHED_FIFO thread
- ▪ 33bd17d sched: avoid migrating when softint on tgt cpu should be short
- ▪ 4df8d30 sched: avoid scheduling RT threads on cores currently handling softirqs
- ▪ 4bc39cc sched/rt: Avoid moving rt task if destination CPU does not run low priority task.
- ▪ 57ce978 lowmemorykiller: account for unevictable pages
- ▪ dd742f1 android: binder: remove useless preemption disable on target_wait
- ▪ 4e6bb14 net/packet: fix overflow in check for tp_reserve
- ▪ 0e0a89a net/packet: fix overflow in check for tp_frame_nr
- ▪ 3c1cc5c net/packet: fix overflow in check for priv area size
- ▪ a63bc81 dccp/tcp: do not inherit mc_list from parent
- ▪ 8f475aa ip6_gre: fix ip6gre_err() invalid reads
- ▪ f5dbfd2 tty: n_hdlc: get rid of racy n_hdlc.tbuf
- ▪ 79a275b TTY: n_hdlc, fix lockdep false positive
- ▪ 178808f Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
- ▪ 516fd61 op3: Set cfq as default I/O scheduler
- ▪ e6fda3c kernel: Fix potential refcount leak in su check
- ▪ b0856c3 kernel: Only expose su when daemon is running
-
- ▪ project kernel/sony/msm8960t/
- ▪ b097f5c kernel: Fix potential refcount leak in su check
-
  ▪ project packages/apps/Settings/
  ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
 
@@ -155,9 +124,6 @@
  ▪ project vendor/cm/
  ▪ 8b85edf cm: Remove root access prop
 
- ▪ project vendor/oneplus/
- ▪ 602b6ed op3: Update to OB16 blobs
-
  ▼ 05/20/2017
 
 
@@ -165,15 +131,6 @@
  ▪ c698ef7 envsetup: fix small derp calling root method chooser script
  ▪ 1985266 Merge branch 'optional-root-method' into nougat
  ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
-
- ▪ project kernel/motorola/msm8226/
- ▪ 2057638 qseecom: improve input validatation for qseecom_send_service_cmd
-
- ▪ project kernel/oneplus/msm8974/
- ▪ 0f29566 kernel: Fix potential refcount leak in su check
-
- ▪ project kernel/sony/msm8960t/
- ▪ d3b024a kernel: Only expose su when daemon is running
 
  ▪ project packages/apps/DUI/
 
@@ -208,56 +165,6 @@
  ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
  ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
 
- ▪ project device/oppo/common/
-
- ▪ project hardware/qcom/fm/
-
- ▪ project kernel/motorola/msm8226/
- ▪ 1890c5c qseecom: Change format specifier %p to %pK
- ▪ de017e7 qseecom: Add checks for send_cmd inputs
- ▪ 2c28b5d qseecom: Add boundary checks for offset within message.
- ▪ e806103 qseecom: fix secure app loading failure by kernel client -- part 2
- ▪ 3b04b27 qseecom: Fix memory leak
- ▪ c479d6b qseecom: fix secure app loading failure by kernel mode qseecom client
- ▪ ec3da8f qseecom: change the number of bytes to compare app names
- ▪ bf20f59 qseecom: fix an issue related to search app when unloading an app
- ▪ 82656b1 qseecom: change return value to 0 if app id exists when loading app
- ▪ 5d495e7 qseecom: Remove the incorrect client handle setting
- ▪ b6c214e qseecom: Add support to handle multiple app load & unload
- ▪ 4ddfb0b qseecom: Fix issues with failure to release client handle
- ▪ afbe538 qseecom: Unload the app upon receiving qseecom_release.
- ▪ ce9f768 dccp/tcp: do not inherit mc_list from parent
- ▪ b255a07 ANDROID: ion: Protect kref from userspace manipulation
- ▪ 19b8e16 ion: Fix use after free during ION_IOC_ALLOC
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/ThemeChooser/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
  ▪ project packages/resources/devicesettings/
 
  ▪ project vendor/cm/
@@ -268,26 +175,4 @@
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 05/18/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ 6a07430 kenzo: pin sharp qdcm config
-
- ▪ project frameworks/native/
- ▪ c68520a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
-
- ▪ project kernel/motorola/msm8226/
- ▪ aad785d input: synaptics_dsx (MMI): Remove some sysfs nodes
- ▪ cbecea4 usb: diag: change %p to %pK in debug messages
- ▪ a27021f msm: camera: restructure data handling to be more robust
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Settings/
- ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
-
- ▪ project vendor/xiaomi/
- ▪ 3995d08 kenzo: Set default mode to paper_mode_off
 
