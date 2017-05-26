@@ -2,6 +2,16 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/26/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+ ▪ b6ee806 Remove Z010D maintainer  ;( (#769)
+
  ▼ 05/25/2017
 
 
@@ -157,22 +167,4 @@
 
  ▪ project vendor/cm/
  ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
-
- ▼ 05/19/2017
-
-
- ▪ project build/
- ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
- ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project vendor/cm/
- ▪ 0901e93 extract_utils: fix extracting XML files containing binary characters
- ▪ ac48cb6 cm: Remove Gello
- ▪ 782912b rr: add in a script to choose root variant
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
