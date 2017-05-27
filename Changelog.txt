@@ -2,6 +2,20 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/27/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 8f1365c Jelly: Handle screenLayout changes
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 05/26/2017
 
 
@@ -133,38 +147,4 @@
 
  ▪ project vendor/cm/
  ▪ 8b85edf cm: Remove root access prop
-
- ▼ 05/20/2017
-
-
- ▪ project build/
- ▪ c698ef7 envsetup: fix small derp calling root method chooser script
- ▪ 1985266 Merge branch 'optional-root-method' into nougat
- ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
- ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
- ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
-
- ▪ project packages/apps/Settings/
- ▪ 397950c Fix expandable desktop
- ▪ 5af5556 Make sure to rebuild on app entries loaded
- ▪ beff6c3 Don't re-populate the app list in rebuild()
- ▪ 1a4cf52 Move Headset Settings out of CMSettings
- ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
- ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
- ▪ bf8c859 Add J500Y (#795)
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cm/
- ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
 
