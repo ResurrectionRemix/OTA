@@ -2,6 +2,16 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 05/29/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 253e251 Recents: Ensure Lock icon animates only when Dismiss icon is visible
+
+ ▪ project packages/apps/Settings/
+ ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
+ ▪ f30a1b4 Configurations: Update button backlight brightness in real time
+
  ▼ 05/28/2017
 
 
@@ -41,6 +51,12 @@
  ▪ project packages/apps/Jelly/
  ▪ 8f1365c Jelly: Handle screenLayout changes
 
+ ▪ project packages/apps/Trebuchet/
+ ▪ 5c6b5a2 Add null check in Launcher onNewIntent() before moveToDefaultScreen().
+ ▪ 273db43 Handle OutOfMemoryException gracefully in WallpaperCropActivity.
+ ▪ 2846677 Fixing All apps not respecting scaled icon size
+ ▪ 14d0937 Adding workaround to jump in wallpaper offsets.
+
  ▪ project packages/services/OmniJaws/
 
  ▼ 05/26/2017
@@ -58,8 +74,6 @@
 
  ▪ project frameworks/base/
 
- ▪ project packages/apps/DUI/
-
  ▪ project packages/apps/Email/
  ▪ c0e5d54 Search in folder specified via URI parameter, if possible.
 
@@ -74,8 +88,6 @@
 
  ▪ project packages/apps/UnifiedEmail/
  ▪ 5462df5 Pass selected folder to message search.
-
- ▪ project packages/services/OmniJaws/
 
  ▼ 05/24/2017
 
@@ -116,38 +128,4 @@
  ▪ project frameworks/base/
 
  ▪ project packages/apps/Settings/
-
- ▼ 05/22/2017
-
-
- ▪ project frameworks/base/
- ▪ 3e04527c base: update updateUsbStateBroadcastIfNeeded types
- ▪ fe1cfd9 Check and send usb state broadcast when devices boots
- ▪ 7373362 Only send usb disconnect intents after boot.
- ▪ ef0fcc2 fix KeyEvent can't correctly finish when inputmethod time out happened
- ▪ 779a3e9 Fixed NPE in canAddMoreManagedProfiles
- ▪ 60a339e Fix permissions for CTS [1/2]
-
- ▪ project frameworks/native/
- ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project packages/apps/Dialer/
- ▪ afc79eb Dialer: lock screen appear before incoming call screen
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 1f45da1 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
-
- ▪ project packages/services/OmniJaws/
- ▪ c4e406d OwmniJaws Use own API key
- ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
- ▪ 299c137 OmniJaws: widget layout madness
- ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
-
- ▪ project packages/services/ThemeInterfacer/
- ▪ 2a46d48 Add interface to get API version and app authentication status
- ▪ 8e55d57 Fix permissions for CTS [2/2]
 
