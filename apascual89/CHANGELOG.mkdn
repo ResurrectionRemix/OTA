@@ -2,154 +2,104 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/21/2017
+ ▼ 06/01/2017
 
-
- ▪ project android/
- ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
-
- ▪ project device/oneplus/oneplus3/
- ▪ 64c0f68 Merge branch 'rr' of https://github.com/apascual89/android_device_oneplus_oneplus3 into rr
- ▪ 9e73ac0 init.qcom.rc : Add time_daemon in init.qcom.rc
- ▪ 11304d0 op3: rootdir: Update fs tune from marlin
- ▪ 3f36afe op3: Use kryo 32-bit routines
- ▪ f1f4dec op3: Update to OB16 blobs
- ▪ 958a187 op3: Re-enable camera HAL3
- ▪ 5199ed0 op3: Disable tethering provisioning for all carriers
- ▪ b6d8949 op3: Set camera package name to OnePlus Camera
- ▪ 7151473 op3: Add specific camera parameter library
- ▪ 695a798 op3: Remove camera shim library
-
- ▪ project device/oppo/common/
- ▪ 4b4ef25 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_oppo_common into rr
 
  ▪ project frameworks/base/
- ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
- ▪ 22d2286 Add protected broadcast for app crash broadcast
- ▪ 452eb37 Update Drawer header
- ▪ 185d71e Dont use CMSettings for Headset intents[1/2]
- ▪ c711fa3 Settings left drawer: make the view more compact and show more entries per page
- ▪ 6afb2ae Fix lag when opening an entry from the Settings left drawer
- ▪ 08ad038 Option to Show Custom header in settings drawer [1/2]
- ▪ 9efa551 Add SettingsDrawerActivity header
- ▪ eccc096 Fix the Wi-Fi wrong status when turning Wi-Fi on
- ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
- ▪ 313bf88 Add navigation disabled notification [1/2]
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 4b49609 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_oneplus_msm8996 into rr-rebase
- ▪ 178808f Merge commit '396a2965850160ca5427239d9af56ec42fe4774f' into HEAD
- ▪ 516fd61 op3: Set cfq as default I/O scheduler
- ▪ e6fda3c kernel: Fix potential refcount leak in su check
- ▪ b0856c3 kernel: Only expose su when daemon is running
+ ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
 
  ▪ project packages/apps/DUI/
 
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
+
+ ▼ 05/31/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
+ ▪ c642120 Jelly: Never hide history view
+ ▪ ea83c6c Jelly: Use an observer to refresh the history view
+ ▪ 837ec77 Add an indicator icon for incognito mode.
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/resources/devicesettings/
+ ▪ 1935d69 Add fingerprint sleep strings
 
  ▪ project packages/services/OmniJaws/
 
- ▪ project vendor/cm/
- ▪ 8b85edf cm: Remove root access prop
+ ▼ 05/30/2017
 
- ▪ project vendor/oneplus/
- ▪ 602b6ed op3: Update to OB16 blobs
-
- ▼ 05/20/2017
-
-
- ▪ project build/
- ▪ c698ef7 envsetup: fix small derp calling root method chooser script
- ▪ 1985266 Merge branch 'optional-root-method' into nougat
- ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
-
- ▪ project packages/apps/Jelly/
- ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
- ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
- ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
-
- ▪ project packages/apps/Settings/
- ▪ 397950c Fix expandable desktop
- ▪ 5af5556 Make sure to rebuild on app entries loaded
- ▪ beff6c3 Don't re-populate the app list in rebuild()
- ▪ 1a4cf52 Move Headset Settings out of CMSettings
- ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
- ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
- ▪ bf8c859 Add J500Y (#795)
-
- ▪ project vendor/cm/
- ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
-
- ▼ 05/19/2017
-
-
- ▪ project build/
- ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
- ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
 
  ▪ project device/oneplus/oneplus3/
- ▪ 51f8dab Merge pull request #7 from Joshndroid/apascual89
+ ▪ 535926f Merge pull request #8 from Joshndroid/apascual89
+ ▪ 64baa55 op3: Doze: Require non-wake up proximity sensor
 
- ▪ project device/oppo/common/
+ ▪ project external/stagefright-plugins/
+ ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
 
- ▪ project hardware/qcom/fm/
+ ▪ project frameworks/base/
+ ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
+ ▪ 8573690 Fix launch music player on headset connect on reboot
+ ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
+ ▪ 3525359 Base:Add Lock task action to recents
 
- ▪ project packages/apps/CMBugReport/
+ ▪ project hardware/qcom/display-caf/msm8960/
+ ▪ d222af7 hwc: return correct color format string while layer dump
 
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Recorder/
+ ▪ project packages/apps/Jelly/
+ ▪ c35cc24 Jelly: Update android tools build
+ ▪ 020a697 Jelly: Don't accept cookies in incognito mode
 
  ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/ThemeChooser/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/resources/devicesettings/
+ ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
+ ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+ ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
+ ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
+ ▪ 26d9aec Fixed camera crash on exit
 
  ▪ project vendor/cm/
- ▪ 0901e93 extract_utils: fix extracting XML files containing binary characters
- ▪ ac48cb6 cm: Remove Gello
- ▪ 782912b rr: add in a script to choose root variant
+ ▪ 46fc541 typo fixed (#92)
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 05/18/2017
+ ▼ 05/29/2017
 
 
- ▪ project packages/apps/DUI/
+ ▪ project packages/apps/Email/
+ ▪ b76ada5 Fix check for deleted messages.
+ ▪ 70ccb25 Close body InputStreams correctly.
+
+ ▪ project packages/apps/Jelly/
+ ▪ dc48da6 Jelly: Don't add duplicates to the history
+ ▪ 78e3754 Jelly: Query an already ordered history
+ ▪ c8e5ebe Jelly: Enable the DOM storage API
 
  ▪ project packages/apps/Settings/
- ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
- ▪ 3774bb8 add Jiayu S3 maintainer (#793)
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 1a65ab8 Trebuchet: Sign with platform key
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ e353ae2 Properly close body InputStreams.
+
+ ▪ project vendor/cm/
+ ▪ a8b16ae Update pixel launcher
 
