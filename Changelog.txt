@@ -2,10 +2,13 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 06/02/2017
+ ▼ 06/03/2017
 
 
  ▪ project frameworks/base/
+ ▪ 8ff5e2e Recents:improve task locking code & mechanism
+ ▪ d0bf589 fw: Don't consume home key press when KEY_ACTION_SLEEP is used
+ ▪ cc8e5e6 SystemUI: Specify user while changing brightness mode
 
  ▪ project hardware/qcom/audio-caf/msm8952/
  ▪ d9254be Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.18' into nougat-caf-8952
@@ -24,9 +27,107 @@
  ▪ project hardware/qcom/media-caf/msm8952/
  ▪ a92595b Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.18' into nougat-caf-8952
 
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+ ▪ ae7d2f6 Dialer: update fab color to match aosp primary color
+
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
+ ▪ 4012daa Mi Note 2 Maintainer Update (#797)
+
+ ▪ project packages/services/Telecomm/
+ ▪ 4ded59b (1/2) Make sensitive phone numbers not to be shown in call log history.
+
+ ▪ project packages/services/Telephony/
+ ▪ 8171340 Fix minor inconsistency in the CDMA call settings
+ ▪ 6c91d6c telephony: Fix and move CAF strings
+
+ ▪ project system/sepolicy/
+ ▪ 759e540 Add policy to fix interfacer derp on boot
+ ▪ 31468f5 Allow recovery to alter / on userdebug/eng builds
+
+ ▪ project vendor/cm/
+ ▪ 3b631c0 sensitive_pn: Add sensitive phone numbers for India
+ ▪ 6d364bf sensitive_pn: Add more numbers for Germany
+ ▪ bf099c9 sensitive_pn: Add sensitive phone numbers for Norway
+ ▪ 9f417a1 sensitive_pn: Add additional US numbers
+ ▪ 2f24950 sensitive_pn: add sensitive number for Indonesia
+ ▪ e0f17b9 sensitive_pn: Add sensitive phone number for Romania
+ ▪ cd6c6be sensitive_pn: Added sensitive number for the Netherlands
+ ▪ 3575664 sensitive_pn: add sensitive numbers for Turkey
+ ▪ 229f62f sensitive_pn: Add sensitive phone number for Bangladesh
+ ▪ 5630a4a sensitive_pn: Add US number
+ ▪ 269c86c Add sensitive phone numbers for Brazil
+ ▪ 3fbdf51 sensitive_pn: reorder by MCC code
+ ▪ 56658d2 sensitive_pn: Add Australian sensitive phone number.
+ ▪ 34d9d56 sensitive_pn: Add New Zealand sensitive numbers.
+ ▪ 7ce9ff5 (2/2) Make sensitive phone numbers not to be shown in call log history.
+ ▪ a3f80fd overlay: Enable Wi-Fi by default on first boot
+ ▪ b52ed87 Show full alarm info
+
+ ▪ project vendor/cmsdk/
+ ▪ 5c781da Double tap to sleep anywhere on lock screen [3/3]
+ ▪ 4fb9332 cmsdk: Disable Lockscreen Media Art [3/3]
+ ▪ 2f25936 cmsdk: fix twilight state not updating in live display auto mode
+
+ ▼ 06/02/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/services/LiveLockScreenService/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
 
  ▼ 06/01/2017
 
@@ -36,27 +137,11 @@
 
  ▪ project packages/apps/DUI/
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 3b35f19 Settings: enable fast scroll for all app list views
-
- ▪ project packages/resources/devicesettings/
- ▪ 1935d69 Add fingerprint sleep strings
-
- ▼ 05/31/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
  ▪ project packages/apps/Jelly/
  ▪ 0106448 Jelly: Enable adjust bounds for incognito image
  ▪ c642120 Jelly: Never hide history view
  ▪ ea83c6c Jelly: Use an observer to refresh the history view
  ▪ 837ec77 Add an indicator icon for incognito mode.
- ▪ c35cc24 Jelly: Update android tools build
 
  ▪ project packages/apps/OmniSwitch/
  ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
@@ -65,6 +150,29 @@
  ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
  ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
  ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/resources/devicesettings/
+ ▪ 1935d69 Add fingerprint sleep strings
+
+ ▼ 05/31/2017
+
+
+ ▪ project external/stagefright-plugins/
+ ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
+
+ ▪ project frameworks/base/
+ ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
+ ▪ 8573690 Fix launch music player on headset connect on reboot
+ ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
+ ▪ 3525359 Base:Add Lock task action to recents
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ c35cc24 Jelly: Update android tools build
+ ▪ 020a697 Jelly: Don't accept cookies in incognito mode
 
  ▪ project packages/apps/ResurrectionStats/
 
@@ -84,58 +192,11 @@
  ▼ 05/30/2017
 
 
- ▪ project external/stagefright-plugins/
- ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
-
- ▪ project frameworks/base/
- ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
- ▪ 8573690 Fix launch music player on headset connect on reboot
- ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
- ▪ 3525359 Base:Add Lock task action to recents
-
- ▪ project hardware/qcom/display-caf/msm8960/
- ▪ d222af7 hwc: return correct color format string while layer dump
-
  ▪ project kernel/xiaomi/msm8956/
  ▪ 18d4f11 ASoC: wcd-mbhc: correct lineout detection
  ▪ 173f4d7 Revert "ASoC: wcd-mbhc: Don't report headphone until timout"
  ▪ 29d733d kenzo: fix reboot to recovery for guys who had issue
  ▪ dcc1929 kenzo: update versioning for my build script
- ▪ 3089a58 Dominator: regenerate defconfig
- ▪ 15cbe22 staging: prima: Fix non-debug build and switch to it
- ▪ 8ab65a6 msm: qpnp-haptic: Process haptics asynchronously
- ▪ 6c396f4 qpnp-haptic: Dejank the haptics
- ▪ 7ef4e9b Makefile: set ARCH
- ▪ 2518f96 UPSTREAM: timerfd: Protect the might cancel mechanism proper
- ▪ 92f8ce1 BACKPORT: UPSTREAM: HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
- ▪ c76d4d4 UPSTREAM: char: lack of bool string made CONFIG_DEVPORT always on
- ▪ ad879ff UPSTREAM: char: Drop bogus dependency of DEVPORT on !M68K
- ▪ fb8583b Fix GCC6 Compilation Errors & Warnings
- ▪ 5e994f9 Disable "maybe-uninitialized" warning globally
- ▪ 6994b3e Makefile: Use ccache for compilation
- ▪ 9bf9790 Makefile: Disable unused constant variable warning
-
- ▪ project packages/apps/Jelly/
- ▪ 020a697 Jelly: Don't accept cookies in incognito mode
- ▪ dc48da6 Jelly: Don't add duplicates to the history
- ▪ 78e3754 Jelly: Query an already ordered history
- ▪ c8e5ebe Jelly: Enable the DOM storage API
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/Snap/
- ▪ 26d9aec Fixed camera crash on exit
-
- ▪ project packages/apps/Trebuchet/
- ▪ 1a65ab8 Trebuchet: Sign with platform key
-
- ▪ project vendor/cm/
- ▪ a8b16ae Update pixel launcher
-
- ▼ 05/29/2017
-
-
- ▪ project kernel/xiaomi/msm8956/
  ▪ 3089a58 Dominator: regenerate defconfig
  ▪ 15cbe22 staging: prima: Fix non-debug build and switch to it
  ▪ 8ab65a6 msm: qpnp-haptic: Process haptics asynchronously
@@ -879,23 +940,36 @@
  ▪ b76ada5 Fix check for deleted messages.
  ▪ 70ccb25 Close body InputStreams correctly.
 
+ ▪ project packages/apps/Jelly/
+ ▪ dc48da6 Jelly: Don't add duplicates to the history
+ ▪ 78e3754 Jelly: Query an already ordered history
+ ▪ c8e5ebe Jelly: Enable the DOM storage API
+
  ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ 26d9aec Fixed camera crash on exit
+
+ ▪ project packages/apps/Stk/
+ ▪ f9f50a5 Do not display toast if alpha text is null.
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 1a65ab8 Trebuchet: Sign with platform key
 
  ▪ project packages/apps/UnifiedEmail/
  ▪ e353ae2 Properly close body InputStreams.
 
- ▼ 05/28/2017
+ ▪ project vendor/cm/
+ ▪ a8b16ae Update pixel launcher
 
+ ▼ 05/29/2017
 
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Settings/
  ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
  ▪ f30a1b4 Configurations: Update button backlight brightness in real time
 
- ▼ 05/27/2017
+ ▼ 05/28/2017
 
 
  ▪ project frameworks/base/
@@ -912,23 +986,16 @@
 
  ▪ project packages/apps/DUI/
 
+ ▪ project packages/apps/Dialer/
+
  ▪ project packages/apps/Jelly/
  ▪ 64920b0 Jelly: Fix some warnings
  ▪ 503fea1 Jelly: Use lambdas in settings activity
  ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
- ▪ 8f1365c Jelly: Handle screenLayout changes
 
  ▪ project packages/apps/Settings/
  ▪ c018f90 QSPulldown: Remove FP gesture if device FP doesnt support it
  ▪ 8be928a Settings:Optional lock to task icon in recents task header [2/2]
  ▪ 2aa08c3 Settings: enable power save config of system apps [2/2]
  ▪ a99ac4b Add QS pulldown with one swipe on fp sensor [2/2]
-
- ▪ project packages/apps/Trebuchet/
- ▪ 5c6b5a2 Add null check in Launcher onNewIntent() before moveToDefaultScreen().
- ▪ 273db43 Handle OutOfMemoryException gracefully in WallpaperCropActivity.
- ▪ 2846677 Fixing All apps not respecting scaled icon size
- ▪ 14d0937 Adding workaround to jump in wallpaper offsets.
-
- ▪ project packages/services/OmniJaws/
 
