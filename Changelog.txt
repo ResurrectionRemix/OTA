@@ -2,6 +2,19 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/04/2017
+
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 06/03/2017
 
 
@@ -968,34 +981,4 @@
  ▪ project packages/apps/Settings/
  ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
  ▪ f30a1b4 Configurations: Update button backlight brightness in real time
-
- ▼ 05/28/2017
-
-
- ▪ project frameworks/base/
- ▪ 669850a base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
- ▪ 307bfad Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
- ▪ c34f0fe CaptivePortal: login activity UI improvements
- ▪ e947bf6 Fix an apk icon animation corruption issue
- ▪ 21dd4e8 Fix crash by IllegalStateException in sendAccessibilityEvent
- ▪ 13091e7 Clean up pending broadcast receivers when force stopping package
- ▪ 018ff90 base: enable power save config of system apps [1/2]
- ▪ 9df3a9e Fix memory leak in WifP2pManager
- ▪ 1b42b5b Add QS pulldown with one swipe on fp sensor [1/2]
- ▪ 1ca6a17 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Jelly/
- ▪ 64920b0 Jelly: Fix some warnings
- ▪ 503fea1 Jelly: Use lambdas in settings activity
- ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
-
- ▪ project packages/apps/Settings/
- ▪ c018f90 QSPulldown: Remove FP gesture if device FP doesnt support it
- ▪ 8be928a Settings:Optional lock to task icon in recents task header [2/2]
- ▪ 2aa08c3 Settings: enable power save config of system apps [2/2]
- ▪ a99ac4b Add QS pulldown with one swipe on fp sensor [2/2]
 
