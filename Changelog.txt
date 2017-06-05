@@ -2,6 +2,43 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/05/2017
+
+
+ ▪ project android/
+ ▪ bcb3fb7 crowdin: add PackageInstaller
+
+ ▪ project frameworks/base/
+ ▪ 42fa816 Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 6850778 AudioFX: Sign with platform key
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 7ac5399 Add support for WebViews that provide the site's theme color.
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4031811 Correction (#802)
+ ▪ 3cc6e83 Add Galaxy S4 Mini as Official (#799)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 69d6029 fix check_blacklist function to work on wiped /system partition
+ ▪ d0be161 sensitive_pn: Add sensitive numbers for Serbia
+
  ▼ 06/04/2017
 
 
@@ -18,6 +55,9 @@
  ▼ 06/03/2017
 
 
+ ▪ project external/chromium-webview/
+ ▪ 6613943 Update README
+
  ▪ project frameworks/base/
  ▪ 8ff5e2e Recents:improve task locking code & mechanism
  ▪ d0bf589 fw: Don't consume home key press when KEY_ACTION_SLEEP is used
@@ -26,16 +66,6 @@
  ▪ project hardware/qcom/audio-caf/msm8952/
  ▪ d9254be Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.18' into nougat-caf-8952
  ▪ 18d38d5 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.17' into nougat-caf-8952
-
- ▪ project hardware/qcom/display-caf/msm8952/
- ▪ beef199 gralloc: allow forcing old pixel alignment
- ▪ 2dae530 Fix duplicate copy file rules
- ▪ 0c05109 hwc: Remove references to display-frameworks
- ▪ e2aa27e hwc: Fix compile errors after display-frameworks removal
- ▪ ce0be96 hwc: Set ioprio for vsync thread
- ▪ ea55362 Don't build lights module if vendor supplies it
- ▪ a457667 Revert "hqd: Use MSM_VIDC_TARGET_LIST for Venus color format"
- ▪ b62b813 display: Use project pathmap
 
  ▪ project hardware/qcom/media-caf/msm8952/
  ▪ a92595b Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.18' into nougat-caf-8952
@@ -90,6 +120,34 @@
 
  ▪ project frameworks/base/
 
+ ▪ project hardware/qcom/display-caf/msm8952/
+ ▪ beef199 gralloc: allow forcing old pixel alignment
+ ▪ 2dae530 Fix duplicate copy file rules
+ ▪ 0c05109 hwc: Remove references to display-frameworks
+ ▪ e2aa27e hwc: Fix compile errors after display-frameworks removal
+ ▪ ce0be96 hwc: Set ioprio for vsync thread
+ ▪ ea55362 Don't build lights module if vendor supplies it
+ ▪ a457667 Revert "hqd: Use MSM_VIDC_TARGET_LIST for Venus color format"
+ ▪ b62b813 display: Use project pathmap
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
+
+ ▼ 06/01/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
+
  ▪ project hardware/qcom/fm/
 
  ▪ project packages/apps/AudioFX/
@@ -102,6 +160,8 @@
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
+ ▪ project packages/apps/DUI/
+
  ▪ project packages/apps/EmergencyInfo/
 
  ▪ project packages/apps/FMRadio/
@@ -109,15 +169,24 @@
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
+ ▪ c642120 Jelly: Never hide history view
+ ▪ ea83c6c Jelly: Use an observer to refresh the history view
+ ▪ 837ec77 Add an indicator icon for incognito mode.
 
  ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/OmniSwitch/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
- ▪ 3b35f19 Settings: enable fast scroll for all app list views
 
  ▪ project packages/apps/SetupWizard/
 
@@ -134,40 +203,9 @@
  ▪ project packages/providers/WeatherProvider/
 
  ▪ project packages/resources/devicesettings/
+ ▪ 1935d69 Add fingerprint sleep strings
 
  ▪ project packages/services/LiveLockScreenService/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▪ project vendor/qcom/opensource/cryptfs_hw/
- ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
-
- ▼ 06/01/2017
-
-
- ▪ project frameworks/base/
- ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ 0106448 Jelly: Enable adjust bounds for incognito image
- ▪ c642120 Jelly: Never hide history view
- ▪ ea83c6c Jelly: Use an observer to refresh the history view
- ▪ 837ec77 Add an indicator icon for incognito mode.
-
- ▪ project packages/apps/OmniSwitch/
- ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
- ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
- ▪ e6e21ad OmniSwitch: shadow wars
- ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
- ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
- ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/resources/devicesettings/
- ▪ 1935d69 Add fingerprint sleep strings
 
  ▼ 05/31/2017
 
@@ -974,11 +1012,4 @@
 
  ▪ project vendor/cm/
  ▪ a8b16ae Update pixel launcher
-
- ▼ 05/29/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
- ▪ f30a1b4 Configurations: Update button backlight brightness in real time
 
