@@ -2,6 +2,95 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/07/2017
+
+
+ ▪ project android/
+ ▪ a46ed2f Revert "Track own system_media"
+ ▪ d73bf77 Track own system_media
+ ▪ 949aff4 manifest: android-7.1.2_r8 -> android-7.1.2_r17
+
+ ▪ project build/
+ ▪ cc30c3a Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project external/chromium-webview/
+ ▪ 9a58fc2 Update webviews
+
+ ▪ project frameworks/base/
+ ▪ b8bb91f Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project frameworks/native/
+ ▪ dae45e0 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ e663bfa ipv6/dccp: do not inherit ipv6_mc_list from parent
+ ▪ 1c54335 sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
+ ▪ c6424fce ipv6: Prevent overrun when parsing v6 header options
+ ▪ 59d3743 ipv6: fix out of bound writes in __ip6_append_data()
+ ▪ e3ee132 dccp/tcp: do not inherit mc_list from parent
+ ▪ 475ec18 mm: Tighten x86 /dev/mem with zeroing reads
+ ▪ 71e592a mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 87892db KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 9ae741a net/packet: fix overflow in check for priv area size
+ ▪ 62bdd82 net/packet: fix overflow in check for tp_reserve
+ ▪ fbf9ecb net/packet: fix overflow in check for tp_frame_nr
+ ▪ aa6034c scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ fb8bdb8 BACKPORT: sg: relax 16 byte cdb restriction
+ ▪ b1cdc0b BACKPORT: block: add blk_rq_set_block_pc()
+ ▪ c8e5e51 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+ ▪ 16aecbc xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ 9408519 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 8a71041 sctp: deny peeloff operation on asocs with threads sleeping on it
+ ▪ 28acf55 irda: Fix lockdep annotations in hashbin_delete().
+ ▪ 0d1930f net/llc: avoid BUG_ON() in skb_orphan()
+ ▪ 8c76f25 tcp: avoid infinite loop in tcp_splice_read()
+ ▪ ee754cf dccp: fix freeing skb too early for IPV6_RECVPKTINFO
+ ▪ 6759e5a perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
+ ▪ 9775ad0 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+ ▪ 7f3de56 ipc/shm: Fix shmat mmap nil-page protection
+ ▪ 1f50b5e time: Remove CONFIG_TIMER_STATS
+ ▪ 94718f6 tty: n_hdlc: get rid of racy n_hdlc.tbuf
+ ▪ ccf6222 TTY: n_hdlc, fix lockdep false positive
+ ▪ 9a2bd33 Kconfig: msm: disable ultrasound driver
+ ▪ e3a5c5e KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 6ca16c7 net: ping: check minimum size on ICMP header length
+ ▪ 4853c06 ext4: validate s_first_meta_bg at mount time
+ ▪ 9a4870e sg_write()/bsg_write() is not fit to be called under KERNEL_DS
+ ▪ 77e9773 bluetooth: Validate socket address length in sco_sock_bind().
+ ▪ c898f4a KEYS: Fix handling of stored error in a negatively instantiated user key
+ ▪ 6e0afd5 ipv6: addrconf: validate new MTU before applying it
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Messaging/
+ ▪ ef18c3d Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 267b76c Settings:Limit minimum volume panel timeout to 250ms
+ ▪ a5dfd15 Update Build ID
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 3ddceec Settings: Implement ADB over network
+ ▪ bf8bc80 Settings: Add intent to launch LineageOS platlogo upon multiple taps
+ ▪ 0165eb8 settings: Add advanced reboot switch
+ ▪ e1c67c5 Settings: Set root access options appropriately
+ ▪ 253b262 settings: Add developer setting for root access
+ ▪ f4e82a3 Use more descriptive strings for add accessory page
+ ▪ 3733c2b About: Add LineageOS Updates
+ ▪ 0fe2e3b Add build date (ro.build.date from build.prop) to About screen.
+ ▪ 18c18a9 One does not simply become a Developer
+ ▪ 34001b8 Add LineageOS version to the About screen
+
+ ▪ project system/core/
+ ▪ 5504d46 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cm/
+ ▪ 0454ffd Vendor: Build AudioFX again
+
  ▼ 06/06/2017
 
 
@@ -18,6 +107,9 @@
  ▪ 50b3778 Reduce MTU Size
  ▪ fc52d47 FW_BASE: Rewrite restart SystemUI method
  ▪ 42fa816 Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project frameworks/native/
+ ▪ 1eed077 Merge tag 'android-7.1.2_r17' into cm-14.1
 
  ▪ project libcore/
  ▪ b162f5e Merge tag 'android-7.1.2_r17' into cm-14.1
@@ -43,6 +135,10 @@
 
  ▪ project system/bt/
  ▪ aa31852 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 5e54c5f libcutils: fix schedboost after 31f78ddf4ea2ab7963d873cb16db98e976346468
+ ▪ 14bdeb8 Merge tag 'android-7.1.2_r17' into cm-14.1
 
  ▪ project vendor/cm/
  ▪ 69d6029 fix check_blacklist function to work on wiped /system partition
@@ -90,9 +186,6 @@
 
  ▼ 06/03/2017
 
-
- ▪ project external/chromium-webview/
- ▪ 6613943 Update README
 
  ▪ project frameworks/base/
  ▪ 8ff5e2e Recents:improve task locking code & mechanism
@@ -166,24 +259,6 @@
 
  ▪ project frameworks/base/
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 3b35f19 Settings: enable fast scroll for all app list views
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▪ project vendor/qcom/opensource/cryptfs_hw/
- ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
-
- ▼ 06/01/2017
-
-
- ▪ project frameworks/base/
- ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
-
  ▪ project hardware/qcom/fm/
 
  ▪ project packages/apps/AudioFX/
@@ -196,8 +271,6 @@
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/DUI/
-
  ▪ project packages/apps/EmergencyInfo/
 
  ▪ project packages/apps/FMRadio/
@@ -205,24 +278,17 @@
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
- ▪ 0106448 Jelly: Enable adjust bounds for incognito image
- ▪ c642120 Jelly: Never hide history view
- ▪ ea83c6c Jelly: Use an observer to refresh the history view
- ▪ 837ec77 Add an indicator icon for incognito mode.
 
  ▪ project packages/apps/ManagedProvisioning/
 
+ ▪ project packages/apps/Messaging/
+
  ▪ project packages/apps/OmniSwitch/
- ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
- ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
- ▪ e6e21ad OmniSwitch: shadow wars
- ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
- ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
- ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
 
  ▪ project packages/apps/SetupWizard/
 
@@ -239,40 +305,40 @@
  ▪ project packages/providers/WeatherProvider/
 
  ▪ project packages/resources/devicesettings/
- ▪ 1935d69 Add fingerprint sleep strings
 
  ▪ project packages/services/LiveLockScreenService/
 
- ▼ 05/31/2017
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
 
- ▪ project external/stagefright-plugins/
- ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
+ ▼ 06/01/2017
+
 
  ▪ project frameworks/base/
- ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
- ▪ 8573690 Fix launch music player on headset connect on reboot
- ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
- ▪ 3525359 Base:Add Lock task action to recents
+ ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
+
+ ▪ project packages/apps/AudioFX/
 
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Jelly/
- ▪ c35cc24 Jelly: Update android tools build
- ▪ 020a697 Jelly: Don't accept cookies in incognito mode
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
+ ▪ c642120 Jelly: Never hide history view
+ ▪ ea83c6c Jelly: Use an observer to refresh the history view
+ ▪ 837ec77 Add an indicator icon for incognito mode.
 
- ▪ project packages/apps/ResurrectionStats/
+ ▪ project packages/apps/OmniSwitch/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/Settings/
 
- ▪ project packages/apps/Snap/
- ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
- ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
- ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
- ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cm/
- ▪ 46fc541 typo fixed (#92)
+ ▪ project packages/resources/devicesettings/
+ ▪ 1935d69 Add fingerprint sleep strings
 
