@@ -2,6 +2,25 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/08/2017
+
+
+ ▪ project external/chromium-webview/
+ ▪ 2909904 Update webviews
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 93bcb4c Gallery2: support GIF animation
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 87cabde Reduce Volume panel dialog min timout to 350ms
+
+ ▪ project packages/apps/Terminal/
+ ▪ 5856a60 Terminal: Fix keyboard Ctrl- and ALT-key input.
+
  ▼ 06/07/2017
 
 
@@ -12,9 +31,6 @@
 
  ▪ project build/
  ▪ cc30c3a Merge tag 'android-7.1.2_r17' into nougat
-
- ▪ project external/chromium-webview/
- ▪ 9a58fc2 Update webviews
 
  ▪ project frameworks/base/
  ▪ b8bb91f Merge tag 'android-7.1.2_r17' into nougat
@@ -70,7 +86,6 @@
  ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Settings/
- ▪ 267b76c Settings:Limit minimum volume panel timeout to 250ms
  ▪ a5dfd15 Update Build ID
 
  ▪ project packages/apps/TvSettings/
@@ -261,8 +276,6 @@
 
  ▪ project hardware/qcom/fm/
 
- ▪ project packages/apps/AudioFX/
-
  ▪ project packages/apps/Bluetooth/
 
  ▪ project packages/apps/Calendar/
@@ -312,33 +325,4 @@
 
  ▪ project vendor/qcom/opensource/cryptfs_hw/
  ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
-
- ▼ 06/01/2017
-
-
- ▪ project frameworks/base/
- ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Jelly/
- ▪ 0106448 Jelly: Enable adjust bounds for incognito image
- ▪ c642120 Jelly: Never hide history view
- ▪ ea83c6c Jelly: Use an observer to refresh the history view
- ▪ 837ec77 Add an indicator icon for incognito mode.
-
- ▪ project packages/apps/OmniSwitch/
- ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
- ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
- ▪ e6e21ad OmniSwitch: shadow wars
- ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
- ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
- ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/resources/devicesettings/
- ▪ 1935d69 Add fingerprint sleep strings
 
