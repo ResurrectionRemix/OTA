@@ -14,7 +14,7 @@
     <ChangelogUrl
     id="changelog"
     title="Changelog"
-    description="View Changelog">http://downloads.resurrectionremix.com/kenzo/Changelog.txt</ChangelogUrl>
+    description="View Changelogs">http://rr.akhilnarang.me/Changelogs/</ChangelogUrl>
     </kenzo>
     </Stable>
     </SlimOTA>
