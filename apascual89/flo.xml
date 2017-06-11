@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <flo>
+            <Filename>RR-N-v5.8.3-20170609-flo-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/flo/RR-N-v5.8.3-20170609-flo-Official.zip/download</RomUrl>
+            <BeansGappsUrl
+                id="beans_gapps"
+                title="BeansGapps-Mini"
+                description="Download BeansGapps-Mini">https://www.androidfilehost.com/?w=files&amp;flid=171927</BeansGappsUrl>
+	    <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/floCHANGELOG.mkdn</ChangelogUrl>
+            <OldBuildsUrl
+            	id="Old_builds"
+            	title="Build Folder"
+            	description="Build Download Archive">https://sourceforge.net/projects/resurrectionremix/files/flo/</OldBuildsUrl>
+	</flo>
+    </Stable>
+</SlimOTA>

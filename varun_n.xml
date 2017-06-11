@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <bacon>
+            <Filename>RR-N-v5.8.3-20170608-bacon-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.3-20170608-bacon-Official.zip</RomUrl>
+              <Firmware1Url
+                id="firmware1"
+                title="Recommended Firmware"
+                description="Download ResurrectionRemix Oneplus c6 Firmware">https://www.androidfilehost.com/?fid=24052804347825946</Firmware1Url>
+              <Firmware2Url
+                id="firmware2"
+                title="Newer Firmware"
+                description="Download ResurrectionRemix Oneplus c7 Firmware">https://www.androidfilehost.com/?fid=24389512218018449</Firmware2Url>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+           <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</bacon>
+    </Stable>
+        <Stable>
+        <i9300>
+            <Filename>RR-N-v5.8.3-20170418-i9300-Nightly.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/i9300/Nougat/RR-N-v5.8.3-20170418-i9300-Nightly.zip</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</i9300>
+    </Stable>
+        <Stable>
+        <shamu>
+            <Filename>RR-N-v5.8.2-20170326-shamu-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/shamu/Nougat/RR-N-v5.8.2-20170326-shamu-Official.zip</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
+	</shamu>
+    </Stable>
+        <Stable>
+        <d802>
+            <Filename>RR-N-v5.8.2-20170326-d802-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/d802/Nougat/RR-N-v5.8.2-20170326-d802-Official.zip</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d802>
+    </Stable>
+        <Stable>
+        <d800>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d800.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d800>
+    </Stable>
+         <Stable>
+        <d801>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d801.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d801>
+    </Stable>
+             <Stable>
+        <ls980>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-ls980.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</ls980>
+    </Stable>
+    <Stable>
+        <vs980>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-vs980.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</vs980>
+    </Stable>
+       <Stable>
+        <d803>
+            <Filename>ResurrectionRemix-N-v5.8.0-20160921-d803.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds"></RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+
+             <OpenGappsUrl
+            	id="open_gapps"
+            	title="Open Gapps"
+            	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>	
+	</d803>
+    </Stable>
+     <Stable>
+        <angler>
+            <Filename>RR-N-v5.8.3-20170608-angler-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.3-20170608-angler-Official.zip</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <VendorUrl
+            	id="vendor_image"
+            	title="Vendor Image"
+            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/N2G47O-ANGLER.img</VendorUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+	</angler>
+	<oneplus3>
+            <Filename>RR-N-v5.8.3-20170608-oneplus3-Weekly.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YWFpsQWVlSWF6RVE</RomUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+	    <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <OldBuildsUrl
+            	id="Old_builds"
+            	title="Build Folder"
+            	description="Old Builds Download Archive">https://sourceforge.net/projects/resurrectionremix/files/oneplus-unified-3-3T/</OldBuildsUrl>
+            <OP3FirmwareUrl
+                id="OP3Firmware"
+                title="OP3 Firmware"
+                description="OP3 Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=159883</OP3FirmwareUrl>
+            <OP3TFirmwareUrl
+                id="OP3TFirmware"
+                title="OP3T Firmware"
+                description="OP3T Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=159692</OP3TFirmwareUrl>
+          </oneplus3>
+    </Stable>
+</SlimOTA>

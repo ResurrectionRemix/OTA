@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <hammerhead>
+            <Filename>RR-N-v5.8.2-20170305-hammerhead-Nightly.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Downloads"
+                description="Download latest builds">https://sourceforge.net/projects/resurrectionremix/files/hammerhead/nougat/</RomUrl>
+            <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/nougat/CHANGELOG.mkdn</ChangelogUrl>
+            <SlimGappsUrl
+            	id="gapps"
+            	title="Gapps"
+            	description="Download latest Open GApps">http://opengapps.org/</SlimGappsUrl>
+	</hammerhead>
+    </Stable>
+</SlimOTA>
