@@ -2,3 +2,411 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/12/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 99e3273 display: add a simple api to query the display state (on/off)
+ ▪ 9d299c5 kenzo: regenerate defconfig
+ ▪ e2a597e Revert "ASoC: wcd9335: add analog headphone gain"
+ ▪ e8763bb mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
+ ▪ da613bd mmc: clk_scaling: add sysfs for avoiding scale down in write
+ ▪ 646b406 mm: slub: Default slub_max_order to 0
+ ▪ 5d6821f tcp_cubic: do not set epoch_start in the future
+ ▪ cf42077 tcp_cubic: better follow cubic curve after idle period
+ ▪ 55aff77 tcp: fix timing issue in CUBIC slope calculation
+ ▪ 2de874f cpuidle: don't disable cpuidle when entering suspend
+ ▪ 4f621fd kgsl: convert some workqueues to use kthreads original commit: https://github.com/android/kernel_msm/commit/1a7a93bd33f48a369de29f6f2b56251127bf6ab4 adreno_dispatch_work and _kgsl_event_worker are both low-latency low-runtime functions that are in the critical path of GPU rendering. Moving them out of workqueues and into a dedicated FIFO kthread avoids significant jitter.
+ ▪ f8c602d mdss: move to a kthread for vsync_retire_work_handler original commit: https://github.com/android/kernel_msm/commit/91fd2c322af5c111309e343e7d58f6e5e1841823 vsync_retire_work_handler is in the critical display path and should never be delayed because of other non-FIFO work.
+ ▪ c8496b3 zram: default compressor lz4
+ ▪ 2b5ecc6 lib: lz4: cleanup unaligned access efficiency detection
+ ▪ ab26914 lib: lz4: fixed zram with lz4 on big endian machines
+ ▪ d5fc2f2 lz4: fix system halt at boot kernel on x86_64
+ ▪ 038f21d lib/lz4: Pull out constant tables
+ ▪ 257b61f LZ4 : fix the data abort issue
+ ▪ bccd510 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+ ▪ d9dcecb lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+ ▪ ac781f7 cpufreq; add elementalx governor
+ ▪ f7ab93d cpufreq: governor: Be friendly towards latency-sensitive bursty workloads
+ ▪ db78b02 leds: trigger: ledtrig-backlight: Fix invalid memory access in fb_event notification callback
+ ▪ 0d6ff23 drivers: fingerprint: boost tasks to the big cores when the scanner is used
+ ▪ 36415bb drivers: fingerprint: boost cpufreq on unlock
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ c50618e Add Moto G5 Plus as Official (#805)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 06/11/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 62af0145 fingerprint: handle PerformanceStats NULL pointers
+ ▪ aabff84 Slim Recents: allow to disable round corners for cards [1/2]
+ ▪ 457b8d6 New app-pinning icon
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ fb18ec2 Slim Recents: allow to disable round corners for cards [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 06/10/2017
+
+
+ ▪ project build/
+ ▪ b1f8acf core: minimize dumpvar
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 09a00e7 oneplus3: fix defconfig for my kernel, show dash charging, show charging current
+
+ ▪ project device/oppo/common/
+ ▪ a0aa237 ConfigPanel:Use pixel accent colors
+ ▪ 37b7c5c Notification slider: add extra options
+
+ ▪ project frameworks/base/
+ ▪ bbb3ae8 Remove FastJNI optimization on AssetManager to avoid dead lock.
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 259d067 drivers: video: Add bounds checking in fb_cmap_to_user
+ ▪ b061b66 net: ping: check minimum size on ICMP header length
+ ▪ a0a85e30 net: add length argument to skb_copy_and_csum_datagram_iovec
+ ▪ 188322d sysctl: Drop reference added by grab_header in proc_sys_readdir
+ ▪ 6fa12c4 ipv6/dccp: do not inherit ipv6_mc_list from parent
+ ▪ 21e481b ext4: fix data exposure after a crash
+ ▪ c8a5eab bpf: don't let ldimm64 leak map addresses on unprivileged
+ ▪ d953db5 ANDROID: sdcardfs: d_splice_alias can return error values
+ ▪ 15bd702 UPSTREAM: merge d_materialise_unique() into d_splice_alias()
+ ▪ 8f7084a ANDROID: mnt: Fix next_descendent
+ ▪ 8070c21 ANDROID: sdcardfs: Check for NULL in revalidate
+ ▪ 00237e4 ANDROID: sdcardfs: Add linux/kref.h include
+ ▪ 9d04346 ANDROID: sdcardfs: Move top to its own struct
+ ▪ 8c63a42 ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
+ ▪ 3178e4f ANDROID: sdcardfs: Don't iput if we didn't igrab
+ ▪ 1715c64 ANDROID: sdcardfs: Call lower fs's revalidate
+ ▪ 143b40c ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
+ ▪ e0119ba4 ANDROID: sdcardfs: Copy meta-data from lower inode
+ ▪ 3ea6c0f Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
+ ▪ adfedc78 ANDROID: sdcardfs: Use filesystem specific hash
+ ▪ 771d27b Revert "Android: sdcardfs: Don't do d_add for lower fs"
+ ▪ b73d333 Android: sdcardfs: Don't complain in fixup_lower_ownership
+ ▪ f53c126 Android: sdcardfs: Don't do d_add for lower fs
+ ▪ 6a1ae9b ANDROID: sdcardfs: ->iget fixes
+ ▪ c153504 Android: sdcardfs: Change cache GID value
+ ▪ 266fa88 ANDROID: sdcardfs: Directly pass lower file for mmap
+ ▪ fa1c518 ANDROID: sdcardfs: update module info
+ ▪ 1468b0b ANDROID: sdcardfs: use d_splice_alias
+ ▪ 91f13e2 ANDROID: sdcardfs: add read_iter/write_iter opeations
+ ▪ 6463315 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
+ ▪ 2890648 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
+ ▪ 6db7962 ANDROID: sdcardfs: remove unnecessary call to do_munmap
+ ▪ bf4d01d ANDROID: fs: Export vfs_rmdir2
+ ▪ 271e9f3 ANDROID: fs: Export free_fs_struct and set_fs_pwd
+ ▪ b391b40 ANDROID: sdcardfs: Fix style issues in macros
+ ▪ 1dd28c3 ANDROID: sdcardfs: Use seq_puts over seq_printf
+ ▪ 5eb3828 ANDROID: sdcardfs: Use to kstrout
+ ▪ 2823a3bb ANDROID: sdcardfs: Use pr_[...] instead of printk
+ ▪ 442c7a5 ANDROID: sdcardfs: remove unneeded null check
+ ▪ 07831b9 ANDROID: sdcardfs: Fix style issues with comments
+ ▪ 8d0dd61 ANDROID: sdcardfs: Fix formatting
+ ▪ c7bcd1f ANDROID: sdcardfs: correct order of descriptors
+ ▪ 2d81892 ANDROID: sdcardfs: Fix gid issue
+ ▪ b2b9299 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
+ ▪ 4b39245 ANDROID: sdcardfs: Remove uninformative prints
+ ▪ 5bb1a12 ANDROID: sdcardfs: move path_put outside of spinlock
+ ▪ f5741c7 ANDROID: sdcardfs: Use case insensitive hash function
+ ▪ a798d96 ANDROID: sdcardfs: declare MODULE_ALIAS_FS
+ ▪ d75c2c5 ANDROID: sdcardfs: Get the blocksize from the lower fs
+ ▪ 1feacdf ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
+ ▪ a2b2407 ANDROID: sdcardfs: Switch to internal case insensitive compare
+ ▪ 7070329 ANDROID: sdcardfs: Use spin_lock_nested
+ ▪ a0b8608 ANDROID: sdcardfs: Replace get/put with d_lock
+ ▪ 8d59380 ANDROID: sdcardfs: rate limit warning print
+ ▪ 2bfc8dc ANDROID: sdcardfs: Fix case insensitive lookup
+ ▪ c59e6c9 mm: Export do_munmap
+ ▪ 7b46d94 power: Synchronize with OxygenOS 4.1.5
+ ▪ c97cebd UPSTREAM: fscrypt: avoid collisions when presenting long encrypted filenames
+ ▪ fef7ad0 UPSTREAM: fscrypt: fix context consistency check when key(s) unavailable
+ ▪ 1584abb UPSTREAM: ext4 crypto: fix some error handling
+ ▪ 99189f8 UPSTREAM: ext4 crypto: don't let data integrity writebacks fail with ENOMEM
+ ▪ f407c61 UPSTREAM: ext4/fscrypto: avoid RCU lookup in d_revalidate
+ ▪ 715b717 UPSTREAM: ext4 crypto: use dget_parent() in ext4_d_revalidate()
+ ▪ d8fd0d9 UPSTREAM: ext4 crypto: revalidate dentry after adding or removing the key
+ ▪ 73d5a89 UPSTREAM: fscrypt: remove broken support for detecting keyring key revocation
+ ▪ fa282c4 UPSTREAM: fscrypto: lock inode while setting encryption policy
+ ▪ c18f360 UPSTREAM: fscrypt: fix renaming and linking special files
+ ▪ 5a97bda UPSTREAM: fscrypto: require write access to mount to set encryption policy
+ ▪ e2cc66e UPSTREAM: fscrypto: add authorization check for setting encryption policy
+ ▪ 910bacc UPSTREAM: ext4: enforce online defrag restriction for encrypted files
+ ▪ 2a5f67a UPSTREAM: ext4 crypto: add missing locking for keyring_key access
+ ▪ fb3df10 Linux 3.18.56
+ ▪ 1338d25 xfs: fix unaligned access in xfs_btree_visit_blocks
+ ▪ b03c3d1 xfs: bad assertion for delalloc an extent that start at i_size
+ ▪ 633aafd xfs: fix indlen accounting error on partial delalloc conversion
+ ▪ e4801ae xfs: fix up quotacheck buffer list error handling
+ ▪ 0f003dd xfs: prevent multi-fsb dir readahead from reading random blocks
+ ▪ ed69824 xfs: handle array index overrun in xfs_dir2_leaf_readbuf()
+ ▪ 5884ec0 xfs: fix over-copying of getbmap parameters from userspace
+ ▪ ee6f3b1 xfs: fix off-by-one on max nr_pages in xfs_find_get_desired_pgoff()
+ ▪ 7f08320 xfs: Fix missed holes in SEEK_HOLE implementation
+ ▪ fa8e703 mlock: fix mlock count can not decrease in race condition
+ ▪ 99c4095 mm/migrate: fix refcount handling when !hugepage_migration_supported()
+ ▪ 0f7385f drm/gma500/psb: Actually use VBT mode when it is found
+ ▪ 8876237 slub/memcg: cure the brainless abuse of sysfs attributes
+ ▪ ea04963 ALSA: hda - apply STAC_9200_DELL_M22 quirk for Dell Latitude D430
+ ▪ 8ca4a52 pcmcia: remove left-over %Z format
+ ▪ 1c2a03b drm/radeon/ci: disable mclk switching for high refresh rates (v2)
+ ▪ 5e8aaac i2c: i2c-tiny-usb: fix buffer not being DMA capable
+ ▪ e3a8366 sctp: fix ICMP processing if skb is non-linear
+ ▪ a0a2223 tcp: avoid fastopen API to be used on AF_UNSPEC
+ ▪ 21ba2ca ipv6: fix out of bound writes in __ip6_append_data()
+ ▪ a10134a qmi_wwan: add another Lenovo EM74xx device ID
+ ▪ 419723a ipv6: Check ip6_find_1stfragopt() return value properly.
+ ▪ c9d2bdf ipv6: Prevent overrun when parsing v6 header options
+ ▪ 1e716dc tcp: eliminate negative reordering in tcp_clean_rtx_queue
+ ▪ a906c2d sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
+ ▪ ca5eb29 sctp: fix src address selection if using secondary addresses for ipv6
+ ▪ e5f33e0 tcp: avoid fragmenting peculiar skbs in SACK
+ ▪ b77848b s390/qeth: avoid null pointer dereference on OSN
+ ▪ 6fe58a60 s390/qeth: unbreak OSM and OSN support
+ ▪ b8c2af2 s390/qeth: handle sysfs error during initialization
+ ▪ a2f3fe2 netem: fix skb_orphan_partial()
+ ▪ b250c78 Revert "stackprotector: Increase the per-task stack canary's random range from 32 bits to 64 bits on 64-bit platforms"
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 06/09/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 2f89ae2 Optimised hwui rounded corners shader
+ ▪ b021af9 SystemUI: Reroute Battery QS Tile tint back to original color
+ ▪ 4b50c93 Fix a use-of-uninitialized-value warning.
+ ▪ 84fba94 Fix a use-of-uninitialized-value warning
+ ▪ 10a9f4e Reduce hwui CPU time by using glDrawRangeElements
+ ▪ 1590b9a Close recents panel after drag-cards-for-multiwindow action
+ ▪ 848f8bc Slim recents: use multiwindow button to drag cards
+ ▪ 4253922 Update memory state on emtpyView click
+ ▪ 5332827 Optional No sim icon switch [1/2]
+ ▪ 2b65ab8 QS: Remove listeners only if added
+
+ ▪ project packages/apps/Email/
+ ▪ ea4eb75 Adjust Email UnitTests to e353ae2ea19c9ea800d10b37e05de7b0ea1aeeb4
+
+ ▪ project packages/apps/Jelly/
+ ▪ 22cb565 Implement history management through a ContentProvider.
+
+ ▪ project packages/apps/Settings/
+ ▪ 16cdbad Optional no sim icon switch [2/2]
+ ▪ 3681ae5 Fix FC in Configurations - About - Device and Maintainers (#803)
+
+ ▼ 06/08/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 78aa1a0 op3: Update from OxygenOS 4.1.5
+
+ ▪ project external/chromium-webview/
+ ▪ 2909904 Update webviews
+
+ ▪ project hardware/ti/omap4/
+ ▪ 1738329 omap4: Correct disabling of dirty regions invalidation
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 93bcb4c Gallery2: support GIF animation
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 87cabde Reduce Volume panel dialog min timout to 350ms
+
+ ▪ project packages/apps/Snap/
+ ▪ 78666b5 Snap: Simulate back button press when menu back button is pressed
+
+ ▪ project packages/apps/Terminal/
+ ▪ 5856a60 Terminal: Fix keyboard Ctrl- and ALT-key input.
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+ ▪ 3fe4133 Add back key to actionbar
+ ▪ b9b9cce Add openweathermap copyright
+ ▪ d0d73c5 Add icon
+ ▪ dccb527 Refactor cyanogenmod -> lineageos
+ ▪ 9d01897 Update gradle
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ 3e9b1c1 Don't fail when a translation is missing
+ ▪ 3a8340c Update icon
+ ▪ a195bb4 Refactor cyanogenmod -> lineageos
+ ▪ a1ff743 Update gradle
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ bf4c5a3 Don't fail when a translation is missing
+ ▪ 6110585 Update app name to match other providers
+ ▪ a0d2c7c Update icon
+ ▪ fd3221f Refactor cyanogemod -> lineageos
+ ▪ 5cb7ddf Update gradle
+
+ ▪ project vendor/oneplus/
+ ▪ 1c4faaa op3: Update to OxygenOS 4.1.5 blobs
+
+ ▼ 06/07/2017
+
+
+ ▪ project android/
+ ▪ a46ed2f Revert "Track own system_media"
+ ▪ d73bf77 Track own system_media
+ ▪ 949aff4 manifest: android-7.1.2_r8 -> android-7.1.2_r17
+
+ ▪ project build/
+ ▪ cc30c3a Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project frameworks/base/
+ ▪ b8bb91f Merge tag 'android-7.1.2_r17' into nougat
+
+ ▪ project frameworks/native/
+ ▪ dae45e0 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ e663bfa ipv6/dccp: do not inherit ipv6_mc_list from parent
+ ▪ 1c54335 sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
+ ▪ c6424fce ipv6: Prevent overrun when parsing v6 header options
+ ▪ 59d3743 ipv6: fix out of bound writes in __ip6_append_data()
+ ▪ e3ee132 dccp/tcp: do not inherit mc_list from parent
+ ▪ 475ec18 mm: Tighten x86 /dev/mem with zeroing reads
+ ▪ 71e592a mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+ ▪ 87892db KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+ ▪ 9ae741a net/packet: fix overflow in check for priv area size
+ ▪ 62bdd82 net/packet: fix overflow in check for tp_reserve
+ ▪ fbf9ecb net/packet: fix overflow in check for tp_frame_nr
+ ▪ aa6034c scsi: sg: check length passed to SG_NEXT_CMD_LEN
+ ▪ fb8bdb8 BACKPORT: sg: relax 16 byte cdb restriction
+ ▪ b1cdc0b BACKPORT: block: add blk_rq_set_block_pc()
+ ▪ c8e5e51 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+ ▪ 16aecbc xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+ ▪ 9408519 KEYS: Change the name of the dead type to ".dead" to prevent user access
+ ▪ 8a71041 sctp: deny peeloff operation on asocs with threads sleeping on it
+ ▪ 28acf55 irda: Fix lockdep annotations in hashbin_delete().
+ ▪ 0d1930f net/llc: avoid BUG_ON() in skb_orphan()
+ ▪ 8c76f25 tcp: avoid infinite loop in tcp_splice_read()
+ ▪ ee754cf dccp: fix freeing skb too early for IPV6_RECVPKTINFO
+ ▪ 6759e5a perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
+ ▪ 9775ad0 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+ ▪ 7f3de56 ipc/shm: Fix shmat mmap nil-page protection
+ ▪ 1f50b5e time: Remove CONFIG_TIMER_STATS
+ ▪ 94718f6 tty: n_hdlc: get rid of racy n_hdlc.tbuf
+ ▪ ccf6222 TTY: n_hdlc, fix lockdep false positive
+ ▪ 9a2bd33 Kconfig: msm: disable ultrasound driver
+ ▪ e3a5c5e KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+ ▪ 6ca16c7 net: ping: check minimum size on ICMP header length
+ ▪ 4853c06 ext4: validate s_first_meta_bg at mount time
+ ▪ 9a4870e sg_write()/bsg_write() is not fit to be called under KERNEL_DS
+ ▪ 77e9773 bluetooth: Validate socket address length in sco_sock_bind().
+ ▪ c898f4a KEYS: Fix handling of stored error in a negatively instantiated user key
+ ▪ 6e0afd5 ipv6: addrconf: validate new MTU before applying it
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Messaging/
+ ▪ ef18c3d Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ a5dfd15 Update Build ID
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 3ddceec Settings: Implement ADB over network
+ ▪ bf8bc80 Settings: Add intent to launch LineageOS platlogo upon multiple taps
+ ▪ 0165eb8 settings: Add advanced reboot switch
+ ▪ e1c67c5 Settings: Set root access options appropriately
+ ▪ 253b262 settings: Add developer setting for root access
+ ▪ f4e82a3 Use more descriptive strings for add accessory page
+ ▪ 3733c2b About: Add LineageOS Updates
+ ▪ 0fe2e3b Add build date (ro.build.date from build.prop) to About screen.
+ ▪ 18c18a9 One does not simply become a Developer
+ ▪ 34001b8 Add LineageOS version to the About screen
+
+ ▪ project system/core/
+ ▪ 5504d46 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cm/
+ ▪ 0454ffd Vendor: Build AudioFX again
+
+ ▼ 06/06/2017
+
+
+ ▪ project android/
+ ▪ bcb3fb7 crowdin: add PackageInstaller
+
+ ▪ project external/stagefright-plugins/
+ ▪ 05bf4e7 ffmpeg-extractor: StageFright supports Opus files
+ ▪ 11bc5a2 Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"
+
+ ▪ project frameworks/base/
+ ▪ 0a001c5 Fix SystemUI FC due to Google Assistant
+ ▪ 16a622d Handle Illegal Argument Exception
+ ▪ 50b3778 Reduce MTU Size
+ ▪ fc52d47 FW_BASE: Rewrite restart SystemUI method
+ ▪ 42fa816 Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project frameworks/native/
+ ▪ 1eed077 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project libcore/
+ ▪ b162f5e Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ 9d274ac BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
+ ▪ 9efb588 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 95cb32b Increase the size of the tiles when decoding images
+
+ ▪ project packages/apps/Jelly/
+ ▪ e28fd6c Jelly: Add HTTP auth login support
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 5910d21 Settings:Rewrite Restart SystemUI
+
+ ▪ project system/bt/
+ ▪ aa31852 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 5e54c5f libcutils: fix schedboost after 31f78ddf4ea2ab7963d873cb16db98e976346468
+ ▪ 14bdeb8 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ 69d6029 fix check_blacklist function to work on wiped /system partition
+ ▪ d0be161 sensitive_pn: Add sensitive numbers for Serbia
+

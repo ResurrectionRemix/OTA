@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
-    <Stable>
+  <Stable>
     <kenzo>
-    <Filename>RR-N-v5.8.3-20170611-kenzo-Nightly.zip</Filename>
-    <LatestBuildUrl
-    id="latestbuild"
-    title="LatestBuild"
-    description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170611-kenzo-Nightly.zip</LatestBuildUrl>
-    <BuildUrl
-    id="build"
-    title="Build"
-    description="Download a Build">http://downloads.resurrectionremix.com/kenzo/</BuildUrl>
-    <ChangelogUrl
-    id="changelog"
-    title="Changelog"
-    description="View Changelogs">http://rr.akhilnarang.me/Changelogs/</ChangelogUrl>
+      <Filename>RR-N-v5.8.3-20170612-kenzo-Nightly.zip</Filename>
+      <LatestBuildUrl
+        id="latestbuild"
+        title="LatestBuild"
+        description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170612-kenzo-Nightly.zip</LatestBuildUrl>
+      <BuildUrl
+        id="build"
+        ti tle="Build"
+        description="Download a Build">http://downloads.resurrectionremix.com/kenzo/</BuildUrl>
+      <ChangelogUrl
+        id="changelog"
+        title="Changelog"
+        description="View Changelogs">http://rr.akhilnarang.me/Changelogs/</ChangelogUrl>
     </kenzo>
-    </Stable>
-    </SlimOTA>
+  </Stable>
+</SlimOTA>
     
