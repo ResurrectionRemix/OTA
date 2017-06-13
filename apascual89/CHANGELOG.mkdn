@@ -1,0 +1,87 @@
+
+ ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+
+
+ ▼ 06/13/2017
+
+
+ ▪ project device/google/dragon/
+ ▪ 02f0a07 dragon: remove some doze features
+
+ ▪ project frameworks/base/
+ ▪ 00e4452 Fix IME switcher not being shown in notifications when enabled
+ ▪ 01df159 SignalClusterView:Tighten up loose ends for no sim subscriptions
+ ▪ 6cdb4e7 Revert "Fix nav bar showing always on the left when rotated to 270 degrees."
+ ▪ d49173c FWB:Smartbar touch sounds:make it optional[1/3]
+ ▪ 2f037a2 BatteryMeterDrawable:Sync with upstream
+ ▪ 17409ca SystemUI:Disable carrier label by default - Increase font size
+ ▪ 07ab6ef RRUtils:Add missing Omniswitch contants
+ ▪ b7b6261 CaptivePortalLoginActivity correctly gets UserAgent
+ ▪ 106869b Prettify the captive portal sign-in activity
+ ▪ 60a5ede [1/2] base: OmniSwitch: add preload task broadcast
+ ▪ 0f9e9d3 SystemUI: animate icon when locking a task
+
+ ▪ project kernel/google/msm/
+ ▪ c5629e0 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_kernel_google_msm into nougat
+
+ ▪ project packages/apps/DUI/
+ ▪ 58a000e DUI:Uncomment Navbar Left in Landscape [1/2]
+ ▪ 2562dc1 Fix spammed hindi strings
+ ▪ 0e3dedc Update strings.xml
+ ▪ 9175a54 Fix bad strings
+ ▪ 8ab23f1 Smartbar touch sounds:make it optional [2/3]
+ ▪ 885fa36 Pulse: Navbar left in landscape support
+ ▪ e9daee7 SmartBar: Touch sound support
+ ▪ 6607429 DUI: Fix NPE in MediaMonitor
+
+ ▪ project packages/apps/Eleven/
+ ▪ 6665277 Eleven: Remove unused permission REAL_GET_TASKS
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 6e90ddf [2/2] OmniSwitch: add preload task broadcast
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 6e0d35e Settings:Add back Left navigation bar in landscape [2/2]
+ ▪ 05fe606 Settings:Smartbar touch sounds:make it optional [3/3]
+ ▪ 8666f80 Configurations:Disable carrier label by default
+
+ ▪ project packages/apps/Snap/
+ ▪ bd1d6ea Snap: Sign with platform key
+ ▪ d7247ff Add orientation correction for landscape devices
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 06/12/2017
+
+
+ ▪ project device/google/dragon/
+ ▪ 9532cda dragon: add drm props
+ ▪ 8eccd4e dragon: add camera flash prop
+ ▪ 97d3e30 dragon: add facelock props
+ ▪ 50ecc93 dragon: add mobile data provision prop
+ ▪ a05edf8 dragon: disable forced encryption
+ ▪ 84b9547 dragon: kill bugreport shortcut service *this is easy to accidentaly activated
+ ▪ 0cac5c9 dragon: Enable Wifi Display
+ ▪ d751995 Update apks to 7.1.2
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ c50618e Add Moto G5 Plus as Official (#805)
+
+ ▪ project packages/services/OmniJaws/
+

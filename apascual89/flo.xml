@@ -44,11 +44,11 @@
     </Stable>
     <Stable>
         <dragon>
-            <Filename>RR-N-v5.8.3-20170609-dragon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170613-dragon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-20170609-dragon-Official.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-20170613-dragon-Official.zip/download</RomUrl>
             <BeansGappsUrl
                 id="beans_gapps"
                 title="BeansGapps"
