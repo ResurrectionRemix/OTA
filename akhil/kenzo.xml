@@ -9,7 +9,7 @@
         description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170614-kenzo-Nightly.zip</LatestBuildUrl>
       <BuildUrl
         id="build"
-        ti tle="Build"
+        title="Build"
         description="Download a Build">http://downloads.resurrectionremix.com/kenzo/</BuildUrl>
       <ChangelogUrl
         id="changelog"
