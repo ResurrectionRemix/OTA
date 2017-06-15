@@ -2,12 +2,37 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/15/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 2cc801f Check for spurious wake ups
+ ▪ f6f0ebf Fix TaskRecord wrong dump element firstActiveTime
+
+ ▪ project packages/apps/DUI/
+ ▪ adf6bee DUI:Uncomment Navbar Left in Landscape [1/2]
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 8dad24f SeekBarPreference: fix progressbar glitch with custom min-max values
+ ▪ 75aad61 do not include saved network in scan list
+ ▪ 08a42d0 Allow sorting applications by size
+ ▪ 6489e06 Volume can not be updated in Sound&notification
+ ▪ a37247e AllowBindAppWidgetActivity: Fix crash when the activity is closing
+ ▪ 91b6f1c Squash commit of SAR and IC Code.
+ ▪ bdaf696 Fix crash when calling remove() with a null variable
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 06/14/2017
 
 
  ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/OmniSwitch/
 
@@ -15,6 +40,9 @@
 
  ▪ project packages/apps/Settings/
  ▪ b65b342 Add Samsung Galaxy Alpha as Official (#806)
+
+ ▪ project system/bt/
+ ▪ 331fc1e bt: Disable AVRCP 1.6
 
  ▼ 06/13/2017
 
@@ -36,7 +64,6 @@
  ▪ 0f9e9d3 SystemUI: animate icon when locking a task
 
  ▪ project packages/apps/DUI/
- ▪ 58a000e DUI:Uncomment Navbar Left in Landscape [1/2]
  ▪ 2562dc1 Fix spammed hindi strings
  ▪ 0e3dedc Update strings.xml
  ▪ 9175a54 Fix bad strings
@@ -281,55 +308,4 @@
  ▪ project packages/apps/Settings/
  ▪ 16cdbad Optional no sim icon switch [2/2]
  ▪ 3681ae5 Fix FC in Configurations - About - Device and Maintainers (#803)
-
- ▼ 06/08/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 78aa1a0 op3: Update from OxygenOS 4.1.5
-
- ▪ project external/chromium-webview/
- ▪ 2909904 Update webviews
-
- ▪ project hardware/ti/omap4/
- ▪ 1738329 omap4: Correct disabling of dirty regions invalidation
-
- ▪ project packages/apps/Gallery2/
- ▪ 93bcb4c Gallery2: support GIF animation
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
- ▪ 87cabde Reduce Volume panel dialog min timout to 350ms
-
- ▪ project packages/apps/Snap/
- ▪ 78666b5 Snap: Simulate back button press when menu back button is pressed
-
- ▪ project packages/apps/Terminal/
- ▪ 5856a60 Terminal: Fix keyboard Ctrl- and ALT-key input.
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
- ▪ 3fe4133 Add back key to actionbar
- ▪ b9b9cce Add openweathermap copyright
- ▪ d0d73c5 Add icon
- ▪ dccb527 Refactor cyanogenmod -> lineageos
- ▪ 9d01897 Update gradle
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ 3e9b1c1 Don't fail when a translation is missing
- ▪ 3a8340c Update icon
- ▪ a195bb4 Refactor cyanogenmod -> lineageos
- ▪ a1ff743 Update gradle
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
- ▪ bf4c5a3 Don't fail when a translation is missing
- ▪ 6110585 Update app name to match other providers
- ▪ a0d2c7c Update icon
- ▪ fd3221f Refactor cyanogemod -> lineageos
- ▪ 5cb7ddf Update gradle
-
- ▪ project vendor/oneplus/
- ▪ 1c4faaa op3: Update to OxygenOS 4.1.5 blobs
 
