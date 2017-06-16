@@ -2,6 +2,22 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/16/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 397e946 Adding PitchBlack skull header (#201)
+ ▪ 780245f Change of translation
+
+ ▪ project packages/apps/CarrierConfig/
+ ▪ 1249ef5 Remove TIM from non-roaming networks list of H3G IT
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 06/15/2017
 
 
@@ -283,29 +299,4 @@
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
-
- ▼ 06/09/2017
-
-
- ▪ project frameworks/base/
- ▪ 2f89ae2 Optimised hwui rounded corners shader
- ▪ b021af9 SystemUI: Reroute Battery QS Tile tint back to original color
- ▪ 4b50c93 Fix a use-of-uninitialized-value warning.
- ▪ 84fba94 Fix a use-of-uninitialized-value warning
- ▪ 10a9f4e Reduce hwui CPU time by using glDrawRangeElements
- ▪ 1590b9a Close recents panel after drag-cards-for-multiwindow action
- ▪ 848f8bc Slim recents: use multiwindow button to drag cards
- ▪ 4253922 Update memory state on emtpyView click
- ▪ 5332827 Optional No sim icon switch [1/2]
- ▪ 2b65ab8 QS: Remove listeners only if added
-
- ▪ project packages/apps/Email/
- ▪ ea4eb75 Adjust Email UnitTests to e353ae2ea19c9ea800d10b37e05de7b0ea1aeeb4
-
- ▪ project packages/apps/Jelly/
- ▪ 22cb565 Implement history management through a ContentProvider.
-
- ▪ project packages/apps/Settings/
- ▪ 16cdbad Optional no sim icon switch [2/2]
- ▪ 3681ae5 Fix FC in Configurations - About - Device and Maintainers (#803)
 
