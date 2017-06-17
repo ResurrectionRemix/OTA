@@ -2,12 +2,118 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/17/2017
+
+
+ ▪ project frameworks/base/
+ ▪ ac0c76c TaskViewHeader:Don't allow lock button icon to show on grid view
+ ▪ 4bdd900 Base: Improve OmniSwitch implementation
+ ▪ 1aca92c KernelCpuSpeedReader: Account for missing sysfs nodes
+ ▪ bf156ad Fix batterySendBroadcast not synchronized issue.
+ ▪ dda5803 bless python versions newer than 2.6
+ ▪ 7638fee Handle ActivityNotFoundException for contacts activity
+ ▪ 9459285 extend PreferenceActivity for title text on a single pane mode
+ ▪ 6ebcc53 Override onRestoreInstanceState() in MultiSelectListPreference
+ ▪ 4253bcf Fragment animations are not being saved across configuration changes
+ ▪ 9ab8bae Fix to NullPointerException when activity is relaunched
+ ▪ 7e41a2e Fix right mLastTimeUsed when aggregate UsageStats
+ ▪ 4037823 Fix ListView is not scrolled properly with arrows
+ ▪ ed61430 Synchronize access of mSubscriptions
+ ▪ f3cfda4 Provide synchronization to setview to avoid NPE
+ ▪ d970a26 AsyncTask: Fix to remove canceled tasks from executor's queue.
+ ▪ 4c1c6bf frameworks/base: Fix to avoid crash when the tab is not set from app
+ ▪ 3dff401 IInputMethodWrapper to recycle SomeArgs in all cases.
+ ▪ e62cfea Catch corruptexception during Transaction operation
+ ▪ 5e7b3b0 Fix force idle issue
+ ▪ 8f0c320 preloaded drawables few
+ ▪ b2732eb Schedule agentDisconnected() in handler thread
+ ▪ abeed16 Fix PrcessRecord.renderThreadTid not reset in some case.
+ ▪ ef47c88 SoundPool: decrease binder call when calling SoundPool.play
+ ▪ 3d9544d BluetoothTile: Fix in the off state while entering the detail view
+ ▪ be8cecc WiFiTile: Fix in the off state while entering the detail view
+ ▪ d71604e Net monitor: fix arrows not showing when data saver is enabled
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 070921f Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.19' into nougat-caf-8952
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 14120ab Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into nougat-caf-8996
+
+ ▪ project hardware/qcom/media-caf/msm8952/
+ ▪ 14b2969 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.19' into nougat-caf-8952
+
+ ▪ project hardware/ril/
+ ▪ 5758b0e ril: fix a memory leak.
+
+ ▪ project hardware/ril-caf/
+ ▪ 588e49d ril: fix a memory leak.
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 933e19d Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into n-mr2
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 53163a7 Update Enable switch consistency
+
+ ▪ project packages/apps/Settings/
+ ▪ 2ebdc3d RecentsSettings:Make OmniSwitch fragment directly accessible
+
  ▼ 06/16/2017
 
 
  ▪ project frameworks/base/
  ▪ 397e946 Adding PitchBlack skull header (#201)
  ▪ 780245f Change of translation
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 9c5316d Linux 3.18.57
+ ▪ 288ddc3 ALSA: timer: Fix race between read and ioctl
+ ▪ 7ec5072 mlx5: stop including <asm-generic/kmap_types.h>
+ ▪ 4b1e42b arm64: ensure extension of smp_store_release value
+ ▪ b4f569b usercopy: Adjust tests to deal with SMAP/PAN
+ ▪ 6db5f2b RDMA/qib,hfi1: Fix MR reference count leak on write with immediate
+ ▪ ea0ea1c arm64: entry: improve data abort handling of tagged pointers
+ ▪ 0a7fb4e arm64: hw_breakpoint: fix watchpoint matching for tagged pointers
+ ▪ 2944f82 serial: sh-sci: Fix panic when serial console and DMA are enabled
+ ▪ dbb048a drivers: char: mem: Fix wraparound check to allow mappings up to the end
+ ▪ 83b10c0 ASoC: Fix use-after-free at card unregistration
+ ▪ 8aed6af ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
+ ▪ 6af3543 drm/vmwgfx: limit the number of mip levels in vmw_gb_surface_define_ioctl()
+ ▪ 396403c drm/vmwgfx: Handle vmalloc() failure in vmw_local_fifo_reserve()
+ ▪ 90b7353 perf/core: Drop kernel samples even though :u is specified
+ ▪ 3d6b06a powerpc/numa: Fix percpu allocations to be NUMA aware
+ ▪ 5660f4a powerpc/eeh: Avoid use after free in eeh_handle_special_event()
+ ▪ 6360ebd scsi: qla2xxx: don't disable a not previously enabled PCI device
+ ▪ 5ed7f8f btrfs: fix memory leak in update_space_info failure path
+ ▪ 20c9254 btrfs: use correct types for page indices in btrfs_page_exists_in_range
+ ▪ 39a43d1 stackprotector: Increase the per-task stack canary's random range from 32 bits to 64 bits on 64-bit platforms
+ ▪ ebe07f7 random: properly align get_random_int_hash
+ ▪ 74d7c0f iio: proximity: as3935: fix AS3935_INT mask
+ ▪ 8319932 staging/lustre/lov: remove set_fs() call from lov_getstripe()
+ ▪ 8fdad20 usb: chipidea: debug: check before accessing ci_role
+ ▪ ed6fcbf usb: chipidea: udc: fix NULL pointer dereference if udc_start failed
+ ▪ f695592 usb: gadget: f_mass_storage: Serialize wake and sleep execution
+ ▪ 32a172e ext4: keep existing extra fields when inode expands
+ ▪ e744c8c ext4: fix SEEK_HOLE
+ ▪ 00fdfe3 dmaengine: ep93xx: Always start from BASE0
+ ▪ 2f19cf1 arm: KVM: Allow unaligned accesses at HYP
+ ▪ d2b7ac8 KVM: cpuid: Fix read/write out-of-bounds vulnerability in cpuid emulation
+ ▪ e0e5ce4 kvm: async_pf: fix rcu_irq_enter() with irqs enabled
+ ▪ 0175997 nfsd4: fix null dereference on replay
+ ▪ 709170b crypto: gcm - wait for crypto op not signal safe
+ ▪ 39044e4 KEYS: fix freeing uninitialized memory in key_update()
+ ▪ 017f050 KEYS: fix dereferencing NULL payload with nonzero length
+ ▪ e6c897a serial: ifx6x60: fix use-after-free on module unload
+ ▪ 77492f2 net: ethoc: enable NAPI before poll may be scheduled
+ ▪ 5d14917 net: ping: do not abuse udp_poll()
+ ▪ e938449 ipv6: Fix leak in ipv6_gso_segment().
+ ▪ ad66e0d tcp: disallow cwnd undo when switching congestion control
+ ▪ 686fd2f cxgb4: avoid enabling napi twice to the same queue
+ ▪ 3fbe916 ipv6: xfrm: Handle errors reported by xfrm6_find_1stfragopt()
+ ▪ de181b8 bnx2x: Fix Multi-Cos
+ ▪ 92f889b msm: Fix Kconfig warnings
+ ▪ 8dca92c arch: Unbreak mrproper/clean
+ ▪ b60372e Makefile: Optimize
+ ▪ f1493ed adjust Makefile
 
  ▪ project packages/apps/CarrierConfig/
  ▪ 1249ef5 Remove TIM from non-roaming networks list of H3G IT
@@ -24,6 +130,9 @@
  ▪ project frameworks/base/
  ▪ 2cc801f Check for spurious wake ups
  ▪ f6f0ebf Fix TaskRecord wrong dump element firstActiveTime
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 4f466a6 msm: sps: Fix race condition in SPS debugfs APIs
 
  ▪ project packages/apps/DUI/
  ▪ adf6bee DUI:Uncomment Navbar Left in Landscape [1/2]
@@ -50,12 +159,35 @@
 
  ▪ project frameworks/base/
 
+ ▪ project packages/apps/Nfc/
+ ▪ 182c26e NfcNci: make T3T/Nfc-F HCE optional
+
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Settings/
  ▪ b65b342 Add Samsung Galaxy Alpha as Official (#806)
+
+ ▪ project packages/apps/Snap/
+ ▪ 0f83363 SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size
+ ▪ 202f50a SnapdragonCamera: Fix live shot image stretch when recording is 4K
+ ▪ fffbe39 SnapdragonCamera: Fix photo reversed when enable selfie Mirror
+ ▪ dd1b09c SnapdragonCamera: Fix photo reversed when enable selfie Mirror
+ ▪ b37ea18 SnapdragonCamera: Fix preview in wrong size
+ ▪ 708af54 SnapdragonCamera: Fix front camera preview flipped
+ ▪ 9d21c69 SnapdragonCamera: Fix preview is flipped on 8996
+ ▪ cc08b44 SnapdragonCamera: Camera1 Selfie Mirror orientation check
+ ▪ c188ffe SnapdragonCamera: Fix Camera1 force close when refocusing the picture.
+ ▪ d24a8ed SnapdragonCamera: Change video snapshot picture size logic
+ ▪ bdb5068 SnapdragonCamera: Avoid cancel AF shortly after trigger
+ ▪ 3de435d SnapdragonCamera: Fix crash during UI stress test
+ ▪ f870393 SnapdragonCamera: Fix OutOfBoundsException in monkey test
+ ▪ 367758c SnapdragonCamera: Fix FC for NullPointerException
+ ▪ c8a45a3 SnapdragonCamera: Reset zoom value when resuming
+ ▪ a5054be SnapdragonCamera: Fix capture with flash will get black image.
+ ▪ 975aeca SnapdragonCamera: Fix FC cause by Null pointer
+ ▪ 922c4b3 SnapdragonCamera: Make copy of location before altering timestamp
 
  ▪ project system/bt/
  ▪ 331fc1e bt: Disable AVRCP 1.6
@@ -109,6 +241,12 @@
 
 
  ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 3b4fef6 Merge d40705f1fcd333f8e8115dd69555f9e9facfa78c on remote branch
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 7f0bd8b Merge 26cb096001b76f5c1db851c5f12a823040572ce4 on remote branch
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 99e3273 display: add a simple api to query the display state (on/off)
@@ -172,131 +310,4 @@
  ▪ fb18ec2 Slim Recents: allow to disable round corners for cards [2/2]
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 06/10/2017
-
-
- ▪ project build/
- ▪ b1f8acf core: minimize dumpvar
-
- ▪ project device/oneplus/oneplus3/
- ▪ bf37003 op3: Update ril header for 7.1.2
- ▪ 09a00e7 oneplus3: fix defconfig for my kernel, show dash charging, show charging current
-
- ▪ project device/oppo/common/
- ▪ a0aa237 ConfigPanel:Use pixel accent colors
- ▪ 37b7c5c Notification slider: add extra options
-
- ▪ project frameworks/base/
- ▪ bbb3ae8 Remove FastJNI optimization on AssetManager to avoid dead lock.
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 259d067 drivers: video: Add bounds checking in fb_cmap_to_user
- ▪ b061b66 net: ping: check minimum size on ICMP header length
- ▪ a0a85e30 net: add length argument to skb_copy_and_csum_datagram_iovec
- ▪ 188322d sysctl: Drop reference added by grab_header in proc_sys_readdir
- ▪ 6fa12c4 ipv6/dccp: do not inherit ipv6_mc_list from parent
- ▪ 21e481b ext4: fix data exposure after a crash
- ▪ c8a5eab bpf: don't let ldimm64 leak map addresses on unprivileged
- ▪ d953db5 ANDROID: sdcardfs: d_splice_alias can return error values
- ▪ 15bd702 UPSTREAM: merge d_materialise_unique() into d_splice_alias()
- ▪ 8f7084a ANDROID: mnt: Fix next_descendent
- ▪ 8070c21 ANDROID: sdcardfs: Check for NULL in revalidate
- ▪ 00237e4 ANDROID: sdcardfs: Add linux/kref.h include
- ▪ 9d04346 ANDROID: sdcardfs: Move top to its own struct
- ▪ 8c63a42 ANDROID: sdcardfs: fix sdcardfs_destroy_inode for the inode RCU approach
- ▪ 3178e4f ANDROID: sdcardfs: Don't iput if we didn't igrab
- ▪ 1715c64 ANDROID: sdcardfs: Call lower fs's revalidate
- ▪ 143b40c ANDROID: sdcardfs: Avoid setting GIDs outside of valid ranges
- ▪ e0119ba4 ANDROID: sdcardfs: Copy meta-data from lower inode
- ▪ 3ea6c0f Revert "Revert "Android: sdcardfs: Don't do d_add for lower fs""
- ▪ adfedc78 ANDROID: sdcardfs: Use filesystem specific hash
- ▪ 771d27b Revert "Android: sdcardfs: Don't do d_add for lower fs"
- ▪ b73d333 Android: sdcardfs: Don't complain in fixup_lower_ownership
- ▪ f53c126 Android: sdcardfs: Don't do d_add for lower fs
- ▪ 6a1ae9b ANDROID: sdcardfs: ->iget fixes
- ▪ c153504 Android: sdcardfs: Change cache GID value
- ▪ 266fa88 ANDROID: sdcardfs: Directly pass lower file for mmap
- ▪ fa1c518 ANDROID: sdcardfs: update module info
- ▪ 1468b0b ANDROID: sdcardfs: use d_splice_alias
- ▪ 91f13e2 ANDROID: sdcardfs: add read_iter/write_iter opeations
- ▪ 6463315 ANDROID: sdcardfs: fix ->llseek to update upper and lower offset
- ▪ 2890648 ANDROID: sdcardfs: copy lower inode attributes in ->ioctl
- ▪ 6db7962 ANDROID: sdcardfs: remove unnecessary call to do_munmap
- ▪ bf4d01d ANDROID: fs: Export vfs_rmdir2
- ▪ 271e9f3 ANDROID: fs: Export free_fs_struct and set_fs_pwd
- ▪ b391b40 ANDROID: sdcardfs: Fix style issues in macros
- ▪ 1dd28c3 ANDROID: sdcardfs: Use seq_puts over seq_printf
- ▪ 5eb3828 ANDROID: sdcardfs: Use to kstrout
- ▪ 2823a3bb ANDROID: sdcardfs: Use pr_[...] instead of printk
- ▪ 442c7a5 ANDROID: sdcardfs: remove unneeded null check
- ▪ 07831b9 ANDROID: sdcardfs: Fix style issues with comments
- ▪ 8d0dd61 ANDROID: sdcardfs: Fix formatting
- ▪ c7bcd1f ANDROID: sdcardfs: correct order of descriptors
- ▪ 2d81892 ANDROID: sdcardfs: Fix gid issue
- ▪ b2b9299 ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h
- ▪ 4b39245 ANDROID: sdcardfs: Remove uninformative prints
- ▪ 5bb1a12 ANDROID: sdcardfs: move path_put outside of spinlock
- ▪ f5741c7 ANDROID: sdcardfs: Use case insensitive hash function
- ▪ a798d96 ANDROID: sdcardfs: declare MODULE_ALIAS_FS
- ▪ d75c2c5 ANDROID: sdcardfs: Get the blocksize from the lower fs
- ▪ 1feacdf ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve
- ▪ a2b2407 ANDROID: sdcardfs: Switch to internal case insensitive compare
- ▪ 7070329 ANDROID: sdcardfs: Use spin_lock_nested
- ▪ a0b8608 ANDROID: sdcardfs: Replace get/put with d_lock
- ▪ 8d59380 ANDROID: sdcardfs: rate limit warning print
- ▪ 2bfc8dc ANDROID: sdcardfs: Fix case insensitive lookup
- ▪ c59e6c9 mm: Export do_munmap
- ▪ 7b46d94 power: Synchronize with OxygenOS 4.1.5
- ▪ c97cebd UPSTREAM: fscrypt: avoid collisions when presenting long encrypted filenames
- ▪ fef7ad0 UPSTREAM: fscrypt: fix context consistency check when key(s) unavailable
- ▪ 1584abb UPSTREAM: ext4 crypto: fix some error handling
- ▪ 99189f8 UPSTREAM: ext4 crypto: don't let data integrity writebacks fail with ENOMEM
- ▪ f407c61 UPSTREAM: ext4/fscrypto: avoid RCU lookup in d_revalidate
- ▪ 715b717 UPSTREAM: ext4 crypto: use dget_parent() in ext4_d_revalidate()
- ▪ d8fd0d9 UPSTREAM: ext4 crypto: revalidate dentry after adding or removing the key
- ▪ 73d5a89 UPSTREAM: fscrypt: remove broken support for detecting keyring key revocation
- ▪ fa282c4 UPSTREAM: fscrypto: lock inode while setting encryption policy
- ▪ c18f360 UPSTREAM: fscrypt: fix renaming and linking special files
- ▪ 5a97bda UPSTREAM: fscrypto: require write access to mount to set encryption policy
- ▪ e2cc66e UPSTREAM: fscrypto: add authorization check for setting encryption policy
- ▪ 910bacc UPSTREAM: ext4: enforce online defrag restriction for encrypted files
- ▪ 2a5f67a UPSTREAM: ext4 crypto: add missing locking for keyring_key access
- ▪ fb3df10 Linux 3.18.56
- ▪ 1338d25 xfs: fix unaligned access in xfs_btree_visit_blocks
- ▪ b03c3d1 xfs: bad assertion for delalloc an extent that start at i_size
- ▪ 633aafd xfs: fix indlen accounting error on partial delalloc conversion
- ▪ e4801ae xfs: fix up quotacheck buffer list error handling
- ▪ 0f003dd xfs: prevent multi-fsb dir readahead from reading random blocks
- ▪ ed69824 xfs: handle array index overrun in xfs_dir2_leaf_readbuf()
- ▪ 5884ec0 xfs: fix over-copying of getbmap parameters from userspace
- ▪ ee6f3b1 xfs: fix off-by-one on max nr_pages in xfs_find_get_desired_pgoff()
- ▪ 7f08320 xfs: Fix missed holes in SEEK_HOLE implementation
- ▪ fa8e703 mlock: fix mlock count can not decrease in race condition
- ▪ 99c4095 mm/migrate: fix refcount handling when !hugepage_migration_supported()
- ▪ 0f7385f drm/gma500/psb: Actually use VBT mode when it is found
- ▪ 8876237 slub/memcg: cure the brainless abuse of sysfs attributes
- ▪ ea04963 ALSA: hda - apply STAC_9200_DELL_M22 quirk for Dell Latitude D430
- ▪ 8ca4a52 pcmcia: remove left-over %Z format
- ▪ 1c2a03b drm/radeon/ci: disable mclk switching for high refresh rates (v2)
- ▪ 5e8aaac i2c: i2c-tiny-usb: fix buffer not being DMA capable
- ▪ e3a8366 sctp: fix ICMP processing if skb is non-linear
- ▪ a0a2223 tcp: avoid fastopen API to be used on AF_UNSPEC
- ▪ 21ba2ca ipv6: fix out of bound writes in __ip6_append_data()
- ▪ a10134a qmi_wwan: add another Lenovo EM74xx device ID
- ▪ 419723a ipv6: Check ip6_find_1stfragopt() return value properly.
- ▪ c9d2bdf ipv6: Prevent overrun when parsing v6 header options
- ▪ 1e716dc tcp: eliminate negative reordering in tcp_clean_rtx_queue
- ▪ a906c2d sctp: do not inherit ipv6_{mc|ac|fl}_list from parent
- ▪ ca5eb29 sctp: fix src address selection if using secondary addresses for ipv6
- ▪ e5f33e0 tcp: avoid fragmenting peculiar skbs in SACK
- ▪ b77848b s390/qeth: avoid null pointer dereference on OSN
- ▪ 6fe58a60 s390/qeth: unbreak OSM and OSN support
- ▪ b8c2af2 s390/qeth: handle sysfs error during initialization
- ▪ a2f3fe2 netem: fix skb_orphan_partial()
- ▪ b250c78 Revert "stackprotector: Increase the per-task stack canary's random range from 32 bits to 64 bits on 64-bit platforms"
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
 
