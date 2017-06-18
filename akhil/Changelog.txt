@@ -2,6 +2,19 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/18/2017
+
+
+ ▪ project device/qcom/common/
+ ▪ 5985a61 power: Use the correct opcode for STOR_CLK_SCALE_DIS
+
+ ▪ project frameworks/base/
+ ▪ ebbfef3 edit app_label (#202)
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 06/17/2017
 
 
@@ -56,6 +69,9 @@
 
  ▪ project packages/apps/Settings/
  ▪ 2ebdc3d RecentsSettings:Make OmniSwitch fragment directly accessible
+
+ ▪ project packages/apps/WallpaperPicker/
+ ▪ 5b27292 Fix bad wallpaper preview image format
 
  ▼ 06/16/2017
 
@@ -285,29 +301,6 @@
 
  ▪ project packages/apps/Settings/
  ▪ c50618e Add Moto G5 Plus as Official (#805)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 06/11/2017
-
-
- ▪ project frameworks/base/
- ▪ 62af0145 fingerprint: handle PerformanceStats NULL pointers
- ▪ aabff84 Slim Recents: allow to disable round corners for cards [1/2]
- ▪ 457b8d6 New app-pinning icon
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ fb18ec2 Slim Recents: allow to disable round corners for cards [2/2]
 
  ▪ project packages/services/OmniJaws/
 
