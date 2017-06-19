@@ -2,6 +2,51 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/19/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 4dbe060 BatteryMeterDrawable:Make it more theme friendly
+
+ ▪ project hardware/qcom/bt-caf/
+ ▪ 6473ddb Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 0b1dd4b oneplus3_defconfig: regenerate defconfig
+ ▪ fe358c8 random: Remove kernel blocking API
+ ▪ d3aa46f random: Add callback API for random pool readiness
+ ▪ a8cc403 random: Blocking API for accessing nonblocking_pool
+ ▪ 483e73f random: Wake up all getrandom(2) callers when pool is ready
+ ▪ baf0cb0 writeback: fix writeback cache thrashing
+ ▪ 7801d48 qdsp6v2: extend compilation with Os
+ ▪ fe73b1e sound: soc: optimize for size
+ ▪ 063a01d sound: msm: qdsp6v2: optimize for size
+ ▪ 9e07016 cfq-iosched: fix the setting of IOPS mode on SSDs
+ ▪ 135ebc6 block: add fifo scheduler
+ ▪ ca3c2f7 block: Maple.iosched: Fix Compiler Errors
+ ▪ bd77cb6 block: maple: Stop abusing csd.list for fifo_time
+ ▪ ec3ae7a maple-iosched: Fix the -Wdeclaration-after-statement warnings
+ ▪ 9d9a2ba block: maple: Fix inverted logic
+ ▪ c3d3283 block: maple: Make bools constant across functions
+ ▪ a7d40ed block: maple: Use native display state instead of PowerSuspend
+ ▪ 799d757 block: maple: Serve asynchronous requests before synchronous ones
+ ▪ 1a400da block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO
+ ▪ c1940de block: maple: Catch writes_starved sooner, increase limit.
+ ▪ 2aeea8e block: maple: Clean up and add patchlevel macro to keep track of commits
+ ▪ 7e73638 block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency
+ ▪ c3dfb0c block: [Introduded for 3.18.y] Add Maple I/O Scheduler
+ ▪ ec46b1e proc: Remove additional SafetyNet flags from /proc/cmdline
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 3369229 Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.19' into nougat
+ ▪ e7208e1 Revert "xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder"
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ bf3bf5c add Lenovo A7000-a to Official (#810)
+ ▪ 9c44dc1 Add Nextbit Robin as Official (#804)
+
  ▼ 06/18/2017
 
 
@@ -14,6 +59,9 @@
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ d82d392 The bluetooth pairing page cannot be exited, disable it for now.
 
  ▼ 06/17/2017
 
@@ -62,6 +110,7 @@
  ▪ 588e49d ril: fix a memory leak.
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ 0591d13 arm64/boot/Makefile: Make sure find command follows symbolic links to find the dtb
  ▪ 933e19d Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into n-mr2
 
  ▪ project packages/apps/OmniSwitch/
@@ -252,55 +301,4 @@
  ▪ project packages/apps/Snap/
  ▪ bd1d6ea Snap: Sign with platform key
  ▪ d7247ff Add orientation correction for landscape devices
-
- ▼ 06/12/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 3b4fef6 Merge d40705f1fcd333f8e8115dd69555f9e9facfa78c on remote branch
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 7f0bd8b Merge 26cb096001b76f5c1db851c5f12a823040572ce4 on remote branch
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 99e3273 display: add a simple api to query the display state (on/off)
- ▪ 9d299c5 kenzo: regenerate defconfig
- ▪ e2a597e Revert "ASoC: wcd9335: add analog headphone gain"
- ▪ e8763bb mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
- ▪ da613bd mmc: clk_scaling: add sysfs for avoiding scale down in write
- ▪ 646b406 mm: slub: Default slub_max_order to 0
- ▪ 5d6821f tcp_cubic: do not set epoch_start in the future
- ▪ cf42077 tcp_cubic: better follow cubic curve after idle period
- ▪ 55aff77 tcp: fix timing issue in CUBIC slope calculation
- ▪ 2de874f cpuidle: don't disable cpuidle when entering suspend
- ▪ 4f621fd kgsl: convert some workqueues to use kthreads original commit: https://github.com/android/kernel_msm/commit/1a7a93bd33f48a369de29f6f2b56251127bf6ab4 adreno_dispatch_work and _kgsl_event_worker are both low-latency low-runtime functions that are in the critical path of GPU rendering. Moving them out of workqueues and into a dedicated FIFO kthread avoids significant jitter.
- ▪ f8c602d mdss: move to a kthread for vsync_retire_work_handler original commit: https://github.com/android/kernel_msm/commit/91fd2c322af5c111309e343e7d58f6e5e1841823 vsync_retire_work_handler is in the critical display path and should never be delayed because of other non-FIFO work.
- ▪ c8496b3 zram: default compressor lz4
- ▪ 2b5ecc6 lib: lz4: cleanup unaligned access efficiency detection
- ▪ ab26914 lib: lz4: fixed zram with lz4 on big endian machines
- ▪ d5fc2f2 lz4: fix system halt at boot kernel on x86_64
- ▪ 038f21d lib/lz4: Pull out constant tables
- ▪ 257b61f LZ4 : fix the data abort issue
- ▪ bccd510 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
- ▪ d9dcecb lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
- ▪ ac781f7 cpufreq; add elementalx governor
- ▪ f7ab93d cpufreq: governor: Be friendly towards latency-sensitive bursty workloads
- ▪ db78b02 leds: trigger: ledtrig-backlight: Fix invalid memory access in fb_event notification callback
- ▪ 0d6ff23 drivers: fingerprint: boost tasks to the big cores when the scanner is used
- ▪ 36415bb drivers: fingerprint: boost cpufreq on unlock
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ c50618e Add Moto G5 Plus as Official (#805)
-
- ▪ project packages/services/OmniJaws/
 
