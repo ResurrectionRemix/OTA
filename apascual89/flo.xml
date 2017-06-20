@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <flo>
-            <Filename>RR-N-v5.8.3-20170609-flo-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170619-flo-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/flo/RR-N-v5.8.3-20170609-flo-Official.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/flo/RR-N-v5.8.3-20170619-flo-Official.zip/download</RomUrl>
             <BeansGappsUrl
                 id="beans_gapps"
                 title="BeansGapps-Mini"
@@ -23,11 +23,11 @@
     </Stable>
      <Stable>
         <deb>
-            <Filename>RR-N-v5.8.3-20170609-deb-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170619-deb-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-20170609-deb-Official.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-2017061 9-deb-Official.zip/download</RomUrl>
             <BeansGappsUrl
                 id="beans_gapps"
                 title="BeansGapps-Mini"
