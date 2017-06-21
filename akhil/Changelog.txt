@@ -2,6 +2,32 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/21/2017
+
+
+ ▪ project frameworks/base/
+ ▪ bf079b8 PowerProfile: allow reading from a file instead of resource
+ ▪ 73645e5 When updating a split app, copy compiled files from base.apk only.
+ ▪ a5691f6 QS Tile: increase DEFAULT_MAX_BOUND to 6
+ ▪ 4bf8cbf Fix service cannot start when service removed from restartList
+ ▪ fcfcc0a Binder: Log details of pending exception.
+ ▪ 648c2d4 Binder: Be forceful about a forceful exit.
+ ▪ 11a0aac Only destory ce data when prepare user CE data failed.
+ ▪ 8240c47 When backup schedule version error will be caused system_server crash
+ ▪ 63a5ada fix ArraySet crash
+ ▪ a5ca9a4 Battery icon: Improve theme compatibility
+ ▪ 9fba0b5 Adopt lockscreen shortcut hint from AOSP
+ ▪ 5ed7a43 Fingerprint swipe gesture to answer/silence incoming call [1/2]
+ ▪ 12cadaa Notification panel fingerprint gesture: fix axis on landscape [1/2]
+ ▪ 5399cd9 Revert "edit app_label (#202)"
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ b5c3924 Maintainers: Fix up somethings
+ ▪ d0f0f3d Increase Max Small qs tiles to 9
+ ▪ be420f3 Fingerprint swipe gesture to answer/silence incoming call [2/2]
+
  ▼ 06/20/2017
 
 
@@ -225,42 +251,4 @@
  ▪ bdaf696 Fix crash when calling remove() with a null variable
 
  ▪ project packages/services/OmniJaws/
-
- ▼ 06/14/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Nfc/
- ▪ 182c26e NfcNci: make T3T/Nfc-F HCE optional
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
- ▪ b65b342 Add Samsung Galaxy Alpha as Official (#806)
-
- ▪ project packages/apps/Snap/
- ▪ 0f83363 SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size
- ▪ 202f50a SnapdragonCamera: Fix live shot image stretch when recording is 4K
- ▪ fffbe39 SnapdragonCamera: Fix photo reversed when enable selfie Mirror
- ▪ dd1b09c SnapdragonCamera: Fix photo reversed when enable selfie Mirror
- ▪ b37ea18 SnapdragonCamera: Fix preview in wrong size
- ▪ 708af54 SnapdragonCamera: Fix front camera preview flipped
- ▪ 9d21c69 SnapdragonCamera: Fix preview is flipped on 8996
- ▪ cc08b44 SnapdragonCamera: Camera1 Selfie Mirror orientation check
- ▪ c188ffe SnapdragonCamera: Fix Camera1 force close when refocusing the picture.
- ▪ d24a8ed SnapdragonCamera: Change video snapshot picture size logic
- ▪ bdb5068 SnapdragonCamera: Avoid cancel AF shortly after trigger
- ▪ 3de435d SnapdragonCamera: Fix crash during UI stress test
- ▪ f870393 SnapdragonCamera: Fix OutOfBoundsException in monkey test
- ▪ 367758c SnapdragonCamera: Fix FC for NullPointerException
- ▪ c8a45a3 SnapdragonCamera: Reset zoom value when resuming
- ▪ a5054be SnapdragonCamera: Fix capture with flash will get black image.
- ▪ 975aeca SnapdragonCamera: Fix FC cause by Null pointer
- ▪ 922c4b3 SnapdragonCamera: Make copy of location before altering timestamp
-
- ▪ project system/bt/
- ▪ 331fc1e bt: Disable AVRCP 1.6
 
