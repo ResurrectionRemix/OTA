@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <sailfish>
-            <Filename>ResurrectionRemix-N-v5.8.3-20170613-sailfish</Filename>
+            <Filename>ResurrectionRemix-N-v5.8.3-20170621-sailfish</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://bit.ly/2s8GYLr</RomUrl>
+                description="Download ResurrectionRemix builds">http://bit.ly/2tPEm55</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"

@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>RR-N-v5.8.3-20170617-bacon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170620-bacon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.3-20170617-bacon-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.3-20170620-bacon-Official.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
@@ -189,11 +189,11 @@
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
 	</angler>
 	<oneplus3>
-            <Filename>RR-N-v5.8.3-20170617-oneplus3-Weekly.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170621-oneplus3-Weekly.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://drive.google.com/file/d/0B_N_62rQcS2YbFRMdF9qV3ZQX3M/view?usp=sharing</RomUrl>
+                description="Latest ResurrectionRemix build">https://drive.google.com/file/d/0B_N_62rQcS2YUjMzdHd0azlzOVU/view?usp=sharing</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
