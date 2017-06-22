@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
-    <Stable>
+  <Stable>
     <oneplus3>
-    <Filename>RR-N-v5.8.3-20170611-oneplus3-Official.zip</Filename>
-    <LatestBuildUrl
-    id="latestbuild"
-    title="LatestBuild"
-    description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170611-oneplus3-Official.zip</LatestBuildUrl>
-    <BuildUrl
-    id="build"
-    title="Build"
-    description="Download a Build">http://downloads.resurrectionremix.com/oneplus3/</BuildUrl>
-    <ChangelogUrl
-    id="changelog"
-    title="Changelog"
-    description="View Changelogs">http://rr.akhilnarang.me/Changelogs/</ChangelogUrl>
+      <Filename>RR-N-v5.8.3-20170622-oneplus3-Official.zip</Filename>
+      <LatestBuildUrl
+          id="latestbuild"
+          title="Latest Build"
+          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170622-oneplus3-Official.zip</LatestBuildUrl>
+      <BuildUrl
+          id="build"
+          title="Build"
+          description="Download a Build">http://downloads.resurrectionremix.com/oneplus3/</BuildUrl>
+      <MirrorUrl
+          id="Mirror"
+          title="AFH Mirror"
+          description="AndroidFileHost Build Mirror">https://www.androidfilehost.com/?w=files&amp;flid=189632</MirrorUrl>
+      <GAppsUrl
+          id="GApps"
+          title="Beans GApps"
+          description="Download BeansGApps">https://www.androidfilehost.com/?w=files&amp;flid=171925</GAppsUrl>
+      <ChangelogUrl
+          id="changelog"
+          title="Changelog"
+          description="View Changelogs">http://rr.akhilnarang.me/Changelogs/op3-r2-20170622.html</ChangelogUrl>
     </oneplus3>
-    </Stable>
-    </SlimOTA>
-    
+  </Stable>
+</SlimOTA>
