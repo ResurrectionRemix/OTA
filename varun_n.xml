@@ -170,11 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>RR-N-v5.8.3-20170616-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170622-angler-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.3-20170616-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.3-20170622-angler-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
