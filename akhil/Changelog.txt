@@ -2,11 +2,44 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/23/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 7323144 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ b5acde0 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
+ ▪ 469f83e ARM: dts: 15801: Disable core hotplugging, up the mitigation freq
+ ▪ 2170ee4 op3: update versioning for updated script
+
+ ▪ project packages/apps/Jelly/
+ ▪ 818e92d Jelly: Guess filename from URL
+ ▪ 1a4f237 Jelly: Allow media scan on download
+ ▪ a8fe6fa Jelly: Show download notification on completed
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
  ▼ 06/22/2017
 
 
  ▪ project build/
  ▪ e984480 Clean option: deviceclean
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ c2e7eda op3: Define ril-daemon normally
+ ▪ b303c21 op3: sepolicy: Remove old and duplicate permissions
+ ▪ f4ecf29 Revert "op3: sepolicy: Fix rmt_storage and rfs_access policies"
+ ▪ bb87f54 op3: Add system GID to rmt_storage
+ ▪ 2b9d2a4 op3: rmt_storage should have wakelock GID
+ ▪ 9d18ddd op3: Drop NET_RAW and NET_ADMIN from qti
+ ▪ 9cbce71 op3: Grant netmgrd proper unix perms
+ ▪ f2bc6c0 op3: Update qti telephony extension from MIUI 7.6.5 dev
+ ▪ 70581ae op3: Convert rf_version to integer before comparison
+ ▪ 0f0e85d op3: Update from Open Beta 18
+ ▪ 3a1de8f op3: Adjust lmk parameters
 
  ▪ project frameworks/base/
  ▪ 16cf7d0 SystemUI: force a clock update if the screen is turned back on
@@ -17,7 +50,6 @@
  ▪ d7bad2d SymbolComparator operator() is missing const
 
  ▪ project kernel/oneplus/msm8996/
- ▪ fb321d4 op3: update versioning for updated script
  ▪ 0edfe30 oneplus3: Fix appended Image while building standlone
  ▪ 7209913 oneplus3_defconfig: regenerate defconfig
  ▪ dc361f9 random: Remove kernel blocking API
@@ -1170,6 +1202,13 @@
  ▼ 06/18/2017
 
 
+ ▪ project device/oneplus/oneplus3/
+ ▪ ca1c05a op3: Restore original CAF gps configuration
+ ▪ a3beb0b ipacm: fix the heap-use-after-free issue on bootup
+ ▪ ff7c00d IPACM: fix the security issue in ConntrackClient
+ ▪ fd5bd05 IPACM: fix security issue in querying if index
+ ▪ f701b60 Re-enable delete_aiding_data for user build
+
  ▪ project device/qcom/common/
  ▪ 5985a61 power: Use the correct opcode for STOR_CLK_SCALE_DIS
 
@@ -1183,8 +1222,14 @@
  ▪ project packages/apps/SetupWizard/
  ▪ d82d392 The bluetooth pairing page cannot be exited, disable it for now.
 
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ 37e893a Fix missing s/cyanogenmod/lineageos
+
  ▼ 06/17/2017
 
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 733dc1e op3: Remove BCL hotplug disable/enable from init
 
  ▪ project frameworks/base/
  ▪ ac0c76c TaskViewHeader:Don't allow lock button icon to show on grid view
@@ -2543,71 +2588,4 @@
 
  ▪ project packages/apps/WallpaperPicker/
  ▪ 5b27292 Fix bad wallpaper preview image format
-
- ▼ 06/16/2017
-
-
- ▪ project frameworks/base/
- ▪ 397e946 Adding PitchBlack skull header (#201)
- ▪ 780245f Change of translation
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 9c5316d Linux 3.18.57
- ▪ 288ddc3 ALSA: timer: Fix race between read and ioctl
- ▪ 7ec5072 mlx5: stop including <asm-generic/kmap_types.h>
- ▪ 4b1e42b arm64: ensure extension of smp_store_release value
- ▪ b4f569b usercopy: Adjust tests to deal with SMAP/PAN
- ▪ 6db5f2b RDMA/qib,hfi1: Fix MR reference count leak on write with immediate
- ▪ ea0ea1c arm64: entry: improve data abort handling of tagged pointers
- ▪ 0a7fb4e arm64: hw_breakpoint: fix watchpoint matching for tagged pointers
- ▪ 2944f82 serial: sh-sci: Fix panic when serial console and DMA are enabled
- ▪ dbb048a drivers: char: mem: Fix wraparound check to allow mappings up to the end
- ▪ 83b10c0 ASoC: Fix use-after-free at card unregistration
- ▪ 8aed6af ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
- ▪ 6af3543 drm/vmwgfx: limit the number of mip levels in vmw_gb_surface_define_ioctl()
- ▪ 396403c drm/vmwgfx: Handle vmalloc() failure in vmw_local_fifo_reserve()
- ▪ 90b7353 perf/core: Drop kernel samples even though :u is specified
- ▪ 3d6b06a powerpc/numa: Fix percpu allocations to be NUMA aware
- ▪ 5660f4a powerpc/eeh: Avoid use after free in eeh_handle_special_event()
- ▪ 6360ebd scsi: qla2xxx: don't disable a not previously enabled PCI device
- ▪ 5ed7f8f btrfs: fix memory leak in update_space_info failure path
- ▪ 20c9254 btrfs: use correct types for page indices in btrfs_page_exists_in_range
- ▪ 39a43d1 stackprotector: Increase the per-task stack canary's random range from 32 bits to 64 bits on 64-bit platforms
- ▪ ebe07f7 random: properly align get_random_int_hash
- ▪ 74d7c0f iio: proximity: as3935: fix AS3935_INT mask
- ▪ 8319932 staging/lustre/lov: remove set_fs() call from lov_getstripe()
- ▪ 8fdad20 usb: chipidea: debug: check before accessing ci_role
- ▪ ed6fcbf usb: chipidea: udc: fix NULL pointer dereference if udc_start failed
- ▪ f695592 usb: gadget: f_mass_storage: Serialize wake and sleep execution
- ▪ 32a172e ext4: keep existing extra fields when inode expands
- ▪ e744c8c ext4: fix SEEK_HOLE
- ▪ 00fdfe3 dmaengine: ep93xx: Always start from BASE0
- ▪ 2f19cf1 arm: KVM: Allow unaligned accesses at HYP
- ▪ d2b7ac8 KVM: cpuid: Fix read/write out-of-bounds vulnerability in cpuid emulation
- ▪ e0e5ce4 kvm: async_pf: fix rcu_irq_enter() with irqs enabled
- ▪ 0175997 nfsd4: fix null dereference on replay
- ▪ 709170b crypto: gcm - wait for crypto op not signal safe
- ▪ 39044e4 KEYS: fix freeing uninitialized memory in key_update()
- ▪ 017f050 KEYS: fix dereferencing NULL payload with nonzero length
- ▪ e6c897a serial: ifx6x60: fix use-after-free on module unload
- ▪ 77492f2 net: ethoc: enable NAPI before poll may be scheduled
- ▪ 5d14917 net: ping: do not abuse udp_poll()
- ▪ e938449 ipv6: Fix leak in ipv6_gso_segment().
- ▪ ad66e0d tcp: disallow cwnd undo when switching congestion control
- ▪ 686fd2f cxgb4: avoid enabling napi twice to the same queue
- ▪ 3fbe916 ipv6: xfrm: Handle errors reported by xfrm6_find_1stfragopt()
- ▪ de181b8 bnx2x: Fix Multi-Cos
- ▪ 92f889b msm: Fix Kconfig warnings
- ▪ 8dca92c arch: Unbreak mrproper/clean
- ▪ b60372e Makefile: Optimize
- ▪ f1493ed adjust Makefile
-
- ▪ project packages/apps/CarrierConfig/
- ▪ 1249ef5 Remove TIM from non-roaming networks list of H3G IT
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
 
