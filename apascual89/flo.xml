@@ -11,10 +11,6 @@
                 id="beans_gapps"
                 title="BeansGapps-Mini"
                 description="Download BeansGapps-Mini">https://www.androidfilehost.com/?w=files&amp;flid=171927</BeansGappsUrl>
-	    <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
@@ -32,10 +28,6 @@
                 id="beans_gapps"
                 title="BeansGapps-Mini"
                 description="Download BeansGapps-Mini">https://www.androidfilehost.com/?w=files&amp;flid=171927</BeansGappsUrl>
-	    <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
@@ -44,19 +36,15 @@
     </Stable>
     <Stable>
         <dragon>
-            <Filename>RR-N-v5.8.3-20170613-dragon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170623-dragon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-20170613-dragon-Official.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/deb/RR-N-v5.8.3-20170623-dragon-Official.zip/download</RomUrl>
             <BeansGappsUrl
                 id="beans_gapps"
                 title="BeansGapps"
                 description="Download BeansGapps">https://www.androidfilehost.com/?w=files&amp;flid=171925</BeansGappsUrl>
-	    <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
