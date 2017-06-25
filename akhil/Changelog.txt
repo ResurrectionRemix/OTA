@@ -2,6 +2,27 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/25/2017
+
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2d1bdcd Jelly: Add save form data setting
+ ▪ d2926c7 Jelly: add Do Not Track setting
+ ▪ 42d6446 Jelly: Add incognito mode shortcut
+ ▪ 69c2401 Jelly: Update android tools build
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
  ▼ 06/24/2017
 
 
@@ -1246,30 +1267,4 @@
  ▪ project packages/apps/Settings/
  ▪ bf3bf5c add Lenovo A7000-a to Official (#810)
  ▪ 9c44dc1 Add Nextbit Robin as Official (#804)
-
- ▼ 06/18/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ ca1c05a op3: Restore original CAF gps configuration
- ▪ a3beb0b ipacm: fix the heap-use-after-free issue on bootup
- ▪ ff7c00d IPACM: fix the security issue in ConntrackClient
- ▪ fd5bd05 IPACM: fix security issue in querying if index
- ▪ f701b60 Re-enable delete_aiding_data for user build
-
- ▪ project device/qcom/common/
- ▪ 5985a61 power: Use the correct opcode for STOR_CLK_SCALE_DIS
-
- ▪ project frameworks/base/
- ▪ ebbfef3 edit app_label (#202)
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
- ▪ d82d392 The bluetooth pairing page cannot be exited, disable it for now.
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
- ▪ 37e893a Fix missing s/cyanogenmod/lineageos
 
