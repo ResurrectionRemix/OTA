@@ -2,6 +2,15 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 06/27/2017
+
+
+ ▪ project packages/apps/Gallery2/
+ ▪ e988d6a Gallery2: Fix views overlap
+
+ ▪ project packages/apps/Jelly/
+ ▪ cc66a61 Jelly: Add WebChromeClientCompat
+
  ▼ 06/26/2017
 
 
@@ -52,13 +61,11 @@
  ▪ d5f32b9 sound: msm8996: silence more log spam
  ▪ f9293ac sound: msm8996: silence log crap
 
- ▪ project packages/apps/DUI/
+ ▪ project packages/apps/Eleven/
+ ▪ 38c5aea Eleven: request record audio permission for visualizer
 
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
+ ▪ project packages/apps/Jelly/
+ ▪ e3b22ba Jelly: Fix some lint warnings
 
  ▪ project packages/apps/Settings/
  ▪ 5d3664d Add Xiaomi MI6(sagit) maintainer (#812)
@@ -71,10 +78,12 @@
  ▪ b619475 Revert "Fix check for existence of parent"
  ▪ 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
 
- ▪ project packages/services/OmniJaws/
-
  ▼ 06/25/2017
 
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Jelly/
  ▪ 2d1bdcd Jelly: Add save form data setting
@@ -82,14 +91,37 @@
  ▪ 42d6446 Jelly: Add incognito mode shortcut
  ▪ 69c2401 Jelly: Update android tools build
 
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+
  ▪ project packages/apps/Trebuchet/
  ▪ 8b8de5f Trebuchet: Rename settings provider
+
+ ▪ project packages/services/OmniJaws/
 
  ▼ 06/24/2017
 
 
  ▪ project frameworks/base/
  ▪ 9f0a98e Fix System Navigation fp switch
+
+ ▪ project packages/apps/Jelly/
+ ▪ eff2fd2 Open link in Incognito tab automatically when in Incognito mode
+ ▪ f7338cf Jelly: Enable safe browsing
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ 092d0fa Disable SetupWraith, the ATV SUW.
+
+ ▪ project packages/services/Telephony/
+ ▪ 091ccb6 Fix Phone Service crash on MSIM devices as Guest user
+
+ ▼ 06/23/2017
+
 
  ▪ project hardware/qcom/fm/
 
@@ -106,15 +138,17 @@
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
- ▪ eff2fd2 Open link in Incognito tab automatically when in Incognito mode
- ▪ f7338cf Jelly: Enable safe browsing
+ ▪ 818e92d Jelly: Guess filename from URL
+ ▪ 1a4f237 Jelly: Allow media scan on download
+ ▪ a8fe6fa Jelly: Show download notification on completed
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
 
  ▪ project packages/apps/SetupWizard/
- ▪ 092d0fa Disable SetupWraith, the ATV SUW.
 
  ▪ project packages/apps/Snap/
 
@@ -128,30 +162,7 @@
 
  ▪ project packages/resources/devicesettings/
 
- ▪ project packages/services/Telephony/
- ▪ 091ccb6 Fix Phone Service crash on MSIM devices as Guest user
-
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 06/23/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 7323144 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- ▪ project kernel/oneplus/msm8996/
- ▪ b5acde0 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
- ▪ 469f83e ARM: dts: 15801: Disable core hotplugging, up the mitigation freq
- ▪ 2170ee4 op3: update versioning for updated script
-
- ▪ project packages/apps/Jelly/
- ▪ 818e92d Jelly: Guess filename from URL
- ▪ 1a4f237 Jelly: Allow media scan on download
- ▪ a8fe6fa Jelly: Show download notification on completed
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
 
  ▼ 06/22/2017
 
@@ -160,6 +171,7 @@
  ▪ e984480 Clean option: deviceclean
 
  ▪ project device/oneplus/oneplus3/
+ ▪ 7323144 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
  ▪ c2e7eda op3: Define ril-daemon normally
  ▪ b303c21 op3: sepolicy: Remove old and duplicate permissions
  ▪ f4ecf29 Revert "op3: sepolicy: Fix rmt_storage and rfs_access policies"
@@ -177,10 +189,11 @@
  ▪ af8a38c SystemUI: disable statusbar time refresh when screen off
  ▪ cdf8770 base: SystemUI: CPU Info: show CPU temp if supported
  ▪ e57631d Frameworks: Fix Null Pointer Issue
- ▪ 2e64d3a SystemUI: Fix task lock & freeform buttons placement
- ▪ d7bad2d SymbolComparator operator() is missing const
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ b5acde0 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
+ ▪ 469f83e ARM: dts: 15801: Disable core hotplugging, up the mitigation freq
+ ▪ 2170ee4 op3: update versioning for updated script
  ▪ 0edfe30 oneplus3: Fix appended Image while building standlone
  ▪ 7209913 oneplus3_defconfig: regenerate defconfig
  ▪ dc361f9 random: Remove kernel blocking API
@@ -222,6 +235,8 @@
 
 
  ▪ project frameworks/base/
+ ▪ 2e64d3a SystemUI: Fix task lock & freeform buttons placement
+ ▪ d7bad2d SymbolComparator operator() is missing const
  ▪ bf079b8 PowerProfile: allow reading from a file instead of resource
  ▪ 73645e5 When updating a split app, copy compiled files from base.apk only.
  ▪ a5691f6 QS Tile: increase DEFAULT_MAX_BOUND to 6
@@ -235,7 +250,6 @@
  ▪ 9fba0b5 Adopt lockscreen shortcut hint from AOSP
  ▪ 5ed7a43 Fingerprint swipe gesture to answer/silence incoming call [1/2]
  ▪ 12cadaa Notification panel fingerprint gesture: fix axis on landscape [1/2]
- ▪ 5399cd9 Revert "edit app_label (#202)"
 
  ▪ project packages/apps/OmniSwitch/
 
@@ -246,11 +260,4 @@
 
  ▪ project packages/providers/MediaProvider/
  ▪ fadf365 MediaProvider: Fix where condition of delete queries
-
- ▼ 06/20/2017
-
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
 
