@@ -2,11 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
   <Stable>
     <oneplus3>
-      <Filename>RR-N-v5.8.3-20170622-oneplus3-Official.zip</Filename>
+      <Filename>RR-N-v5.8.3-20170629-oneplus3-Official.zip</Filename>
       <LatestBuildUrl
           id="latestbuild"
           title="Latest Build"
-          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170622-oneplus3-Official.zip</LatestBuildUrl>
+          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170629-oneplus3-Official.zip</LatestBuildUrl>
+      <LatestChangelogUrl
+          id="latestchangelog"
+          title="Current Changelog"
+          description="Changelog for 20170629 Build">http://haste.akhilnarang.me/TfhvSrTrJJ</LatestChangelogUrl>
       <BuildUrl
           id="build"
           title="Build"
@@ -22,7 +26,7 @@
       <ChangelogUrl
           id="changelog"
           title="Changelog"
-          description="View Changelogs">http://rr.akhilnarang.me/Changelogs/op3-r2-20170622.html</ChangelogUrl>
+          description="View Changelogs">http://rr.akhilnarang.me/Changelogs</ChangelogUrl>
     </oneplus3>
   </Stable>
 </SlimOTA>
