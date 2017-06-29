@@ -2,10 +2,19 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 06/28/2017
+ ▼ 06/29/2017
 
 
  ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 06/28/2017
+
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 6e9e812 Linux 3.10.107
@@ -269,13 +278,9 @@
  ▪ 930ef54 Btrfs: fix memory leak in reading btree blocks
  ▪ 7f659ab Revert "Btrfs: don't delay inode ref updates during log, replay"
 
- ▪ project packages/apps/DUI/
-
  ▪ project packages/apps/Jelly/
  ▪ 9a5fcdd Jelly: Search on Enter key
  ▪ 74c7e51 Jelly: Don't reload on keyboard changes
-
- ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
  ▪ 7470d86 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
@@ -340,8 +345,16 @@
  ▪ d5f32b9 sound: msm8996: silence more log spam
  ▪ f9293ac sound: msm8996: silence log crap
 
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
  ▪ project packages/apps/Eleven/
  ▪ 38c5aea Eleven: request record audio permission for visualizer
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Settings/
  ▪ 5d3664d Add Xiaomi MI6(sagit) maintainer (#812)
@@ -354,12 +367,10 @@
  ▪ b619475 Revert "Fix check for existence of parent"
  ▪ 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
 
+ ▪ project packages/services/OmniJaws/
+
  ▼ 06/25/2017
 
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
 
  ▪ project packages/apps/Jelly/
  ▪ 2d1bdcd Jelly: Add save form data setting
@@ -367,16 +378,8 @@
  ▪ 42d6446 Jelly: Add incognito mode shortcut
  ▪ 69c2401 Jelly: Update android tools build
 
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
-
  ▪ project packages/apps/Trebuchet/
  ▪ 8b8de5f Trebuchet: Rename settings provider
-
- ▪ project packages/services/OmniJaws/
 
  ▼ 06/24/2017
 
@@ -445,69 +448,4 @@
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
-
- ▼ 06/22/2017
-
-
- ▪ project build/
- ▪ e984480 Clean option: deviceclean
-
- ▪ project device/oneplus/oneplus3/
- ▪ c2e7eda op3: Define ril-daemon normally
- ▪ b303c21 op3: sepolicy: Remove old and duplicate permissions
- ▪ f4ecf29 Revert "op3: sepolicy: Fix rmt_storage and rfs_access policies"
- ▪ bb87f54 op3: Add system GID to rmt_storage
- ▪ 2b9d2a4 op3: rmt_storage should have wakelock GID
- ▪ 9d18ddd op3: Drop NET_RAW and NET_ADMIN from qti
- ▪ 9cbce71 op3: Grant netmgrd proper unix perms
- ▪ f2bc6c0 op3: Update qti telephony extension from MIUI 7.6.5 dev
- ▪ 70581ae op3: Convert rf_version to integer before comparison
- ▪ 0f0e85d op3: Update from Open Beta 18
- ▪ 3a1de8f op3: Adjust lmk parameters
-
- ▪ project frameworks/base/
- ▪ 16cf7d0 SystemUI: force a clock update if the screen is turned back on
- ▪ af8a38c SystemUI: disable statusbar time refresh when screen off
- ▪ cdf8770 base: SystemUI: CPU Info: show CPU temp if supported
- ▪ e57631d Frameworks: Fix Null Pointer Issue
- ▪ 2e64d3a SystemUI: Fix task lock & freeform buttons placement
- ▪ d7bad2d SymbolComparator operator() is missing const
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 0edfe30 oneplus3: Fix appended Image while building standlone
- ▪ 7209913 oneplus3_defconfig: regenerate defconfig
- ▪ dc361f9 random: Remove kernel blocking API
- ▪ b0edf80 random: Add callback API for random pool readiness
- ▪ 5a3a07a random: Blocking API for accessing nonblocking_pool
- ▪ 9843c54 random: Wake up all getrandom(2) callers when pool is ready
- ▪ 309a9e3 writeback: fix writeback cache thrashing
- ▪ f6afcfc qdsp6v2: extend compilation with Os
- ▪ dc33090 sound: soc: optimize for size
- ▪ 5c0c94a sound: msm: qdsp6v2: optimize for size
- ▪ 6c65da3 cfq-iosched: fix the setting of IOPS mode on SSDs
- ▪ dad14e4 block: add fifo scheduler
- ▪ 1aae201 block: Maple.iosched: Fix Compiler Errors
- ▪ 6eef8a7f block: maple: Stop abusing csd.list for fifo_time
- ▪ f0dcfdd maple-iosched: Fix the -Wdeclaration-after-statement warnings
- ▪ 645cc6a block: maple: Fix inverted logic
- ▪ 9036206 block: maple: Make bools constant across functions
- ▪ 324b21f block: maple: Use native display state instead of PowerSuspend
- ▪ d2e0392 block: maple: Serve asynchronous requests before synchronous ones
- ▪ 0487217 block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO
- ▪ d83e7e9 block: maple: Catch writes_starved sooner, increase limit.
- ▪ f14f61b block: maple: Clean up and add patchlevel macro to keep track of commits
- ▪ 5ba715b block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency
- ▪ 5ab4636 block: [Introduded for 3.18.y] Add Maple I/O Scheduler
- ▪ 0920ad7 proc: Remove additional SafetyNet flags from /proc/cmdline
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
- ▪ b2b5093 Settings: Fragment cleanups
- ▪ 7a3bbf2 Add nubia Z9 Max nx512j as official (#811)
- ▪ 1f92081 Settings: update OnePlus 3/3t maintainer, add flo, deb, dragon maintainer
-
- ▪ project vendor/oneplus/
- ▪ b7ac82e op3: Update qti telephony extension from MIUI 7.6.5 dev
- ▪ 627730b op3: Update to Open Beta 18 blobs
 
