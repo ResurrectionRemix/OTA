@@ -2,19 +2,210 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 07/02/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 2e2dba6 Enable Night display
+ ▪ 7585dfe oneplus3: fix defconfig for my kernel, show dash charging, show charging current
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/ti/omap4/
+ ▪ 030bec5 BUGBASH-733 Memory leak in system_server caused by suspend / color fade
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ aec4270 UPSTREAM: ext4: fix fencepost in s_first_meta_bg validation
+ ▪ 470879c ext4: fix condition of validate s_first_meta_bg
+ ▪ 3d2bdd2 UPSTREAM: packet: fix races in fanout_add()
+ ▪ 6a32e5b cpu-hotplug: convert cpu_hotplug_disabled to a counter
+ ▪ 6c87a9a qcacld-2.0: Update to LA.UM.5.5.r1-05100-8x96.0
+ ▪ 10dd2eb Linux 3.18.59
+ ▪ 6787b72 mac80211/wpa: use constant time memory comparison for MACs
+ ▪ b2ccb79 net: phy: fix marvell phy status reading
+ ▪ 7c1c261 powerpc/slb: Force a full SLB flush when we insert for a bad EA
+ ▪ bb30d7e mtd: spi-nor: fix spansion quad enable
+ ▪ 57f897d of: Add check to of_scan_flat_dt() before accessing initial_boot_params
+ ▪ e2d8ec6 rxrpc: Fix several cases where a padded len isn't checked in ticket decode
+ ▪ 680f9f9 target: Fix kref->refcount underflow in transport_cmd_finish_abort
+ ▪ 0227d90 Input: i8042 - add Fujitsu Lifebook AH544 to notimeout list
+ ▪ bda56eb powerpc/kprobes: Pause function_graph tracing during jprobes handling
+ ▪ 742ffec signal: Only reschedule timers on signals timers have sent
+ ▪ 9f1a992 CIFS: Improve readdir verbosity
+ ▪ 6859078 KVM: PPC: Book3S HV: Preserve userspace HTM state properly
+ ▪ 006b8f1 lib/cmdline.c: fix get_options() overflow while parsing ranges
+ ▪ ce6e411 autofs: sanity check status reported with AUTOFS_DEV_IOCTL_FAIL
+ ▪ e5ca739 fs/exec.c: account for argv/envp pointers
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ a7659df Jelly: Make UrlResolvedReceiver final
+ ▪ b15286f Jelly: Move bing suggestions provider to https
+ ▪ f50b7e9 Jelly: Fix Suggestions Provider strings (suggestion / uggestion)
+ ▪ 697e32d Jelly: Remove unused parameter
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 07/01/2017
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+ ▪ 66d1b83 Jelly: Allow launching external apps
+ ▪ 9d693cc Jelly: Remove unneeded getApplicationContext call
+ ▪ d6b3b84 Jelly: Add non encrypted google search engine
+ ▪ 897fa20 Jelly: Propagate custom request headers to WebClient
+ ▪ 58c2aed Jelly: Add suggestions
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 06/30/2017
+
+
+ ▪ project build/
+ ▪ a2f759c Disable recovery resource warning
+ ▪ 29849f1 Revert "Preventing default locale from being overridden because of buildinfo.sh"
+ ▪ 13505f0 Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE""
+ ▪ dbe4d61 Makefile: Add the missing dependency on FUTILITY.
+ ▪ 14e6c9f Build FUTILITY tool from futility-host.
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 946754c op3: Update ramdisk to LA.UM.5.5.r1-05100-8x96.0
+
+ ▪ project frameworks/av/
+ ▪ 0e7e3ed Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+
+ ▪ project frameworks/base/
+ ▪ 9265366 Fix potential KeyguardMonitor FC on unlock
+ ▪ b2edd93 Revert "BluetoothTile: Fix in the off state while entering the detail view"
+ ▪ 2924709 ActivityStarter: Fix protected app intents
+ ▪ 7d5b280 SystemUI: Make play queue toggle more visible
+ ▪ c41bff4 Volume Panel: Fix Bluetooth music stream icon when muted
+ ▪ 0679fa4 Add support for the .opus file format
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 5ae4de2 Merge tag 'LA.UM.5.5.r1-05100-8x96.0' into nougat-caf-8996
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 2a320b3 Merge tag 'LA.UM.5.5.r1-05100-8x96.0' into n-mr2
+
+ ▪ project packages/apps/DUI/
+ ▪ 08efc6c Fix button size not refreshing after a dpi change
+ ▪ f758ef8 Media arrows: hide them on keyguard bouncer
+
+ ▪ project packages/apps/Settings/
+ ▪ 3e1184d Enable some more power menu actions
+ ▪ dffe3ae Settings: Hide disabled lockscreen blur from search index
+ ▪ d033a65 Settings: handle decrypting larger pattern sizes for sw600dp
+ ▪ cc69056 Revert "Settings: Fix internal storage summary for non-emulated storage"
+ ▪ afac342 Settings: Fix automatic hotspot turn off summary
+ ▪ 962926d Settings: Make string untranslatable
+
+ ▪ project vendor/cm/
+ ▪ 94925ac apns-conf: Add Japan Umobile APNs
+ ▪ 65227e7 sensitive_pn: Add sensitive numbers for Greece
+ ▪ 980082e sensitive_pn: fix Czech Republic MCC
+ ▪ 93c4774 sensitive_pn: Add Taiwanese sensitive numbers
+ ▪ 0d0b4a0 Add sensitive numbers for Ukraine.
+ ▪ 25aa89e Add Virgin Media Ireland to APN's
+ ▪ 0d7863e sensitive_pn: Add additional FR number
+ ▪ ea6ec70 sensitive_pn: Add additional GB numbers
+ ▪ 5cdcee9 sensitive_pn: Add additional PT numbers
+ ▪ 5873f8b sensitive_pn: add missing phone number for Brazil
+ ▪ 1498b34 roomservice: Search for repos in lineage snippet too
+ ▪ e0f8cfc roomservice: Remove support for devices in main manifest
+ ▪ eb80e6f Add sensitive numbers for Israel.
+ ▪ a632682 sensitive_pn: Add sensitive phone numbers for Czech Republic
+ ▪ a0723e8 sensitive_pn: Add Canadian sensitive numbers
+ ▪ 3483b70 sensitive_pn: Add more numbers from the Netherlands
+
  ▼ 06/29/2017
 
 
  ▪ project frameworks/base/
 
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/Jelly/
+ ▪ 69173dd Jelly: Add show/hide keyboard utilities
 
  ▪ project packages/apps/Settings/
 
  ▼ 06/28/2017
 
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 93274fa Revert "usb: core: fix potential memory leak in error path during hcd creation"
+ ▪ a243dc7 Linux 3.18.58
+ ▪ acd6624 mm: fix new crash in unmapped_area_topdown()
+ ▪ b10b788 Allow stack to grow up to address space limit
+ ▪ 859d500 mm: larger stack guard gap, between vmas
+ ▪ e5c4539 alarmtimer: Rate limit periodic intervals
+ ▪ 5ee5257 genirq: Release resources in __setup_irq() error path
+ ▪ 6066c20 swap: cond_resched in swap_cgroup_prepare()
+ ▪ 126190e mm/memory-failure.c: use compound_head() flags for huge pages
+ ▪ b65c018 usb: xhci: ASMedia ASM1042A chipset need shorts TX quirk
+ ▪ e1fc3b3 drivers/misc/c2port/c2port-duramar2150.c: checking for NULL instead of IS_ERR()
+ ▪ 2989f6a usb: r8a66597-hcd: decrease timeout
+ ▪ e25412c usb: r8a66597-hcd: select a different endpoint on timeout
+ ▪ 2043399 USB: gadget: dummy_hcd: fix hub-descriptor removable fields
+ ▪ f7c2439 pvrusb2: reduce stack usage pvr2_eeprom_analyze()
+ ▪ bbfbcea usb: core: fix potential memory leak in error path during hcd creation
+ ▪ 731e72f USB: hub: fix SS max number of ports
+ ▪ 5f49293 iio: proximity: as3935: recalibrate RCO after resume
+ ▪ 85726a4 staging: rtl8188eu: prevent an underflow in rtw_check_beacon_data()
+ ▪ 95722eb mfd: omap-usb-tll: Fix inverted bit use for USB TLL mode
+ ▪ e1a9e4a x86/mm/32: Set the '__vmalloc_start_set' flag in initmem_init()
+ ▪ 5cfc937 serial: efm32: Fix parity management in 'efm32_uart_console_get_options()'
+ ▪ 528f4cc mac80211: don't look at the PM bit of BAR frames
+ ▪ 45c86e0 vb2: Fix an off by one error in 'vb2_plane_vaddr'
+ ▪ e06bbd4 cpufreq: conservative: Allow down_threshold to take values from 1 to 10
+ ▪ 7862000 can: gs_usb: fix memory leak in gs_cmd_reset()
+ ▪ 4353aea configfs: Fix race between create_link and configfs_rmdir
+ ▪ dc13292 sparc64: make string buffers large enough
+ ▪ d3a744b log2: make order_base_2() behave correctly on const input value zero
+ ▪ 024c79c ipv6: Inhibit IPv4-mapped src address on the wire.
+ ▪ 731bc6d ipv6: Handle IPv4-mapped src to in6addr_any dst.
+ ▪ e5e3d4a net: xilinx_emaclite: fix receive buffer overflow
+ ▪ 9463e43 net: xilinx_emaclite: fix freezes due to unordered I/O
+ ▪ 018ce62 Call echo service immediately after socket reconnect
+ ▪ ca5a9c6 partitions/msdos: FreeBSD UFS2 file systems are not recognized
+ ▪ af58947 s390/vmem: fix identity mapping
+ ▪ 8c75fde msm: sensor: validating the flash initialization parameters
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 6e9e812 Linux 3.10.107
@@ -278,15 +469,22 @@
  ▪ 930ef54 Btrfs: fix memory leak in reading btree blocks
  ▪ 7f659ab Revert "Btrfs: don't delay inode ref updates during log, replay"
 
+ ▪ project packages/apps/DUI/
+
  ▪ project packages/apps/Jelly/
  ▪ 9a5fcdd Jelly: Search on Enter key
  ▪ 74c7e51 Jelly: Don't reload on keyboard changes
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
  ▪ 7470d86 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
 
  ▼ 06/27/2017
 
+
+ ▪ project frameworks/av/
+ ▪ eb9cc20 CameraService: Fix cameraId type of onDeviceStatusChanged
 
  ▪ project packages/apps/Gallery2/
  ▪ e988d6a Gallery2: Fix views overlap
@@ -345,16 +543,8 @@
  ▪ d5f32b9 sound: msm8996: silence more log spam
  ▪ f9293ac sound: msm8996: silence log crap
 
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
  ▪ project packages/apps/Eleven/
  ▪ 38c5aea Eleven: request record audio permission for visualizer
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/Settings/
  ▪ 5d3664d Add Xiaomi MI6(sagit) maintainer (#812)
@@ -366,86 +556,4 @@
  ▪ eb0378b MediaProvider: Fix SQLiteDiskIOException.
  ▪ b619475 Revert "Fix check for existence of parent"
  ▪ 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 06/25/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ 2d1bdcd Jelly: Add save form data setting
- ▪ d2926c7 Jelly: add Do Not Track setting
- ▪ 42d6446 Jelly: Add incognito mode shortcut
- ▪ 69c2401 Jelly: Update android tools build
-
- ▪ project packages/apps/Trebuchet/
- ▪ 8b8de5f Trebuchet: Rename settings provider
-
- ▼ 06/24/2017
-
-
- ▪ project frameworks/base/
- ▪ 9f0a98e Fix System Navigation fp switch
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
- ▪ eff2fd2 Open link in Incognito tab automatically when in Incognito mode
- ▪ f7338cf Jelly: Enable safe browsing
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
- ▪ 092d0fa Disable SetupWraith, the ATV SUW.
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/Telephony/
- ▪ 091ccb6 Fix Phone Service crash on MSIM devices as Guest user
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 06/23/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 7323144 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- ▪ project kernel/oneplus/msm8996/
- ▪ b5acde0 ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
- ▪ 469f83e ARM: dts: 15801: Disable core hotplugging, up the mitigation freq
- ▪ 2170ee4 op3: update versioning for updated script
-
- ▪ project packages/apps/Jelly/
- ▪ 818e92d Jelly: Guess filename from URL
- ▪ 1a4f237 Jelly: Allow media scan on download
- ▪ a8fe6fa Jelly: Show download notification on completed
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
 
