@@ -2,23 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
   <Stable>
     <oneplus3>
-      <Filename>RR-N-v5.8.3-20170629-oneplus3-Official.zip</Filename>
+      <Filename>RR-N-v5.8.3-20170702-oneplus3-Weekly.zip</Filename>
       <LatestBuildUrl
           id="latestbuild"
           title="Latest Build"
-          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170629-oneplus3-Official.zip</LatestBuildUrl>
-      <LatestChangelogUrl
-          id="latestchangelog"
-          title="Current Changelog"
-          description="Changelog for 20170629 Build">http://haste.akhilnarang.me/TfhvSrTrJJ</LatestChangelogUrl>
+          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170702-oneplus3-Weekly.zip</LatestBuildUrl>
       <BuildUrl
           id="build"
           title="Build"
           description="Download a Build">http://downloads.resurrectionremix.com/oneplus3/</BuildUrl>
-      <MirrorUrl
-          id="Mirror"
-          title="AFH Mirror"
-          description="AndroidFileHost Build Mirror">https://www.androidfilehost.com/?w=files&amp;flid=189632</MirrorUrl>
       <GAppsUrl
           id="GApps"
           title="Beans GApps"
@@ -30,3 +22,4 @@
     </oneplus3>
   </Stable>
 </SlimOTA>
+    
