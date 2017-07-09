@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
   <Stable>
     <oneplus3>
-      <Filename>RR-N-v5.8.3-20170709-oneplus3-Weekly.zip</Filename>
+      <Filename>RR-N-v5.8.3-20170702-oneplus3-Weekly.zip</Filename>
       <LatestBuildUrl
           id="latestbuild"
           title="Latest Build"
-          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170709-oneplus3-Weekly.zip</LatestBuildUrl>
+          description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.3-20170702-oneplus3-Weekly.zip</LatestBuildUrl>
       <BuildUrl
           id="build"
           title="Build"
