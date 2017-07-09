@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>RR-N-v5.8.3-20170620-bacon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170707-bacon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.3-20170620-bacon-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.3-20170707-bacon-Official.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
@@ -170,11 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>RR-N-v5.8.3-20170623-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170708-angler-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.3-20170623-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.3-20170708-angler-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -189,11 +189,11 @@
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
 	</angler>
 	<oneplus3>
-            <Filename>RR-N-v5.8.3-20170630-oneplus3-Weekly.zip</Filename>
+            <Filename>RR-N-v5.8.3-20170706-oneplus3-Weekly.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YSkZiQzd5OHo4ZWc</RomUrl>
+                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YTDU1M3pHN3BFeFU</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
