@@ -28,21 +28,9 @@
  ▪ f6ef9b2 aapt: default to 0 compression
  ▪ 6c9941d PowerManagerService: add a config to light up buttons only when pressed
 
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/providers/WeatherProvider/
 
  ▪ project packages/services/OmniJaws/
 
@@ -50,8 +38,6 @@
  ▪ fbb261c sensitive_pn: Enter full list of Indian MCC codes
  ▪ a736075 sensitive_pn: Enter full list of GB MCC codes
  ▪ 8388b24 sensitive_pn: Enter full list of US MCC codes
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
  ▼ 07/08/2017
 
@@ -882,6 +868,20 @@
  ▪ 51391e2 f2fs: Fix a system panic caused by f2fs_follow_link
  ▪ f11035d f2fs: catch up to v4.4-rc1
 
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
  ▪ project vendor/xiaomi/
  ▪ 56a5d19 kenzo: Switch to msm8956-common blobs
  ▪ bd599db msm8956-common: Add common blobs
@@ -999,9 +999,6 @@
  ▼ 07/05/2017
 
 
- ▪ project hardware/qcom/display-caf/msm8952/
- ▪ ca726b8 cec: Calculate buffer length to protect from overflow
-
  ▪ project kernel/xiaomi/msm8956/
  ▪ 40a7548 Merge "msm: mdss: hdmi: check up-bound of CEC frame size"
 
@@ -1021,6 +1018,9 @@
 
  ▼ 07/04/2017
 
+
+ ▪ project hardware/qcom/display-caf/msm8952/
+ ▪ ca726b8 cec: Calculate buffer length to protect from overflow
 
  ▪ project hardware/qcom/fm/
 
