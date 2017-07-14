@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
-        <oneplus3>
-            <Filename>RR-N-v5.8.3-20170603-oneplus3-Official.zip</Filename>
+        <cheeseburger>
+            <Filename>RR-N-v5.8.3-20170713-cheeseburger-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus-unified-3-3T/RR-N-v5.8.3-20170603-oneplus3-Official.zip/download</RomUrl>
-            <OP3FirmwareUrl
-                id="OP3Firmware"
-                title="OP3 Firmware"
-                description="OP3 Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=139137</OP3FirmwareUrl>
-            <OP3TFirmwareUrl
-                id="OP3TFirmware"
-                title="OP3T Firmware"
-                description="OP3T Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=171162</OP3TFirmwareUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.3-20170713-cheeseburger-Official.zip/download</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -26,7 +18,7 @@
             <OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
-            	description="Build Download Archive">https://sourceforge.net/projects/resurrectionremix/files/oneplus-unified-3-3T/</OldBuildsUrl>
-	</oneplus3>
+            	description="Build Download Archive">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/</OldBuildsUrl>
+	</cheeseburger>
     </Stable>
 </SlimOTA>
