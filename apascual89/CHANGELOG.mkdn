@@ -2,182 +2,74 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 06/19/2017
+ ▼ 07/15/2017
 
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project device/oneplus/cheeseburger/
+ ▪ 194a8a4 :hamburger: : Build NFC from Source
+ ▪ 25a6f29 op5: cmhw: add native color profiles support with DisplayModeControl
 
- ▪ project packages/apps/Settings/
-
- ▼ 06/18/2017
-
-
- ▪ project device/google/dragon/
- ▪ eed0af1 dragon:add hardware key overlay
+ ▪ project device/oppo/common/
+ ▪ b492bcf ConfigPanel:Use pixel accent colors
 
  ▪ project frameworks/base/
- ▪ 4dbe060 BatteryMeterDrawable:Make it more theme friendly
-
- ▪ project hardware/qcom/bt-caf/
- ▪ 6473ddb Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ bf3bf5c add Lenovo A7000-a to Official (#810)
- ▪ 9c44dc1 Add Nextbit Robin as Official (#804)
-
- ▪ project packages/apps/SetupWizard/
- ▪ d82d392 The bluetooth pairing page cannot be exited, disable it for now.
-
- ▼ 06/17/2017
-
-
- ▪ project frameworks/base/
- ▪ ebbfef3 edit app_label (#202)
- ▪ ac0c76c TaskViewHeader:Don't allow lock button icon to show on grid view
- ▪ 4bdd900 Base: Improve OmniSwitch implementation
-
- ▪ project hardware/ril/
- ▪ 5758b0e ril: fix a memory leak.
-
- ▪ project hardware/ril-caf/
- ▪ 588e49d ril: fix a memory leak.
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 53163a7 Update Enable switch consistency
-
- ▪ project packages/apps/Settings/
- ▪ 2ebdc3d RecentsSettings:Make OmniSwitch fragment directly accessible
-
- ▪ project packages/apps/WallpaperPicker/
- ▪ 5b27292 Fix bad wallpaper preview image format
-
- ▼ 06/16/2017
-
-
- ▪ project frameworks/base/
- ▪ 1aca92c KernelCpuSpeedReader: Account for missing sysfs nodes
- ▪ bf156ad Fix batterySendBroadcast not synchronized issue.
- ▪ dda5803 bless python versions newer than 2.6
- ▪ 7638fee Handle ActivityNotFoundException for contacts activity
- ▪ 9459285 extend PreferenceActivity for title text on a single pane mode
- ▪ 6ebcc53 Override onRestoreInstanceState() in MultiSelectListPreference
- ▪ 4253bcf Fragment animations are not being saved across configuration changes
- ▪ 9ab8bae Fix to NullPointerException when activity is relaunched
- ▪ 7e41a2e Fix right mLastTimeUsed when aggregate UsageStats
- ▪ 4037823 Fix ListView is not scrolled properly with arrows
- ▪ ed61430 Synchronize access of mSubscriptions
- ▪ f3cfda4 Provide synchronization to setview to avoid NPE
- ▪ d970a26 AsyncTask: Fix to remove canceled tasks from executor's queue.
- ▪ 4c1c6bf frameworks/base: Fix to avoid crash when the tab is not set from app
- ▪ 3dff401 IInputMethodWrapper to recycle SomeArgs in all cases.
- ▪ e62cfea Catch corruptexception during Transaction operation
- ▪ 5e7b3b0 Fix force idle issue
- ▪ 8f0c320 preloaded drawables few
- ▪ b2732eb Schedule agentDisconnected() in handler thread
- ▪ abeed16 Fix PrcessRecord.renderThreadTid not reset in some case.
- ▪ ef47c88 SoundPool: decrease binder call when calling SoundPool.play
- ▪ 3d9544d BluetoothTile: Fix in the off state while entering the detail view
- ▪ be8cecc WiFiTile: Fix in the off state while entering the detail view
- ▪ d71604e Net monitor: fix arrows not showing when data saver is enabled
- ▪ 397e946 Adding PitchBlack skull header (#201)
+ ▪ 714fd50 SEEMP: Adding auth framework for outgoing SMS messages.
 
  ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 074ff06 Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
+ ▪ f8fcd59 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
 
- ▪ project packages/apps/CarrierConfig/
- ▪ 1249ef5 Remove TIM from non-roaming networks list of H3G IT
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project hardware/qcom/media-caf/msm8996/
+ ▪ 0273a64 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
 
- ▪ project packages/apps/PackageInstaller/
+ ▪ project kernel/oneplus/msm8998/
+ ▪ 9b591ff defconfig:sound control
+ ▪ faeef4b ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
+ ▪ a8d9b41 ASoC: wcd9335: Sound control
+ ▪ 03f8746 fs: default to noatime
+ ▪ 25ca940 devfreq: Expose GPU used frequency statistics in a new sysfs (condensed version)
+ ▪ 9f90c70 tcp_output: set initial TCP window size to 64K (speed improvement)
+ ▪ 6052bfe gpio_keys: call oem_check_force_dump_key() later
+ ▪ 82e48ab Silences PCIe and CPU suspend state kernel messages
+ ▪ 38faefd leds-qpnp: Notification LED control - V1.1b
+ ▪ 9b42fb3 drivers: wakeup: add options to disable timerfd, netlink and wlan wakelocks
+ ▪ 12ce575 proc: Remove additional SafetyNet flags from /proc/cmdline
+ ▪ 75936ab PM: devfreq: Use high priority workqueue
+ ▪ bcbf827e cpuidle: don't disable cpuidle when entering suspend
+ ▪ 570dc97 proc: Remove verifiedbootstate flag from /proc/cmdline
+ ▪ fe1a8a4 Added fsync on/off support.
+ ▪ a5f6898 mm: slub: Default slub_max_order to 0
+ ▪ d5d8702 binfmt_elf.c: use get_random_int() to fix entropy depleting
+ ▪ 7f811aa Fix version name
+ ▪ af32a2e disable crc check
+ ▪ 9f8c1c7 Merge branch 'mkn-mr1' of https://github.com/MoKee/android_kernel_oneplus_msm8998 into nougat
+ ▪ 8101c1e mdss: fix a bug that color profile gets lost
+ ▪ af02f27 mdss: switch color mode in one node
+ ▪ 0cbaaef mdss: format before change
 
- ▪ project packages/apps/Settings/
+ ▪ project packages/apps/Jelly/
+ ▪ 4d40bf7 Jelly: Remove unneeded parameter type in addResult
+ ▪ 69f2dad Jelly: Remove redundant character escape
+ ▪ 55f3a05 Jelly: Make suggestion provider "None" translatable
+ ▪ c3794c5 Hide Sheet Menu after clicking on an entry
+ ▪ 4e7e82e Jelly: Query an already ordered favorite list
 
- ▼ 06/15/2017
+ ▪ project vendor/cm/
+ ▪ ac623bd Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
 
-
- ▪ project frameworks/base/
- ▪ 780245f Change of translation
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 06/14/2017
-
-
- ▪ project frameworks/base/
- ▪ 2cc801f Check for spurious wake ups
- ▪ f6f0ebf Fix TaskRecord wrong dump element firstActiveTime
-
- ▪ project packages/apps/DUI/
- ▪ adf6bee DUI:Uncomment Navbar Left in Landscape [1/2]
-
- ▪ project packages/apps/Nfc/
- ▪ 182c26e NfcNci: make T3T/Nfc-F HCE optional
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Settings/
- ▪ 8dad24f SeekBarPreference: fix progressbar glitch with custom min-max values
- ▪ 75aad61 do not include saved network in scan list
- ▪ 08a42d0 Allow sorting applications by size
- ▪ 6489e06 Volume can not be updated in Sound&notification
- ▪ a37247e AllowBindAppWidgetActivity: Fix crash when the activity is closing
- ▪ 91b6f1c Squash commit of SAR and IC Code.
- ▪ bdaf696 Fix crash when calling remove() with a null variable
- ▪ b65b342 Add Samsung Galaxy Alpha as Official (#806)
-
- ▼ 06/13/2017
+ ▼ 07/14/2017
 
 
- ▪ project device/google/dragon/
- ▪ 02f0a07 dragon: remove some doze features
-
- ▪ project frameworks/base/
- ▪ 00e4452 Fix IME switcher not being shown in notifications when enabled
-
- ▪ project packages/apps/Eleven/
- ▪ 6665277 Eleven: Remove unused permission REAL_GET_TASKS
-
- ▪ project packages/apps/PackageInstaller/
+ ▪ project device/oneplus/cheeseburger/
+ ▪ 87c0479 op5: audio_policy: fix A2DP and USB audio
+ ▪ ed8e572 op5: audio_policy: format before change
 
  ▪ project packages/apps/Settings/
+ ▪ 089a928 Official support for Moto E3 Power(taido_row) (#818)
+ ▪ 93a2c68 Official support for Moto E3 Power(taido_row) (#819)
 
  ▪ project packages/apps/Snap/
- ▪ 0f83363 SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size
- ▪ 202f50a SnapdragonCamera: Fix live shot image stretch when recording is 4K
- ▪ fffbe39 SnapdragonCamera: Fix photo reversed when enable selfie Mirror
- ▪ dd1b09c SnapdragonCamera: Fix photo reversed when enable selfie Mirror
- ▪ b37ea18 SnapdragonCamera: Fix preview in wrong size
- ▪ 708af54 SnapdragonCamera: Fix front camera preview flipped
- ▪ 9d21c69 SnapdragonCamera: Fix preview is flipped on 8996
- ▪ cc08b44 SnapdragonCamera: Camera1 Selfie Mirror orientation check
- ▪ c188ffe SnapdragonCamera: Fix Camera1 force close when refocusing the picture.
- ▪ d24a8ed SnapdragonCamera: Change video snapshot picture size logic
- ▪ bdb5068 SnapdragonCamera: Avoid cancel AF shortly after trigger
- ▪ 3de435d SnapdragonCamera: Fix crash during UI stress test
- ▪ f870393 SnapdragonCamera: Fix OutOfBoundsException in monkey test
- ▪ 367758c SnapdragonCamera: Fix FC for NullPointerException
- ▪ c8a45a3 SnapdragonCamera: Reset zoom value when resuming
- ▪ a5054be SnapdragonCamera: Fix capture with flash will get black image.
- ▪ 975aeca SnapdragonCamera: Fix FC cause by Null pointer
- ▪ 922c4b3 SnapdragonCamera: Make copy of location before altering timestamp
- ▪ bd1d6ea Snap: Sign with platform key
- ▪ d7247ff Add orientation correction for landscape devices
-
- ▪ project system/bt/
- ▪ 331fc1e bt: Disable AVRCP 1.6
+ ▪ 5c51d47 Revert some permissions related changes
 
