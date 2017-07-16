@@ -2,18 +2,50 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/15/2017
+ ▼ 07/17/2017
 
 
  ▪ project device/oneplus/cheeseburger/
- ▪ 194a8a4 :hamburger: : Build NFC from Source
- ▪ 25a6f29 op5: cmhw: add native color profiles support with DisplayModeControl
+ ▪ 2bab496 cheeseburger: enable blur
+ ▪ ebd9530 op5: update SHA-1 of qti-telephony-common.jar
+ ▪ 259c8fb op5: mkhw: remove Adobe RGB
+ ▪ d240ee7 op5: cmhw: persist display mode and restore at boot
+ ▪ e52e740 op5: sync NFC configs with upstream
+
+ ▪ project frameworks/base/
+ ▪ 81b0542 SEEMP: Adding auth framework for outgoing SMS messages.
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ d9f1451 Gallery: Fix potential crash
+ ▪ 8af515d Gallery2: Switch to navigationbar from support libs
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+ ▪ 3dec931 Bring back some physical keyboard settings
+ ▪ 582837b Add maintainer for samsung galaxy s5(k3gxx) (#823)
+ ▪ 9d7e6ca Add maintainer Yu Yreka Black(garlic) (#820)
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ fb83d97 Fix magisk 13.2 Location
+
+ ▪ project vendor/oneplus/
+ ▪ dc9191c cheeseburger: add libuiblur.so
+ ▪ f5d3cc7 op5: hack to preserve user choice for primary data SIM
+
+ ▼ 07/16/2017
+
 
  ▪ project device/oppo/common/
  ▪ b492bcf ConfigPanel:Use pixel accent colors
-
- ▪ project frameworks/base/
- ▪ 714fd50 SEEMP: Adding auth framework for outgoing SMS messages.
 
  ▪ project hardware/qcom/audio-caf/msm8996/
  ▪ f8fcd59 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
@@ -45,31 +77,7 @@
  ▪ 7f811aa Fix version name
  ▪ af32a2e disable crc check
  ▪ 9f8c1c7 Merge branch 'mkn-mr1' of https://github.com/MoKee/android_kernel_oneplus_msm8998 into nougat
- ▪ 8101c1e mdss: fix a bug that color profile gets lost
- ▪ af02f27 mdss: switch color mode in one node
- ▪ 0cbaaef mdss: format before change
-
- ▪ project packages/apps/Jelly/
- ▪ 4d40bf7 Jelly: Remove unneeded parameter type in addResult
- ▪ 69f2dad Jelly: Remove redundant character escape
- ▪ 55f3a05 Jelly: Make suggestion provider "None" translatable
- ▪ c3794c5 Hide Sheet Menu after clicking on an entry
- ▪ 4e7e82e Jelly: Query an already ordered favorite list
 
  ▪ project vendor/cm/
  ▪ ac623bd Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
-
- ▼ 07/14/2017
-
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 87c0479 op5: audio_policy: fix A2DP and USB audio
- ▪ ed8e572 op5: audio_policy: format before change
-
- ▪ project packages/apps/Settings/
- ▪ 089a928 Official support for Moto E3 Power(taido_row) (#818)
- ▪ 93a2c68 Official support for Moto E3 Power(taido_row) (#819)
-
- ▪ project packages/apps/Snap/
- ▪ 5c51d47 Revert some permissions related changes
 
