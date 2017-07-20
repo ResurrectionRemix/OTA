@@ -2,82 +2,69 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/17/2017
+ ▼ 07/20/2017
 
 
  ▪ project device/oneplus/cheeseburger/
- ▪ 2bab496 cheeseburger: enable blur
- ▪ ebd9530 op5: update SHA-1 of qti-telephony-common.jar
- ▪ 259c8fb op5: mkhw: remove Adobe RGB
- ▪ d240ee7 op5: cmhw: persist display mode and restore at boot
- ▪ e52e740 op5: sync NFC configs with upstream
+ ▪ 3293101 op5: sepolicy: allow all these too
+ ▪ fc8a3a4 op5: sepolicy: allow wcnss_service diag_prop:property_service set;
+ ▪ ad8bffa op5: sepolicy: allow qti_init_shell configfs:file rw
+ ▪ c0d1edd op5: sepolicy: allow netmgrd net_data_file:dir rw_file_perms;
+ ▪ c7c1a5c op5: mr: BOARD_SUPPRESS_EMMC_WIPE := true
+ ▪ b3792fd op5: add IFAA for Alipay fingerprint support
+ ▪ 3ed20a4 xRevert "remove snap"
+ ▪ 6b71725 op5: sepolicy: allow msm_irqbalance proc_stat read,open
+ ▪ f115080 op5: sepolicy: allow cameraserver some more
+ ▪ 5d0af88 op5:sepolicy: allow sdcard data file
+ ▪ 3f5e721 sepolicy: allow a few
+ ▪ f5b171a kang sepolicy from op3
 
- ▪ project frameworks/base/
- ▪ 81b0542 SEEMP: Adding auth framework for outgoing SMS messages.
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Gallery2/
- ▪ d9f1451 Gallery: Fix potential crash
- ▪ 8af515d Gallery2: Switch to navigationbar from support libs
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
- ▪ 3dec931 Bring back some physical keyboard settings
- ▪ 582837b Add maintainer for samsung galaxy s5(k3gxx) (#823)
- ▪ 9d7e6ca Add maintainer Yu Yreka Black(garlic) (#820)
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cm/
- ▪ fb83d97 Fix magisk 13.2 Location
-
- ▪ project vendor/oneplus/
- ▪ dc9191c cheeseburger: add libuiblur.so
- ▪ f5d3cc7 op5: hack to preserve user choice for primary data SIM
-
- ▼ 07/16/2017
-
-
- ▪ project device/oppo/common/
- ▪ b492bcf ConfigPanel:Use pixel accent colors
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ f8fcd59 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 0273a64 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
+ ▪ project hardware/qcom/fm/
+ ▪ 165ef42 FM: Use some sane colors
 
  ▪ project kernel/oneplus/msm8998/
- ▪ 9b591ff defconfig:sound control
- ▪ faeef4b ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
- ▪ a8d9b41 ASoC: wcd9335: Sound control
- ▪ 03f8746 fs: default to noatime
- ▪ 25ca940 devfreq: Expose GPU used frequency statistics in a new sysfs (condensed version)
- ▪ 9f90c70 tcp_output: set initial TCP window size to 64K (speed improvement)
- ▪ 6052bfe gpio_keys: call oem_check_force_dump_key() later
- ▪ 82e48ab Silences PCIe and CPU suspend state kernel messages
- ▪ 38faefd leds-qpnp: Notification LED control - V1.1b
- ▪ 9b42fb3 drivers: wakeup: add options to disable timerfd, netlink and wlan wakelocks
- ▪ 12ce575 proc: Remove additional SafetyNet flags from /proc/cmdline
- ▪ 75936ab PM: devfreq: Use high priority workqueue
- ▪ bcbf827e cpuidle: don't disable cpuidle when entering suspend
- ▪ 570dc97 proc: Remove verifiedbootstate flag from /proc/cmdline
- ▪ fe1a8a4 Added fsync on/off support.
- ▪ a5f6898 mm: slub: Default slub_max_order to 0
- ▪ d5d8702 binfmt_elf.c: use get_random_int() to fix entropy depleting
- ▪ 7f811aa Fix version name
- ▪ af32a2e disable crc check
- ▪ 9f8c1c7 Merge branch 'mkn-mr1' of https://github.com/MoKee/android_kernel_oneplus_msm8998 into nougat
+ ▪ 4c2809b leds-qpnp: Notification LED control - V1.1c
+ ▪ d74f3a4 block: add io schedulers
+ ▪ b2f3223 update Makefile
+ ▪ c469ce8 AIO: Don't plug the I/O queue in do_io_submit()
+ ▪ f8bb886 block: add zen scheduler
+ ▪ d5308b7 SIO: update for linux 3.18
+ ▪ d378b24 FIOPS: update for linux 3.18
+ ▪ 5232bf1 Add SIO and FIOPS i/o schedulers
+ ▪ aec5874 defconfig:enable cpu_freq_stat
+ ▪ 4de0cdd cpufreq: Introduce fingerprint boost driver
+ ▪ 242dfeb tri_state_key: allow more key codes for extra modes
+ ▪ 761b051 defconfig:sound control
+ ▪ 38f9dfe ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
+ ▪ 34f089d ASoC: wcd9335: Sound control
+ ▪ b4b2f7c gpio_keys: call oem_check_force_dump_key() later
 
  ▪ project vendor/cm/
- ▪ ac623bd Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
+ ▪ ac577f3 Update prebuilts to latest versions (#95)
+
+ ▼ 07/19/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 8320284 SEEMP: Adding auth framework for outgoing SMS messages.
+
+ ▼ 07/18/2017
+
+
+ ▪ project frameworks/base/
+ ▪ bdfc59e ScreenCap : Add jpeg support
+ ▪ df6580a Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
+ ▪ 33fb4dd RecentsView: Hiding membar, memtext and fab on drag start.
+ ▪ b66c326 Connectivity: Fix format arguments
+ ▪ 9fcae18 SystemUI: Fix Notification Background Color Issue
+ ▪ 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
+
+ ▪ project packages/apps/Settings/
+ ▪ 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
+ ▪ 61a20bc Fix up Suspend actions fragment summary string value
+ ▪ 09611a0 Settings:Configurable Keyguard & bouncer alpha [2/2]
+
+ ▪ project vendor/cm/
+ ▪ e4a1100 Add Proper Magisk 13.2 zip
+ ▪ a860ae3 Delete this corrupt zip
 
