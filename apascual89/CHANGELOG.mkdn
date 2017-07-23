@@ -2,74 +2,69 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/15/2017
+ ▼ 07/20/2017
 
 
  ▪ project device/oneplus/cheeseburger/
- ▪ 194a8a4 :hamburger: : Build NFC from Source
- ▪ 25a6f29 op5: cmhw: add native color profiles support with DisplayModeControl
+ ▪ 3293101 op5: sepolicy: allow all these too
+ ▪ fc8a3a4 op5: sepolicy: allow wcnss_service diag_prop:property_service set;
+ ▪ ad8bffa op5: sepolicy: allow qti_init_shell configfs:file rw
+ ▪ c0d1edd op5: sepolicy: allow netmgrd net_data_file:dir rw_file_perms;
+ ▪ c7c1a5c op5: mr: BOARD_SUPPRESS_EMMC_WIPE := true
+ ▪ b3792fd op5: add IFAA for Alipay fingerprint support
+ ▪ 3ed20a4 xRevert "remove snap"
+ ▪ 6b71725 op5: sepolicy: allow msm_irqbalance proc_stat read,open
+ ▪ f115080 op5: sepolicy: allow cameraserver some more
+ ▪ 5d0af88 op5:sepolicy: allow sdcard data file
+ ▪ 3f5e721 sepolicy: allow a few
+ ▪ f5b171a kang sepolicy from op3
 
- ▪ project device/oppo/common/
- ▪ b492bcf ConfigPanel:Use pixel accent colors
-
- ▪ project frameworks/base/
- ▪ 714fd50 SEEMP: Adding auth framework for outgoing SMS messages.
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ f8fcd59 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ 0273a64 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
+ ▪ project hardware/qcom/fm/
+ ▪ 165ef42 FM: Use some sane colors
 
  ▪ project kernel/oneplus/msm8998/
- ▪ 9b591ff defconfig:sound control
- ▪ faeef4b ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
- ▪ a8d9b41 ASoC: wcd9335: Sound control
- ▪ 03f8746 fs: default to noatime
- ▪ 25ca940 devfreq: Expose GPU used frequency statistics in a new sysfs (condensed version)
- ▪ 9f90c70 tcp_output: set initial TCP window size to 64K (speed improvement)
- ▪ 6052bfe gpio_keys: call oem_check_force_dump_key() later
- ▪ 82e48ab Silences PCIe and CPU suspend state kernel messages
- ▪ 38faefd leds-qpnp: Notification LED control - V1.1b
- ▪ 9b42fb3 drivers: wakeup: add options to disable timerfd, netlink and wlan wakelocks
- ▪ 12ce575 proc: Remove additional SafetyNet flags from /proc/cmdline
- ▪ 75936ab PM: devfreq: Use high priority workqueue
- ▪ bcbf827e cpuidle: don't disable cpuidle when entering suspend
- ▪ 570dc97 proc: Remove verifiedbootstate flag from /proc/cmdline
- ▪ fe1a8a4 Added fsync on/off support.
- ▪ a5f6898 mm: slub: Default slub_max_order to 0
- ▪ d5d8702 binfmt_elf.c: use get_random_int() to fix entropy depleting
- ▪ 7f811aa Fix version name
- ▪ af32a2e disable crc check
- ▪ 9f8c1c7 Merge branch 'mkn-mr1' of https://github.com/MoKee/android_kernel_oneplus_msm8998 into nougat
- ▪ 8101c1e mdss: fix a bug that color profile gets lost
- ▪ af02f27 mdss: switch color mode in one node
- ▪ 0cbaaef mdss: format before change
-
- ▪ project packages/apps/Jelly/
- ▪ 4d40bf7 Jelly: Remove unneeded parameter type in addResult
- ▪ 69f2dad Jelly: Remove redundant character escape
- ▪ 55f3a05 Jelly: Make suggestion provider "None" translatable
- ▪ c3794c5 Hide Sheet Menu after clicking on an entry
- ▪ 4e7e82e Jelly: Query an already ordered favorite list
+ ▪ 4c2809b leds-qpnp: Notification LED control - V1.1c
+ ▪ d74f3a4 block: add io schedulers
+ ▪ b2f3223 update Makefile
+ ▪ c469ce8 AIO: Don't plug the I/O queue in do_io_submit()
+ ▪ f8bb886 block: add zen scheduler
+ ▪ d5308b7 SIO: update for linux 3.18
+ ▪ d378b24 FIOPS: update for linux 3.18
+ ▪ 5232bf1 Add SIO and FIOPS i/o schedulers
+ ▪ aec5874 defconfig:enable cpu_freq_stat
+ ▪ 4de0cdd cpufreq: Introduce fingerprint boost driver
+ ▪ 242dfeb tri_state_key: allow more key codes for extra modes
+ ▪ 761b051 defconfig:sound control
+ ▪ 38f9dfe ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
+ ▪ 34f089d ASoC: wcd9335: Sound control
+ ▪ b4b2f7c gpio_keys: call oem_check_force_dump_key() later
 
  ▪ project vendor/cm/
- ▪ ac623bd Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
+ ▪ ac577f3 Update prebuilts to latest versions (#95)
 
- ▼ 07/14/2017
+ ▼ 07/19/2017
 
 
- ▪ project device/oneplus/cheeseburger/
- ▪ 87c0479 op5: audio_policy: fix A2DP and USB audio
- ▪ ed8e572 op5: audio_policy: format before change
+ ▪ project frameworks/base/
+ ▪ 8320284 SEEMP: Adding auth framework for outgoing SMS messages.
+
+ ▼ 07/18/2017
+
+
+ ▪ project frameworks/base/
+ ▪ bdfc59e ScreenCap : Add jpeg support
+ ▪ df6580a Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
+ ▪ 33fb4dd RecentsView: Hiding membar, memtext and fab on drag start.
+ ▪ b66c326 Connectivity: Fix format arguments
+ ▪ 9fcae18 SystemUI: Fix Notification Background Color Issue
+ ▪ 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
 
  ▪ project packages/apps/Settings/
- ▪ 089a928 Official support for Moto E3 Power(taido_row) (#818)
- ▪ 93a2c68 Official support for Moto E3 Power(taido_row) (#819)
+ ▪ 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
+ ▪ 61a20bc Fix up Suspend actions fragment summary string value
+ ▪ 09611a0 Settings:Configurable Keyguard & bouncer alpha [2/2]
 
- ▪ project packages/apps/Snap/
- ▪ 5c51d47 Revert some permissions related changes
+ ▪ project vendor/cm/
+ ▪ e4a1100 Add Proper Magisk 13.2 zip
+ ▪ a860ae3 Delete this corrupt zip
 
