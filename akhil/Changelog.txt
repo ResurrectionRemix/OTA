@@ -243,22 +243,6 @@
  ▪ 6997039 mm/mempolicy.c: convert the shared_policy lock to a rwlock
  ▪ c5a5166 arm64: eliminate the .eh_frame sections from vmlinux and kernel modules
  ▪ 83df0d9 rcu: Don't disable CPU hotplug during OOM notifiers
- ▪ 7200f19 fs, seq_file: fallback to vmalloc instead of oom kill processes
- ▪ b5a4915 crypto: testmgr - Wrap the LHS in expressions of the form !x == y
- ▪ 95cec67 crypto: pcomp - Constify (de)compression parameters
- ▪ 9a890f8 power: make sync on suspend optional
- ▪ 8c4d2e5 pm: supsend: read suspend time from timekeeping
- ▪ 7d01883 inotify: Fix erroneous update of bit count
- ▪ b2acf99 vfs: add d_canonical_path for stacked filesystem support
- ▪ cb9b920 procfs: fixes pthread cross-thread naming if !PR_DUMPABLE
- ▪ a683711 fuse: Add support for d_canonical_path
- ▪ 0535995 msm: vidc: Compare ion_handles rather than fds
- ▪ d51824e msm: mdss: change retire fence signaling
- ▪ 0266dcf mm: adjust page migration heuristic
- ▪ 5745070 sched: fix task-priority when using SCHED_RESET_ON_FORK
- ▪ 4512d9c trace: add CONFIG_DISABLE_TRACE_PRINTK option
- ▪ b3a211a Revert "USB: dwc3: msm: Kill tasklet before disabling irq in suspend"
- ▪ 9d30403 mdss: queue input handler functions to a high prio wq
 
  ▪ project packages/apps/Settings/
  ▪ 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
@@ -291,6 +275,22 @@
  ▪ 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ 7200f19 fs, seq_file: fallback to vmalloc instead of oom kill processes
+ ▪ b5a4915 crypto: testmgr - Wrap the LHS in expressions of the form !x == y
+ ▪ 95cec67 crypto: pcomp - Constify (de)compression parameters
+ ▪ 9a890f8 power: make sync on suspend optional
+ ▪ 8c4d2e5 pm: supsend: read suspend time from timekeeping
+ ▪ 7d01883 inotify: Fix erroneous update of bit count
+ ▪ b2acf99 vfs: add d_canonical_path for stacked filesystem support
+ ▪ cb9b920 procfs: fixes pthread cross-thread naming if !PR_DUMPABLE
+ ▪ a683711 fuse: Add support for d_canonical_path
+ ▪ 0535995 msm: vidc: Compare ion_handles rather than fds
+ ▪ d51824e msm: mdss: change retire fence signaling
+ ▪ 0266dcf mm: adjust page migration heuristic
+ ▪ 5745070 sched: fix task-priority when using SCHED_RESET_ON_FORK
+ ▪ 4512d9c trace: add CONFIG_DISABLE_TRACE_PRINTK option
+ ▪ b3a211a Revert "USB: dwc3: msm: Kill tasklet before disabling irq in suspend"
+ ▪ 9d30403 mdss: queue input handler functions to a high prio wq
  ▪ 90d4f9a usb: dwc3-msm: Remove indefinite wakeup
  ▪ edc09be oneplus3: regenerate defconfig
  ▪ ad753a8 CHROMIUM: android: binder: Fix potential scheduling-while-atomic
