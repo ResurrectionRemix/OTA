@@ -2,69 +2,119 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/20/2017
+ ▼ 07/23/2017
 
 
  ▪ project device/oneplus/cheeseburger/
- ▪ 3293101 op5: sepolicy: allow all these too
- ▪ fc8a3a4 op5: sepolicy: allow wcnss_service diag_prop:property_service set;
- ▪ ad8bffa op5: sepolicy: allow qti_init_shell configfs:file rw
- ▪ c0d1edd op5: sepolicy: allow netmgrd net_data_file:dir rw_file_perms;
- ▪ c7c1a5c op5: mr: BOARD_SUPPRESS_EMMC_WIPE := true
- ▪ b3792fd op5: add IFAA for Alipay fingerprint support
- ▪ 3ed20a4 xRevert "remove snap"
- ▪ 6b71725 op5: sepolicy: allow msm_irqbalance proc_stat read,open
- ▪ f115080 op5: sepolicy: allow cameraserver some more
- ▪ 5d0af88 op5:sepolicy: allow sdcard data file
- ▪ 3f5e721 sepolicy: allow a few
- ▪ f5b171a kang sepolicy from op3
+ ▪ a13eef2 op5: encryption
+
+ ▪ project device/oppo/common/
+ ▪ 860ae79 configpanel/keyhandler: slider: Add ringer control
+
+ ▪ project frameworks/base/
+
+ ▪ project frameworks/native/
+ ▪ ecec8cd Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
  ▪ project hardware/qcom/fm/
- ▪ 165ef42 FM: Use some sane colors
 
- ▪ project kernel/oneplus/msm8998/
- ▪ 4c2809b leds-qpnp: Notification LED control - V1.1c
- ▪ d74f3a4 block: add io schedulers
- ▪ b2f3223 update Makefile
- ▪ c469ce8 AIO: Don't plug the I/O queue in do_io_submit()
- ▪ f8bb886 block: add zen scheduler
- ▪ d5308b7 SIO: update for linux 3.18
- ▪ d378b24 FIOPS: update for linux 3.18
- ▪ 5232bf1 Add SIO and FIOPS i/o schedulers
- ▪ aec5874 defconfig:enable cpu_freq_stat
- ▪ 4de0cdd cpufreq: Introduce fingerprint boost driver
- ▪ 242dfeb tri_state_key: allow more key codes for extra modes
- ▪ 761b051 defconfig:sound control
- ▪ 38f9dfe ASoC: wcd9335: add earpiece and mic gain, prevent headphone reset
- ▪ 34f089d ASoC: wcd9335: Sound control
- ▪ b4b2f7c gpio_keys: call oem_check_force_dump_key() later
+ ▪ project packages/apps/AudioFX/
 
- ▪ project vendor/cm/
- ▪ ac577f3 Update prebuilts to latest versions (#95)
+ ▪ project packages/apps/Bluetooth/
 
- ▼ 07/19/2017
+ ▪ project packages/apps/CMBugReport/
 
+ ▪ project packages/apps/Camera2/
 
- ▪ project frameworks/base/
- ▪ 8320284 SEEMP: Adding auth framework for outgoing SMS messages.
+ ▪ project packages/apps/CellBroadcastReceiver/
 
- ▼ 07/18/2017
+ ▪ project packages/apps/DUI/
 
+ ▪ project packages/apps/Dialer/
 
- ▪ project frameworks/base/
- ▪ bdfc59e ScreenCap : Add jpeg support
- ▪ df6580a Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
- ▪ 33fb4dd RecentsView: Hiding membar, memtext and fab on drag start.
- ▪ b66c326 Connectivity: Fix format arguments
- ▪ 9fcae18 SystemUI: Fix Notification Background Color Issue
- ▪ 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Messaging/
+ ▪ 9b349d7 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into HEAD
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/Settings/
- ▪ 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
- ▪ 61a20bc Fix up Suspend actions fragment summary string value
- ▪ 09611a0 Settings:Configurable Keyguard & bouncer alpha [2/2]
+ ▪ 349284f MSIM: Fix user set DDS sub in hotswap cases.
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/services/OmniJaws/
 
  ▪ project vendor/cm/
- ▪ e4a1100 Add Proper Magisk 13.2 zip
- ▪ a860ae3 Delete this corrupt zip
+ ▪ c48e00b charger: Fix small battery capacity font
+ ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 07/22/2017
+
+
+ ▪ project device/oppo/common/
+ ▪ 7748804 configpanel: Correct "None" -> "All" for notification filter
+ ▪ 300b981 common: keyhandler: prevent sleeping to keep flashlight blinking
+ ▪ 9c3e382 common: say hello to Awesome Alert Slider
+
+ ▪ project frameworks/base/
+ ▪ 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
+ ▪ 6f90390 Merge pull request #204 from AndropaX/patch-4
+
+ ▪ project kernel/oneplus/msm8998/
+ ▪ 166ba16 tri-state-key: Clean up for the new Awesome Alert Slider
+ ▪ f64e74b Revert "tri_state_key: allow more key codes for extra modes"
+
+ ▪ project packages/apps/DUI/
+ ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
+
+ ▪ project packages/apps/Jelly/
+ ▪ b8270d7 Jelly: Allow to display pages in full screen mode
+
+ ▪ project packages/apps/Settings/
+ ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
+ ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
+
+ ▪ project vendor/oneplus/
+ ▪ 5c2a237 op5: add blobs for IFAA
+
+ ▼ 07/21/2017
+
+
+ ▪ project device/oneplus/cheeseburger/
+ ▪ 34fc830 op5: sepolicy: allow all the rest we need
+
+ ▪ project frameworks/base/
+ ▪ 51cc188 DeviceInfoUtils: decentralize processor Regex
+
+ ▪ project packages/apps/Jelly/
+ ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
+ ▪ 063d6a9 Jelly: Use proper popup background attr
+ ▪ ca27881 Jelly: Add "search in page" feature
+
+ ▪ project packages/apps/Settings/
+ ▪ 5cd394f Add processor model in device info screen (2/2)
+ ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
+
+ ▪ project vendor/asus/
+ ▪ c464f73 msm8916-common: Update to latest ASUS release
 
