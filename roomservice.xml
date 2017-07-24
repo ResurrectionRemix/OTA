@@ -20,4 +20,9 @@
   <project name="LineageOS/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="github" />
   <project name="LineageOS/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="github" />
   <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" />
+  <project name="apascual89/android_device_asus_flo" path="device/asus/flo" remote="github" revision="nougat" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" />
+  <project name="apascual89/flo" path="kernel/google/msm" remote="github" revision="nougat" />
+  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
+  <project name="apascual89/android_device_asus_deb" path="device/asus/deb" remote="github" revision="nougat"  />
 </manifest>
