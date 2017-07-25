@@ -1,0 +1,234 @@
+
+ ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+
+
+ ▼ 07/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 8454510 Fix and cleanup dui protected broadcasts [2/2]
+ ▪ 242cf2c base: SystemUI: add OmniSwitch hide on home
+
+ ▪ project kernel/google/msm/
+ ▪ af49df4 Merge branch 'nougat' of https://github.com/apascual89/flo into nougat
+ ▪ 1a4199a Merge branch 'ElementalX-6.00-cm' of https://github.com/flar2/flo into nougat
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 89e029a Fix potential FC in the async task
+ ▪ 083543e OmniSwitch: bring back hide broadcast
+ ▪ 0f4b052 OmniSwitch: add unchanged recent task list
+ ▪ a58f458 OmniSwitch: round corners are sexy
+ ▪ 89e9691 OmniSwitch: transparents also wants to see locked apps :)
+ ▪ 92f3ac7 OmniSwitch: locked apps support
+ ▪ 006ea5a OmniSwitch: add force stop in context menu
+ ▪ b51a26c OmniSwitch: icon pack loading needs an early start
+ ▪ 423639f OmniSwitch: fix terrible wrong resizing on compose icons
+ ▪ 908e593 OmniSwitch: better safe then sorry
+
+ ▪ project packages/apps/Settings/
+ ▪ 2bdc971 Fix and cleanup dui protected broadcasts [1/2]
+ ▪ c3e7f21 Utils: Fix onboot crash until magisk is found
+ ▪ 4856b02 Update LG G3 (D855) Maintainer. (#829)
+
+ ▼ 07/24/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 12fb6d6 Base: Fix global actions menu emergency button position
+
+ ▪ project packages/apps/Settings/
+ ▪ 51a82c8 Add Maintainer for ZTE BLADE A610 (a610) (#826)
+ ▪ b7e811c Add Co-Maintainer for Lettuce (#827)
+
+ ▪ project vendor/cm/
+ ▪ d235a41 Update Changelog
+
+ ▼ 07/23/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ ef36442 oneplus3: regenerate defconfig
+ ▪ 11d4f15 ARM: dts: 15801: Move 0x29 to dsi on command
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 7c47fc5 Merge branch 'nougat-upstream' into nougat
+ ▪ 8262ad9 gitignore: add output directory to list
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMBugReport/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 07/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
+
+ ▪ project kernel/google/msm/
+ ▪ 39f27c1 update defconfig
+ ▪ e819089 Merge remote-tracking branch 'lineageos/cm-14.1' into ElementalX-6.00-cm
+
+ ▪ project packages/apps/Jelly/
+ ▪ b8270d7 Jelly: Allow to display pages in full screen mode
+
+ ▪ project packages/apps/Settings/
+ ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
+
+ ▪ project vendor/cm/
+ ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
+
+ ▼ 07/21/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 6f90390 Merge pull request #204 from AndropaX/patch-4
+ ▪ 51cc188 DeviceInfoUtils: decentralize processor Regex
+
+ ▪ project packages/apps/DUI/
+ ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
+
+ ▪ project packages/apps/Settings/
+ ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
+ ▪ 5cd394f Add processor model in device info screen (2/2)
+ ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
+
+ ▪ project vendor/asus/
+ ▪ c464f73 msm8916-common: Update to latest ASUS release
+
+ ▼ 07/20/2017
+
+
+ ▪ project android/
+ ▪ eedb930 Remove ahbottomnavigation
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 0279c26 Merge branch 'laos/cm-14.1' into akhil
+
+ ▪ project frameworks/base/
+ ▪ 021e65a DeviceInfoUtils: Expand Processor string #3
+ ▪ a700be4 Fix new Processor regex in Nexus 4
+ ▪ 3aa1c51 BootReceiver: check console-ramoops-0
+ ▪ f27f73e Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 7e09920 PowerProfile: allow overriding default power profile
+ ▪ e5e8dad Revert "PowerProfile: allow reading from a file instead of resource"
+ ▪ 3008b48 Add processor info in device info screen (1/2)
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ f75e583 BACKPORT: fs: limit filesystem stacking depth
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ b4b37dd gitignore: add output directory to list
+ ▪ e9ab8e8 mm: fix missing immediate expression at operand 1 dsb
+ ▪ ab8f914 Merge remote-tracking branch 'uck/LA.BR.1.3.6_rb1.20' into nougat-upstream
+ ▪ 21fc106 Sorry, you looked a bit out of place :P
+ ▪ f52da53 kenzo: enable console, disable modules, regenerate
+ ▪ 922ca60 Dominator: appended dtb ftw!
+ ▪ 422ad60 prima: Update to LA.BR.1.3.6_rb1.19
+ ▪ e172e36 display: add a simple api to query the display state (on/off)
+ ▪ 341514c kenzo: regenerate defconfig
+ ▪ 4f94ac6 Revert "ASoC: wcd9335: add analog headphone gain"
+ ▪ 5659f95 mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
+ ▪ 2942d6a mmc: clk_scaling: add sysfs for avoiding scale down in write
+ ▪ 7f53767 mm: slub: Default slub_max_order to 0
+ ▪ 919ac4b tcp_cubic: do not set epoch_start in the future
+ ▪ 6370c37 tcp_cubic: better follow cubic curve after idle period
+ ▪ 521e9a7 tcp: fix timing issue in CUBIC slope calculation
+ ▪ c98fbf5 cpuidle: don't disable cpuidle when entering suspend
+ ▪ c69426b kgsl: convert some workqueues to use kthreads original commit: https://github.com/android/kernel_msm/commit/1a7a93bd33f48a369de29f6f2b56251127bf6ab4 adreno_dispatch_work and _kgsl_event_worker are both low-latency low-runtime functions that are in the critical path of GPU rendering. Moving them out of workqueues and into a dedicated FIFO kthread avoids significant jitter.
+ ▪ 3a29665 mdss: move to a kthread for vsync_retire_work_handler original commit: https://github.com/android/kernel_msm/commit/91fd2c322af5c111309e343e7d58f6e5e1841823 vsync_retire_work_handler is in the critical display path and should never be delayed because of other non-FIFO work.
+
+ ▪ project packages/apps/Jelly/
+ ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
+ ▪ 063d6a9 Jelly: Use proper popup background attr
+ ▪ ca27881 Jelly: Add "search in page" feature
+
+ ▪ project system/sepolicy/
+ ▪ 34cc176 interfacer: Allow interfacer to find content_service
+ ▪ 72d06e9 Add policy to fix interfacer derp on boot
+ ▪ 458839a sepolicy: Allow system_server to set theme_prop
+ ▪ 86e3f9d sepolicy: add file and domain trans to interfacer
+ ▪ caa8674 Welcome to Theme Interfacer! [2/2]
+ ▪ 3890c0e sepolicy: Redo masquerade rules
+ ▪ 1f43bf4 sepolicy: Fix application of bootanimation
+ ▪ d9cc632 sepolicy: allow masquerade to read and write theme assets
+ ▪ 0a3d0fc sepolicy: rename masquerade domain and allow JobService in system_server
+ ▪ 5ac375f initial policy edits for masquerade to operate rootless
+ ▪ 2965e98 sepolicy: fix themed sounds
+ ▪ 8edd6b3 sepolicy: fix themed boot animation
+ ▪ a03a002 Introduce sepolicy exceptions for theme assets
+ ▪ 13c7a73 OMS7-N: Add service 'overlay' to service_contexts
+ ▪ 39875f9 Add policy to SELinux to allow ViPER4Android in enforcing mode
+ ▪ 1820ef3 RR: 7.1 fix
+ ▪ 40ebd92 sepolicy: Allow platform_app to run su_exec() (1/2)
+ ▪ 6606f8c sepolicy: Allow system_server to run su_exec() (1/2)
+ ▪ 1f5ad77 sepolicy: Allow system_app to run su_exec()
+ ▪ f73b438 sepolicy: Allow remount /system
+
+ ▪ project vendor/cm/
+ ▪ 715986b Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ bc96cad repopick: Add 'reset' option
+ ▪ 5a5e439 kernel: Add savedefconfig target
+ ▪ 4438599 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
+ ▪ 5b71695 repopick: don't bail on drafts
+ ▪ 82a5e5a prebuilt: update Magisk Manager 5.1.1 (#96)
+
+ ▼ 07/19/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ aa65a3d op3: Add 3T specific power profile
+
+ ▪ project hardware/qcom/fm/
+ ▪ 165ef42 FM: Use some sane colors
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ 685db7f msm: vidc: Check validity of userspace address
+
+ ▪ project vendor/cm/
+ ▪ ac577f3 Update prebuilts to latest versions (#95)
+
+ ▪ project vendor/lge/
+ ▪ 4543622 g6: Add iris module
+
