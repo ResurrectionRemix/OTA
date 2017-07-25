@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
-<kenzo>
-<Filename>RR-N-v5.8.3-20170723-kenzo-Official.zip</Filename>
+<deb>
+<Filename>RR-N-v5.8.3-20170723-deb-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-N-v5.8.3-20170723-kenzo-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/deb/RR-N-v5.8.3-20170723-deb-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
-  description="Download a Build">http://downloads.resurrectionremix.com/kenzo/</BuildUrl>
+  description="Download a Build">http://downloads.resurrectionremix.com/deb/</BuildUrl>
 <GAppsUrl
   id="GApps"
   title="Beans GApps"
@@ -19,7 +19,7 @@
   id="changelog"
   title="Changelog"
   description="View Changelogs">http://rr.akhilnarang.me/Changelogs</ChangelogUrl>
-</kenzo>
+</deb>
 </Stable>
 </SlimOTA>
     
