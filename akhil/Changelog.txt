@@ -50,10 +50,6 @@
 
  ▪ project hardware/qcom/fm/
 
- ▪ project kernel/oneplus/msm8996/
- ▪ ef36442 oneplus3: regenerate defconfig
- ▪ 11d4f15 ARM: dts: 15801: Move 0x29 to dsi on command
-
  ▪ project kernel/xiaomi/msm8956/
  ▪ 7c47fc5 Merge branch 'nougat-upstream' into nougat
  ▪ 8262ad9 gitignore: add output directory to list
@@ -110,11 +106,12 @@
  ▪ 39f27c1 update defconfig
  ▪ e819089 Merge remote-tracking branch 'lineageos/cm-14.1' into ElementalX-6.00-cm
 
+ ▪ project kernel/oneplus/msm8996/
+ ▪ ef36442 oneplus3: regenerate defconfig
+ ▪ 11d4f15 ARM: dts: 15801: Move 0x29 to dsi on command
+
  ▪ project packages/apps/Jelly/
  ▪ b8270d7 Jelly: Allow to display pages in full screen mode
-
- ▪ project packages/apps/Settings/
- ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
 
  ▪ project vendor/cm/
  ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
@@ -130,6 +127,7 @@
  ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
 
  ▪ project packages/apps/Settings/
+ ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
  ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
  ▪ 5cd394f Add processor model in device info screen (2/2)
  ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
