@@ -18,7 +18,7 @@
 <ChangelogUrl
   id="changelog"
   title="Changelog"
-  description="View Changelogs">http://rr.akhilnarang.me/Changelogs</ChangelogUrl>
+  description="View Changelogs">https://github.com/ResurrectionRemix/OTA/blob/master/Changelog.txt</ChangelogUrl>
 </flo>
 </Stable>
 </SlimOTA>
