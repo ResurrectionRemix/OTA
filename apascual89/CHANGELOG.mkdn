@@ -2,119 +2,141 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/23/2017
+ ▼ 07/29/2017
 
 
  ▪ project device/oneplus/cheeseburger/
- ▪ a13eef2 op5: encryption
+ ▪ b54ff4c op5: Add pocketmode app
+ ▪ ccb4656 op5: avoid double-free of native handles in camera service
+ ▪ f40cdfe op5: add assertion for FBE
+ ▪ 2f75506 op5: clean up fstab for file-based encryption
+ ▪ e071d22 op5: Add fileencrypted=software/ice to fstab options
 
- ▪ project device/oppo/common/
- ▪ 860ae79 configpanel/keyhandler: slider: Add ringer control
+ ▪ project kernel/oneplus/msm8998/
+ ▪ 9b53b50 misc: fpc1020: Wait for uevent to send before exiting IRQ handler
+ ▪ 0a1172c misc: fpc1020: Simplify proximity shut-off
+ ▪ 729c014 misc: fpc1020: Honor proximity state
 
- ▪ project frameworks/base/
+ ▪ project packages/apps/SetupWizard/
+ ▪ d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
+ ▪ 6971663 SetupWizard: Fix crash when sims are absent
+ ▪ b1dd429 SetupWizard: Fix a few possible NPEs
 
- ▪ project frameworks/native/
- ▪ ecec8cd Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+ ▼ 07/28/2017
 
- ▪ project hardware/qcom/fm/
 
- ▪ project packages/apps/AudioFX/
+ ▪ project external/chromium-webview/
+ ▪ e205b2a Update webview
 
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
+ ▪ project packages/apps/Calendar/
 
  ▪ project packages/apps/Camera2/
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
  ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Exchange/
 
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
 
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project vendor/cm/
+ ▪ cfcd5e2 Fix build scripts color format
+
+ ▼ 07/27/2017
+
+
+ ▪ project device/oneplus/cheeseburger/
+ ▪ 3deb626 op5: enable AUDIO_FEATURE_ENABLED_FM_POWER_OPT
+ ▪ 5c757a1 op5: overlay: change default livedisplay configs
+ ▪ 89a8cb1 op5: raise earpiece in-call volume, lower headphones music volume
+ ▪ 6ced2d5 op5: sepolicy: label qseecomd init script
+ ▪ 367ebb9 op5: fixes issue with qseecom starting too late for FBE
+ ▪ e6540bc cheeseburger: add volte IMS props
+
+ ▪ project packages/apps/Gallery2/
+ ▪ f60b01e Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card."
+
+ ▪ project packages/apps/Snap/
+ ▪ bbb6ee1 Revert "SnapdragonCamera: Adding PRIVILEGED true"
+
+ ▪ project system/netd/
+ ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
+
+ ▪ project vendor/oneplus/
+ ▪ af8b5e3 op5: add qseecomd script for file-based encryption
+
+ ▼ 07/26/2017
+
+
+ ▪ project frameworks/native/
+ ▪ a3768a9 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 41241c1 Gallery2: Fix various issues and glitches
+ ▪ 906a508 Gallery2: Fix potential crash
+
+ ▪ project packages/apps/Jelly/
+
  ▪ project packages/apps/Messaging/
- ▪ 9b349d7 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into HEAD
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/ResurrectionOTA/
+ ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
 
  ▪ project packages/apps/Settings/
- ▪ 349284f MSIM: Fix user set DDS sub in hotswap cases.
+ ▪ 48eecf4 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
+ ▪ 213c4d9 Settings: Allow our root options to work with LineageSu as well
 
  ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
 
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/providers/WeatherProvider/
-
  ▪ project packages/resources/devicesettings/
 
- ▪ project packages/services/OmniJaws/
+ ▼ 07/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 8454510 Fix and cleanup dui protected broadcasts [2/2]
+ ▪ 242cf2c base: SystemUI: add OmniSwitch hide on home
+
+ ▪ project kernel/google/msm/
+ ▪ af49df4 Merge branch 'nougat' of https://github.com/apascual89/flo into nougat
+ ▪ 1a4199a Merge branch 'ElementalX-6.00-cm' of https://github.com/flar2/flo into nougat
+
+ ▪ project packages/apps/OmniSwitch/
+ ▪ 89e029a Fix potential FC in the async task
+ ▪ 083543e OmniSwitch: bring back hide broadcast
+ ▪ 0f4b052 OmniSwitch: add unchanged recent task list
+ ▪ a58f458 OmniSwitch: round corners are sexy
+ ▪ 89e9691 OmniSwitch: transparents also wants to see locked apps :)
+ ▪ 92f3ac7 OmniSwitch: locked apps support
+ ▪ 006ea5a OmniSwitch: add force stop in context menu
+ ▪ b51a26c OmniSwitch: icon pack loading needs an early start
+ ▪ 423639f OmniSwitch: fix terrible wrong resizing on compose icons
+ ▪ 908e593 OmniSwitch: better safe then sorry
+
+ ▪ project packages/apps/Settings/
+ ▪ 2bdc971 Fix and cleanup dui protected broadcasts [1/2]
+ ▪ c3e7f21 Utils: Fix onboot crash until magisk is found
+ ▪ 4856b02 Update LG G3 (D855) Maintainer. (#829)
+ ▪ 51a82c8 Add Maintainer for ZTE BLADE A610 (a610) (#826)
+ ▪ b7e811c Add Co-Maintainer for Lettuce (#827)
+
+ ▼ 07/24/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 12fb6d6 Base: Fix global actions menu emergency button position
 
  ▪ project vendor/cm/
- ▪ c48e00b charger: Fix small battery capacity font
- ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 07/22/2017
-
-
- ▪ project device/oppo/common/
- ▪ 7748804 configpanel: Correct "None" -> "All" for notification filter
- ▪ 300b981 common: keyhandler: prevent sleeping to keep flashlight blinking
- ▪ 9c3e382 common: say hello to Awesome Alert Slider
-
- ▪ project frameworks/base/
- ▪ 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
- ▪ 6f90390 Merge pull request #204 from AndropaX/patch-4
-
- ▪ project kernel/oneplus/msm8998/
- ▪ 166ba16 tri-state-key: Clean up for the new Awesome Alert Slider
- ▪ f64e74b Revert "tri_state_key: allow more key codes for extra modes"
-
- ▪ project packages/apps/DUI/
- ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
-
- ▪ project packages/apps/Jelly/
- ▪ b8270d7 Jelly: Allow to display pages in full screen mode
-
- ▪ project packages/apps/Settings/
- ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
- ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
-
- ▪ project vendor/oneplus/
- ▪ 5c2a237 op5: add blobs for IFAA
-
- ▼ 07/21/2017
-
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 34fc830 op5: sepolicy: allow all the rest we need
-
- ▪ project frameworks/base/
- ▪ 51cc188 DeviceInfoUtils: decentralize processor Regex
-
- ▪ project packages/apps/Jelly/
- ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
- ▪ 063d6a9 Jelly: Use proper popup background attr
- ▪ ca27881 Jelly: Add "search in page" feature
-
- ▪ project packages/apps/Settings/
- ▪ 5cd394f Add processor model in device info screen (2/2)
- ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
-
- ▪ project vendor/asus/
- ▪ c464f73 msm8916-common: Update to latest ASUS release
+ ▪ d235a41 Update Changelog
 
