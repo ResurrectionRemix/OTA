@@ -174,24 +174,12 @@
  ▼ 07/27/2017
 
 
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/Email/
-
  ▪ project packages/apps/Gallery2/
  ▪ 41241c1 Gallery2: Fix various issues and glitches
-
- ▪ project packages/apps/Jelly/
 
  ▪ project packages/apps/Settings/
  ▪ 48eecf4 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
  ▪ 213c4d9 Settings: Allow our root options to work with LineageSu as well
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/resources/devicesettings/
 
  ▪ project system/netd/
  ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
@@ -205,14 +193,26 @@
  ▪ project frameworks/native/
  ▪ a3768a9 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
 
+ ▪ project hardware/qcom/fm/
+
  ▪ project kernel/oneplus/msm8996/
  ▪ f8dc42b Merge b3b5cc2b1a9f0f75057824b350651a04c92a904e on remote branch
+
+ ▪ project packages/apps/Email/
 
  ▪ project packages/apps/Gallery2/
  ▪ 906a508 Gallery2: Fix potential crash
 
+ ▪ project packages/apps/Jelly/
+
  ▪ project packages/apps/Messaging/
  ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/resources/devicesettings/
 
  ▼ 07/25/2017
 
