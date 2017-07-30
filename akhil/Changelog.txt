@@ -2,12 +2,224 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/25/2017
+ ▼ 07/30/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 48342d4 op3: add google camera and oneplus camera to hal1 package list
+ ▪ 4378e4f op3: Add OnePlusCamera Service
+
+ ▪ project frameworks/base/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ fa58cb5 Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into n-mr2
+ ▪ 65b1f12 Linux 3.18.63
+ ▪ 15e2f88 MIPS: Send SIGILL for BPOSGE32 in `__compute_return_epc_for_insn'
+ ▪ fed6122 alarmtimer: don't rate limit one-shot timers
+ ▪ 3d660e4 tracing: Fix kmemleak in instance_rmdir
+ ▪ a94fde7 spmi: Include OF based modalias in device uevent
+ ▪ eadc1db of: device: Export of_device_{get_modalias, uvent_modalias} to modules
+ ▪ 60de953 KVM: PPC: Book3S HV: Context-switch EBB registers properly
+ ▪ 500cfd6 drm/mst: Avoid processing partially received up/down message transactions
+ ▪ 14fbc2a drm/mst: Avoid dereferencing a NULL mstb in drm_dp_mst_handle_up_req()
+ ▪ 61c7f26 drm/mst: Fix error handling during MST sideband message reception
+ ▪ a43afdb staging: rtl8188eu: add TL-WN722N v2 support
+ ▪ 8bd0a6b Revert "perf/core: Drop kernel samples even though :u is specified"
+ ▪ b06e3b0 perf annotate: Fix broken arrow at row 0 connecting jmp instruction to its target
+ ▪ 19135f1 target: Fix COMPARE_AND_WRITE caw_sem leak during se_cmd quiesce
+ ▪ a8fe9a0 udf: Fix deadlock between writeback and udf_setsize()
+ ▪ 0e7addd NFS: only invalidate dentrys that are clearly invalid.
+ ▪ 469ab5b Input: i8042 - fix crash at boot time
+ ▪ 9ae741e MIPS: math-emu: Prevent wrong ISA mode instruction emulation
+ ▪ 48643ae MIPS: Fix unaligned PC interpretation in `compute_return_epc'
+ ▪ 3430d4c MIPS: Actually decode JALX in `__compute_return_epc_for_insn'
+ ▪ f4d3d7e MIPS: Save static registers before sysmips
+ ▪ e65c435 x86/acpi: Prevent out of bound access caused by broken ACPI tables
+ ▪ d896b89 MIPS: Negate error syscall return in trace
+ ▪ b765cfb MIPS: Fix mips_atomic_set() with EVA
+ ▪ e28c3dfb MIPS: Fix mips_atomic_set() retry condition
+ ▪ 50f3ac0 vfio: New external user group/file match
+ ▪ 9393858 vfio: Fix group release deadlock
+ ▪ 0af645c drm/radeon/ci: disable mclk switching for high refresh rates (v2)
+ ▪ bc01273 s390/syscalls: Fix out of bounds arguments access
+ ▪ 8aa9973 Raid5 should update rdev->sectors after reshape
+ ▪ 3b90823 md: don't use flush_signals in userspace processes
+ ▪ dbbccf0 usb: renesas_usbhs: fix usbhsc_resume() for !USBHSF_RUNTIME_PWCTRL
+ ▪ 74b9ce3 USB: cdc-acm: add device-id for quirky printer
+ ▪ 9009856 usb: storage: return on error to avoid a null pointer dereference
+ ▪ 9194c62c xhci: Fix NULL pointer dereference when cleaning up streams for removed host
+ ▪ b6198c5 xhci: fix 20000ms port resume timeout
+ ▪ 7f1ec24 PCI/PM: Restore the status of PCI devices across hibernation
+ ▪ 745bb8a af_key: Fix sadb_x_ipsecrequest parsing
+ ▪ 59c5735 powerpc/asm: Mark cr0 as clobbered in mftb()
+ ▪ e2fa540 powerpc: Fix emulation of mfocrf in emulate_step()
+ ▪ d510990 powerpc: Fix emulation of mcrf in emulate_step()
+ ▪ 5afb4a7 powerpc/64: Fix atomic64_inc_not_zero() to return an int
+ ▪ 5179f99 scsi: ses: do not add a device to an enclosure if enclosure_add_links() fails.
+ ▪ 270d645 PM / Domains: Fix unsafe iteration over modified list of domain providers
+ ▪ aa38324 PM / Domains: Fix unsafe iteration over modified list of device links
+ ▪ 7fd3a51 ASoC: compress: Derive substream from stream based on direction
+ ▪ 0f2c6b3 Bluetooth: use constant time memory comparison for secret values
+ ▪ b7c773d NFC: Add sockaddr length checks before accessing sa_family in bind handlers
+ ▪ 3ad52b9 stddef.h: move offsetofend inside #ifndef/#endif guard, neaten
+ ▪ 50caedb include/stddef.h: Move offsetofend() from vfio.h to a generic kernel header
+ ▪ d9b4856 nfc: Fix the sockaddr length sanitization in llcp_sock_connect
+ ▪ 6b6ebd0 nfc: Ensure presence of required attributes in the activate_target handler
+ ▪ 038fa5d NFC: fix broken device allocation
+ ▪ 2134f37 ath9k: fix tx99 bus error
+ ▪ 628d08a ath9k: fix tx99 use after free
+ ▪ eade032 CIFS: Fix handle_cancelled_mid callback initialization
+ ▪ 7e38f39 ir-core: fix gcc-7 warning on bool arithmetic
+ ▪ 7f3f067 x86/rtc: Remove duplicate const specifier
+ ▪ 4dc94f8 kvm: x86: memset whole irq_eoi
+ ▪ 664a277 disable new gcc-7.1.1 warnings for now
+ ▪ 513ecd6 3.18: Fix and improve upon some backports
+ ▪ 02e83d5 f2fs: Don't clear SGID when inheriting ACLs
+ ▪ 170ad57 9p: fix a potential acl leak
+ ▪ 1c06ada posix_acl: Clear SGID bit when setting file permissions
+ ▪ 1d9cf64 Revert backported ACL patches
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ d5da716 Revert "Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card.""
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 07/29/2017
+
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ e1855fd Revert "f2fs: Don't clear SGID when inheriting ACLs"
+ ▪ 19946c3 Linux 3.18.62
+ ▪ dbe2434 tracing: Use SOFTIRQ_OFFSET for softirq dectection for more accurate results
+ ▪ 09ca2f6 PM / QoS: return -EINVAL for bogus strings
+ ▪ 29b280b sched/topology: Fix overlapping sched_group_mask
+ ▪ ede2800 sched/topology: Optimize build_group_mask()
+ ▪ 7284b45 crypto: caam - fix signals handling
+ ▪ 2e36217 crypto: sha1-ssse3 - Disable avx2
+ ▪ 2755e66 crypto: atmel - only treat EBUSY as transient if backlog
+ ▪ 2e27cf8 crypto: talitos - Extend max key length for SHA384/512-HMAC and AEAD
+ ▪ d6596fa mm: fix overflow check in expand_upwards()
+ ▪ 6ad7702 vt: fix unchecked __put_user() in tioclinux ioctls
+ ▪ 2bd85f4 exec: Limit arg stack to at most 75% of _STK_LIM
+ ▪ e80b634 checkpatch: silence perl 5.26.0 unescaped left brace warnings
+ ▪ a2cf1b0 fs/dcache.c: fix spin lockup issue on nlru->lock
+ ▪ 840efe8 kernel/extable.c: mark core_kernel_text notrace
+ ▪ 214c3b4 tools/lib/lockdep: Reduce MAX_LOCK_DEPTH to avoid overflowing lock_chain/: Depth
+ ▪ ac4c4fc parisc/mm: Ensure IRQs are off in switch_mm()
+ ▪ e670a3c parisc: DMA API: return error instead of BUG_ON for dma ops on non dma devs
+ ▪ 4a6cd3c parisc: use compat_sys_keyctl()
+ ▪ 43138d9 parisc: Report SIGSEGV instead of SIGBUS when running out of stack
+ ▪ 7484a4b irqchip/gic-v3: Fix out-of-bound access in gic_set_affinity
+ ▪ 728fa0e cfg80211: Check if PMKID attribute is of expected size
+ ▪ e2faf8e3 cfg80211: Validate frequencies nested in NL80211_ATTR_SCAN_FREQUENCIES
+ ▪ 957e014 cfg80211: Define nla_policy for NL80211_ATTR_LOCAL_MESH_POWER_MODE
+ ▪ db00c06 brcmfmac: fix possible buffer overflow in brcmf_cfg80211_mgmt_tx()
+ ▪ 5217da2 ipv6: dad: don't remove dynamic addresses if link is down
+ ▪ 4313277 net: prevent sign extension in dev_get_stats()
+ ▪ 1bcdc04 tcp: reset sk_rx_dst in tcp_disconnect()
+ ▪ 41fe647 ipv6: avoid unregistering inet6_dev for loopback
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
+ ▪ 6971663 SetupWizard: Fix crash when sims are absent
+ ▪ b1dd429 SetupWizard: Fix a few possible NPEs
+
+ ▪ project packages/apps/Snap/
+ ▪ db73354 Revert "Revert "SnapdragonCamera: Adding PRIVILEGED true""
+
+ ▼ 07/28/2017
+
+
+ ▪ project external/chromium-webview/
+ ▪ e205b2a Update webview
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ f60b01e Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card."
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Snap/
+ ▪ bbb6ee1 Revert "SnapdragonCamera: Adding PRIVILEGED true"
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project system/bt/
+ ▪ b30e393 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ cfcd5e2 Fix build scripts color format
+
+ ▼ 07/27/2017
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 41241c1 Gallery2: Fix various issues and glitches
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/Settings/
+ ▪ 48eecf4 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
+ ▪ 213c4d9 Settings: Allow our root options to work with LineageSu as well
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project system/netd/
+ ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
+
+ ▼ 07/26/2017
 
 
  ▪ project frameworks/base/
  ▪ 8454510 Fix and cleanup dui protected broadcasts [2/2]
+
+ ▪ project frameworks/native/
+ ▪ a3768a9 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ f8dc42b Merge b3b5cc2b1a9f0f75057824b350651a04c92a904e on remote branch
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 906a508 Gallery2: Fix potential crash
+
+ ▪ project packages/apps/Messaging/
+ ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
+
+ ▼ 07/25/2017
+
+
+ ▪ project frameworks/base/
  ▪ 242cf2c base: SystemUI: add OmniSwitch hide on home
+ ▪ 12fb6d6 Base: Fix global actions menu emergency button position
 
  ▪ project kernel/google/msm/
  ▪ af49df4 Merge branch 'nougat' of https://github.com/apascual89/flo into nougat
@@ -29,204 +241,18 @@
  ▪ 2bdc971 Fix and cleanup dui protected broadcasts [1/2]
  ▪ c3e7f21 Utils: Fix onboot crash until magisk is found
  ▪ 4856b02 Update LG G3 (D855) Maintainer. (#829)
+ ▪ 51a82c8 Add Maintainer for ZTE BLADE A610 (a610) (#826)
+ ▪ b7e811c Add Co-Maintainer for Lettuce (#827)
 
  ▼ 07/24/2017
 
 
  ▪ project frameworks/base/
- ▪ 12fb6d6 Base: Fix global actions menu emergency button position
+
+ ▪ project packages/apps/Jelly/
 
  ▪ project packages/apps/Settings/
- ▪ 51a82c8 Add Maintainer for ZTE BLADE A610 (a610) (#826)
- ▪ b7e811c Add Co-Maintainer for Lettuce (#827)
 
  ▪ project vendor/cm/
  ▪ d235a41 Update Changelog
-
- ▼ 07/23/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/fm/
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 7c47fc5 Merge branch 'nougat-upstream' into nougat
- ▪ 8262ad9 gitignore: add output directory to list
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMBugReport/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 07/22/2017
-
-
- ▪ project frameworks/base/
- ▪ 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
-
- ▪ project kernel/google/msm/
- ▪ 39f27c1 update defconfig
- ▪ e819089 Merge remote-tracking branch 'lineageos/cm-14.1' into ElementalX-6.00-cm
-
- ▪ project kernel/oneplus/msm8996/
- ▪ ef36442 oneplus3: regenerate defconfig
- ▪ 11d4f15 ARM: dts: 15801: Move 0x29 to dsi on command
-
- ▪ project packages/apps/Jelly/
- ▪ b8270d7 Jelly: Allow to display pages in full screen mode
-
- ▪ project vendor/cm/
- ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
-
- ▼ 07/21/2017
-
-
- ▪ project frameworks/base/
- ▪ 6f90390 Merge pull request #204 from AndropaX/patch-4
- ▪ 51cc188 DeviceInfoUtils: decentralize processor Regex
-
- ▪ project packages/apps/DUI/
- ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
-
- ▪ project packages/apps/Settings/
- ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
- ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
- ▪ 5cd394f Add processor model in device info screen (2/2)
- ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
-
- ▪ project vendor/asus/
- ▪ c464f73 msm8916-common: Update to latest ASUS release
-
- ▼ 07/20/2017
-
-
- ▪ project android/
- ▪ eedb930 Remove ahbottomnavigation
-
- ▪ project device/oneplus/oneplus3/
- ▪ 0279c26 Merge branch 'laos/cm-14.1' into akhil
-
- ▪ project frameworks/base/
- ▪ 021e65a DeviceInfoUtils: Expand Processor string #3
- ▪ a700be4 Fix new Processor regex in Nexus 4
- ▪ 3aa1c51 BootReceiver: check console-ramoops-0
- ▪ f27f73e Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ 7e09920 PowerProfile: allow overriding default power profile
- ▪ e5e8dad Revert "PowerProfile: allow reading from a file instead of resource"
- ▪ 3008b48 Add processor info in device info screen (1/2)
-
- ▪ project kernel/lge/hammerhead/
- ▪ f75e583 BACKPORT: fs: limit filesystem stacking depth
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ b4b37dd gitignore: add output directory to list
- ▪ e9ab8e8 mm: fix missing immediate expression at operand 1 dsb
- ▪ ab8f914 Merge remote-tracking branch 'uck/LA.BR.1.3.6_rb1.20' into nougat-upstream
- ▪ 21fc106 Sorry, you looked a bit out of place :P
- ▪ f52da53 kenzo: enable console, disable modules, regenerate
- ▪ 922ca60 Dominator: appended dtb ftw!
- ▪ 422ad60 prima: Update to LA.BR.1.3.6_rb1.19
- ▪ e172e36 display: add a simple api to query the display state (on/off)
- ▪ 341514c kenzo: regenerate defconfig
- ▪ 4f94ac6 Revert "ASoC: wcd9335: add analog headphone gain"
- ▪ 5659f95 mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
- ▪ 2942d6a mmc: clk_scaling: add sysfs for avoiding scale down in write
- ▪ 7f53767 mm: slub: Default slub_max_order to 0
- ▪ 919ac4b tcp_cubic: do not set epoch_start in the future
- ▪ 6370c37 tcp_cubic: better follow cubic curve after idle period
- ▪ 521e9a7 tcp: fix timing issue in CUBIC slope calculation
- ▪ c98fbf5 cpuidle: don't disable cpuidle when entering suspend
- ▪ c69426b kgsl: convert some workqueues to use kthreads original commit: https://github.com/android/kernel_msm/commit/1a7a93bd33f48a369de29f6f2b56251127bf6ab4 adreno_dispatch_work and _kgsl_event_worker are both low-latency low-runtime functions that are in the critical path of GPU rendering. Moving them out of workqueues and into a dedicated FIFO kthread avoids significant jitter.
- ▪ 3a29665 mdss: move to a kthread for vsync_retire_work_handler original commit: https://github.com/android/kernel_msm/commit/91fd2c322af5c111309e343e7d58f6e5e1841823 vsync_retire_work_handler is in the critical display path and should never be delayed because of other non-FIFO work.
-
- ▪ project packages/apps/Jelly/
- ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
- ▪ 063d6a9 Jelly: Use proper popup background attr
- ▪ ca27881 Jelly: Add "search in page" feature
-
- ▪ project system/sepolicy/
- ▪ 34cc176 interfacer: Allow interfacer to find content_service
- ▪ 72d06e9 Add policy to fix interfacer derp on boot
- ▪ 458839a sepolicy: Allow system_server to set theme_prop
- ▪ 86e3f9d sepolicy: add file and domain trans to interfacer
- ▪ caa8674 Welcome to Theme Interfacer! [2/2]
- ▪ 3890c0e sepolicy: Redo masquerade rules
- ▪ 1f43bf4 sepolicy: Fix application of bootanimation
- ▪ d9cc632 sepolicy: allow masquerade to read and write theme assets
- ▪ 0a3d0fc sepolicy: rename masquerade domain and allow JobService in system_server
- ▪ 5ac375f initial policy edits for masquerade to operate rootless
- ▪ 2965e98 sepolicy: fix themed sounds
- ▪ 8edd6b3 sepolicy: fix themed boot animation
- ▪ a03a002 Introduce sepolicy exceptions for theme assets
- ▪ 13c7a73 OMS7-N: Add service 'overlay' to service_contexts
- ▪ 39875f9 Add policy to SELinux to allow ViPER4Android in enforcing mode
- ▪ 1820ef3 RR: 7.1 fix
- ▪ 40ebd92 sepolicy: Allow platform_app to run su_exec() (1/2)
- ▪ 6606f8c sepolicy: Allow system_server to run su_exec() (1/2)
- ▪ 1f5ad77 sepolicy: Allow system_app to run su_exec()
- ▪ f73b438 sepolicy: Allow remount /system
-
- ▪ project vendor/cm/
- ▪ 715986b Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ bc96cad repopick: Add 'reset' option
- ▪ 5a5e439 kernel: Add savedefconfig target
- ▪ 4438599 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
- ▪ 5b71695 repopick: don't bail on drafts
- ▪ 82a5e5a prebuilt: update Magisk Manager 5.1.1 (#96)
-
- ▼ 07/19/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ aa65a3d op3: Add 3T specific power profile
-
- ▪ project hardware/qcom/fm/
- ▪ 165ef42 FM: Use some sane colors
-
- ▪ project kernel/lge/hammerhead/
- ▪ 685db7f msm: vidc: Check validity of userspace address
-
- ▪ project vendor/cm/
- ▪ ac577f3 Update prebuilts to latest versions (#95)
-
- ▪ project vendor/lge/
- ▪ 4543622 g6: Add iris module
 
