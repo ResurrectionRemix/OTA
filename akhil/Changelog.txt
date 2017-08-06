@@ -21,22 +21,6 @@
  ▪ 5a0945c frameworks: PIE 3.0 (nougat)
  ▪ 4df7925 Revert "Forward Port: PIE 3.0 (1/2)"
 
- ▪ project kernel/oneplus/msm8996/
- ▪ a42567a oneplus3: regenerate defconfig
- ▪ 6d46d35 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
- ▪ e60f49c f2fs: avoid cpu lockup
- ▪ f178bfb ANDROID: sdcardfs: Remove unnecessary lock
- ▪ 5a168ba op3: Disable unneeded functions
- ▪ dda7a3388 op3: Run all RCU threads at RT prio 2
- ▪ 396a3f3 op3: enable RCU_BOOST
- ▪ f15e002 BACKPORT: rcu: Optionally run grace-period kthreads at real-time priority
- ▪ c8afe0a BACKPORT: rcu: Unify boost and kthread priorities
- ▪ e65ce8d BACKPORT: rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
- ▪ 9436f45 drivers/Kconfig: remove duplicate entry for soc
- ▪ 9dda95d Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into nougat
- ▪ 36a119d qcacld-2.0: Update to LA.UM.5.5.r1-05400-8x96.0
- ▪ dabdc21 ARM: dts: 15801: Move 0x29 to dsi on command
-
  ▪ project kernel/xiaomi/msm8956/
  ▪ 0a2b1f5 Merge remote-tracking branch 'remotes/caf/LA.BR.1.3.6_rb1.21' into nougat
 
@@ -73,6 +57,22 @@
  ▼ 08/05/2017
 
 
+ ▪ project kernel/oneplus/msm8996/
+ ▪ a42567a oneplus3: regenerate defconfig
+ ▪ 6d46d35 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
+ ▪ e60f49c f2fs: avoid cpu lockup
+ ▪ f178bfb ANDROID: sdcardfs: Remove unnecessary lock
+ ▪ 5a168ba op3: Disable unneeded functions
+ ▪ dda7a3388 op3: Run all RCU threads at RT prio 2
+ ▪ 396a3f3 op3: enable RCU_BOOST
+ ▪ f15e002 BACKPORT: rcu: Optionally run grace-period kthreads at real-time priority
+ ▪ c8afe0a BACKPORT: rcu: Unify boost and kthread priorities
+ ▪ e65ce8d BACKPORT: rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
+ ▪ 9436f45 drivers/Kconfig: remove duplicate entry for soc
+ ▪ 9dda95d Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into nougat
+ ▪ 36a119d qcacld-2.0: Update to LA.UM.5.5.r1-05400-8x96.0
+ ▪ dabdc21 ARM: dts: 15801: Move 0x29 to dsi on command
+
  ▪ project packages/apps/Settings/
  ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
  ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
@@ -90,9 +90,6 @@
  ▪ project device/xiaomi/msm8956-common/
  ▪ 743eb8b msm8956: Decommonize time service blobs
  ▪ 02b7712 msm8956: Remove modem assertion check
-
- ▪ project frameworks/opt/telephony/
- ▪ b1a8579 Telephony: Keep preferred SMS Sim
 
  ▪ project hardware/qcom/fm/
 
@@ -162,6 +159,9 @@
  ▼ 08/03/2017
 
 
+ ▪ project frameworks/opt/telephony/
+ ▪ b1a8579 Telephony: Keep preferred SMS Sim
+
  ▪ project kernel/xiaomi/msm8956/
  ▪ 2b2ad6d Revert "Revert "ARM: dts: msm: update memory map for msm8976/8956/8952 for External release""
 
@@ -174,14 +174,6 @@
  ▪ project device/samsung/smdk4412-common/
  ▪ 7fa112b smdk4412-common: camera: Handle preview_video_size seperately
 
- ▪ project kernel/lge/hammerhead/
- ▪ dbd1c67 ASoC: msm-lsm-client: free lsm client data in msm_lsm_close
- ▪ 7744f14 ASoC: msm: qdsp6v2: check param length for EAC3 format
- ▪ 565143e ASoC: msm: initialize the params array before using it
- ▪ 9579dd3 ASoC: msm: qdsp6v2: fix possible integer overflow
- ▪ 44fb515 qdsp6v2: blacklist %p kptr_restrict
- ▪ 6da174b Kconfig: msm: disable ultrasound driver
-
  ▪ project kernel/xiaomi/msm8956/
  ▪ c9cc7c1 Merge AU_LINUX_ANDROID_LA.BR.1.3.6_RB1.07.01.02.255.041 on remote branch
 
@@ -189,6 +181,12 @@
 
 
  ▪ project kernel/lge/hammerhead/
+ ▪ dbd1c67 ASoC: msm-lsm-client: free lsm client data in msm_lsm_close
+ ▪ 7744f14 ASoC: msm: qdsp6v2: check param length for EAC3 format
+ ▪ 565143e ASoC: msm: initialize the params array before using it
+ ▪ 9579dd3 ASoC: msm: qdsp6v2: fix possible integer overflow
+ ▪ 44fb515 qdsp6v2: blacklist %p kptr_restrict
+ ▪ 6da174b Kconfig: msm: disable ultrasound driver
  ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
 
  ▪ project packages/apps/Eleven/

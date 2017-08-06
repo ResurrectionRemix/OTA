@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <shamu>
-<Filename>RR-N-v5.8.4-20170805-shamu-Official.zip</Filename>
+<Filename>RR-N-v5.8.4-20170806-shamu-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/shamu/RR-N-v5.8.4-20170805-shamu-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/shamu/RR-N-v5.8.4-20170806-shamu-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
