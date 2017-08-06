@@ -2,146 +2,64 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 07/30/2017
+ ▼ 08/06/2017
 
 
- ▪ project device/oneplus/oneplus3/
- ▪ 48342d4 op3: add google camera and oneplus camera to hal1 package list
- ▪ 4378e4f op3: Add OnePlusCamera Service
+ ▪ project device/xiaomi/kenzo/
+ ▪ bef93e5 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 6d9dc32 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
 
  ▪ project frameworks/base/
 
  ▪ project kernel/oneplus/msm8996/
- ▪ fa58cb5 Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into n-mr2
- ▪ 65b1f12 Linux 3.18.63
- ▪ 15e2f88 MIPS: Send SIGILL for BPOSGE32 in `__compute_return_epc_for_insn'
- ▪ fed6122 alarmtimer: don't rate limit one-shot timers
- ▪ 3d660e4 tracing: Fix kmemleak in instance_rmdir
- ▪ a94fde7 spmi: Include OF based modalias in device uevent
- ▪ eadc1db of: device: Export of_device_{get_modalias, uvent_modalias} to modules
- ▪ 60de953 KVM: PPC: Book3S HV: Context-switch EBB registers properly
- ▪ 500cfd6 drm/mst: Avoid processing partially received up/down message transactions
- ▪ 14fbc2a drm/mst: Avoid dereferencing a NULL mstb in drm_dp_mst_handle_up_req()
- ▪ 61c7f26 drm/mst: Fix error handling during MST sideband message reception
- ▪ a43afdb staging: rtl8188eu: add TL-WN722N v2 support
- ▪ 8bd0a6b Revert "perf/core: Drop kernel samples even though :u is specified"
- ▪ b06e3b0 perf annotate: Fix broken arrow at row 0 connecting jmp instruction to its target
- ▪ 19135f1 target: Fix COMPARE_AND_WRITE caw_sem leak during se_cmd quiesce
- ▪ a8fe9a0 udf: Fix deadlock between writeback and udf_setsize()
- ▪ 0e7addd NFS: only invalidate dentrys that are clearly invalid.
- ▪ 469ab5b Input: i8042 - fix crash at boot time
- ▪ 9ae741e MIPS: math-emu: Prevent wrong ISA mode instruction emulation
- ▪ 48643ae MIPS: Fix unaligned PC interpretation in `compute_return_epc'
- ▪ 3430d4c MIPS: Actually decode JALX in `__compute_return_epc_for_insn'
- ▪ f4d3d7e MIPS: Save static registers before sysmips
- ▪ e65c435 x86/acpi: Prevent out of bound access caused by broken ACPI tables
- ▪ d896b89 MIPS: Negate error syscall return in trace
- ▪ b765cfb MIPS: Fix mips_atomic_set() with EVA
- ▪ e28c3dfb MIPS: Fix mips_atomic_set() retry condition
- ▪ 50f3ac0 vfio: New external user group/file match
- ▪ 9393858 vfio: Fix group release deadlock
- ▪ 0af645c drm/radeon/ci: disable mclk switching for high refresh rates (v2)
- ▪ bc01273 s390/syscalls: Fix out of bounds arguments access
- ▪ 8aa9973 Raid5 should update rdev->sectors after reshape
- ▪ 3b90823 md: don't use flush_signals in userspace processes
- ▪ dbbccf0 usb: renesas_usbhs: fix usbhsc_resume() for !USBHSF_RUNTIME_PWCTRL
- ▪ 74b9ce3 USB: cdc-acm: add device-id for quirky printer
- ▪ 9009856 usb: storage: return on error to avoid a null pointer dereference
- ▪ 9194c62c xhci: Fix NULL pointer dereference when cleaning up streams for removed host
- ▪ b6198c5 xhci: fix 20000ms port resume timeout
- ▪ 7f1ec24 PCI/PM: Restore the status of PCI devices across hibernation
- ▪ 745bb8a af_key: Fix sadb_x_ipsecrequest parsing
- ▪ 59c5735 powerpc/asm: Mark cr0 as clobbered in mftb()
- ▪ e2fa540 powerpc: Fix emulation of mfocrf in emulate_step()
- ▪ d510990 powerpc: Fix emulation of mcrf in emulate_step()
- ▪ 5afb4a7 powerpc/64: Fix atomic64_inc_not_zero() to return an int
- ▪ 5179f99 scsi: ses: do not add a device to an enclosure if enclosure_add_links() fails.
- ▪ 270d645 PM / Domains: Fix unsafe iteration over modified list of domain providers
- ▪ aa38324 PM / Domains: Fix unsafe iteration over modified list of device links
- ▪ 7fd3a51 ASoC: compress: Derive substream from stream based on direction
- ▪ 0f2c6b3 Bluetooth: use constant time memory comparison for secret values
- ▪ b7c773d NFC: Add sockaddr length checks before accessing sa_family in bind handlers
- ▪ 3ad52b9 stddef.h: move offsetofend inside #ifndef/#endif guard, neaten
- ▪ 50caedb include/stddef.h: Move offsetofend() from vfio.h to a generic kernel header
- ▪ d9b4856 nfc: Fix the sockaddr length sanitization in llcp_sock_connect
- ▪ 6b6ebd0 nfc: Ensure presence of required attributes in the activate_target handler
- ▪ 038fa5d NFC: fix broken device allocation
- ▪ 2134f37 ath9k: fix tx99 bus error
- ▪ 628d08a ath9k: fix tx99 use after free
- ▪ eade032 CIFS: Fix handle_cancelled_mid callback initialization
- ▪ 7e38f39 ir-core: fix gcc-7 warning on bool arithmetic
- ▪ 7f3f067 x86/rtc: Remove duplicate const specifier
- ▪ 4dc94f8 kvm: x86: memset whole irq_eoi
- ▪ 664a277 disable new gcc-7.1.1 warnings for now
- ▪ 513ecd6 3.18: Fix and improve upon some backports
- ▪ 02e83d5 f2fs: Don't clear SGID when inheriting ACLs
- ▪ 170ad57 9p: fix a potential acl leak
- ▪ 1c06ada posix_acl: Clear SGID bit when setting file permissions
- ▪ 1d9cf64 Revert backported ACL patches
+ ▪ a42567a oneplus3: regenerate defconfig
+ ▪ 6d46d35 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
+ ▪ e60f49c f2fs: avoid cpu lockup
+ ▪ f178bfb ANDROID: sdcardfs: Remove unnecessary lock
+ ▪ 5a168ba op3: Disable unneeded functions
+ ▪ dda7a3388 op3: Run all RCU threads at RT prio 2
+ ▪ 396a3f3 op3: enable RCU_BOOST
+ ▪ f15e002 BACKPORT: rcu: Optionally run grace-period kthreads at real-time priority
+ ▪ c8afe0a BACKPORT: rcu: Unify boost and kthread priorities
+ ▪ e65ce8d BACKPORT: rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
+ ▪ 9436f45 drivers/Kconfig: remove duplicate entry for soc
+ ▪ 9dda95d Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into nougat
+ ▪ 36a119d qcacld-2.0: Update to LA.UM.5.5.r1-05400-8x96.0
+ ▪ dabdc21 ARM: dts: 15801: Move 0x29 to dsi on command
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 0a2b1f5 Merge remote-tracking branch 'remotes/caf/LA.BR.1.3.6_rb1.21' into nougat
 
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Gallery2/
- ▪ d5da716 Revert "Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card.""
-
  ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/Settings/
 
- ▪ project packages/services/OmniJaws/
-
- ▼ 07/29/2017
+ ▼ 08/05/2017
 
 
- ▪ project kernel/oneplus/msm8996/
- ▪ e1855fd Revert "f2fs: Don't clear SGID when inheriting ACLs"
- ▪ 19946c3 Linux 3.18.62
- ▪ dbe2434 tracing: Use SOFTIRQ_OFFSET for softirq dectection for more accurate results
- ▪ 09ca2f6 PM / QoS: return -EINVAL for bogus strings
- ▪ 29b280b sched/topology: Fix overlapping sched_group_mask
- ▪ ede2800 sched/topology: Optimize build_group_mask()
- ▪ 7284b45 crypto: caam - fix signals handling
- ▪ 2e36217 crypto: sha1-ssse3 - Disable avx2
- ▪ 2755e66 crypto: atmel - only treat EBUSY as transient if backlog
- ▪ 2e27cf8 crypto: talitos - Extend max key length for SHA384/512-HMAC and AEAD
- ▪ d6596fa mm: fix overflow check in expand_upwards()
- ▪ 6ad7702 vt: fix unchecked __put_user() in tioclinux ioctls
- ▪ 2bd85f4 exec: Limit arg stack to at most 75% of _STK_LIM
- ▪ e80b634 checkpatch: silence perl 5.26.0 unescaped left brace warnings
- ▪ a2cf1b0 fs/dcache.c: fix spin lockup issue on nlru->lock
- ▪ 840efe8 kernel/extable.c: mark core_kernel_text notrace
- ▪ 214c3b4 tools/lib/lockdep: Reduce MAX_LOCK_DEPTH to avoid overflowing lock_chain/: Depth
- ▪ ac4c4fc parisc/mm: Ensure IRQs are off in switch_mm()
- ▪ e670a3c parisc: DMA API: return error instead of BUG_ON for dma ops on non dma devs
- ▪ 4a6cd3c parisc: use compat_sys_keyctl()
- ▪ 43138d9 parisc: Report SIGSEGV instead of SIGBUS when running out of stack
- ▪ 7484a4b irqchip/gic-v3: Fix out-of-bound access in gic_set_affinity
- ▪ 728fa0e cfg80211: Check if PMKID attribute is of expected size
- ▪ e2faf8e3 cfg80211: Validate frequencies nested in NL80211_ATTR_SCAN_FREQUENCIES
- ▪ 957e014 cfg80211: Define nla_policy for NL80211_ATTR_LOCAL_MESH_POWER_MODE
- ▪ db00c06 brcmfmac: fix possible buffer overflow in brcmf_cfg80211_mgmt_tx()
- ▪ 5217da2 ipv6: dad: don't remove dynamic addresses if link is down
- ▪ 4313277 net: prevent sign extension in dev_get_stats()
- ▪ 1bcdc04 tcp: reset sk_rx_dst in tcp_disconnect()
- ▪ 41fe647 ipv6: avoid unregistering inet6_dev for loopback
+ ▪ project device/xiaomi/kenzo/
+ ▪ c9ffb05 kenzo: Add time service blobs
+ ▪ 47d40e6 kenzo: Remove modem assert
 
- ▪ project packages/apps/SetupWizard/
- ▪ d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
- ▪ 6971663 SetupWizard: Fix crash when sims are absent
- ▪ b1dd429 SetupWizard: Fix a few possible NPEs
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 743eb8b msm8956: Decommonize time service blobs
+ ▪ 02b7712 msm8956: Remove modem assertion check
 
- ▪ project packages/apps/Snap/
- ▪ db73354 Revert "Revert "SnapdragonCamera: Adding PRIVILEGED true""
+ ▪ project hardware/qcom/fm/
 
- ▼ 07/28/2017
+ ▪ project packages/apps/AudioFX/
 
-
- ▪ project external/chromium-webview/
- ▪ e205b2a Update webview
+ ▪ project packages/apps/Bluetooth/
 
  ▪ project packages/apps/Calendar/
 
@@ -153,106 +71,180 @@
 
  ▪ project packages/apps/Email/
 
- ▪ project packages/apps/Exchange/
+ ▪ project packages/apps/EmergencyInfo/
 
  ▪ project packages/apps/Gallery2/
- ▪ f60b01e Revert "Gallery2: set module privileged in Android.mk to delete photos on SD card."
+
+ ▪ project packages/apps/HTMLViewer/
 
  ▪ project packages/apps/Jelly/
 
- ▪ project packages/apps/Snap/
- ▪ bbb6ee1 Revert "SnapdragonCamera: Adding PRIVILEGED true"
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project system/bt/
- ▪ b30e393 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1
-
- ▪ project vendor/cm/
- ▪ cfcd5e2 Fix build scripts color format
-
- ▼ 07/27/2017
-
-
- ▪ project packages/apps/Gallery2/
- ▪ 41241c1 Gallery2: Fix various issues and glitches
+ ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/Settings/
- ▪ 48eecf4 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
-
- ▪ project system/netd/
- ▪ b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
-
- ▼ 07/26/2017
-
-
- ▪ project frameworks/native/
- ▪ a3768a9 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
-
- ▪ project hardware/qcom/fm/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ f8dc42b Merge b3b5cc2b1a9f0f75057824b350651a04c92a904e on remote branch
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/Gallery2/
- ▪ 906a508 Gallery2: Fix potential crash
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/Messaging/
- ▪ cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
-
- ▪ project packages/apps/Settings/
- ▪ 213c4d9 Settings: Allow our root options to work with LineageSu as well
+ ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
 
  ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
 
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
  ▪ project packages/resources/devicesettings/
 
- ▼ 07/25/2017
+ ▼ 08/04/2017
 
 
- ▪ project frameworks/base/
- ▪ 8454510 Fix and cleanup dui protected broadcasts [2/2]
- ▪ 242cf2c base: SystemUI: add OmniSwitch hide on home
- ▪ 12fb6d6 Base: Fix global actions menu emergency button position
+ ▪ project frameworks/opt/telephony/
+ ▪ b1a8579 Telephony: Keep preferred SMS Sim
 
- ▪ project kernel/google/msm/
- ▪ af49df4 Merge branch 'nougat' of https://github.com/apascual89/flo into nougat
- ▪ 1a4199a Merge branch 'ElementalX-6.00-cm' of https://github.com/flar2/flo into nougat
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ ec78924 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+
+ ▪ project packages/apps/Settings/
+ ▪ 1bed82a Add Maintainer For Android One 1st gen. (sprout) (#832)
+
+ ▪ project vendor/asus/
+ ▪ 86bf0bd mofd: update houdini blobs from fugu n2g48b
+ ▪ d314fc0 mofd: update bt/tele fw from 4.21.40.352 release
+
+ ▼ 08/03/2017
+
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 2b2ad6d Revert "Revert "ARM: dts: msm: update memory map for msm8976/8956/8952 for External release""
+ ▪ c9cc7c1 Merge AU_LINUX_ANDROID_LA.BR.1.3.6_RB1.07.01.02.255.041 on remote branch
 
  ▪ project packages/apps/OmniSwitch/
- ▪ 89e029a Fix potential FC in the async task
- ▪ 083543e OmniSwitch: bring back hide broadcast
- ▪ 0f4b052 OmniSwitch: add unchanged recent task list
- ▪ a58f458 OmniSwitch: round corners are sexy
- ▪ 89e9691 OmniSwitch: transparents also wants to see locked apps :)
- ▪ 92f3ac7 OmniSwitch: locked apps support
- ▪ 006ea5a OmniSwitch: add force stop in context menu
- ▪ b51a26c OmniSwitch: icon pack loading needs an early start
- ▪ 423639f OmniSwitch: fix terrible wrong resizing on compose icons
- ▪ 908e593 OmniSwitch: better safe then sorry
+ ▪ 31d0a4a Fixing a NullPointerException (#8)
 
- ▪ project packages/apps/Settings/
- ▪ 2bdc971 Fix and cleanup dui protected broadcasts [1/2]
- ▪ c3e7f21 Utils: Fix onboot crash until magisk is found
- ▪ 4856b02 Update LG G3 (D855) Maintainer. (#829)
- ▪ 51a82c8 Add Maintainer for ZTE BLADE A610 (a610) (#826)
- ▪ b7e811c Add Co-Maintainer for Lettuce (#827)
+ ▼ 08/02/2017
 
- ▼ 07/24/2017
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ dbd1c67 ASoC: msm-lsm-client: free lsm client data in msm_lsm_close
+ ▪ 7744f14 ASoC: msm: qdsp6v2: check param length for EAC3 format
+ ▪ 565143e ASoC: msm: initialize the params array before using it
+ ▪ 9579dd3 ASoC: msm: qdsp6v2: fix possible integer overflow
+ ▪ 44fb515 qdsp6v2: blacklist %p kptr_restrict
+ ▪ 6da174b Kconfig: msm: disable ultrasound driver
+ ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
+
+ ▪ project packages/apps/Gallery2/
+ ▪ c88c572 Gallery2: Fix various issues and glitches
+
+ ▪ project vendor/lge/
+ ▪ 0558e88 msm8996: Add tinyxml2_1 for UM5.7 SDM
+ ▪ a849224 msm8996: Update graphics blobs from oneplus/cheeseburger
+ ▪ f7fd1c5 g6: Properly deodex DolbyVisionService
+ ▪ 9d22958 msm8996: Add libgpustats for PQ metadata encoding
+ ▪ 257256b msm8996: Add support for widevine L1
+ ▪ 0ae74c8 h870: Remove unused bcm4359 firmware
+ ▪ 1080c0b g6: Add some camera postproc blobs
+
+ ▼ 08/01/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
+ ▪ 083e7f9 Eleven: Promote to privileged app
+ ▪ 5301693 Eleven: allow artwork to scale down
+
+ ▪ project packages/apps/Gallery2/
+ ▪ d74ca5a Gallery2: Fix potential crash
+ ▪ 7e1b2d2 Gallery2: Switch to navigationbar from support libs
+ ▪ 82b6848 Gallery2: Fix can't parse documents uri
+
+ ▪ project packages/apps/Snap/
+ ▪ a206d75 Snap: fix low resolution front camera switch icon
+
+ ▼ 07/31/2017
 
 
  ▪ project frameworks/base/
+ ▪ c4a83cf Allow to disable battery light when in DND mode [1/2]
+ ▪ 20dce16 SystemUI: Store value of lockscreen media art
+ ▪ 3dff8ca AppOps: Prevent deadlock when making note of applications
+ ▪ 0e93f34 KernelCpuSpeedReader: Account for missing sysfs nodes
+ ▪ 33c6d4f Revert "KernelCpuSpeedReader: Account for missing sysfs nodes"
+ ▪ 6f93f57 slim recents: Be sure to catch all exceptions for startActivityFromRecents
+ ▪ da27683 slim recents: Favlist creation: use HashSet instead of Arraylist
+ ▪ c46b63c SystemUI: locked tasks should have a valid view
 
- ▪ project packages/apps/Jelly/
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 7d9cfb4 Merge "msm: ipa: prevent string buffer overflows"
+ ▪ f32fe96 coresight: tmc: Fix use after free issue with tmc read
+ ▪ 4af7ad8 msm: ipa: prevent string buffer overflows
+ ▪ 333d490 random32: include missing header file
+ ▪ 74b8ff0 ARM64: Wire up getrandom.
+ ▪ 59eb1c1 BACKPORT: ARM: wire up getrandom syscall
+ ▪ e437613 BACKPORT: random: Wake up all getrandom(2) callers when pool is ready
+ ▪ f357699 BACKPORT: random: introduce getrandom(2) system call
+ ▪ dae9c82 BACKPORT: random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized
+ ▪ c0a71d1 BACKPORT: random32: add periodic reseeding
+
+ ▪ project packages/apps/Gallery2/
+ ▪ eceb1ed Gallery2: Fix views overlap
+ ▪ 8c7fe64 Gallery2: Support GIF animation
+ ▪ b923c25 Gallery2: Increase the size of the tiles when decoding images
+ ▪ ccaf2e4 Gallery2: Support the newly added media file types in MTP mode
+ ▪ ebce130 Gallery2: Fix use of uninitialized stack variables
+ ▪ 1fbe342 Gallery2: Remove unused renderscript class
+ ▪ 40fe6d2 Gallery2: Fix spelling error
+ ▪ 5a0501d Gallery2: Properly declare the own permissions
+ ▪ 9c69a82 Gallery2: Remove more possible NPEs
+ ▪ 4288cf9 Gallery2: Enable frames in the editor
+ ▪ 09a950e Gallery2: Remove slideshow option if there are only videos
+ ▪ 75e883a Gallery2: Remove 3D overscroll effect
+ ▪ 4cbaf64 Gallery2: Disable dummy starting window
+ ▪ 7aeaefc Gallery2: Fix up audio effects dialog
+ ▪ cc80b1b Gallery2: Everyone or no one
+ ▪ a0dc1b8 Gallery2: Replace hamburger menu with bottom bar
+ ▪ ae2d5c1 Gallery2: Change all share intents to chooser style
+ ▪ 1b893a4 Gallery2: Update menu
+ ▪ b091264 Gallery2: Update theme
+ ▪ 7eb847c Gallery2: Move & improve CAF strings
+ ▪ 81e24fe Gallery2: Make sure no NPE happens
+ ▪ 9c735ae Gallery2: Remove invalid comment from manifest
+ ▪ 5b0141c Gallery2: Cleanup renderscript flags in Android.mk
+ ▪ 108756a Gallery2: Reduce logspam in video player
+ ▪ e0c0ac0 Gallery2: Store DATE_TAKEN as milliseconds
+ ▪ bb16314 Gallery2: Modify AOSP EL translations
+ ▪ 3861e97 Gallery2: Remove CAF translations
+ ▪ 3bf31b2 Gallery2: Add record time to details view
+ ▪ c1cf324 Gallery2: Fix crash of gallery on showing details
+ ▪ 880d507 Gallery2: Fix crash when Bluetooth service is disabled
+ ▪ 2c75f40 Gallery2: Try to open existing camera
+ ▪ db84f5b Gallery2: New icon
+ ▪ 5f5c892 Gallery2: Bump minsdk and targetsdk version
+ ▪ 6587213 Gallery: FilterShowActivity: Fix loading spinner being show forever
+ ▪ 55bf17f Gallery: TileImageView: fix NPE
+ ▪ be9357b FaceDetect: Catch more linker errors during initialization
+ ▪ 8beb6f9 FaceDetect: Catch linker errors during initialization
+ ▪ ea5a309 Bump API to match dependencies.
+ ▪ 1a3f292 Add missing includes.
+ ▪ 5c74612 Cleanup warnings in jni.
+ ▪ b7d08f9 Fix misc-macro-parentheses warnings in Gallery2.
+ ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
+ ▪ 69f87c4 Rename app back to Gallery
 
  ▪ project packages/apps/Settings/
-
- ▪ project vendor/cm/
- ▪ d235a41 Update Changelog
+ ▪ 648e102 MSIM: Fix user set DDS sub in hotswap cases.
+ ▪ 5a56b01 Allow to disable battery light when in DND mode[2/2]
 
