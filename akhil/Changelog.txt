@@ -64,6 +64,12 @@
  ▪ 5ea6f1c vendor:Add sysfs permissions for pocket bridge
  ▪ 2771188 pa: Add pocket judge selinux policy
 
+ ▪ project vendor/oneplus/
+ ▪ 2ad6aea onyx: Update hci_qcomm_init from bacon
+
+ ▪ project vendor/samsung/
+ ▪ 353fbc3 apq8084-common: update blobs to latest (last?) G901FXXU1CQE3
+
  ▼ 08/05/2017
 
 
@@ -78,6 +84,9 @@
  ▪ project packages/apps/Settings/
  ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
  ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
+
+ ▪ project vendor/motorola/
+ ▪ 68a2007 msm8916-common: move gps.conf to device
 
  ▪ project vendor/xiaomi/
  ▪ 7960020 msm8956-common: Decommonize time service blobs
@@ -95,6 +104,9 @@
 
  ▪ project hardware/qcom/media-caf/msm8994/
  ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+
+ ▪ project hardware/samsung/
+ ▪ 2a40024 secril-client: close fds on I/O errors
 
  ▪ project packages/apps/AudioFX/
 
@@ -160,6 +172,9 @@
  ▼ 08/02/2017
 
 
+ ▪ project device/samsung/smdk4412-common/
+ ▪ 7fa112b smdk4412-common: camera: Handle preview_video_size seperately
+
  ▪ project kernel/lge/hammerhead/
  ▪ dbd1c67 ASoC: msm-lsm-client: free lsm client data in msm_lsm_close
  ▪ 7744f14 ASoC: msm: qdsp6v2: check param length for EAC3 format
@@ -194,6 +209,9 @@
 
  ▼ 07/31/2017
 
+
+ ▪ project hardware/samsung/
+ ▪ fb5669e power: Keep boost fd opened as well
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 7d9cfb4 Merge "msm: ipa: prevent string buffer overflows"
@@ -247,4 +265,7 @@
  ▪ b7d08f9 Fix misc-macro-parentheses warnings in Gallery2.
  ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
  ▪ 69f87c4 Rename app back to Gallery
+
+ ▪ project vendor/samsung/
+ ▪ 4c38820 hltechn: Initial blob import
 
