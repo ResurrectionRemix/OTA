@@ -248,6 +248,3 @@
  ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
  ▪ 69f87c4 Rename app back to Gallery
 
- ▪ project vendor/xiaomi/
- ▪ 57a46a7 mido: Update blobs
-
