@@ -12,6 +12,14 @@
  ▪ 6d9dc32 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
 
  ▪ project frameworks/base/
+ ▪ 509aaf9 AppOps: Fix yet another deadlock
+ ▪ 7dbfbeb Frameworks Cleanups
+ ▪ 10874b8 pocket: introduce pocket bridge
+ ▪ 42af8ad policy: introduce pocket lock
+ ▪ abd6b0e pocket: introduce pocket judge
+ ▪ 9c2bc7e base: Introduce Accidental Touch
+ ▪ 5a0945c frameworks: PIE 3.0 (nougat)
+ ▪ 4df7925 Revert "Forward Port: PIE 3.0 (1/2)"
 
  ▪ project kernel/oneplus/msm8996/
  ▪ a42567a oneplus3: regenerate defconfig
@@ -43,6 +51,18 @@
  ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/Settings/
+ ▪ 3701c92 Dslv: Fix FC when adding duplicate shortcuts
+ ▪ c1348a0 Settings:Add preference for pocket judge [2/2]
+ ▪ e090493 PieSettings: Add support for Pie Gravity
+ ▪ 9749d2d ButtonsSettings: Add preference for Accidental Touch
+ ▪ 5fd64be Update PIE settings to 3.0
+
+ ▪ project vendor/cm/
+ ▪ f869205 Bump version to 5.8.4
+ ▪ 8272685 vendor: Fix a user profile data denial
+ ▪ be1cf97 vendor: Add selinux policy for pocket bridge
+ ▪ 5ea6f1c vendor:Add sysfs permissions for pocket bridge
+ ▪ 2771188 pa: Add pocket judge selinux policy
 
  ▼ 08/05/2017
 
@@ -55,7 +75,26 @@
  ▪ 743eb8b msm8956: Decommonize time service blobs
  ▪ 02b7712 msm8956: Remove modem assertion check
 
+ ▪ project packages/apps/Settings/
+ ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
+
+ ▪ project vendor/xiaomi/
+ ▪ 7960020 msm8956-common: Decommonize time service blobs
+
+ ▼ 08/04/2017
+
+
+ ▪ project frameworks/opt/telephony/
+ ▪ b1a8579 Telephony: Keep preferred SMS Sim
+
  ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ ec78924 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
 
  ▪ project packages/apps/AudioFX/
 
@@ -82,8 +121,7 @@
  ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/Settings/
- ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
+ ▪ 1bed82a Add Maintainer For Android One 1st gen. (sprout) (#832)
 
  ▪ project packages/apps/SetupWizard/
 
@@ -104,21 +142,6 @@
  ▪ project packages/providers/DownloadProvider/
 
  ▪ project packages/resources/devicesettings/
-
- ▼ 08/04/2017
-
-
- ▪ project frameworks/opt/telephony/
- ▪ b1a8579 Telephony: Keep preferred SMS Sim
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ ec78924 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
-
- ▪ project packages/apps/Settings/
- ▪ 1bed82a Add Maintainer For Android One 1st gen. (sprout) (#832)
 
  ▪ project vendor/asus/
  ▪ 86bf0bd mofd: update houdini blobs from fugu n2g48b
@@ -146,8 +169,19 @@
  ▪ 6da174b Kconfig: msm: disable ultrasound driver
  ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
 
+ ▼ 08/01/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
+ ▪ 083e7f9 Eleven: Promote to privileged app
+ ▪ 5301693 Eleven: allow artwork to scale down
+
  ▪ project packages/apps/Gallery2/
  ▪ c88c572 Gallery2: Fix various issues and glitches
+
+ ▪ project packages/apps/Snap/
+ ▪ a206d75 Snap: fix low resolution front camera switch icon
 
  ▪ project vendor/lge/
  ▪ 0558e88 msm8996: Add tinyxml2_1 for UM5.7 SDM
@@ -158,34 +192,8 @@
  ▪ 0ae74c8 h870: Remove unused bcm4359 firmware
  ▪ 1080c0b g6: Add some camera postproc blobs
 
- ▼ 08/01/2017
-
-
- ▪ project packages/apps/Eleven/
- ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
- ▪ 083e7f9 Eleven: Promote to privileged app
- ▪ 5301693 Eleven: allow artwork to scale down
-
- ▪ project packages/apps/Gallery2/
- ▪ d74ca5a Gallery2: Fix potential crash
- ▪ 7e1b2d2 Gallery2: Switch to navigationbar from support libs
- ▪ 82b6848 Gallery2: Fix can't parse documents uri
-
- ▪ project packages/apps/Snap/
- ▪ a206d75 Snap: fix low resolution front camera switch icon
-
  ▼ 07/31/2017
 
-
- ▪ project frameworks/base/
- ▪ c4a83cf Allow to disable battery light when in DND mode [1/2]
- ▪ 20dce16 SystemUI: Store value of lockscreen media art
- ▪ 3dff8ca AppOps: Prevent deadlock when making note of applications
- ▪ 0e93f34 KernelCpuSpeedReader: Account for missing sysfs nodes
- ▪ 33c6d4f Revert "KernelCpuSpeedReader: Account for missing sysfs nodes"
- ▪ 6f93f57 slim recents: Be sure to catch all exceptions for startActivityFromRecents
- ▪ da27683 slim recents: Favlist creation: use HashSet instead of Arraylist
- ▪ c46b63c SystemUI: locked tasks should have a valid view
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 7d9cfb4 Merge "msm: ipa: prevent string buffer overflows"
@@ -200,6 +208,9 @@
  ▪ c0a71d1 BACKPORT: random32: add periodic reseeding
 
  ▪ project packages/apps/Gallery2/
+ ▪ d74ca5a Gallery2: Fix potential crash
+ ▪ 7e1b2d2 Gallery2: Switch to navigationbar from support libs
+ ▪ 82b6848 Gallery2: Fix can't parse documents uri
  ▪ eceb1ed Gallery2: Fix views overlap
  ▪ 8c7fe64 Gallery2: Support GIF animation
  ▪ b923c25 Gallery2: Increase the size of the tiles when decoding images
@@ -244,7 +255,6 @@
  ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
  ▪ 69f87c4 Rename app back to Gallery
 
- ▪ project packages/apps/Settings/
- ▪ 648e102 MSIM: Fix user set DDS sub in hotswap cases.
- ▪ 5a56b01 Allow to disable battery light when in DND mode[2/2]
+ ▪ project vendor/xiaomi/
+ ▪ 57a46a7 mido: Update blobs
 
