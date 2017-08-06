@@ -73,14 +73,6 @@
  ▼ 08/05/2017
 
 
- ▪ project device/xiaomi/kenzo/
- ▪ c9ffb05 kenzo: Add time service blobs
- ▪ 47d40e6 kenzo: Remove modem assert
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 743eb8b msm8956: Decommonize time service blobs
- ▪ 02b7712 msm8956: Remove modem assertion check
-
  ▪ project packages/apps/Settings/
  ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
  ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
@@ -88,11 +80,16 @@
  ▪ project vendor/motorola/
  ▪ 68a2007 msm8916-common: move gps.conf to device
 
- ▪ project vendor/xiaomi/
- ▪ 7960020 msm8956-common: Decommonize time service blobs
-
  ▼ 08/04/2017
 
+
+ ▪ project device/xiaomi/kenzo/
+ ▪ c9ffb05 kenzo: Add time service blobs
+ ▪ 47d40e6 kenzo: Remove modem assert
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 743eb8b msm8956: Decommonize time service blobs
+ ▪ 02b7712 msm8956: Remove modem assertion check
 
  ▪ project frameworks/opt/telephony/
  ▪ b1a8579 Telephony: Keep preferred SMS Sim
@@ -159,12 +156,14 @@
  ▪ 86bf0bd mofd: update houdini blobs from fugu n2g48b
  ▪ d314fc0 mofd: update bt/tele fw from 4.21.40.352 release
 
+ ▪ project vendor/xiaomi/
+ ▪ 7960020 msm8956-common: Decommonize time service blobs
+
  ▼ 08/03/2017
 
 
  ▪ project kernel/xiaomi/msm8956/
  ▪ 2b2ad6d Revert "Revert "ARM: dts: msm: update memory map for msm8976/8956/8952 for External release""
- ▪ c9cc7c1 Merge AU_LINUX_ANDROID_LA.BR.1.3.6_RB1.07.01.02.255.041 on remote branch
 
  ▪ project packages/apps/OmniSwitch/
  ▪ 31d0a4a Fixing a NullPointerException (#8)
@@ -182,10 +181,15 @@
  ▪ 9579dd3 ASoC: msm: qdsp6v2: fix possible integer overflow
  ▪ 44fb515 qdsp6v2: blacklist %p kptr_restrict
  ▪ 6da174b Kconfig: msm: disable ultrasound driver
- ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ c9cc7c1 Merge AU_LINUX_ANDROID_LA.BR.1.3.6_RB1.07.01.02.255.041 on remote branch
 
  ▼ 08/01/2017
 
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
 
  ▪ project packages/apps/Eleven/
  ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
