@@ -199,13 +199,6 @@
  ▪ 7d9cfb4 Merge "msm: ipa: prevent string buffer overflows"
  ▪ f32fe96 coresight: tmc: Fix use after free issue with tmc read
  ▪ 4af7ad8 msm: ipa: prevent string buffer overflows
- ▪ 333d490 random32: include missing header file
- ▪ 74b8ff0 ARM64: Wire up getrandom.
- ▪ 59eb1c1 BACKPORT: ARM: wire up getrandom syscall
- ▪ e437613 BACKPORT: random: Wake up all getrandom(2) callers when pool is ready
- ▪ f357699 BACKPORT: random: introduce getrandom(2) system call
- ▪ dae9c82 BACKPORT: random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized
- ▪ c0a71d1 BACKPORT: random32: add periodic reseeding
 
  ▪ project packages/apps/Gallery2/
  ▪ d74ca5a Gallery2: Fix potential crash
