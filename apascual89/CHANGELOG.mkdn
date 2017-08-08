@@ -1,8 +1,84 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/06/2017
+ ▼ 08/08/2017
+
+
+ ▪ project android/
+ ▪ ed7d67a cm.xml: sync caf 8998 hals
+ ▪ 59201a1 manifest: android-7.1.2_r24 -> android-7.1.2_r29
+
+ ▪ project build/
+ ▪ 401a4a1 Merge 7.1.2_r29 into nougat
+
+ ▪ project device/oneplus/cheeseburger/
+ ▪ 8a79207 Revert "op5: raise earpiece in-call volume, lower headphones music volume"
+ ▪ 76aedc6 cheeseburger: enable Slow Motion for Google Camera
+ ▪ abad480 op5: update blobs from OnePlus5Oxygen_23_1708032241
+
+ ▪ project external/skia/
+ ▪ 08bdeaf Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/av/
+ ▪ 3a63a17 Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/base/
+ ▪ e56d646 FWB: Sensor block per-package switch (1/2)
+ ▪ a8e139f SystemSensorManager: sensor block per-package
+ ▪ 5966600 base: Update flags for edge gesture service from AOSPA
+ ▪ 5029476 Silence a memory leak warning from the static analyzer
+ ▪ 88fd564 GC in heapDumpFinished to cleanup hprof fd
+ ▪ 9b11fe2 Add null check for Wi-Fi command
+ ▪ 9b8df66 Fix static analyzer complaints
+ ▪ 3a939a6 Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/native/
+ ▪ f298a32 Merge 7.1.2_r29 into nougat
+
+ ▪ project frameworks/opt/net/wifi/
+ ▪ 1f8fc74 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 7fcca3e Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 9dbd062 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 34f4914 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ e248666 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ 0d8579c Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 9dcddd7 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 5b12547 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ c519e1a Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ a4f1bc5 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project packages/apps/Jelly/
+ ▪ f20c0a4 Jelly: Add Yandex search engine
+
+ ▪ project packages/apps/Settings/
+ ▪ 9f245e7 Settings:Sensor block per-package switch[2/2]
+
+ ▪ project system/bt/
+ ▪ 80cca31 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
+
+ ▪ project vendor/oneplus/cheeseburger/
+ ▪ 270eb63 op5: update to OnePlus5Oxygen_23_1708032241
+
+ ▼ 08/07/2017
 
 
  ▪ project device/oneplus/cheeseburger/
@@ -10,547 +86,14 @@
  ▪ aedb2d5 cheeseburger: add missing aanc_tuning_mixer config
  ▪ 01a0493 cheeseburger: audio: fix acdb id for handset
  ▪ 30ebcb2 media_codecs: include ffmpeg codecs
- ▪ ca2b53a cheeseburger: init: create oemnvitems for RIL
 
- ▪ project device/oppo/common/
- ▪ 0743d70 common: Hide configpanel and keyhandler for OnePlus
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 6b6f3b3 Stats: RR v5.8.4
 
- ▪ project frameworks/base/
- ▪ 509aaf9 AppOps: Fix yet another deadlock
- ▪ 7dbfbeb Frameworks Cleanups
- ▪ 10874b8 pocket: introduce pocket bridge
- ▪ 42af8ad policy: introduce pocket lock
- ▪ abd6b0e pocket: introduce pocket judge
- ▪ 9c2bc7e base: Introduce Accidental Touch
- ▪ 5a0945c frameworks: PIE 3.0 (nougat)
- ▪ 4df7925 Revert "Forward Port: PIE 3.0 (1/2)"
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
- ▪ 3701c92 Dslv: Fix FC when adding duplicate shortcuts
- ▪ c1348a0 Settings:Add preference for pocket judge [2/2]
- ▪ e090493 PieSettings: Add support for Pie Gravity
- ▪ 9749d2d ButtonsSettings: Add preference for Accidental Touch
- ▪ 5fd64be Update PIE settings to 3.0
+ ▪ project packages/services/OmniJaws/
+ ▪ 271b581 Update config.xml
+ ▪ 3f47dbd Use our key
 
  ▪ project vendor/cm/
- ▪ f869205 Bump version to 5.8.4
- ▪ 8272685 vendor: Fix a user profile data denial
- ▪ be1cf97 vendor: Add selinux policy for pocket bridge
- ▪ 5ea6f1c vendor:Add sysfs permissions for pocket bridge
- ▪ 2771188 pa: Add pocket judge selinux policy
-
- ▼ 08/05/2017
-
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 44957e1 op5: protobuff supported
- ▪ ec36175 OP5: Some more sepolicy fixes
- ▪ 3dbde0b :hamburger: : Address some more sepolicy denials
- ▪ 12ef4b3 op5: Correct sepolicy for common OneplusPocketMode
- ▪ eb86f7f op5: Use common path for fpc proximity state reporting
- ▪ c3c3dd4 op5: add pocketmode to prevent unexpected fingerprint unlocking fails
- ▪ b70f08a op5: introduce device/oneplus/common
- ▪ 779136c Revert "op5: Add pocketmode app"
-
- ▪ project device/oneplus/common/
- ▪ f6a8d1e mokee --> cyanogenmod
-
- ▪ project kernel/oneplus/msm8998/
- ▪ 733f9ae lineage defconfig
- ▪ 2faf81f arm64: update defconfig based on msmcortex-perf
-
- ▪ project packages/apps/Settings/
- ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
-
- ▪ project vendor/oneplus/
- ▪ 22668ee Add libbthost_if.so from OOS 4.5.6
- ▪ c759629 Import stuff from OnePlus5Oxygen_23_OTA_011_all_1707192021_eb641c6f
-
- ▼ 08/04/2017
-
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ ec78924 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
-
- ▪ project kernel/oneplus/msm8998/
- ▪ 81432d6 qcacld-3.0: Squash to LA.UM.5.7.r1-09300-8x98.0
- ▪ 39091ce Merge tag 'LA.UM.5.7.r1-09300-8x98.0' into mkn-mr1
- ▪ 34087df Merge tag 'LA.UM.5.7.r1-09100-8x98.0' into wip/mkn-mr1/caf
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Settings/
- ▪ 1bed82a Add Maintainer For Android One 1st gen. (sprout) (#832)
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project vendor/asus/
- ▪ 86bf0bd mofd: update houdini blobs from fugu n2g48b
- ▪ d314fc0 mofd: update bt/tele fw from 4.21.40.352 release
-
- ▼ 08/03/2017
-
-
- ▪ project device/oneplus/common/
- ▪ 3f0a79e pocketmode: Only listen for screen state if proximity check is enabled
-
- ▪ project frameworks/opt/telephony/
- ▪ b1a8579 Telephony: Keep preferred SMS Sim
-
- ▪ project kernel/oneplus/msm8998/
- ▪ 43f8d99 Merge tag 'LA.UM.5.7.r1-08900-8x98.0' into wip/mkn-mr1/caf
-
- ▪ project packages/apps/OmniSwitch/
- ▪ 31d0a4a Fixing a NullPointerException (#8)
-
- ▼ 08/02/2017
-
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 3c14ce1 op5: Unpin RIL native blobs
- ▪ c77b921 Revert "op5: update SHA-1 of qti-telephony-common.jar"
- ▪ cfa53eb op5: re-import ril header from op3 to avoid SIM_IO segfaults
-
- ▪ project device/oneplus/common/
- ▪ e420fe6 pocketmode: Only listen for proximity changes if fingerprint enrolled
- ▪ 208bdff pocketmode: fix typo content -> context
-
- ▪ project vendor/oneplus/
- ▪ 39bf79c Merge branch 'cm-14.1' of https://github.com/apascual89/proprietary_vendor_oneplus into cm-14.1
- ▪ fca401b op5: switch back to OnePlus RIL (native libs only)
- ▪ 0ea7b19 Revert "op5: hack to preserve user choice for primary data SIM"
-
- ▼ 08/01/2017
-
-
- ▪ project kernel/oneplus/msm8998/
- ▪ b7a2536 mdss: Remove unused night mode and reading mode declarations
- ▪ 9faa800 mdss: fix a bug that color profile gets lost
- ▪ 1bdad45 mdss: switch color mode in one node
- ▪ 226f785 mdss: format before change
- ▪ 01b1429 qpnp-haptic: make its strength adjustable in VibratorHW
- ▪ f524d79 qpnp-haptic: format before doing any changes
- ▪ 6ab8290 fpc1020: Use procfs path for disabling
- ▪ 3f062be misc: fpc1020: Wait for uevent to send before exiting IRQ handler
- ▪ 23b09ab misc: fpc1020: Simplify proximity shut-off
- ▪ 95e1e0d misc: fpc1020: Honor proximity state
- ▪ b625bd1 misc: fpc1020: Increase fingerprintd nice value when screen is off
- ▪ 018c135 misc: fpc1020: Clean up interrupt handler
- ▪ 29d325d misc: fpc1020: Set fingerprintd priority to max when screen is off
- ▪ 3e5cf30 misc: fpc1020: Report key input when interrupt is fired with screen off
- ▪ 0817757 misc: fpc1020: Clean up PM routines and move them into dedicated worker
- ▪ 82551b1 input: fpc1020: reduced gpio reads during determining fpc sensor
- ▪ 2c5ce67 input: fpc1020: format all the OnePlus stuffs
- ▪ 2faf1da tri-state-key: Clean up for the new Awesome Alert Slider
- ▪ 823e53a input: tri-state: rewritten tri-state-key driver
- ▪ 3061917 input: synaptics: s3320: moved proc node "key_swap" for compatibility
- ▪ cbfe084 input: synaptics: s3320: refactored button handling logics
- ▪ b22776b input: synaptics: s3320: set the missing bits for all gestures
- ▪ 8cd29f9 input: synaptics: s3320: use different keycode for up and down arrow
- ▪ 55ed942 input: synaptics: s3320: hardcoded input_dev->name to "synaptics"
- ▪ cb68c68 input: synaptics: s3320: use proc nodes instead of bits for gesture toggling
- ▪ 9bb3876 input: synaptics: s3320: refactored gesture toggling logic
- ▪ 0a11d47 input: synaptics: s3320: format all the fucking code
- ▪ fa31895 input: synaptics: s3320: Silence log spam
- ▪ b016171 input: synaptics: Report nanosecond timestamps to improve accuracy
- ▪ 551f49d input: add new input event code to pass timestamp to userspace
- ▪ d902ed2 defconfig: make qcacld-3.0 a module
- ▪ 215f25d defconfig: enable qcacld-3.0
- ▪ 4238d24 staging: Import fw-api, aca-wifi-host-cmn required by qcacld-3.0
- ▪ 8ab03c3 staging: qcacld-3.0: Add to Makefile, remove unused Android.mk
- ▪ 01ac750 staging: qcacld-3.0: Import LA.UM.5.7.r1-08400-8x98.0
- ▪ f588789 defconfig: don't reboot to eload mode when panic
- ▪ c72204d power: fix undefined errors when CONFIG_QCOM_DLOAD_MODE is off
- ▪ 1de022f include/uapi/linux/if_pppox.h: include linux/if.h
- ▪ 71dc5ad netfilter: fix include files for compilation
- ▪ 8ac3e9c defconfig: regenerate from msmcortex-oqc_defconfig
- ▪ 361e98c Synchronize codes for OxygenOS 4.5.5 The changes list: fix "zizi" noise  when calling at some of device *
- ▪ f9ca68d fix some bugs
- ▪ 16d5064 [All][community] add for community
- ▪ 153492c osq_lock: fix osq_lock queue corruption
- ▪ 751dfc4 [16859]: [BSP]POWER键会概率性的出现，上报一次up事件之后，很短时间（ms级别）内会跟着上报一次up事件或down事件。
- ▪ 3cdfa5a [16859]:[BSP][Stability][bugid] [PATCH] arm64: spinlocks: implement smp_mb__before_spinlock() as smp_mb()
- ▪ 77f02c2 [16859]:[Camera][CBG-12272] fix NPE
- ▪ 55e8447 [16859]:[BSP][charge][N/A] 修改函数返回错误
- ▪ e3d743e [16859]: close dynamic_debug
- ▪ cd52cff [16859]:[MultMedia][Audio][CBG-11699] 添加高通的patch，防止耳机播放无声
- ▪ 76ebc9b [16859]:[Connectivity][WIFI] correct the tx power in mission mode
- ▪ d379234 btfm: Don't program multi channel registers in wcn3990 for SCO
- ▪ 423df11 [16859][BSP][Perf/Power]:CBG-11638 close IPA clock remains on when Application Processor goes to suspend, and remains on during suspend time
- ▪ 1c23153 [16859]:[BSP][CHARGE][CBG-11319] Fix C2C swap failed with Pixel
- ▪ c8a0b87 [16859]:[BSP][charge][CBG-11364]高电量插入快充适配器进入关机充电不显示闪电图标
- ▪ c7c1eda [16859]:[BSP][charge][N/A]增加电池state of health节点
- ▪ 9446ce3 [16859]:[bsp][patch] update nfc patch for  resovle guangzhou subway kiosks get error when screen is off
- ▪ 309ae06 [16859]:[BSP][charge][N/A]快充开关被重复触发
- ▪ ac91bbb [16859]:[MM][Display]Modify the SRGB DCI-P3 paraments for more accuracy color
- ▪ 2a78965 net: neigh: guard against NULL solicit() method
- ▪ 3bdfc9c [16859]:[Connectivity][WIFI] Modify parameters for scan AP number
- ▪ 79ddeb8 [16859]:[BSP][Stability][CBG-11371] msm: camera: isp : Fix race condition in close sequence
- ▪ 144b62d [16859]:[BSP]add PVT1 information
- ▪ f9fe431 [16859]:[MultMedia][Audio][CBG-11563] 修改苹果耳机识别慢的问题
- ▪ 813d014 [16859]:[BSP][charge][N/A]老化试验中非标充检测设置电流为1A
- ▪ 9233205 [16859]:[BSP][charge][N/A]probe 的时候完成电量计在位判定
- ▪ bdd0834 [16859]:[BSP][charge][N/A]连续待机时间很长的情况下同意电量超过1%递减
- ▪ 2bfdcef [16859]:[BSP][charge][N/A]增加充电使能这个判断条件，避免vbus拉低后不能恢复充电的修复方案被误触发
- ▪ 5314386 [16859]:[BSP]Add checking auto lra resonant_frequency detect error machining,modify 15% to 5%
- ▪ fb71908 [16859]:[Camera] 更新IMX398和IMX350 driver IC PID
- ▪ d9c8a12 [16859]:[bsp][patch] CBG-11313 fix tp crash
- ▪ edefe91 [16859]:[BSP][CONFIG][bugid] Disable Cache corretable config and remove CONFIG_DEBUG_VM cherry-pick from https://pgerrit.oneplus.cn:8090/#/c/140487/
- ▪ 72e4071 [16859]:[BSP][charge][N/A] 针对高电量没有快充请求
- ▪ 842b278 [16859][Connectivity][Bluetooth][CBG-6938]: Fix no audio from bt,CR\2027268
- ▪ d59ffd9 [16859]:[MM][Display]disable mdss xlog for cherry-pick to mp version
- ▪ 03e78a6 [16859]:[MM][Display]add qcom patch for mdp clk setting warning
- ▪ cd36a64 [16859]:[BSP][charge][CBG-10316]模拟用户老化设置iusb 900ma[1/2]
- ▪ 75bb654 [16859]:[MM][Display]再次修改阅读模式下的画面偏红的问题
- ▪ f7c7e49 [16859]:[bsp][patch]  only if we enable dump , dm-verity device corrupted  painc. don't effect normal mode .this will cause endless loop
- ▪ c9a54c4 [16859]:[MM][Display]修改夜间模式和阅读模式的底层效果使得看起来偏红的问题有所改善
- ▪ 9072bcd [16859]:[BSP][CBG-10031] add debug code for modem crash issue
- ▪ 8f4d04a [16859]:[Connectivity][WIFI] add wlan firmware version extended sub ID (1/2)
- ▪ ee16786 [16859]:[BSP]sdcardfs: Fix CASE INSENSITIVE issue
- ▪ 76bdd9a [16859]:[BSP]sdcardfs: Fix CTS issue
- ▪ dce1346 [16859]: [BSP][stability][CBG-9998][PATCH] defconfig: msm8998: Use RCU_NOCB for RCU subsystem
- ▪ 27ce1a2 [16859]:[BSP]sdcardfs: Change to test version (2/2)
- ▪ 60a52e0 Revert "[16859]:[bsp/connectivity][bsp][patch] add nfc hw check in probe , if can't i2c read/write. we don't register /dev/pn544"
- ▪ 14cf749 msm: camera: isp: Fix excessive logging in w+t
- ▪ b3a1896 [16859][Camera][QCTPATCH] msm: camera: isp: Detect dual camera out of sync using time
- ▪ 56bf12a [16859]:[BSP][charge][CBG-10316]老化试验插着适配器耗电到0%[2/2]
- ▪ e0f1cad 16859]:[BSP][charge][CBG-1331] 高电量插入vooc charger开机没有快充图标
- ▪ 304c227 [16859]:[BSP][charge][CBG-10354]没有APSD的中断
- ▪ 352632a [16859]:[BSP][charge][CBG-10430] 充电wakelock没有释放
- ▪ 0c1d700 [16859]:[BSP][charge][CBG-8881]99%的时候显示绿色灯
- ▪ 3b456b5 [16859]:[bsp][patch] qrd patch  case id 02917485
- ▪ e483f561 [16859]:[BSP][charge][CBG-10316]老化试验插着适配器耗电到0%
- ▪ 0dab33f [16859]:[BSP] vfs: move permission checking into notify_change() for utimes(NULL)
- ▪ 8e700d0 [16859]:[BSP][CHARGE][CBG-7485] Fix slow SRC & SNK (1/2)
- ▪ c998d8d [16859]: add timer to open and close lpm mode
- ▪ 9d11671 [16859]:[BSP][CBG-10007] sdcardfs: Fix NULL pointer issue
- ▪ a5aa57e [16859]:[BSP][Stability][bugid] Update oqc config information and disable CONFIG_CORESIGHT_SOURCE_ETM4X
- ▪ 6e12a56 [16859]:[MultiMedia][Audio]打高通patch:0053-USB-f_audio_source-Use-different-names-for-multi-ins.patch
- ▪ 9255e27 [16859]:[MultiMedia][Audio]打高通patch:0069-msm-ADSPRPC-Initialize-the-list-for-global-gfa-maps.patch
- ▪ 27f53d2 [16859]:[MultiMedia][Audio]打高通patch:0027-msm-ADSPRPC-Null-check-for-file-session-context.patch
- ▪ 138e635 [16859]:[MultiMedia][Audio]打高通patch:0084-soc-qcom-fix-to-avoid-multiple-memory-allocations.patch
- ▪ 631af4e [16859]:[MultiMedia][Audio]打高通patch0026-msm-ADSPRPC-Handle-SSR-daemon-kill-for-audio-PD.patch
- ▪ 1a4ff66 [16859]:[MultiMedia][Audio]回退高通195.2 kernel的patch
- ▪ 83cb957 [16859]:[MultiMedia][Audio]回退高通195.2 adsprc的patch
- ▪ ee495e1 [16859]:[BSP][charge][N/A]退出快充，如果VBus读取到大于2.5v打印pmic 寄存器
- ▪ b823597 [16859]:[BSP][charge][N/A]disable slow plugin timeout irq
- ▪ c42af5a msm: ipa: return error on channel setup failure
- ▪ 3261ed0 [16859]:[BSP][charge][N/A]刷机第一次开机usb枚举的时间靠后导致非标检测触发。
- ▪ 884c701 [16859]:[BSP][charge][CBG-9809/CBG-7032]老化试验耗电到关机
- ▪ 80fbb95 [16859]:[MultMedia][Audio] 添加ftm对skp的pa通信测试功能
- ▪ dd7e949 [16859]:[BSP][Stability][Config] Disable CONFIG_FORCE_ALLOC_FROM_DMA_ZONE
- ▪ 6867b6b [16859]:[kernel][DEFCONFIG]Modify kernel config and remove useless
- ▪ e6f5275 [16859]: add ufp bit to judge this condition
- ▪ 7f2272d [16859]:[BSP][Stability][bugid] Fix camera bug. In msm_isp_enqueue_tasklet_cmd function, if queue_cmd->cmd_used is not NULL, then function don't unlock vfe_dev->tasklet_lock.
- ▪ 3e0557b [16859]:[BSP]mm: separate out the invocation of lowmemorykiller shrinker
- ▪ 0beba5d [16859]:[BSP][PATCH] lowmemorykiller: fix scan_mutex contention
- ▪ 5234701 [16859]: for synaptics resume sequential
- ▪ f466ceb [16859]: [PATCH]disable the PBS RAM WA in UFP mode
- ▪ 46201cb [16859]:[BSP][CHARGE][CBG-9507] Fix NULL firmware version
- ▪ 606edbe [16859]:[BSP][charge][N/A]ageing boot 中插上适配器50分钟dump一次pmic的寄存器。默认6s打印一次电池信息
- ▪ ef36cfb [16859]:[bsp/connectivity][bsp][patch] default close printk this log
- ▪ 3caf5d4 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0050-msm-sde-Protect-concurrent-access-to-resources-in-SD.patch
- ▪ b710eb9 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0042-core_ctl-Bail-out-early-from-the-boost-API-when-core.patch
- ▪ c881d2a [16859]:[bsp/connectivity][bsp][patch] qcom patch 0047-arm64-kaslr-Fix-up-the-kernel-image-alignment.patch
- ▪ d137076 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0057-pinctrl-lpi-Avoid-initial-SSR-notifications-at-bootu.patch
- ▪ 569aa4e [16859]:[bsp/connectivity][bsp][patch] qcom  patch 0041-core_ctl-Add-a-kernel-parameter-to-disable-core_ctl.patch
- ▪ 6fc1c17 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0048-arm64-kaslr-use-callee-saved-register-to-preserve-SC.patch
- ▪ 94dbb20 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0059-ion-ion_system_heap-Fix-null-pointer-dereference.patch
- ▪ f8b09fc [16859]:[bsp/connectivity][bsp][patch] qcom patch 0037-UPSTREAM-arm64-avoid-TLB-conflict-with-CONFIG_RANDOM.patch
- ▪ f5dbc52 [16859]:[bsp/connectivity][bsp][patch] add qcom patch 0022-soc-qcom-spcom-spcom_device_read-check-filp-private_.patch
- ▪ 89ba90d [16859]:[BSP]第二资源单独使用DTSI
- ▪ a55cb7a [16859]:[BSP]添加cpu fearure_id,用以区分cpu批次[1/4]
- ▪ c9ba690 [16859]:[BSP] add *##*37847# touch key info
- ▪ 802f97e [16859]:[bsp/connectivity][bsp][patch] qcom patch 0130-msm_11ad-copy-FW-crash-dump-before-starting-SSR-flow.patch
- ▪ b9f3766 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0133-soc-qcom-spcom-lock-ion-buf-decrement-ref-count-if-n.patch
- ▪ 9f847bc [16859]:[bsp/connectivity][bsp][patch] qcom patch 0153-soc-qcom-spcom-validate-rx_buf-in-spcom_rx-before-us.patch
- ▪ 9709b4c [16859]:[bsp/connectivity][bsp][patch] qcom patch 0105-pmic-voter-move-to-common-header-location.patch
- ▪ b7258da [16859]:[bsp/connectivity][bsp][patch] qcom patch 0136-qpnp-revid-move-pmi8998-and-pm660-FAB_ID-definitions.patch
- ▪ 10fcf35 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0145-msm-sde-Avoid-use-of-uninitialized-variable.patch
- ▪ fd5369e [16859]:[bsp/connectivity][bsp][patch] qcom patch 0149-msm-thermal-dev-Protect-IOCTL-from-race-condition.patch
- ▪ b7fd538 [16859]:[BSP][CBG-9461] delete default-trigger ,all the control logic denpends on android level code
- ▪ dc502a2 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0108-iio-adc-tadc-fix-leakage-problem.patch
- ▪ 383c2e6 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0127-diag-Fix-race-condition-while-accessing-mdlog-sessio.patch
- ▪ 672a77b [16859]: [BSP][stability] enable pmsg feature
- ▪ 1fac284 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0068-soc-qcom-pil-Explicitly-clear-the-subsystem-loading-.patch
- ▪ 96e6f7a [16859]:[bsp/connectivity][bsp][patch] qcom patch 0075-diag-Add-support-for-header-untagging.patch
- ▪ 7db20c1 [16859]:[bsp/connectivity][bsp][patch] qcom patch 0076-i2c-msm-v2-Create-rx-completion-object-for-dma-mode.patch
- ▪ 3e2840d [16859]:[bsp/connectivity][bsp][patch] qcom patch 0062-iio-qcom-rradc-Update-reading-battery-ID-channel.patch
- ▪ 6e7bf62 [16859]:[BSP][charge][CBG-9437/CBG-9266/CBG-7032/CBG-4995/CBG-3473/CBG-1331]没有快充请求问题
- ▪ 86f0005 [16859][BSP][Charge] QCOM patch 0091-qcom-smb-lib-float-D-D-before-running-APSD-at-init.patch
- ▪ e3c12b2 [16859]:[BSP][charge][N/A]充电器电压降低到4.2v在回归到5v的场景，多次反复操作。也能实现充电
- ▪ e83d73b [16859]:[BSP][charge][CBG-9307]插入适配器15s后检测如果没有apsd的结果，那么打印pmic寄存器，并且重新触发apsd
- ▪ fc3d775 [16859]: [BSP][stability] 死机时保存pstore信息到minidump分区
- ▪ 7fb84f6 [16859][kernel]make sure all the thread could be wake up when needly
- ▪ 135b835 [16859]:[BSP][charge][N/A]充电器电压降低到4.2v在回归到5v的场景，多次反复操作。也能实现充电
- ▪ 173b5a6 [16859]:[BSP][charge][N/A]插着适配器50分钟打印一次pmic register，解决无usb连接的时候vbus打印负数log
- ▪ a86b36b [16859]: [BSP][ddr] 添加ddr工艺制程信息到project info中
- ▪ a8c9784 [16859]:[BSP][charge][CBG-8881]当充电已经截止，电量不是100%，有适配器插入的情况下20s增长一个百分比
- ▪ 4ab4933 [16859]:[BSP][charge][N/A]充电器电压降低到4.2v在回归到5v的场景，多次反复操作。也能实现充电
- ▪ ebd9f7b [16859]:[BSP][charge][CBG-9190]快充开关没切换
- ▪ c6da0b2 [16859][BSP][Charge]0112-qpnp-fg-gen3-prime-CC_SOC_SW-when-capacity-learning- .patch
- ▪ f6a025f [16859][BSP][Charge] PATCH 139/162] qpnp-fg-gen3: use IMA single mode for pm660 fuelgauge
- ▪ ed68bd5 [16859][BSP][Charge]0138-qcom-fg-memif-add-support-for-using-IMA-single-mode .patch
- ▪ 30f7d25 [16859][BSP][Charge] 0110-power-qpnp-fg-gen3-allow-negative-Rconn-configuratio.patch
- ▪ cfd84a2 [16859][BSP][Charge] 0111-qpnp-fg-gen3-fg-memif-Clear-CLEAR_LOG-bit-in-DMA_CTL.patch
- ▪ a1ca43f [16859][BSP][Charge] 0093-qpnp-fg-gen3-Fix-adjusting-recharge_soc-after-charge.patch
- ▪ 52c8e12 [16859][BSP][Charge] QCOM patch 0090-power-qcom-smb-lib-enable-HVDCP-auth-IRQ-before-APSD.patch
- ▪ d5ff82b [16859][BSP][Charge] QCOM patch 0089-supply-qcom-battery-re-split-FCC-when-ICL-changes.patch supply: qcom: battery: re-split FCC when ICL changes
- ▪ 82781b0 [16859]:[BSP][charge][CBG-8422]USB 开关被误切换
- ▪ 7ed0c19 [16859]:[BSP][charge][N/A]仅仅提供老化调试用。6s打印vbus电压
- ▪ f0e5b0b [16859]:[BSP][charge][N/A]仅仅提供老化调试用。老化试验不充电问题dump pmic 寄存器
- ▪ 0c7b33c [16859][BSP][Perf/Power]:disable ESR measurement
- ▪ 61a3f31 [16859]: [BSP][stability] AP死时机保存KMSG,RPM等信息到minidump分区
- ▪ 36d1a9f [16859]: [BSP][CBG-6341][PATCH] soc: qcom:glink_smem_native_xport: Check smem item in non cache region
- ▪ daa51d5 [16859]:[MM][Display][CBG-6682]msm: sde: Fix kernel crash after stop streaming timeout
- ▪ cff2dfc [16859]:[Multimedia][audio] 高通patch合入kernel
- ▪ 74c5abf msm: ipa: Fix to reset the sticky_rear flag
- ▪ c6a7bfc msm: ipa: add retry to channel stop
- ▪ 28b3660 msm: ipa: Fix to reset the sticky_rear flag
- ▪ 5f572a1 msm: ipa: send filter notify req when client disconnects
- ▪ 31ad803 USB: u_data_ipa: Fix the issue that may return uninitialized value
- ▪ c524ae5 [16859]:[MM][Display]去除显示这边之前调试效果用的代码
- ▪ 345286d [16859]:[MM][Display]去掉冗余的不需要的代码[1/2]
- ▪ 05e3b7d [16859]:[BSP]add PVT information
- ▪ 2dec947 [16859]: rery power role after power role set fail
- ▪ 2d7c645 [16859]:[BSP][TP][OOS-1304]Support gesture in doze mode
- ▪ 9a6b613 [16859]:[BSP][POWER_KEY][CBG-7627]workaround for the two power-key up issue
- ▪ b1b4388 [16859][BSP][Perf/Power]:Speed up TMP data transfer rate
- ▪ 956e20e [16859]:[MM][Display]Move display panel on cmds after first frame update
- ▪ bd7f6eb [16859]:[MM][Display]merge qcom patch for new baseline
- ▪ 07b2017 [16859]:[BSP][CHARGE][CBG-4647] Fix 6P can't charge our device
- ▪ 9959bc7 [16859]:[bsp/connectivity][bsp][patch] fix printk warning message . this file will probe twice . so we will add a check flag
- ▪ 572e0f8 [16859]:[MM][Display][CBG-7292 CBG-8059 CBG-8089][Apply Qualcomm patch] Increase the kgsl memstore size, then the total number of supported kgsl context is increased a lot.
- ▪ 7811272 [16859]:[BSP][PATCH 039/162] security: pfe: Adapt ICE engine setup call for eMMC
- ▪ 9912c72 [16859]:[BSP][PATCH 117/162] fs: fat: ratelimit the IO errors
- ▪ 2231bf9 [16859]:[BSP][charge][CBG-7963]关机耗时太长
- ▪ 69e70ac Revert "[16859]:[bsp/connectivity][bsp][patch] fix print  warning  message"
- ▪ 28a3ece [16859]:[BSP] add DTSI files for pvt  support
- ▪ eae081c [16859]: colse the dule power role when handle typc remove
- ▪ 8cca0513 [16859]: [PATCH 012/162] soc: qcom: glink_smem_native_xprt: Wakeup tx thread in deferred function
- ▪ 2baf8c5 [16859]: [PATCH 015/162] usb: phy: qmp: Add support for fpc re-drive chipset
- ▪ 991a1e2 [16859]: [PATCH 054/162] USB: qdss: Fix NULL pointer deference issue during QDSS transfers
- ▪ 344efc5 [16859]: [PATCH 080/162] usb: gadget: configfs: Replace strncpy with strlcpy
- ▪ 0235266 [16859]:[BSP][charge][CBG-5501/CBG-8365] power source异常导致不能充电
- ▪ c3ef60f [16859]:[BSP][PATCH 154/162] scsi: ufs: prevent auto-hibern8 trigger during clock
- ▪ edee354 [16859]:ext4: don't BUG when truncating encrypted inodes on the orphan list
- ▪ 1ce2565 [16859]:[kernel][JTAG]Add kernel config for enable JTAG
- ▪ e262072 [16859]:[BSP]Remove hrtimer from td_enable to worker
- ▪ 52c4e9a [16859]:[BSP][Stability][N/A] Set scm_call2 memory alloc flag as GFP_NOIO
- ▪ 83cb59b [16859]: add for usb enum issue at first boot up
- ▪ e7b81af [16859]:[BSP][CHARGE][N/A] Fix OTG switch
- ▪ 0468295 [16859]:[BSP]increase MAX_RESERVED_REGIONS to 32 from 16 for reserved regions
- ▪ f3b76fc [8998]:[Camera] Fix incorrect merge and QC patch changed
- ▪ 2ca72c3 msm: isp: update logic to reject invalid frame
- ▪ 9995bde msm: camera: isp: Use single tasklet for dual vfe
- ▪ 30b341c msm: isp: Fix ping pong mismatch issue
- ▪ 2778692 msm: isp: fix bug in cfg_camif
- ▪ 1379007 msm: camera: isp: Set max address for stats write master
- ▪ 3b8c9e6 [8998]:[system][framework][CBG-7962]增加debuglog信息调试selinux重复加载问题(1/2)
- ▪ cd65acb icnss: Send FW CRASHED uevent only if driver is probed
- ▪ ebcbc81 icnss: Send FW Down indication to WLAN host driver
- ▪ e1cdba5 net: cnss_prealloc: add debugfs entry to check the memory status
- ▪ 9f91e59 icnss: Separate debug and verbose log
- ▪ b24e513 [16859]:[MM][Display] media: videobuf2: Remove WARN_ON from v4l2 for bytesused
- ▪ 6cf8bdc [16859]:[MM][Display]msm: mdss: fix validation checks for qseed3 params
- ▪ 6465529 [16859]:[BSP][CHARGE][N/A] Add OTG switch (1/2)
- ▪ 18babfa [16859]:[BSP][TP]Adjust the tp baseline for DVT
- ▪ 8450fcd [16859]:[filesystem][CBG-5752] Fix permission issue
- ▪ 90b8d40 [16859]:[MultMedia][Audio][CBG-2666]在通话的时候打开L21，以降低杂音。
- ▪ b61e5b6 msm: camera: isp: Fix stream on timeout in LPM
- ▪ bb4fe6e [16859]: add qcom CR2015561 patch
- ▪ e42b162 [16859]:[BSP][charge][N/A]标充电流改为1.5A
- ▪ 0769499 [16859]: modify the pre commit bug
- ▪ 83f68a9 [16859]:[BSP][charge][CBG-7032]针对7032bug加日志
- ▪ 69b8867 [16859]:[BSP][charge][CBG-7736]快充中断后重连
- ▪ 1c21971 [16859]:[BSP][Stability][CBG-7606] [PATCH]android/lowmemorykiller: change lowmem_scan mutex_lock
- ▪ 2268bab [16859]:[CBG-7433]Avoid access NULL pointer when insert/reject USB in poweroff charging
- ▪ 508e941 [16859]:[CBG-5338]If an inode stat is I_CLEAR, no need to __dentry_kill
- ▪ e1aeec1 [16859]:[BSP]add CONFIG_DEBUG_VM to find more bug
- ▪ 27e31f9 [16859]: [OOM] drop bogus task_lock and mm check
- ▪ bfcba2d4 [16859]:[MM][Display][CBG-6298] [待机测试]3月31日待机数据异常，display clock设置失败
- ▪ cb97dca [16859]: [BSP][stability][CBG-6991] 规避上次unload wlan模块时 ipa ep没有清除的问题.
- ▪ 7e244cd [16859]:[BSP][CHARGE][N/A] Remove avoid BUG_ON() from checkpatch
- ▪ 5edbef7 [16859]:[BSP][charge][CBG-7087]float型的charger 充电电流小
- ▪ 3834e61 [16859]:[BSP]If has two continuous vibration,sometimes will set 0x2 to QPNP_HAP_EN_CTL_REG
- ▪ 19e3e36 [16859]:[BSP]Changed schedule_work to queue_work for CBG-6866
- ▪ 19b2645 [16859]:[bsp/connectivity][bsp][patch] 4/4 add long press power key enter dump func
- ▪ ccbeb01 [16859]:[BSP][Stability][Memory debug] Enable Page poison config
- ▪ fa79b59 [16859]: [BSP][stability][CBG-6991] 规避上次unload wlan模块时 ipa ep没有清除的问题.
- ▪ 246cd4a [16859]:[BSP] add 8G ddr support in *##*37847#.
- ▪ 1a638cd [16859]:[BSP][charge][N/A]增加快充开关切换的锁
- ▪ 78f97bc [16859]:[BSP][charge][N/A]减少log打印，并且power_ok触发时候只打印log不做usbspend
- ▪ 88720db [16859]:[kernel][CAMERA][aging]Add more detail about qualcomm patch
- ▪ 311ab57 [16859]:[Multimedia][Audio] 添加dsp load fail的时候的panic，需要dsp dump信息
- ▪ e262b41 [16859]:[MM][Display][CBG-6666]andreno fault
- ▪ 4c8bac5 [16859]: add log to check usb notifier
- ▪ 2450f6d [16859]:[BSP][charge][CBG-6936] 非标充检测错误导致快充开关被误打开
- ▪ f853703 [16859]:[BSP][FINGERPRINT][CBG-2786]increase fingerprint unlock speed[1/x]
- ▪ 83131f9 [16859]:[MM][Display][CBG-6666]在log中打印fence的真实地址
- ▪ 9abfd39 [16859]:[BSP][charge][N/A] 电池状态为FULL百分比不到100%，采用计时5分钟上升1%追加到100%
- ▪ fb7dca8 [16859]:[bsp/connectivity][bsp][patch] slove register and unregister serial device will cause boot slow
- ▪ 2e53546 [16859]:[BSP][TP] use copy_from_user to copy data from userspace
- ▪ 5bd944e [16859]:[MM][Display]change xlog to default size
- ▪ 95dfacf [16859]:[bsp/connectivity][bsp][patch] modify  gpio4 gpio5 pull down for  power
- ▪ 45f2104 [16859]:[MM][Display]去掉dither后修改默认效果后按照标准SRGB D65坐标进行微调
- ▪ 150c2fe [16859]:[BSP] revert change for it is not good way to configure gpio 7 here.
- ▪ 64fce59 Revert "[16859]:[bsp/connectivity][bsp][patch]  config serial gpio4 gpio5 to no pull"
- ▪ c380954 [16859]:[MM][Display]彻底去除历史遗留问题，去除从parament分区读取显示效果的节点的问题
- ▪ 576b63e [16859]: add for little file freq policy
- ▪ 5437b77 Revert "[16859]:[bsp/connectivity][bsp][patch] modify s1-timer to 3000 , then we can press power key 3s enter dump"
- ▪ 037f3e7 msm: isp: Fix stream off failure in LPM
- ▪ ad1196d msm: camera: Add error check for cmd in IOCTL.
- ▪ 3d9c593 msm: camera: isp: Set the clock rate for camss vfe clock
- ▪ 3d446ff msm: ispif: fix a bug in checking the validity of vfe intf
- ▪ 1b67577 deconfig: arm64: enable the laser sensor on msm8998
- ▪ c6bbb02 msm: isp: initialize pd stats buffer index
- ▪ f97de3a [8998]:[Camera] Upgrade kernel camera_v2 to LA.UM.5.7.r2-00200-8x98
- ▪ 5d5f6b9 [16859]:[BSP] add qulcomm patch
- ▪ b24e12b [16859]:[MM][Display][CBG-6521/CBG-6525]Poweroff Charging/Recovery mode has no display after baseline upgrade
- ▪ 862bc4d [16859]:[filesystem] ANDROID: sdcardfs: add read_iter/write_iter opeations
- ▪ 47b6268 [16859]:[kernel][UFS][aging]Add qualcomm patch
- ▪ 03dae00 [16859]:[kernel][CAMERA][aging]Add qualcomm patch
- ▪ 9c4c43d [16859]:[kernel][ARM64][aging]defconfig: msm: Enable EL2 tlb handler
- ▪ c2a3c10 [16859]:[kernel][UFS][aging] Debug patch from Qualcomm for AHB_TIMEOUT
- ▪ 372d3a7 [PATCH] [16859]:[BSP][COMMON][CBG-6665] Fix ipa_fltrt_alloc_init_tbl_hdr error handle issue
- ▪ 745d852 [16859]:[BSP][charge][N/A]修改电脑usb，DCP的电路，删除和增加不进快充日志
- ▪ 094f19e [16859]:[PATCH]Correct MTP interface id
- ▪ 908e8c1a [16859]:[BSP][charge][N/A]关于快充开关没有切换问题加入log
- ▪ 3ca78e6 [16859]:[BSP][charge][N/A]非标充和重新识别的处理
- ▪ 56ab8bc [16859]:[BSP]change DVT1 to EVT3 and add DVT1 dtsi
- ▪ 9405845 [16859]:[BSP][CHARGE][N/A] Check non-standard charger later
- ▪ 696b30e [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_187308_Only_enable_hdc_and_icl_irqs_on_QC_PD_chargers_20170404
- ▪ bbd4141 [16859]:[MultiMedia][Audio]: 添加高通patch解决调整codec增益之后thd+n等耳机指标不稳定的问题
- ▪ e373d97 [16859]:[MultMedia][Audio][CBG-4927]Add debug log for CBG-4927。
- ▪ bd47d55 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_186965_USBIN_Suspend_Issue_patch_21070330
- ▪ 0cdbc99 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_186965_USBIN_Suspend_Issue_patch_21070330
- ▪ e110bc2 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_186579_Legacy_Cable_Detection_Fix_20170329
- ▪ 58405e1 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315[5/7]
- ▪ 6fe30b26 [16859]:[BSP] ext4: fix inline data error paths
- ▪ 2fdc0c6d9 [16859]:[BSP] ext4: fix data corruption in data=journal mode
- ▪ d9195db [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_186579_Legacy_Cable_Detection_Fix_20170329
- ▪ a010813 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315[5/7]
- ▪ 29f194a [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315[4/7]
- ▪ 0e0366b [16859]:[filesystem] ext4: fix in-superblock mount options processing
- ▪ 3c6a1de [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315[3/7]
- ▪ f901b60 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315[2/7]
- ▪ 9655626 [16859]:[BSP][charge][N/A]高通CR,CASE02833580\PATCH_MSM8998_185090_Patches_for_legacy_cable_detection_fix_20170315
-
- ▪ project packages/apps/Eleven/
- ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
- ▪ 083e7f9 Eleven: Promote to privileged app
- ▪ 5301693 Eleven: allow artwork to scale down
-
- ▪ project packages/apps/Gallery2/
- ▪ c88c572 Gallery2: Fix various issues and glitches
-
- ▪ project packages/apps/Snap/
- ▪ a206d75 Snap: fix low resolution front camera switch icon
-
- ▼ 07/31/2017
-
-
- ▪ project packages/apps/Gallery2/
- ▪ d74ca5a Gallery2: Fix potential crash
- ▪ 7e1b2d2 Gallery2: Switch to navigationbar from support libs
- ▪ 82b6848 Gallery2: Fix can't parse documents uri
- ▪ eceb1ed Gallery2: Fix views overlap
- ▪ 8c7fe64 Gallery2: Support GIF animation
- ▪ b923c25 Gallery2: Increase the size of the tiles when decoding images
- ▪ ccaf2e4 Gallery2: Support the newly added media file types in MTP mode
- ▪ ebce130 Gallery2: Fix use of uninitialized stack variables
- ▪ 1fbe342 Gallery2: Remove unused renderscript class
- ▪ 40fe6d2 Gallery2: Fix spelling error
- ▪ 5a0501d Gallery2: Properly declare the own permissions
- ▪ 9c69a82 Gallery2: Remove more possible NPEs
- ▪ 4288cf9 Gallery2: Enable frames in the editor
- ▪ 09a950e Gallery2: Remove slideshow option if there are only videos
- ▪ 75e883a Gallery2: Remove 3D overscroll effect
- ▪ 4cbaf64 Gallery2: Disable dummy starting window
- ▪ 7aeaefc Gallery2: Fix up audio effects dialog
- ▪ cc80b1b Gallery2: Everyone or no one
- ▪ a0dc1b8 Gallery2: Replace hamburger menu with bottom bar
- ▪ ae2d5c1 Gallery2: Change all share intents to chooser style
- ▪ 1b893a4 Gallery2: Update menu
- ▪ b091264 Gallery2: Update theme
- ▪ 7eb847c Gallery2: Move & improve CAF strings
- ▪ 81e24fe Gallery2: Make sure no NPE happens
- ▪ 9c735ae Gallery2: Remove invalid comment from manifest
- ▪ 5b0141c Gallery2: Cleanup renderscript flags in Android.mk
- ▪ 108756a Gallery2: Reduce logspam in video player
- ▪ e0c0ac0 Gallery2: Store DATE_TAKEN as milliseconds
- ▪ bb16314 Gallery2: Modify AOSP EL translations
- ▪ 3861e97 Gallery2: Remove CAF translations
- ▪ 3bf31b2 Gallery2: Add record time to details view
- ▪ c1cf324 Gallery2: Fix crash of gallery on showing details
- ▪ 880d507 Gallery2: Fix crash when Bluetooth service is disabled
- ▪ 2c75f40 Gallery2: Try to open existing camera
- ▪ db84f5b Gallery2: New icon
- ▪ 5f5c892 Gallery2: Bump minsdk and targetsdk version
- ▪ 6587213 Gallery: FilterShowActivity: Fix loading spinner being show forever
- ▪ 55bf17f Gallery: TileImageView: fix NPE
- ▪ be9357b FaceDetect: Catch more linker errors during initialization
- ▪ 8beb6f9 FaceDetect: Catch linker errors during initialization
- ▪ ea5a309 Bump API to match dependencies.
- ▪ 1a3f292 Add missing includes.
- ▪ 5c74612 Cleanup warnings in jni.
- ▪ b7d08f9 Fix misc-macro-parentheses warnings in Gallery2.
- ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
- ▪ 69f87c4 Rename app back to Gallery
+ ▪ e74670c Update changelog to 5.8.4
 
