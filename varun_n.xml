@@ -170,11 +170,11 @@
     </Stable>
      <Stable>
         <angler>
-            <Filename>RR-N-v5.8.4-20170806-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170809-angler-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.4-20170806-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.4-20170809-angler-Official.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -182,18 +182,18 @@
             <VendorUrl
             	id="vendor_image"
             	title="Vendor Image"
-            	description="Download latest vendor image">http://downloads.resurrectionremix.com/angler/Nougat/vendor/N2G47O-ANGLER.img</VendorUrl>
+            	description="Download latest vendor image">https://sourceforge.net/projects/resurrectionremix/files/angler/Nougat/vendor/angler-n2g48c-vendor.img</VendorUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
 	</angler>
 	<oneplus3>
-            <Filename>RR-N-v5.8.4-20170808-oneplus3-Weekly.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170809-oneplus3-Weekly.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YcjJVZVBCdkhYVEk</RomUrl>
+                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2Yc3pISXF3NWVYcXM</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
