@@ -2,98 +2,121 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/08/2017
+ ▼ 08/11/2017
+
+
+ ▪ project device/oneplus/cheeseburger/
+ ▪ f70c4cf op5: audio_policy: move A2DP output to primary audio HAL
+ ▪ b2edf99 op5: enable split A2DP to implement A2DP encoding offload
+ ▪ bd3c3cb overlay: frameworks: pin default camera app in memory
+ ▪ 43586b4 BoardConfig: use VSYNC offsets from OP3
+
+ ▪ project device/qcom/common/
+ ▪ fbd8769 power:sdm630:change target load and nr_spill for camera usecases
+ ▪ 548946f power: KW warning fix in power hal for sdm660
+ ▪ 3304e6f power: add powerHAL support for sdm630
+ ▪ 307999a power: add powerHAL support for sdm660
+ ▪ 5309b93 power: Fixing static code analysis errors
+ ▪ f3d4348 power: Add SUSTAINED and VR perf mode power hints
+ ▪ ff2ac5d power: parser to generate perflock resources
+ ▪ c8a1b90 power: Rename powerhal from msmcobalt to msm8998
+ ▪ e64b22a power: Introduce powerhal for msmcobalt
+ ▪ 24fd97c msm8937: power: add mutex to camera hints
+ ▪ b965fe0 power: Add mutex to camera hints
+ ▪ 15eadc3 power: Clean up power hint IDs
+
+ ▪ project frameworks/base/
+ ▪ 29effa9 base: audioservice: Set BT_SCO status
+
+ ▪ project packages/apps/Settings/
+ ▪ 6a459f6 Edit Moto G4 Plus Maintainer name (added full name) (#836)
+ ▪ 37c5cff Add maintainer for Xiaomi RedMi 3s (#835)
+
+ ▪ project system/bt/
+ ▪ a7dab92 audio_a2dp_hw: add audio_a2dp_check_ready for split A2DP
+ ▪ 095217a bt: enable BT_HOST_IPC_ENABLED for msm8998
+
+ ▪ project vendor/oneplus/cheeseburger/
+ ▪ 87e6937 Add libbthost_if.so from OOS 4.5.6
+
+ ▼ 08/10/2017
+
+
+ ▪ project device/oneplus/cheeseburger/
+ ▪ a17a623 Revert "op5: raise earpiece in-call volume, lower headphones music volume"
+ ▪ a5dcdea op5: update blobs from OnePlus5Oxygen_23_1708032241
+ ▪ ad92343 cheeseburger: audio: fix acdb id for handset
+ ▪ 1265d6f media_codecs: include ffmpeg codecs
+ ▪ cf335a1 cheeseburger: init: create oemnvitems for RIL
+ ▪ d7bec25 op5: protobuff supported
+ ▪ c139a5d OP5: Some more sepolicy fixes
+ ▪ aff8268 :hamburger: : Address some more sepolicy denials
+
+ ▪ project frameworks/base/
+ ▪ 558ad5d FWB:Single tap tile add switch [1/2]
+ ▪ ced6494 Allow user to add/remove QS with one click
+ ▪ 9059f7a Merge pull request #206 from ashoksoni/dataswitch
+ ▪ e5d459f Drop-down data switch through Cellular tile.
+ ▪ db1dea3 SystemUI: add telephony-ext so that imports can be resolved
+
+ ▪ project kernel/oneplus/msm8998/
+ ▪ c58f9ce Revert "fpc1020: Use procfs path for disabling"
+
+ ▪ project packages/apps/Jelly/
+ ▪ d76965a Jelly: Improve incognito mode privacy
+ ▪ 6767c48 Jelly: Enable more HTML5 features
+ ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
+ ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
+ ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
+
+ ▪ project packages/apps/Settings/
+ ▪ fabd9ef Settings:Single tap tile add switch [2/2]
+ ▪ 0afef7a Settings:remove Selinux Switch
+
+ ▼ 08/09/2017
 
 
  ▪ project android/
  ▪ ed7d67a cm.xml: sync caf 8998 hals
- ▪ 59201a1 manifest: android-7.1.2_r24 -> android-7.1.2_r29
-
- ▪ project build/
- ▪ 401a4a1 Merge 7.1.2_r29 into nougat
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 8a79207 Revert "op5: raise earpiece in-call volume, lower headphones music volume"
- ▪ 76aedc6 cheeseburger: enable Slow Motion for Google Camera
- ▪ abad480 op5: update blobs from OnePlus5Oxygen_23_1708032241
-
- ▪ project external/skia/
- ▪ 08bdeaf Merge 7.1.2_r29 into nougat
-
- ▪ project frameworks/av/
- ▪ 3a63a17 Merge 7.1.2_r29 into nougat
 
  ▪ project frameworks/base/
- ▪ e56d646 FWB: Sensor block per-package switch (1/2)
- ▪ a8e139f SystemSensorManager: sensor block per-package
- ▪ 5966600 base: Update flags for edge gesture service from AOSPA
- ▪ 5029476 Silence a memory leak warning from the static analyzer
- ▪ 88fd564 GC in heapDumpFinished to cleanup hprof fd
- ▪ 9b11fe2 Add null check for Wi-Fi command
- ▪ 9b8df66 Fix static analyzer complaints
- ▪ 3a939a6 Merge 7.1.2_r29 into nougat
+ ▪ 198fc03 DUI: Left in landscape navbar API [1/3]
 
- ▪ project frameworks/native/
- ▪ f298a32 Merge 7.1.2_r29 into nougat
+ ▪ project packages/apps/AudioFX/
 
- ▪ project frameworks/opt/net/wifi/
- ▪ 1f8fc74 Merge tag 'android-7.1.2_r29' into cm-14.1
+ ▪ project packages/apps/Bluetooth/
 
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 7fcca3e Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/CMBugReport/
 
- ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 9dbd062 Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/Calendar/
 
- ▪ project hardware/qcom/audio-caf/msm8952/
- ▪ 34f4914 Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/Camera2/
 
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ e248666 Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/CarrierConfig/
+ ▪ ea0ad38 Fix up incorrect domestic roaming and non-roaming cases
 
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ 0d8579c Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 9dcddd7 Fix security vulnerability: Equalizer setParameter memory overflow
+ ▪ project packages/apps/DUI/
+ ▪ 84de443 Fling logo on pulse: add transparency instead of hiding it
+ ▪ f8f8b22 Fling: if KB is showing, double tap right/left to move text cursor
+ ▪ ac4d117 DUI: Left in landscape navbar API [3/3]
+ ▪ ab65f5a Revert "Pulse: Navbar left in landscape support" [2/3]
+ ▪ 009b591 Revert "DUI:Uncomment Navbar Left in Landscape [1/2]"
 
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 5b12547 Fix security vulnerability: Equalizer setParameter memory overflow
-
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ c519e1a Fix security vulnerability: Equalizer setParameter memory overflow
-
- ▪ project hardware/qcom/audio/default/
- ▪ a4f1bc5 Merge tag 'android-7.1.2_r29' into cm-14.1
+ ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
- ▪ f20c0a4 Jelly: Add Yandex search engine
 
  ▪ project packages/apps/Settings/
- ▪ 9f245e7 Settings:Sensor block per-package switch[2/2]
+ ▪ d2d91c9 Updated Hydrogen Maintainer (#834)
+ ▪ b739eec Add galaxy s4 i9500 maintainer (#833)
 
- ▪ project system/bt/
- ▪ 80cca31 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
+ ▪ project packages/apps/Snap/
 
- ▪ project vendor/oneplus/cheeseburger/
- ▪ 270eb63 op5: update to OnePlus5Oxygen_23_1708032241
+ ▪ project packages/apps/Terminal/
 
- ▼ 08/07/2017
+ ▪ project packages/apps/UnifiedEmail/
 
-
- ▪ project device/oneplus/cheeseburger/
- ▪ 7d06594 cheeseburger: audio: enable fm power opt feature
- ▪ aedb2d5 cheeseburger: add missing aanc_tuning_mixer config
- ▪ 01a0493 cheeseburger: audio: fix acdb id for handset
- ▪ 30ebcb2 media_codecs: include ffmpeg codecs
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 6b6f3b3 Stats: RR v5.8.4
-
- ▪ project packages/services/OmniJaws/
- ▪ 271b581 Update config.xml
- ▪ 3f47dbd Use our key
-
- ▪ project vendor/cm/
- ▪ e74670c Update changelog to 5.8.4
+ ▪ project packages/resources/devicesettings/
 

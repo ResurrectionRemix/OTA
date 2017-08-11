@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cheeseburger>
-            <Filename>RR-N-v5.8.4-20170808-cheeseburger-Official.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170811-cheeseburger-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.4-20170808-cheeseburger-Official.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.4-20170811-cheeseburger-Official.zip/download</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
