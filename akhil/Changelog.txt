@@ -216,7 +216,6 @@
  ▪ project vendor/lge/
  ▪ 2fcb962 g4: remove deprecated makefile
  ▪ 610a1c1 g4: cleanup, regen makefiles
- ▪ ca0de1e g4: libcir is needed to build consumerir hal
 
  ▪ project vendor/oneplus/
  ▪ 824470b op3: Update to OB21 / OB12 blobs
@@ -274,6 +273,7 @@
  ▪ project packages/resources/devicesettings/
 
  ▪ project vendor/lge/
+ ▪ ca0de1e g4: libcir is needed to build consumerir hal
  ▪ 4d8137b g4: regenerate makefiles
 
  ▼ 08/08/2017
