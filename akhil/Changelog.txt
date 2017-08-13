@@ -1,273 +1,332 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/06/2017
+ ▼ 08/13/2017
 
 
- ▪ project device/xiaomi/kenzo/
- ▪ bef93e5 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+ ▪ project device/oneplus/oneplus3/
+ ▪ ce167fe Merge remote-tracking branch 'remotes/laos/cm-14.1' into akhil
 
- ▪ project device/xiaomi/msm8956-common/
- ▪ 6d9dc32 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ 509aaf9 AppOps: Fix yet another deadlock
- ▪ 7dbfbeb Frameworks Cleanups
- ▪ 10874b8 pocket: introduce pocket bridge
- ▪ 42af8ad policy: introduce pocket lock
- ▪ abd6b0e pocket: introduce pocket judge
- ▪ 9c2bc7e base: Introduce Accidental Touch
- ▪ 5a0945c frameworks: PIE 3.0 (nougat)
- ▪ 4df7925 Revert "Forward Port: PIE 3.0 (1/2)"
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 0a2b1f5 Merge remote-tracking branch 'remotes/caf/LA.BR.1.3.6_rb1.21' into nougat
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/Settings/
- ▪ 3701c92 Dslv: Fix FC when adding duplicate shortcuts
- ▪ c1348a0 Settings:Add preference for pocket judge [2/2]
- ▪ e090493 PieSettings: Add support for Pie Gravity
- ▪ 9749d2d ButtonsSettings: Add preference for Accidental Touch
- ▪ 5fd64be Update PIE settings to 3.0
-
- ▪ project vendor/cm/
- ▪ f869205 Bump version to 5.8.4
- ▪ 8272685 vendor: Fix a user profile data denial
- ▪ be1cf97 vendor: Add selinux policy for pocket bridge
- ▪ 5ea6f1c vendor:Add sysfs permissions for pocket bridge
- ▪ 2771188 pa: Add pocket judge selinux policy
+ ▪ project vendor/lge/
+ ▪ b1b8729 us997: Update bluetooth firmware from us997 v13a
 
  ▪ project vendor/oneplus/
- ▪ 2ad6aea onyx: Update hci_qcomm_init from bacon
+ ▪ 87a6df8 cheeseburger: generate makefiles, add blobs from 4.5.8
 
- ▪ project vendor/samsung/
- ▪ 353fbc3 apq8084-common: update blobs to latest (last?) G901FXXU1CQE3
+ ▼ 08/12/2017
 
- ▼ 08/05/2017
+
+ ▪ project hardware/qcom/bt-caf/
+ ▪ b60954a libbt-qcom: Allow reading BT address from property
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ c8574ab BACKPORT: f2fs: sanity check checkpoint segno and blkoff
+ ▪ 6d78b2e UPSTREAM: f2fs: sanity check segment count
+ ▪ cb65b07 BACKPORT: UPSTREAM: sg_start_req(): make sure that there's not too many elements in iovec
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 437aeac Merge branch 'rel/msm-3.18.r5-redone' into nougat
+ ▪ 73e86f8 Linux 3.18.64
+ ▪ 130fa10 workqueue: implicit ordered attribute should be overridable
+ ▪ 0bc8702 net: phy: Fix PHY unbind crash
+ ▪ 8674cc3 ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output
+ ▪ fe092e1 mm: don't dereference struct page fields of invalid pages
+ ▪ fa34c8a signal: protect SIGNAL_UNKILLABLE from unintentional clearing.
+ ▪ 8f4afb9 lib/Kconfig.debug: fix frv build failure
+ ▪ d067f69 mm, slab: make sure that KMALLOC_MAX_SIZE will fit into MAX_ORDER
+ ▪ 571d0f9 ARM: 8632/1: ftrace: fix syscall name matching
+ ▪ 2e0e705 scsi: qla2xxx: Get mutex lock before checking optrom_state
+ ▪ 240574f x86/boot: Add missing declaration of string functions
+ ▪ 61dd608 tg3: Fix race condition in tg3_get_stats64().
+ ▪ 1aa1244 sh_eth: R8A7740 supports packet shecksumming
+ ▪ 4e646d4 wext: handle NULL extra data in iwe_stream_add_point better
+ ▪ 8268981 xen-netback: correctly schedule rate-limited queues
+ ▪ 13473d0 net: phy: Correctly process PHY_HALTED in phy_stop_machine()
+ ▪ 7542d9d sctp: fix the check for _sctp_walk_params and _sctp_walk_errors
+ ▪ 33d5e96 sctp: don't dereference ptr before leaving _sctp_walk_{params, errors}()
+ ▪ 2861e47 dccp: fix a memleak for dccp_feat_init err process
+ ▪ 1f703d4 packet: fix use-after-free in prb_retire_rx_blk_timer_expired()
+ ▪ 2f714b3 mcs7780: Fix initialization when CONFIG_VMAP_STACK is enabled
+ ▪ 4e13eae rtnetlink: allocate more memory for dev_set_mac_address()
+ ▪ 1554948 ipv4: initialize fib_trie prior to register_netdev_notifier call.
+ ▪ abe20d5 ipv6: avoid overflow of offset in ip6_find_1stfragopt
+ ▪ b87d6a5 net: Zero terminate ifr_name in dev_ifname().
+ ▪ a4e97e7 f2fs: sanity check checkpoint segno and blkoff
+ ▪ 7f9422f iscsi-target: Fix delayed logout processing greater than SECONDS_FOR_LOGOUT_COMP
+ ▪ 7bbfcf7 iscsi-target: Fix initial login PDU asynchronous socket close OOPs
+ ▪ e9507c0 iscsi-target: Fix early sk_data_ready LOGIN_FLAGS_READY race
+ ▪ 5668fb0 iscsi-target: Always wait for kthread_should_stop() before kthread exit
+ ▪ 4abb2ac target: Avoid mappedlun symlink creation during lun shutdown
+ ▪ 8cf5097 media: platform: davinci: return -EINVAL for VPFE_CMD_S_CCDC_RAW_PARAMS ioctl
+ ▪ 2027ed3 ext4: fix overflow caused by missing cast in ext4_resize_fs()
+ ▪ f9ded51 ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize
+ ▪ 8f373cc mm/page_alloc: Remove kernel address exposure in free_reserved_area()
+ ▪ 85964a7 KVM: async_pf: make rcu irq exit if not triggered from idle task
+ ▪ b723570 ALSA: hda - Fix speaker output from VAIO VPCL14M1R
+ ▪ ed24251 workqueue: restore WQ_UNBOUND/max_active==1 to be ordered
+ ▪ 784e560 libata: array underflow in ata_find_dev()
+ ▪ 4abf401 tile: use global strscpy() rather than private copy
+ ▪ d907ea0 arch/powerpc: provide zero_bytemask() for big-endian
+ ▪ b2219fa Make asm/word-at-a-time.h available on all architectures
+ ▪ 74103b6 word-at-a-time.h: support zero_bytemask() on alpha and tile
+ ▪ 1238e3e tile: add <asm/word-at-a-time.h> and enable support functions
+ ▪ 9818667 xfrm: Don't use sk_family for socket policy lookups
+ ▪ f3e5b89 vlan: Propagate MAC address to VLANs
+ ▪ a2e7c76 spi: dw: Make debugfs name unique between instances
+ ▪ 009fba9 ASoC: tlv320aic3x: Mark the RESET register as volatile
+ ▪ 8979427 vfio-pci: use 32-bit comparisons for register address for gcc-4.5
+ ▪ 0cfc018 drm/msm: Verify that MSM_SUBMIT_BO_FLAGS are set
+ ▪ 7947aaa drm/msm: Ensure that the hardware write pointer is valid
+ ▪ b376e90 net/mlx4: Remove BUG_ON from ICM allocation routine
+ ▪ d3f3759 ipv6: Should use consistent conditional judgement for ip6 fragment between __ip6_append_data and ip6_finish_output
+ ▪ 29623b4 ARM: dts: n900: Mark eMMC slot with no-sdio and no-sd flags
+ ▪ 7a9680b r8169: add support for RTL8168 series add-on card.
+ ▪ c2985d2 x86/mce/AMD: Make the init code more robust
+ ▪ 0a3b53b tpm: fix a kernel memory leak in tpm-sysfs.c
+ ▪ 6e1526b net: skb_needs_check() accepts CHECKSUM_NONE for tx
+ ▪ ac9a3e8 pstore: Use dynamic spinlock initializer
+ ▪ 64d1644 pstore: Correctly initialize spinlock and flags
+ ▪ 90c1bd7 pstore: Allow prz to control need for locking
+ ▪ 8305fed v4l: s5c73m3: fix negation operator
+ ▪ 7314f64 dentry name snapshots
+ ▪ 6c850ec ipmi/watchdog: fix watchdog timeout set on reboot
+ ▪ 2a37f72 net, sched: fix soft lockup in tc_classify
+ ▪ e369432 sh_eth: Fix ethtool operation crash when net device is down
+ ▪ 2876e5c net: sctp: fix race for one-to-many sockets in sendmsg's auto associate
+ ▪ bc18b8e ipv6: fix possible deadlock in ip6_fl_purge / ip6_fl_gc
+ ▪ 447bf6b kaweth: fix oops upon failed memory allocation
+ ▪ 061766c kaweth: fix firmware download
+ ▪ cda47ff mpt3sas: Don't overreach ioc->reply_post[] during initialization
+ ▪ b1a2207 mailbox: handle empty message in tx_tick
+ ▪ 04eb2da mailbox: skip complete wait event if timer expired
+ ▪ 53bfcab mailbox: always wait in mbox_send_message for blocking Tx mode
+ ▪ 07c5632 wil6210: fix deadlock when using fw_no_recovery option
+ ▪ 0092ffe isdn/i4l: fix buffer overflow
+ ▪ 7f1b84f strscpy: zero any trailing garbage bytes in the destination
+ ▪ 39b40a9 string: provide strscpy()
+ ▪ 189bf99 isdn: Fix a sleep-in-atomic bug
+ ▪ 37f1c8a net: phy: Do not perform software reset for Generic PHY
+ ▪ b335bff Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
+ ▪ c32fbd7 Bluetooth: Fix potential NULL dereference
+ ▪ 12200f2 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
+ ▪ df1d6ac Staging: comedi: comedi_fops: Avoid orphaned proc entry
+ ▪ eb37a53 Revert "powerpc/numa: Fix percpu allocations to be NUMA aware"
+ ▪ c880bac KVM: PPC: Book3S HV: Save/restore host values of debug registers
+ ▪ 0634e90 KVM: PPC: Book3S HV: Reload HTM registers explicitly
+ ▪ 8ae78f6 KVM: PPC: Book3S HV: Restore critical SPRs to host values on guest exit
+ ▪ f6f4100 drm/vmwgfx: Fix gcc-7.1.1 warning
+ ▪ 35fd344 md/raid5: add thread_group worker async_tx_issue_pending_all
+ ▪ 35e7edd powerpc/pseries: Fix of_node_put() underflow during reconfig remove
+ ▪ 105c900 net: reduce skb_warn_bad_offload() noise
+ ▪ 777c15c pstore: Make spinlock per zone instead of global
+ ▪ a1f1160 af_key: Add lock to key dump
+
+ ▪ project packages/apps/Settings/
+ ▪ 34ac3a5 Add Redmi 4X device maintainer (#838)
+
+ ▪ project packages/services/Telephony/
+ ▪ 3933dac VoicemailSettingsActivity: Fix some NPEs
+ ▪ f824b46 Telephony: Correct missing italian translation
+ ▪ 2c3c9b0 PhoneToggler: Update preferred network mode setting
+
+ ▪ project vendor/lge/
+ ▪ fa5a2aa msm8996: Use source built consumerir HAL
+ ▪ 5056760 msm8996: Add missing HDR lib and 32bit SDM
+ ▪ da73a25 msm8996: "borrow" Verizon and Sprint frameworks from marlin
+ ▪ 82239af msm8996: Use stock qcrilmsgtunnel
+ ▪ 8d76b8a msm8996: Update thermals from us997 v13a
+ ▪ b9f7b58 msm8996: Update time services from us997 v13a
+ ▪ dfe38c9 g6: Set back camera to BACK not BACK_AUX
+ ▪ 74ec377 msm8996: Update sensors from us997 v13a
+ ▪ 443196e msm8996/g6: Update camera stack from us997 v13a
+ ▪ ac345dc g6: Update fingerprint stack from us997 v13a
+ ▪ 1605054 msm8996: Use rmt_storage from us9997 v13a
+
+ ▼ 08/11/2017
 
 
  ▪ project kernel/oneplus/msm8996/
- ▪ a42567a oneplus3: regenerate defconfig
- ▪ 6d46d35 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
- ▪ e60f49c f2fs: avoid cpu lockup
- ▪ f178bfb ANDROID: sdcardfs: Remove unnecessary lock
- ▪ 5a168ba op3: Disable unneeded functions
- ▪ dda7a3388 op3: Run all RCU threads at RT prio 2
- ▪ 396a3f3 op3: enable RCU_BOOST
- ▪ f15e002 BACKPORT: rcu: Optionally run grace-period kthreads at real-time priority
- ▪ c8afe0a BACKPORT: rcu: Unify boost and kthread priorities
- ▪ e65ce8d BACKPORT: rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
- ▪ 9436f45 drivers/Kconfig: remove duplicate entry for soc
- ▪ 9dda95d Merge tag 'LA.UM.5.5.r1-05400-8x96.0' into nougat
- ▪ 36a119d qcacld-2.0: Update to LA.UM.5.5.r1-05400-8x96.0
- ▪ dabdc21 ARM: dts: 15801: Move 0x29 to dsi on command
+ ▪ c78f8c6 usb-gadget: support USB keyboard
 
  ▪ project packages/apps/Settings/
- ▪ 6c960c2 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
- ▪ 40bdde5 Fix settings FC and freezes after reboot on enforcing mode
+ ▪ 6a459f6 Edit Moto G4 Plus Maintainer name (added full name) (#836)
+ ▪ 37c5cff Add maintainer for Xiaomi RedMi 3s (#835)
 
- ▪ project vendor/motorola/
- ▪ 68a2007 msm8916-common: move gps.conf to device
-
- ▼ 08/04/2017
+ ▼ 08/10/2017
 
 
- ▪ project device/xiaomi/kenzo/
- ▪ c9ffb05 kenzo: Add time service blobs
- ▪ 47d40e6 kenzo: Remove modem assert
+ ▪ project device/oneplus/oneplus3/
+ ▪ 1fec70f op3: Update to OB21 / OB12 blobs
+ ▪ c46f9bd op3: Add shim to make front camera not take 4 MP pics in bright light
+ ▪ ec5325b op3: Add shim to fix front facing camera crash in bright light
+ ▪ 7eaff84 op3: Use shim to set camera package name in the HAL to OnePlus Camera
+ ▪ 4fe0ea5 op3: Automatically sed camera HAL symbol changes needed for shim
+ ▪ e820f33 op3: Remove duplicate time_daemon service definition
 
- ▪ project device/xiaomi/msm8956-common/
- ▪ 743eb8b msm8956: Decommonize time service blobs
- ▪ 02b7712 msm8956: Remove modem assertion check
+ ▪ project frameworks/base/
+ ▪ 558ad5d FWB:Single tap tile add switch [1/2]
+ ▪ ced6494 Allow user to add/remove QS with one click
+ ▪ 9059f7a Merge pull request #206 from ashoksoni/dataswitch
+ ▪ e5d459f Drop-down data switch through Cellular tile.
+ ▪ db1dea3 SystemUI: add telephony-ext so that imports can be resolved
 
- ▪ project hardware/qcom/fm/
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 3329c7a Abhishek told me to!
 
- ▪ project hardware/qcom/media-caf/msm8916/
- ▪ ec78924 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+ ▪ project packages/apps/Jelly/
+ ▪ d76965a Jelly: Improve incognito mode privacy
+ ▪ 6767c48 Jelly: Enable more HTML5 features
+ ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
+ ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
+ ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
 
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 1afe59f Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+ ▪ project packages/apps/Settings/
+ ▪ fabd9ef Settings:Single tap tile add switch [2/2]
+ ▪ 0afef7a Settings:remove Selinux Switch
 
- ▪ project hardware/samsung/
- ▪ 2a40024 secril-client: close fds on I/O errors
+ ▪ project vendor/lge/
+ ▪ 2fcb962 g4: remove deprecated makefile
+ ▪ 610a1c1 g4: cleanup, regen makefiles
+ ▪ ca0de1e g4: libcir is needed to build consumerir hal
+ ▪ 4d8137b g4: regenerate makefiles
+
+ ▪ project vendor/oneplus/
+ ▪ 824470b op3: Update to OB21 / OB12 blobs
+
+ ▼ 08/09/2017
+
+
+ ▪ project android/
+ ▪ ed7d67a cm.xml: sync caf 8998 hals
+
+ ▪ project frameworks/base/
+ ▪ 198fc03 DUI: Left in landscape navbar API [1/3]
 
  ▪ project packages/apps/AudioFX/
 
  ▪ project packages/apps/Bluetooth/
 
+ ▪ project packages/apps/CMBugReport/
+
  ▪ project packages/apps/Calendar/
 
  ▪ project packages/apps/Camera2/
 
+ ▪ project packages/apps/CarrierConfig/
+ ▪ ea0ad38 Fix up incorrect domestic roaming and non-roaming cases
+
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
+ ▪ project packages/apps/DUI/
+ ▪ 84de443 Fling logo on pulse: add transparency instead of hiding it
+ ▪ f8f8b22 Fling: if KB is showing, double tap right/left to move text cursor
+ ▪ ac4d117 DUI: Left in landscape navbar API [3/3]
+ ▪ ab65f5a Revert "Pulse: Navbar left in landscape support" [2/3]
+ ▪ 009b591 Revert "DUI:Uncomment Navbar Left in Landscape [1/2]"
 
  ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
 
  ▪ project packages/apps/Jelly/
 
- ▪ project packages/apps/ManagedProvisioning/
-
  ▪ project packages/apps/Settings/
- ▪ 1bed82a Add Maintainer For Android One 1st gen. (sprout) (#832)
-
- ▪ project packages/apps/SetupWizard/
+ ▪ d2d91c9 Updated Hydrogen Maintainer (#834)
+ ▪ b739eec Add galaxy s4 i9500 maintainer (#833)
 
  ▪ project packages/apps/Snap/
 
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
+ ▪ project packages/apps/Terminal/
 
  ▪ project packages/apps/UnifiedEmail/
 
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
  ▪ project packages/resources/devicesettings/
 
- ▪ project vendor/asus/
- ▪ 86bf0bd mofd: update houdini blobs from fugu n2g48b
- ▪ d314fc0 mofd: update bt/tele fw from 4.21.40.352 release
-
- ▪ project vendor/xiaomi/
- ▪ 7960020 msm8956-common: Decommonize time service blobs
-
- ▼ 08/03/2017
+ ▼ 08/08/2017
 
 
- ▪ project frameworks/opt/telephony/
- ▪ b1a8579 Telephony: Keep preferred SMS Sim
+ ▪ project android/
+ ▪ 59201a1 manifest: android-7.1.2_r24 -> android-7.1.2_r29
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 2b2ad6d Revert "Revert "ARM: dts: msm: update memory map for msm8976/8956/8952 for External release""
+ ▪ project build/
+ ▪ 401a4a1 Merge 7.1.2_r29 into nougat
 
- ▪ project packages/apps/OmniSwitch/
- ▪ 31d0a4a Fixing a NullPointerException (#8)
+ ▪ project external/skia/
+ ▪ 08bdeaf Merge 7.1.2_r29 into nougat
 
- ▼ 08/02/2017
+ ▪ project frameworks/av/
+ ▪ 3a63a17 Merge 7.1.2_r29 into nougat
 
+ ▪ project frameworks/base/
+ ▪ e56d646 FWB: Sensor block per-package switch (1/2)
+ ▪ a8e139f SystemSensorManager: sensor block per-package
+ ▪ 5966600 base: Update flags for edge gesture service from AOSPA
+ ▪ 5029476 Silence a memory leak warning from the static analyzer
+ ▪ 88fd564 GC in heapDumpFinished to cleanup hprof fd
+ ▪ 9b11fe2 Add null check for Wi-Fi command
+ ▪ 9b8df66 Fix static analyzer complaints
+ ▪ 3a939a6 Merge 7.1.2_r29 into nougat
 
- ▪ project device/samsung/smdk4412-common/
- ▪ 7fa112b smdk4412-common: camera: Handle preview_video_size seperately
+ ▪ project frameworks/native/
+ ▪ f298a32 Merge 7.1.2_r29 into nougat
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ c9cc7c1 Merge AU_LINUX_ANDROID_LA.BR.1.3.6_RB1.07.01.02.255.041 on remote branch
+ ▪ project frameworks/opt/net/wifi/
+ ▪ 1f8fc74 Merge tag 'android-7.1.2_r29' into cm-14.1
 
- ▼ 08/01/2017
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 7fcca3e Fix security vulnerability: Equalizer setParameter memory overflow
 
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 9dbd062 Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project kernel/lge/hammerhead/
- ▪ dbd1c67 ASoC: msm-lsm-client: free lsm client data in msm_lsm_close
- ▪ 7744f14 ASoC: msm: qdsp6v2: check param length for EAC3 format
- ▪ 565143e ASoC: msm: initialize the params array before using it
- ▪ 9579dd3 ASoC: msm: qdsp6v2: fix possible integer overflow
- ▪ 44fb515 qdsp6v2: blacklist %p kptr_restrict
- ▪ 6da174b Kconfig: msm: disable ultrasound driver
- ▪ 0f630d8 net: wireless: bcmdhd: remove unsed WEXT file.
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 34f4914 Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project packages/apps/Eleven/
- ▪ 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
- ▪ 083e7f9 Eleven: Promote to privileged app
- ▪ 5301693 Eleven: allow artwork to scale down
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ e248666 Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project packages/apps/Gallery2/
- ▪ c88c572 Gallery2: Fix various issues and glitches
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ 0d8579c Fix security vulnerability: Equalizer setParameter memory overflow
 
- ▪ project packages/apps/Snap/
- ▪ a206d75 Snap: fix low resolution front camera switch icon
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 9dcddd7 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 5b12547 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ c519e1a Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ a4f1bc5 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project packages/apps/Jelly/
+ ▪ f20c0a4 Jelly: Add Yandex search engine
+
+ ▪ project packages/apps/Settings/
+ ▪ 9f245e7 Settings:Sensor block per-package switch[2/2]
+
+ ▪ project system/bt/
+ ▪ 80cca31 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
 
  ▪ project vendor/lge/
- ▪ 0558e88 msm8996: Add tinyxml2_1 for UM5.7 SDM
- ▪ a849224 msm8996: Update graphics blobs from oneplus/cheeseburger
- ▪ f7fd1c5 g6: Properly deodex DolbyVisionService
- ▪ 9d22958 msm8996: Add libgpustats for PQ metadata encoding
- ▪ 257256b msm8996: Add support for widevine L1
- ▪ 0ae74c8 h870: Remove unused bcm4359 firmware
- ▪ 1080c0b g6: Add some camera postproc blobs
+ ▪ e025aed bullhead: update blobs from N2G48C factory image
 
- ▼ 07/31/2017
+ ▼ 08/07/2017
 
 
- ▪ project hardware/samsung/
- ▪ fb5669e power: Keep boost fd opened as well
+ ▪ project device/oneplus/oneplus3/
+ ▪ 6d47496 op3: Add the high performance VR feature
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 7d9cfb4 Merge "msm: ipa: prevent string buffer overflows"
- ▪ f32fe96 coresight: tmc: Fix use after free issue with tmc read
- ▪ 4af7ad8 msm: ipa: prevent string buffer overflows
+ ▪ project kernel/oneplus/msm8996/
+ ▪ cf3d6c3 Revert some incorrect fixes from 3.18.40
 
- ▪ project packages/apps/Gallery2/
- ▪ d74ca5a Gallery2: Fix potential crash
- ▪ 7e1b2d2 Gallery2: Switch to navigationbar from support libs
- ▪ 82b6848 Gallery2: Fix can't parse documents uri
- ▪ eceb1ed Gallery2: Fix views overlap
- ▪ 8c7fe64 Gallery2: Support GIF animation
- ▪ b923c25 Gallery2: Increase the size of the tiles when decoding images
- ▪ ccaf2e4 Gallery2: Support the newly added media file types in MTP mode
- ▪ ebce130 Gallery2: Fix use of uninitialized stack variables
- ▪ 1fbe342 Gallery2: Remove unused renderscript class
- ▪ 40fe6d2 Gallery2: Fix spelling error
- ▪ 5a0501d Gallery2: Properly declare the own permissions
- ▪ 9c69a82 Gallery2: Remove more possible NPEs
- ▪ 4288cf9 Gallery2: Enable frames in the editor
- ▪ 09a950e Gallery2: Remove slideshow option if there are only videos
- ▪ 75e883a Gallery2: Remove 3D overscroll effect
- ▪ 4cbaf64 Gallery2: Disable dummy starting window
- ▪ 7aeaefc Gallery2: Fix up audio effects dialog
- ▪ cc80b1b Gallery2: Everyone or no one
- ▪ a0dc1b8 Gallery2: Replace hamburger menu with bottom bar
- ▪ ae2d5c1 Gallery2: Change all share intents to chooser style
- ▪ 1b893a4 Gallery2: Update menu
- ▪ b091264 Gallery2: Update theme
- ▪ 7eb847c Gallery2: Move & improve CAF strings
- ▪ 81e24fe Gallery2: Make sure no NPE happens
- ▪ 9c735ae Gallery2: Remove invalid comment from manifest
- ▪ 5b0141c Gallery2: Cleanup renderscript flags in Android.mk
- ▪ 108756a Gallery2: Reduce logspam in video player
- ▪ e0c0ac0 Gallery2: Store DATE_TAKEN as milliseconds
- ▪ bb16314 Gallery2: Modify AOSP EL translations
- ▪ 3861e97 Gallery2: Remove CAF translations
- ▪ 3bf31b2 Gallery2: Add record time to details view
- ▪ c1cf324 Gallery2: Fix crash of gallery on showing details
- ▪ 880d507 Gallery2: Fix crash when Bluetooth service is disabled
- ▪ 2c75f40 Gallery2: Try to open existing camera
- ▪ db84f5b Gallery2: New icon
- ▪ 5f5c892 Gallery2: Bump minsdk and targetsdk version
- ▪ 6587213 Gallery: FilterShowActivity: Fix loading spinner being show forever
- ▪ 55bf17f Gallery: TileImageView: fix NPE
- ▪ be9357b FaceDetect: Catch more linker errors during initialization
- ▪ 8beb6f9 FaceDetect: Catch linker errors during initialization
- ▪ ea5a309 Bump API to match dependencies.
- ▪ 1a3f292 Add missing includes.
- ▪ 5c74612 Cleanup warnings in jni.
- ▪ b7d08f9 Fix misc-macro-parentheses warnings in Gallery2.
- ▪ 9110325 Float.NaN != ... always evaluates to true, use Float.isNaN.
- ▪ 69f87c4 Rename app back to Gallery
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 6b6f3b3 Stats: RR v5.8.4
 
- ▪ project vendor/samsung/
- ▪ 4c38820 hltechn: Initial blob import
+ ▪ project packages/services/OmniJaws/
+ ▪ 271b581 Update config.xml
+ ▪ 3f47dbd Use our key
+
+ ▪ project vendor/cm/
+ ▪ e74670c Update changelog to 5.8.4
 
