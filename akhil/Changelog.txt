@@ -5,117 +5,56 @@
  ▼ 08/13/2017
 
 
- ▪ project device/oneplus/oneplus3/
- ▪ ce167fe Merge remote-tracking branch 'remotes/laos/cm-14.1' into akhil
+ ▪ project device/xiaomi/kenzo/
+ ▪ fc942cf kenzo: Remove unused acdb files
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ 96d00e9 msm8965: Give suitable permission to graphic nodes
+ ▪ f2b0875 msm8956: commonize thermal sepolicy
+ ▪ c309fa8 msm8956: Since we are shipping aptx blobs enable it
+ ▪ b716b26 msm8956: remove displayfeature
+ ▪ 0db0beb msm8956: Remove soundTrigger configs
+ ▪ 3544d46 Revert "msm8956-common: Nuke sdcardfs"
+ ▪ 96fd5fc msm8956: Let ffmpeg take care of flac
+
+ ▪ project frameworks/base/
+ ▪ 63df1f1 PowerManagerService: fix HW button illumination timeout
+ ▪ 87a1af4 SystemUI: Fix battery meter view blacklist handling
+
+ ▪ project hardware/broadcom/wlan/
+ ▪ 5ef057d Merge tag 'android-7.1.2_r28' into cm-14.1
+
+ ▪ project hardware/samsung/
+ ▪ 231dc65 wifiloader: Load kernel module if present
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 3664574 Merge remote-tracking branch 'remotes/uck/rel/msm-3.18.r5-redone' into nougat
+ ▪ a0a4a11 Linux 3.18.65
+ ▪ d0f8d04 ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output
+ ▪ 232b452 udp: consistently apply ufo or fragmentation
+ ▪ 78b47e4 revert "ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output"
+ ▪ b5077ed packet: fix tp_reserve race in packet_set_ring
+ ▪ ed28473 net: avoid skb_warn_bad_offload false positives on UFO
+ ▪ 58a9d1a tcp: fastopen: tcp_connect() must refresh the route
+ ▪ 3f55a27 net: sched: set xt_tgchk_param par.nft_compat as 0 in ipt_init_target
+ ▪ d6fdab3 net: fix keepalive code vs TCP_FASTOPEN_CONNECT
+ ▪ 5bf6624 tcp: avoid setting cwnd to invalid ssthresh after cwnd reduction states
+
+ ▪ project packages/apps/Snap/
+ ▪ 70dbc05 Snap: add missing null check on isCamera2Supported
 
  ▪ project vendor/lge/
+ ▪ c9aebdb g6/msm8996: Update blobs from us997 v14a
  ▪ b1b8729 us997: Update bluetooth firmware from us997 v13a
-
- ▪ project vendor/oneplus/
- ▪ 87a6df8 cheeseburger: generate makefiles, add blobs from 4.5.8
 
  ▼ 08/12/2017
 
 
+ ▪ project device/oneplus/oneplus3/
+ ▪ ce167fe Merge remote-tracking branch 'remotes/laos/cm-14.1' into akhil
+
  ▪ project hardware/qcom/bt-caf/
  ▪ b60954a libbt-qcom: Allow reading BT address from property
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 437aeac Merge branch 'rel/msm-3.18.r5-redone' into nougat
- ▪ 73e86f8 Linux 3.18.64
- ▪ 130fa10 workqueue: implicit ordered attribute should be overridable
- ▪ 0bc8702 net: phy: Fix PHY unbind crash
- ▪ 8674cc3 ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output
- ▪ fe092e1 mm: don't dereference struct page fields of invalid pages
- ▪ fa34c8a signal: protect SIGNAL_UNKILLABLE from unintentional clearing.
- ▪ 8f4afb9 lib/Kconfig.debug: fix frv build failure
- ▪ d067f69 mm, slab: make sure that KMALLOC_MAX_SIZE will fit into MAX_ORDER
- ▪ 571d0f9 ARM: 8632/1: ftrace: fix syscall name matching
- ▪ 2e0e705 scsi: qla2xxx: Get mutex lock before checking optrom_state
- ▪ 240574f x86/boot: Add missing declaration of string functions
- ▪ 61dd608 tg3: Fix race condition in tg3_get_stats64().
- ▪ 1aa1244 sh_eth: R8A7740 supports packet shecksumming
- ▪ 4e646d4 wext: handle NULL extra data in iwe_stream_add_point better
- ▪ 8268981 xen-netback: correctly schedule rate-limited queues
- ▪ 13473d0 net: phy: Correctly process PHY_HALTED in phy_stop_machine()
- ▪ 7542d9d sctp: fix the check for _sctp_walk_params and _sctp_walk_errors
- ▪ 33d5e96 sctp: don't dereference ptr before leaving _sctp_walk_{params, errors}()
- ▪ 2861e47 dccp: fix a memleak for dccp_feat_init err process
- ▪ 1f703d4 packet: fix use-after-free in prb_retire_rx_blk_timer_expired()
- ▪ 2f714b3 mcs7780: Fix initialization when CONFIG_VMAP_STACK is enabled
- ▪ 4e13eae rtnetlink: allocate more memory for dev_set_mac_address()
- ▪ 1554948 ipv4: initialize fib_trie prior to register_netdev_notifier call.
- ▪ abe20d5 ipv6: avoid overflow of offset in ip6_find_1stfragopt
- ▪ b87d6a5 net: Zero terminate ifr_name in dev_ifname().
- ▪ a4e97e7 f2fs: sanity check checkpoint segno and blkoff
- ▪ 7f9422f iscsi-target: Fix delayed logout processing greater than SECONDS_FOR_LOGOUT_COMP
- ▪ 7bbfcf7 iscsi-target: Fix initial login PDU asynchronous socket close OOPs
- ▪ e9507c0 iscsi-target: Fix early sk_data_ready LOGIN_FLAGS_READY race
- ▪ 5668fb0 iscsi-target: Always wait for kthread_should_stop() before kthread exit
- ▪ 4abb2ac target: Avoid mappedlun symlink creation during lun shutdown
- ▪ 8cf5097 media: platform: davinci: return -EINVAL for VPFE_CMD_S_CCDC_RAW_PARAMS ioctl
- ▪ 2027ed3 ext4: fix overflow caused by missing cast in ext4_resize_fs()
- ▪ f9ded51 ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize
- ▪ 8f373cc mm/page_alloc: Remove kernel address exposure in free_reserved_area()
- ▪ 85964a7 KVM: async_pf: make rcu irq exit if not triggered from idle task
- ▪ b723570 ALSA: hda - Fix speaker output from VAIO VPCL14M1R
- ▪ ed24251 workqueue: restore WQ_UNBOUND/max_active==1 to be ordered
- ▪ 784e560 libata: array underflow in ata_find_dev()
- ▪ 4abf401 tile: use global strscpy() rather than private copy
- ▪ d907ea0 arch/powerpc: provide zero_bytemask() for big-endian
- ▪ b2219fa Make asm/word-at-a-time.h available on all architectures
- ▪ 74103b6 word-at-a-time.h: support zero_bytemask() on alpha and tile
- ▪ 1238e3e tile: add <asm/word-at-a-time.h> and enable support functions
- ▪ 9818667 xfrm: Don't use sk_family for socket policy lookups
- ▪ f3e5b89 vlan: Propagate MAC address to VLANs
- ▪ a2e7c76 spi: dw: Make debugfs name unique between instances
- ▪ 009fba9 ASoC: tlv320aic3x: Mark the RESET register as volatile
- ▪ 8979427 vfio-pci: use 32-bit comparisons for register address for gcc-4.5
- ▪ 0cfc018 drm/msm: Verify that MSM_SUBMIT_BO_FLAGS are set
- ▪ 7947aaa drm/msm: Ensure that the hardware write pointer is valid
- ▪ b376e90 net/mlx4: Remove BUG_ON from ICM allocation routine
- ▪ d3f3759 ipv6: Should use consistent conditional judgement for ip6 fragment between __ip6_append_data and ip6_finish_output
- ▪ 29623b4 ARM: dts: n900: Mark eMMC slot with no-sdio and no-sd flags
- ▪ 7a9680b r8169: add support for RTL8168 series add-on card.
- ▪ c2985d2 x86/mce/AMD: Make the init code more robust
- ▪ 0a3b53b tpm: fix a kernel memory leak in tpm-sysfs.c
- ▪ 6e1526b net: skb_needs_check() accepts CHECKSUM_NONE for tx
- ▪ ac9a3e8 pstore: Use dynamic spinlock initializer
- ▪ 64d1644 pstore: Correctly initialize spinlock and flags
- ▪ 90c1bd7 pstore: Allow prz to control need for locking
- ▪ 8305fed v4l: s5c73m3: fix negation operator
- ▪ 7314f64 dentry name snapshots
- ▪ 6c850ec ipmi/watchdog: fix watchdog timeout set on reboot
- ▪ 2a37f72 net, sched: fix soft lockup in tc_classify
- ▪ e369432 sh_eth: Fix ethtool operation crash when net device is down
- ▪ 2876e5c net: sctp: fix race for one-to-many sockets in sendmsg's auto associate
- ▪ bc18b8e ipv6: fix possible deadlock in ip6_fl_purge / ip6_fl_gc
- ▪ 447bf6b kaweth: fix oops upon failed memory allocation
- ▪ 061766c kaweth: fix firmware download
- ▪ cda47ff mpt3sas: Don't overreach ioc->reply_post[] during initialization
- ▪ b1a2207 mailbox: handle empty message in tx_tick
- ▪ 04eb2da mailbox: skip complete wait event if timer expired
- ▪ 53bfcab mailbox: always wait in mbox_send_message for blocking Tx mode
- ▪ 07c5632 wil6210: fix deadlock when using fw_no_recovery option
- ▪ 0092ffe isdn/i4l: fix buffer overflow
- ▪ 7f1b84f strscpy: zero any trailing garbage bytes in the destination
- ▪ 39b40a9 string: provide strscpy()
- ▪ 189bf99 isdn: Fix a sleep-in-atomic bug
- ▪ 37f1c8a net: phy: Do not perform software reset for Generic PHY
- ▪ b335bff Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
- ▪ c32fbd7 Bluetooth: Fix potential NULL dereference
- ▪ 12200f2 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
- ▪ df1d6ac Staging: comedi: comedi_fops: Avoid orphaned proc entry
- ▪ eb37a53 Revert "powerpc/numa: Fix percpu allocations to be NUMA aware"
- ▪ c880bac KVM: PPC: Book3S HV: Save/restore host values of debug registers
- ▪ 0634e90 KVM: PPC: Book3S HV: Reload HTM registers explicitly
- ▪ 8ae78f6 KVM: PPC: Book3S HV: Restore critical SPRs to host values on guest exit
- ▪ f6f4100 drm/vmwgfx: Fix gcc-7.1.1 warning
- ▪ 35fd344 md/raid5: add thread_group worker async_tx_issue_pending_all
- ▪ 35e7edd powerpc/pseries: Fix of_node_put() underflow during reconfig remove
- ▪ 105c900 net: reduce skb_warn_bad_offload() noise
- ▪ 777c15c pstore: Make spinlock per zone instead of global
- ▪ a1f1160 af_key: Add lock to key dump
 
  ▪ project packages/apps/Settings/
  ▪ 34ac3a5 Add Redmi 4X device maintainer (#838)
@@ -138,6 +77,12 @@
  ▪ ac345dc g6: Update fingerprint stack from us997 v13a
  ▪ 1605054 msm8996: Use rmt_storage from us9997 v13a
 
+ ▪ project vendor/oneplus/
+ ▪ 87a6df8 cheeseburger: generate makefiles, add blobs from 4.5.8
+
+ ▪ project vendor/samsung/
+ ▪ db18113 msm8976-common: Update blobs from T813XXS2BQG3
+
  ▼ 08/11/2017
 
 
@@ -147,11 +92,103 @@
  ▪ cb65b07 BACKPORT: UPSTREAM: sg_start_req(): make sure that there's not too many elements in iovec
 
  ▪ project kernel/oneplus/msm8996/
- ▪ c78f8c6 usb-gadget: support USB keyboard
+ ▪ 5a156c1 Linux 3.18.64
+ ▪ 19ce50b workqueue: implicit ordered attribute should be overridable
+ ▪ b8d1bf8 net: phy: Fix PHY unbind crash
+ ▪ 02b8308 ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output
+ ▪ 1e04352 mm: don't dereference struct page fields of invalid pages
+ ▪ 3c4b280 signal: protect SIGNAL_UNKILLABLE from unintentional clearing.
+ ▪ c10f2ba lib/Kconfig.debug: fix frv build failure
+ ▪ 335ed71 mm, slab: make sure that KMALLOC_MAX_SIZE will fit into MAX_ORDER
+ ▪ 5937b4b ARM: 8632/1: ftrace: fix syscall name matching
+ ▪ 70bd0c6 scsi: qla2xxx: Get mutex lock before checking optrom_state
+ ▪ 192f9b2 x86/boot: Add missing declaration of string functions
+ ▪ eb22299 tg3: Fix race condition in tg3_get_stats64().
+ ▪ c1860f0d sh_eth: R8A7740 supports packet shecksumming
+ ▪ c5a03ad wext: handle NULL extra data in iwe_stream_add_point better
+ ▪ 448fd6e xen-netback: correctly schedule rate-limited queues
+ ▪ 58164ff net: phy: Correctly process PHY_HALTED in phy_stop_machine()
+ ▪ 069659a sctp: fix the check for _sctp_walk_params and _sctp_walk_errors
+ ▪ 20dc531 sctp: don't dereference ptr before leaving _sctp_walk_{params, errors}()
+ ▪ bfd9ff7 dccp: fix a memleak for dccp_feat_init err process
+ ▪ 4aa4ac7 packet: fix use-after-free in prb_retire_rx_blk_timer_expired()
+ ▪ 6c89de7 mcs7780: Fix initialization when CONFIG_VMAP_STACK is enabled
+ ▪ 1e0dbed rtnetlink: allocate more memory for dev_set_mac_address()
+ ▪ 0b00926 ipv4: initialize fib_trie prior to register_netdev_notifier call.
+ ▪ 80ddff3 ipv6: avoid overflow of offset in ip6_find_1stfragopt
+ ▪ 67fa459 net: Zero terminate ifr_name in dev_ifname().
+ ▪ 5c73064 f2fs: sanity check checkpoint segno and blkoff
+ ▪ e6012d4 iscsi-target: Fix delayed logout processing greater than SECONDS_FOR_LOGOUT_COMP
+ ▪ fb365f0 iscsi-target: Fix initial login PDU asynchronous socket close OOPs
+ ▪ b33cd3c iscsi-target: Fix early sk_data_ready LOGIN_FLAGS_READY race
+ ▪ b8070d1 iscsi-target: Always wait for kthread_should_stop() before kthread exit
+ ▪ 233824c target: Avoid mappedlun symlink creation during lun shutdown
+ ▪ c650307 media: platform: davinci: return -EINVAL for VPFE_CMD_S_CCDC_RAW_PARAMS ioctl
+ ▪ 46e04ae ext4: fix overflow caused by missing cast in ext4_resize_fs()
+ ▪ d8a2bc2 ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize
+ ▪ a08ea47 mm/page_alloc: Remove kernel address exposure in free_reserved_area()
+ ▪ aeb3f9d KVM: async_pf: make rcu irq exit if not triggered from idle task
+ ▪ 3224299 ALSA: hda - Fix speaker output from VAIO VPCL14M1R
+ ▪ 91827f2 workqueue: restore WQ_UNBOUND/max_active==1 to be ordered
+ ▪ a9fcfb3 libata: array underflow in ata_find_dev()
+ ▪ 42343f9 tile: use global strscpy() rather than private copy
+ ▪ d6e9a0b arch/powerpc: provide zero_bytemask() for big-endian
+ ▪ 6396337 Make asm/word-at-a-time.h available on all architectures
+ ▪ b2c68f9 word-at-a-time.h: support zero_bytemask() on alpha and tile
+ ▪ d87a780 tile: add <asm/word-at-a-time.h> and enable support functions
+ ▪ cdaa126 xfrm: Don't use sk_family for socket policy lookups
+ ▪ d4aa04f vlan: Propagate MAC address to VLANs
+ ▪ 1973e6c spi: dw: Make debugfs name unique between instances
+ ▪ fcd7e46 ASoC: tlv320aic3x: Mark the RESET register as volatile
+ ▪ d75c36e vfio-pci: use 32-bit comparisons for register address for gcc-4.5
+ ▪ 02afca4 drm/msm: Verify that MSM_SUBMIT_BO_FLAGS are set
+ ▪ e65ee40 drm/msm: Ensure that the hardware write pointer is valid
+ ▪ bc065e1 net/mlx4: Remove BUG_ON from ICM allocation routine
+ ▪ c91a26e ipv6: Should use consistent conditional judgement for ip6 fragment between __ip6_append_data and ip6_finish_output
+ ▪ 995b84c ARM: dts: n900: Mark eMMC slot with no-sdio and no-sd flags
+ ▪ e126875 r8169: add support for RTL8168 series add-on card.
+ ▪ 3368b6e x86/mce/AMD: Make the init code more robust
+ ▪ 178eb07 tpm: fix a kernel memory leak in tpm-sysfs.c
+ ▪ 5647c27 net: skb_needs_check() accepts CHECKSUM_NONE for tx
+ ▪ 9bd18ad pstore: Use dynamic spinlock initializer
+ ▪ 5964ff5 pstore: Correctly initialize spinlock and flags
+ ▪ adcd624 pstore: Allow prz to control need for locking
+ ▪ 224652a v4l: s5c73m3: fix negation operator
+ ▪ dd87323 dentry name snapshots
+ ▪ 0d90aa3 ipmi/watchdog: fix watchdog timeout set on reboot
+ ▪ 0206e94 net, sched: fix soft lockup in tc_classify
+ ▪ ed67fc0 sh_eth: Fix ethtool operation crash when net device is down
+ ▪ b7baa48 net: sctp: fix race for one-to-many sockets in sendmsg's auto associate
+ ▪ 8f4e75c ipv6: fix possible deadlock in ip6_fl_purge / ip6_fl_gc
+ ▪ c4c8e87 kaweth: fix oops upon failed memory allocation
+ ▪ 344942c kaweth: fix firmware download
+ ▪ 4df9e36 mpt3sas: Don't overreach ioc->reply_post[] during initialization
+ ▪ 0382f10 mailbox: handle empty message in tx_tick
+ ▪ 8e99c29 mailbox: skip complete wait event if timer expired
+ ▪ 9e1fb10 mailbox: always wait in mbox_send_message for blocking Tx mode
+ ▪ 8c80149 wil6210: fix deadlock when using fw_no_recovery option
+ ▪ 2ea794b isdn/i4l: fix buffer overflow
+ ▪ 1ca64e3 strscpy: zero any trailing garbage bytes in the destination
+ ▪ 2cbf173 string: provide strscpy()
+ ▪ d996484 isdn: Fix a sleep-in-atomic bug
+ ▪ 04e2a2a net: phy: Do not perform software reset for Generic PHY
+ ▪ b208e83 Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
+ ▪ 4f3b6b0 Bluetooth: Fix potential NULL dereference
+ ▪ e252c29 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
+ ▪ 6452c76 Staging: comedi: comedi_fops: Avoid orphaned proc entry
+ ▪ 0224337 Revert "powerpc/numa: Fix percpu allocations to be NUMA aware"
+ ▪ 4b73849 KVM: PPC: Book3S HV: Save/restore host values of debug registers
+ ▪ 4dbef89 KVM: PPC: Book3S HV: Reload HTM registers explicitly
+ ▪ 844d4de8 KVM: PPC: Book3S HV: Restore critical SPRs to host values on guest exit
+ ▪ 1afcad6 drm/vmwgfx: Fix gcc-7.1.1 warning
+ ▪ 2fd95f2 md/raid5: add thread_group worker async_tx_issue_pending_all
+ ▪ 1167efb powerpc/pseries: Fix of_node_put() underflow during reconfig remove
+ ▪ 75c0ec4 net: reduce skb_warn_bad_offload() noise
+ ▪ 0b6551b pstore: Make spinlock per zone instead of global
+ ▪ f33555c af_key: Add lock to key dump
 
  ▪ project packages/apps/Settings/
  ▪ 6a459f6 Edit Moto G4 Plus Maintainer name (added full name) (#836)
- ▪ 37c5cff Add maintainer for Xiaomi RedMi 3s (#835)
 
  ▼ 08/10/2017
 
@@ -168,28 +205,18 @@
  ▪ 558ad5d FWB:Single tap tile add switch [1/2]
  ▪ ced6494 Allow user to add/remove QS with one click
  ▪ 9059f7a Merge pull request #206 from ashoksoni/dataswitch
- ▪ e5d459f Drop-down data switch through Cellular tile.
- ▪ db1dea3 SystemUI: add telephony-ext so that imports can be resolved
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 3329c7a Abhishek told me to!
-
- ▪ project packages/apps/Jelly/
- ▪ d76965a Jelly: Improve incognito mode privacy
- ▪ 6767c48 Jelly: Enable more HTML5 features
- ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
- ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
- ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
+ ▪ project kernel/oneplus/msm8996/
+ ▪ c78f8c6 usb-gadget: support USB keyboard
 
  ▪ project packages/apps/Settings/
+ ▪ 37c5cff Add maintainer for Xiaomi RedMi 3s (#835)
  ▪ fabd9ef Settings:Single tap tile add switch [2/2]
- ▪ 0afef7a Settings:remove Selinux Switch
 
  ▪ project vendor/lge/
  ▪ 2fcb962 g4: remove deprecated makefile
  ▪ 610a1c1 g4: cleanup, regen makefiles
  ▪ ca0de1e g4: libcir is needed to build consumerir hal
- ▪ 4d8137b g4: regenerate makefiles
 
  ▪ project vendor/oneplus/
  ▪ 824470b op3: Update to OB21 / OB12 blobs
@@ -198,7 +225,12 @@
 
 
  ▪ project frameworks/base/
+ ▪ e5d459f Drop-down data switch through Cellular tile.
+ ▪ db1dea3 SystemUI: add telephony-ext so that imports can be resolved
  ▪ 198fc03 DUI: Left in landscape navbar API [1/3]
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 3329c7a Abhishek told me to!
 
  ▪ project packages/apps/AudioFX/
 
@@ -222,8 +254,14 @@
  ▪ project packages/apps/Gallery2/
 
  ▪ project packages/apps/Jelly/
+ ▪ d76965a Jelly: Improve incognito mode privacy
+ ▪ 6767c48 Jelly: Enable more HTML5 features
+ ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
+ ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
+ ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
 
  ▪ project packages/apps/Settings/
+ ▪ 0afef7a Settings:remove Selinux Switch
  ▪ d2d91c9 Updated Hydrogen Maintainer (#834)
  ▪ b739eec Add galaxy s4 i9500 maintainer (#833)
 
@@ -234,6 +272,9 @@
  ▪ project packages/apps/UnifiedEmail/
 
  ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/lge/
+ ▪ 4d8137b g4: regenerate makefiles
 
  ▼ 08/08/2017
 
@@ -294,6 +335,9 @@
  ▪ project hardware/qcom/audio/default/
  ▪ a4f1bc5 Merge tag 'android-7.1.2_r29' into cm-14.1
 
+ ▪ project kernel/moto/shamu/
+ ▪ 518881a Merge branch 'aosp/android-msm-shamu-3.10-nougat-mr1.6' into cm-14.1
+
  ▪ project packages/apps/CarrierConfig/
  ▪ ea0ad38 Fix up incorrect domestic roaming and non-roaming cases
 
@@ -309,11 +353,14 @@
  ▪ project vendor/lge/
  ▪ e025aed bullhead: update blobs from N2G48C factory image
 
+ ▪ project vendor/motorola/
+ ▪ 0c91324 shamu: update blobs from N8I11B factory image
+
  ▼ 08/07/2017
 
 
- ▪ project device/oneplus/oneplus3/
- ▪ 6d47496 op3: Add the high performance VR feature
+ ▪ project device/samsung/i9300/
+ ▪ 7e51e14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_samsung_i9300 into nougat
 
  ▪ project packages/apps/ResurrectionStats/
  ▪ 6b6f3b3 Stats: RR v5.8.4
@@ -321,7 +368,4 @@
  ▪ project packages/services/OmniJaws/
  ▪ 271b581 Update config.xml
  ▪ 3f47dbd Use our key
-
- ▪ project vendor/cm/
- ▪ e74670c Update changelog to 5.8.4
 
