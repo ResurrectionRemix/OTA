@@ -204,7 +204,6 @@
  ▪ project frameworks/base/
  ▪ 558ad5d FWB:Single tap tile add switch [1/2]
  ▪ ced6494 Allow user to add/remove QS with one click
- ▪ 9059f7a Merge pull request #206 from ashoksoni/dataswitch
 
  ▪ project kernel/oneplus/msm8996/
  ▪ c78f8c6 usb-gadget: support USB keyboard
@@ -213,10 +212,6 @@
  ▪ 37c5cff Add maintainer for Xiaomi RedMi 3s (#835)
  ▪ fabd9ef Settings:Single tap tile add switch [2/2]
 
- ▪ project vendor/lge/
- ▪ 2fcb962 g4: remove deprecated makefile
- ▪ 610a1c1 g4: cleanup, regen makefiles
-
  ▪ project vendor/oneplus/
  ▪ 824470b op3: Update to OB21 / OB12 blobs
 
@@ -224,6 +219,7 @@
 
 
  ▪ project frameworks/base/
+ ▪ 9059f7a Merge pull request #206 from ashoksoni/dataswitch
  ▪ e5d459f Drop-down data switch through Cellular tile.
  ▪ db1dea3 SystemUI: add telephony-ext so that imports can be resolved
  ▪ 198fc03 DUI: Left in landscape navbar API [1/3]
@@ -273,6 +269,8 @@
  ▪ project packages/resources/devicesettings/
 
  ▪ project vendor/lge/
+ ▪ 2fcb962 g4: remove deprecated makefile
+ ▪ 610a1c1 g4: cleanup, regen makefiles
  ▪ ca0de1e g4: libcir is needed to build consumerir hal
  ▪ 4d8137b g4: regenerate makefiles
 
@@ -341,9 +339,6 @@
  ▪ project packages/apps/CarrierConfig/
  ▪ ea0ad38 Fix up incorrect domestic roaming and non-roaming cases
 
- ▪ project packages/apps/Jelly/
- ▪ f20c0a4 Jelly: Add Yandex search engine
-
  ▪ project packages/apps/Settings/
  ▪ 9f245e7 Settings:Sensor block per-package switch[2/2]
 
@@ -362,8 +357,8 @@
  ▪ project device/samsung/i9300/
  ▪ 7e51e14 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_samsung_i9300 into nougat
 
- ▪ project packages/apps/ResurrectionStats/
- ▪ 6b6f3b3 Stats: RR v5.8.4
+ ▪ project packages/apps/Jelly/
+ ▪ f20c0a4 Jelly: Add Yandex search engine
 
  ▪ project packages/services/OmniJaws/
  ▪ 271b581 Update config.xml
