@@ -386,9 +386,6 @@
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/apps/Snap/
- ▪ 70dbc05 Snap: add missing null check on isCamera2Supported
-
  ▪ project packages/services/OmniJaws/
 
  ▪ project vendor/lge/
