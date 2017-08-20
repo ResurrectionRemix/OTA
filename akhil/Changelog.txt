@@ -371,16 +371,6 @@
  ▪ f6979bb dominator:add Dtbtool  * Also Add buildscript
  ▪ e7ea665 Import RN3 misc changes
  ▪ d1234de sound: wcd9335: Set correct wcd_ext_clk for HM Note 3
- ▪ d6d8204 sound: soc: Import Xiaomi code
- ▪ 0648202 drivers:video:Import RN3 video changes
- ▪ 05479db drivers:power:Import RN3 power changes
- ▪ 7c1591d drivers:mmc:Import RN3 mmc changes
- ▪ 303837d drivers:media:Import RN3 media changes
- ▪ d511a80 drivers:led:Import RN3 led changes
- ▪ ca71de1 drivers:input:Import RN3 input changes
- ▪ f0e034a arm:Import RN3 dts changes
- ▪ 9f7460a arm64:Import RN3 changes
- ▪ ff851bb update git ignore  * we need touch firmware files  * we dont need dt.img to be uploaded evey now and then
 
  ▪ project packages/apps/DUI/
 
