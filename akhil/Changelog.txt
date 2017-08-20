@@ -145,9 +145,6 @@
  ▪ 67205da def: regen and disable mousedev
  ▪ bb880c3 arch:arm:dtsi: Increase default max brightness
 
- ▪ project packages/apps/Jelly/
- ▪ 1ea2382 Jelly: Improve URL bar behavior
-
  ▪ project packages/apps/Settings/
  ▪ 115a541 added helium (#843)
 
@@ -165,6 +162,9 @@
  ▪ 78e37c6 net: wireless: bcmdhd: fix buffer overrun in wl_cfg80211_add_iw_ie
  ▪ cc112de net: wireless: bcmdhd: adding boundary check in wl_cfg80211_mgmt_tx
  ▪ 1dfc2fa net: wireless: bcmdhd: additional length check for BRCM EVENT frame.
+
+ ▪ project packages/apps/Jelly/
+ ▪ 1ea2382 Jelly: Improve URL bar behavior
 
  ▪ project packages/apps/Settings/
  ▪ 7d771ca Fix i9500 maintainer dont show (#842)
