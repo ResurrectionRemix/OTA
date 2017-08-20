@@ -169,8 +169,6 @@
  ▪ project packages/apps/Settings/
  ▪ 7d771ca Fix i9500 maintainer dont show (#842)
  ▪ df1f26e Fix i9500 maintainer dont show (#840)
- ▪ 72deb12 Fix land device position (#839)
- ▪ f6cc7a7 Add Redmi 4X device maintainer (#838)
 
  ▪ project vendor/asus/
  ▪ 9c045bc Z00D: regenerate makefiles and blobs
@@ -192,189 +190,14 @@
  ▪ 4b5533c drivers:led: Fix maximum flash brightness
  ▪ 44ea054 regen def and enable sdcardfs
  ▪ 1d0898b time: Remove CONFIG_TIMER_STATS
- ▪ 0bd1a70 Increase maximum charging current
- ▪ 263a8af random32: include missing header file
- ▪ c25c04d ARM64: Wire up getrandom.
- ▪ 0fa5773 BACKPORT: ARM: wire up getrandom syscall
- ▪ c8c1a02 BACKPORT: random: Wake up all getrandom(2) callers when pool is ready
- ▪ da546ae BACKPORT: random: introduce getrandom(2) system call
- ▪ 8c5fcc7 BACKPORT: random32: add prandom_reseed_late() and call when nonblocking pool becomes initialized
- ▪ 5b5557c BACKPORT: random32: add periodic reseeding
- ▪ 5196c2b gitignore: add output directory to list
- ▪ 8d69213 Sorry, you looked a bit out of place :P
- ▪ dd1ae9f kenzo: enable console, disable modules, regenerate
- ▪ 99148aa Dominator: appended dtb ftw!
- ▪ 06d92ab prima: Update to LA.BR.1.3.6_rb1.19
- ▪ 5be4d0b kenzo: regenerate defconfig
- ▪ 495e36a Revert "ASoC: wcd9335: add analog headphone gain"
- ▪ 621ee4d ASoC: wcd-mbhc: correct lineout detection
- ▪ 34fe041 Revert "ASoC: wcd-mbhc: Don't report headphone until timout"
- ▪ f1acc92 kenzo: fix reboot to recovery for guys who had issue
- ▪ 1dda45d kenzo: update versioning for my build script
- ▪ 9fb0f80 Dominator: regenerate defconfig
- ▪ a52e321 staging: prima: Fix non-debug build and switch to it
- ▪ d45c299 msm: qpnp-haptic: Process haptics asynchronously
- ▪ 264b0c9 qpnp-haptic: Dejank the haptics
- ▪ 1d16b41 Makefile: set ARCH
- ▪ 340a8f4 Fix GCC6 Compilation Errors & Warnings
- ▪ 270f9a5 Disable "maybe-uninitialized" warning globally
- ▪ 70bd1ff Makefile: Use ccache for compilation
- ▪ 5178808 Makefile: Disable unused constant variable warning
- ▪ daa545e ARM: DTS: kenzo: Re-enable appsbl qseecom support flag
- ▪ 91b6afb kenzo: Fix & enable Goodix GF318M fingerprint support
- ▪ c890135 uapi: export lirc.h header
- ▪ a663f54 lirc.h: remove several unused ioctls
- ▪ 6214168 bz#75751: Move internal header file lirc.h to uapi/
- ▪ 9cc9d55 Makefile: remove REAL_CC and calls to gcc wrapper script
- ▪ 13f98d9 staging: prima: Fix non-debug build and switch to it
- ▪ b329542 net: rmnet_data: Silence "Unkown IOCTL" log spam
- ▪ 8205e6b panel dtsi changes
- ▪ 75a9728 Fix reboot issue after aboot update 7.3.9
- ▪ 6753391 [dnm]: Merge dtsi changes from latest miui
- ▪ d6b4858d kenzo: Use caf hall driver
- ▪ 54eade2 kenzo: enable_spk_ext_pa STFU!!
- ▪ 8d4174b3 kenzo: Remove useless charging debugging
- ▪ c6f278b kenzo: Enable cpuset
- ▪ 6127555 cpuset: Make cpusets restore on hotplug
- ▪ 7c3628b cpuset: Add allow_attach hook for cpusets on android.
- ▪ cb87f0c kenzo: Disable goodix
- ▪ 8f3c60c include/linux/compiler-gcc.h: improve __visible documentation
- ▪ abf54f0 include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
- ▪ 4e75a6d compiler.h: add support for function attribute assume_aligned
- ▪ 406ac33 compiler-gcc: disable -ftracer for __noclone functions
- ▪ a4267cd compiler-gcc: integrate the various compiler-gcc[345].h files
- ▪ 5972b50 media: Use balika code to support kate cam sensor
- ▪ c98a290 derp
- ▪ 2029e2b Revert "fingerprint: Initial Goodix Support"
- ▪ 3867a1f media: Add support for s5k5e8_yx13 sensor
- ▪ 1c7d93a input: Handle an additional framebuffer hint
- ▪ 75d7a7d fix base path
- ▪ c29ab2d defconfig: Change Stack Protector to 'REGULAR'
- ▪ a3f24a9 Dominator: set version in Makefile
- ▪ 822a261 Update prima
- ▪ a07e4d2 Revert "arm:dts:increase max curent"
- ▪ b39d024 mobicore: Fix section mismatch
- ▪ e2deedd remove dual decleration
- ▪ 61fca68 update build script
- ▪ ba722733 fingerprint: Initial Goodix Support
- ▪ ec82e4e enable sound control and gestures
- ▪ a6a446c DTS: Fix Qualcomm Typo Error
- ▪ 142d4e7 Fix s5k3p3_f3p3man support
- ▪ 37d47ae cpufreq: cache tunables for ondemand and conservative governors
- ▪ 9ce9d89 xiaomi: lct_tp_fm_info: fix warning about existing sysfs/procfs entries
- ▪ 39b19c4 platform/msm: haptic: expose vibrate function
- ▪ 4eee6ff wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep for Redmi Note 3
- ▪ f820e7d input: atmel_mxt_ts: Add double tap sysfs symlink
- ▪ 4a09ed9 input: Create shared procfs nodes
- ▪ feb3899 input: atmel_mxt_ts: Add option to disable keypad
- ▪ 1402838 input: ft5x06: Add option to disable keypad
- ▪ e7042c5 usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs
- ▪ 65e1ffa sound_control: add speaker gain
- ▪ cb07888 ASoC: wcd9335: add analog headphone gain
- ▪ 0917ef1 ASoC: wcd9335: Sound control
- ▪ d8a2dbd power: qpnp-fg: Coulomb Counting Error
- ▪ f73688e fix qpnp_fg_cap_learning wake lock no release
- ▪ ccf4f0e drivers:power: Fix the soc update delay
- ▪ e12f0b8 drivers:power: fix -2% bug
- ▪ e6fe1ee Revert partial xiaomi changes
- ▪ 1cf7ef8 arm:dts: adapt to new aw2013 driver
- ▪ ea73dd7 leds-aw2013: Don't reset values when nothing has changed
- ▪ 11ed2a6 leds: aw2013: Reduce logging level
- ▪ 6c8c3da leds: aw2013: Use an ordered workqueue for command processing
- ▪ 1828e30 leds: aw2013_led: Don't reset the brightness level when setting blink
- ▪ 6438a51 revert xiaomi changes
- ▪ 95857f6 kobject: Fix "add_uevent_var: too many keys" warn.
- ▪ 68f670e power: qpnp-smbcharger: Fix the BMD algo. disable logic
- ▪ 6737857 arm:dts:we want faster bootup
- ▪ cf18678 Revert "msm: thermal: add a module param to change the thermal throttle temperature point to userspace"
- ▪ 141de34 config:enable exfat
- ▪ 71ee514 Add exFAT support
- ▪ a1c658c config;Enable crc32 module
- ▪ 57983fc crypto: arm64/crc32 - bring in line with generic CRC32
- ▪ 32f2013 crypto: crc32 - Add ARM64 CRC32 hw accelerated module
- ▪ 1492a01 regenerate defconfig
- ▪ a8e452b underp merge
- ▪ f2a1dff fix f2fs compile
- ▪ 5c275bc Fix Cam for all
- ▪ ddaaa85 dominator:enable frandom
- ▪ 2faeec4 upgrade frandom to latest
- ▪ 2d0ca08 drivers: Upgrade frandom from staging
- ▪ 6611655 staging: frandom: Clear up checkpatch conflicts
- ▪ e47d974 staging: frandom: Dynamically allocate the char device numbers
- ▪ ddbc286 staging: Add frandom RNG driver
- ▪ dd713df drivers: camera: Fix camera sensor detection
- ▪ ca63e0a Revert "msm: mdss: kcal: Use PCC for negative display mode"
- ▪ 3830502 Time to dominate
- ▪ 8f7acb7 dominator: Enable Powersuspend
- ▪ 2e56f89 kernel/power/powersuspend: cumulative update to version 1.5
- ▪ 7d89b43 kernel/power/powersuspend: LCD screen on/off hooks (Yank555.lu)
- ▪ 4eb61ea kernel/power/powersuspend: default to userspace for now
- ▪ 74c4e3ee kernel/power/powersuspend: add back userpace control w/ default kernel control
- ▪ 3a8542f kernel/power/powersuspend: remove userspace dependency from powersuspend
- ▪ a8acc1f powersuspend: fix logci derps :p
- ▪ e9ceab5 powersuspend: new PM kernel driver for Android w/o early_suspend
- ▪ b1c89f2 mdss: use an interruptible thread on edp to reduce load_average
- ▪ d3a7a8a msm: Fix high load average from uninterruptible waits
- ▪ 56b7adf config:enable f2fs  * remove unused touchscreen  * remove ext2 and ext3
- ▪ 5c7aff3 Sysfs interface to Enable/Disable CRC [@Pafcholini] Signed-off-by: placiano <placiano80@gmail.com>
- ▪ 3837627 dominator: Enable DYNAMIC FSYNC
- ▪ 48ba317 dominator: Add NTFS Support
- ▪ 177b243 Forward port Dynamic Fsync to Linux 3.10
- ▪ 1a4b5a5 Dynamic Fsync 1.2
- ▪ 4d960a0 msm: kgsl: Report correct GPU frequency in sysfs
- ▪ cf517ef PM: devfreq: Use high priority workqueue
- ▪ 5afd4aa dominator: Enable Arch Power
- ▪ 7ee7481 msm: thermal: add a module param to change the thermal throttle temperature point to userspace
- ▪ 33eb40b dominator: Enable FIOPS
- ▪ 1218a88 FIOPS: forward port for use on 3.10 Linux
- ▪ 023c21e block: fiops ioscheduler core
- ▪ f3435af Remove '+' symbol from kernel version string
- ▪ 04b2b61 tick: don't update idle time if cpu offline
- ▪ 7cd30ee config:enable kcal
- ▪ b36c5a0 msm: mdss: kcal: Only apply updates on index 0
- ▪ fcfa2a2 msm: mdss: kcal: Use PCC for negative display mode
- ▪ c463749 msm: mdss: KCAL: Send a pp display commit when changes are made
- ▪ 0b2082a msm: mdss: KCAL: Do not read from picture adjustment registers
- ▪ 42d8aa4 msm: mdss: KCAL: Read values from MDP registers wherever possible
- ▪ 1c04b0f msm: mdss: KCAL: Apply default values on boot
- ▪ c1f340c msm: mdss: KCAL: Queue changes when panel is powered off
- ▪ 9e6ba45 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
- ▪ cb235e6 msm: mdss: KCAL: Update Kconfig description
- ▪ 7b94842 msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
- ▪ 155cb5c msm: mdss: KCAL: Check panel power state before applying values
- ▪ 8437923 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
- ▪ 5a3aa61 msm: mdss: Keep KCAL within its own source file
- ▪ 63bda47 msm: mdss: Remove deprecated __dev* markings
- ▪ 5acbc29 msm: mdss: Add pa_v2 support to KCAL
- ▪ e278f64 msm: mdss: Replace PGC implementation with PCC for KCAL
- ▪ 632c7a1 msm: mdss: Add KCAL support for post processing control [v2]
- ▪ d66a889 config:Expand def and remove unwanted modules
- ▪ bc855a8 msm: qpnp-haptic: set up sysfs interface for common cmhw implementation
- ▪ b78f4d8 qpnp-haptic: Add sysfs interface to control intensity
- ▪ 4b198c3 arm:dts:let xiaomi be partial  * We are mankind's angel so will offer everyone equal freq
- ▪ e89222b arm:dts:increase max curent  * Therefore adjust thermal mitigation
- ▪ 2ffc0cf scripts/sortextable: suppress warning: `relocs_size' may be used uninitialized
- ▪ 8c0ea4b asoc: fix warning
- ▪ 2ff0570 misc: Fix Kconfig warnings
- ▪ 9e02f66 devfreq_devbw: Assign labels to devbw nodes.
- ▪ 06054fc block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.10.8+
- ▪ 734898b block: introduce the BFQ-v7r8 I/O sched for 3.10.8+
- ▪ a014630 block: cgroups, kconfig, build bits for BFQ-v7r8-3.10.8+
- ▪ d05425d kenzo: defconfig: Update
- ▪ 15c47fb ARM: dts: pstore: Match motorola configuration
- ▪ 86f7d2d arch/arm: dts: Add pstore DT
- ▪ 5a1ef5a fs: pstore: Import Motorola pstore config
- ▪ 6d98f55 power: reset: Allow device to preserve memory on restart
- ▪ d97e186 ARM: dts: kenzo: Only build device specific dtb
- ▪ 6fec396 prima: Import QC prima wireless driver
- ▪ 606f39d fpc: Update fingerprint driver for MM HAL
- ▪ f6979bb dominator:add Dtbtool  * Also Add buildscript
- ▪ e7ea665 Import RN3 misc changes
- ▪ d1234de sound: wcd9335: Set correct wcd_ext_clk for HM Note 3
 
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 72deb12 Fix land device position (#839)
+ ▪ f6cc7a7 Add Redmi 4X device maintainer (#838)
 
  ▪ project packages/services/OmniJaws/
 

@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <i9300>
-<Filename>RR-N-v5.8.4-20170813-i9300-Official.zip</Filename>
+<Filename>RR-N-v5.8.4-20170820-i9300-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/i9300/RR-N-v5.8.4-20170813-i9300-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/i9300/RR-N-v5.8.4-20170820-i9300-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
