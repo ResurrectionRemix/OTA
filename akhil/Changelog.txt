@@ -16,21 +16,8 @@
  ▼ 08/26/2017
 
 
- ▪ project frameworks/base/
- ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
- ▪ 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
- ▪ d1cb955 Tweak Privacy Guard dialog layout
- ▪ 20d80eb PowerManager: Allow to distinguish different keypresses
- ▪ 8b63de6 Add @hide annotation to the privacy guard ops set
- ▪ 4193207 Change visibility of the Privacy Guard ops set
- ▪ 6ab7b90 Camera: ignore torch status update for aux or compsite camera
- ▪ be1d6ba base: audioservice: Set BT_SCO status
-
  ▪ project frameworks/native/
  ▪ 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- ▪ project kernel/oneplus/msm8996/
- ▪ ca96c23 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
 
  ▪ project packages/apps/Eleven/
  ▪ 943d43e Eleven: Fix restoring user settings
@@ -58,10 +45,21 @@
  ▪ bc08635 Enable Night display
  ▪ 2e89e12 oneplus3: fix defconfig for my kernel, show dash charging, show charging current
 
+ ▪ project frameworks/base/
+ ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
+ ▪ 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
+ ▪ d1cb955 Tweak Privacy Guard dialog layout
+ ▪ 20d80eb PowerManager: Allow to distinguish different keypresses
+ ▪ 8b63de6 Add @hide annotation to the privacy guard ops set
+ ▪ 4193207 Change visibility of the Privacy Guard ops set
+ ▪ 6ab7b90 Camera: ignore torch status update for aux or compsite camera
+ ▪ be1d6ba base: audioservice: Set BT_SCO status
+
  ▪ project frameworks/opt/telephony/
  ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ ca96c23 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
  ▪ 8326e3f qcacld-2.0: Update to LA.UM.5.5.r1-05700-8x96.0
  ▪ ee4bfef Merge CAF's LA.UM.5.5.r1-05700-8x96.0 into Derp
  ▪ 4c8a4e4 Linux 3.18.67
