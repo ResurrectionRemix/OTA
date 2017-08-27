@@ -136,5 +136,4 @@
 
  ▪ project packages/apps/Settings/
  ▪ 14513f5 Update s7 edge maintainer
- ▪ 3bb44bb Transfer maintainership of Galaxy S7 series to schwabe93
 
