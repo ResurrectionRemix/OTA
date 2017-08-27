@@ -13,9 +13,6 @@
 
  ▪ project packages/apps/Settings/
 
- ▪ project vendor/samsung/
- ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
-
  ▼ 08/26/2017
 
 
@@ -34,8 +31,6 @@
 
  ▪ project kernel/oneplus/msm8996/
  ▪ ca96c23 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
- ▪ 8326e3f qcacld-2.0: Update to LA.UM.5.5.r1-05700-8x96.0
- ▪ ee4bfef Merge CAF's LA.UM.5.5.r1-05700-8x96.0 into Derp
 
  ▪ project packages/apps/Eleven/
  ▪ 943d43e Eleven: Fix restoring user settings
@@ -50,6 +45,7 @@
  ▪ ea00438 cheeseburger: include libdczoom
 
  ▪ project vendor/samsung/
+ ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
  ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
  ▪ 84223a5 k3gxx: update proprietary files
 
@@ -66,6 +62,8 @@
  ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
 
  ▪ project kernel/oneplus/msm8996/
+ ▪ 8326e3f qcacld-2.0: Update to LA.UM.5.5.r1-05700-8x96.0
+ ▪ ee4bfef Merge CAF's LA.UM.5.5.r1-05700-8x96.0 into Derp
  ▪ 4c8a4e4 Linux 3.18.67
  ▪ 9b6b85c usb: qmi_wwan: add D-Link DWM-222 device ID
  ▪ 9fe0a65 pids: make task_tgid_nr_ns() safe
@@ -91,13 +89,6 @@
  ▪ project vendor/motorola/
  ▪ 1adcf9e omap4: regenerate makefiles and remove old unused stuff
 
- ▼ 08/23/2017
-
-
- ▪ project kernel/lge/hammerhead/
- ▪ d0acbfe netlink: Fix dump skb leak/double free
- ▪ b6a6877 netlink: add reference of module in netlink_dump_start
-
  ▼ 08/22/2017
 
 
@@ -119,6 +110,8 @@
  ▪ eba183e Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
 
  ▪ project kernel/lge/hammerhead/
+ ▪ d0acbfe netlink: Fix dump skb leak/double free
+ ▪ b6a6877 netlink: add reference of module in netlink_dump_start
  ▪ b0829c5 sysrq: FIQ and sysrq default deauthorized
  ▪ 7b91973 BACKPORT: fiq_debugger: restrict access to critical commands.
 
