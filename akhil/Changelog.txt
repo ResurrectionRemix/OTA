@@ -2,209 +2,139 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/20/2017
+ ▼ 08/27/2017
 
-
- ▪ project build/
- ▪ 6a081e1 envsetup: stop jack server once build completed
-
- ▪ project device/oneplus/oneplus3/
- ▪ b3899ca Merge branch 'laos/cm-14.1' into akhil
 
  ▪ project frameworks/base/
-
- ▪ project hardware/ril-caf/
- ▪ d8290dd ril: Allow targets to disable Clang
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 7dce677 tracing: fix race condition reading saved tgids
- ▪ 7c96af3 fs/exec: fix use after free in execve
- ▪ b45caf0 xfrm: policy: check policy direction value
- ▪ e6ae7ae soc: qcom: secure_buffer: Fix memory leak
- ▪ dbf066f FROMLIST: f2fs: add ioctl to expose current features
- ▪ 5bb0e03 FROMLIST: f2fs: don't give partially written atomic data from process crash
- ▪ 224fa97 FROMLIST: f2fs: give a try to do atomic write in -ENOMEM case
- ▪ c78e4df ANDROID: sdcardfs: override credential for ioctl to lower fs
- ▪ 25e55a1 ANDROID: keychord: Fix for a memory leak in keychord.
- ▪ 30178ac ANDROID: keychord: Fix races in keychord_write.
- ▪ 9baf2b6 Use %zu to print resid (size_t).
- ▪ 82f3829 ANDROID: keychord: Fix a slab out-of-bounds read.
- ▪ edd5754 mdss: livedisplay: Add support for DCI-P3 mode
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/CMParts/
- ▪ f763660 CMParts: Add strings for DCI-P3 color profile
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 3bb44bb Transfer maintainership of Galaxy S7 series to schwabe93
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/resources/devicesettings/
-
- ▼ 08/19/2017
-
-
- ▪ project device/qcom/sepolicy/
- ▪ c631819 Use set_prop() macro for property sets
-
- ▪ project kernel/lge/hammerhead/
- ▪ 829e958 ARM: 7743/1: compressed/head.S: work around new binutils warning
-
- ▪ project packages/apps/Settings/
- ▪ 4dccd0d Changing Galaxy s7 edge Maintainer (#846)
-
- ▼ 08/18/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ b103508 msm8956: Remove BCL hotplug disable/enable from init
-
- ▪ project kernel/oneplus/msm8996/
- ▪ f358fc7 Merge remote-tracking branch 'remotes/uck/rel/msm-3.18.r5-redone' into nougat
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 03b032e enable PM_SYNC_BEFORE_SUSPEND
- ▪ 69171d3 Revert "Dynamic Fsync 1.2"
- ▪ 4918364 Revert "Forward port Dynamic Fsync to Linux 3.10"
- ▪ c4ad19e USB: f_fs: change wait as freezable
- ▪ bdead10 power: make sync on suspend optional On embedded devices with built-in batteries, it is not so important to sync the file systems before suspend.  The chance of losing power during suspend are no greater than they are when the system is awake.  The sync operations can greatly increase suspend latency when the system has accrued many dirty pages and/or the target storage devices are not particularly fast.
- ▪ 218125c sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
- ▪ 38cf5a9 arch:arm: disable bcl hotplug
-
- ▪ project vendor/lge/
- ▪ 5d2909b rs988: Update bluetooth firmware name
- ▪ 9e9d1d6 rs988: Add initial blobs and add to build guard
-
- ▼ 08/17/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 6a0aba5 op3: Add DCI-P3 entry to color profiles
-
- ▪ project hardware/cyanogen/
- ▪ e2f8e45 livedisplay: SDM: Add support for DCI-P3 display mode
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 84bd52e Linux 3.18.66
- ▪ aef7403 pinctrl: samsung: Remove bogus irq_[un]mask from resource management
- ▪ b68813e pinctrl: sunxi: add a missing function of A10/A20 pinctrl driver
- ▪ 7910729 pnfs/blocklayout: require 64-bit sector_t
- ▪ 13bc5d4 iio: adc: vf610_adc: Fix VALT selection value for REFSEL bits
- ▪ b1d344e usb:xhci:Add quirk for Certain failing HP keyboard on reset after resume
- ▪ 3f4042a usb: quirks: Add no-lpm quirk for Moshi USB to Ethernet Adapter
- ▪ 75ee62c USB: Check for dropped connection before switching to full speed
- ▪ 6a0ce6a uas: Add US_FL_IGNORE_RESIDUE for Initio Corporation INIC-3069
- ▪ 46139df iio: light: tsl2563: use correct event code
- ▪ 4bdf854 staging:iio:resolver:ad2s1210 fix negative IIO_ANGL_VEL read
- ▪ 90471e6 USB: hcd: Mark secondary HCD as dead if the primary one died
- ▪ a9da48b usb: musb: fix tx fifo flush handling again
- ▪ 4403e31 USB: serial: cp210x: add support for Qivicon USB ZigBee dongle
- ▪ 8af909a USB: serial: option: add D-Link DWM-222 device ID
- ▪ 6315b31 fuse: initialize the flock flag in fuse_file on allocation
- ▪ 5eb8894 mm: ratelimit PFNs busy info message
-
- ▪ project packages/apps/Jelly/
- ▪ 21b9d05 Jelly: Check for onChanged in history data observer
-
- ▪ project packages/apps/Settings/
- ▪ aca49e9 Add Co Maintainer for Jalebi (#845)
-
- ▪ project vendor/motorola/
- ▪ 9b2c996 msm8610-common: regenerate vendor makefiles
-
- ▼ 08/16/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 8830c43 msm8965: Give suitable permission to graphic nodes
- ▪ d538cd3 msm8956: commonize thermal sepolicy
- ▪ a0765f5 msm8956: Since we are shipping aptx blobs enable it
- ▪ c20fef8 msm8956: remove displayfeature
- ▪ aae6c3d msm8956: Remove soundTrigger configs
-
- ▪ project hardware/qcom/bt-caf/
- ▪ 328d8af Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 67205da def: regen and disable mousedev
- ▪ bb880c3 arch:arm:dtsi: Increase default max brightness
-
- ▪ project packages/apps/Settings/
- ▪ 115a541 added helium (#843)
-
- ▼ 08/15/2017
-
-
- ▪ project kernel/lge/hammerhead/
- ▪ 646ee0b net: wireless: bcmdhd: fix buffer overrun in wlfc reordering
- ▪ ccb2420 net: wireless: bcmdhd: fix overrun in wl_run_escan
- ▪ 6ee59da net: wireless: bcmdhd: fix hotlist index in wl_cfgvendor_hotlist_cfg
- ▪ ed16a3e net: wireless: bcmdhd: adding boundary check in SWC gscan config
- ▪ 5a2d7ff net: wireless: bcmdhd: fix buffer overrun in wl_cfgvendor_hotlist_cfg
- ▪ aca2550 net: wireless: bcmdhd: Heap overflow in wl_run_escan.
- ▪ 8870c6e net: wireless: bcmdhd: fix buffer overrun in private command path
- ▪ 78e37c6 net: wireless: bcmdhd: fix buffer overrun in wl_cfg80211_add_iw_ie
- ▪ cc112de net: wireless: bcmdhd: adding boundary check in wl_cfg80211_mgmt_tx
- ▪ 1dfc2fa net: wireless: bcmdhd: additional length check for BRCM EVENT frame.
-
- ▪ project packages/apps/Jelly/
- ▪ 1ea2382 Jelly: Improve URL bar behavior
-
- ▪ project packages/apps/Settings/
- ▪ 7d771ca Fix i9500 maintainer dont show (#842)
- ▪ df1f26e Fix i9500 maintainer dont show (#840)
-
- ▪ project vendor/asus/
- ▪ 9c045bc Z00D: regenerate makefiles and blobs
-
- ▼ 08/14/2017
-
-
- ▪ project device/xiaomi/kenzo/
- ▪ fc942cf kenzo: Remove unused acdb files
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ 3544d46 Revert "msm8956-common: Nuke sdcardfs"
- ▪ 96fd5fc msm8956: Let ffmpeg take care of flac
-
- ▪ project frameworks/base/
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 8b4275f BACKPORT: fs: limit filesystem stacking depth
- ▪ 4b5533c drivers:led: Fix maximum flash brightness
- ▪ 44ea054 regen def and enable sdcardfs
- ▪ 1d0898b time: Remove CONFIG_TIMER_STATS
 
  ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ 72deb12 Fix land device position (#839)
- ▪ f6cc7a7 Add Redmi 4X device maintainer (#838)
 
- ▪ project packages/services/OmniJaws/
+ ▪ project vendor/samsung/
+ ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
+
+ ▼ 08/26/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
+ ▪ 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
+ ▪ d1cb955 Tweak Privacy Guard dialog layout
+ ▪ 20d80eb PowerManager: Allow to distinguish different keypresses
+ ▪ 8b63de6 Add @hide annotation to the privacy guard ops set
+ ▪ 4193207 Change visibility of the Privacy Guard ops set
+ ▪ 6ab7b90 Camera: ignore torch status update for aux or compsite camera
+ ▪ be1d6ba base: audioservice: Set BT_SCO status
+
+ ▪ project frameworks/native/
+ ▪ 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ ca96c23 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
+ ▪ 8326e3f qcacld-2.0: Update to LA.UM.5.5.r1-05700-8x96.0
+ ▪ ee4bfef Merge CAF's LA.UM.5.5.r1-05700-8x96.0 into Derp
+
+ ▪ project packages/apps/Eleven/
+ ▪ 943d43e Eleven: Fix restoring user settings
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 2dd00df Email: Fix led notification settings
+
+ ▪ project packages/services/Telephony/
+ ▪ 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+ ▪ project vendor/oneplus/
+ ▪ ea00438 cheeseburger: include libdczoom
+
+ ▪ project vendor/samsung/
+ ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
+ ▪ 84223a5 k3gxx: update proprietary files
+
+ ▼ 08/25/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 35b4845 op3: add google camera and oneplus camera to hal1 package list
+ ▪ 0b0151e op3: Add OnePlusCamera Service
+ ▪ bc08635 Enable Night display
+ ▪ 2e89e12 oneplus3: fix defconfig for my kernel, show dash charging, show charging current
+
+ ▪ project frameworks/opt/telephony/
+ ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 4c8a4e4 Linux 3.18.67
+ ▪ 9b6b85c usb: qmi_wwan: add D-Link DWM-222 device ID
+ ▪ 9fe0a65 pids: make task_tgid_nr_ns() safe
+ ▪ 233906d Sanitize 'move_pages()' permission checks
+ ▪ 67c67dc irqchip/atmel-aic: Fix unbalanced refcount in aic_common_rtc_irq_fixup()
+ ▪ 4cef63e irqchip/atmel-aic: Fix unbalanced of_node_put() in aic_common_irq_fixup()
+ ▪ 51477c4 mm/mempolicy: fix use after free when calling get_mempolicy
+ ▪ 2e31efc ALSA: usb-audio: Apply sample rate quirk to Sennheiser headset
+ ▪ c56c475 parisc: pci memory bar assignment fails with 64bit kernels on dino/cujo
+ ▪ 1b4d54c audit: Fix use after free in audit_remove_watch_rule()
+ ▪ 3e560b1 netfilter: nf_ct_ext: fix possible panic after nf_ct_extend_unregister
 
  ▪ project vendor/lge/
- ▪ 332e3fa v521: Update blobs from v521 v20i
- ▪ fcd6a8b us997: Update adreno firmware from v14a
- ▪ 6d4709e g5: Update camera and fingerprint from h830 v20k
- ▪ 0ca4373 h870: Update adreno firmware from v10t
- ▪ fa95a57 h830: Update adreno firmware from v20k
+ ▪ 50a3b8c v4xx-common: Update libwvm to _ZN7android16MediaBufferGroupC1Ej
+ ▪ 3b6f969 v4xx-common: Hexedit libqc-opt to support _56
+
+ ▼ 08/24/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
+
+ ▪ project vendor/motorola/
+ ▪ 1adcf9e omap4: regenerate makefiles and remove old unused stuff
+
+ ▼ 08/23/2017
+
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ d0acbfe netlink: Fix dump skb leak/double free
+ ▪ b6a6877 netlink: add reference of module in netlink_dump_start
+
+ ▼ 08/22/2017
+
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ e9af47b op3: Fix 3T front camera crash with Snap
+ ▪ aa1d874 op3: Add VR-ready power HAL
+ ▪ 72ddc7a op3: Added Sustained and VR perf mode powerhints in xml
+ ▪ e0e423f op3: Set config_sustainedPerformanceModeSupported
+ ▪ 8250815 op3: Add permissions for accessing thermal-engine
+ ▪ e004535 op3: Kang VR HAL from marlin
+ ▪ 1cd6a38 op3: thermal-engine: Add thermal client library header
+ ▪ 5dd2539 op3: Kang thermal HAL from marlin
+ ▪ 09e69d7 op3: Kang marlin thermal config file
+ ▪ 35873ec op3: Kang perfd stack from marlin
+ ▪ 6912c56 op3: Address wcnss_service denial
+ ▪ 51813e8 op3: Update blobs from OB22 / OB13
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ eba183e Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
+
+ ▪ project kernel/lge/hammerhead/
+ ▪ b0829c5 sysrq: FIQ and sysrq default deauthorized
+ ▪ 7b91973 BACKPORT: fiq_debugger: restrict access to critical commands.
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2a6aa75 Fix NPE.
+
+ ▪ project vendor/oneplus/
+ ▪ 2e1e140 op3: Kang perfd stack from marlin
+ ▪ b3e9cba op3: Remove vendor thermal-engine.conf
+ ▪ 564b739 op3: Update to OB22 / OB13 blobs
+ ▪ 5ace225 cheeseburger: include libhwdaphal
+
+ ▼ 08/21/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 14513f5 Update s7 edge maintainer
+ ▪ 3bb44bb Transfer maintainership of Galaxy S7 series to schwabe93
 
