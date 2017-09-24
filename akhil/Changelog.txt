@@ -2,129 +2,219 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 08/27/2017
+ ▼ 09/24/2017
 
+
+ ▪ project device/moto/shamu/
+ ▪ 0c11d7c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_moto_shamu into nougat
 
  ▪ project frameworks/base/
+ ▪ 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
+ ▪ 51c0f6f PocketService: Adjust light sensor rate to 400ms
+ ▪ 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
+ ▪ 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
+ ▪ 8f62033 Recents: Add accessibility descriptions for lock ImageViews
+ ▪ 65748c4 SystemUI: Revert some Tuner changes
+ ▪ 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
+ ▪ f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
+ ▪ e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
+ ▪ a3d99a6 Themes: Expose manifest styles for themes
+ ▪ a3dab8d Bring back Pixel theme [1/2]
+ ▪ 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
+ ▪ 90dfe02 Revert "sysui: New google pixel colors"
+ ▪ ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
+ ▪ 5c1386f Revert "base: New google pixel colors"
+ ▪ ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
+ ▪ 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
+ ▪ 79a4136 ColorEngine: fix power menu instant theming
+ ▪ 69ca41e TileAdapter: allow styling tile item decoration background
+ ▪ 98726ae ColorEngine: theme improvements/completeness
+ ▪ 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
+ ▪ 17c72a1 ColorEngine: fwb: default to default primary/bg color
+ ▪ 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
+ ▪ 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
+ ▪ 453e33b ColorEngine: default to teal color accent
+ ▪ ba42305 Introduce color engine.
+ ▪ d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 6136fa5 ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
+ ▪ 21352bf mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
 
  ▪ project packages/apps/DUI/
+ ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
+ ▪ 523231c Add Andres to About
+ ▪ 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
+ ▪ bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
+ ▪ 62b94cf ColorEngine: Settings: default to default primary/bg color
+ ▪ 2244d5d ColorEngine: Settings: default to pixel accent everywhere
+ ▪ fe2ff9f Settings: Make shortcut icon colors match settings accent
+ ▪ ec49047 Settings: PreviewPagerAdapter: copy the full theme
+ ▪ 3bbba44 Improve color selection preview
+ ▪ 316b3bb ColorEngine settings: show accent color selection on first open
+ ▪ 7c5a01e Settings: Support color engine
 
- ▼ 08/26/2017
-
-
- ▪ project frameworks/native/
- ▪ 9cb6681 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
-
- ▪ project packages/apps/Eleven/
- ▪ 943d43e Eleven: Fix restoring user settings
-
- ▪ project packages/apps/UnifiedEmail/
- ▪ 2dd00df Email: Fix led notification settings
-
- ▪ project packages/services/Telephony/
- ▪ 6e6fe97 Allow to ignore presentation indicator of outgoing calls [3/3]
-
- ▪ project vendor/oneplus/
- ▪ ea00438 cheeseburger: include libdczoom
-
- ▪ project vendor/samsung/
- ▪ aa0dcd9 klte-common: Hex sensors.msm8974.so to quiet LightSensor logspam
- ▪ 03a8682 sensors: Hex edit the sensors hal to remove excesive logging
- ▪ 84223a5 k3gxx: update proprietary files
-
- ▼ 08/25/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ 35b4845 op3: add google camera and oneplus camera to hal1 package list
- ▪ 0b0151e op3: Add OnePlusCamera Service
- ▪ bc08635 Enable Night display
- ▪ 2e89e12 oneplus3: fix defconfig for my kernel, show dash charging, show charging current
-
- ▪ project frameworks/base/
- ▪ 756f3e0 Allow to ignore presentation indicator of outgoing calls [1/3]
- ▪ 89fc8fd Use SystemClock.elapsedRealtime() to calc TTFF
- ▪ d1cb955 Tweak Privacy Guard dialog layout
- ▪ 20d80eb PowerManager: Allow to distinguish different keypresses
- ▪ 8b63de6 Add @hide annotation to the privacy guard ops set
- ▪ 4193207 Change visibility of the Privacy Guard ops set
- ▪ 6ab7b90 Camera: ignore torch status update for aux or compsite camera
- ▪ be1d6ba base: audioservice: Set BT_SCO status
-
- ▪ project frameworks/opt/telephony/
- ▪ b231815 Allow to ignore presentation indicator of outgoing calls [2/3]
-
- ▪ project kernel/oneplus/msm8996/
- ▪ ca96c23 Merge remote-tracking branch 'uck/rel/msm-3.18.r5-redone' into nougat
- ▪ 8326e3f qcacld-2.0: Update to LA.UM.5.5.r1-05700-8x96.0
- ▪ ee4bfef Merge CAF's LA.UM.5.5.r1-05700-8x96.0 into Derp
- ▪ 4c8a4e4 Linux 3.18.67
- ▪ 9b6b85c usb: qmi_wwan: add D-Link DWM-222 device ID
- ▪ 9fe0a65 pids: make task_tgid_nr_ns() safe
- ▪ 233906d Sanitize 'move_pages()' permission checks
- ▪ 67c67dc irqchip/atmel-aic: Fix unbalanced refcount in aic_common_rtc_irq_fixup()
- ▪ 4cef63e irqchip/atmel-aic: Fix unbalanced of_node_put() in aic_common_irq_fixup()
- ▪ 51477c4 mm/mempolicy: fix use after free when calling get_mempolicy
- ▪ 2e31efc ALSA: usb-audio: Apply sample rate quirk to Sennheiser headset
- ▪ c56c475 parisc: pci memory bar assignment fails with 64bit kernels on dino/cujo
- ▪ 1b4d54c audit: Fix use after free in audit_remove_watch_rule()
- ▪ 3e560b1 netfilter: nf_ct_ext: fix possible panic after nf_ct_extend_unregister
+ ▪ project vendor/cm/
+ ▪ 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 3b31d8f Final version for N -> 5.8.5 \m/
+ ▪ 6d81c3d vendor: sepolicy: Add Color Engine policy
+ ▪ 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
+ ▪ c0a7af1 Remove all traces of CMTE policy
 
  ▪ project vendor/lge/
- ▪ 50a3b8c v4xx-common: Update libwvm to _ZN7android16MediaBufferGroupC1Ej
- ▪ 3b6f969 v4xx-common: Hexedit libqc-opt to support _56
+ ▪ 640767b v20: Added/updated blobs for new s5k2p7 camera sensor that certain    v20s have.  This does not appear to break any devices without    that camera sensor.
 
- ▼ 08/24/2017
+ ▼ 09/23/2017
 
 
- ▪ project packages/apps/Settings/
- ▪ 3c8b4d4 Responsible arrangement for the Seed device.  (#851)
+ ▪ project device/moto/shamu/
+ ▪ 9bca8ad shamu: enable burnIn protection support
 
- ▪ project vendor/motorola/
- ▪ 1adcf9e omap4: regenerate makefiles and remove old unused stuff
-
- ▼ 08/22/2017
+ ▼ 09/22/2017
 
 
  ▪ project device/oneplus/oneplus3/
- ▪ e9af47b op3: Fix 3T front camera crash with Snap
- ▪ aa1d874 op3: Add VR-ready power HAL
- ▪ 72ddc7a op3: Added Sustained and VR perf mode powerhints in xml
- ▪ e0e423f op3: Set config_sustainedPerformanceModeSupported
- ▪ 8250815 op3: Add permissions for accessing thermal-engine
- ▪ e004535 op3: Kang VR HAL from marlin
- ▪ 1cd6a38 op3: thermal-engine: Add thermal client library header
- ▪ 5dd2539 op3: Kang thermal HAL from marlin
- ▪ 09e69d7 op3: Kang marlin thermal config file
- ▪ 35873ec op3: Kang perfd stack from marlin
- ▪ 6912c56 op3: Address wcnss_service denial
- ▪ 51813e8 op3: Update blobs from OB22 / OB13
+ ▪ b0f8c71 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+ ▪ 81f2976 op3: Update blobs from OB24 / OB15
+ ▪ 1c89272 op3: Update file extractors to match new template
 
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ eba183e Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 3a81914 ANDROID: sdcardfs: Add missing break
+ ▪ fa1c05e ANDROID: Sdcardfs: Move gid derivation under flag
+ ▪ 6c4ac32 ANDROID: mnt: Fix freeing of mount data
+ ▪ 42f6b0f drivers: staging: Update qcacld-2.0 driver
+ ▪ 70676aa ARM: dts: 15801: Switch back to old sRGB cmds
+ ▪ 148b155 ARM: dts: 15801: Update panel sRGB & DCI-P3 cmd from Open Beta kernel
+ ▪ bb83dc9 ARM: dts: 15801: Nuke redundant panel cmds
+ ▪ 33d3d79 Merge remote-tracking branch 'caf/rel/msm-3.18.r5' into nougat
 
- ▪ project kernel/lge/hammerhead/
- ▪ d0acbfe netlink: Fix dump skb leak/double free
- ▪ b6a6877 netlink: add reference of module in netlink_dump_start
- ▪ b0829c5 sysrq: FIQ and sysrq default deauthorized
- ▪ 7b91973 BACKPORT: fiq_debugger: restrict access to critical commands.
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 53fe045 Const: 5.8.5
 
- ▪ project packages/apps/Jelly/
- ▪ 2a6aa75 Fix NPE.
+ ▪ project vendor/cm/
+ ▪ ed3107d RR: v5.8.5
 
- ▪ project vendor/oneplus/
- ▪ 2e1e140 op3: Kang perfd stack from marlin
- ▪ b3e9cba op3: Remove vendor thermal-engine.conf
- ▪ 564b739 op3: Update to OB22 / OB13 blobs
- ▪ 5ace225 cheeseburger: include libhwdaphal
+ ▼ 09/21/2017
 
- ▼ 08/21/2017
 
+ ▪ project frameworks/base/
 
  ▪ project packages/apps/Settings/
- ▪ 14513f5 Update s7 edge maintainer
+
+ ▪ project vendor/oneplus/
+ ▪ 2c8740e op3: Update blobs from OB24 / OB15
+
+ ▼ 09/20/2017
+
+
+ ▪ project hardware/cyanogen/
+ ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
+
+ ▼ 09/19/2017
+
+
+ ▪ project frameworks/av/
+ ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
+
+ ▪ project frameworks/native/
+ ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/CertInstaller/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Nfc/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/providers/TelephonyProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project system/extras/su/
+ ▪ 11730a5 correct delivering process return code to caller
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 09/18/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ d7cc29c Enable Night display
+ ▪ fb3b97e Merge branch 'cm-14.1' of github.com:lineageos/android_device_xiaomi_msm8956-common into HEAD
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 9e20a46 Merge f7c5dcccfb048b056efc7b3f85d13335397bfd72 on remote branch
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 85d68f6 Bluetooth: Properly check L2CAP config option output buffer length
+
+ ▪ project packages/apps/Eleven/
+ ▪ 49b8b9c Eleven: Create one cursor per background task
 
