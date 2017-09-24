@@ -2,7 +2,7 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 09/24/2017
+ ▼ 09/25/2017
 
 
  ▪ project device/moto/shamu/
@@ -68,13 +68,13 @@
  ▪ project vendor/lge/
  ▪ 640767b v20: Added/updated blobs for new s5k2p7 camera sensor that certain    v20s have.  This does not appear to break any devices without    that camera sensor.
 
- ▼ 09/23/2017
+ ▼ 09/24/2017
 
 
  ▪ project device/moto/shamu/
  ▪ 9bca8ad shamu: enable burnIn protection support
 
- ▼ 09/22/2017
+ ▼ 09/23/2017
 
 
  ▪ project device/oneplus/oneplus3/
@@ -98,7 +98,7 @@
  ▪ project vendor/cm/
  ▪ ed3107d RR: v5.8.5
 
- ▼ 09/21/2017
+ ▼ 09/22/2017
 
 
  ▪ project frameworks/base/
@@ -108,13 +108,13 @@
  ▪ project vendor/oneplus/
  ▪ 2c8740e op3: Update blobs from OB24 / OB15
 
- ▼ 09/20/2017
+ ▼ 09/21/2017
 
 
  ▪ project hardware/cyanogen/
  ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
 
- ▼ 09/19/2017
+ ▼ 09/20/2017
 
 
  ▪ project frameworks/av/
@@ -202,7 +202,7 @@
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
- ▼ 09/18/2017
+ ▼ 09/19/2017
 
 
  ▪ project device/xiaomi/msm8956-common/
