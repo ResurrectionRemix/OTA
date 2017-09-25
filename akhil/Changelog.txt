@@ -114,9 +114,6 @@
  ▼ 09/20/2017
 
 
- ▪ project frameworks/av/
- ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
-
  ▪ project frameworks/native/
  ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
@@ -131,6 +128,9 @@
  ▪ project device/xiaomi/msm8956-common/
  ▪ d7cc29c Enable Night display
  ▪ fb3b97e Merge branch 'cm-14.1' of github.com:lineageos/android_device_xiaomi_msm8956-common into HEAD
+
+ ▪ project frameworks/av/
+ ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
 
  ▪ project hardware/qcom/fm/
 
