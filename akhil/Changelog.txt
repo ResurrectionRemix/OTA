@@ -68,14 +68,11 @@
  ▪ project vendor/lge/
  ▪ 640767b v20: Added/updated blobs for new s5k2p7 camera sensor that certain    v20s have.  This does not appear to break any devices without    that camera sensor.
 
- ▼ 09/24/2017
+ ▼ 09/23/2017
 
 
  ▪ project device/moto/shamu/
  ▪ 9bca8ad shamu: enable burnIn protection support
-
- ▼ 09/23/2017
-
 
  ▪ project device/oneplus/oneplus3/
  ▪ b0f8c71 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
@@ -123,7 +120,25 @@
  ▪ project frameworks/native/
  ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
+ ▪ project packages/apps/Eleven/
+
+ ▪ project system/extras/su/
+ ▪ 11730a5 correct delivering process return code to caller
+
+ ▼ 09/19/2017
+
+
+ ▪ project device/xiaomi/msm8956-common/
+ ▪ d7cc29c Enable Night display
+ ▪ fb3b97e Merge branch 'cm-14.1' of github.com:lineageos/android_device_xiaomi_msm8956-common into HEAD
+
  ▪ project hardware/qcom/fm/
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 9e20a46 Merge f7c5dcccfb048b056efc7b3f85d13335397bfd72 on remote branch
+
+ ▪ project kernel/xiaomi/msm8956/
+ ▪ 85d68f6 Bluetooth: Properly check L2CAP config option output buffer length
 
  ▪ project packages/apps/AudioFX/
 
@@ -136,8 +151,6 @@
  ▪ project packages/apps/CellBroadcastReceiver/
 
  ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
 
  ▪ project packages/apps/Email/
 
@@ -195,26 +208,7 @@
 
  ▪ project packages/wallpapers/LivePicker/
 
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
  ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 09/19/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ d7cc29c Enable Night display
- ▪ fb3b97e Merge branch 'cm-14.1' of github.com:lineageos/android_device_xiaomi_msm8956-common into HEAD
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 9e20a46 Merge f7c5dcccfb048b056efc7b3f85d13335397bfd72 on remote branch
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 85d68f6 Bluetooth: Properly check L2CAP config option output buffer length
-
- ▪ project packages/apps/Eleven/
- ▪ 49b8b9c Eleven: Create one cursor per background task
 
