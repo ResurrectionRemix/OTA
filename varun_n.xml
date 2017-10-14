@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>RR-N-v5.8.4-20170812-bacon-Official.zip</Filename>
+            <Filename>RR-N-v5.8.5-20170924-bacon-Final.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.4-20170812-bacon-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.5-20170924-bacon-Final.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
@@ -25,11 +25,11 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
 	</bacon>
         <angler>
-            <Filename>RR-N-v5.8.4-20170809-angler-Official.zip</Filename>
+            <Filename>RR-N-v5.8.5-20170925-angler-Final.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.4-20170809-angler-Official.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/angler/Nougat/RR-N-v5.8.5-20170925-angler-Final.zip</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
@@ -44,11 +44,11 @@
                 description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
 	</angler>
 	<oneplus3>
-            <Filename>RR-N-v5.8.4-20170813-oneplus3-Weekly.zip</Filename>
+            <Filename>RR-N-v5.8.5-20170925-oneplus3-Final.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YMHhUbkMtMnBFYmM</RomUrl>
+                description="Latest ResurrectionRemix build">https://drive.google.com/open?id=0B_N_62rQcS2YdlAxQVNlZHFGbHM</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -70,5 +70,24 @@
                 title="OP3T Firmware"
                 description="OP3T Firmware Folder">https://www.androidfilehost.com/?w=files&amp;flid=159692</OP3TFirmwareUrl>
           </oneplus3>
+        <cheeseburger>
+            <Filename>RR-N-v5.8.5-20170924-cheeseburger-Final.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.5-20170924-cheeseburger-Final.zip/download</RomUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+	    <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
+            <OldBuildsUrl
+            	id="Old_builds"
+            	title="Build Folder"
+            	description="Build Download Archive">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/</OldBuildsUrl>
+	</cheeseburger>
     </Stable>
 </SlimOTA>
