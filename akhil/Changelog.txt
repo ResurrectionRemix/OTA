@@ -2,213 +2,211 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 09/25/2017
+ ▼ 10/14/2017
 
 
- ▪ project device/moto/shamu/
- ▪ 0c11d7c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_device_moto_shamu into nougat
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 95ddabc Linux 3.18.75
+ ▪ 2d75126 ext4: Don't clear SGID when inheriting ACLs
+ ▪ 7faa3eb ext4: fix data corruption for mmap writes
+ ▪ 610d052 ext4: only call ext4_truncate when size <= isize
+ ▪ 7919f6c drm/i915/bios: ignore HDMI on port A
+ ▪ 42e4107 HID: i2c-hid: allocate hid buffers for real worst case
+ ▪ 3dc78a6 driver core: platform: Don't read past the end of "driver_override" buffer
+ ▪ 460b61f ALSA: usx2y: Suppress kernel warning at page allocation failures
+ ▪ 6730fcd lsm: fix smack_inode_removexattr and xattr_getsecurity memleak
+ ▪ 8df2ae7 uwb: ensure that endpoint is interrupt
+ ▪ 4c2b9d0 uwb: properly check kthread_run return value
+ ▪ fd9dac2 iio: adc: mcp320x: Fix oops on module unload
+ ▪ cf53340 iio: ad7793: Fix the serial interface reset
+ ▪ abb7427 iio: core: Return error for failed read_reg
+ ▪ ad2aaf7 staging: iio: ad7192: Fix - use the dedicated reset function avoiding dma from stack.
+ ▪ 591d1cc iio: ad_sigma_delta: Implement a dedicated reset function
+ ▪ 8db4e67 xhci: fix finding correct bus_state structure for USB 3.1 hosts
+ ▪ 582c998 USB: fix out-of-bounds in usb_set_configuration
+ ▪ 3ae4adf usb: Increase quirk delay for USB devices
+ ▪ d8c2a85 USB: uas: fix bug in handling of alternate settings
+ ▪ 89bea1b USB: devio: Don't corrupt user memory
+ ▪ c6bbeef USB: dummy-hcd: fix infinite-loop resubmission bug
+ ▪ d75d17d USB: dummy-hcd: fix connection failures (wrong speed)
+ ▪ 7b22d27 usb: pci-quirks.c: Corrected timeout values used in handshake
+ ▪ de50f3c ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
+ ▪ e17cdb1 usb: renesas_usbhs: fix usbhsf_fifo_clear() for RX direction
+ ▪ d1cb665 usb: renesas_usbhs: fix the BCLR setting condition for non-DCP pipe
+ ▪ 43d9fbd usb-storage: unusual_devs entry to fix write-access regression for Seagate external drives
+ ▪ 4f200f4 USB: gadgetfs: fix copy_to_user while holding spinlock
+ ▪ 4a00dcb USB: gadgetfs: Fix crash caused by inadequate synchronization
+ ▪ b533c19 usb: gadget: inode.c: fix unbalanced spin_lock in ep0_write
+ ▪ 6dfc781 Linux 3.18.74
+ ▪ b86e235 crypto: algif_skcipher - Load TX SG list after waiting
+ ▪ 555e855 staging: nvec: remove duplicated const
+ ▪ 50eb06a ttpci: address stringop overflow warning
+ ▪ 2997f7e ALSA: au88x0: avoid theoretical uninitialized access
+ ▪ a426ff2 IB/qib: fix false-postive maybe-uninitialized warning
+ ▪ ad6643c libata: transport: Remove circular dependency at free time
+ ▪ e2a3604 xfs: remove kmem_zalloc_greedy
+ ▪ 7649cf9 md/raid10: submit bio directly to replacement disk
+ ▪ 3a144e6 rds: ib: add error handle
+ ▪ e43ecde parisc: perf: Fix potential NULL pointer dereference
+ ▪ ba3f154 netfilter: nfnl_cthelper: fix incorrect helper->expect_class_max
+ ▪ 80d3393 exynos-gsc: Do not swap cb/cr for semi planar formats
+ ▪ 9979fbb netfilter: invoke synchronize_rcu after set the _hook_ to NULL
+ ▪ c1ecd92 mmc: sdio: fix alignment issue in struct sdio_func
+ ▪ 4457507 usb: plusb: Add support for PL-27A1
+ ▪ 9d33820 team: fix memory leaks
+ ▪ 24031da net/packet: check length in getsockopt() called with PACKET_HDRLEN
+ ▪ b8caafa net: core: Prevent from dereferencing null pointer when releasing SKB
+ ▪ 6c6652e audit: log 32-bit socketcalls
+ ▪ a62c5d3 partitions/efi: Fix integer overflow in GPT size calculation
+ ▪ 17b2387 USB: serial: mos7840: fix control-message error handling
+ ▪ 9f758dd USB: serial: mos7720: fix control-message error handling
+ ▪ f798a42 IB/ipoib: Replace list_del of the neigh->list with list_del_init
+ ▪ dd17721 IB/ipoib: rtnl_unlock can not come after free_netdev
+ ▪ 4af86b9 IB/ipoib: Fix deadlock over vlan_mutex
+ ▪ edcf1a4 tty: goldfish: Fix a parameter of a call to free_irq
+ ▪ e299a4c ARM: 8635/1: nommu: allow enabling REMAP_VECTORS_TO_RAM
+ ▪ 5626437 hwmon: (gl520sm) Fix overflows and crash seen when writing into limit attributes
+ ▪ 33b05d1 sh_eth: use correct name for ECMR_MPDE bit
+ ▪ 125fae3 MIPS: Ensure bss section ends on a long-aligned address
+ ▪ 4eba730 RDS: RDMA: Fix the composite message user notification
+ ▪ 4151299 drm: bridge: add DT bindings for TI ths8135
+ ▪ 92c9537 oneplus3: regenerate defconfig
+ ▪ 0feb307 CPUFREQ: Interactive: change screen off to notifier. + sysfs.
+ ▪ c58aee0 cpufreq: interactive: add screen off max frequency tunable
+ ▪ 5c72e8b cpufreq: interactive: add powersave bias tunable
+ ▪ a0c2d8f cpufreq: interactive: remove hispeed_freq init restriction
+ ▪ bcae734 cpufreq: interactive: reduce timer with screen off
+ ▪ 907c902 drivers:cpufreq:cpufreq_interactive: Remove prev_timer_rate and sleep_timer_rate
+ ▪ 62ed3c5 drivers:cpufreq:cpufreq_{blu_active,interactive}: Deny perfd the ability to alter tunables.
+ ▪ 12b04b8 drivers:cpufreq:cpufreq_{blu_active,interactive,ondemand}: Lock io_is_busy
+ ▪ 62052a0 cpufreq: interactive governor drops bits in time calculation
+ ▪ 23aa6bc cpufreq: interactive: fix to come out of hysteresis mode
+ ▪ 625b1b4e cpufreq_interactive: remove boost functionality
+ ▪ 1134029 cpufreq: interactive: Remove the jump_to_max hack
+ ▪ 6cb51e2 CHROMIUM: cpufreq: interactive: calculate load before freq change
+ ▪ 1018bdb boeffla_wl_blocker: Block default wakelocks we had before
+ ▪ 8c90227 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+ ▪ 7510016 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+ ▪ 9c96ac4 boeffla_defconfig: enable boeffla wakelock blocker
+ ▪ 03c9369 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+ ▪ 747efe9 drivers: wakeup: Squash revert all Franco wakelock blocker commits
+ ▪ 382e3ff Linux 3.18.73
+ ▪ 552218b fix xen_swiotlb_dma_mmap prototype
+ ▪ a7f0a6d swiotlb-xen: implement xen_swiotlb_dma_mmap callback
+ ▪ 8f6c6b1 video: fbdev: aty: do not leak uninitialized padding in clk to userspace
+ ▪ b29091b5 x86/fpu: Don't let userspace set bogus xcomp_bv
+ ▪ 73142ad btrfs: prevent to set invalid default subvolid
+ ▪ 74dfa61 PCI: Fix race condition with driver_override
+ ▪ 245dda8 kvm: nVMX: Don't allow L2 to access the hardware CR8
+ ▪ d05d84d arm64: Make sure SPsel is always set
+ ▪ 0d5a679b bsg-lib: don't free job in bsg_prepare_job
+ ▪ e33b944 nl80211: check for the required netlink attributes presence
+ ▪ aba5eb4 vfs: Return -ENXIO for negative SEEK_HOLE / SEEK_DATA offsets
+ ▪ 046fd3d SMB3: Don't ignore O_SYNC/O_DSYNC and O_DIRECT flags
+ ▪ 624cd41 SMB: Validate negotiate (to protect against downgrade) even if signing off
+ ▪ 3e1282d powerpc/pseries: Fix parent_dn reference leak in add_dt_node()
+ ▪ 40d629d KEYS: prevent KEYCTL_READ on negative key
+ ▪ 9287508 KEYS: prevent creating a different user's keyrings
+ ▪ 6b37c9c KEYS: fix writing past end of user-supplied buffer in keyring_read()
+ ▪ 728006f crypto: talitos - fix sha224
+ ▪ 92a8b8d scsi: scsi_transport_iscsi: fix the issue that iscsi_if_rx doesn't parse nlmsg properly
+ ▪ 445e969 tracing: Erase irqsoff trace with empty write
+ ▪ 408a8e5 tracing: Fix trace_pipe behavior for instance traces
+ ▪ 06dc2d6 KVM: PPC: Book3S: Fix race and leak in kvm_vm_ioctl_create_spapr_tce()
+ ▪ 0c15934 mac80211: flush hw_roc_start work before cancelling the ROC
+ ▪ cd4be31 cifs: release auth_key.response for reconnect.
+ ▪ 5212c558 cifs: release cifs root_cred after exit_cifs
+ ▪ d87c46f Linux 3.18.72
+ ▪ 03b8743 bcache: fix bch_hprint crash and improve output
+ ▪ 564f876 bcache: fix for gc and write-back race
+ ▪ 073b051 bcache: Correct return value for sysfs attach errors
+ ▪ 663a6b2 bcache: correct cache_dirty_target in __update_writeback_rate()
+ ▪ a3b846c bcache: Fix leak of bdev reference
+ ▪ 538ba97 bcache: initialize dirty stripes in flash_dev_run()
+ ▪ 60a1091 media: uvcvideo: Prevent heap overflow when accessing mapped controls
+ ▪ 4f2d68f media: v4l2-compat-ioctl32: Fix timespec conversion
+ ▪ c93727f PCI: shpchp: Enable bridge bus mastering if MSI is enabled
+ ▪ b17e084 ARC: Re-enable MMU upon Machine Check exception
+ ▪ b1a51a4 tracing: Apply trace_clock changes to instance max buffer
+ ▪ 52527b3 ftrace: Fix selftest goto location on error
+ ▪ 320aae4 scsi: qla2xxx: Fix an integer overflow in sysfs code
+ ▪ f5ac192 scsi: sg: fixup infoleak when using SG_GET_REQUEST_TABLE
+ ▪ dc31395 scsi: sg: factor out sg_fill_request_table()
+ ▪ 19d177e scsi: sg: off by one in sg_ioctl()
+ ▪ 9b7d63a scsi: sg: use standard lists for sg_requests
+ ▪ 59dc447 scsi: sg: remove 'save_scat_len'
+ ▪ a95807b scsi: zfcp: trace high part of "new" 64 bit SCSI LUN
+ ▪ 76bb0e1 scsi: zfcp: trace HBA FSF response by default on dismiss or timedout late response
+ ▪ 61c64d4 scsi: zfcp: fix payload with full FCP_RSP IU in SCSI trace records
+ ▪ 790f14c scsi: zfcp: fix missing trace records for early returns in TMF eh handlers
+ ▪ f6787b8 scsi: zfcp: add handling for FCP_RESID_OVER to the fcp ingress path
+ ▪ 00e10bb scsi: zfcp: fix queuecommand for scsi_eh commands when DIX enabled
+ ▪ 47dfe77 skd: Submit requests to firmware before triggering the doorbell
+ ▪ a2ffb93 skd: Avoid that module unloading triggers a use-after-free
+ ▪ 1be2f18 md/bitmap: disable bitmap_resize for file-backed bitmaps.
+ ▪ 3a93e7c block: Relax a check in blk_start_queue()
+ ▪ ad88c31 powerpc: Fix DAR reporting when alignment handler faults
+ ▪ 1092132 ext4: fix incorrect quotaoff if the quota feature is enabled
+ ▪ 5c5a2f0 crypto: AF_ALG - remove SGL terminator indicator when chaining
+ ▪ ce68c01 Input: i8042 - add Gigabyte P57 to the keyboard reset table
+ ▪ 68daabd3 ip6_gre: fix endianness errors in ip6gre_err
+ ▪ ecba424 Revert "usb: musb: fix tx fifo flush handling again"
+ ▪ 2b0127d f2fs: check hot_data for roll-forward recovery
+ ▪ 997b9da ipv6: fix typo in fib6_net_exit()
+ ▪ 23ffa97 ipv6: fix memory leak with multiple tables during netns destruction
+ ▪ 689ead3 tcp: initialize rcv_mss to TCP_MIN_MSS instead of 0
+ ▪ 28a9b28 Revert "net: phy: Correctly process PHY_HALTED in phy_stop_machine()"
+ ▪ 596aba4 qlge: avoid memcpy buffer overflow
+ ▪ f7a7e2a ipv6: accept 64k - 1 packet length in ip6_find_1stfragopt()
+
+ ▪ project vendor/samsung/
+ ▪ 25e1ea7 kltedv: Hide spr support
+
+ ▼ 10/13/2017
+
 
  ▪ project frameworks/base/
- ▪ 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
- ▪ 51c0f6f PocketService: Adjust light sensor rate to 400ms
- ▪ 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
- ▪ 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
- ▪ 8f62033 Recents: Add accessibility descriptions for lock ImageViews
- ▪ 65748c4 SystemUI: Revert some Tuner changes
- ▪ 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
- ▪ f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
- ▪ e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
- ▪ a3d99a6 Themes: Expose manifest styles for themes
- ▪ a3dab8d Bring back Pixel theme [1/2]
- ▪ 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
- ▪ 90dfe02 Revert "sysui: New google pixel colors"
- ▪ ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
- ▪ 5c1386f Revert "base: New google pixel colors"
- ▪ ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
- ▪ 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
- ▪ 79a4136 ColorEngine: fix power menu instant theming
- ▪ 69ca41e TileAdapter: allow styling tile item decoration background
- ▪ 98726ae ColorEngine: theme improvements/completeness
- ▪ 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
- ▪ 17c72a1 ColorEngine: fwb: default to default primary/bg color
- ▪ 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
- ▪ 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
- ▪ 453e33b ColorEngine: default to teal color accent
- ▪ ba42305 Introduce color engine.
- ▪ d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
+ ▪ 8fbd105 Core: Battery warning levels are inclusive, not exclusive
 
- ▪ project kernel/oneplus/msm8996/
- ▪ 6136fa5 ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
- ▪ 21352bf mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
 
- ▪ project packages/apps/DUI/
- ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
+ ▪ project vendor/samsung/
+ ▪ d071c6f apq8084-common: gps.conf: various fixes
+ ▪ 0214e7e apq8084-common: update blobs to CQI4
 
- ▪ project packages/apps/OmniSwitch/
+ ▼ 10/12/2017
 
- ▪ project packages/apps/Settings/
- ▪ 523231c Add Andres to About
- ▪ 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
- ▪ bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
- ▪ 62b94cf ColorEngine: Settings: default to default primary/bg color
- ▪ 2244d5d ColorEngine: Settings: default to pixel accent everywhere
- ▪ fe2ff9f Settings: Make shortcut icon colors match settings accent
- ▪ ec49047 Settings: PreviewPagerAdapter: copy the full theme
- ▪ 3bbba44 Improve color selection preview
- ▪ 316b3bb ColorEngine settings: show accent color selection on first open
- ▪ 7c5a01e Settings: Support color engine
-
- ▪ project vendor/cm/
- ▪ 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
- ▪ 3b31d8f Final version for N -> 5.8.5 \m/
- ▪ 6d81c3d vendor: sepolicy: Add Color Engine policy
- ▪ 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
- ▪ c0a7af1 Remove all traces of CMTE policy
-
- ▪ project vendor/lge/
- ▪ 640767b v20: Added/updated blobs for new s5k2p7 camera sensor that certain    v20s have.  This does not appear to break any devices without    that camera sensor.
-
- ▼ 09/23/2017
-
-
- ▪ project device/moto/shamu/
- ▪ 9bca8ad shamu: enable burnIn protection support
-
- ▪ project device/oneplus/oneplus3/
- ▪ b0f8c71 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
- ▪ 81f2976 op3: Update blobs from OB24 / OB15
- ▪ 1c89272 op3: Update file extractors to match new template
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 3a81914 ANDROID: sdcardfs: Add missing break
- ▪ fa1c05e ANDROID: Sdcardfs: Move gid derivation under flag
- ▪ 6c4ac32 ANDROID: mnt: Fix freeing of mount data
- ▪ 42f6b0f drivers: staging: Update qcacld-2.0 driver
- ▪ 70676aa ARM: dts: 15801: Switch back to old sRGB cmds
- ▪ 148b155 ARM: dts: 15801: Update panel sRGB & DCI-P3 cmd from Open Beta kernel
- ▪ bb83dc9 ARM: dts: 15801: Nuke redundant panel cmds
- ▪ 33d3d79 Merge remote-tracking branch 'caf/rel/msm-3.18.r5' into nougat
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 53fe045 Const: 5.8.5
-
- ▪ project vendor/cm/
- ▪ ed3107d RR: v5.8.5
-
- ▼ 09/22/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▪ project vendor/oneplus/
- ▪ 2c8740e op3: Update blobs from OB24 / OB15
-
- ▼ 09/21/2017
-
-
- ▪ project hardware/cyanogen/
- ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
-
- ▼ 09/20/2017
-
-
- ▪ project frameworks/native/
- ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
- ▪ project packages/apps/Eleven/
-
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
- ▼ 09/19/2017
-
-
- ▪ project device/xiaomi/msm8956-common/
- ▪ d7cc29c Enable Night display
- ▪ fb3b97e Merge branch 'cm-14.1' of github.com:lineageos/android_device_xiaomi_msm8956-common into HEAD
-
- ▪ project frameworks/av/
- ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
-
- ▪ project hardware/qcom/fm/
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 9e20a46 Merge f7c5dcccfb048b056efc7b3f85d13335397bfd72 on remote branch
-
- ▪ project kernel/xiaomi/msm8956/
- ▪ 85d68f6 Bluetooth: Properly check L2CAP config option output buffer length
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/SetupWizard/
+ ▪ c3b2008 SetupWizard: Set min date to build date
 
- ▪ project packages/apps/Snap/
+ ▼ 10/10/2017
 
- ▪ project packages/apps/Stk/
 
- ▪ project packages/apps/Tag/
+ ▪ project kernel/lge/hammerhead/
+ ▪ 357e63b input: synaptics: add bounds checks for firmware id
+ ▪ 01923ab input: synaptics_dsx: add update bounds checks.
+ ▪ f663049 input: synaptics: defer sysfs creation during init
+ ▪ bebc517 input: synaptics: Add checks of user input data
+ ▪ 7ffac15 input: synaptics: allocate heap memory for buffer
+ ▪ 13a81b0 input: touchscreen: validate bounds of intr_reg_num
 
- ▪ project packages/apps/Terminal/
+ ▪ project packages/apps/Recorder/
+ ▪ 084c5a0 Recorder: Advertise that we can record voice
 
- ▪ project packages/apps/Trebuchet/
+ ▼ 10/09/2017
 
- ▪ project packages/apps/TvSettings/
 
- ▪ project packages/apps/UnifiedEmail/
+ ▪ project vendor/xiaomi/
+ ▪ ba9b7f4 ido: Build dpm jar from source
+ ▪ ccaba93 ido: Remove deprecated media blobs
 
- ▪ project packages/inputmethods/LatinIME/
+ ▼ 10/08/2017
 
- ▪ project packages/providers/CalendarProvider/
 
- ▪ project packages/providers/ContactsProvider/
+ ▪ project packages/apps/Gallery2/
+ ▪ 947a320 Gallery: Kill media effect dialog on movies
 
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ project packages/apps/Settings/
 
