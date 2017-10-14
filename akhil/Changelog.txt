@@ -168,15 +168,15 @@
  ▪ project frameworks/base/
  ▪ 8fbd105 Core: Battery warning levels are inclusive, not exclusive
 
- ▪ project packages/apps/PackageInstaller/
- ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
-
  ▪ project vendor/samsung/
  ▪ d071c6f apq8084-common: gps.conf: various fixes
  ▪ 0214e7e apq8084-common: update blobs to CQI4
 
  ▼ 10/12/2017
 
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
 
  ▪ project packages/apps/SetupWizard/
  ▪ c3b2008 SetupWizard: Set min date to build date
