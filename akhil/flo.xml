@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <flo>
-<Filename>RR-N-v5.8.5-20170925-flo-Final.zip</Filename>
+<Filename>RR-N-v5.8.5-20171014-flo-Final.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/flo/RR-N-v5.8.5-20170925-flo-Final.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/flo/RR-N-v5.8.5-20171014-flo-Final.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
