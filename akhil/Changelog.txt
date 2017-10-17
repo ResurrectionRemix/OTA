@@ -228,10 +228,6 @@
  ▪ 596aba4 qlge: avoid memcpy buffer overflow
  ▪ f7a7e2a ipv6: accept 64k - 1 packet length in ip6_find_1stfragopt()
 
- ▪ project vendor/samsung/
- ▪ d071c6f apq8084-common: gps.conf: various fixes
- ▪ 0214e7e apq8084-common: update blobs to CQI4
-
  ▪ project vendor/xiaomi/
  ▪ 73abce7 natrium: Update blobs to 7.10.12
  ▪ 7829a21 gemini: Update blobs to 7.10.12
@@ -248,6 +244,10 @@
 
  ▪ project packages/apps/SetupWizard/
  ▪ c3b2008 SetupWizard: Set min date to build date
+
+ ▪ project vendor/samsung/
+ ▪ d071c6f apq8084-common: gps.conf: various fixes
+ ▪ 0214e7e apq8084-common: update blobs to CQI4
 
  ▼ 10/11/2017
 
