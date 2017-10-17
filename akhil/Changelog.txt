@@ -2,7 +2,76 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
+ ▼ 10/17/2017
+
+
+ ▪ project external/wpa_supplicant_8/
+ ▪ ac78917 Clear PMK length and check for this when deriving PTK
+ ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
+ ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
+ ▪ 5c64f90 Remove all PeerKey functionality
+ ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
+ ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
+ ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
+ ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
+ ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
+ ▪ bab71fa Prevent installation of an all-zero TK
+ ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
+ ▪ 4326a42 Prevent reinstallation of an already in-use group key
+ ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
+ ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/Calendar/
+ ▪ 56dc4a8 Calendar: Show week start and end in title for Week view
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project vendor/oneplus/
+ ▪ 3e68a74 oneplus2: fourth part of 3.6.0
+
+ ▪ project vendor/samsung/
+ ▪ f46bbcb hltetmo: Import SM-N900R4 (usc) blobs
+ ▪ a5783ac hltevzw: Remove blobs
+ ▪ c24f8ae hlteusc: Remove blobs
+ ▪ 8bd3647 hltespr: Remove blobs
+
+ ▼ 10/16/2017
+
+
+ ▪ project packages/apps/Eleven/
+ ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
+ ▪ 119d774 Eleven: Don't use a sticky service
+
+ ▪ project vendor/oneplus/
+ ▪ dbe1563 oneplus2: third part of 3.6.0
+ ▪ a9b8905 cheeseburger: update proprietary-files from 4.5.13
+ ▪ fc465dd oneplus2: second part of 3.6.0
+ ▪ 9e67947 oneplus2: first part of 3.6.0
+
+ ▪ project vendor/samsung/
+ ▪ dfd5dbb kltespr: Restore blobs
+
  ▼ 10/15/2017
+
+
+ ▪ project vendor/samsung/
+ ▪ e7e0ea3 klte-common: Update blobs
+ ▪ 25e1ea7 kltedv: Hide spr support
+
+ ▪ project vendor/xiaomi/
+ ▪ d582ab6 capricorn: Update blobs to 7.10.12
+
+ ▼ 10/14/2017
 
 
  ▪ project kernel/oneplus/msm8996/
@@ -160,20 +229,19 @@
  ▪ f7a7e2a ipv6: accept 64k - 1 packet length in ip6_find_1stfragopt()
 
  ▪ project vendor/samsung/
- ▪ 25e1ea7 kltedv: Hide spr support
+ ▪ d071c6f apq8084-common: gps.conf: various fixes
+ ▪ 0214e7e apq8084-common: update blobs to CQI4
 
- ▼ 10/14/2017
+ ▪ project vendor/xiaomi/
+ ▪ 73abce7 natrium: Update blobs to 7.10.12
+ ▪ 7829a21 gemini: Update blobs to 7.10.12
+ ▪ 134b44c msm8996-common: Update blobs to 7.10.12
+
+ ▼ 10/13/2017
 
 
  ▪ project frameworks/base/
  ▪ 8fbd105 Core: Battery warning levels are inclusive, not exclusive
-
- ▪ project vendor/samsung/
- ▪ d071c6f apq8084-common: gps.conf: various fixes
- ▪ 0214e7e apq8084-common: update blobs to CQI4
-
- ▼ 10/13/2017
-
 
  ▪ project packages/apps/PackageInstaller/
  ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
@@ -184,29 +252,6 @@
  ▼ 10/11/2017
 
 
- ▪ project kernel/lge/hammerhead/
- ▪ 357e63b input: synaptics: add bounds checks for firmware id
- ▪ 01923ab input: synaptics_dsx: add update bounds checks.
- ▪ f663049 input: synaptics: defer sysfs creation during init
- ▪ bebc517 input: synaptics: Add checks of user input data
- ▪ 7ffac15 input: synaptics: allocate heap memory for buffer
- ▪ 13a81b0 input: touchscreen: validate bounds of intr_reg_num
-
  ▪ project packages/apps/Recorder/
  ▪ 084c5a0 Recorder: Advertise that we can record voice
-
- ▼ 10/10/2017
-
-
- ▪ project vendor/xiaomi/
- ▪ ba9b7f4 ido: Build dpm jar from source
- ▪ ccaba93 ido: Remove deprecated media blobs
-
- ▼ 10/09/2017
-
-
- ▪ project packages/apps/Gallery2/
- ▪ 947a320 Gallery: Kill media effect dialog on movies
-
- ▪ project packages/apps/Settings/
 
