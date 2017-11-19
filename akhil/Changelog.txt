@@ -126,23 +126,6 @@
  ▼ 11/17/2017
 
 
- ▪ project external/libavc/
- ▪ 8802e62 Decoder: Updated error check while parsing num_ref_idx_lx_active.
- ▪ 089b44f Decoder: Corrected variable datatypes in ih264d_get_implicit_weights.
- ▪ 734eaa8 Added an out of bound check on u4_num_bufs in input argument
- ▪ 23d7d14 Decoder: Conceal picture only if valid picture buffer is obtained.
-
- ▪ project external/libhevc/
- ▪ db4acea Added an out of bound check on u4_num_bufs in input argument
- ▪ e3a0cff Fix tile index buf alloc size
-
- ▪ project external/libmpeg2/
- ▪ 59b6e84 Propagating Error From impeg2d_pre_pic_dec_proc
- ▪ 872cc72 Check on Picture Dimensions
- ▪ 3b511be Fix Half Pel MC on Last Ref Row
- ▪ 767f4f4 Check Number of MBs to Skip.
- ▪ c772671 Replace memcpy with memmove to Solve Memory Overlap Error
-
  ▪ project frameworks/av/
  ▪ 2698c2f EffectBundle: Check parameter and value size
 
@@ -251,6 +234,23 @@
 
  ▼ 11/16/2017
 
+
+ ▪ project external/libavc/
+ ▪ 8802e62 Decoder: Updated error check while parsing num_ref_idx_lx_active.
+ ▪ 089b44f Decoder: Corrected variable datatypes in ih264d_get_implicit_weights.
+ ▪ 734eaa8 Added an out of bound check on u4_num_bufs in input argument
+ ▪ 23d7d14 Decoder: Conceal picture only if valid picture buffer is obtained.
+
+ ▪ project external/libhevc/
+ ▪ db4acea Added an out of bound check on u4_num_bufs in input argument
+ ▪ e3a0cff Fix tile index buf alloc size
+
+ ▪ project external/libmpeg2/
+ ▪ 59b6e84 Propagating Error From impeg2d_pre_pic_dec_proc
+ ▪ 872cc72 Check on Picture Dimensions
+ ▪ 3b511be Fix Half Pel MC on Last Ref Row
+ ▪ 767f4f4 Check Number of MBs to Skip.
+ ▪ c772671 Replace memcpy with memmove to Solve Memory Overlap Error
 
  ▪ project kernel/oneplus/msm8996/
  ▪ 9666a7b Revert "arch: arm: dts: Disable wake-on-touch for msm8996pro"
