@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <d802>
-<Filename>RR-N-v5.8.5-20171017-d802-Final.zip</Filename>
+<Filename>RR-N-v5.8.5-20171119-d802-Final.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/d802/RR-N-v5.8.5-20171017-d802-Final.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/d802/RR-N-v5.8.5-20171119-d802-Final.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"

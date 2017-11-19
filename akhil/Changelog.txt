@@ -126,9 +126,6 @@
  ▼ 11/17/2017
 
 
- ▪ project frameworks/av/
- ▪ 2698c2f EffectBundle: Check parameter and value size
-
  ▪ project kernel/oneplus/msm8996/
  ▪ 644a670 rcu: Tell the compiler that rcu_state_p is immutable
  ▪ 86f4004 rcu: Eliminate a few RCU_BOOST #ifdefs in favor of IS_ENABLED()
@@ -251,6 +248,9 @@
  ▪ 3b511be Fix Half Pel MC on Last Ref Row
  ▪ 767f4f4 Check Number of MBs to Skip.
  ▪ c772671 Replace memcpy with memmove to Solve Memory Overlap Error
+
+ ▪ project frameworks/av/
+ ▪ 2698c2f EffectBundle: Check parameter and value size
 
  ▪ project kernel/oneplus/msm8996/
  ▪ 9666a7b Revert "arch: arm: dts: Disable wake-on-touch for msm8996pro"
