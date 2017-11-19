@@ -2,256 +2,334 @@
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
 
- ▼ 10/17/2017
+ ▼ 11/20/2017
 
 
- ▪ project external/wpa_supplicant_8/
- ▪ ac78917 Clear PMK length and check for this when deriving PTK
- ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
- ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
- ▪ 5c64f90 Remove all PeerKey functionality
- ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
- ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
- ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
- ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
- ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
- ▪ bab71fa Prevent installation of an all-zero TK
- ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
- ▪ 4326a42 Prevent reinstallation of an already in-use group key
- ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
- ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
+ ▪ project android/
+ ▪ 3449c1d manifest: Track our bison fork
+
+ ▪ project build/
+ ▪ fcfb35c core: Prefix and build bison host executable if needed
+ ▪ 99f49f2 Bump Security String to 2017-11-06
+ ▪ 48144d6 Update Security String to 2017-11-05
+
+ ▪ project device/oneplus/oneplus3/
+ ▪ 9576616 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
+
+ ▪ project frameworks/av/
+ ▪ 6e3b0b8 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
 
  ▪ project frameworks/base/
+ ▪ 82846aa DPC should not be allowed to grant development permission
+ ▪ 1a6bf45 Add stub for setCursorVisibility
+ ▪ 0d6573e Prevent deadlock when using always-on legacy VPNs
+ ▪ 78cb021 Add powerhint function that accepts an array of data
 
- ▪ project packages/apps/Calendar/
- ▪ 56dc4a8 Calendar: Show week start and end in title for Week view
+ ▪ project frameworks/native/
+ ▪ e73bb3b Merge remote-tracking branch 'laos/cm-14.1' into HEAD
 
- ▪ project packages/apps/Dialer/
+ ▪ project kernel/oneplus/msm8996/
+ ▪ c0b64c2 PerfectPrunes_v2
+ ▪ 1098361 drivers: mdss: Add DCI_P3 entry for OmniROM
+ ▪ e636584 oneplus3_defconfig: Re-enable ondemand
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
+ ▪ cb4c853 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
 
  ▪ project packages/apps/Settings/
+ ▪ 12a150d AppOps: Add info if app doesn't request any blockable permissions
+ ▪ ec8fe1e AppOps: Add icon for "Toggle cellular data"
+ ▪ 8a9b8ef Settings: Correct german translation for 1 registered fingerprint
 
- ▪ project vendor/oneplus/
- ▪ 3e68a74 oneplus2: fourth part of 3.6.0
+ ▪ project packages/services/OmniJaws/
 
- ▪ project vendor/samsung/
- ▪ f46bbcb hltetmo: Import SM-N900R4 (usc) blobs
- ▪ a5783ac hltevzw: Remove blobs
- ▪ c24f8ae hlteusc: Remove blobs
- ▪ 8bd3647 hltespr: Remove blobs
+ ▪ project system/core/
+ ▪ 6664602 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_system_core into HEAD
 
- ▼ 10/16/2017
+ ▪ project vendor/cm/
+ ▪ 70c3e66 cm: build: kernel: Rework kernel module logic
+ ▪ 72ba3c5 Updated apns for device bringup for S4 Mini - serranolteusc
+ ▪ fb7503b Added more USA sensitive phone numbers
+ ▪ 5c45440 cm/aosp/cafremote: Make variables local
+ ▪ 473be65 envsetup: Fix cmremote for AOSP projects
+ ▪ 0653d1d qcom_target: Commonize UM target HALs
+ ▪ a193c32 charger: Remove battery_fail images
+ ▪ a94bda1 Update initial attach for Tmo US
+ ▪ aee9791 tasks: kernel: Kill unexisting wiki reference
+ ▪ 409fbfa build: qcom_target: Add sdm660
+ ▪ 692c081 Add Correios Celular (BR) APN
+ ▪ ad2b018 Add WOM Internet/MMS (CL) apn
+ ▪ 01d65f5 qcom: Allow setting custom audio, display, and media HALs
 
-
- ▪ project packages/apps/Eleven/
- ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
- ▪ 119d774 Eleven: Don't use a sticky service
-
- ▪ project vendor/oneplus/
- ▪ dbe1563 oneplus2: third part of 3.6.0
- ▪ a9b8905 cheeseburger: update proprietary-files from 4.5.13
- ▪ fc465dd oneplus2: second part of 3.6.0
- ▪ 9e67947 oneplus2: first part of 3.6.0
-
- ▪ project vendor/samsung/
- ▪ dfd5dbb kltespr: Restore blobs
-
- ▼ 10/15/2017
+ ▼ 11/19/2017
 
 
- ▪ project vendor/samsung/
- ▪ e7e0ea3 klte-common: Update blobs
- ▪ 25e1ea7 kltedv: Hide spr support
+ ▪ project frameworks/av/
+ ▪ 60e088c Track graphic buffer mode in OMXNodeInstance
 
- ▪ project vendor/xiaomi/
- ▪ d582ab6 capricorn: Update blobs to 7.10.12
+ ▪ project kernel/oneplus/msm8996/
+ ▪ bc38ae0 PerfectPrunes
+ ▪ 614cb0a oneplus3_defconfig: Add CONFIG_KEYS_COMPAT
+ ▪ f78580f Linux 3.18.82
+ ▪ b0cb117 target/iscsi: Fix iSCSI task reassignment handling
+ ▪ 938ee86 security/keys: add CONFIG_KEYS_COMPAT to Kconfig
+ ▪ 240b6b3 ip6_gre: only increase err_count for some certain type icmpv6 in ip6gre_err
+ ▪ 5c0732c ipip: only increase err_count for some certain type icmp in ipip_err
+ ▪ 9fbf285 ipv6: flowlabel: do not leave opt->tot_len with garbage
+ ▪ 87139a6 sctp: reset owner sk for data chunks on out queues when migrating a sock
+ ▪ 55086aa tun: allow positive return values on dev_get_valid_name() call
+ ▪ 63bb624 net/unix: don't show information about sockets from other namespaces
+ ▪ aef5d171 sctp: add the missing sock_owned_by_user check in sctp_icmp_redirect
+ ▪ d1eb994 tun: call dev_get_valid_name() before register_netdevice()
+ ▪ 1c3f790 l2tp: check ps->sock before running pppol2tp_session_ioctl()
+ ▪ e1386d5 tcp: fix tcp_mtu_probe() vs highest_sack
+ ▪ 4589858 tun/tap: sanitize TUNSETSNDBUF input
+ ▪ f4c1df4 Revert "ARM: dts: imx53-qsb-common: fix FEC pinmux config"
+ ▪ a15b539 Input: ims-psu - check if CDC union descriptor is sane
+ ▪ 0b1a12d usb: usbtest: fix NULL pointer dereference
+ ▪ 9be67dc mac80211: don't compare TKIP TX MIC key in reinstall prevention
+ ▪ be9357f mac80211: use constant time comparison with keys
+ ▪ db46c00 mac80211: accept key reinstall without changing anything
+ ▪ 187a888 Revert "ceph: unlock dangling spinlock in try_flush_caps()"
 
- ▼ 10/14/2017
+ ▪ project packages/apps/SetupWizard/
+ ▪ c347cee Fix result on skipping Fingerprint setup
+
+ ▼ 11/18/2017
+
+
+ ▪ project external/libnfc-nci/
+ ▪ 8e151e6 Add NAME_ISO_DEP_MAX_TRANSCEIVE_LENGTH
+
+ ▪ project frameworks/native/
+ ▪ c870666 DO NOT MERGE Remove window obscurement information.
+
+ ▪ project frameworks/opt/telephony/
+ ▪ 6e49154 Ensure IMS dial uses the correct CLIR mode.
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 8394d11 oneplus3_defconfig: Regenerate
+ ▪ 4f2a68f cpufreq: fallback to interactive if governor is not found
+ ▪ 8d8a435 Revert "net: packet: Unlock fanout_mutex in case of no error"
+ ▪ bd3407a build: Drop makeparallel
+
+ ▪ project packages/apps/Nfc/
+ ▪ 16d6b3c Make Transceive Length configurable for ISO DEP Technology
+
+ ▪ project system/bt/
+ ▪ 1d27e7b SDP: Bounds check 'id' parameter for free_sdp_slot()
+
+ ▼ 11/17/2017
+
+
+ ▪ project external/libavc/
+ ▪ 8802e62 Decoder: Updated error check while parsing num_ref_idx_lx_active.
+ ▪ 089b44f Decoder: Corrected variable datatypes in ih264d_get_implicit_weights.
+ ▪ 734eaa8 Added an out of bound check on u4_num_bufs in input argument
+ ▪ 23d7d14 Decoder: Conceal picture only if valid picture buffer is obtained.
+
+ ▪ project external/libhevc/
+ ▪ db4acea Added an out of bound check on u4_num_bufs in input argument
+ ▪ e3a0cff Fix tile index buf alloc size
+
+ ▪ project external/libmpeg2/
+ ▪ 59b6e84 Propagating Error From impeg2d_pre_pic_dec_proc
+ ▪ 872cc72 Check on Picture Dimensions
+ ▪ 3b511be Fix Half Pel MC on Last Ref Row
+ ▪ 767f4f4 Check Number of MBs to Skip.
+ ▪ c772671 Replace memcpy with memmove to Solve Memory Overlap Error
+
+ ▪ project frameworks/av/
+ ▪ 2698c2f EffectBundle: Check parameter and value size
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 644a670 rcu: Tell the compiler that rcu_state_p is immutable
+ ▪ 86f4004 rcu: Eliminate a few RCU_BOOST #ifdefs in favor of IS_ENABLED()
+ ▪ f6eab61 rcu: Convert ACCESS_ONCE() to READ_ONCE() and WRITE_ONCE()
+ ▪ e20dac4 rcu: Control grace-period delays directly from value
+ ▪ 75b0eb6 rcu: Associate quiescent-state reports with grace period
+ ▪ 8c4e5a2 rcu: Yet another fix for preemption and CPU hotplug
+ ▪ eac8dc7 rcu: Add diagnostics to grace-period cleanup
+ ▪ 7f20112 rcu: Handle outgoing CPUs on exit from idle loop
+ ▪ 58a1e04 rcu: Eliminate ->onoff_mutex from rcu_node structure
+ ▪ 2adada5 rcu: Process offlining and onlining only at grace-period start
+ ▪ eb07036 Revert "rcu: Move early boot callback tests earlier"
+ ▪ 0a36496 rcu: Move rcu_report_unblock_qs_rnp() to common code
+ ▪ cb67032 rcu: Rework preemptible expedited bitmask handling
+ ▪ 09078f9 rcu: Remove event tracing from rcu_cpu_notify(), used by offline CPUs
+ ▪ 390ae95 rcu: Provide diagnostic option to slow down grace-period initialization
+ ▪ 53bb389 rcu: Detect stalls caused by failure to propagate up rcu_node tree
+ ▪ 16ab3bd rcu: Eliminate empty HOTPLUG_CPU ifdef
+ ▪ 7eeef61 rcu: Simplify sync_rcu_preempt_exp_init()
+ ▪ 62b55bd rcu: Put all orphan-callback-related code under same comment
+ ▪ eddbac8 rcu: Consolidate offline-CPU callback initialization
+ ▪ 19db6b0 rcu: Remove redundant check of cpu_online()
+ ▪ bee8bf9 rcu: Get rcu_sched_force_quiescent_state() where it belongs
+ ▪ 12baaae rcu: Add boot-up check for non-default CONFIG_RCU_FANOUT_LEAF values
+ ▪ b1238a5 rcu: Use IS_ENABLED() to simplify rcu_bootup_announce_oddness()
+ ▪ 48572e6 rcu: Improve diagnostics for blocked critical sections in irq
+ ▪ b8d47d9 rcu: Use IS_ENABLED() to CONFIG_RCU_FANOUT_EXACT #ifdef
+ ▪ 4668768 rcu: Move early boot callback tests earlier
+ ▪ 3c906c3 rcu: Move early-boot callbacks to no-CBs lists for no-CBs CPUs
+ ▪ b468d38 rcu: Tighten up affinity and check for sysidle
+ ▪ c14acbf rcu: Remove fastpath from __rcu_process_callbacks()
+ ▪ 6d115b0 rcu: Remove unnecessary condition check in rcu_qsctr_help()
+ ▪ 8e3a080 rcu: Fixes to NO_HZ_FULL sysidle accounting
+ ▪ 175da7f rcutorture: Make consistent use of variables
+ ▪ 068b25f rcu: Add Kconfig option to expedite grace periods during boot
+ ▪ 8c1ead9 rcu: Update from rcu_expedited variable to rcu_gp_is_expedited()
+ ▪ a41c5b8 rcu: Add rcu_expedite_gp() and rcu_unexpedite_gp() to rcutorture
+ ▪ b975796 rcu: Provide rcu_expedite_gp() and rcu_unexpedite_gp()
+ ▪ ea41cbc rcu: Fix a couple of typos in rcu_all_qs() comment header
+ ▪ 6f15a0f rcu: Avoid clobbering early boot callbacks
+ ▪ a743ab5 rcu: Refine diagnostics for lacking kthread for no-CBs callbacks
+ ▪ 5720ad1 rcu: Prevent early-boot RCU callbacks from splatting
+ ▪ 27dd2bb rcu: Wire ->rda pointers at compile time
+ ▪ 87d334e rcu: Abstract default callback-list initialization from init_callback_list()
+ ▪ 2830188 rcu_tree: Avoid touching rnp->completed when a new GP is started
+ ▪ f1a5264 rcu: Consolidate rcu_synchronize and wakeme_after_rcu()
+ ▪ ac1c032 rcu: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+ ▪ 3bd99c7 rcu: Clear need_qs flag to prevent splat
+ ▪ 35dcfe3 rcu: Initialize tiny RCU stall-warning timeouts at boot
+ ▪ 048d723 rcu: Fix RCU CPU stall detection in tiny implementation
+ ▪ 64bb4cf rcu: Add GP-kthread-starvation checks to CPU stall warnings
+ ▪ e217418 rcu: Make cond_resched_rcu_qs() apply to normal RCU flavors
+ ▪ a187542 rcutorture: Add more diagnostics in rcu_barrier() test failure case
+ ▪ 9eb3c9a rcutorture: Check from beginning to end of grace period
+ ▪ 142ef5f rcu: Remove redundant rcu_batches_completed() declaration
+ ▪ 73dfac8 rcutorture: Drop rcu_torture_completed() and friends
+ ▪ 8cc3ed0 rcutorture: Use unsigned for Reader Batch computations
+ ▪ d08fd0c rcu: Make _batches_completed() functions return unsigned long
+ ▪ 1898d76 rcu: Handle gpnum/completed wrap while dyntick idle
+ ▪ dea426f rcu: Improve diagnostics for spurious RCU CPU stall warnings
+ ▪ cb9a6ee rcu: Make RCU_CPU_STALL_INFO include number of fqs attempts
+ ▪ f99f8f8 rcu: Make SRCU optional by using CONFIG_SRCU
+ ▪ 922e3cc rcu: Expand SRCU ->completed to 64 bits
+ ▪ 85183c2 rcu: Remove redundant callback-list initialization
+ ▪ cbb521c rcu: Don't scan root rcu_node structure for stalled tasks
+ ▪ e06fb82 rcu: Revert "Allow post-unlock reference for rt_mutex" to avoid priority-inversion
+ ▪ 9955fff rcu: Note quiescent state when CPU goes offline
+ ▪ 6d7b7f7 rcu: Don't bother affinitying rcub kthreads away from offline CPUs
+ ▪ 8de4fc7 rcu: Don't initiate RCU priority boosting on root rcu_node
+ ▪ 6949078 rcu: Don't spawn rcub kthreads on root rcu_node structure
+ ▪ fa49be5 rcu: Make use of rcu_preempt_has_tasks()
+ ▪ ec1964c rcu: Shorten irq-disable region in rcu_cleanup_dead_cpu()
+ ▪ 9be2d53 rcu: Don't migrate blocked tasks even if all corresponding CPUs offline
+ ▪ 399a79f rcu: Make rcu_read_unlock_special() propagate ->qsmaskinit bit clearing
+ ▪ dc3b755 rcu: Abstract rcu_cleanup_dead_rnp() from rcu_cleanup_dead_cpu()
+ ▪ bcbf087 rcu: Rename "empty" to "empty_norm" in preparation for boost rework
+ ▪ 19da4a5 rcu: Protect rcu_boost() lockless accesses with ACCESS_ONCE()
+ ▪ 8028e65 rcu: Remove "select IRQ_WORK" from config TREE_RCU
+ ▪ 7357265 rcu: Fix rcu_barrier() race that could result in too-short wait
+ ▪ 40f0586 tiny_rcu: Directly force QS when call_rcu_[bh|sched]() on idle_task
+ ▪ 459e817 rcu: Fix invoke_rcu_callbacks() comment
+ ▪ 0768f89 rcu: Remove redundant rcu_is_cpu_rrupt_from_idle() from tiny RCU
+ ▪ 570e6c6 rcu: Make rcu_nmi_enter() handle nesting
+ ▪ c9e405c rcu: Fix FIXME in rcu_tasks_kthread()
+ ▪ 01535fe rcutorture: Fix rcu_torture_cbflood() memory leak
+ ▪ 54a042f rcu: Use DEFINE_PER_CPU_SHARED_ALIGNED for rcu_data
+ ▪ a163b7f rcu: Remove rcu_dynticks * parameters when they are always this_cpu_ptr(&rcu_dynticks)
+ ▪ fd1cda3 rcu: Fix for rcuo online-time-creation reorganization bug
+ ▪ faf7cfb rcu: Remove redundant TREE_PREEMPT_RCU config option
+ ▪ 7d5dd5c rcu: Avoid IPIing idle CPUs from synchronize_sched_expedited()
+ ▪ b9433e9 rcu: Remove CONFIG_RCU_CPU_STALL_VERBOSE
+ ▪ 458a75a arm: dtsi: 15801: Set fastcharge current to 2500 mA
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ ce6a462 Backport overlay security fix
+
+ ▪ project system/core/
+ ▪ 49556db Fix integer overflow in utf{16,32}_to_utf8_length
+
+ ▪ project system/netd/
+ ▪ c5e8402 Invalidate dst caches when changing network permissions.
+ ▪ 402e75f Don't allow seamless handover to networks requiring permissions.
+
+ ▼ 11/16/2017
 
 
  ▪ project kernel/oneplus/msm8996/
- ▪ 95ddabc Linux 3.18.75
- ▪ 2d75126 ext4: Don't clear SGID when inheriting ACLs
- ▪ 7faa3eb ext4: fix data corruption for mmap writes
- ▪ 610d052 ext4: only call ext4_truncate when size <= isize
- ▪ 7919f6c drm/i915/bios: ignore HDMI on port A
- ▪ 42e4107 HID: i2c-hid: allocate hid buffers for real worst case
- ▪ 3dc78a6 driver core: platform: Don't read past the end of "driver_override" buffer
- ▪ 460b61f ALSA: usx2y: Suppress kernel warning at page allocation failures
- ▪ 6730fcd lsm: fix smack_inode_removexattr and xattr_getsecurity memleak
- ▪ 8df2ae7 uwb: ensure that endpoint is interrupt
- ▪ 4c2b9d0 uwb: properly check kthread_run return value
- ▪ fd9dac2 iio: adc: mcp320x: Fix oops on module unload
- ▪ cf53340 iio: ad7793: Fix the serial interface reset
- ▪ abb7427 iio: core: Return error for failed read_reg
- ▪ ad2aaf7 staging: iio: ad7192: Fix - use the dedicated reset function avoiding dma from stack.
- ▪ 591d1cc iio: ad_sigma_delta: Implement a dedicated reset function
- ▪ 8db4e67 xhci: fix finding correct bus_state structure for USB 3.1 hosts
- ▪ 582c998 USB: fix out-of-bounds in usb_set_configuration
- ▪ 3ae4adf usb: Increase quirk delay for USB devices
- ▪ d8c2a85 USB: uas: fix bug in handling of alternate settings
- ▪ 89bea1b USB: devio: Don't corrupt user memory
- ▪ c6bbeef USB: dummy-hcd: fix infinite-loop resubmission bug
- ▪ d75d17d USB: dummy-hcd: fix connection failures (wrong speed)
- ▪ 7b22d27 usb: pci-quirks.c: Corrected timeout values used in handshake
- ▪ de50f3c ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
- ▪ e17cdb1 usb: renesas_usbhs: fix usbhsf_fifo_clear() for RX direction
- ▪ d1cb665 usb: renesas_usbhs: fix the BCLR setting condition for non-DCP pipe
- ▪ 43d9fbd usb-storage: unusual_devs entry to fix write-access regression for Seagate external drives
- ▪ 4f200f4 USB: gadgetfs: fix copy_to_user while holding spinlock
- ▪ 4a00dcb USB: gadgetfs: Fix crash caused by inadequate synchronization
- ▪ b533c19 usb: gadget: inode.c: fix unbalanced spin_lock in ep0_write
- ▪ 6dfc781 Linux 3.18.74
- ▪ b86e235 crypto: algif_skcipher - Load TX SG list after waiting
- ▪ 555e855 staging: nvec: remove duplicated const
- ▪ 50eb06a ttpci: address stringop overflow warning
- ▪ 2997f7e ALSA: au88x0: avoid theoretical uninitialized access
- ▪ a426ff2 IB/qib: fix false-postive maybe-uninitialized warning
- ▪ ad6643c libata: transport: Remove circular dependency at free time
- ▪ e2a3604 xfs: remove kmem_zalloc_greedy
- ▪ 7649cf9 md/raid10: submit bio directly to replacement disk
- ▪ 3a144e6 rds: ib: add error handle
- ▪ e43ecde parisc: perf: Fix potential NULL pointer dereference
- ▪ ba3f154 netfilter: nfnl_cthelper: fix incorrect helper->expect_class_max
- ▪ 80d3393 exynos-gsc: Do not swap cb/cr for semi planar formats
- ▪ 9979fbb netfilter: invoke synchronize_rcu after set the _hook_ to NULL
- ▪ c1ecd92 mmc: sdio: fix alignment issue in struct sdio_func
- ▪ 4457507 usb: plusb: Add support for PL-27A1
- ▪ 9d33820 team: fix memory leaks
- ▪ 24031da net/packet: check length in getsockopt() called with PACKET_HDRLEN
- ▪ b8caafa net: core: Prevent from dereferencing null pointer when releasing SKB
- ▪ 6c6652e audit: log 32-bit socketcalls
- ▪ a62c5d3 partitions/efi: Fix integer overflow in GPT size calculation
- ▪ 17b2387 USB: serial: mos7840: fix control-message error handling
- ▪ 9f758dd USB: serial: mos7720: fix control-message error handling
- ▪ f798a42 IB/ipoib: Replace list_del of the neigh->list with list_del_init
- ▪ dd17721 IB/ipoib: rtnl_unlock can not come after free_netdev
- ▪ 4af86b9 IB/ipoib: Fix deadlock over vlan_mutex
- ▪ edcf1a4 tty: goldfish: Fix a parameter of a call to free_irq
- ▪ e299a4c ARM: 8635/1: nommu: allow enabling REMAP_VECTORS_TO_RAM
- ▪ 5626437 hwmon: (gl520sm) Fix overflows and crash seen when writing into limit attributes
- ▪ 33b05d1 sh_eth: use correct name for ECMR_MPDE bit
- ▪ 125fae3 MIPS: Ensure bss section ends on a long-aligned address
- ▪ 4eba730 RDS: RDMA: Fix the composite message user notification
- ▪ 4151299 drm: bridge: add DT bindings for TI ths8135
- ▪ 92c9537 oneplus3: regenerate defconfig
- ▪ 0feb307 CPUFREQ: Interactive: change screen off to notifier. + sysfs.
- ▪ c58aee0 cpufreq: interactive: add screen off max frequency tunable
- ▪ 5c72e8b cpufreq: interactive: add powersave bias tunable
- ▪ a0c2d8f cpufreq: interactive: remove hispeed_freq init restriction
- ▪ bcae734 cpufreq: interactive: reduce timer with screen off
- ▪ 907c902 drivers:cpufreq:cpufreq_interactive: Remove prev_timer_rate and sleep_timer_rate
- ▪ 62ed3c5 drivers:cpufreq:cpufreq_{blu_active,interactive}: Deny perfd the ability to alter tunables.
- ▪ 12b04b8 drivers:cpufreq:cpufreq_{blu_active,interactive,ondemand}: Lock io_is_busy
- ▪ 62052a0 cpufreq: interactive governor drops bits in time calculation
- ▪ 23aa6bc cpufreq: interactive: fix to come out of hysteresis mode
- ▪ 625b1b4e cpufreq_interactive: remove boost functionality
- ▪ 1134029 cpufreq: interactive: Remove the jump_to_max hack
- ▪ 6cb51e2 CHROMIUM: cpufreq: interactive: calculate load before freq change
- ▪ 1018bdb boeffla_wl_blocker: Block default wakelocks we had before
- ▪ 8c90227 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
- ▪ 7510016 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
- ▪ 9c96ac4 boeffla_defconfig: enable boeffla wakelock blocker
- ▪ 03c9369 boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
- ▪ 747efe9 drivers: wakeup: Squash revert all Franco wakelock blocker commits
- ▪ 382e3ff Linux 3.18.73
- ▪ 552218b fix xen_swiotlb_dma_mmap prototype
- ▪ a7f0a6d swiotlb-xen: implement xen_swiotlb_dma_mmap callback
- ▪ 8f6c6b1 video: fbdev: aty: do not leak uninitialized padding in clk to userspace
- ▪ b29091b5 x86/fpu: Don't let userspace set bogus xcomp_bv
- ▪ 73142ad btrfs: prevent to set invalid default subvolid
- ▪ 74dfa61 PCI: Fix race condition with driver_override
- ▪ 245dda8 kvm: nVMX: Don't allow L2 to access the hardware CR8
- ▪ d05d84d arm64: Make sure SPsel is always set
- ▪ 0d5a679b bsg-lib: don't free job in bsg_prepare_job
- ▪ e33b944 nl80211: check for the required netlink attributes presence
- ▪ aba5eb4 vfs: Return -ENXIO for negative SEEK_HOLE / SEEK_DATA offsets
- ▪ 046fd3d SMB3: Don't ignore O_SYNC/O_DSYNC and O_DIRECT flags
- ▪ 624cd41 SMB: Validate negotiate (to protect against downgrade) even if signing off
- ▪ 3e1282d powerpc/pseries: Fix parent_dn reference leak in add_dt_node()
- ▪ 40d629d KEYS: prevent KEYCTL_READ on negative key
- ▪ 9287508 KEYS: prevent creating a different user's keyrings
- ▪ 6b37c9c KEYS: fix writing past end of user-supplied buffer in keyring_read()
- ▪ 728006f crypto: talitos - fix sha224
- ▪ 92a8b8d scsi: scsi_transport_iscsi: fix the issue that iscsi_if_rx doesn't parse nlmsg properly
- ▪ 445e969 tracing: Erase irqsoff trace with empty write
- ▪ 408a8e5 tracing: Fix trace_pipe behavior for instance traces
- ▪ 06dc2d6 KVM: PPC: Book3S: Fix race and leak in kvm_vm_ioctl_create_spapr_tce()
- ▪ 0c15934 mac80211: flush hw_roc_start work before cancelling the ROC
- ▪ cd4be31 cifs: release auth_key.response for reconnect.
- ▪ 5212c558 cifs: release cifs root_cred after exit_cifs
- ▪ d87c46f Linux 3.18.72
- ▪ 03b8743 bcache: fix bch_hprint crash and improve output
- ▪ 564f876 bcache: fix for gc and write-back race
- ▪ 073b051 bcache: Correct return value for sysfs attach errors
- ▪ 663a6b2 bcache: correct cache_dirty_target in __update_writeback_rate()
- ▪ a3b846c bcache: Fix leak of bdev reference
- ▪ 538ba97 bcache: initialize dirty stripes in flash_dev_run()
- ▪ 60a1091 media: uvcvideo: Prevent heap overflow when accessing mapped controls
- ▪ 4f2d68f media: v4l2-compat-ioctl32: Fix timespec conversion
- ▪ c93727f PCI: shpchp: Enable bridge bus mastering if MSI is enabled
- ▪ b17e084 ARC: Re-enable MMU upon Machine Check exception
- ▪ b1a51a4 tracing: Apply trace_clock changes to instance max buffer
- ▪ 52527b3 ftrace: Fix selftest goto location on error
- ▪ 320aae4 scsi: qla2xxx: Fix an integer overflow in sysfs code
- ▪ f5ac192 scsi: sg: fixup infoleak when using SG_GET_REQUEST_TABLE
- ▪ dc31395 scsi: sg: factor out sg_fill_request_table()
- ▪ 19d177e scsi: sg: off by one in sg_ioctl()
- ▪ 9b7d63a scsi: sg: use standard lists for sg_requests
- ▪ 59dc447 scsi: sg: remove 'save_scat_len'
- ▪ a95807b scsi: zfcp: trace high part of "new" 64 bit SCSI LUN
- ▪ 76bb0e1 scsi: zfcp: trace HBA FSF response by default on dismiss or timedout late response
- ▪ 61c64d4 scsi: zfcp: fix payload with full FCP_RSP IU in SCSI trace records
- ▪ 790f14c scsi: zfcp: fix missing trace records for early returns in TMF eh handlers
- ▪ f6787b8 scsi: zfcp: add handling for FCP_RESID_OVER to the fcp ingress path
- ▪ 00e10bb scsi: zfcp: fix queuecommand for scsi_eh commands when DIX enabled
- ▪ 47dfe77 skd: Submit requests to firmware before triggering the doorbell
- ▪ a2ffb93 skd: Avoid that module unloading triggers a use-after-free
- ▪ 1be2f18 md/bitmap: disable bitmap_resize for file-backed bitmaps.
- ▪ 3a93e7c block: Relax a check in blk_start_queue()
- ▪ ad88c31 powerpc: Fix DAR reporting when alignment handler faults
- ▪ 1092132 ext4: fix incorrect quotaoff if the quota feature is enabled
- ▪ 5c5a2f0 crypto: AF_ALG - remove SGL terminator indicator when chaining
- ▪ ce68c01 Input: i8042 - add Gigabyte P57 to the keyboard reset table
- ▪ 68daabd3 ip6_gre: fix endianness errors in ip6gre_err
- ▪ ecba424 Revert "usb: musb: fix tx fifo flush handling again"
- ▪ 2b0127d f2fs: check hot_data for roll-forward recovery
- ▪ 997b9da ipv6: fix typo in fib6_net_exit()
- ▪ 23ffa97 ipv6: fix memory leak with multiple tables during netns destruction
- ▪ 689ead3 tcp: initialize rcv_mss to TCP_MIN_MSS instead of 0
- ▪ 28a9b28 Revert "net: phy: Correctly process PHY_HALTED in phy_stop_machine()"
- ▪ 596aba4 qlge: avoid memcpy buffer overflow
- ▪ f7a7e2a ipv6: accept 64k - 1 packet length in ip6_find_1stfragopt()
-
- ▪ project vendor/xiaomi/
- ▪ 73abce7 natrium: Update blobs to 7.10.12
- ▪ 7829a21 gemini: Update blobs to 7.10.12
- ▪ 134b44c msm8996-common: Update blobs to 7.10.12
-
- ▼ 10/13/2017
-
-
- ▪ project frameworks/base/
- ▪ 8fbd105 Core: Battery warning levels are inclusive, not exclusive
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
-
- ▪ project packages/apps/SetupWizard/
- ▪ c3b2008 SetupWizard: Set min date to build date
+ ▪ 9666a7b Revert "arch: arm: dts: Disable wake-on-touch for msm8996pro"
+ ▪ a8865a3 security: selinux: Silence logspam
+ ▪ 9f0a82f drivers: video: mdss: Use qcom,mdss-dsi variants of LiveDisplay modes
+ ▪ 4461ae0 ARM: dts: 15801: Update panel sRGB/DCI-P3/Adobe sRGB cmd from Open Beta kernel
+ ▪ b78656e AwesomeApricot
+ ▪ ae0c495 Linux 3.18.81
+ ▪ 63c1745 x86/oprofile/ppro: Do not use __this_cpu*() in preemptible context
+ ▪ 1e6571b can: c_can: don't indicate triple sampling support for D_CAN
+ ▪ 3be3010 rbd: use GFP_NOIO for parent stat and data requests
+ ▪ ad513dd MIPS: AR7: Ensure that serial ports are properly set up
+ ▪ 0878249 MIPS: Fix CM region target definitions
+ ▪ 7ee7ce2 MIPS: microMIPS: Fix incorrect mask in insn_table_MM
+ ▪ 88e8c63 ALSA: seq: Avoid invalid lockdep class warning
+ ▪ d3a3c90 ALSA: seq: Fix OSS sysex delivery in OSS emulation
+ ▪ dcbec44 ARM: 8720/1: ensure dump_instr() checks addr_limit
+ ▪ 007c436 KEYS: fix NULL pointer dereference during ASN.1 parsing [ver #2]
+ ▪ 0c85613 crypto: x86/sha1-mb - fix panic due to unaligned access
+ ▪ b9d5d2e KEYS: trusted: fix writing past end of buffer in trusted_read()
+ ▪ 0d3f8da KEYS: trusted: sanitize all key material
+ ▪ c06050a IB/ipoib: Change list_del to list_del_init in the tx object
+ ▪ 9d998f2 Input: mpr121 - set missing event capability
+ ▪ 72e8eb7 Input: mpr121 - handle multiple bits change of status register
+ ▪ 2955fa8 IPsec: do not ignore crypto err in ah4 input
+ ▪ b1222cc usb: hcd: initialize hcd->flags to 0 when rm hcd
+ ▪ a34f901 serial: sh-sci: Fix register offsets for the IRDA serial port
+ ▪ 3ee1061 phy: increase size of MII_BUS_ID_SIZE and bus_id
+ ▪ 8ffe22b dt-bindings: Add vendor prefix for LEGO
+ ▪ ceef03e dt-bindings: Add LEGO MINDSTORMS EV3 compatible specification
+ ▪ ee7fea7 iio: trigger: free trigger resource correctly
+ ▪ a20acc13 ARM: omap2plus_defconfig: Fix probe errors on UARTs 5 and 6
+ ▪ fac06dd drm: drm_minor_register(): Clean up debugfs on failure
+ ▪ 527ba70 ARM: dts: imx53-qsb-common: fix FEC pinmux config
+ ▪ 47372ab xen/netback: set default upper limit of tx/rx queues to 8
+ ▪ fb99fc8 video: fbdev: pmag-ba-fb: Remove bad `__init' annotation
+ ▪ add93fe net: packet: Unlock fanout_mutex in case of no error
+ ▪ 4e7a4c5 drivers: block: Restrict loop commit thread to power cluster
+ ▪ 49baf7f drivers: block: Use interruptible wait in loop.c
+ ▪ 65eab3a drivers: cpufreq: Use interruptible waits
+ ▪ 0ab7cf7 arch: arm: dts: Disable wake-on-touch for msm8996pro
+ ▪ 8b75694 drivers: gpu: msm: Port OnePlus GPU power up flag
+ ▪ 95e987a oneplus3: Regen defconfig
+ ▪ 8e35a918 input: synaptics: s3320: Don't run baseline inside IRQ handler
+ ▪ 0d863be Revert "input: synaptics: s3320: Don't run baseline after first touch"
+ ▪ 6f86b21 msm: mdss: Restrict display commit thread to power cluster
+ ▪ 6da059c drivers: video: mdss: Remove command processing ordering hacks
 
  ▪ project vendor/samsung/
- ▪ d071c6f apq8084-common: gps.conf: various fixes
- ▪ 0214e7e apq8084-common: update blobs to CQI4
+ ▪ 57c0445 hero: update blobs
 
- ▼ 10/11/2017
+ ▼ 11/15/2017
 
 
- ▪ project packages/apps/Recorder/
- ▪ 084c5a0 Recorder: Advertise that we can record voice
+ ▪ project device/oneplus/oneplus3/
+ ▪ 3462857 op3: Add WeChat fingerprint payment support
+
+ ▪ project kernel/oneplus/msm8996/
+ ▪ 7182c60 ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
+ ▪ 4f9f245 mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
+ ▪ ed98680 buildscript: Get this thing's shit together
+
+ ▪ project kernel/samsung/smdk4412/
+ ▪ acefaf4 dm crypt: fix cpu hotplug crash by removing per-cpu structure
+ ▪ 0323127 dm crypt: rename struct convert_context sector field
+ ▪ 0ed92f9 dm crypt: move cipher data out of per_cpu struct
+ ▪ 257240b dm crypt: reject trailing characters in sccanf input
+ ▪ 5c25f87 dm crypt: rename pending field
+
+ ▪ project vendor/samsung/
+ ▪ 6107103 smdk4412-common: Regenerate Makefiles
+ ▪ 81df9c3 smdk4412-common: Update blobs from N7105XXUFQG1
+ ▪ 8a016ce t0lte: Remove unused blobs
+ ▪ 31575ad t0lte: Repatch libsec-ril.so to use audioserver instead of mediaserver
+ ▪ acdf3b9 t0lte: Update blobs from N7105XXUFQG1
+
+ ▼ 11/14/2017
+
+
+ ▪ project vendor/samsung/
+ ▪ 016f502 hero: update /system/vendor blobs
 
