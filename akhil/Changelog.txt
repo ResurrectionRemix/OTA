@@ -219,9 +219,6 @@
  ▪ b9433e9 rcu: Remove CONFIG_RCU_CPU_STALL_VERBOSE
  ▪ 458a75a arm: dtsi: 15801: Set fastcharge current to 2500 mA
 
- ▪ project packages/apps/PackageInstaller/
- ▪ ce6a462 Backport overlay security fix
-
  ▪ project system/core/
  ▪ 49556db Fix integer overflow in utf{16,32}_to_utf8_length
 
@@ -298,6 +295,9 @@
  ▪ 0d863be Revert "input: synaptics: s3320: Don't run baseline after first touch"
  ▪ 6f86b21 msm: mdss: Restrict display commit thread to power cluster
  ▪ 6da059c drivers: video: mdss: Remove command processing ordering hacks
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ ce6a462 Backport overlay security fix
 
  ▪ project vendor/samsung/
  ▪ 57c0445 hero: update blobs
