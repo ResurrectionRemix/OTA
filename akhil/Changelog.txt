@@ -300,7 +300,6 @@
 
  ▪ project packages/apps/CMParts/
  ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
- ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
 
  ▪ project packages/apps/Calendar/
 
@@ -436,6 +435,9 @@
 
  ▪ project kernel/samsung/smdk4412/
  ▪ 1bc3033 t0lte: remove obsolete t0ltekor defconfig
+
+ ▪ project packages/apps/CMParts/
+ ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
 
  ▪ project packages/apps/PackageInstaller/
  ▪ c4735a2 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
