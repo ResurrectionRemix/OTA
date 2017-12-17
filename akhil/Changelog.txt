@@ -291,10 +291,6 @@
 
  ▪ project packages/resources/devicesettings/
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
  ▼ 12/13/2017
 
 
@@ -398,6 +394,10 @@
  ▪ project packages/services/WeatherService/
 
  ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
  ▼ 12/12/2017
 
