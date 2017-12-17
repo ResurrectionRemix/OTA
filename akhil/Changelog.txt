@@ -8,10 +8,6 @@
  ▪ project device/oneplus/oneplus3/
  ▪ f43d19d Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
 
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/samsung/
-
  ▪ project kernel/oneplus/msm8996/
  ▪ bb7d69f ANDROID: scsi: Add segment checking in sg_read
  ▪ 3cc9341 v4l2: Refactor, fix security bug in compat ioctl32
@@ -163,6 +159,15 @@
  ▪ 895f38a ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
  ▪ 2b63fa8c mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
 
+ ▪ project packages/apps/SetupWizard/
+
+ ▼ 12/17/2017
+
+
+ ▪ project hardware/qcom/fm/
+
+ ▪ project hardware/samsung/
+
  ▪ project packages/apps/AudioFX/
 
  ▪ project packages/apps/Bluetooth/
@@ -204,8 +209,6 @@
  ▪ project packages/apps/SafetyRegulatoryInfo/
 
  ▪ project packages/apps/SamsungServiceMode/
-
- ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
 
@@ -288,8 +291,6 @@
 
 
  ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/resources/devicesettings/
 
  ▼ 12/13/2017
 
@@ -385,6 +386,8 @@
 
  ▪ project packages/providers/WeatherProvider/
 
+ ▪ project packages/resources/devicesettings/
+
  ▪ project packages/screensavers/Basic/
 
  ▪ project packages/screensavers/PhotoTable/
@@ -456,9 +459,4 @@
 
  ▪ project system/core/
  ▪ 9ed0226 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
-
- ▪ project vendor/lge/
- ▪ 6d70c0c g4: regen makefiles
- ▪ e6d273a Update g4-common-vendor.mk
- ▪ 6672555 g4: update and cleanup from lg h815 v29a
 
