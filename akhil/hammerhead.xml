@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <hammerhead>
-<Filename>RR-N-v5.8.5-20171119-hammerhead-Final.zip</Filename>
+<Filename>RR-N-v5.8.5-20171217-hammerhead-Final.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/hammerhead/RR-N-v5.8.5-20171119-hammerhead-Final.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/hammerhead/RR-N-v5.8.5-20171217-hammerhead-Final.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
