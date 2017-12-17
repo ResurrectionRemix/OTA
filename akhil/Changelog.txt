@@ -287,20 +287,12 @@
  ▪ project hardware/samsung/
  ▪ 1824648 audio: Always use 16kHz sampling for SCO
 
- ▼ 12/14/2017
-
-
- ▪ project packages/apps/SetupWizard/
-
  ▼ 12/13/2017
 
 
  ▪ project hardware/qcom/fm/
 
  ▪ project hardware/samsung/
-
- ▪ project hardware/ti/omap4/
- ▪ f5a98d3 Revert "omap4: add local libjhead"
 
  ▪ project packages/apps/AudioFX/
 
@@ -347,6 +339,8 @@
  ▪ project packages/apps/SafetyRegulatoryInfo/
 
  ▪ project packages/apps/SamsungServiceMode/
+
+ ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
 
@@ -437,6 +431,7 @@
  ▪ 35faa93 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
 
  ▪ project hardware/ti/omap4/
+ ▪ f5a98d3 Revert "omap4: add local libjhead"
  ▪ 0f456ee omap4: add local libjhead
 
  ▪ project kernel/samsung/smdk4412/
