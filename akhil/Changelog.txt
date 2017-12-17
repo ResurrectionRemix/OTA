@@ -2,7 +2,7 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 12/17/2017
+ ▼ 12/18/2017
 
 
  ▪ project device/oneplus/oneplus3/
@@ -261,7 +261,7 @@
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
- ▼ 12/15/2017
+ ▼ 12/16/2017
 
 
  ▪ project frameworks/base/
@@ -278,13 +278,13 @@
 
  ▪ project packages/apps/Settings/
 
- ▼ 12/14/2017
+ ▼ 12/15/2017
 
 
  ▪ project hardware/samsung/
  ▪ 1824648 audio: Always use 16kHz sampling for SCO
 
- ▼ 12/13/2017
+ ▼ 12/14/2017
 
 
  ▪ project packages/apps/SetupWizard/
@@ -295,7 +295,7 @@
 
  ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
- ▼ 12/12/2017
+ ▼ 12/13/2017
 
 
  ▪ project hardware/qcom/fm/
@@ -399,7 +399,7 @@
 
  ▪ project packages/wallpapers/LivePicker/
 
- ▼ 12/11/2017
+ ▼ 12/12/2017
 
 
  ▪ project android/
