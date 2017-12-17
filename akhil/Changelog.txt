@@ -1,335 +1,464 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 11/20/2017
+ ▼ 12/17/2017
 
-
- ▪ project android/
- ▪ 3449c1d manifest: Track our bison fork
-
- ▪ project build/
- ▪ fcfb35c core: Prefix and build bison host executable if needed
- ▪ 99f49f2 Bump Security String to 2017-11-06
- ▪ 48144d6 Update Security String to 2017-11-05
 
  ▪ project device/oneplus/oneplus3/
- ▪ 9576616 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
+ ▪ f43d19d Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
 
- ▪ project frameworks/av/
- ▪ 6e3b0b8 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+ ▪ project hardware/qcom/fm/
 
- ▪ project frameworks/base/
- ▪ 82846aa DPC should not be allowed to grant development permission
- ▪ 1a6bf45 Add stub for setCursorVisibility
- ▪ 0d6573e Prevent deadlock when using always-on legacy VPNs
- ▪ 78cb021 Add powerhint function that accepts an array of data
-
- ▪ project frameworks/native/
- ▪ e73bb3b Merge remote-tracking branch 'laos/cm-14.1' into HEAD
+ ▪ project hardware/samsung/
 
  ▪ project kernel/oneplus/msm8996/
- ▪ c0b64c2 PerfectPrunes_v2
- ▪ 1098361 drivers: mdss: Add DCI_P3 entry for OmniROM
- ▪ e636584 oneplus3_defconfig: Re-enable ondemand
+ ▪ bb7d69f ANDROID: scsi: Add segment checking in sg_read
+ ▪ 3cc9341 v4l2: Refactor, fix security bug in compat ioctl32
+ ▪ fa1e07f Revert "media: v4l2-compat-ioctl32: Fix timespec conversion"
+ ▪ f603063 Revert "media: v4l2-compat-ioctl32: memset stack union in compat ioctl"
+ ▪ 6144240 ANDROID: usb: gadget: f_mtp: Return error if count is negative
+ ▪ d8f89b3 msm: sde: Remove output fence object after user request completed
+ ▪ b006f93 ALSA: pcm: prevent UAF in snd_pcm_info
+ ▪ c94bb51 f2fs: deny accessing encryption policy if encryption is off
+ ▪ bb8da9e f2fs: inject fault in inc_valid_node_count
+ ▪ a879560 f2fs: expose quota information in debugfs
+ ▪ 0d5f380 f2fs: separate nat entry mem alloc from nat_tree_lock
+ ▪ e2ea0b3 f2fs: validate before set/clear free nat bitmap
+ ▪ 0f6a455 f2fs: avoid opened loop codes in __add_ino_entry
+ ▪ aa7ce1c32 f2fs: apply write hints to select the type of segments for buffered write
+ ▪ bef1389 f2fs: introduce scan_curseg_cache for cleanup
+ ▪ a70a52d f2fs: optimize the way of traversing free_nid_bitmap
+ ▪ 5565f77 f2fs: keep scanning until enough free nids are acquired
+ ▪ cd807aa f2fs: trace checkpoint reason in fsync()
+ ▪ 59fbc9d f2fs: keep isize once block is reserved cross EOF
+ ▪ 51193c2 f2fs: avoid race in between GC and block exchange
+ ▪ abd9f89 f2fs: save a multiplication for last_nid calculation
+ ▪ 8047f05 f2fs: fix summary info corruption
+ ▪ f5a6eb4 f2fs: remove dead code in update_meta_page
+ ▪ 76583ac f2fs: remove unneeded semicolon
+ ▪ 00064ce f2fs: don't bother with inode->i_version
+ ▪ 6092d48 f2fs: check curseg space before foreground GC
+ ▪ 683a880 f2fs: use rw_semaphore to protect SIT cache
+ ▪ e665b5e f2fs: support quota sys files
+ ▪ 5aaa36c f2fs: add quota_ino feature infra
+ ▪ 56e9919 f2fs: optimize __update_nat_bits
+ ▪ ed8f0df f2fs: modify for accurate fggc node io stat
+ ▪ 630c6d7 Revert "f2fs: handle dirty segments inside refresh_sit_entry"
+ ▪ aa6df7f f2fs: add a function to move nid
+ ▪ 3b5d981 f2fs: export SSR allocation threshold
+ ▪ fece189 f2fs: give correct trimmed blocks in fstrim
+ ▪ 16871e2 f2fs: support bio allocation error injection
+ ▪ 03ef494 f2fs: support get_page error injection
+ ▪ 3775213 f2fs: add missing sysfs description
+ ▪ e1aa4cd f2fs: support soft block reservation
+ ▪ 373748e f2fs: handle error case when adding xattr entry
+ ▪ b860117 f2fs: support flexible inline xattr size
+ ▪ be46178 f2fs: show current cp state
+ ▪ a5d770e f2fs: add missing quota_initialize
+ ▪ 820d6cb7 f2fs: show # of dirty segments via sysfs
+ ▪ 588d9d7 f2fs: stop all the operations by cp_error flag
+ ▪ b7313f1 f2fs: remove several redundant assignments
+ ▪ 3e2c15a f2fs: avoid using timespec
+ ▪ 912c0fa f2fs: fix to correct no_fggc_candidate
+ ▪ 4448733 Revert "f2fs: return wrong error number on f2fs_quota_write"
+ ▪ 130f940 f2fs: remove obsolete pointer for truncate_xattr_node
+ ▪ fecd1fe f2fs: retry ENOMEM for quota_read|write
+ ▪ 671abe6 f2fs: limit # of inmemory pages
+ ▪ 77c6b7b f2fs: update ctx->pos correctly when hitting hole in directory
+ ▪ 38a181b f2fs: relocate readahead codes in readdir()
+ ▪ b318da8 f2fs: allow readdir() to be interrupted
+ ▪ b9737fc f2fs: trace f2fs_readdir
+ ▪ 3f713fe f2fs: trace f2fs_lookup
+ ▪ 4179f41 f2fs: skip searching non-exist range in truncate_hole
+ ▪ 613f250 f2fs: expose some sectors to user in inline data or dentry case
+ ▪ 882bd3a f2fs: avoid stale fi->gdirty_list pointer
+ ▪ 0452f1f f2fs/crypto: drop crypto key at evict_inode only
+ ▪ 8708f42 f2fs: fix to avoid race when accessing last_disk_size
+ ▪ 5e1bb66 f2fs: Fix bool initialization/comparison
+ ▪ 6f49a55 f2fs: give up CP_TRIMMED_FLAG if it drops discards
+ ▪ 0fe8c87 f2fs: trace f2fs_remove_discard
+ ▪ b0e8fb8 f2fs: reduce cmd_lock coverage in __issue_discard_cmd
+ ▪ 100a2d7 f2fs: split discard policy
+ ▪ cbbbb25 f2fs: wrap discard policy
+ ▪ 6a566c1 f2fs: support issuing/waiting discard in range
+ ▪ 4bb599c f2fs: fix to flush multiple device in checkpoint
+ ▪ ef19d95 f2fs: enhance multiple device flush
+ ▪ 05f5db8 f2fs: fix to show ino management cache size correctly
+ ▪ 5a4c90f f2fs: drop FI_UPDATE_WRITE tag after f2fs_issue_flush
+ ▪ 5789f90 f2fs: obsolete ALLOC_NID_LIST list
+ ▪ a1368da f2fs: convert inline data for direct I/O & FI_NO_PREALLOC
+ ▪ 62a446b f2fs: allow readpages with NULL file pointer
+ ▪ 9098d09 f2fs: show flush list status in sysfs
+ ▪ 94349a3 f2fs: introduce read_xattr_block
+ ▪ 859f6ee f2fs: introduce read_inline_xattr
+ ▪ f947ec1 Revert "f2fs: reuse nids more aggressively"
+ ▪ aaeedfb Revert "f2fs: node segment is prior to data segment selected victim"
+ ▪ 5929295 Revert "FROMLIST: f2fs: expose some sectors to user in inline data or dentry case"
+ ▪ aed4ee8 drivers: staging: Update qcacld-2.0 driver
+ ▪ 6c8858c Merge tag 'LA.UM.5.5.r1-06300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into oreo
+ ▪ edb91ff Revert "ipv6/dccp: do not inherit ipv6_mc_list from parent"
+ ▪ 4dd4bd2 Revert "msm: mdss: add recovery if TE is not coming from the panel"
+ ▪ b63f5bf drivers: staging: Update qcacld-2.0 driver
+ ▪ 0286bca Merge tag 'LA.UM.5.5.r1-06100-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into oreo
+ ▪ ccf4a7e f2fs: preserve i_mode if __f2fs_set_acl() fails
+ ▪ 0561b46 FROMLIST: f2fs: expose some sectors to user in inline data or dentry case
+ ▪ 44219f6 UPSTREAM: f2fs: fix potential panic during fstrim
+ ▪ ae68df1 f2fs: add lazytime mount option
+ ▪ 9d39e71 vfs: add support for a lazytime mount option
+ ▪ ff9c0fa f2fs: hurry up to issue discard after io interruption
+ ▪ 0d6156c f2fs: fix to show correct discard_granularity in sysfs
+ ▪ 970a943 f2fs: detect dirty inode in evict_inode
+ ▪ 75b9d56 f2fs: clear radix tree dirty tag of pages whose dirty flag is cleared
+ ▪ f448a49 f2fs: speed up gc_urgent mode with SSR
+ ▪ e96fd28 f2fs: better to wait for fstrim completion
+ ▪ 1f0d843 f2fs: avoid race in between read xattr & write xattr
+ ▪ 47f6f642 f2fs: make get_lock_data_page to handle encrypted inode
+ ▪ f437905 f2fs: use generic terms used for encrypted block management
+ ▪ 10248dc f2fs: introduce f2fs_encrypted_file for clean-up
+ ▪ 9081731 Revert "f2fs: add a new function get_ssr_cost"
+ ▪ cc499c9 f2fs: constify super_operations
+ ▪ 2489c0e f2fs: fix to wake up all sleeping flusher
+ ▪ c521e45 f2fs: avoid race in between atomic_read & atomic_inc
+ ▪ d0cc824 f2fs: remove unneeded parameter of change_curseg
+ ▪ 0f471bc f2fs: update i_flags correctly
+ ▪ 41375778 f2fs: don't check inode's checksum if it was dirtied or writebacked
+ ▪ c9c5205 f2fs: don't need to update inode checksum for recovery
+ ▪ 3c1219c f2fs: trigger fdatasync for non-atomic_write file
+ ▪ 388c7285 f2fs: fix to avoid race in between aio and gc
+ ▪ 034fcb3 f2fs: wake up discard_thread iff there is a candidate
+ ▪ 9abb9d23 f2fs: return error when accessing insane flie offset
+ ▪ 585ae21 f2fs: trigger normal fsync for non-atomic_write file
+ ▪ d5c8eaf f2fs: clear FI_HOT_DATA correctly
+ ▪ 4999119 f2fs: fix out-of-order execution in f2fs_issue_flush
+ ▪ 8126c09 f2fs: issue discard commands if gc_urgent is set
+ ▪ a0de99e f2fs: remove unused function overprovision_sections
+ ▪ 55983a9 f2fs: add tracepoint for f2fs_gc
+ ▪ c8048ed f2fs: retry to revoke atomic commit in -ENOMEM case
+ ▪ 1c552de f2fs: let fill_super handle roll-forward errors
+ ▪ e3e0757 f2fs: merge equivalent flags F2FS_GET_BLOCK_[READ|DIO]
+ ▪ 3da73f4 f2fs: support journalled quota
+ ▪ cd5285b f2fs: fix potential overflow when adjusting GC cycle
+ ▪ e9bc041 f2fs: avoid unneeded sync on quota file
+ ▪ d4adbf5 f2fs: introduce gc_urgent mode for background GC
+ ▪ 2a9447d f2fs: fix the size value in __check_sit_bitmap
+ ▪ c2a614b f2fs: add app/fs io stat
+ ▪ 5401d8f f2fs: do not change the valid_block value if cur_valid_map was wrongly set or cleared
+ ▪ a5758e1 f2fs: update cur_valid_map_mir together with cur_valid_map
+ ▪ 18e2b4a f2fs: use printk_ratelimited for f2fs_msg
+ ▪ 421826f f2fs: expose features to sysfs entry
+ ▪ 620d636 f2fs: support inode checksum
+ ▪ 21a135b f2fs: return wrong error number on f2fs_quota_write
+ ▪ aef3950 f2fs: provide f2fs_balance_fs to __write_node_page
+ ▪ 770a65a f2fs: introduce f2fs_statfs_project
+ ▪ c317365 f2fs: don't need to wait for node writes for atomic write
+ ▪ a2da7b1 f2fs: avoid naming confusion of sysfs init
+ ▪ 7998d1e f2fs: support project quota
+ ▪ 031874f f2fs: record quota during dot{,dot} recovery
+ ▪ fe08820 f2fs: enhance on-disk inode structure scalability
+ ▪ 0deca8f f2fs: make max inline size changeable
+ ▪ ebf4950 f2fs: alloc new nids for xattr block in recovery
+ ▪ 04cd6b7 f2fs: spread struct f2fs_dentry_ptr for inline path
+ ▪ b1e7764 f2fs: remove unused input parameter
+ ▪ 895f38a ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
+ ▪ 2b63fa8c mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/CertInstaller/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/HTMLViewer/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/KeyChain/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Nfc/
+
+ ▪ project packages/apps/Profiles/
+
+ ▪ project packages/apps/Recorder/
+
+ ▪ project packages/apps/SafetyRegulatoryInfo/
+
+ ▪ project packages/apps/SamsungServiceMode/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Stk/
+
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/apps/WallpaperPicker/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/BookmarkProvider/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/CallLogProvider/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/providers/TelephonyProvider/
+
+ ▪ project packages/providers/UserDictionaryProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/services/CMAudioService/
+
+ ▪ project packages/services/WeatherService/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 12/15/2017
+
+
+ ▪ project frameworks/base/
 
  ▪ project packages/apps/DUI/
 
+ ▪ project packages/apps/Dialer/
+
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/apps/PackageInstaller/
- ▪ cb4c853 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ 12a150d AppOps: Add info if app doesn't request any blockable permissions
- ▪ ec8fe1e AppOps: Add icon for "Toggle cellular data"
- ▪ 8a9b8ef Settings: Correct german translation for 1 registered fingerprint
 
- ▪ project packages/services/OmniJaws/
-
- ▪ project system/core/
- ▪ 6664602 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_system_core into HEAD
-
- ▪ project vendor/cm/
- ▪ 70c3e66 cm: build: kernel: Rework kernel module logic
- ▪ 72ba3c5 Updated apns for device bringup for S4 Mini - serranolteusc
- ▪ fb7503b Added more USA sensitive phone numbers
- ▪ 5c45440 cm/aosp/cafremote: Make variables local
- ▪ 473be65 envsetup: Fix cmremote for AOSP projects
- ▪ 0653d1d qcom_target: Commonize UM target HALs
- ▪ a193c32 charger: Remove battery_fail images
- ▪ a94bda1 Update initial attach for Tmo US
- ▪ aee9791 tasks: kernel: Kill unexisting wiki reference
- ▪ 409fbfa build: qcom_target: Add sdm660
- ▪ 692c081 Add Correios Celular (BR) APN
- ▪ ad2b018 Add WOM Internet/MMS (CL) apn
- ▪ 01d65f5 qcom: Allow setting custom audio, display, and media HALs
-
- ▼ 11/19/2017
+ ▼ 12/14/2017
 
 
- ▪ project frameworks/av/
- ▪ 60e088c Track graphic buffer mode in OMXNodeInstance
+ ▪ project hardware/samsung/
+ ▪ 1824648 audio: Always use 16kHz sampling for SCO
 
- ▪ project kernel/oneplus/msm8996/
- ▪ bc38ae0 PerfectPrunes
- ▪ 614cb0a oneplus3_defconfig: Add CONFIG_KEYS_COMPAT
- ▪ f78580f Linux 3.18.82
- ▪ b0cb117 target/iscsi: Fix iSCSI task reassignment handling
- ▪ 938ee86 security/keys: add CONFIG_KEYS_COMPAT to Kconfig
- ▪ 240b6b3 ip6_gre: only increase err_count for some certain type icmpv6 in ip6gre_err
- ▪ 5c0732c ipip: only increase err_count for some certain type icmp in ipip_err
- ▪ 9fbf285 ipv6: flowlabel: do not leave opt->tot_len with garbage
- ▪ 87139a6 sctp: reset owner sk for data chunks on out queues when migrating a sock
- ▪ 55086aa tun: allow positive return values on dev_get_valid_name() call
- ▪ 63bb624 net/unix: don't show information about sockets from other namespaces
- ▪ aef5d171 sctp: add the missing sock_owned_by_user check in sctp_icmp_redirect
- ▪ d1eb994 tun: call dev_get_valid_name() before register_netdevice()
- ▪ 1c3f790 l2tp: check ps->sock before running pppol2tp_session_ioctl()
- ▪ e1386d5 tcp: fix tcp_mtu_probe() vs highest_sack
- ▪ 4589858 tun/tap: sanitize TUNSETSNDBUF input
- ▪ f4c1df4 Revert "ARM: dts: imx53-qsb-common: fix FEC pinmux config"
- ▪ a15b539 Input: ims-psu - check if CDC union descriptor is sane
- ▪ 0b1a12d usb: usbtest: fix NULL pointer dereference
- ▪ 9be67dc mac80211: don't compare TKIP TX MIC key in reinstall prevention
- ▪ be9357f mac80211: use constant time comparison with keys
- ▪ db46c00 mac80211: accept key reinstall without changing anything
- ▪ 187a888 Revert "ceph: unlock dangling spinlock in try_flush_caps()"
+ ▼ 12/13/2017
+
 
  ▪ project packages/apps/SetupWizard/
- ▪ c347cee Fix result on skipping Fingerprint setup
 
- ▼ 11/18/2017
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 12/12/2017
 
 
- ▪ project external/libnfc-nci/
- ▪ 8e151e6 Add NAME_ISO_DEP_MAX_TRANSCEIVE_LENGTH
+ ▪ project hardware/qcom/fm/
 
- ▪ project frameworks/native/
- ▪ c870666 DO NOT MERGE Remove window obscurement information.
+ ▪ project hardware/samsung/
 
- ▪ project frameworks/opt/telephony/
- ▪ 6e49154 Ensure IMS dial uses the correct CLIR mode.
+ ▪ project hardware/ti/omap4/
+ ▪ f5a98d3 Revert "omap4: add local libjhead"
 
- ▪ project kernel/oneplus/msm8996/
- ▪ 8394d11 oneplus3_defconfig: Regenerate
- ▪ 4f2a68f cpufreq: fallback to interactive if governor is not found
- ▪ 8d8a435 Revert "net: packet: Unlock fanout_mutex in case of no error"
- ▪ bd3407a build: Drop makeparallel
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMParts/
+ ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
+ ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+
+ ▪ project packages/apps/CertInstaller/
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Email/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/Exchange/
+
+ ▪ project packages/apps/FMRadio/
+
+ ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/HTMLViewer/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/KeyChain/
+
+ ▪ project packages/apps/ManagedProvisioning/
 
  ▪ project packages/apps/Nfc/
- ▪ 16d6b3c Make Transceive Length configurable for ISO DEP Technology
 
- ▪ project system/bt/
- ▪ 1d27e7b SDP: Bounds check 'id' parameter for free_sdp_slot()
+ ▪ project packages/apps/Profiles/
 
- ▼ 11/17/2017
+ ▪ project packages/apps/Recorder/
 
+ ▪ project packages/apps/SafetyRegulatoryInfo/
 
- ▪ project kernel/oneplus/msm8996/
- ▪ 644a670 rcu: Tell the compiler that rcu_state_p is immutable
- ▪ 86f4004 rcu: Eliminate a few RCU_BOOST #ifdefs in favor of IS_ENABLED()
- ▪ f6eab61 rcu: Convert ACCESS_ONCE() to READ_ONCE() and WRITE_ONCE()
- ▪ e20dac4 rcu: Control grace-period delays directly from value
- ▪ 75b0eb6 rcu: Associate quiescent-state reports with grace period
- ▪ 8c4e5a2 rcu: Yet another fix for preemption and CPU hotplug
- ▪ eac8dc7 rcu: Add diagnostics to grace-period cleanup
- ▪ 7f20112 rcu: Handle outgoing CPUs on exit from idle loop
- ▪ 58a1e04 rcu: Eliminate ->onoff_mutex from rcu_node structure
- ▪ 2adada5 rcu: Process offlining and onlining only at grace-period start
- ▪ eb07036 Revert "rcu: Move early boot callback tests earlier"
- ▪ 0a36496 rcu: Move rcu_report_unblock_qs_rnp() to common code
- ▪ cb67032 rcu: Rework preemptible expedited bitmask handling
- ▪ 09078f9 rcu: Remove event tracing from rcu_cpu_notify(), used by offline CPUs
- ▪ 390ae95 rcu: Provide diagnostic option to slow down grace-period initialization
- ▪ 53bb389 rcu: Detect stalls caused by failure to propagate up rcu_node tree
- ▪ 16ab3bd rcu: Eliminate empty HOTPLUG_CPU ifdef
- ▪ 7eeef61 rcu: Simplify sync_rcu_preempt_exp_init()
- ▪ 62b55bd rcu: Put all orphan-callback-related code under same comment
- ▪ eddbac8 rcu: Consolidate offline-CPU callback initialization
- ▪ 19db6b0 rcu: Remove redundant check of cpu_online()
- ▪ bee8bf9 rcu: Get rcu_sched_force_quiescent_state() where it belongs
- ▪ 12baaae rcu: Add boot-up check for non-default CONFIG_RCU_FANOUT_LEAF values
- ▪ b1238a5 rcu: Use IS_ENABLED() to simplify rcu_bootup_announce_oddness()
- ▪ 48572e6 rcu: Improve diagnostics for blocked critical sections in irq
- ▪ b8d47d9 rcu: Use IS_ENABLED() to CONFIG_RCU_FANOUT_EXACT #ifdef
- ▪ 4668768 rcu: Move early boot callback tests earlier
- ▪ 3c906c3 rcu: Move early-boot callbacks to no-CBs lists for no-CBs CPUs
- ▪ b468d38 rcu: Tighten up affinity and check for sysidle
- ▪ c14acbf rcu: Remove fastpath from __rcu_process_callbacks()
- ▪ 6d115b0 rcu: Remove unnecessary condition check in rcu_qsctr_help()
- ▪ 8e3a080 rcu: Fixes to NO_HZ_FULL sysidle accounting
- ▪ 175da7f rcutorture: Make consistent use of variables
- ▪ 068b25f rcu: Add Kconfig option to expedite grace periods during boot
- ▪ 8c1ead9 rcu: Update from rcu_expedited variable to rcu_gp_is_expedited()
- ▪ a41c5b8 rcu: Add rcu_expedite_gp() and rcu_unexpedite_gp() to rcutorture
- ▪ b975796 rcu: Provide rcu_expedite_gp() and rcu_unexpedite_gp()
- ▪ ea41cbc rcu: Fix a couple of typos in rcu_all_qs() comment header
- ▪ 6f15a0f rcu: Avoid clobbering early boot callbacks
- ▪ a743ab5 rcu: Refine diagnostics for lacking kthread for no-CBs callbacks
- ▪ 5720ad1 rcu: Prevent early-boot RCU callbacks from splatting
- ▪ 27dd2bb rcu: Wire ->rda pointers at compile time
- ▪ 87d334e rcu: Abstract default callback-list initialization from init_callback_list()
- ▪ 2830188 rcu_tree: Avoid touching rnp->completed when a new GP is started
- ▪ f1a5264 rcu: Consolidate rcu_synchronize and wakeme_after_rcu()
- ▪ ac1c032 rcu: use %*pb[l] to print bitmaps including cpumasks and nodemasks
- ▪ 3bd99c7 rcu: Clear need_qs flag to prevent splat
- ▪ 35dcfe3 rcu: Initialize tiny RCU stall-warning timeouts at boot
- ▪ 048d723 rcu: Fix RCU CPU stall detection in tiny implementation
- ▪ 64bb4cf rcu: Add GP-kthread-starvation checks to CPU stall warnings
- ▪ e217418 rcu: Make cond_resched_rcu_qs() apply to normal RCU flavors
- ▪ a187542 rcutorture: Add more diagnostics in rcu_barrier() test failure case
- ▪ 9eb3c9a rcutorture: Check from beginning to end of grace period
- ▪ 142ef5f rcu: Remove redundant rcu_batches_completed() declaration
- ▪ 73dfac8 rcutorture: Drop rcu_torture_completed() and friends
- ▪ 8cc3ed0 rcutorture: Use unsigned for Reader Batch computations
- ▪ d08fd0c rcu: Make _batches_completed() functions return unsigned long
- ▪ 1898d76 rcu: Handle gpnum/completed wrap while dyntick idle
- ▪ dea426f rcu: Improve diagnostics for spurious RCU CPU stall warnings
- ▪ cb9a6ee rcu: Make RCU_CPU_STALL_INFO include number of fqs attempts
- ▪ f99f8f8 rcu: Make SRCU optional by using CONFIG_SRCU
- ▪ 922e3cc rcu: Expand SRCU ->completed to 64 bits
- ▪ 85183c2 rcu: Remove redundant callback-list initialization
- ▪ cbb521c rcu: Don't scan root rcu_node structure for stalled tasks
- ▪ e06fb82 rcu: Revert "Allow post-unlock reference for rt_mutex" to avoid priority-inversion
- ▪ 9955fff rcu: Note quiescent state when CPU goes offline
- ▪ 6d7b7f7 rcu: Don't bother affinitying rcub kthreads away from offline CPUs
- ▪ 8de4fc7 rcu: Don't initiate RCU priority boosting on root rcu_node
- ▪ 6949078 rcu: Don't spawn rcub kthreads on root rcu_node structure
- ▪ fa49be5 rcu: Make use of rcu_preempt_has_tasks()
- ▪ ec1964c rcu: Shorten irq-disable region in rcu_cleanup_dead_cpu()
- ▪ 9be2d53 rcu: Don't migrate blocked tasks even if all corresponding CPUs offline
- ▪ 399a79f rcu: Make rcu_read_unlock_special() propagate ->qsmaskinit bit clearing
- ▪ dc3b755 rcu: Abstract rcu_cleanup_dead_rnp() from rcu_cleanup_dead_cpu()
- ▪ bcbf087 rcu: Rename "empty" to "empty_norm" in preparation for boost rework
- ▪ 19da4a5 rcu: Protect rcu_boost() lockless accesses with ACCESS_ONCE()
- ▪ 8028e65 rcu: Remove "select IRQ_WORK" from config TREE_RCU
- ▪ 7357265 rcu: Fix rcu_barrier() race that could result in too-short wait
- ▪ 40f0586 tiny_rcu: Directly force QS when call_rcu_[bh|sched]() on idle_task
- ▪ 459e817 rcu: Fix invoke_rcu_callbacks() comment
- ▪ 0768f89 rcu: Remove redundant rcu_is_cpu_rrupt_from_idle() from tiny RCU
- ▪ 570e6c6 rcu: Make rcu_nmi_enter() handle nesting
- ▪ c9e405c rcu: Fix FIXME in rcu_tasks_kthread()
- ▪ 01535fe rcutorture: Fix rcu_torture_cbflood() memory leak
- ▪ 54a042f rcu: Use DEFINE_PER_CPU_SHARED_ALIGNED for rcu_data
- ▪ a163b7f rcu: Remove rcu_dynticks * parameters when they are always this_cpu_ptr(&rcu_dynticks)
- ▪ fd1cda3 rcu: Fix for rcuo online-time-creation reorganization bug
- ▪ faf7cfb rcu: Remove redundant TREE_PREEMPT_RCU config option
- ▪ 7d5dd5c rcu: Avoid IPIing idle CPUs from synchronize_sched_expedited()
- ▪ b9433e9 rcu: Remove CONFIG_RCU_CPU_STALL_VERBOSE
- ▪ 458a75a arm: dtsi: 15801: Set fastcharge current to 2500 mA
+ ▪ project packages/apps/SamsungServiceMode/
 
- ▪ project system/core/
- ▪ 49556db Fix integer overflow in utf{16,32}_to_utf8_length
+ ▪ project packages/apps/Snap/
 
- ▪ project system/netd/
- ▪ c5e8402 Invalidate dst caches when changing network permissions.
- ▪ 402e75f Don't allow seamless handover to networks requiring permissions.
+ ▪ project packages/apps/Stk/
 
- ▼ 11/16/2017
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▪ project packages/apps/WallpaperPicker/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/BookmarkProvider/
+
+ ▪ project packages/providers/CalendarProvider/
+
+ ▪ project packages/providers/CallLogProvider/
+
+ ▪ project packages/providers/ContactsProvider/
+
+ ▪ project packages/providers/DataUsageProvider/
+
+ ▪ project packages/providers/DownloadProvider/
+
+ ▪ project packages/providers/MediaProvider/
+
+ ▪ project packages/providers/TelephonyProvider/
+
+ ▪ project packages/providers/UserDictionaryProvider/
+
+ ▪ project packages/providers/WeatherProvider/
+
+ ▪ project packages/screensavers/Basic/
+
+ ▪ project packages/screensavers/PhotoTable/
+
+ ▪ project packages/services/CMAudioService/
+
+ ▪ project packages/services/WeatherService/
+
+ ▪ project packages/wallpapers/LivePicker/
+
+ ▼ 12/11/2017
 
 
- ▪ project external/libavc/
- ▪ 8802e62 Decoder: Updated error check while parsing num_ref_idx_lx_active.
- ▪ 089b44f Decoder: Corrected variable datatypes in ih264d_get_implicit_weights.
- ▪ 734eaa8 Added an out of bound check on u4_num_bufs in input argument
- ▪ 23d7d14 Decoder: Conceal picture only if valid picture buffer is obtained.
+ ▪ project android/
+ ▪ 2c020ba android-7.1.2_r29 -> android-7.1.2_r36
 
- ▪ project external/libhevc/
- ▪ db4acea Added an out of bound check on u4_num_bufs in input argument
- ▪ e3a0cff Fix tile index buf alloc size
-
- ▪ project external/libmpeg2/
- ▪ 59b6e84 Propagating Error From impeg2d_pre_pic_dec_proc
- ▪ 872cc72 Check on Picture Dimensions
- ▪ 3b511be Fix Half Pel MC on Last Ref Row
- ▪ 767f4f4 Check Number of MBs to Skip.
- ▪ c772671 Replace memcpy with memmove to Solve Memory Overlap Error
-
- ▪ project frameworks/av/
- ▪ 2698c2f EffectBundle: Check parameter and value size
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 9666a7b Revert "arch: arm: dts: Disable wake-on-touch for msm8996pro"
- ▪ a8865a3 security: selinux: Silence logspam
- ▪ 9f0a82f drivers: video: mdss: Use qcom,mdss-dsi variants of LiveDisplay modes
- ▪ 4461ae0 ARM: dts: 15801: Update panel sRGB/DCI-P3/Adobe sRGB cmd from Open Beta kernel
- ▪ b78656e AwesomeApricot
- ▪ ae0c495 Linux 3.18.81
- ▪ 63c1745 x86/oprofile/ppro: Do not use __this_cpu*() in preemptible context
- ▪ 1e6571b can: c_can: don't indicate triple sampling support for D_CAN
- ▪ 3be3010 rbd: use GFP_NOIO for parent stat and data requests
- ▪ ad513dd MIPS: AR7: Ensure that serial ports are properly set up
- ▪ 0878249 MIPS: Fix CM region target definitions
- ▪ 7ee7ce2 MIPS: microMIPS: Fix incorrect mask in insn_table_MM
- ▪ 88e8c63 ALSA: seq: Avoid invalid lockdep class warning
- ▪ d3a3c90 ALSA: seq: Fix OSS sysex delivery in OSS emulation
- ▪ dcbec44 ARM: 8720/1: ensure dump_instr() checks addr_limit
- ▪ 007c436 KEYS: fix NULL pointer dereference during ASN.1 parsing [ver #2]
- ▪ 0c85613 crypto: x86/sha1-mb - fix panic due to unaligned access
- ▪ b9d5d2e KEYS: trusted: fix writing past end of buffer in trusted_read()
- ▪ 0d3f8da KEYS: trusted: sanitize all key material
- ▪ c06050a IB/ipoib: Change list_del to list_del_init in the tx object
- ▪ 9d998f2 Input: mpr121 - set missing event capability
- ▪ 72e8eb7 Input: mpr121 - handle multiple bits change of status register
- ▪ 2955fa8 IPsec: do not ignore crypto err in ah4 input
- ▪ b1222cc usb: hcd: initialize hcd->flags to 0 when rm hcd
- ▪ a34f901 serial: sh-sci: Fix register offsets for the IRDA serial port
- ▪ 3ee1061 phy: increase size of MII_BUS_ID_SIZE and bus_id
- ▪ 8ffe22b dt-bindings: Add vendor prefix for LEGO
- ▪ ceef03e dt-bindings: Add LEGO MINDSTORMS EV3 compatible specification
- ▪ ee7fea7 iio: trigger: free trigger resource correctly
- ▪ a20acc13 ARM: omap2plus_defconfig: Fix probe errors on UARTs 5 and 6
- ▪ fac06dd drm: drm_minor_register(): Clean up debugfs on failure
- ▪ 527ba70 ARM: dts: imx53-qsb-common: fix FEC pinmux config
- ▪ 47372ab xen/netback: set default upper limit of tx/rx queues to 8
- ▪ fb99fc8 video: fbdev: pmag-ba-fb: Remove bad `__init' annotation
- ▪ add93fe net: packet: Unlock fanout_mutex in case of no error
- ▪ 4e7a4c5 drivers: block: Restrict loop commit thread to power cluster
- ▪ 49baf7f drivers: block: Use interruptible wait in loop.c
- ▪ 65eab3a drivers: cpufreq: Use interruptible waits
- ▪ 0ab7cf7 arch: arm: dts: Disable wake-on-touch for msm8996pro
- ▪ 8b75694 drivers: gpu: msm: Port OnePlus GPU power up flag
- ▪ 95e987a oneplus3: Regen defconfig
- ▪ 8e35a918 input: synaptics: s3320: Don't run baseline inside IRQ handler
- ▪ 0d863be Revert "input: synaptics: s3320: Don't run baseline after first touch"
- ▪ 6f86b21 msm: mdss: Restrict display commit thread to power cluster
- ▪ 6da059c drivers: video: mdss: Remove command processing ordering hacks
-
- ▪ project packages/apps/PackageInstaller/
- ▪ ce6a462 Backport overlay security fix
-
- ▪ project vendor/samsung/
- ▪ 57c0445 hero: update blobs
-
- ▼ 11/15/2017
-
+ ▪ project build/
+ ▪ c2b7604 Bump security string to 2017-12-05
 
  ▪ project device/oneplus/oneplus3/
- ▪ 3462857 op3: Add WeChat fingerprint payment support
+ ▪ b2f3b03 op3: Disable inline xattr feature for F2FS formatted /data
+ ▪ 51ebf59 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
 
- ▪ project kernel/oneplus/msm8996/
- ▪ 7182c60 ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
- ▪ 4f9f245 mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
- ▪ ed98680 buildscript: Get this thing's shit together
+ ▪ project device/oppo/common/
+ ▪ 50d9b54 Merge remote-tracking branch 'LineageOS/cm-14.1' into akhil
+
+ ▪ project external/skia/
+ ▪ cc36cbe Merge branch 'cm-14.1' of git://github.com/LineageOS/android_external_skia into nougat
+ ▪ bf8a04d Merge tag 'android-7.1.2_r36' into nougat
+
+ ▪ project frameworks/av/
+ ▪ b917d0b Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ ▪ project frameworks/base/
+ ▪ 4d1bd2d Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
+ ▪ 1a126b1 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
+ ▪ e5c75f2 Stop explicitly using kCallerPasses_Ownership
+ ▪ a146c62c Fix ClipboardService device lock check for cross profile
+ ▪ 233958f Prevent getting data from Clipboard if device is locked
+ ▪ 1a9fac1 Clearing up invalid entries when SyncStorageEngine starts
+ ▪ a86c005 SystemUI: Fix title text clipping when task lock button is visible
+ ▪ 355e669 ZenModeHelper: Allow lights by default
+ ▪ 35faa93 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
+
+ ▪ project hardware/ti/omap4/
+ ▪ 0f456ee omap4: add local libjhead
 
  ▪ project kernel/samsung/smdk4412/
- ▪ acefaf4 dm crypt: fix cpu hotplug crash by removing per-cpu structure
- ▪ 0323127 dm crypt: rename struct convert_context sector field
- ▪ 0ed92f9 dm crypt: move cipher data out of per_cpu struct
- ▪ 257240b dm crypt: reject trailing characters in sccanf input
- ▪ 5c25f87 dm crypt: rename pending field
+ ▪ 1bc3033 t0lte: remove obsolete t0ltekor defconfig
 
- ▪ project vendor/samsung/
- ▪ 6107103 smdk4412-common: Regenerate Makefiles
- ▪ 81df9c3 smdk4412-common: Update blobs from N7105XXUFQG1
- ▪ 8a016ce t0lte: Remove unused blobs
- ▪ 31575ad t0lte: Repatch libsec-ril.so to use audioserver instead of mediaserver
- ▪ acdf3b9 t0lte: Update blobs from N7105XXUFQG1
+ ▪ project packages/apps/PackageInstaller/
+ ▪ c4735a2 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
+ ▪ 81ba415 DO NOT MERGE Fixing Install button not enabled on resume
+ ▪ d65c53a Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
 
- ▼ 11/14/2017
+ ▪ project packages/apps/Settings/
+ ▪ 16519cc DO NOT MERGE. ActivityPicker shouldn't grant permissions.
+ ▪ 13e6a2e BugFix:Correct fullBearer in APNSettings
+ ▪ 2f5b6c9 Telephony: Fix Crash in SimStatus Fragment
+ ▪ 73ee6a2 Settings: fix vibrate for calls in Setting app displayed incorrect issue
+ ▪ c2ccc72 Settings: back icon doesn't work in format SD as portable page.
+ ▪ 8bea2b7 Settings: Fix settings force close
+ ▪ 184c68f Settings: Fix crash when disconnect wifi
+ ▪ 67dd9f7 Settings: Strings: Modify a few german summaries
 
+ ▪ project system/core/
+ ▪ 9ed0226 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
 
- ▪ project vendor/samsung/
- ▪ 016f502 hero: update /system/vendor blobs
+ ▪ project vendor/lge/
+ ▪ 6d70c0c g4: regen makefiles
+ ▪ e6d273a Update g4-common-vendor.mk
+ ▪ 6672555 g4: update and cleanup from lg h815 v29a
 
