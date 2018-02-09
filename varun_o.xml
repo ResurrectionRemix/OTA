@@ -25,11 +25,11 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
 	</bacon>
         <cheeseburger>
-            <Filename>RR-N-v5.8.5-20171015-cheeseburger-Final.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180209-cheeseburger-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.5-20171015-cheeseburger-Final.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix-oreo/files/cheeseburger/RR-O-v6.0.0-20180209-cheeseburger-Official.zip/download</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -44,11 +44,11 @@
             	description="Latest firmware">https://jamal2367.com/downloads/?dir=OnePlus%205</FirmwareUrl>
 	</cheeseburger>
 	<dumpling>
-            <Filename>RR-N-v5.8.5-20171015-cheeseburger-Final.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180209-dumpling-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.5-20171015-cheeseburger-Final.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix-oreo/files/dumpling/RR-O-v6.0.0-20180209-dumpling-Official.zip/download</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -61,6 +61,6 @@
             	id="firmware"
             	title="Firmware"
             	description="Latest firmware">https://darkobas.ddns.net:8443/zl1/Oneplus5t-ob3-firmware.zip</FirmwareUrl>
-	</cheeseburger>
+	</dumpling>
     </Stable>
 </SlimOTA>
