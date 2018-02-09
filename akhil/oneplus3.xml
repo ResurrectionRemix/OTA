@@ -2,19 +2,19 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <oneplus3>
-<Filename>RR-N-v5.8.5-20171217-oneplus3-Final.zip</Filename>
+<Filename>RR-O-v6.0.0-20180209-oneplus3-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-N-v5.8.5-20171217-oneplus3-Final.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-O-v6.0.0-20180209-oneplus3-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
   description="Download a Build">http://downloads.resurrectionremix.com/oneplus3/</BuildUrl>
 <GAppsUrl
   id="GApps"
-  title="Beans GApps"
-  description="Download BeansGApps">https://www.androidfilehost.com/?w=files&amp;flid=171925</GAppsUrl>
+  title="Open GApps"
+  description="Download Open GApps">https://builds.nezorfla.me/opengapps/</GAppsUrl>
 <ChangelogUrl
   id="changelog"
   title="Changelog"
