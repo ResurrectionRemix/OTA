@@ -1,459 +1,559 @@
-
- ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
-
-
- ▼ 12/18/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ f43d19d Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
-
- ▪ project kernel/oneplus/msm8996/
- ▪ bb7d69f ANDROID: scsi: Add segment checking in sg_read
- ▪ 3cc9341 v4l2: Refactor, fix security bug in compat ioctl32
- ▪ fa1e07f Revert "media: v4l2-compat-ioctl32: Fix timespec conversion"
- ▪ f603063 Revert "media: v4l2-compat-ioctl32: memset stack union in compat ioctl"
- ▪ 6144240 ANDROID: usb: gadget: f_mtp: Return error if count is negative
- ▪ d8f89b3 msm: sde: Remove output fence object after user request completed
- ▪ b006f93 ALSA: pcm: prevent UAF in snd_pcm_info
- ▪ c94bb51 f2fs: deny accessing encryption policy if encryption is off
- ▪ bb8da9e f2fs: inject fault in inc_valid_node_count
- ▪ a879560 f2fs: expose quota information in debugfs
- ▪ 0d5f380 f2fs: separate nat entry mem alloc from nat_tree_lock
- ▪ e2ea0b3 f2fs: validate before set/clear free nat bitmap
- ▪ 0f6a455 f2fs: avoid opened loop codes in __add_ino_entry
- ▪ aa7ce1c32 f2fs: apply write hints to select the type of segments for buffered write
- ▪ bef1389 f2fs: introduce scan_curseg_cache for cleanup
- ▪ a70a52d f2fs: optimize the way of traversing free_nid_bitmap
- ▪ 5565f77 f2fs: keep scanning until enough free nids are acquired
- ▪ cd807aa f2fs: trace checkpoint reason in fsync()
- ▪ 59fbc9d f2fs: keep isize once block is reserved cross EOF
- ▪ 51193c2 f2fs: avoid race in between GC and block exchange
- ▪ abd9f89 f2fs: save a multiplication for last_nid calculation
- ▪ 8047f05 f2fs: fix summary info corruption
- ▪ f5a6eb4 f2fs: remove dead code in update_meta_page
- ▪ 76583ac f2fs: remove unneeded semicolon
- ▪ 00064ce f2fs: don't bother with inode->i_version
- ▪ 6092d48 f2fs: check curseg space before foreground GC
- ▪ 683a880 f2fs: use rw_semaphore to protect SIT cache
- ▪ e665b5e f2fs: support quota sys files
- ▪ 5aaa36c f2fs: add quota_ino feature infra
- ▪ 56e9919 f2fs: optimize __update_nat_bits
- ▪ ed8f0df f2fs: modify for accurate fggc node io stat
- ▪ 630c6d7 Revert "f2fs: handle dirty segments inside refresh_sit_entry"
- ▪ aa6df7f f2fs: add a function to move nid
- ▪ 3b5d981 f2fs: export SSR allocation threshold
- ▪ fece189 f2fs: give correct trimmed blocks in fstrim
- ▪ 16871e2 f2fs: support bio allocation error injection
- ▪ 03ef494 f2fs: support get_page error injection
- ▪ 3775213 f2fs: add missing sysfs description
- ▪ e1aa4cd f2fs: support soft block reservation
- ▪ 373748e f2fs: handle error case when adding xattr entry
- ▪ b860117 f2fs: support flexible inline xattr size
- ▪ be46178 f2fs: show current cp state
- ▪ a5d770e f2fs: add missing quota_initialize
- ▪ 820d6cb7 f2fs: show # of dirty segments via sysfs
- ▪ 588d9d7 f2fs: stop all the operations by cp_error flag
- ▪ b7313f1 f2fs: remove several redundant assignments
- ▪ 3e2c15a f2fs: avoid using timespec
- ▪ 912c0fa f2fs: fix to correct no_fggc_candidate
- ▪ 4448733 Revert "f2fs: return wrong error number on f2fs_quota_write"
- ▪ 130f940 f2fs: remove obsolete pointer for truncate_xattr_node
- ▪ fecd1fe f2fs: retry ENOMEM for quota_read|write
- ▪ 671abe6 f2fs: limit # of inmemory pages
- ▪ 77c6b7b f2fs: update ctx->pos correctly when hitting hole in directory
- ▪ 38a181b f2fs: relocate readahead codes in readdir()
- ▪ b318da8 f2fs: allow readdir() to be interrupted
- ▪ b9737fc f2fs: trace f2fs_readdir
- ▪ 3f713fe f2fs: trace f2fs_lookup
- ▪ 4179f41 f2fs: skip searching non-exist range in truncate_hole
- ▪ 613f250 f2fs: expose some sectors to user in inline data or dentry case
- ▪ 882bd3a f2fs: avoid stale fi->gdirty_list pointer
- ▪ 0452f1f f2fs/crypto: drop crypto key at evict_inode only
- ▪ 8708f42 f2fs: fix to avoid race when accessing last_disk_size
- ▪ 5e1bb66 f2fs: Fix bool initialization/comparison
- ▪ 6f49a55 f2fs: give up CP_TRIMMED_FLAG if it drops discards
- ▪ 0fe8c87 f2fs: trace f2fs_remove_discard
- ▪ b0e8fb8 f2fs: reduce cmd_lock coverage in __issue_discard_cmd
- ▪ 100a2d7 f2fs: split discard policy
- ▪ cbbbb25 f2fs: wrap discard policy
- ▪ 6a566c1 f2fs: support issuing/waiting discard in range
- ▪ 4bb599c f2fs: fix to flush multiple device in checkpoint
- ▪ ef19d95 f2fs: enhance multiple device flush
- ▪ 05f5db8 f2fs: fix to show ino management cache size correctly
- ▪ 5a4c90f f2fs: drop FI_UPDATE_WRITE tag after f2fs_issue_flush
- ▪ 5789f90 f2fs: obsolete ALLOC_NID_LIST list
- ▪ a1368da f2fs: convert inline data for direct I/O & FI_NO_PREALLOC
- ▪ 62a446b f2fs: allow readpages with NULL file pointer
- ▪ 9098d09 f2fs: show flush list status in sysfs
- ▪ 94349a3 f2fs: introduce read_xattr_block
- ▪ 859f6ee f2fs: introduce read_inline_xattr
- ▪ f947ec1 Revert "f2fs: reuse nids more aggressively"
- ▪ aaeedfb Revert "f2fs: node segment is prior to data segment selected victim"
- ▪ 5929295 Revert "FROMLIST: f2fs: expose some sectors to user in inline data or dentry case"
- ▪ aed4ee8 drivers: staging: Update qcacld-2.0 driver
- ▪ 6c8858c Merge tag 'LA.UM.5.5.r1-06300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into oreo
- ▪ edb91ff Revert "ipv6/dccp: do not inherit ipv6_mc_list from parent"
- ▪ 4dd4bd2 Revert "msm: mdss: add recovery if TE is not coming from the panel"
- ▪ b63f5bf drivers: staging: Update qcacld-2.0 driver
- ▪ 0286bca Merge tag 'LA.UM.5.5.r1-06100-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into oreo
- ▪ ccf4a7e f2fs: preserve i_mode if __f2fs_set_acl() fails
- ▪ 0561b46 FROMLIST: f2fs: expose some sectors to user in inline data or dentry case
- ▪ 44219f6 UPSTREAM: f2fs: fix potential panic during fstrim
- ▪ ae68df1 f2fs: add lazytime mount option
- ▪ 9d39e71 vfs: add support for a lazytime mount option
- ▪ ff9c0fa f2fs: hurry up to issue discard after io interruption
- ▪ 0d6156c f2fs: fix to show correct discard_granularity in sysfs
- ▪ 970a943 f2fs: detect dirty inode in evict_inode
- ▪ 75b9d56 f2fs: clear radix tree dirty tag of pages whose dirty flag is cleared
- ▪ f448a49 f2fs: speed up gc_urgent mode with SSR
- ▪ e96fd28 f2fs: better to wait for fstrim completion
- ▪ 1f0d843 f2fs: avoid race in between read xattr & write xattr
- ▪ 47f6f642 f2fs: make get_lock_data_page to handle encrypted inode
- ▪ f437905 f2fs: use generic terms used for encrypted block management
- ▪ 10248dc f2fs: introduce f2fs_encrypted_file for clean-up
- ▪ 9081731 Revert "f2fs: add a new function get_ssr_cost"
- ▪ cc499c9 f2fs: constify super_operations
- ▪ 2489c0e f2fs: fix to wake up all sleeping flusher
- ▪ c521e45 f2fs: avoid race in between atomic_read & atomic_inc
- ▪ d0cc824 f2fs: remove unneeded parameter of change_curseg
- ▪ 0f471bc f2fs: update i_flags correctly
- ▪ 41375778 f2fs: don't check inode's checksum if it was dirtied or writebacked
- ▪ c9c5205 f2fs: don't need to update inode checksum for recovery
- ▪ 3c1219c f2fs: trigger fdatasync for non-atomic_write file
- ▪ 388c7285 f2fs: fix to avoid race in between aio and gc
- ▪ 034fcb3 f2fs: wake up discard_thread iff there is a candidate
- ▪ 9abb9d23 f2fs: return error when accessing insane flie offset
- ▪ 585ae21 f2fs: trigger normal fsync for non-atomic_write file
- ▪ d5c8eaf f2fs: clear FI_HOT_DATA correctly
- ▪ 4999119 f2fs: fix out-of-order execution in f2fs_issue_flush
- ▪ 8126c09 f2fs: issue discard commands if gc_urgent is set
- ▪ a0de99e f2fs: remove unused function overprovision_sections
- ▪ 55983a9 f2fs: add tracepoint for f2fs_gc
- ▪ c8048ed f2fs: retry to revoke atomic commit in -ENOMEM case
- ▪ 1c552de f2fs: let fill_super handle roll-forward errors
- ▪ e3e0757 f2fs: merge equivalent flags F2FS_GET_BLOCK_[READ|DIO]
- ▪ 3da73f4 f2fs: support journalled quota
- ▪ cd5285b f2fs: fix potential overflow when adjusting GC cycle
- ▪ e9bc041 f2fs: avoid unneeded sync on quota file
- ▪ d4adbf5 f2fs: introduce gc_urgent mode for background GC
- ▪ 2a9447d f2fs: fix the size value in __check_sit_bitmap
- ▪ c2a614b f2fs: add app/fs io stat
- ▪ 5401d8f f2fs: do not change the valid_block value if cur_valid_map was wrongly set or cleared
- ▪ a5758e1 f2fs: update cur_valid_map_mir together with cur_valid_map
- ▪ 18e2b4a f2fs: use printk_ratelimited for f2fs_msg
- ▪ 421826f f2fs: expose features to sysfs entry
- ▪ 620d636 f2fs: support inode checksum
- ▪ 21a135b f2fs: return wrong error number on f2fs_quota_write
- ▪ aef3950 f2fs: provide f2fs_balance_fs to __write_node_page
- ▪ 770a65a f2fs: introduce f2fs_statfs_project
- ▪ c317365 f2fs: don't need to wait for node writes for atomic write
- ▪ a2da7b1 f2fs: avoid naming confusion of sysfs init
- ▪ 7998d1e f2fs: support project quota
- ▪ 031874f f2fs: record quota during dot{,dot} recovery
- ▪ fe08820 f2fs: enhance on-disk inode structure scalability
- ▪ 0deca8f f2fs: make max inline size changeable
- ▪ ebf4950 f2fs: alloc new nids for xattr block in recovery
- ▪ 04cd6b7 f2fs: spread struct f2fs_dentry_ptr for inline path
- ▪ b1e7764 f2fs: remove unused input parameter
- ▪ 895f38a ARM: dts: 15801: Attach sRGB off cmd to dsi on cmd
- ▪ 2b63fa8c mdss: livedisplay: Don't send sRGB/DCI-P3 off cmd when dsi on
-
- ▪ project packages/apps/SetupWizard/
-
- ▼ 12/17/2017
-
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/samsung/
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/SamsungServiceMode/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/16/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▼ 12/15/2017
-
-
- ▪ project hardware/samsung/
- ▪ 1824648 audio: Always use 16kHz sampling for SCO
-
- ▼ 12/13/2017
-
-
- ▪ project hardware/qcom/fm/
-
- ▪ project hardware/samsung/
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/CMParts/
- ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
-
- ▪ project packages/apps/Calendar/
-
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/SamsungServiceMode/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/12/2017
-
-
- ▪ project android/
- ▪ 2c020ba android-7.1.2_r29 -> android-7.1.2_r36
-
- ▪ project build/
- ▪ c2b7604 Bump security string to 2017-12-05
-
- ▪ project device/oneplus/oneplus3/
- ▪ b2f3b03 op3: Disable inline xattr feature for F2FS formatted /data
- ▪ 51ebf59 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
-
- ▪ project device/oppo/common/
- ▪ 50d9b54 Merge remote-tracking branch 'LineageOS/cm-14.1' into akhil
-
- ▪ project external/skia/
- ▪ cc36cbe Merge branch 'cm-14.1' of git://github.com/LineageOS/android_external_skia into nougat
- ▪ bf8a04d Merge tag 'android-7.1.2_r36' into nougat
-
- ▪ project frameworks/av/
- ▪ b917d0b Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ 4d1bd2d Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
- ▪ 1a126b1 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
- ▪ e5c75f2 Stop explicitly using kCallerPasses_Ownership
- ▪ a146c62c Fix ClipboardService device lock check for cross profile
- ▪ 233958f Prevent getting data from Clipboard if device is locked
- ▪ 1a9fac1 Clearing up invalid entries when SyncStorageEngine starts
- ▪ a86c005 SystemUI: Fix title text clipping when task lock button is visible
- ▪ 355e669 ZenModeHelper: Allow lights by default
- ▪ 35faa93 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
-
- ▪ project hardware/ti/omap4/
- ▪ f5a98d3 Revert "omap4: add local libjhead"
- ▪ 0f456ee omap4: add local libjhead
-
- ▪ project kernel/samsung/smdk4412/
- ▪ 1bc3033 t0lte: remove obsolete t0ltekor defconfig
-
- ▪ project packages/apps/CMParts/
- ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
-
- ▪ project packages/apps/PackageInstaller/
- ▪ c4735a2 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
- ▪ 81ba415 DO NOT MERGE Fixing Install button not enabled on resume
- ▪ d65c53a Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
-
- ▪ project packages/apps/Settings/
- ▪ 16519cc DO NOT MERGE. ActivityPicker shouldn't grant permissions.
- ▪ 13e6a2e BugFix:Correct fullBearer in APNSettings
- ▪ 2f5b6c9 Telephony: Fix Crash in SimStatus Fragment
- ▪ 73ee6a2 Settings: fix vibrate for calls in Setting app displayed incorrect issue
- ▪ c2ccc72 Settings: back icon doesn't work in format SD as portable page.
- ▪ 8bea2b7 Settings: Fix settings force close
- ▪ 184c68f Settings: Fix crash when disconnect wifi
- ▪ 67dd9f7 Settings: Strings: Modify a few german summaries
-
- ▪ project system/core/
- ▪ 9ed0226 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
-
+ ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+
+
+====================
+     02-09-2018
+====================
+
+   * android/
+96ed203 add SnapdragonCamera2 omni
+f39fe5e Add back snap
+64f45b9 Revert "Remove camera2"
+
+   * build/make/
+0e71ac6 Only warn on LOCAL_CLANG set to false
+3ec741c [1/2] build: add OTA script do delete package cache
+
+   * device/oneplus/oneplus3/
+79425d7 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into oreo
+4bdb379 oneplus3: enable hw keys settings and button backlight
+
+   * device/qcom/sepolicy/
+856dcf4 legacy: Allow qcom power HAL to interact with perfd
+
+   * device/rr/sepolicy/
+a6a0370 sepolicy: Add policy for vendor.lineage.power HAL
+
+   * device/xiaomi/kenzo/
+34da42c kenzo: track common tree from RR git
+
+   * device/xiaomi/msm8956-common/
+00373a8 msm8956-common: import lights HAL from hardware/cyanogen
+b6c3c80 Revert "[dnm]msm8956: Drop Ant"
+b1ce966 msm8956-common: cmhw -> lineagehw
+
+   * frameworks/base/
+7a4396a Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_frameworks_base into oreo
+b9bf5d7 Projekt->rr
+f599c4a Projekt->rr
+5599a88 Themes: SystemUI: expose screen pinning colors
+8b34e14 Themes: Expose power save mode color
+e2ade4e Themes: SystemUI: Expose QS background opacity
+7acedeb Themes: SystemUI: Expose QS edit item decoration background color
+a2df2f4 Themes: Allow Permission Icons to be fully themed
+87fa19b Themes: Allow Immersive cling colors to be fully themed
+4f23164 Themes: Expose resolver hardcoded colors
+b6b10f5 Themes: base: expose toast colors for themes
+23dc2b8 Themes: Expose Keyguard affordance circle background
+8044c76 Themes: Allow volume slider and thumb to work with custom images.
+a68be15 Themes: Expose Screenshot flash and background colors
+9d55013 Themes:  Expose Keyboard Shortcuts Dialog
+9bcd5c4 Themes: graphics: ADB "N" icon compatible with OMS7
+98516f6 Themes: SystemUI: Expose switch bar title
+92b57c5 Themes: Allow Navbar ripple color to be themed
+023d3d7 Themes: SystemUI: Use own drawables for QS expand icon
+9482eed Themes: Notifications: extend dynamic notification bool for ambient notifications
+5634ab5 Themes: Notification dynamic colors bool compatible with OMS7
+e2a7663 Themes: Notifications: Expose a bool to disable dynamic colors
+ae3c24c Screenshot: append app name to filename
+850b2bb perf: Adapt for HIDL Lineage power hal
+5d4c2b7 perf: Add plumbing for PerformanceManager
+
+   * hardware/qcom/media-caf/msm8952/
+36741c6 fix circular dependency libnativewindow <-> libui
+
+   * hardware/qcom/power/
+c1a9261 power: msm8974: Add support for power profile
+5584ebb power: Use monotonic time for interaction boost
+d8022f6 power: msm8998: Fix perf mode switch
+fed6fde power: msm8996: Support VR + Sustained performance mode
+281c136 power: msm8996: Using PerfHAL API
+5ec3773 power: Prepare for power profile support
+8baf47d power: Add known perf hint IDs
+c9f97d7 power: msm8996: Add support for power profiles
+2f0ce46 power: msm8998: Support power profiles
+
+   * kernel/oneplus/msm8996/
+81b4b0d caesium_defconfig: set CONFIG_LOCALVERSION
+a96b6ee Revert "caesium_defconfig: Enable CONFIG_FORTIFY_SOURCE"
+152f330 caesium_defconfig: Set westwood as default TCP congestion handler
+ec491c4 block: maple: Use better presets
+70fbf60 block: Maple.iosched: Fix Compiler Errors
+19bbc46 block: maple: Stop abusing csd.list for fifo_time
+e305ac9 maple-iosched: Fix the -Wdeclaration-after-statement warnings
+4760efa block: maple: Fix inverted logic
+fcc333a block: maple: Make bools constant across functions
+cfc5b8e block: maple: Use native display state instead of PowerSuspend
+9a3c593 block: maple: Serve asynchronous requests before synchronous ones
+0a4f44e block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO
+64ee478 block: maple: Catch writes_starved sooner, increase limit.
+e2772c3 block: maple: Clean up and add patchlevel macro to keep track of commits
+2dd26e7 block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency
+8c12037 block: Add Maple I/O Scheduler
+53f79d9 tcp_westwood : Tune-up
+
+   * lineage-sdk/
+387d587 lineage-sdk: Reenable performance profiles
+
+   * packages/apps/LineageParts/
+0282134 LineageParts:Make Button Settings and Hardware Key Settings Non Searchable
+ea30b2f LineageParts: Remove per app profiles pref
+6e4a036 LineageParts: Add padding to SeekBarPreference title and summary
+8413b25 LineageParts: enable perf profiles
+
+   * packages/apps/Settings/
+ac6a7a5 Move FP pulldown switch to swipe notif settings
+75740da Fix deps
+1eddcb8 Fix possible FC in UI settings
+506d0c1 Link the sim colors
+aadfff0 Settings: battery: Add LineageParts perf profiles
+7d4673b AppOps string improvements
+956929c Forward port pattern visibility settings (2/2)
+2216308 Projekt_colors -> rr_colors
+387bea6 Themes: Settings: expose condition/suggestion colors for themes
+575ef69 Themes: Settings: Expose switchbar background color
+594bd7a Themes: Settings: Expose storage summary text
+d278ee8 Themes: Settings: Expose storage icon colors
+e8297fb Themes: Settings: Unlink Network & Internet and Wifi dashboard icon
+
+   * system/core/
+109797a Added missing AID which is causing setgroups to fail
+ee058ad healthd: Reinitialize mChargerNames for every battery update
+8a626b4 adbd: Disable "adb root" by system property (2/3)
+28bebe0 Update permissions to the superuser binary
+
+   * vendor/rr/
+1407654 rr: remove copy rule that got removed
+6ed0ab6 Add SnapdragonCamera2
+61c9c36 [2/2] omni: add OTA script do delete package cache
+6cc54ac Remove google cam
+
+====================
+     02-08-2018
+====================
+
+   * android/
+4fe3227 Revert "manifest: track RR Stats"
+388cd8f Merge remote-tracking branch 'origin/oreo' into default
+8979a39 manifest: android-8.1.0_r4 -> android-8.1.0_r11
+
+   * build/make/
+a954c9f Disable dataroaming by default
+1c2f3fd Merge tag 'android-8.1.0_r11' into oreo
+
+   * device/oneplus/oneplus3/
+914efb4 oneplus3: RR bringup
+
+   * device/xiaomi/kenzo/
+b97a5c4 kenzo: RR bringup
+
+   * frameworks/av/
+170dbe3 soundtrigger: fill in default extras from dsp
+
+   * frameworks/base/
+c4cbce1 [DNM][TEMP]Revert "Swap the order of synthetic password wrapping"
+021f148 Merge tag 'android-8.1.0_r11' into oreo
+
+   * hardware/lineage/interfaces/
+4255ced vibrator: Set perms before hal is started
+c169bd0 lineage/interfaces: power: Add HIDL HAL interface
+
+   * kernel/oneplus/msm8996/
+ccf1edb proc: Remove additional SafetyNet flags from /proc/cmdline
+145c19d proc: Remove verifiedbootstate flag from /proc/cmdline
+09fda19 Merge branch 'kernel.lnx.3.18.r33-rel' of git://github.com/android-linux-stable/msm-3.18 into XOS-8.1
+7d4e83c PM / devfreq: Add a governor white list
+dc8d936 kthread: Backport queuing_blocked()
+b4d30fe fs: Workaround the compiler's bad optimization
+9ea193c sched, cpuidle: Track cpuidle state index in the scheduler
+a25999a Merge 3.18.94 into kernel.lnx.3.18.r33-rel
+cde3537 Linux 3.18.94
+9c194a6 um: Fix out-of-tree build
+e696600 ASoC: pcm512x: add missing MODULE_DESCRIPTION/AUTHOR/LICENSE
+28ae79a spi: imx: do not access registers while clocks disabled
+669d070 selinux: general protection fault in sock_has_perm
+fc6fd81 usb: uas: unconditionally bring back host after reset
+512b79f usb: f_fs: Prevent gadget unbind if it is already unbound
+f180fa0 USB: serial: simple: add Motorola Tetra driver
+466d964 usbip: list: don't list devices attached to vhci_hcd
+96ea419 usbip: prevent bind loops on devices attached to vhci_hcd
+464bab1 USB: serial: io_edgeport: fix possible sleep-in-atomic
+d1cfbc6 CDC-ACM: apply quirk for card reader
+0a5e154 USB: cdc-acm: Do not log urb submission errors on disconnect
+af5850d USB: serial: pl2303: new device id for Chilitag
+c478e3e staging: rtl8188eu: Fix incorrect response to SIOCGIWESSID
+5becc7c usb: gadget: don't dereference g until after it has been null checked
+aba82d1 media: usbtv: add a new usbid
+0bac821 scsi: ufs: ufshcd: fix potential NULL pointer dereference in ufshcd_config_vreg
+33e592e quota: Check for register_shrinker() failure.
+d5b5f8b net: ethernet: xilinx: Mark XILINX_LL_TEMAC broken on 64-bit
+d395c1b hwmon: (pmbus) Use 64bit math for DIRECT format values
+07397e4 nfsd: check for use of the closed special stateid
+1f71aa2 nfsd: CLOSE SHOULD return the invalid special stateid for NFSv4.x (x>0)
+f2dc0da xen-netfront: remove warning when unloading module
+577a0df KVM: VMX: Fix rflags cache during vCPU reset
+f3ca475 mac80211: fix the update of path metric for RANN frame
+ed99620 bcache: check return value of register_shrinker
+f070580 KVM: X86: Fix operand/address-size during instruction decoding
+6ca9bcf KVM: x86: Don't re-execute instruction when not passing CR2 value
+c786c16 KVM: x86: emulator: Return to user-mode on L1 CPL=0 emulation failure
+f7c2ce3 igb: Free IRQs when device is hotplugged
+d7e2fda gpio: iop: add missing MODULE_DESCRIPTION/AUTHOR/LICENSE
+6aab3aa ALSA: seq: Make ioctls race-free
+524a6ef loop: fix concurrent lo_open/lo_release
+b1cf526 um: Remove copy&paste code from init.h
+db72a03 um: Stop abusing __KERNEL__
+f79ad9c um: link vmlinux with -no-pie
+33fd368 Input: do not emit unneeded EV_SYN when suspending
+
+   * packages/apps/Dialer/
+fa4ae98 Re-add dialer lookup.
+56aa9e5 Allow using private framework API.
+
+   * packages/apps/Settings/
+37488da Merge remote-tracking branch 'github/oreo', tag 'android-8.1.0_r11' into oreo
+
+====================
+     02-07-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+be3ced8 op3: Add Lineage power hal to manifest
+73dff62 op3: Enable interaction boost
+afeba14 op3: Add powerhint.xml
+6b04481 op3: Update overlay to hide sRGB toggle
+030ee5d op3: HACK: Don't use vndbinder for camera HAL
+ee57440 op3: Fork camera provider HAL
+660814c op3: Fix extracting rootfs target
+
+   * frameworks/base/
+030fc4f Revert "base: Add Dynamic Navbar capability [1/2]"
+a36c412 Use torch drawable instead of flashlight
+
+   * kernel/oneplus/msm8996/
+5892566 Merge tag 'LA.UM.6.5.r1-06000-8x96.0' into kernel.lnx.3.18.r33-rel
+
+   * packages/apps/DUI/
+a9a7752 Update dark icon color
+
+   * packages/apps/Settings/
+6bb1514 Tint slim resizer icons
+c2b4ad1 Revert "Add Dynamic Navbar capability [2/2]"
+2bd8063 Fix accent of expanded desktop and slim resızer drawables
+5ea040b Fix settings tile height
+
+====================
+     02-06-2018
+====================
+
+   * android/
+e639f0e Switch trebuchet repo
+f28c3ae remove LOS trebuchet
+727444a Track our trebuchet
+897a6d9 Remove WallpaperPicker
+
+   * build/make/
+09f1273 Merge remote-tracking branches 'upstream/staging/lineage-15.1' and 'rr/oreo' into oreo
+
+   * frameworks/av/
+217dc5e Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
+
+   * frameworks/base/
+3ca0f17 SoundTile: Update listening state to O API
+
+   * hardware/interfaces/
+c84fa88 Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
+
+   * hardware/qcom/camera/
+594e257 Merge tag 'android-8.1.0_r11' into android-8.1.0_r11
+
+   * kernel/oneplus/msm8996/
+3ddac47 caesium_defconfig: Enable KCAL and Sound control
+b81ff08 drivers:video:msm:mdss: Remove screen invert support from KCal
+11eac94a msm: mdss: KCAL: disable igc update
+cfbdc24 msm: mdss: KCAL: Send a pp display commit when changes are made
+a7d3873 mdss mdp: kcal for mdss_mdp_v1_7
+bcdce90 sound: tfa9890: rip more log spam
+e83b18b sound: tfa9890: rip spam
+8f6e6ab sound: tfa9890: silence log crap
+f644f17 tfa9890: change spammy pr_err() ones to pr_debug()
+63163cb tfa9890: disable log spams from pr_debug()
+7953f2e ASoC: wcd9335: prevent speaker gain from being reset
+d3496d2 ASoC: wcd9335: add analog headphone gain
+03c72a7 ASoC: wcd9335: fix speaker gain controls
+0e65293 ASoC: wcd9335: add mic gain and speaker gain for OnePlus3
+7cf8ff8 ASoC: wcd9335: Sound control
+7ed41b7 Kconfig: msm: disable ultrasound driver
+e9d4567 asoc/msm: Disable unwanted modules in arch config
+60a157b asoc/msm: Reduce min capture size
+e51a1f5 asoc: msm: Add async ops for SLIMBUS_6 backend
+26c1814 Revert "fs: ext4: Revert backported changes."
+7c2e834 UPSTREAM: cpuidle: Clean up fallback handling in cpuidle_idle_call()
+9c0e92b UPSTREAM: PM / sleep: Re-implement suspend-to-idle handling
+7d6cb95 UPSTREAM: sched/fair: Avoid pulling all tasks in idle balancing
+f4cde83 UPSTREAM: sched: Improve load balancing in the presence of idle CPUs
+d1afbb5 sched/deadline: Split cpudl_set() into cpudl_set() and cpudl_clear()
+ccb85f4 sched/deadline: Make CPU heap faster avoiding real swaps on heapify
+ad60b7d sched/deadline: Refactor CPU heap code
+5445892 sched/deadline: Fix wrap-around in DL heap
+de5a365 sched/deadline: Unify dl_time_before() usage
+910a18b sched/deadline: Remove cpu_active_mask from cpudl_find()
+159b642 sched/deadline: Modify cpudl::free_cpus to reflect rd->online
+dd1e66e sched/deadline: Avoid pointless __setscheduler()
+49ea175 sched/wait: Fix a kthread race with wait_woken()
+59b0a62 sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
+02e35b2 sched/core: Fix a race between try_to_wake_up() and a woken up task
+0d4f7e4 sys: Horrible hack for compat_sysinfo userspace confusion
+a31a2f9 ARM: dts: 15801: Nuke redundant panel cmds
+d8e6394 drivers: base: boeffla_wl_blocker: Checkpatch cleanup
+1d1489b mdss: livedisplay: Use livedisplay panel cmds wherever applicable
+8ab9007 mdss: livedisplay: Nuke Adobe sRGB support
+e819d2a ARM: dts: 15801: Nuke redundant panel commands
+3d51698 dts: enable ULPS suspend mode
+
+   * packages/apps/ResurrectionOTA/
+8613b36 ResurrectionOTA: OTAUtils: fixup getBuildProp()
+
+   * packages/apps/Settings/
+155e678 Update Recents icon
+6234637 İmprove changelog theme
+
+   * packages/apps/Trebuchet/
+b75e817 Dark mode and theme improvements
+
+   * packages/services/OmniJaws/
+71be898 Use own OWM key
+
+   * vendor/rr/
+568616c Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_vendor_rr into HEAD
+fab4727 overlay: Indentation fix
+2013af5 vendor: update vzw apns
+defd3ca Always add manufacturer and model to MP4 files
+f97660f bfqio: Add missing include header
+027869c extract_utils: Fix regressions from 3f9b94cb67a88999f7747af8335c5e576939360b
+558194e sensitive_pn: Fix typo in sensitive phone number
+e3a4795 sensitive_pn: Add some more numbers for Canada
+1901ea4 sensitive_pn: Sort file
+732b3ef Added more USA sensitive phone numbers
+e3e3d31 Add APN for iD Mobile UK MVNO
+11df5ff envsetup: Clean up for install[boot|recovery]
+2866921 rr: build ResurrectionStats
+
+====================
+     02-05-2018
+====================
+
+
+   * build/make/
+7fba339 remove root status from the script
+
+   * device/oppo/common/
+298075b oppo-common: ConfigPanel: expose KeyHandler
+
+   * frameworks/base/
+c9b7647 Edit theme name
+618a30c Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_frameworks_base into oreo
+e7bc16b Dark mode : Switch dark to black theme for systemUI
+b8f179a Change color blue gray to dark gray
+b8594bc base: SystemUI: add back dark qs styles
+3cea02d WeatherTile: Update API for listening state and get it to work
+91d970f Screenshot delay [1/2]
+715f485 SystemUI: Add data saver icon to blacklist
+a426012 Optional screenshot type [1/2]
+2ed4f43 Ticker: Clear ticker regardless of setting
+3171765 PowerMenu: Make more items optional on lockscreen [1/2] -screenrecord -flashlight -onthego
+3723688 Power Menu Flashlight option [1/2]
+b0c82bf Update default dialer and sim color 2/2
+
+   * hardware/lineage/livedisplay/
+3c78b9e livedisplay: Support sysfs only display modes
+
+   * kernel/oneplus/msm8996/
+d0917ac FROMLIST: arm64: Move post_ttbr_update_workaround to C code
+6a3cb72 ANDROID: ext4: don't put symlink in pagecache into highmem
+06d3a55 ANDROID: sdcardfs: Protect set_top
+1a80bc4 Revert "ANDROID: sdcardfs: notify lower file of opens"
+084cec1 ANDROID: sdcardfs: Use lower getattr times/size
+6b67e04 ANDROID: xattr: Pass EOPNOTSUPP to permission2
+6861104 Enable CONFIG_BOEFFLA_WL_BLOCKER
+ee45e06 boeffla_wl_blocker: Block default wakelocks we had before
+9c4b712 boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+e04c5c4 boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+6ffff0a boeffla_wl_blocker: add generic wakelock blocker driver v1.0.0
+dedc5f2 fs: ext4: Revert backported changes.
+c918b92 Merge branch 'kernel.lnx.3.18.r22-rel' of git://github.com/android-linux-stable/msm-3.18 into XOS-8.1
+
+   * packages/apps/Gallery2/
+bd1b459 Gallery: Fix translatability of CAF additions to filtershow
+502d23f Gallery2: Remove more CAF Chinese translation modifications
+
+   * packages/apps/Settings/
+0293bf1 Update density changer layout height
+89299e6 Settings: Update Changelog layout [1/2]
+c3ba779 Update UI icon in nav menu
+5af90fa Colopicker: Enable alpha slider by default
+98cf565 Screenshot delay [2/2]
+69c4cff Optional Screenshot type [2/2]
+e1ad5cc PowerMenu: Make more items optional on lockscreen [2/2]
+33604d0 Flashlight to power menu [2/2]
+c907022 Update default dialer and sim color 1/2
+f3fdcb0 Fix Custom Density Layout
+
+   * packages/apps/Snap/
+0cfd070 Snap: Port all string improvements from cm-14.1
+
+   * vendor/rr/
+b28bffc Update settings changelog layout [2/2]
+
+====================
+     02-04-2018
+====================
+
+   * android/
+e004348 manifest: track RR Stats
+6367b0e Remove camera2
+
+   * build/make/
+64e6a6e Remove LCD density prop
+dbf3dc8 fs_config: Allow targets to override OEM AID restrictions
+a4d68c1 remove root script
+
+   * frameworks/base/
+4ff4dcd Update ic_dismiss_all.xml
+5732dff Statubar:dont update on observing
+efe4553 base: SystemUI: call qs tile layout on rotate
+b290988 Fix Build
+888ffe9 Forward port CM Screen Security settings (1/2)
+355433d appops: Privacy Guard for O
+4d8e5c7 SystemUI: LiveDisplay tile
+cdb9606 QSCustomizer: use custom column count
+5324857 Allow to set QS panel columns and rows [1/2]
+a576e57 Revert "Forward port 'Make QS columns count configurable'"
+c0c8dd4 Revert "base: SystemUI: call qs tile layout on rotate"
+a1b5d98 Less notification sounds [1/2]
+d768ce3 Make powermenu lockscreen visibility configurable [1/2]
+c69af66 İmprove system accent theming
+
+   * kernel/oneplus/msm8996/
+63bbe39 caesium_defconfig: Enable Sweep2Sleep
+7a09618 input: touchscreen: Cleanup sweep2sleep.c
+ae03b32 sweep2sleep: fix device name
+6ab358f sweep2sleep: don't create input device
+0b3599d touch: sweep2sleep
+2c47f8d caesium_defconfig: Disable localversion auto
+0f1b019 cpufreq: Restore policy min/max limits on CPU online
+ac4794a cpufreq: fallback to interactive if governor is not found
+4cba72b drivers: cpufreq: Use interruptible waits
+5daa49b cpufreq: suspend cpufreq governors on shutdown
+d7aaf7d qcom-cpufreq: skip frequencies that round to same rate
+c5d2848 qcom-cpufreq: Use cpufreq_table_validate_and_show to fill freq_table
+8289f32 cpufreq: Implement CONFIG_MSM_TRACK_FREQ_TARGET_INDEX
+3d73d73 drivers:cpufreq:fp-boost: Make boost workqueue unbound
+81564db drivers:cpufreq:fp-boost Add missing newline
+b69742b cpufreq:fp-boost: Fix checkpatch warnings
+c797fec fp-boost: Avoid unnecessory boost sequence
+d86c5cc cpufreq: Enable fingerprint boost by default
+64e45f4 cpufreq: fp-boost: Don't mess up with normal home key press
+26589ad fp-boost: Decrease duration to 2 seconds
+3abd654 fp-boost: Set priority to max
+be91c9e cpufreq: Introduce fingerprint boost driver
+728b33f UPSTREAM: ext4: trim allocation requests to group size
+7ba4d29 UPSTREAM: ext4: fix inline data error paths
+f4033a2 UPSTREAM: ext4: fix data corruption in data=journal mode
+e038044 UPSTREAM: ext4: use private version of page_zero_new_buffers() for data=journal mode
+865af0e UPSTREAM: ext4: fix data corruption with EXT4_GET_BLOCKS_ZERO
+7d7d58c ARM: dts: 15801: Import MDSS sRGB, DCI-P3, Adobe sRGB and Night mode commands
+f739c71 mdss: livedisplay: Miscellaneous changes
+523b10c drivers:video:mdss: Silence logspam about failed dithers
+e0da21f PM / devfreq: Fix typo that caused an infinite loop
+33112f5 PM / devfreq: Remove null termination in boost_devices
+824079c PM / devfreq: Don't boost 624000.ufshc on wake
+3b56a87 PM / devfreq: Reduce wake boost duration to 5000 ms
+c1698c2 PM / devfreq: Boost "624000.ufshc" and "soc:qcom,cpubw" on screen wake
+d792b93 PM / devfreq: Add an interface to boost devices when the screen is woken
+d34f869 scsi: ufs: Fix crashes caused by uninitialized completion usage
+1043520 nfc: Our pn544 does not depend on NFC_HCI
+629b7d3 qcacld-2.0: Fix memory leak issue
+6a0e69a adreno_tz: Remove unnecessary devfreq NULL check in tz_handler()
+1c56ecb PM/devfreq: bw_hwmon: Unlock mutex in case of error
+317751b PM/devfreq: bw_hwmon: add mutex lock in polling interval case
+fa2d2a6 caesium_defconfig: Disable perf events
+8daf00a UPSTREAM: mm/slab: align cache size first before determination of OFF_SLAB candidate
+030d677 UPSTREAM: mm/slab: use more appropriate condition check for debug_pagealloc
+c3f46bd UPSTREAM: mm/slab: factor out debugging initialization in cache_init_objs()
+546a4db UPSTREAM: mm/slab: remove object status buffer for DEBUG_SLAB_LEAK
+4bf4002 UPSTREAM: mm/slab: alternative implementation for DEBUG_SLAB_LEAK
+94ed0a9 UPSTREAM: mm/slab: clean up DEBUG_PAGEALLOC processing code
+d5047ba UPSTREAM: mm/slab: activate debug_pagealloc in SLAB when it is actually enabled
+1c619e2 cfq: fix starvation of asynchronous writes
+f1a84aa cfq-iosched: Charge at least 1 jiffie instead of 1 ns
+0db3271 cfq-iosched: Fix regression in bonnie++ rewrite performance
+687f65d cfq-iosched: Convert slice_resid from u64 to s64
+dc4c0fa cfq-iosched: temporarily boost queue priority for idle classes
+92dfe0a cfq-iosched: Convert to use highres timers
+2db02d1 cfq-iosched: Expose microsecond interfaces
+269c88c cfq-iosched: Convert from jiffies to nanoseconds
+3d7cf57 cfq-iosched: Allow parent cgroup to preempt its child
+56e899e cfq-iosched: Allow sync noidle workloads to preempt each other
+c758b71 cfq-iosched: Reorder checks in cfq_should_preempt()
+c1edad3 cfq-iosched: Don't group_idle if cfqq has big thinktime
+b6f6b6c cfq-iosched: fix the setting of IOPS mode on SSDs
+a269580 block: Make CFQ default to IOPS mode on SSDs
+7c293b5 Optimize copy_page for modern ARM platforms
+
+   * lineage-sdk/
+2552e21 lineage: Fix LiveDisplay tile off color
+
+   * packages/apps/LineageParts/
+017ea2b PrivacyGuard: Bring up
+2ec80c5 LineageParts: Add intent for LiveDisplay settings
+bd1c60b Fix lineage parts theme
+
+   * packages/apps/ResurrectionOTA/
+617cd21 Update OTAUtils.java
+4c1b76f Build fix
+e0232a6 Update perms
+e313aa4 fix derp
+fc4bd58 OTA: use getprop if reading build.prop fails
+2821adb Revert "Update perms"
+c175b36 Update perms
+
+   * packages/apps/Settings/
+9c4bc1d Revert "Settings: Add anonymous stats preference in privacy settings"
+9f0dc25 Add LCD density fragment to navigation settings as well
+4c97877 Remove An uneeded feature
+503a5e2 Merge branch 'oreo' of https://github.com/ResurrectionRemix/private_packages_apps_Settings into oreo
+f4e3b23 Add screen zoom and Density settings to tab UI
+f50ac87 Update Layout changer icon
+b3c98a3 Add Back maintainers fragment
+7732602 Settings: forward port lock pattern grid size (2/2)
+b9d6b72 Settings: Add anonymous stats preference in privacy settings
+97570ad Settings: Privacy Guard
+79d491e Settings: Set root access options appropriately
+33ee8de Settings: Root appops access in developer settings
+de69866 Settings: Add developer setting for root access
+c47d147 Settings: Allow devices to provide remote gesture preferences
+4bc87c7 Settings: gesture: Add LineageParts touchscreen gesture settings
+05b600e Qs Layout columns and rows [2/2]
+9c3c6ab Power menu on Lockscreen items [2/2]
+528c90f Settings: add option to restore default theme
+32925a8 Less Notification sounds [2/2]
+6895235 Make configurations theme ready and expose hard-coded colors
+
+====================
+     02-03-2018
+====================
+
+
+   * build/make/
+87c368b envsetup: don't call rr.sh
+88425d6 Build : Add build type chooser script and others
+d6838ba Add hardware & software information to flash script
+
+   * packages/apps/ResurrectionOTA/
+b5c3355 Update ota SDK and theme
+
+   * vendor/rr/
+70ce245 rr: bacon: call rr.sh after build
+953c24d Squashed : Add build scripts
