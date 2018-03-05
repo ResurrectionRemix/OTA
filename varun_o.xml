@@ -25,11 +25,30 @@
             	description="Download Open latest GApps">http://opengapps.org</OpenGappsUrl>
 	</bacon>
         <cheeseburger>
-            <Filename>RR-N-v5.8.5-20171015-cheeseburger-Final.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180211-cheeseburger-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/RR-N-v5.8.5-20171015-cheeseburger-Final.zip/download</RomUrl>
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix-oreo/files/cheeseburger/RR-O-v6.0.0-20180211-cheeseburger-Official.zip/download</RomUrl>
+            <OpenGappsUrl
+                id="open_gapps"
+                title="OpenGApps"
+                description="Download latest OpenGApps">http://opengapps.org</OpenGappsUrl>
+		    <ChangelogUrl
+                id="changelog"
+                title="Changelog"
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/oreo/CHANGELOG.mkdn</ChangelogUrl>
+            <FirmwareUrl
+            	id="firmware"
+            	title="Firmware"
+            	description="Latest firmware">https://jamal2367.com/downloads/?dir=OnePlus%205</FirmwareUrl>
+	</cheeseburger>
+	<dumpling>
+            <Filename>RR-O-v6.0.0-20180213-dumpling-Official.zip</Filename>
+            <RomUrl
+                id="rom"
+                title="Rom"
+                description="Latest ResurrectionRemix build">https://sourceforge.net/projects/resurrectionremix-oreo/files/dumpling/RR-O-v6.0.0-20180213-dumpling-Official.zip/download</RomUrl>
             <OpenGappsUrl
                 id="open_gapps"
                 title="OpenGApps"
@@ -37,11 +56,11 @@
 	    <ChangelogUrl
                 id="changelog"
                 title="Changelog"
-                description="View Changelog">https://github.com/ResurrectionRemix/OTA/blob/master/apascual89/CHANGELOG.mkdn</ChangelogUrl>
-            <OldBuildsUrl
-            	id="Old_builds"
-            	title="Build Folder"
-            	description="Build Download Archive">https://sourceforge.net/projects/resurrectionremix/files/oneplus5/</OldBuildsUrl>
-	</cheeseburger>
+                description="View Changelog">https://github.com/ResurrectionRemix/android_vendor_resurrection/blob/oreo/CHANGELOG.mkdn</ChangelogUrl>
+            <FirmwareUrl
+            	id="firmware"
+            	title="Firmware"
+            	description="Latest firmware">https://darkobas.ddns.net:8443/zl1/Oneplus5t-ob3-firmware.zip</FirmwareUrl>
+	</dumpling>
     </Stable>
 </SlimOTA>
