@@ -14,7 +14,7 @@
 <GAppsUrl
   id="GApps"
   title="Open GApps"
-  description="Download Open GApps">https://builds.nezorfla.me/opengapps/</GAppsUrl>
+  description="Download Open GApps">https://opengapps.org</GAppsUrl>
 <ChangelogUrl
   id="changelog"
   title="Changelog"
