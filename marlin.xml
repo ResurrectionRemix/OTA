@@ -11,10 +11,10 @@
   id="build"
   title="Build"
   description="Download a Build">http://downloads.resurrectionremix.com/pixelXL/</BuildUrl>
-<Vendor.imgs
+<VendorImgsUrl
   id="vendor.imgs"
   title="Vendor.imgs"
-  description="Download latest vendor image">https://drive.google.com/file/d/1HfUB91z1FBfg0vjh4mmyt-UUd3GSjDSz/view?usp=sharing</Vendor.imgs>
+  description="Download latest vendor image">https://drive.google.com/file/d/1HfUB91z1FBfg0vjh4mmyt-UUd3GSjDSz/view?usp=sharing</VendorImgsUrl>
 <GAppsUrl
   id="GApps"
   title="Open GApps"
