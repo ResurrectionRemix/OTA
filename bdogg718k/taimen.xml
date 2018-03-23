@@ -11,6 +11,7 @@
   id="build"
   title="Build"
   description="Download a Build">http://downloads.resurrectionremix.com/pixel2XL/</BuildUrl>
+  <GAppsUrl
   id="GApps"
   title="Open GApps"
   description="Download Open GApps">https://opengapps.org</GAppsUrl>
