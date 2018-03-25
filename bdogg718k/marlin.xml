@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<Stable>
+<marlin>
+<Filename>RR-O-v6.0.0-20180317-marlin-Official.zip</Filename>
+<LatestBuildUrl
+  id="latestbuild"
+  title="Latest Build"
+  description="Download Latest Build">http://downloads.resurrectionremix.com/pixelXL/RR-O-v6.0.0-20180317-marlin-Official.zip</LatestBuildUrl>
+<BuildUrl
+  id="build"
+  title="Build"
+  description="Download a Build">http://downloads.resurrectionremix.com/pixelXL/</BuildUrl>
+<VendorImgsUrl
+  id="vendor.imgs"
+  title="Vendor.imgs"
+  description="Download latest vendor image">https://drive.google.com/file/d/1HfUB91z1FBfg0vjh4mmyt-UUd3GSjDSz/view?usp=sharing</VendorImgsUrl>
+<GAppsUrl
+  id="GApps"
+  title="Open GApps"
+  description="Download Open GApps">https://opengapps.org</GAppsUrl>
+<ChangelogUrl
+  id="changelog"
+  title="Changelog"
+  description="View Changelogs">https://github.com/ResurrectionRemix/OTA/blob/master/Changelog.txt</ChangelogUrl>
+</marlin>
+</Stable>
+</SlimOTA>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+<Stable>
+<taimen>
+<Filename>RR-O-v6.0.0-20180321-taimen-Official.zip</Filename>
+<LatestBuildUrl
+  id="latestbuild"
+  title="Latest Build"
+  description="Download Latest Build">http://downloads.resurrectionremix.com/pixel2XL/RR-O-v6.0.0-20180321-taimen-Official.zip</LatestBuildUrl>
+<BuildUrl
+  id="build"
+  title="Build"
+  description="Download a Build">http://downloads.resurrectionremix.com/pixel2XL/</BuildUrl>
+  <GAppsUrl
+  id="GApps"
+  title="Open GApps"
+  description="Download Open GApps">https://opengapps.org</GAppsUrl>
+<ChangelogUrl
+  id="changelog"
+  title="Changelog"
+  description="View Changelogs">https://github.com/ResurrectionRemix/OTA/blob/master/Changelog.txt</ChangelogUrl>
+</taimen>
+</Stable>
+</SlimOTA>
