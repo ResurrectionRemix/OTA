@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <bacon>
-            <Filename>RR-N-v5.8.5-20171020-bacon-Final.zip</Filename>
+            <Filename>RR-O-v6.0.0-20180329-bacon-Official.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/Nougat/RR-N-v5.8.5-20171020-bacon-Final.zip</RomUrl>
+                description="Download ResurrectionRemix builds">http://downloads.resurrectionremix.com/bacon/RR-O-v6.0.0-20180329-bacon-Official.zip</RomUrl>
               <Firmware1Url
                 id="firmware1"
                 title="Recommended Firmware"
