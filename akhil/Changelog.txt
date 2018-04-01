@@ -3,301 +3,244 @@
 
 
 ====================
-     03-25-2018
+     04-01-2018
 ====================
 
 
    * build/make/
-51ff7f3 Only warn on LOCAL_CLANG set to false
+45c1e22 core: remove duplicated boot jars
+af84f24 Introduce non-preopt boot jars
+42fbef0 build: Introduce SubstratumService
+4dab615 Only warn on LOCAL_CLANG set to false
 
    * device/oneplus/oneplus3/
-7b84f0c Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+f930d19 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
 
-   * device/xiaomi/kenzo/
-03beab5 removed Fingerprint.wrapper
+   * device/qcom/common/
+6e48da0 Remove QC releasetools and recovery extensions
 
-   * device/xiaomi/msm8956-common/
-6879445 gps: Unlock the GPS crpalmer authored https://github.com/nitrogen-   */android_device_xiaomi_kenzo/commit/5a9e84251696bb48e8fe184784226604efdf6f6c
-f9ab212 fixed back config_deviceHardwareKeys
-f24f5ef add overlay SettingsLib, SystemUI
-0c50545 add overlay-lineage
-83220f3 add android.hardware.biometrics.fingerprint@2.0-service-custom for FPC/GOODIX fingerprints
+   * frameworks/base/
+e935e05 Themes: Fix theming Qs expand/collapse drawable
+a4a9a68 SystemUI: Reload more assets on overlay change
+50477a8 base: Introduce SubstratumService
+6e0b09f OMS: Add back overlay modified callback implementation
+a3a3b91 OMS: StrictMode and files under /data/system/theme/
+7c586a9 Hold "volume up" during boot to disable all overlays
+0ce8d7c ThemeSafety: Introduce App Crash Intent
+080c025 ApplicationsState: add filter for Substratum overlays [2/2]
+e0c145b Extras: Add dynamic theme fonts support for O
+8a2ba06 Extras: Add dynamic theme sound effects support
+ed076c3 Extras: Add dynamic theme shutdown and boot animation support
+6e6cd56 OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
+cf917b0 Revert "Revert "OMS: Only allow trusted overlays to be registered.""
+
+   * frameworks/native/
+14e62e7 Fix resampling for multiple pointers
 
    * hardware/qcom/media-caf/msm8952/
-2593a0c fix circular dependency libnativewindow <-> libui
+b349c61 fix circular dependency libnativewindow <-> libui
+15e3873 media: Adjust for new header Android.bp requirements
 
-   * kernel/oneplus/msm8996/
-0967341 Merge tag 'HeathenousHoneydew' into oreo
-ad3df38 Merge tag 'v3.18.102' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable into XOS-8.1
-2e8b525 Revert "ANDROID: Fix cpufreq stats table creation"
-9e15c76 input: synaptics_s3320: Revert baseline modifications
-a23237f msm: msm_bus: Don't enable QoS clocks when none are present
-ffbd11d serial: msm_serial_hs: optimize total tty port support
-feca04c msm_serial_hs:  make the Bluetooth tty thread RT
-f74fc52 Make msm_serial_hs RT to improve bluetooth performance
-3548ee1 tty: add tty_port_set_policy function
-df0c24f tty: move tty_port workqueue to be a kthread
-17bebef mdss: rotator: Use FIFO kthread for rotator work
-f632450 UPSTREAM: sched/preempt: Fix preempt_count manipulations
-a0ae15e gpio: Mask non-wakeup GPIO interrupts on suspend
-f1db2ee input: tri-state-key: Properly filter out spurious interrupts
-bd31fa1 input: tri-state-key: Revert back to old driver
-151384b op3: Enable exfat driver
-55daa1a fs exfat: Disable exfat external module makefile logic
-b157aeb fs: exfat: Remove unused files
-4ae7cbc fs: exfat: Squashed updates from dorimanx/exfat-nofuse
-d5af5e9 fs: exfat: Import exfat driver from stock kernel
+   * kernel/xiaomi/msm8956/
+c35b871 arch: arm: boot: msm8956: early mount system
 
-   * vendor/xiaomi/
-4380ca7 rename lib/hw/fingerprint.fpc.so
-8c15dbb rename fingerprint library
+   * lineage-sdk/
+9d663a3 Revert "Revert "lineage-sdk: Update the way OMS records details about overlays""
+
+   * packages/apps/Settings/
+a7f7863 Settings: Introduce Substratum changes.
+b85defe Revert "Revert "Update the way OMS records details about overlays""
+7687152 RR: add new osprey maintainer name
+
+   * system/sepolicy/
+47034fd Merge branch 'o' of https://github.com/SubstratumResources/platform_system_sepolicy into HEAD
+
+   * vendor/oneplus/
+6564759 msm8998: update blobs from OP5 beta7 / OP5T beta5
 
 ====================
-     03-24-2018
-====================
-
-
-   * kernel/oneplus/msm8996/
-9764536 Linux 3.18.102
-eb53944 RDMA/ucma: Fix access to non-initialized CM_ID object
-236ab41 clk: si5351: Rename internal plls to avoid name collisions
-9a967fd pinctrl: Really force states during suspend/resume
-8abf722 drm/omap: DMM: Check for DMM readiness after successful transaction commit
-7b6d24e vgacon: Set VGA struct resource types
-0353b33 RDMA/cma: Use correct size when writing netlink stats
-6bfd5a3 IB/ipoib: Avoid memory leak if the SA returns a different DGID
-a86d90d mmc: avoid removing non-removable hosts during suspend
-5e3b1d0 media: [RESEND] media: dvb-frontends: Add delay to Si2168 restart
-4716cf9 media: bt8xx: Fix err 'bt878_probe()'
-1fa04de drm/msm: fix leak in failed get_pages
-c4eee23 cifs: small underflow in cnvrtDosUnixTm()
-6f9612c sm501fb: don't return zero on failure path in sm501fb_start()
-654c7e2 video: fbdev: udlfb: Fix buffer on stack
-7aadba0 ia64: fix module loading for gcc-5.4
-c846fc1 md/raid10: skip spare disk as 'first' disk
-b424550 power: supply: pda_power: move from timer to delayed_work
-045901c bnx2x: Align RX buffers
-21d4b92 ipmi/watchdog: fix wdog hang on panic waiting for ipmi response
-b69c4a1 ARM: DRA7: clockdomain: Change the CLKTRCTRL of CM_PCIE_CLKSTCTRL to SW_WKUP
-c9d6765 mfd: palmas: Reset the POWERHOLD mux during power off
-354ae15 mac80211: don't parse encrypted management frames in ieee80211_frame_acked
-00a4087 Btrfs: send, fix file hole not being preserved due to inline extent
-fcafccb rndis_wlan: add return value validation
-868a368 scsi: mac_esp: Replace bogus memory barrier with spinlock
-2805557 qlcnic: fix unchecked return value
-4525033 wan: pc300too: abort path on failure
-fc0808f mmc: host: omap_hsmmc: checking for NULL instead of IS_ERR()
-c84d2e7 Fix driver usage of 128B WQEs when WQ_CREATE is V1.
-21bdd57 HSI: ssi_protocol: double free in ssip_pn_xmit()
-bff38ff IB/ipoib: Update broadcast object if PKey value was changed in index 0
-2ead213 ALSA: hda - Fix headset microphone detection for ASUS N551 and N751
-ae7579e e1000e: fix timing for 82579 Gigabit Ethernet controller
-3a5294f tcp: remove poll() flakes with FastOpen
-0a4063b KVM: PPC: Book3S PR: Exit KVM on failed mapping
-dec444b scsi: virtio_scsi: Always try to read VPD pages
-be5f85e ath: Fix updating radar flags for coutry code India
-65e7962 spi: dw: Disable clock after unregistering the host
-eba5af3 media/dvb-core: Race condition when writing to CAM
-f566bb9 net: ipv6: send unsolicited NA on admin up
-e69880c i2c: i2c-scmi: add a MS HID
-093c265 genirq: Use irqd_get_trigger_type to compare the trigger type for shared IRQs
-fad8953 cpufreq/sh: Replace racy task affinity logic
-2d2cfeb ACPI/processor: Replace racy task affinity logic
-177bea4 Input: ar1021_i2c - fix too long name in driver's device table
-50655ac x86: i8259: export legacy_pic symbol
-911e850 platform/x86: asus-nb-wmi: Add wapf4 quirk for the X302UA
-
-   * system/extras/
-9f2a027 Perfprofd: Fix service definition
-
-====================
-     03-23-2018
+     03-31-2018
 ====================
 
 
    * device/oneplus/oneplus3/
-bd88a2f op3: boost UFS during boot
+733bf15 op3: PocketMode: Properly depend on Lineage SDK
+7883077 op3: PocketMode: Explicitly include Android support libs
 
-   * external/bash/
-35cebb9 bashrc: change cm to lineage
+   * external/f2fs-tools/
+ffcf3fa Merge branch 'master' of https://android.googlesource.com/platform/external/f2fs-tools into HEAD
+d043a26 Merge "Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size""
 
-   * kernel/oneplus/msm8996/
-56189b5 Merge tag 'GluttonousGooseberry' into oreo
-
-   * packages/apps/DUI/
-fdd1279 Fix potential Smartbar FC for buttons custom application
-aef4ed1 Fix Pulse disappearing sometimes after skipping tracks
-f11893e Pulse: don't elaborate useless waveform
-2b85973 Fix smartbar media arrows not showing sometimes
-
-   * vendor/oneplus/
-f1edb33 oneplus2: update time service blobs
-
-   * vendor/rr/
-f542fd4 Merge changes from Lineage OS (#111)
+   * hardware/qcom/audio-caf/msm8996/
+549e801 qahw_api: Ignore missing dependency
 
 ====================
-     03-22-2018
+     03-30-2018
 ====================
 
+
+   * device/oneplus/oneplus3/
+d9db7c1 op3: Add qti_libpermissions to allow access to android.hidl.manager
+89f3174 op3: Remove unused blobs
+7e2a854 op3: Fix acdb id and audio backend names
+fb2878f op3: Fix camera after recent sepolicy update
+
+   * external/f2fs-tools/
+723be0a Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size"
+a2ef5f8 check_f2fs: integrate into android build
 
    * frameworks/base/
 
-   * kernel/oneplus/msm8996/
-2e4b2d7 Merge tag 'v3.18.101' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable into XOS-8.1
-888260c power: bq27541: Don't load saved soc on boot
-f7f5db3 power: bq27541: Clean up probe routines
-a63ce05 oneplus3_defconfig: Remove qpnp-fg driver
-e955385 power: bq27541: Eliminate qpnp-fg dependency
-6d34e8bd treewide: Fix compile errors when -O2 is used
-3ed50cb Disable "maybe-uninitialized" warning globally
-44ec71c Linux 3.18.101
-a5efa51 scsi: sg: only check for dxfer_len greater than 256M
-99c2db0 scsi: sg: fix static checker warning in sg_is_valid_dxfer
-103660d scsi: sg: fix SG_DXFER_FROM_DEV transfers
-b043e4d fs/aio: Use RCU accessors for kioctx_table->table[]
-9e7d69c fs/aio: Add explicit RCU grace period when freeing kioctx
-e435366 lock_parent() needs to recheck if dentry got __dentry_kill'ed under it
-b62e31c ALSA: seq: Clear client entry before deleting else at closing
-92d0346 ALSA: seq: Fix possible UAF in snd_seq_check_queue()
-8257ab7 ALSA: pcm: Fix UAF in snd_pcm_oss_get_formats()
-81d9b36 ima: relax requiring a file signature for new files with zero length
-ba1cae0 rcutorture/configinit: Fix build directory error message
-7adccfc ASoC: nuc900: Fix a loop timeout test
-b065d8c mac80211: remove BUG() when interface type is invalid
-4d04a02 veth: set peer GSO values
-780de72 media: cpia2: Fix a couple off by one bugs
-77bbff8 scsi: devinfo: apply to HP XP the same flags as Hitachi VSP
-7aa5516 spi: sun6i: disable/unprepare clocks on remove
-9ed1f97 tools/usbip: fixes build with musl libc toolchain
-9d8df55 ARM: dts: omap3-n900: Fix the audio CODEC's reset pin
-2d8c5aa ARM: dts: am335x-pepper: Fix the audio CODEC's reset pin
-e5ba917 mtd: nand: fix interpretation of NAND_CMD_NONE in nand_command[_lp]()
-adc1ec6 net: xfrm: allow clearing socket xfrm policies.
-26b3420 sched: Stop resched_cpu() from sending IPIs to offline CPUs
-0c53c55 HID: elo: clear BTN_LEFT mapping
-5316505 wil6210: fix memory access violation in wil_memcpy_from/toio_32
-534c796 kprobes/x86: Set kprobes pages read-only
-9dd399c kprobes/x86: Fix kprobe-booster not to boost far call instructions
-fa55ef3 scsi: sg: close race condition in sg_remove_sfp_usercontext()
-a52bc55 scsi: sg: check for valid direction before starting the request
-496fff9 perf session: Don't rely on evlist in pipe mode
-95b33b9 perf inject: Copy events when reordering events in pipe mode
-6b1a88f usb: gadget: dummy_hcd: Fix wrong power status bit clear/reset in dummy_hub_control()
-c6d4216 regulator: isl9305: fix array size
-9797e57 MIPS: BPF: Quit clobbering callee saved registers in JIT code.
-b1cbc90 drm/radeon: Fail fb creation from imported dma-bufs.
-db06691 video: ARM CLCD: fix dma allocation size
-6028fc3 iommu/iova: Fix underflow bug in __alloc_and_insert_iova_range
-f9eab3e apparmor: Make path_max parameter readonly
-e7ede6c fm10k: correctly check if interface is removed
-b74fb8c reiserfs: Make cancel_old_flush() reliable
-6b7c30e net/faraday: Add missing include of of.h
-227fd0d powerpc: Avoid taking a data miss on every userspace instruction miss
-c78b726 ARM: dts: r8a7791: Correct parent of SSI[0-9] clocks
-ddab481 ARM: dts: r8a7790: Correct parent of SSI[0-9] clocks
-eaf2723 braille-console: Fix value returned by _braille_console_setup
-7cf6102 blk-throttle: make sure expire time isn't too big
-bbb325e mm: Fix false-positive VM_BUG_ON() in page_cache_{get,add}_speculative()
-65c161c tcp: sysctl: Fix a race to avoid unexpected 0 window from space
-4ae1886 spi: omap2-mcspi: poll OMAP2_MCSPI_CHSTAT_RXS for PIO transfer
-1680be1 sched: act_csum: don't mangle TCP and UDP GSO packets
-92bddce timers, sched_clock: Update timeout for clock wrap
-016f92f media: i2c/soc_camera: fix ov6650 sensor getting wrong clock
-89390b1 scsi: ipr: Fix missed EH wakeup
-2bca684 of: fix of_device_get_modalias returned length when truncating buffers
-756e89e batman-adv: handle race condition for claims between gateways
-3b95754 ARM: dts: Adjust moxart IRQ controller and flags
-2061794 HID: clamp input to logical range if no null state
-acc1076 ath10k: disallow DFS simulation if DFS channel is not enabled
-514b0fe drm: Defer disabling the vblank IRQ until the next interrupt (for instant-off)
-0d3a854 drivers: net: xgene: Fix hardware checksum setting
-c5978a6 perf tools: Make perf_event__synthesize_mmap_events() scale
-989dcfa selinux: check for address length in selinux_socket_bind()
-058645e PCI/MSI: Stop disabling MSI/MSI-X in pci_device_shutdown()
-843d428 HID: reject input outside logical range only if null state is set
-0ca7c40 Input: tsc2007 - check for presence and power down tsc2007 during probe
+   * frameworks/opt/telephony/
+0198a40 IMS: Use proper phone to route emergency calls
+574722a Fix a cherrypick mistake
+
+   * hardware/qcom/audio-caf/msm8998/
+56eeef3 audio: add amplifier hooks for stream parameter manipulation
 
    * lineage-sdk/
 
    * packages/apps/DUI/
 
-   * packages/apps/LockClock/
-918094f LockClock: explicitly include android support libs
-
-   * packages/apps/Profiles/
-f84a40f Profiles: explicitly include android support libs
+   * packages/apps/LineageParts/
 
    * packages/apps/ResurrectionOTA/
 
    * packages/apps/Settings/
 
-   * packages/providers/WeatherProvider/
-4d3d407 WeatherProvider: explicitly include android support libs
-
-   * packages/services/OmniJaws/
-
-   * system/vold/
-5928eba Revert "vold: Add path to cryptfs_hw"
+   * vendor/oneplus/
+63e7121 msm8998: add qti_libpermissions.xml
+f2bf050 msm8998: build qti camera device from sources
 
 ====================
-     03-21-2018
+     03-29-2018
 ====================
 
 
-   * external/bash/
-a4e7995 bashrc: remove resize and ps alias
+   * external/f2fs-tools/
+30a495f Merge remote-tracking branch 'aosp/master' into HEAD
+fdd1b1a Fix typo userata with userdata
 
-====================
-     03-20-2018
-====================
-
-
-   * bootable/recovery/
-ea68ce9 add sload.f2fs for recovery format
-ed0546e root: Fix an issue when volume length from fs_mgr is negative.
-8afef8c recovery: format f2fs with encrypt/quota
-312e0e7 Integer overflow observed while formatting volume
-
-   * packages/apps/EmergencyInfo/
-6d4e4e4 EmergencyInfo: support night mode
+   * packages/apps/Dialer/
+4756df4 Dialer: comply with EU's GDPR
 
    * packages/apps/Settings/
-7e73912 Add Samsung Galaxy S6 (zerofltexx) (#936)
-
-   * system/vold/
-edd18db minivold: Use libblkid for readMetadata
-
-   * vendor/oneplus/
-22719f6 bacon: Build camera from source
-ed04160 bacon: Update imx214_preview chromatix library
-7fadfd2 bacon: Use Oxygen camera libraries
+ea81cfb BatterySettings: Dont disable percentage options on square style
 
 ====================
-     03-19-2018
+     03-28-2018
+====================
+
+   * android/
+d439319 lineage: Sync system/tools/dtbtool
+
+   * device/oneplus/oneplus3/
+9cd3eb6 Revert "op3: Use O-MR1 based GPS blobs"
+
+   * external/f2fs-tools/
+98ca6c5 ANDROID: check_f2fs: redirect errors to stdout
+46322b2 FROMLIST: f2fs-tools: change to use #pragma pack(push, 1)
+
+   * frameworks/base/
+c493d01 BatteryMeterDrawable: add square style (1/2)
+c392849 base: SystemUI: bring back the google assist qs tiles
+961e6bd Ambient battery level: use a ⚡ symbol when charging
+31ab5df Ambient: show battery level on bottom
+dbad661 Add Google Sound Search Tile
+
+   * hardware/qcom/gps/
+9846829 msm8084: Handle race condition in HAL post SSR
+ce8f4a3 msm8084: Memory management fixes
+2808a93 msm8084: Add new event mask for timezone
+38395e9 msm8084: Remove reporting gps status from loc eng layer
+10d1698 msm8084: Remove Redundant Log
+2552d38 msm8084: LocTimer repeated expiration
+26e1031 msm8084: MsgTask thread must call associator function always
+4d26814 msm8084: Adding a number of utilities
+de3415d msm8084: gps.conf parameters are in sap.conf table
+081c255 msm8084: Adding Mutex for Creating Context
+71adb97 msm8084: Removed unused code and unnecessary notice files
+23be84f msm8084: Avoiding race conditions during the pallellized builds in Android system
+
+   * hardware/qcom/wlan-caf/
+1321254 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' into lineage-15.1-caf
+
+   * packages/apps/Settings/
+84ac5d9 BatteryMeterDrawable: add square style [2/2]
+
+   * system/sepolicy/
+ad3b42f SELinux: added to the policies without entries into the compatibility mapping file
+7022b6a Initial sepolicy rules for substratum service
+fd8a0ec Introduce sepolicy exceptions for theme assets
+
+   * vendor/oneplus/
+c9f5a95 op3: Allow qcrilmsgtunnel to access android.hidl.manager
+5452476 op3: Remove unused blobs
+a752670 Revert "op3: Use O-MR1 based GPS blobs"
+
+   * vendor/rr/
+6d500b4 Fix vendor path
+
+====================
+     03-27-2018
+====================
+
+
+   * device/qcom/common/
+8dbb469 Remove dtbtool
+
+   * external/f2fs-tools/
+457c992 FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size
+6b39975 FROMLIST: resize.f2fs: fix access out-of memory boundary
+
+   * frameworks/base/
+f7870e6 Revert "Add Google Sound Search Tile"
+083c7d1 Add Pulse Lava Lamp start and end colors (1/3)
+dfd7c42 Add Google Sound Search Tile
+9666346 Use Auto brightness for Ambient Display
+
+   * hardware/qcom/bootctrl/
+70633f5 Add sdm660 to the filter
+
+   * packages/apps/DUI/
+fde3680 Add Pulse Lava Lamp start and end colors (2/3)
+
+   * packages/apps/Settings/
+b88f2b4 Add Pulse Lava lamp start and end colors (3/3)
+
+====================
+     03-26-2018
 ====================
 
 
    * device/oneplus/oneplus3/
-4bd938a op3: Change xtwifi-client AID to match config.fs
-3dc5fa6 op3: config.fs: Add AID_RFS and AID_RFS_SHARED to config.fs
-f1509a4 Revert "config.fs: Add AID_RFS and AID_RFS_SHARED to config.fs"
-b106dad op3: Remove the default perf mode configuration
-a947269 op3: Update init script from LA.UM.6.5.r1-06700-8x96.0
-d316e9c op3: Fix setting sched_downmigrate
+3b4de00 Revert "op3: Update GPS HIDL HAL from upstream"
+ba7d326 op3: adjust interactive governor parameters based on CPU power efficiency curve
 
-   * external/unrar/
-a13960a unrar: Fix compile errors with clang
+   * device/rr/sepolicy/
+f9542e0 recovery: Use r_dir_file macro
+8a5f68a sepolicy: recovery: Allow reading battery and usb status
+a0f89b0 sepolicy: Allow vold to exec sgdisk
+a64277c sepolicy: Improve external storage rules
+045fcdc sepolicy: allow untrusted app to find styleInterface
 
-   * hardware/qcom/power/
-d3eb25f power: Depend on vendor lineage power HAL
-047cb66 power: Allow devices to write their own platform specific bits
+   * frameworks/base/
+4c41cbe PackageManager: Don't dereference mPlatfromPackage until available
+675e9c0 Camera: Expose Aux camera to apps present in the whitelist
 
-   * kernel/oneplus/msm8996/
-baec9f22 Merge tag 'AtheistApricot' into oreo
+   * packages/services/OmniJaws/
+63208d4 OmniJaws: fill incomplete forecast list with dummies
 
-   * packages/apps/Contacts/
-d7981a1 Contacts: update splash screen to match the new icon
-a4e8ed2 Place EmergencyInfo shortcut on drawer
-7f3c3a3 Automatically set SIM number to my profile
+   * system/nfc/
+81b278f bcm2079x: Hardcode nci_ctrl_size to the Nougat value
+
+   * system/sepolicy/
+17d7a3b Sepolicy: Fix perfprofd path
+
+   * vendor/oneplus/
+6a4cbe8 msm8998-common: add powerhint.xml
+
+   * vendor/rr/
+77e31d5 soong: Add TARGET_USES_QTI_CAMERA_DEVICE
+34acdac lineage: add generic lineage targets
 
