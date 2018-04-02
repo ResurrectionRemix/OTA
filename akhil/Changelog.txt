@@ -3,6 +3,11 @@
 
 
 ====================
+     04-02-2018
+====================
+
+
+====================
      04-01-2018
 ====================
 
@@ -40,9 +45,6 @@ cf917b0 Revert "Revert "OMS: Only allow trusted overlays to be registered.""
    * hardware/qcom/media-caf/msm8952/
 b349c61 fix circular dependency libnativewindow <-> libui
 15e3873 media: Adjust for new header Android.bp requirements
-
-   * kernel/xiaomi/msm8956/
-c35b871 arch: arm: boot: msm8956: early mount system
 
    * lineage-sdk/
 9d663a3 Revert "Revert "lineage-sdk: Update the way OMS records details about overlays""
@@ -207,40 +209,4 @@ fde3680 Add Pulse Lava Lamp start and end colors (2/3)
 
    * packages/apps/Settings/
 b88f2b4 Add Pulse Lava lamp start and end colors (3/3)
-
-====================
-     03-26-2018
-====================
-
-
-   * device/oneplus/oneplus3/
-3b4de00 Revert "op3: Update GPS HIDL HAL from upstream"
-ba7d326 op3: adjust interactive governor parameters based on CPU power efficiency curve
-
-   * device/rr/sepolicy/
-f9542e0 recovery: Use r_dir_file macro
-8a5f68a sepolicy: recovery: Allow reading battery and usb status
-a0f89b0 sepolicy: Allow vold to exec sgdisk
-a64277c sepolicy: Improve external storage rules
-045fcdc sepolicy: allow untrusted app to find styleInterface
-
-   * frameworks/base/
-4c41cbe PackageManager: Don't dereference mPlatfromPackage until available
-675e9c0 Camera: Expose Aux camera to apps present in the whitelist
-
-   * packages/services/OmniJaws/
-63208d4 OmniJaws: fill incomplete forecast list with dummies
-
-   * system/nfc/
-81b278f bcm2079x: Hardcode nci_ctrl_size to the Nougat value
-
-   * system/sepolicy/
-17d7a3b Sepolicy: Fix perfprofd path
-
-   * vendor/oneplus/
-6a4cbe8 msm8998-common: add powerhint.xml
-
-   * vendor/rr/
-77e31d5 soong: Add TARGET_USES_QTI_CAMERA_DEVICE
-34acdac lineage: add generic lineage targets
 
