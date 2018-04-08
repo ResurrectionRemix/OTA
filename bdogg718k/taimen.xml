@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <taimen>
-<Filename>RR-O-v6.0.0-20180321-taimen-Official.zip</Filename>
+<Filename>RR-O-v6.0.0-20180408-taimen-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/pixel2XL/RR-O-v6.0.0-20180321-taimen-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/pixel2XL/RR-O-v6.0.0-20180408-taimen-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
