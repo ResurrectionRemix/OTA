@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <marlin>
-<Filename>RR-O-v6.0.0-20180317-marlin-Official.zip</Filename>
+<Filename>RR-O-v6.0.0-20180404-marlin-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/pixelXL/RR-O-v6.0.0-20180317-marlin-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/pixelXL/RR-O-v6.0.0-20180404-marlin-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
