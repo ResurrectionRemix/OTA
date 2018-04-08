@@ -3,12 +3,127 @@
 
 
 ====================
+     04-09-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+ae052f6 oneplus3: dependencies: track own oppo/common
+1e18251 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/oppo/common/
+c0332d1 configpanel: add option for vibrate mode for notification slider
+
+   * device/xiaomi/kenzo/
+ecc6846 kenzo: dependencies: update vendor branch
+a07e859 kenzo: dependencies: track kernel from AOSIP-Devices
+
+   * device/xiaomi/msm8956-common/
+44c73dd msm8956-common: fstab: make /system recoveryonly
+
+   * kernel/oneplus/msm8996/
+3c57c93 Merge tag 'DastardlyDurian' into oreo
+195299c Revert "media: v4l2-compat: Revert non-upstream changes"
+a3fedb3 Merge tag 'ASB-2018-04-05_3.18-o-mr1' of github.com:aosp-mirror/kernel_common into XOS-8.1
+c48926e Merge tag 'v3.18.103' into XOS-8.1
+9ebb910 Revert "Revert "media: v4l2-compat: Revert non-upstream changes""
+3f29680 Linux 3.18.103
+b07a637 Revert "ARM: dts: am335x-pepper: Fix the audio CODEC's reset pin"
+fd96f53 Revert "ARM: dts: omap3-n900: Fix the audio CODEC's reset pin"
+2afca42 Revert "PCI/MSI: Stop disabling MSI/MSI-X in pci_device_shutdown()"
+ca240c0 md/raid10: reset the 'first' at the end of loop
+a8642e3 ARM: dts: dra7: Add power hold and power controller properties to palmas
+047ade5 Documentation: pinctrl: palmas: Add ti,palmas-powerhold-override property definition
+3307b7b vt: change SGR 21 to follow the standards
+9b6f9e6 Input: i8042 - enable MUX on Sony VAIO VGN-CS series to fix touchpad
+7cbe0f9 Input: i8042 - add Lenovo ThinkPad L460 to i8042 reset list
+ddc867c fs/proc: Stop trying to report thread stacks
+57b7964 proc: revert /proc/<pid>/maps [stack:TID] annotation
+fe01113 crypto: x86/cast5-avx - fix ECB encryption when long sg follows short one
+289156b crypto: ahash - Fix early termination in hash walk
+bf6bb81 parport_pc: Add support for WCH CH382L PCI-E single parallel port card.
+d22df06 media: usbtv: prevent double free in error case
+89b1fb2 mei: remove dev_err message on an unsupported ioctl
+cbd8022 USB: serial: cp210x: add ELDAT Easywave RX09 id
+febce02 USB: serial: ftdi_sio: add support for Harman FirmwareHubEmulator
+fcd722f USB: serial: ftdi_sio: add RT Systems VX-8 cable
+30fb296 media: v4l2-compat-ioctl32: initialize a reserved field
+6a2185e media: v4l2-compat-ioctl32: use compat_u64 for video standard
+fe1d928 media: media/v4l2-ctrls: volatiles should not generate CH_VALUE
+5f5fe19 media: v4l2-ctrls: fix sparse warning
+5829f66 media: v4l2-compat-ioctl32.c: refactor compat ioctl32 logic
+89ef0f4 media: v4l2-compat-ioctl32.c: don't copy back the result for certain errors
+9e73a90 media: v4l2-compat-ioctl32.c: drop pr_info for unknown buffer type
+4cbb719 media: v4l2-compat-ioctl32.c: copy clip list in put_v4l2_window32
+2f3b72f media: v4l2-compat-ioctl32: Copy v4l2_window->global_alpha
+4de0aa9 media: v4l2-compat-ioctl32.c: make ctrl_is_pointer work for subdevs
+72bdd7e media: v4l2-compat-ioctl32.c: fix ctrl_is_pointer
+2a13e9c media: v4l2-compat-ioctl32.c: copy m.userptr in put_v4l2_plane32
+ac35609 media: v4l2-compat-ioctl32.c: avoid sizeof(type)
+8d0f174 media: v4l2-compat-ioctl32.c: move 'helper' functions to __get/put_v4l2_format32
+6438cbe media: v4l2-compat-ioctl32.c: fix the indentation
+e474697 media: v4l2-compat-ioctl32.c: add missing VIDIOC_PREPARE_BUF
+1024f43 vb2: V4L2_BUF_FLAG_DONE is set after DQBUF
+d5d8636 media: v4l2-ioctl.c: don't copy back the result for -ENOTTY
+2369620 scsi: virtio_scsi: always read VPD pages for multiqueue too
+39c292e Bluetooth: Fix missing encryption refresh on Security Request
+42b4114 netfilter: x_tables: add and use xt_check_proc_name
+63d1e53d netfilter: bridge: ebt_among: add more missing match size checks
+6be3251d xfrm: Refuse to insert 32 bit userspace socket policies on 64 bit systems
+5ca716e net: xfrm: use preempt-safe this_cpu_read() in ipcomp_alloc_tfms()
+5520490d xfrm_user: uncoditionally validate esn replay attribute struct
+5029901 kprobes/x86: Fix to set RWX bits correctly before releasing trampoline
+2883c66 xhci: Fix ring leak in failure path of xhci_alloc_virt_device()
+15075dd Revert "led: core: Fix brightness setting when setting delay_off=0"
+7d14bc7 usb: gadget: f_hid: fix: Prevent accessing released memory
+fee92f3 usb: gadget: align buffer size when allocating for OUT endpoint
+7757f73 usb: gadget: fix usb_ep_align_maybe endianness and new usb_ep_align
+ab34ca1 usb: gadget: change len to size_t on alloc_ep_req()
+70fa9b5 usb: gadget: define free_ep_req as universal function
+25eac84 partitions/msdos: Unable to mount UFS 44bsd partitions
+8f7db03 perf/hwbp: Simplify the perf-hwbp code, fix documentation
+46b7dc0 ALSA: pcm: potential uninitialized return values
+a610836 ALSA: pcm: Use dma_bytes as size parameter in dma_mmap_coherent()
+4c4921f mtd: jedec_probe: Fix crash in jedec_read_mfr()
+f4d8124 net: fec: Fix unbalanced PM runtime calls
+60aa3ac s390/qeth: on channel error, reject further cmd requests
+61a3bec s390/qeth: lock read device while queueing next buffer
+6bec10f3 s390/qeth: when thread completes, wake up all waiters
+c605086 s390/qeth: free netdevice when removing a card
+08c5ade team: Fix double free in error path
+112517e skbuff: Fix not waking applications when errors are enqueued
+4544f23 net: Only honor ifindex in IP_PKTINFO if non-0
+b22ad56 netlink: avoid a double skb free in genlmsg_mcast()
+a6ca1ed net/iucv: Free memory obtained by kzalloc
+aab60f1 net: ethernet: arc: Fix a potential memory leak if an optional regulator is deferred
+2e017ea l2tp: do not accept arbitrary sockets
+c2b3284 ipv6: fix access to non-linear packet in ndisc_fill_redirect_hdr_option()
+e717aef dccp: check sk for closed state in dccp_sendmsg()
+6ab3806 Revert "genirq: Use irqd_get_trigger_type to compare the trigger type for shared IRQs"
+d9a6055 scsi: sg: don't return bogus Sg_requests
+e7dc809 kvm/x86: fix icebp instruction handling
+b1da147 tty: vt: fix up tabstops properly
+49636e3 can: cc770: Fix use after free in cc770_tx_interrupt()
+be889c4 can: cc770: Fix queue stall & dropped RTR reply
+bcddd27 can: cc770: Fix stalls on rt-linux, remove redundant IRQ ack
+43f8ff2 staging: ncpfs: memory corruption in ncp_read_kernel()
+23c8c15 tracing: probeevent: Fix to support minus offset from symbol
+33a155b brcmfmac: fix P2P_DEVICE ethernet address generation
+6949153 drm: udl: Properly check framebuffer mmap offsets
+897e06d libata: Modify quirks for MX100 to limit NCQ_TRIM quirk to MU01 version
+c77c783 libata: Make Crucial BX100 500GB LPM quirk apply to all firmware versions
+34b9886 libata: Apply NOLPM quirk to Crucial M500 480 and 960GB SSDs
+d829e3a libata: Enable queued TRIM for Samsung SSD 860
+3fcf9215 libata: disable LPM for Crucial BX100 SSD 500GB drive
+ec5a70a libata: Apply NOLPM quirk to Crucial MX100 512GB SSDs
+83c1643 libata: remove WARN() for DMA or PIO command without data
+72e377f libata: fix length validation of ATAPI-relayed SCSI commands
+d850931 ALSA: aloop: Fix access to not-yet-ready substream via cable
+e88d13e ALSA: aloop: Sync stale timer before release
+02dd9876 ALSA: usb-audio: Fix parsing descriptor of UAC2 processing unit
+
+====================
      04-08-2018
-====================
-
-
-====================
-     04-07-2018
 ====================
 
 
@@ -32,8 +147,13 @@ d1e4ea4 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
    * packages/services/OmniJaws/
 
+   * vendor/oneplus/
+a68573b oneplus2: run make-files script
+86af396 oneplus2: update graphic blobs
+df2cf3c oneplus2: update drm blobs
+
 ====================
-     04-06-2018
+     04-07-2018
 ====================
 
 
@@ -41,17 +161,51 @@ d1e4ea4 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 c1cb695 install: mkfs.f2fs: specify sector size for target image size
 19bf4a5 mkfs.f2fs: specify sector size for target image size
 
+   * device/oneplus/oneplus3/
+f493729 op3: Remove carrier specific tethering settings
+
    * external/f2fs-tools/
 58b90c3 Merge remote-tracking branch 'aosp/master' into HEAD
 
+   * kernel/xiaomi/msm8956/
+681f5ad Merge remote-tracking branch 'caf-mirror/LA.BR.1.3.6_rb1.25' into oreo-mr1
+456edb4 Merge remote-tracking branch 'caf-mirror/LA.BR.1.3.6_rb1.24' into oreo-mr1
+c24c0c1 Merge remote-tracking branch 'caf-mirror/LA.BR.1.3.6_rb1.23' into oreo-mr1
+67e1129 Merge remote-tracking branch 'caf-mirror/LA.BR.1.3.6_rb1.22' into oreo-mr1
+
+   * vendor/oneplus/
+06eb87f op3: Kang wcnss filter from taimen OPM1.171019.021
+
 ====================
-     04-05-2018
+     04-06-2018
 ====================
 
 
    * external/f2fs-tools/
 20aec61 check_f2fs: fix build error in abfarm474
-85fe5ff f2fs-tools: use pointer and memory alloaction instead of defining "structure stat" in function stack
+
+   * kernel/oneplus/msm8996/
+51f4796 Merge tag 'LamentableLychee' into oreo
+a946f4e ipsec: check return value of skb_to_sgvec always
+f7f67bd Merge tag 'for-greg-3.18-04052018' of git://git.kernel.org/pub/scm/linux/kernel/git/sashal/linux-stable into XOS-8.1
+a599a4b Revert "media: v4l2-compat: Revert non-upstream changes"
+5ea952b signal/arm: Document conflicts with SI_USER and SIGFPE
+5e7ba4a signal/powerpc: Document conflicts with SI_USER and SIGFPE and SIGTRAP
+47f4dc1 signal/metag: Document a conflict with SI_USER with SIGFPE
+2113794 EDAC, mv64x60: Fix an error handling path
+fe7aa736 tty: n_gsm: Allow ADM response in addition to UA for control dlci
+045e0d5 scsi: libsas: initialize sas_phy status according to response of DISCOVER
+bf17d8f scsi: libsas: fix error when getting phy events
+a168506 scsi: libsas: fix memory leak in sas_smp_get_phy_events()
+25d6e6d bcache: segregate flash only volume write streams
+0ceae73 bcache: stop writeback thread after detaching
+b6ae43a Merge branch '3.18.103-queue' into XOS-8.1
+b0479fc Revert "usb: gadget: Use 512 bytes as min RX buffer size"
+01f0955 media: v4l2-compat: Revert non-upstream changes
+
+   * kernel/xiaomi/msm8956/
+21a2743 mm: fix missing immediate expression at operand 1 dsb
+7a1691b Merge branch 'LA.BR.1.3.6_rb1.20' of github.com:upstream-caf-kernels/msm-3.10 into HEAD
 
    * packages/apps/Gallery2/
 85a7851 Gallery2: explicitly include android-support-v7-recyclerview
@@ -73,7 +227,7 @@ cb0ff3e Add support for using the secondary SDLLVM toolchain
 f663903 Rules to enable LTO for Adreno GFX driver.
 
 ====================
-     04-04-2018
+     04-05-2018
 ====================
 
    * android/
@@ -83,6 +237,7 @@ f663903 Rules to enable LTO for Adreno GFX driver.
 a706775 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/build into oreo
 
    * external/f2fs-tools/
+85fe5ff f2fs-tools: use pointer and memory alloaction instead of defining "structure stat" in function stack
 e53184d libf2fs,mkfs.f2fs: add wanted_sector_size for wanted_total_sectors
 
    * frameworks/base/
@@ -97,6 +252,85 @@ e53184d libf2fs,mkfs.f2fs: add wanted_sector_size for wanted_total_sectors
    * hardware/qcom/media-caf/msm8996/
 020e52b Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
 
+   * kernel/oneplus/msm8996/
+04eebba media: v4l2-compat-ioctl32: initialize a reserved field
+99b000a media: v4l2-compat-ioctl32: use compat_u64 for video standard
+3ccbc1a media: media/v4l2-ctrls: volatiles should not generate CH_VALUE
+ceb88d4 media: v4l2-ctrls: fix sparse warning
+dd0a1ff media: v4l2-compat-ioctl32.c: refactor compat ioctl32 logic
+24e4a38 media: v4l2-compat-ioctl32.c: don't copy back the result for certain errors
+8aa7522 media: v4l2-compat-ioctl32.c: drop pr_info for unknown buffer type
+4e1b5e6 media: v4l2-compat-ioctl32.c: copy clip list in put_v4l2_window32
+337b98d media: v4l2-compat-ioctl32: Copy v4l2_window->global_alpha
+68b8232 media: v4l2-compat-ioctl32.c: make ctrl_is_pointer work for subdevs
+9a6e871 media: v4l2-compat-ioctl32.c: fix ctrl_is_pointer
+d435309 media: v4l2-compat-ioctl32.c: copy m.userptr in put_v4l2_plane32
+2aa81b6 media: v4l2-compat-ioctl32.c: avoid sizeof(type)
+f242471 media: v4l2-compat-ioctl32.c: move 'helper' functions to __get/put_v4l2_format32
+5a39508 media: v4l2-compat-ioctl32.c: fix the indentation
+0323fdd media: v4l2-compat-ioctl32.c: add missing VIDIOC_PREPARE_BUF
+5d04be2 vb2: V4L2_BUF_FLAG_DONE is set after DQBUF
+3ca0b62 media: v4l2-ioctl.c: don't copy back the result for -ENOTTY
+90e5c75 scsi: virtio_scsi: always read VPD pages for multiqueue too
+0863f16 Bluetooth: Fix missing encryption refresh on Security Request
+20f79a9 netfilter: x_tables: add and use xt_check_proc_name
+b9d5a6d netfilter: bridge: ebt_among: add more missing match size checks
+2768cd3 xfrm: Refuse to insert 32 bit userspace socket policies on 64 bit systems
+b8c6750 net: xfrm: use preempt-safe this_cpu_read() in ipcomp_alloc_tfms()
+6b9b7e2 xfrm_user: uncoditionally validate esn replay attribute struct
+555a7a3 kprobes/x86: Fix to set RWX bits correctly before releasing trampoline
+8c8a668 xhci: Fix ring leak in failure path of xhci_alloc_virt_device()
+5acd502 Revert "led: core: Fix brightness setting when setting delay_off=0"
+e664ddf usb: gadget: f_hid: fix: Prevent accessing released memory
+0792023 usb: gadget: align buffer size when allocating for OUT endpoint
+cff6464 usb: gadget: fix usb_ep_align_maybe endianness and new usb_ep_align
+9182982 usb: gadget: change len to size_t on alloc_ep_req()
+9d890ab usb: gadget: define free_ep_req as universal function
+de10d7e partitions/msdos: Unable to mount UFS 44bsd partitions
+279c1ff perf/hwbp: Simplify the perf-hwbp code, fix documentation
+5407cda ALSA: pcm: potential uninitialized return values
+1eabb2e ALSA: pcm: Use dma_bytes as size parameter in dma_mmap_coherent()
+4c3cbaa mtd: jedec_probe: Fix crash in jedec_read_mfr()
+815472e net: fec: Fix unbalanced PM runtime calls
+52169e5 s390/qeth: on channel error, reject further cmd requests
+34b1465 s390/qeth: lock read device while queueing next buffer
+2f21d95 s390/qeth: when thread completes, wake up all waiters
+f5b3066 s390/qeth: free netdevice when removing a card
+5d4465e team: Fix double free in error path
+e9bb9e9 skbuff: Fix not waking applications when errors are enqueued
+fd83544 net: Only honor ifindex in IP_PKTINFO if non-0
+cde4125 netlink: avoid a double skb free in genlmsg_mcast()
+7ab4d6d net/iucv: Free memory obtained by kzalloc
+916892e net: ethernet: arc: Fix a potential memory leak if an optional regulator is deferred
+ed9f842 l2tp: do not accept arbitrary sockets
+9385343 ipv6: fix access to non-linear packet in ndisc_fill_redirect_hdr_option()
+0a33817 dccp: check sk for closed state in dccp_sendmsg()
+02b37ac Revert "genirq: Use irqd_get_trigger_type to compare the trigger type for shared IRQs"
+7044c2e scsi: sg: don't return bogus Sg_requests
+960687d kvm/x86: fix icebp instruction handling
+af83ec0 tty: vt: fix up tabstops properly
+214a868 can: cc770: Fix use after free in cc770_tx_interrupt()
+ac39ebf can: cc770: Fix queue stall & dropped RTR reply
+6748d63 can: cc770: Fix stalls on rt-linux, remove redundant IRQ ack
+117db9a staging: ncpfs: memory corruption in ncp_read_kernel()
+d17d31d tracing: probeevent: Fix to support minus offset from symbol
+769df05 brcmfmac: fix P2P_DEVICE ethernet address generation
+5ca2735 drm: udl: Properly check framebuffer mmap offsets
+4c59f8a libata: Modify quirks for MX100 to limit NCQ_TRIM quirk to MU01 version
+da47f23 libata: Make Crucial BX100 500GB LPM quirk apply to all firmware versions
+9878757 libata: Apply NOLPM quirk to Crucial M500 480 and 960GB SSDs
+d729a0c libata: Enable queued TRIM for Samsung SSD 860
+29b6f0b libata: disable LPM for Crucial BX100 SSD 500GB drive
+c607103 libata: Apply NOLPM quirk to Crucial MX100 512GB SSDs
+d6acf0a libata: remove WARN() for DMA or PIO command without data
+d16f798 libata: fix length validation of ATAPI-relayed SCSI commands
+c97218e ALSA: aloop: Fix access to not-yet-ready substream via cable
+577640c ALSA: aloop: Sync stale timer before release
+d108486 ALSA: usb-audio: Fix parsing descriptor of UAC2 processing unit
+650f88e BACKPORT: USB: core: harden cdc_parse_cdc_header
+7352c7e cpu-hotplug: convert cpu_hotplug_disabled to a counter
+fb63563 BACKPORT, FROMLIST: crypto: arm64/speck - add NEON-accelerated implementation of Speck-XTS
+
    * packages/apps/Settings/
 53a5677 Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/packages/apps/Settings into oreo
 
@@ -107,7 +341,7 @@ e53184d libf2fs,mkfs.f2fs: add wanted_sector_size for wanted_total_sectors
 62f37d8 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_packages_services_Telephony into HEAD
 
 ====================
-     04-03-2018
+     04-04-2018
 ====================
 
 
@@ -123,6 +357,11 @@ abef5ce Revert "libmedia: Fix null pointer crash in secure buffer allocation.."
 
    * hardware/qcom/camera/
 b7eb232 Merge tag 'android-8.1.0_r20' into lineage-15.1
+
+   * kernel/oneplus/msm8996/
+204b077 sctp: do not peel off an assoc from one netns to another one
+11c5071 net: ipv4: fix for a race condition in raw_sendmsg
+3b55386 KEYS: encrypted: fix buffer overread in valid_master_desc()
 
    * packages/apps/CarrierConfig/
 57882fb Merge tag 'android-8.1.0_r20' into lineage-15.1
@@ -159,32 +398,18 @@ bab2621 Merge tag 'android-8.1.0_r20' into lineage-15.1
 4d314af Merge tag 'android-8.1.0_r20' into lineage-15.1
 
 ====================
-     04-02-2018
+     04-03-2018
 ====================
 
 
-   * build/make/
-45c1e22 core: remove duplicated boot jars
-af84f24 Introduce non-preopt boot jars
-
-   * frameworks/base/
-e935e05 Themes: Fix theming Qs expand/collapse drawable
-a4a9a68 SystemUI: Reload more assets on overlay change
-50477a8 base: Introduce SubstratumService
-6e0b09f OMS: Add back overlay modified callback implementation
-a3a3b91 OMS: StrictMode and files under /data/system/theme/
-7c586a9 Hold "volume up" during boot to disable all overlays
-0ce8d7c ThemeSafety: Introduce App Crash Intent
-080c025 ApplicationsState: add filter for Substratum overlays [2/2]
-e0c145b Extras: Add dynamic theme fonts support for O
-8a2ba06 Extras: Add dynamic theme sound effects support
-ed076c3 Extras: Add dynamic theme shutdown and boot animation support
+   * device/oneplus/oneplus3/
+fc978bf op3: Kang wcnss filter from taimen OPM1.171019.021
+ff1f23f op3: Moar camera denial
+ec338d3 op3: Override vendor build fingerprint and use new helper function
+accdeac op3: init: Handle overriding system and vendor props
 
    * hardware/qcom/media-caf/msm8952/
 63c9787 Revert "media: Adjust for new header Android.bp requirements"
-
-   * lineage-sdk/
-9d663a3 Revert "Revert "lineage-sdk: Update the way OMS records details about overlays""
 
    * packages/apps/Contacts/
 
@@ -200,9 +425,6 @@ ed076c3 Extras: Add dynamic theme shutdown and boot animation support
 7a040e8 NFC: Adding new vendor specific interface to NFC Service
 
    * packages/apps/Recorder/
-
-   * packages/apps/Settings/
-a7f7863 Settings: Introduce Substratum changes.
 
    * packages/apps/Snap/
 
