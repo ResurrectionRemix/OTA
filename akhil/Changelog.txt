@@ -166,9 +166,6 @@ bc70599 af_key: Fix slab-out-of-bounds in pfkey_compile_policy.
 51188ac IB/srpt: Fix abort handling
 a505487 NFSv4.1: RECLAIM_COMPLETE must handle NFS4ERR_CONN_NOT_BOUND_TO_SESSION
 
-   * vendor/oneplus/
-4f3b504 msm8998: update blobs from OP5 beta8 / OP5T beta6
-
    * vendor/rr/
 247c7bf Update Features.mkdn
 
@@ -224,6 +221,9 @@ ce4ce89 Build libqdMetaData with BOARD_VNDK_VERSION
 
    * system/sepolicy/
 02863ef Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * vendor/oneplus/
+4f3b504 msm8998: update blobs from OP5 beta8 / OP5T beta6
 
    * vendor/rr/
 7bda2d8 rr: fix path for some stuff
