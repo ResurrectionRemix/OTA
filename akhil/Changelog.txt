@@ -81,9 +81,6 @@ c7ec3a7 recovery: Don't try to set ro.adb.secure
 acdf429 op3: Use Qualcomm FOSS algorithm for adaptive backlight
 1e38b4f op3: Build LiveDisplay HAL
 
-   * device/qcom/sepolicy/
-be44088 legacy: Consistent indentation
-
    * vendor/nxp/opensource/external/libnfc-nci/
 f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
 
@@ -99,6 +96,7 @@ ffaea6a Look for libnqp61-jcop-kit.so in the vendor
 4ad2749 op3: Update qti_libpermissions.xml sha1sum
 
    * device/qcom/sepolicy/
+be44088 legacy: Consistent indentation
 fe8868a legacy: Address mm-pp-daemon denials
 4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
 4dd1cb2 legacy: Add debugfs rules for rmt_storage
@@ -156,9 +154,6 @@ bee7c81 gralloc: Handle RAW_OPAQUE formats similar to blob
 5cd994c Fix duplicate copy file rules
 a79fb63 qservice: Allow camera server to call into HWC
 
-   * vendor/oneplus/
-ce06011 msm8998: add missing blobs for hbtp
-
 ====================
      04-17-2018
 ====================
@@ -213,6 +208,7 @@ e5ad8ca Settings: use LineageHW serial number
 73c15af Revert "Don't enable ADB by default when ro.adb.secure is 1"
 
    * vendor/oneplus/
+ce06011 msm8998: add missing blobs for hbtp
 e91e835 msm8998: move fingerprint and touchscreen blobs to vendor, commonize fp extensions
 
    * vendor/rr/
