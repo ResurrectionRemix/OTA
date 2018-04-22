@@ -3,12 +3,253 @@
 
 
 ====================
+     04-22-2018
+====================
+
+   * android/
+b82fc71 manifest: Remove LiveDisplay repo
+
+   * build/make/
+7615a59 Add build.prop to incrementals too
+825cdc4 build: allow forcing build of otatools
+
+   * device/oneplus/oneplus3/
+4775e6a Merge branch 'lineage-15.1' into oreo
+
+   * device/qcom/sepolicy/
+d9c24de Merge branch 'lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+fb968d7 Merge branch 'lineage-15.1' into oreo
+bc582cd Allow recovery write to sysfs_graphics
+590946d Remove adb.secure recovery property context
+20b9d1c sepolicy: Add rules for LiveDisplay HIDL HAL
+98c7f8d Allow recovery write to sysfs_graphics
+541bcf2 Remove adb.secure recovery property context
+
+   * device/xiaomi/kenzo/
+dd833d5 kenzo: set matching build fingerprint for system, vendor, bootimage
+
+   * frameworks/base/
+
+   * hardware/lineage/lineagehw/
+ed11fda lineagehw: Link livedisplay library statically
+
+   * lineage-sdk/
+a395cc3 lineage-sdk: Allow adjusting brightness of non-RGB LEDs
+
+   * packages/apps/DUI/
+
+   * packages/apps/LineageParts/
+d2ff5e5 LineageParts: Allow adjusting brightness of non-RGB LEDs
+d7a5830 LineageParts: Fix loading default colors for non-RGB lights
+f10570a LineageParts: Fix removing LED brightness settings
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+ecdb6e7 Add Samsung S9 (starlte)
+11067f4 Add S6 Edge (zeroltexx)
+
+   * packages/apps/Snap/
+a0f6bf7 Fix snapshot failed with logical camera
+a83f85c Add ui toast for bokeh
+
+   * system/core/
+6956422 Merge branch 'lineage-15.1' into oreo
+
+   * vendor/oneplus/
+0dfb0d4 msm8998: Update SDM from LA.UM.6.4.r1-07400-8x98.0
+
+   * vendor/rr/
+3eae19c envsetup: Fix lineageremote for caf    *s
+261cb47 lineage-radio: disable ims services on ro.radio.noril
+33c8d93 build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
+58dd6f9 lineage: enable building otatools with generic targets
+
+====================
+     04-21-2018
+====================
+
+
+   * bootable/recovery/
+0c08e7c recovery: Fix loading time from /persist
+c7ec3a7 recovery: Don't try to set ro.adb.secure
+36dd139 Revert "updater: Fix and improve allowing devices to suppress BLKDISCARD"
+
+   * device/oneplus/oneplus3/
+acdf429 op3: Use Qualcomm FOSS algorithm for adaptive backlight
+1e38b4f op3: Build LiveDisplay HAL
+
+   * device/qcom/sepolicy/
+be44088 legacy: Consistent indentation
+
+   * vendor/nxp/opensource/external/libnfc-nci/
+f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
+
+   * vendor/nxp/opensource/packages/apps/Nfc/
+ffaea6a Look for libnqp61-jcop-kit.so in the vendor
+
+====================
+     04-20-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+4ad2749 op3: Update qti_libpermissions.xml sha1sum
+
+   * device/qcom/sepolicy/
+fe8868a legacy: Address mm-pp-daemon denials
+4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
+4dd1cb2 legacy: Add debugfs rules for rmt_storage
+75573bd legacy: Allow hal_graphics_allocator_default access sysfs_graphics
+e8e4723 legacy: Allow hal_graphics_composer_default read firmware
+103e1dc legacy: Allow bluetooth_loader read persist
+443c0d8 legacy: Address perfd denials
+c51e127 legacy: Allow perfd write to sysfs_kgsl
+d233d17 legacy: Allow qcom power HAL to interact with perfd
+6bf41a0 hal_gnss_default: Do not log udp socket failures
+4b4dd9c sepolicy: Ignore more hal_memtrack denials
+9110cac sepolicy : add secontext for eMMC blocks
+d7045fa sepolicy: rules to allow camera daemon access to app buffer
+00dc45f sepolicy: Fix warnings related to set_prop
+
+   * external/openssh/
+1ad2147 Don't crash when pw_passwd is not set
+
+   * packages/apps/Dialer/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+   * vendor/oneplus/
+b6b67f4 op3: Fix a typo
+b130258 oneplus5: update blobs from 5.1.0
+
+====================
+     04-19-2018
+====================
+
+
+   * hardware/qcom/display-caf/msm8974/
+060e6fe libvirtual should depend on libmedia
+b9109c1 Revert "libvirtual: Add libbase static library dependency"
+
+====================
+     04-18-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+5f8e56a lineage/interfaces: Add IColor SDM backend implementation
+
+   * hardware/qcom/display-caf/apq8084/
+c59714b Add -Wno-error to compile with global -Werror.
+ed267b8 Fix -Wmacro-redefined werror issues.
+39eb209 hwc: Start with ROI set to destination
+04487f7 libgralloc: Align secure video and rotator buffers to 2M
+dcabbfc libvirtual should depend on libmedia
+bee7c81 gralloc: Handle RAW_OPAQUE formats similar to blob
+5cd994c Fix duplicate copy file rules
+a79fb63 qservice: Allow camera server to call into HWC
+
+   * vendor/oneplus/
+ce06011 msm8998: add missing blobs for hbtp
+
+====================
+     04-17-2018
+====================
+
+   * android/
+8f46c5e lineage: Track our own openssh repo
+
+   * frameworks/base/
+6fb5a70 settings: Allow accessing LineageSettings via settings command
+4dad570 frameworks/base: Support for third party NFC features and extensions
+2de1bba Keyguard: Allow disabling fingerprint wake-and-unlock
+de95f24 fingerprint: notify client when cancelling succeeded
+7522061 SettingsProvider: explicitly include android support libs
+
+   * hardware/lineage/lineagehw/
+046a670 lineagehw: Use HIDL for livedisplay vendor impl
+
+   * hardware/qcom/media-caf/apq8084/
+29e06f3 mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
+a42a7cd mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
+bda60bf mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh
+f24ca02 mm-video-v4l2: vdec: Add range check before native_buffer usage
+a7047b2 mm-video-v4l2: vidc: fix matching of extension strings
+eb2d7c8 mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
+f250115 fix circular dependency libnativewindow <-> libui
+
+   * lineage-sdk/
+35cfcf8 sdk: Remove low power restrictions on color control
+c6efd51 LineageSettingsProvider: explicitly include android support libs
+7b03987 README: Point to the new wiki
+df88839 lineage-sdk: Update validators for button settings
+aa63b85 sdk: ilama API (9)
+c46556e Merge branch 'oreo' of https://github.com/ResurrectionRemix/lineage-sdk into oreo
+
+   * packages/apps/Contacts/
+d1c544e Hide help and feedback in AOSP contacts
+
+   * packages/apps/Gallery2/
+9c18367 Fix Time bar don't update replay after trim
+db965e5 Fix can't enable speaker with bluetooth headset
+6aeaf8a Fix null pointer when copy representantion
+
+   * packages/apps/LineageParts/
+5f15b5a Revert "LineageParts: Build with AAPT2"
+d61bd6b LineageParts: Build with AAPT2
+1f3af6f ButtonSettings: Add a toggle for button backlight only when pressed
+
+   * packages/apps/Settings/
+e5ad8ca Settings: use LineageHW serial number
+
+   * system/core/
+73c15af Revert "Don't enable ADB by default when ro.adb.secure is 1"
+
+   * vendor/oneplus/
+e91e835 msm8998: move fingerprint and touchscreen blobs to vendor, commonize fp extensions
+
+   * vendor/rr/
+bee95bc Fix Android "Work Profiles" also known as AfW 'Android for Work'
+dcc15fc apn: Add protocol for fido and rogers
+c7e2630 build: dt_image: support prebuilt DT images
+b620ca7 lineage: enable building otatools with generic targets
+
+====================
      04-16-2018
 ====================
 
 
    * device/oneplus/oneplus3/
 48b6684 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+5ebc0dc sepolicy: Add rules for LiveDisplay HIDL HAL
+
+   * frameworks/base/
+32663db Quick settings panel : Set transparency [1/2]
+de3f468 Fw_base - custom Toast color options (1/2)
+
+   * hardware/qcom/power/
+8ff509e power: Consistent skipping of non perf profile hints
+593b9d0 power: Compile with -Wall -Wextra -Werror
+11016fa power: msm8994: Add support for power profile & boost
+e555395 power: msm8992: Add support for power profile & boost
+ce25d84 power: msm8610: Add support for power profile & boost
+dbc6781 power: msm8226: Add support for power profile & boost
+32ae7b0 power: apq8084: Add support for power profile & boost
+46ac4af power: msm8916: Add support for power profile & boost
+ed3426d power: fix sysfs_read/sysfs_write usage
+158576f power: add back check for ro.vendor.extension_library
+abe7e65 power: msm8952: Minor code cleanup
+6204c67 power: msm8996: Remove dead code
+8c55d3c power: msm8974: POWER_HINT_INTERACTION improvements
 
    * kernel/oneplus/msm8996/
 48f08d2 Merge tag 'KaleidoscopicKumquat' into oreo
@@ -19,250 +260,11 @@ c83f08b include: media: checkout some more headers from LineageOS
 31850a6 media: camera_v2: Import LineageOS camera stack
 7259d89 Revert "Merge tag 'for-greg-3.18-04052018' of git://git.kernel.org/pub/scm/linux/kernel/git/sashal/linux-stable into XOS-8.1"
 
+   * packages/apps/Settings/
+1e80584 minor typo in strings
+1c0e898 QS panel: Set transparency [2/2]
+d5945c3 Settings - custom Toast color options (2/2)
+
    * vendor/rr/
 dc91a37 bootanimation: Use 1080.zip version on lower sizes (#112)
-
-====================
-     04-15-2018
-====================
-
-
-   * frameworks/base/
-c95f3f7 OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
-
-   * packages/apps/Settings/
-8dc1abc Update resurrection_device_maintainers_strings.xml
-
-====================
-     04-14-2018
-====================
-
-
-   * frameworks/native/
-87e2b42 Merge pull request #3 from Adriannemerenco/oreo
-
-   * kernel/oneplus/msm8996/
-78db2bb Linux 3.18.105
-1117cb4 Revert "xhci: plat: Register shutdown for xhci_plat"
-ff82de4 ipv6: the entire IPv6 header chain must fit the first fragment
-f15ab25 net sched actions: fix dumping which requires several messages to user space
-e10f44b r8169: fix setting driver_data after register_netdev
-44c05b3 ip6_tunnel: better validate user provided tunnel names
-ff54063 vti6: better validate user provided tunnel names
-53d9605 ip6_gre: better validate user provided tunnel names
-9ebe7bd ipv6: sit: better validate user provided tunnel names
-1c70864 ip_tunnel: better validate user provided tunnel names
-f377efa net: fool proof dev_valid_name()
-8666081 bonding: process the err returned by dev_set_allmulti properly in bond_enslave
-0036076 bonding: move dev_mc_sync after master_upper_dev_link in bond_enslave
-01af3f6 bonding: fix the err path for dev hwaddr sync in bond_enslave
-4bc596d vhost: correctly remove wait queue during poll failure
-8403439 sky2: Increase D3 delay to sky2 stops working after suspend
-42e996e sctp: sctp_sockaddr_af must check minimal addr length for AF_INET6
-42481f7 sctp: do not leak kernel memory to user space
-1c6453b pptp: remove a buggy dst release in pptp_connect()
-eaf9594 netlink: make sure nladdr has correct size in netlink_connect()
-dab02a2 net: fix possible out-of-bound read in skb_network_protocol()
-714f4e5 futex: Remove requirement for lock_page() in get_futex_key()
-77dcc4b random: use lockless method of accessing and updating f->reg_idx
-bd63ed2 virtio_net: check return value of skb_to_sgvec in one more location
-13bbd09 virtio_net: check return value of skb_to_sgvec always
-f2ee82d rxrpc: check return value of skb_to_sgvec always
-f0fcb83 ipsec: check return value of skb_to_sgvec always
-ede3b04 EDAC, mv64x60: Fix an error handling path
-bddb76d tty: n_gsm: Allow ADM response in addition to UA for control dlci
-108c448 scsi: libsas: initialize sas_phy status according to response of DISCOVER
-8603b7ca scsi: libsas: fix error when getting phy events
-c7323e9 scsi: libsas: fix memory leak in sas_smp_get_phy_events()
-a73020b1 bcache: segregate flash only volume write streams
-f180aca bcache: stop writeback thread after detaching
-e1acea7 vxlan: dont migrate permanent fdb entries during learn
-b51f16e ACPICA: Disassembler: Abort on an invalid/unknown AML opcode
-525e1c2 ACPICA: Events: Add runtime stub support for event APIs
-a6013c3 Bluetooth: Send HCI Set Event Mask Page 2 command only when needed
-51b503f iio: magnetometer: st_magn_spi: fix spi_device_id table
-7638610 sparc64: ldc abort during vds iso boot
-6b22926 sctp: fix recursive locking warning in sctp_do_peeloff
-9bc4f81 bnx2x: Allow vfs to disable txvlan offload
-7b3cbf9 xen: avoid type warning in xchg_xen_ulong
-091b3b4 perf tests: Decompress kernel module before objdump
-78b2f6f net: emac: fix reset timeout with AR8035 phy
-4430b27 MIPS: kprobes: flush_insn_slot should flush only if probe initialised
-a80b470 MIPS: mm: fixed mappings: correct initialisation
-88abd40 perf/core: Correct event creation with PERF_FORMAT_GROUP
-85fcf68 e1000e: Undo e1000e_pm_freeze if __e1000_shutdown fails
-dd1c55e net: phy: avoid genphy_aneg_done() for PHYs without clause 22 support
-99e6a55 mceusb: sporadic RX truncation corruption fix
-7ca4ba2 cx25840: fix unchecked return values
-7860df1 e1000e: fix race condition around skb_tstamp_tx()
-7cfbe9b tags: honor COMPILED_SOURCE with apart output directory
-731c55b perf report: Ensure the perf DSO mapping matches what libdw sees
-d8a6af5 net/mlx4: Fix the check in attaching steering rules
-4c115ea skbuff: return -EMSGSIZE in skb_to_sgvec to prevent overflow
-b499ce8 bio-integrity: Do not allocate integrity context for bio w/o data
-e56a2fd Fix serial console on SNI RM400 machines
-a3de043 drm/omap: fix tiled buffer stride calculations
-8fe9dcb mISDN: Fix a sleep-in-atomic bug
-4bd1ca4 qlcnic: Fix a sleep-in-atomic bug in qlcnic_82xx_hw_write_wx_2M and qlcnic_82xx_hw_read_wx_2M
-005f225 perf trace: Add mmap alias for s390
-434a18b powerpc/spufs: Fix coredump of SPU contexts
-8853077 KVM: SVM: do not zero out segment attributes if segment is unusable or not present
-9a288ca net: freescale: fix potential null pointer dereference
-d70b9c5 rtc: interface: Validate alarm-time before handling rollover
-ae9940a arm64: futex: Fix undefined behaviour with FUTEX_OP_OPARG_SHIFT usage
-1afb2e8 powerpc/[booke|4xx]: Don't clobber TCR[WP] when setting TCR[DIE]
-4bcc9b4 ovl: filter trusted xattr for non-admin
-0a99364 hdlcdrv: Fix divide by zero in hdlcdrv_ioctl
-e62c857 wl1251: check return from call to wl1251_acx_arp_ip_filter
-b94c176 vfb: fix video mode and line_length being set when loaded
-ccfa152 scsi: libiscsi: Allow sd_shutdown on bad transport
-e60a32a l2tp: fix missing print session offset info
-fd595a8 net: llc: add lock_sock in llc_ui_bind to avoid a race condition
-865b856 KVM: nVMX: Fix handling of lmsw instruction
-9776027 bonding: Don't update slave->link until ready to commit
-b80f8b7 net: move somaxconn init from sysctl code
-0c14ecf ext4: fix off-by-one on max nr_pages in ext4_find_unwritten_pgoff()
-d3d9fa5 fix race in drivers/char/random.c:get_reg()
-aef4c08 scsi: bnx2fc: fix race condition in bnx2fc_get_host_stats()
-295042b netfilter: ctnetlink: fix incorrect nf_ct_put during hash resize
-c5ca164 libceph: NULL deref on crush_decode() error path
-42469a9 block: fix an error code in add_partition()
-be62283 leds: pca955x: Correct I2C Functionality
-e1219bf ray_cs: Avoid reading past end of buffer
-933eb53 ARM: davinci: da8xx: Create DSP device only when assigned memory
-890c7e2 xfrm: fix state migration copy replay sequence numbers
-e0b9813 selftests/powerpc: Fix TM resched DSCR test with some compilers
-f08a63e ath5k: fix memory leak on buf on failed eeprom read
-14a2bd5 sh_eth: Use platform device for printing before register_netdev()
-13ab5f8 USB: ene_usb6250: fix SCSI residue overwriting
-fef094b net: x25: fix one potential use-after-free issue
-17805e4 USB: ene_usb6250: fix first command execution
-b87344e usb: chipidea: properly handle host or gadget initialization failure
-f6c2fbc neighbour: update neigh timestamps iff update is effective
-8fef9e9 ata: libahci: properly propagate return value of platform_get_irq()
-52cf1b6 btrfs: fix incorrect error return ret being passed to mapping_set_error
-7c27acc usb: dwc3: keystone: check return value
-dae5083 async_tx: Fix DMA_PREP_FENCE usage in do_async_gen_syndrome()
-678b173 ipv6: avoid dad-failures for addresses with NODAD
-2ebf343 ARM: dts: imx6qdl-wandboard: Fix audio channel swap
-4b88cb3 x86/tsc: Provide 'tsc=unstable' boot parameter
-3e4546c staging: wlan-ng: prism2mgmt.c: fixed a double endian conversion before calling hfa384x_drvr_setconfig16, also fixes relative sparse warning
-b169fe7 PowerCap: Fix an error code in powercap_register_zone()
-79d7449 SMB2: Fix share type handling
-c73d2c0 vmxnet3: ensure that adapter is in proper state during force_close
-beca5e3 KVM: PPC: Book3S PR: Check copy_to/from_user return values
-2812452 netxen_nic: set rcode to the return status from the call to netxen_issue_cmd
-4db9364 net: qca_spi: Fix alignment issues in rx path
-c70c210 CIFS: silence lockdep splat in cifs_relock_file()
-7b13441 net/mlx4_en: Avoid adding steering rules with invalid ring
-66f0db5 s390: move _text symbol to address higher than zero
-1625ef6 pidns: disable pid allocation if pid_ns_prepare_proc() is failed in alloc_pid()
-3bb16f9 lockd: fix lockd shutdown race
-5a9afaa net: ethernet: ti: cpsw: adjust cpsw fifos depth for fullduplex flow control
-6b002c7 qlge: Avoid reading past end of buffer
-f8f828f bna: Avoid reading past end of buffer
-b3b0df3 mac80211: bail out from prep_connection() if a reconfig is ongoing
-bc70599 af_key: Fix slab-out-of-bounds in pfkey_compile_policy.
-51188ac IB/srpt: Fix abort handling
-a505487 NFSv4.1: RECLAIM_COMPLETE must handle NFS4ERR_CONN_NOT_BOUND_TO_SESSION
-
-   * vendor/rr/
-247c7bf Update Features.mkdn
-
-====================
-     04-13-2018
-====================
-
-   * android/
-edf7966 manifest: Sync HVX neuralnetworks HAL
-6e7b438 lineage: Sync NXP NFC stack
-
-   * build/make/
-92459a6 core: include vendor_buildinfo.sh when TARGET_COPY_OUT_VENDOR=system
-f300b30 core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system
-0e77d27 Install (vendor|system/vendor)/build.prop always
-3b65b17 dumpvar: Dump TARGET_USE_SDCLANG
-d54e765 binary: Append cc/cxx wrapper to sdclang
-cacf042 build: Require devices to opt-in for SDCLANG
-11f1cfc Turn off sdclang for cfi sanitizer
-49e041d Add support for using the secondary SDLLVM toolchain
-d45f9cc Control building shared libs, static libs and executables with SDLLVM LTO
-39f42fb Add support for building with proprietary compiler
-43557b3 build: build generic lineage targets from vendor/lineage
-06d2f9d Revert "products: make targets used for addonsu inherit from lineage"
-
-   * frameworks/native/
-c7735b6 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * hardware/qcom/audio-caf/msm8998/
-e043b46 audio: Fixes for VNDK_VERSION=current
-1a5c4cb Make libqcomvoiceprocessing build with the VNDK.
-17fcdfe Make libqcomvisualizer build with the VNDK.
-1e3c759 Make libqcompostprocbundle build with the VNDK.
-3848737 Build audio.primary.* with BOARD_VNDK_VERSION
-35a5ab5 Add libhardware_headers and libsystem_headers to modules
-
-   * hardware/qcom/bt-caf/
-2c5d2c5 Add missing headers to libbt-vendor
-
-   * hardware/qcom/display-caf/msm8998/
-e533c79 Add GLESv3 as a dependency.
-a00dbd8 Fix libcutils private headers
-ce4ce89 Build libqdMetaData with BOARD_VNDK_VERSION
-01b92de Build lights.msm8998 with the VNDK.
-9008131 Use header lib instead of using global include path
-7dfb3a7 Mark msm8998 modules LOCAL_VENDOR_MODULE
-
-   * hardware/qcom/media-caf/msm8998/
-91db4db fix circular dependency libnativewindow <-> libui
-
-   * system/core/
-75790f6 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * system/sepolicy/
-02863ef Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * vendor/oneplus/
-4f3b504 msm8998: update blobs from OP5 beta8 / OP5T beta6
-
-   * vendor/rr/
-7bda2d8 rr: fix path for some stuff
-9a34260 write_makefiles: fix paths in BUILD_PREBUILT with destination
-d034b95 repopick: Allow to pick changes by URL
-fbbc8c8 repopick: Actually print the patchset number
-aa96027 repopick: Ignore the trailing slash in change numbers
-1223973 repopick: Try to keep the changes sorted
-b61f5f4 lineage: Camera2 priv-app permissions whitelist
-6ec04d1 vendor: More priv-app whitelist updates
-
-====================
-     04-12-2018
-====================
-
-
-   * packages/apps/Settings/
-ee06de5 Add Twitter and pitchblack links into about section
-
-====================
-     04-11-2018
-====================
-
-
-   * kernel/oneplus/msm8996/
-fb625ba Linux 3.18.104
-c8d854f net: fec: fix build error in fec driver
-
-====================
-     04-10-2018
-====================
-
-
-   * frameworks/base/
-d855f82 SystemUI: Fix QS auto brightness icon switch
-a459dbf Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-0b57e0f fwb: Ambient Display battery toggle [1/2]
-
-   * packages/apps/Settings/
-fe4b9c0 Fix the reset icon tint & Dont use the alpha image. Thanx @pimpmaneaton for finding this
-0400ac9 Ambient Display battery toggle [2/2]
 
