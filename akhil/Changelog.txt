@@ -3,264 +3,360 @@
 
 
 ====================
-     04-22-2018
+     05-01-2018
 ====================
 
-   * android/
-b82fc71 manifest: Remove LiveDisplay repo
 
-   * build/make/
-7615a59 Add build.prop to incrementals too
-825cdc4 build: allow forcing build of otatools
-
-   * device/oneplus/oneplus3/
-4775e6a Merge branch 'lineage-15.1' into oreo
-
-   * device/qcom/sepolicy/
-d9c24de Merge branch 'lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-fb968d7 Merge branch 'lineage-15.1' into oreo
-bc582cd Allow recovery write to sysfs_graphics
-590946d Remove adb.secure recovery property context
-20b9d1c sepolicy: Add rules for LiveDisplay HIDL HAL
-98c7f8d Allow recovery write to sysfs_graphics
-541bcf2 Remove adb.secure recovery property context
-
-   * device/xiaomi/kenzo/
-dd833d5 kenzo: set matching build fingerprint for system, vendor, bootimage
+   * frameworks/av/
+8367360 libstagefright: Add more sample rates for FLAC
 
    * frameworks/base/
-
-   * hardware/lineage/lineagehw/
-ed11fda lineagehw: Link livedisplay library statically
-
-   * lineage-sdk/
-a395cc3 lineage-sdk: Allow adjusting brightness of non-RGB LEDs
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-d2ff5e5 LineageParts: Allow adjusting brightness of non-RGB LEDs
-d7a5830 LineageParts: Fix loading default colors for non-RGB lights
-f10570a LineageParts: Fix removing LED brightness settings
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-ecdb6e7 Add Samsung S9 (starlte)
-11067f4 Add S6 Edge (zeroltexx)
-
-   * packages/apps/Snap/
-a0f6bf7 Fix snapshot failed with logical camera
-a83f85c Add ui toast for bokeh
-
-   * system/core/
-6956422 Merge branch 'lineage-15.1' into oreo
-
-   * vendor/oneplus/
-0dfb0d4 msm8998: Update SDM from LA.UM.6.4.r1-07400-8x98.0
-
-   * vendor/rr/
-3eae19c envsetup: Fix lineageremote for caf    *s
-261cb47 lineage-radio: disable ims services on ro.radio.noril
-33c8d93 build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
-58dd6f9 lineage: enable building otatools with generic targets
-
-====================
-     04-21-2018
-====================
-
-
-   * bootable/recovery/
-0c08e7c recovery: Fix loading time from /persist
-c7ec3a7 recovery: Don't try to set ro.adb.secure
-36dd139 Revert "updater: Fix and improve allowing devices to suppress BLKDISCARD"
-
-   * device/oneplus/oneplus3/
-acdf429 op3: Use Qualcomm FOSS algorithm for adaptive backlight
-1e38b4f op3: Build LiveDisplay HAL
-
-   * vendor/nxp/opensource/external/libnfc-nci/
-f48a623 Fix description path for libnqp61-jcop-kit and move to vendor
-
-   * vendor/nxp/opensource/packages/apps/Nfc/
-ffaea6a Look for libnqp61-jcop-kit.so in the vendor
-
-====================
-     04-20-2018
-====================
-
-
-   * device/oneplus/oneplus3/
-4ad2749 op3: Update qti_libpermissions.xml sha1sum
-
-   * device/qcom/sepolicy/
-be44088 legacy: Consistent indentation
-fe8868a legacy: Address mm-pp-daemon denials
-4504f04 legacy: Allow thermal-engine to read sysfs_spmi_dev
-4dd1cb2 legacy: Add debugfs rules for rmt_storage
-75573bd legacy: Allow hal_graphics_allocator_default access sysfs_graphics
-e8e4723 legacy: Allow hal_graphics_composer_default read firmware
-103e1dc legacy: Allow bluetooth_loader read persist
-443c0d8 legacy: Address perfd denials
-c51e127 legacy: Allow perfd write to sysfs_kgsl
-d233d17 legacy: Allow qcom power HAL to interact with perfd
-6bf41a0 hal_gnss_default: Do not log udp socket failures
-4b4dd9c sepolicy: Ignore more hal_memtrack denials
-9110cac sepolicy : add secontext for eMMC blocks
-d7045fa sepolicy: rules to allow camera daemon access to app buffer
-00dc45f sepolicy: Fix warnings related to set_prop
-
-   * external/openssh/
-1ad2147 Don't crash when pw_passwd is not set
-
-   * packages/apps/Dialer/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/Snap/
-
-   * vendor/oneplus/
-b6b67f4 op3: Fix a typo
-b130258 oneplus5: update blobs from 5.1.0
-
-====================
-     04-19-2018
-====================
-
-
-   * hardware/qcom/display-caf/msm8974/
-060e6fe libvirtual should depend on libmedia
-b9109c1 Revert "libvirtual: Add libbase static library dependency"
-
-====================
-     04-18-2018
-====================
-
+b2145df SystemUI: fix build after a90d449c4c7cd55cc45205137f7ba6c4b2edfeba
+ba62014 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
 
    * hardware/lineage/interfaces/
-5f8e56a lineage/interfaces: Add IColor SDM backend implementation
-
-   * hardware/qcom/display-caf/apq8084/
-c59714b Add -Wno-error to compile with global -Werror.
-ed267b8 Fix -Wmacro-redefined werror issues.
-39eb209 hwc: Start with ROI set to destination
-04487f7 libgralloc: Align secure video and rotator buffers to 2M
-dcabbfc libvirtual should depend on libmedia
-bee7c81 gralloc: Handle RAW_OPAQUE formats similar to blob
-5cd994c Fix duplicate copy file rules
-a79fb63 qservice: Allow camera server to call into HWC
-
-====================
-     04-17-2018
-====================
-
-   * android/
-8f46c5e lineage: Track our own openssh repo
-
-   * frameworks/base/
-6fb5a70 settings: Allow accessing LineageSettings via settings command
-4dad570 frameworks/base: Support for third party NFC features and extensions
-2de1bba Keyguard: Allow disabling fingerprint wake-and-unlock
-de95f24 fingerprint: notify client when cancelling succeeded
-7522061 SettingsProvider: explicitly include android support libs
-
-   * hardware/lineage/lineagehw/
-046a670 lineagehw: Use HIDL for livedisplay vendor impl
-
-   * hardware/qcom/media-caf/apq8084/
-29e06f3 mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
-a42a7cd mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
-bda60bf mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh
-f24ca02 mm-video-v4l2: vdec: Add range check before native_buffer usage
-a7047b2 mm-video-v4l2: vidc: fix matching of extension strings
-eb2d7c8 mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
-f250115 fix circular dependency libnativewindow <-> libui
-
-   * lineage-sdk/
-35cfcf8 sdk: Remove low power restrictions on color control
-c6efd51 LineageSettingsProvider: explicitly include android support libs
-7b03987 README: Point to the new wiki
-df88839 lineage-sdk: Update validators for button settings
-aa63b85 sdk: ilama API (9)
-c46556e Merge branch 'oreo' of https://github.com/ResurrectionRemix/lineage-sdk into oreo
-
-   * packages/apps/Contacts/
-d1c544e Hide help and feedback in AOSP contacts
-
-   * packages/apps/Gallery2/
-9c18367 Fix Time bar don't update replay after trim
-db965e5 Fix can't enable speaker with bluetooth headset
-6aeaf8a Fix null pointer when copy representantion
-
-   * packages/apps/LineageParts/
-5f15b5a Revert "LineageParts: Build with AAPT2"
-d61bd6b LineageParts: Build with AAPT2
-1f3af6f ButtonSettings: Add a toggle for button backlight only when pressed
+6945c7d livedisplay: Make hsic structs internal
+f9ce129 livedisplay: Don't unnecessarily call new
+67f1d5a livedisplay: Move SDMController helper functions to anonymous namespace
+3df1fcd livedisplay: Move Color helper functions to anonymous namespace
+46a6cf1 livedisplay: Avoid useless sprintf
+0fc93fd livedisplay: Replace defines with enums and constexpr
+aeb3428 livedisplay: Switch to stream.fail
+f747017 livedisplay: Avoid 'using ::std' in Utils
+98adb03 livedisplay: Remove unused exists helper function
 
    * packages/apps/Settings/
-e5ad8ca Settings: use LineageHW serial number
-
-   * system/core/
-73c15af Revert "Don't enable ADB by default when ro.adb.secure is 1"
-
-   * vendor/oneplus/
-ce06011 msm8998: add missing blobs for hbtp
-e91e835 msm8998: move fingerprint and touchscreen blobs to vendor, commonize fp extensions
-
-   * vendor/rr/
-bee95bc Fix Android "Work Profiles" also known as AfW 'Android for Work'
-dcc15fc apn: Add protocol for fido and rogers
-c7e2630 build: dt_image: support prebuilt DT images
-b620ca7 lineage: enable building otatools with generic targets
+9ff6c73 Merge remote-tracking branch 'github/oreo' into oreo
+11d7d5a Settings: Move substratum strings to right place (#947)
+9704e07 Add Samsung A5 2017 & A7 2017 (a[5,7]y17lte) (#953)
+683a066 Add Redmi 4A (rolex) (#955)
+341f816 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
 
 ====================
-     04-16-2018
+     04-30-2018
+====================
+
+
+   * build/make/
+f8d9a1f Merge remote-tracking branch 'rr/oreo' into HEAD
+53154ba releasetools: ota_from_target_files: add FullOTA_PostValidate
+e4d09f3 build: Remove duplicate zip command
+
+   * device/oneplus/oneplus3/
+30ef34e Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/qcom/sepolicy/
+43a2cc0 Merge remote-tracking branch 'rr/oreo' into oreo
+59c5667 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/rr/sepolicy/
+05ada16 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * frameworks/base/
+43ead6d Merge pull request #1 from bdogg718k/oreo-markup
+a90d449 finally fix up source for good
+11aafaf Revert "Ambient and statusbar media tickers: code fixes and improvements"
+a00ee6e Revert "Clean-up merge and make small fix"
+8112a3e Revert "Extra space..not needed"
+a0b58a8 Revert "fix some derps"
+c491361 fix some derps
+cdc0a59 Choose a custom editor app for screenshot notification edit button [1/2]
+d0cab38 Screenshot: add "Markup" edit action support
+
+   * frameworks/native/
+ed729d1 Merge branch 'oreo' of https://github.com/ResurrectionRemix/frameworks_native into oreo
+ebc6433 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/lineage/interfaces/
+0d11531 livedisplay: Make ColorBackend a regular object
+
+   * packages/apps/Settings/
+356ba2a Change Mi 5s maintainer (#941)
+528dd90 Add Redmi Note 5 Pro (Whyred)
+c4c1f90 Merge pull request #1 from bdogg718k/oreo-markup
+2bd2495 fix ANOTHER derp
+e81a0de Choose a custom editor app for screenshot notification edit button [2/2]
+
+   * system/core/
+19ec7aa Merge branch 'oreo' of https://github.com/ResurrectionRemix/system_core into HEAD
+2e64d40 Merge branch 'lineage-15.1' into HEAD
+
+   * system/sepolicy/
+3877083 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_system_sepolicy into HEAD
+b498774 Merge branch 'lineage-15.1' into HEAD
+
+   * vendor/rr/
+619b1b4 Merge branch 'oreo' into HEAD
+480bf41 Fix migration from pre-O for AndroidTV devices (2/2)
+7f6970a Add Nvidia enhancements soong flag
+7ac3d95 lineage: qcom: Enable media extensions for all QC devices
+7ee1626 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+a83e239 apn: Update APNs for MetroPCS
+
+====================
+     04-29-2018
+====================
+
+
+   * build/make/
+14060e5 releasetools: ota_from_target_files: add FullOTA_PostValidate
+02f6b03 build: Remove duplicate zip command
+5f86b3d Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_build into oreo
+
+   * device/qcom/sepolicy/
+03541c8 Escape '.' character
+032115b sepolicy: Remove leftover folders
+
+   * frameworks/base/
+56fb9ac Fix auto fill on themes
+9b1f35e Fix migration from pre-O for AndroidTV devices (1/2)
+f623987 SystemUI: Dismiss keyguard on boot if disabled by current profile
+8159111 Extra space..not needed
+ea51989 Allow to quickly open Running Services from QS panel [1/2]
+11d5eb9 Clean-up merge and make small fix
+3eef02b Ambient and statusbar media tickers: code fixes and improvements
+91ad0fe Ambient music ticker improvements
+4d1e0fe SystemUI: use slashify for more qs tile
+d61fb30 Add interpolators to qs tiles animation [1/2]
+3984d28 Add animations to quick settings tiles [1/2]
+eca9eaf Hide tiles title: longpress will launch detail view
+39a4e09 Footer brightness buttons: make touch area more reliable
+c8e3ecc QS auto brightness toggle rework
+0605132 Rework auto brightness implementation
+ad7426e Brightness slider: Vibrate after a long press
+79416da Brightness slider buttons: make them dynamic (auto and manual)
+5c99250 Footer brightness slider: fix FC and code cleanup
+c59d1fa Make use of the brightness slider buttons
+d12a1fc Brightness control on footer
+520dba2 Clean-up code
+2c75196 BoostFramework: Remove debug boost prop dependency
+4a05f9e Activity: Improve DragBoost logic
+9536808 Introduce Rotation Boost
+466ec32 Rework AOSPA boosting configuration
+a805f06 UserController: Introduce Bootup Boost
+1825790 Keypress Boost: Improve dispatching logic
+4a1ec63 Keypress Boost: Block multiple Keypress boosts
+b69db58 Introduce Keypress Boost
+058b986 Fix boost issue caused by pre-fling
+108992c boost ahead of current fling boost in scroll
+e03942b Framework for LaunchBoost v2 and Frequency aggr during launch.
+170aaf0 BoostFramework: Implement asynchronous processing of perflocks
+8c93ba3 Add synchronized protection in BoostFramework constructor
+6bd340f frameworks: Add custom boost for scroll/fling
+068f0c5 Perf: Adding hooks for IO prefetcher into framework
+8eeea86 BoostFramework to enhance performance during critical scenarios
+69a8b38 Smart Pixels: Switch to registered receiver
+a8444f8 Move Smart Pixels out of SystemUI
+28b6958 SystemUI: Refactor Smart Pixels tile
+3341c27 SystemUI: Tiny expanding improvement
+ae4c2a2 Notifications: Materialize missed calls icons
+de8a3e5 spinner: make the loading "spinner" animation smoother in non-holo apps
+e6c96bd Decrease time changing between TOP & another state
+6e48049 Add permission whitelist for EmergencyInfo app
+0280852 hwui: check the buffer status before draw
+7907e19 ConnectivityService doesn't send decreased score to factories at need
+24dbb8f Stop ticker on theme changes
+5799522 media/jni: Check mute state before starting play
+aea0f35f PackageManager: Init known locales at WelcomeActivity in SetupWizard
+1a7a410 Use async thread for performPoll in NetworkStats
+0cfed05 AtomicFile: Rename the backup file to base file when backup exists
+8628e9e Fix issue when start android/com.android.internal.backup.LocalTransportService
+88534b6 Make the allPendingIntents add operation thread-safe
+a80200d Improve a calculation method for LTE antenna reception level
+f1e7743 Fix InCallActivity onStop call when launch from Lockscreen
+d9ac273 Send broadcast to MediaScannerReceiver to refresh gallery
+79d01bb Should use scan flag or it will not scan device
+cac10a6 base: recents: protect against possible concurrent mod
+073d3dd Fix NullPointerException on systemui restart with smart pixel enabled.
+0da39e1 TaskViewHeader:Don't allow lock button icon to show on grid view
+64b7497 [1/2] base: featureize ro.recents.grid
+e76e00a Crash occured due to null pointer exception.
+7c356f2 Suppress FingerprintManager logspam
+182061e Silence camera policy keyguard check logspam
+bff063f  Kill off provider info logspam
+5351adb Fix AccessibilityNodeInfo memory leak
+43e4097 Kill net stats logspam
+6a23c03 Fix some refresh issues when changing an overlay
+5f26d08 SystemUI: Add Smart Pixels tile
+997760f SystemUI: update QS Footer animations
+a5ba760 SystemUI: QS footer visibilities [1/2]
+92cf7ed PIE: Use vector tile icons
+0f20679 PIE: Hide network type if wifi is enabled
+afae85f Recents: Tint membar to accent if recents styles are disabled
+7043b60 Add RR logo to empty recents view - Change No recents string to RR Remixed - Both logo and text will change with system accent colors
+d513520 NetworkDiagnostics: switch to Cloudflare DNS
+8a55c99 Use Cloudflare DNS servers as hints
+49e3844 Use Cloudflare DNS servers as defaults for tethering
+7143295 Use Cloudflare DNS as the default fallback
+753cbf2 Set BT_SCO status
+02222d7 Add NOTICE for SmartPixels
+4695fdc SystemUI: Smart Pixels [1/2]
+c78e942 SystemUI: screen-dimmer-pixel-filter
+
+   * frameworks/native/
+41f56a8 Triple the available egl function pointers available to a process for certain Nvidia devices.
+3019fea Handle glGetString returning NULL
+
+   * frameworks/opt/telephony/
+982d5ad DcTracker: Change access modifier of isNvSubscription to protected
+
+   * hardware/lineage/interfaces/
+724ca6d livedisplay: Fully qualify STL types in headers
+284a9cc livedisplay: Don't assign -1 to uint64_t
+0d40479 livedisplay: SDM: Don't advertise color balance support
+95096b0 livedisplay: Add missing break statement
+65f77a4 livedisplay: Use GetBoolProperty
+
+   * hardware/qcom/audio-caf/msm8998/
+7ee810c msm8998: hal: Update ultrasound route hacks
+
+   * kernel/oneplus/msm8996/
+d499e94 Merge tag 'CavalierCoconut' into oreo
+93b79c1 Merge tag 'v3.18.107' into XOS-8.1
+f341a27 cpufreq_interactive: Allow disabling the screen_off_max tunable
+754ca08 Linux 3.18.107
+8e8a405 cdrom: information leak in cdrom_ioctl_media_changed()
+2127751 scsi: mptsas: Disable WRITE SAME
+f4dd548 ipv6: add RTA_TABLE and RTA_PREFSRC to rtm_ipv6_policy
+e2917cf llc: delete timers synchronously in llc_sk_free()
+14670e4 net: af_packet: fix race in PACKET_{R|T}X_RING
+c4ded09 tcp: md5: reject TCP_MD5SIG or TCP_MD5SIG_EXT on established sockets
+617b89a packet: fix bitfield update race
+bae70a5 llc: fix NULL pointer deref for SOCK_ZAPPED
+a5db62f llc: hold llc_sap before release_sock()
+8b46781 pppoe: check sockaddr length in pppoe_connect()
+a0475be team: fix netconsole setup over team
+5ac746d team: avoid adding twice the same option to the event list
+7e04fc8 tcp: don't read out-of-bounds opsize
+115af44 l2tp: check sockaddr length in pppol2tp_connect()
+1f6945b KEYS: DNS: limit the length of option strings
+a7c0837 bonding: do not set slave_dev npinfo before slave_enable_netpoll in bond_enslave
+f47bd1b jbd2: fix use after free in kjournald2()
+3e8f97b mm/filemap.c: fix NULL pointer in page_cache_tree_insert()
+19f50d8 perf: Return proper values for user stack errors
+ab3fc66 ext4: don't update checksum of new initialized bitmaps
+802ec69 ext4: bugfix for mmaped pages in mpage_release_unused_pages()
+5781ac2 ext4: fix deadlock between inline_data and ext4_expand_extra_isize_ea()
+48bb699 x86/tsc: Prevent 32bit truncation in calc_hpet_ref()
+a1a9d95 cifs: do not allow creating sockets except with SMB1 posix exensions
+
+   * lineage-sdk/
+c0178e4 LineageBatteryLights: Fix brightness for devices with segmented leds
+547fe4e LineageBatteryLights: Take current user settings into account
+af89b21 LineageBatteryLights: Rename some class members and add more debugging
+
+   * packages/apps/Settings/
+31ed359 Settings: Hide Night Mode suggestion if LiveDisplay feature is present
+76c4579 Allow to quickly open Running Services from QS panel [2/2]
+cd65896 DUI Fling: allow to reset options and save/restore actions profile
+0bf7fb5 DUI custom actions: compatibility for Tasker and other activities
+23c45ec PackageListAdapter: show more apps in the list
+a69e062 Add interpolators to qs tiles animation [2/2]
+111eb29 Add animations to quick settings tiles [2/2]
+8bd66c1 Settings:Optional recents lock icon switch
+10a6c5b Recents grid switch
+f8f8598 Settings: External Smart Pixels fragment launch
+caf27f3 Settings: QS footer visibilities [2/2]
+58140f8 SimSettings: avoid NPE
+2a246ef Settings: SmartPixels [2/2]
+
+   * packages/overlays/Resurrection/
+3a8c489 Fix auto fill on themes
+
+   * system/core/
+5246a1d init: Don't run update_sys_usb_config if /data isn't mounted
+19782f6 init: do not load persistent properties from temporary /data
+
+   * system/sepolicy/
+30dd7c9 Hide some denials.
+2f44f11 priv_app: suppress denials for /proc/stat
+2e69a64 Suppress denials for non-API access
+a1a32c8 priv_app: move logspam suppression to core policy
+d7b9926 Suppress denials from sdcardfs (b/67454004)
+fff4270 Allow system_server to update timerslack_ns for hal_audio_default
+9404b36 system_server: allow writing to timerslack_ns
+f49c222 Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+7dc6d1c Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/oneplus/
+a9dc782 msm8998: build libgnsspps from sources
+
+   * vendor/rr/
+95778c6 Fix migration from pre-O for AndroidTV devices (2/2)
+07cdc54 Add Nvidia enhancements soong flag
+0cbb815 lineage: qcom: Enable media extensions for all QC devices
+2a75b31 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+9f88309 apn: Update APNs for MetroPCS
+
+====================
+     04-28-2018
+====================
+
+
+   * hardware/qcom/audio-caf/msm8998/
+daba725 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+   * system/core/
+7fbd2ba init: Don't run update_sys_usb_config if /data isn't mounted
+32de60c init: do not load persistent properties from temporary /data
+
+====================
+     04-27-2018
 ====================
 
 
    * device/oneplus/oneplus3/
-48b6684 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+6c5b342 op3: Enable vulkan compute feature
+1381cf5 op3: Properly copy vulkan permission xml
+2a5568c op3: Add config to check data roaming for UT as per CT requirements
 
    * device/rr/sepolicy/
-5ebc0dc sepolicy: Add rules for LiveDisplay HIDL HAL
+ea92881 sepolicy: qcom: Allow nfc to read and execute files in /vendor on full treble
+
+   * vendor/oneplus/
+f0cf6c3 op3: Update blobs from OB35/OB26
+092bcb5 msm8998: add missing sdm service definitions
+
+====================
+     04-26-2018
+====================
+
+
+   * frameworks/native/
+82b2358 Triple the available egl function pointers available to a process for certain Nvidia devices.
+
+====================
+     04-25-2018
+====================
+
+
+   * device/rr/sepolicy/
+956eaed Revert "sepolicy: suppress denial logspam"
 
    * frameworks/base/
-32663db Quick settings panel : Set transparency [1/2]
-de3f468 Fw_base - custom Toast color options (1/2)
+76ef8b0 Revert "Fw_base - custom Toast color options (1/2)"
 
-   * hardware/qcom/power/
-8ff509e power: Consistent skipping of non perf profile hints
-593b9d0 power: Compile with -Wall -Wextra -Werror
-11016fa power: msm8994: Add support for power profile & boost
-e555395 power: msm8992: Add support for power profile & boost
-ce25d84 power: msm8610: Add support for power profile & boost
-dbc6781 power: msm8226: Add support for power profile & boost
-32ae7b0 power: apq8084: Add support for power profile & boost
-46ac4af power: msm8916: Add support for power profile & boost
-ed3426d power: fix sysfs_read/sysfs_write usage
-158576f power: add back check for ro.vendor.extension_library
-abe7e65 power: msm8952: Minor code cleanup
-6204c67 power: msm8996: Remove dead code
-8c55d3c power: msm8974: POWER_HINT_INTERACTION improvements
+   * frameworks/native/
+e9188d0 Handle glGetString returning NULL
+
+   * frameworks/opt/telephony/
+ea4a8e2 Fix Acess modifiers as part of extending ServicestateTracker.
 
    * kernel/oneplus/msm8996/
-48f08d2 Merge tag 'KaleidoscopicKumquat' into oreo
-03ee4c1 Merge tag 'v3.18.105' into XOS-8.1
-45b625b Merge tag 'v3.18.104' into XOS-8.1
-dd6dc08 ion: Actually check start exists
-c83f08b include: media: checkout some more headers from LineageOS
-31850a6 media: camera_v2: Import LineageOS camera stack
-7259d89 Revert "Merge tag 'for-greg-3.18-04052018' of git://git.kernel.org/pub/scm/linux/kernel/git/sashal/linux-stable into XOS-8.1"
+2027c48 misc: Update from OB32/OB23 kernel source
+fc6dd31 usb: bam: Fix a mismerge in 792066798aef2775f13df5a522c35e03a5a9bd7f
+e1570c3 ANDROID: sdcardfs: d_make_root calls iput
+62fa4d9 ANDROID: sdcardfs: Check for private data earlier
 
    * packages/apps/Settings/
-1e80584 minor typo in strings
-1c0e898 QS panel: Set transparency [2/2]
-d5945c3 Settings - custom Toast color options (2/2)
+86b0583 Revert "Settings - custom Toast color options (2/2)"
 
-   * vendor/rr/
-dc91a37 bootanimation: Use 1080.zip version on lower sizes (#112)
+   * system/sepolicy/
+21d60b8 Hide some denials.
+217abd2 priv_app: suppress denials for /proc/stat
+a5534fe Suppress denials for non-API access
+9b69af1 priv_app: move logspam suppression to core policy
+dec50d7 Suppress denials from sdcardfs (b/67454004)
+d1f40ab Allow system_server to update timerslack_ns for hal_audio_default
+bd7d733 system_server: allow writing to timerslack_ns
 
