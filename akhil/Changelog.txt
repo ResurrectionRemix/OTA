@@ -3,16 +3,120 @@
 
 
 ====================
+     05-02-2018
+====================
+
+
+   * device/xiaomi/kenzo/
+59e64a7 kenzo: RR bringup
+
+   * frameworks/base/
+f3e4bbf Add support for getAtr api
+b2145df SystemUI: fix build after a90d449c4c7cd55cc45205137f7ba6c4b2edfeba
+ba62014 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
+
+   * frameworks/opt/telephony/
+5f33354 Add support of new HIDL service
+
+   * hardware/lineage/interfaces/
+88e7f6f lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+
+   * packages/apps/Dialer/
+f8aa6fd Show proper call duration
+
+   * packages/apps/Settings/
+9ff6c73 Merge remote-tracking branch 'github/oreo' into oreo
+11d7d5a Settings: Move substratum strings to right place (#947)
+9704e07 Add Samsung A5 2017 & A7 2017 (a[5,7]y17lte) (#953)
+683a066 Add Redmi 4A (rolex) (#955)
+341f816 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
+
+   * packages/services/Telephony/
+137b1cf Add getAtr support
+
+   * system/core/
+c5784a1 Revert "init.rc: set initial cpuset to all cores"
+
+====================
      05-01-2018
 ====================
 
 
+   * device/xiaomi/kenzo/
+3bc87a0 kenzo: track lineage-15.1 branch for vendor
+cb4d345 kenzo: track own kernel repository
+680f774 kenzo: update dependencies
+30ff81b kenzo: Change kernel branch
+a46e602 kenzo: update dependencies
+bbe3720 kenzo: update dependencies
+dc5086c kenzo: button backlight and hwkeys stuff
+0187ce0 kenzo: add dependencies
+290ce90 kenzo: AOSiP bringup
+8fe9dfb kenzo: show correct charging current value on lockscreen
+b5fc335 kenzo: remove shims
+bdb63e8 [dnm] kenzo: Remove sepolicy
+94120e4 kenzo: Set build fingerprint instead of overriding it
+70bb320 Revert "Revert "kenzo: Drop fp wrapper to dynamically select fp HAL""
+9bf848c kenzo: Update for oreo
+7eb92ee kenzo: audio: Add speaker + bt-sco combo device
+3d1bd25 kenzo: bluetooth: Force disable sco enhanced sync commands
+b21d0bc kenzo: copy audio configs to vendor
+53ec254 Revert "kenzo: Drop fp wrapper to dynamically select fp HAL"
+53c60f4 kenzo: copy hals. conf to vendor
+00e2798 kenzo: decommonize thermal libs
+6381d7a kenzo: inherit common_full_phone from vendor/lineage
+e6abebc kenzo: Remove unused acdb files
+8d56ce7 kenzo: Add time service blobs
+914afaa kenzo: Remove modem assert
+
+   * device/xiaomi/msm8956-common/
+799dec7 [dnm] msm8956: selinux permissive
+be2d565 msm8956: use binderized aw2013 hal and livedisplay hal
+25f0a52 msm8956: Add custom biometrics to fix goodix fpsensor
+e893f6c msm8956: convert audio_effects.conf to audio_effects.xml
+7085465 msm8956: remove deprecated flag
+fb60fdc msm8956 Doze: Build with AAPT2
+5353c5b msm8956: Doze: Re-integrate into Settings
+8886477 msm8956: Doze: Apply LineageOS rebrand
+008467e msm8956: Doze: Hide features if unsupported
+0703714 msm8956: Doze: Require non-wake up proximity sensor
+04c03d3 msm8956: Doze: Refactor
+af80471 msm8956: Doze: Perform operations as current user
+9316904 msm8956: doze: Protect com.android.systemui.doze.pulse
+c4db6c2 msm8956: doze: Set different timings for wave and pocket detection
+274ce6b msm8956: doze: Cleanup
+f9126d8 msm8956: Use MIUI poweroff charging animation
+a20ebde mido: Add dummy android.hidl.manager@1.0
+2e0f454 msm8956: Nuke BOARD_USES_QC_TIME_SERVICES flag
+72cdf61 msm8956: build textclassifier
+f4a958e msm8956: Build a dummy android.hidl.base@1.0 for Oreo blobs
+b4f2e04 msm8956: update overlays
+f9c1997 msm8956: Update prop for oreo
+2c2f7a7 msm8956: add slpi symlinks
+18b5651 msm8956: Update RFS symlinks
+e97bb53 msm8956: Enable config_dynamic_bind_ims
+a3e74c4 msm8956: lineagehw: Apply LineageOS rebrand
+9fa54f8 msm8956-common: init: update for 8.1
+a622fba msm8956: camera: Add libgui as shared library
+fe759f1 msm8956: camera: mm-camera-interface: Camera Daemon late start issue fix
+0ddbc7a Camera2:HAL1:fix HAL1 callback cookie 1. fix HAL1 memory callback cookie for Treble change 2. remove checking for VANILLA_HAL definition for O upgrade now    for initial bring up, until the removal of the TARGET_USE_AOSP    flag in devie mkfile.
+df1f745 msm8956: camera: Added LOCAL_VENDOR_MODULE to set output path of the binaries
+7e7745c msm8956: camera: Vendor Seperation
+56f3266 msm8956: fix camera Build
+638a217 msm8956: Add initila manifest and compatibility_matrix
+5104dc5 msm8956: Switch to config.fs
+1faeb22 msm8956: Update configs
+0068793 msm8956: Clean media profiles for aosp
+1987d2a msm8956: Update data-ipa-cfg-mgr
+87d0fd0 msm8956: gps: Clean up and remove useless autoconf scripts
+7754aa3 msm8956: update gps hal
+ba00526 msm8956: update blob list
+66ecada msm8956: Add hidl packages and their dependency
+bcd2b8b msm8956: Update rootdir from caf
+8b5505a msm8956: Update extraction tools to match latest template
+
    * frameworks/av/
 8367360 libstagefright: Add more sample rates for FLAC
-
-   * frameworks/base/
-b2145df SystemUI: fix build after a90d449c4c7cd55cc45205137f7ba6c4b2edfeba
-ba62014 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
 
    * hardware/lineage/interfaces/
 6945c7d livedisplay: Make hsic structs internal
@@ -26,11 +130,11 @@ f747017 livedisplay: Avoid 'using ::std' in Utils
 98adb03 livedisplay: Remove unused exists helper function
 
    * packages/apps/Settings/
-9ff6c73 Merge remote-tracking branch 'github/oreo' into oreo
-11d7d5a Settings: Move substratum strings to right place (#947)
-9704e07 Add Samsung A5 2017 & A7 2017 (a[5,7]y17lte) (#953)
-683a066 Add Redmi 4A (rolex) (#955)
-341f816 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
+356ba2a Change Mi 5s maintainer (#941)
+528dd90 Add Redmi Note 5 Pro (Whyred)
+
+   * vendor/xiaomi/
+04047e7 Initial kenzo and msm8956-common
 
 ====================
      04-30-2018
@@ -41,6 +145,9 @@ f747017 livedisplay: Avoid 'using ::std' in Utils
 f8d9a1f Merge remote-tracking branch 'rr/oreo' into HEAD
 53154ba releasetools: ota_from_target_files: add FullOTA_PostValidate
 e4d09f3 build: Remove duplicate zip command
+14060e5 releasetools: ota_from_target_files: add FullOTA_PostValidate
+02f6b03 build: Remove duplicate zip command
+5f86b3d Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_build into oreo
 
    * device/oneplus/oneplus3/
 30ef34e Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
@@ -48,6 +155,8 @@ e4d09f3 build: Remove duplicate zip command
    * device/qcom/sepolicy/
 43a2cc0 Merge remote-tracking branch 'rr/oreo' into oreo
 59c5667 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+03541c8 Escape '.' character
+032115b sepolicy: Remove leftover folders
 
    * device/rr/sepolicy/
 05ada16 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
@@ -62,28 +171,57 @@ a0b58a8 Revert "fix some derps"
 c491361 fix some derps
 cdc0a59 Choose a custom editor app for screenshot notification edit button [1/2]
 d0cab38 Screenshot: add "Markup" edit action support
+56fb9ac Fix auto fill on themes
+9b1f35e Fix migration from pre-O for AndroidTV devices (1/2)
+f623987 SystemUI: Dismiss keyguard on boot if disabled by current profile
 
    * frameworks/native/
 ed729d1 Merge branch 'oreo' of https://github.com/ResurrectionRemix/frameworks_native into oreo
 ebc6433 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+41f56a8 Triple the available egl function pointers available to a process for certain Nvidia devices.
+3019fea Handle glGetString returning NULL
 
    * hardware/lineage/interfaces/
 0d11531 livedisplay: Make ColorBackend a regular object
+724ca6d livedisplay: Fully qualify STL types in headers
+284a9cc livedisplay: Don't assign -1 to uint64_t
+0d40479 livedisplay: SDM: Don't advertise color balance support
+
+   * lineage-sdk/
+c0178e4 LineageBatteryLights: Fix brightness for devices with segmented leds
+547fe4e LineageBatteryLights: Take current user settings into account
+af89b21 LineageBatteryLights: Rename some class members and add more debugging
 
    * packages/apps/Settings/
-356ba2a Change Mi 5s maintainer (#941)
-528dd90 Add Redmi Note 5 Pro (Whyred)
 c4c1f90 Merge pull request #1 from bdogg718k/oreo-markup
 2bd2495 fix ANOTHER derp
 e81a0de Choose a custom editor app for screenshot notification edit button [2/2]
+31ed359 Settings: Hide Night Mode suggestion if LiveDisplay feature is present
+
+   * packages/overlays/Resurrection/
+3a8c489 Fix auto fill on themes
 
    * system/core/
 19ec7aa Merge branch 'oreo' of https://github.com/ResurrectionRemix/system_core into HEAD
 2e64d40 Merge branch 'lineage-15.1' into HEAD
+5246a1d init: Don't run update_sys_usb_config if /data isn't mounted
+19782f6 init: do not load persistent properties from temporary /data
 
    * system/sepolicy/
 3877083 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_system_sepolicy into HEAD
 b498774 Merge branch 'lineage-15.1' into HEAD
+30dd7c9 Hide some denials.
+2f44f11 priv_app: suppress denials for /proc/stat
+2e69a64 Suppress denials for non-API access
+a1a32c8 priv_app: move logspam suppression to core policy
+d7b9926 Suppress denials from sdcardfs (b/67454004)
+fff4270 Allow system_server to update timerslack_ns for hal_audio_default
+9404b36 system_server: allow writing to timerslack_ns
+f49c222 Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+7dc6d1c Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/oneplus/
+a9dc782 msm8998: build libgnsspps from sources
 
    * vendor/rr/
 619b1b4 Merge branch 'oreo' into HEAD
@@ -92,25 +230,18 @@ b498774 Merge branch 'lineage-15.1' into HEAD
 7ac3d95 lineage: qcom: Enable media extensions for all QC devices
 7ee1626 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
 a83e239 apn: Update APNs for MetroPCS
+95778c6 Fix migration from pre-O for AndroidTV devices (2/2)
+07cdc54 Add Nvidia enhancements soong flag
+0cbb815 lineage: qcom: Enable media extensions for all QC devices
+2a75b31 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+9f88309 apn: Update APNs for MetroPCS
 
 ====================
      04-29-2018
 ====================
 
 
-   * build/make/
-14060e5 releasetools: ota_from_target_files: add FullOTA_PostValidate
-02f6b03 build: Remove duplicate zip command
-5f86b3d Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_build into oreo
-
-   * device/qcom/sepolicy/
-03541c8 Escape '.' character
-032115b sepolicy: Remove leftover folders
-
    * frameworks/base/
-56fb9ac Fix auto fill on themes
-9b1f35e Fix migration from pre-O for AndroidTV devices (1/2)
-f623987 SystemUI: Dismiss keyguard on boot if disabled by current profile
 8159111 Extra space..not needed
 ea51989 Allow to quickly open Running Services from QS panel [1/2]
 11d5eb9 Clean-up merge and make small fix
@@ -193,22 +324,16 @@ d513520 NetworkDiagnostics: switch to Cloudflare DNS
 4695fdc SystemUI: Smart Pixels [1/2]
 c78e942 SystemUI: screen-dimmer-pixel-filter
 
-   * frameworks/native/
-41f56a8 Triple the available egl function pointers available to a process for certain Nvidia devices.
-3019fea Handle glGetString returning NULL
-
    * frameworks/opt/telephony/
 982d5ad DcTracker: Change access modifier of isNvSubscription to protected
 
    * hardware/lineage/interfaces/
-724ca6d livedisplay: Fully qualify STL types in headers
-284a9cc livedisplay: Don't assign -1 to uint64_t
-0d40479 livedisplay: SDM: Don't advertise color balance support
 95096b0 livedisplay: Add missing break statement
 65f77a4 livedisplay: Use GetBoolProperty
 
    * hardware/qcom/audio-caf/msm8998/
 7ee810c msm8998: hal: Update ultrasound route hacks
+daba725 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
 
    * kernel/oneplus/msm8996/
 d499e94 Merge tag 'CavalierCoconut' into oreo
@@ -240,13 +365,7 @@ ab3fc66 ext4: don't update checksum of new initialized bitmaps
 48bb699 x86/tsc: Prevent 32bit truncation in calc_hpet_ref()
 a1a9d95 cifs: do not allow creating sockets except with SMB1 posix exensions
 
-   * lineage-sdk/
-c0178e4 LineageBatteryLights: Fix brightness for devices with segmented leds
-547fe4e LineageBatteryLights: Take current user settings into account
-af89b21 LineageBatteryLights: Rename some class members and add more debugging
-
    * packages/apps/Settings/
-31ed359 Settings: Hide Night Mode suggestion if LiveDisplay feature is present
 76c4579 Allow to quickly open Running Services from QS panel [2/2]
 cd65896 DUI Fling: allow to reset options and save/restore actions profile
 0bf7fb5 DUI custom actions: compatibility for Tasker and other activities
@@ -260,45 +379,21 @@ caf27f3 Settings: QS footer visibilities [2/2]
 58140f8 SimSettings: avoid NPE
 2a246ef Settings: SmartPixels [2/2]
 
-   * packages/overlays/Resurrection/
-3a8c489 Fix auto fill on themes
-
    * system/core/
-5246a1d init: Don't run update_sys_usb_config if /data isn't mounted
-19782f6 init: do not load persistent properties from temporary /data
-
-   * system/sepolicy/
-30dd7c9 Hide some denials.
-2f44f11 priv_app: suppress denials for /proc/stat
-2e69a64 Suppress denials for non-API access
-a1a32c8 priv_app: move logspam suppression to core policy
-d7b9926 Suppress denials from sdcardfs (b/67454004)
-fff4270 Allow system_server to update timerslack_ns for hal_audio_default
-9404b36 system_server: allow writing to timerslack_ns
-f49c222 Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
-7dc6d1c Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
-
-   * vendor/oneplus/
-a9dc782 msm8998: build libgnsspps from sources
-
-   * vendor/rr/
-95778c6 Fix migration from pre-O for AndroidTV devices (2/2)
-07cdc54 Add Nvidia enhancements soong flag
-0cbb815 lineage: qcom: Enable media extensions for all QC devices
-2a75b31 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
-9f88309 apn: Update APNs for MetroPCS
+7fbd2ba init: Don't run update_sys_usb_config if /data isn't mounted
+32de60c init: do not load persistent properties from temporary /data
 
 ====================
      04-28-2018
 ====================
 
 
-   * hardware/qcom/audio-caf/msm8998/
-daba725 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
+   * device/oneplus/oneplus3/
+6c5b342 op3: Enable vulkan compute feature
+1381cf5 op3: Properly copy vulkan permission xml
 
-   * system/core/
-7fbd2ba init: Don't run update_sys_usb_config if /data isn't mounted
-32de60c init: do not load persistent properties from temporary /data
+   * vendor/oneplus/
+f0cf6c3 op3: Update blobs from OB35/OB26
 
 ====================
      04-27-2018
@@ -306,15 +401,12 @@ daba725 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
 
 
    * device/oneplus/oneplus3/
-6c5b342 op3: Enable vulkan compute feature
-1381cf5 op3: Properly copy vulkan permission xml
 2a5568c op3: Add config to check data roaming for UT as per CT requirements
 
    * device/rr/sepolicy/
 ea92881 sepolicy: qcom: Allow nfc to read and execute files in /vendor on full treble
 
    * vendor/oneplus/
-f0cf6c3 op3: Update blobs from OB35/OB26
 092bcb5 msm8998: add missing sdm service definitions
 
 ====================
@@ -325,20 +417,6 @@ f0cf6c3 op3: Update blobs from OB35/OB26
    * frameworks/native/
 82b2358 Triple the available egl function pointers available to a process for certain Nvidia devices.
 
-====================
-     04-25-2018
-====================
-
-
-   * device/rr/sepolicy/
-956eaed Revert "sepolicy: suppress denial logspam"
-
-   * frameworks/base/
-76ef8b0 Revert "Fw_base - custom Toast color options (1/2)"
-
-   * frameworks/native/
-e9188d0 Handle glGetString returning NULL
-
    * frameworks/opt/telephony/
 ea4a8e2 Fix Acess modifiers as part of extending ServicestateTracker.
 
@@ -347,16 +425,4 @@ ea4a8e2 Fix Acess modifiers as part of extending ServicestateTracker.
 fc6dd31 usb: bam: Fix a mismerge in 792066798aef2775f13df5a522c35e03a5a9bd7f
 e1570c3 ANDROID: sdcardfs: d_make_root calls iput
 62fa4d9 ANDROID: sdcardfs: Check for private data earlier
-
-   * packages/apps/Settings/
-86b0583 Revert "Settings - custom Toast color options (2/2)"
-
-   * system/sepolicy/
-21d60b8 Hide some denials.
-217abd2 priv_app: suppress denials for /proc/stat
-a5534fe Suppress denials for non-API access
-9b69af1 priv_app: move logspam suppression to core policy
-dec50d7 Suppress denials from sdcardfs (b/67454004)
-d1f40ab Allow system_server to update timerslack_ns for hal_audio_default
-bd7d733 system_server: allow writing to timerslack_ns
 
