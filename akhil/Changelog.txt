@@ -3,7 +3,94 @@
 
 
 ====================
-     05-06-2018
+     05-10-2018
+====================
+
+   * android/
+5ea2644 Switch to our netd fork
+bab0aa4 manifest: android-8.1.0_r20 -> android-8.1.0_r26
+
+   * build/make/
+0ebc1f3 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/base/
+56d96500 base: squash revert some BoostFramework related patches
+25635e9 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * frameworks/native/
+057eef0 Merge branch 'lineage-15.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
+
+   * kernel/xiaomi/msm8956/
+a5a83e1 scripts: wireguard: specify srctree for out of tree builds
+ed28856 net: wireguard: Add tools to import source automatically
+
+   * packages/services/Telephony/
+b998b02 Suspend Actions [2/3]
+eba0616 Merge tag 'android-8.1.0_r26' into lineage-15.1
+
+   * system/core/
+eb6ca2a Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_system_core into HEAD
+
+====================
+     05-09-2018
+====================
+
+
+   * frameworks/av/
+acdef2d Merge tag 'android-8.1.0_r26' into lineage-15.1
+
+   * frameworks/native/
+d20af86 Merge tag 'android-8.1.0_r26' into lineage-15.1
+
+   * hardware/qcom/fm/
+
+   * packages/apps/AudioFX/
+
+   * packages/apps/Dialer/
+
+   * packages/apps/Eleven/
+
+   * packages/apps/FMRadio/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/LockClock/
+
+   * packages/apps/Messaging/
+
+   * packages/apps/Profiles/
+
+   * packages/apps/Recorder/
+
+   * packages/apps/Snap/
+
+   * packages/apps/Terminal/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+   * packages/services/Telephony/
+
+   * system/core/
+ecaa481 Merge tag 'android-8.1.0_r26' into lineage-15.1
+
+====================
+     05-08-2018
+====================
+
+
+   * frameworks/base/
+230be9d Merge remote-tracking branch 'github/oreo' into HEAD
+1a7a860 Add support for getAtr api
+09231de Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
+edb50f1 Revert "Add RR logo to empty recents view"
+
+   * hardware/qcom/bt-caf/
+90fd648 Load bluetooth firmwares from /vendor
+
+====================
+     05-07-2018
 ====================
 
 
@@ -17,12 +104,29 @@ f09f20a Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 356caf3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
    * frameworks/base/
+a504d40 Merge pull request #224 from shahan-mik3/oreo
+3c27e73 Pulse: Add bar animation smoothing [1/3]
+
+   * frameworks/opt/telephony/
+7deaa90 TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater
+2f295af Add support of new HIDL service
+
+   * packages/apps/DUI/
+552e047 Pulse: Add bar animation smoothing [2/3]
 
    * packages/apps/Settings/
+cd0ff10 Pulse: Add bar animation smoothing [3/3]
+2940121 Add Edge Gestures and smart pixels to nav layout
+6120ab3 Add edge gestures (2/2)
 
    * vendor/rr/
 9507693 prebuilts: Fix Telfort apn
 2922c35 apns: updated entries for Koodo
+
+====================
+     05-06-2018
+====================
+
 
 ====================
      05-05-2018
@@ -33,274 +137,4 @@ f09f20a Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
      05-04-2018
 ====================
 
-
-====================
-     05-03-2018
-====================
-
-
-   * kernel/oneplus/msm8996/
-550f3ac Merge tag 'CadaverousCherry' into oreo
-a500afa Merge tag 'v3.18.108' into XOS-8.1
-6d05aad Linux 3.18.108
-36af635 Revert "perf tests: Decompress kernel module before objdump"
-bdf3b71 libceph: validate con->state at the top of try_write()
-c829ba0 ASoC: fsl_esai: Fix divisor calculation failure at lower ratio
-c55d649 scsi: sd: Defer spinning up drive while SANITIZE is in progress
-b249736 kobject: don't use WARN for registration failures
-2365af7 mtd: cfi: cmdset_0002: Do not allow read/write to suspend erase block.
-6ad4bee mtd: cfi: cmdset_0001: Workaround Micron Erase suspend bug.
-51f8a19 mtd: cfi: cmdset_0001: Do not allow read/write to suspend erase block.
-2616aad ALSA: seq: oss: Fix unbalanced use lock for synth MIDI device
-cd85ad1 ALSA: core: Report audio_tstamp in snd_pcm_sync_ptr
-31473a9 tty: Use __GFP_NOFAIL for tty_ldisc_get()
-3f44674 tty: n_gsm: Fix DLCI handling for ADM mode if debug & 2 is not set
-ffebfe6 tty: n_gsm: Fix long delays with control frame timeouts in ADM mode
-d2bbfac virtio_console: free buffers after reset
-86e4c09 virtio: add ability to iterate over vqs
-f59e0c3 ALSA: usb-audio: Skip broken EU on Dell dock USB-audio
-9dfbd45 USB: Increment wakeup count on remote wakeup.
-5815b85 usb: core: Add quirk for HP v222w 16GB Mini
-a67a3e7 USB: serial: cp210x: add ID for NI USB serial console
-915224d USB: serial: ftdi_sio: use jtag quirk for Arrow USB Blaster
-6246535 usbip: vhci_hcd: Fix usb device and sockfd leaks
-617d7a4 usbip: usbip_host: fix to hold parent lock for device_attach() calls
-2cb5c55 ext4: fix bitmap position validation
-0643dbd ext4: add validity checks for bitmap block numbers
-d0800f6 ext4: set h_journal if there is a failure starting a reserved handle
-
-   * packages/apps/Dialer/
-19ece21 Control dialer's incoming call proximity sensor check via an overlay
-
-   * packages/apps/Settings/
-0dbc51c Change LG G3 maintainer
-
-====================
-     05-02-2018
-====================
-
-
-   * device/xiaomi/kenzo/
-59e64a7 kenzo: RR bringup
-
-   * frameworks/av/
-23619ba Camera: check metadata type before releasing frame
-
-   * frameworks/base/
-b2145df SystemUI: fix build after a90d449c4c7cd55cc45205137f7ba6c4b2edfeba
-
-   * packages/apps/Settings/
-9ff6c73 Merge remote-tracking branch 'github/oreo' into oreo
-11d7d5a Settings: Move substratum strings to right place (#947)
-9704e07 Add Samsung A5 2017 & A7 2017 (a[5,7]y17lte) (#953)
-683a066 Add Redmi 4A (rolex) (#955)
-
-   * system/vold/
-d02caf8 Workaround perdev_minors path change in Linux
-
-====================
-     05-01-2018
-====================
-
-
-   * device/oneplus/oneplus3/
-3ec06c1 op3: Remove default color temperature override
-
-   * device/qcom/sepolicy/
-2714c02 legacy: Fix more msm8916 perfd denials
-
-   * device/xiaomi/kenzo/
-3bc87a0 kenzo: track lineage-15.1 branch for vendor
-cb4d345 kenzo: track own kernel repository
-680f774 kenzo: update dependencies
-30ff81b kenzo: Change kernel branch
-a46e602 kenzo: update dependencies
-bbe3720 kenzo: update dependencies
-dc5086c kenzo: button backlight and hwkeys stuff
-0187ce0 kenzo: add dependencies
-290ce90 kenzo: AOSiP bringup
-8fe9dfb kenzo: show correct charging current value on lockscreen
-
-   * frameworks/av/
-8367360 libstagefright: Add more sample rates for FLAC
-
-   * frameworks/base/
-ba62014 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
-
-   * hardware/lineage/interfaces/
-6945c7d livedisplay: Make hsic structs internal
-f9ce129 livedisplay: Don't unnecessarily call new
-67f1d5a livedisplay: Move SDMController helper functions to anonymous namespace
-3df1fcd livedisplay: Move Color helper functions to anonymous namespace
-46a6cf1 livedisplay: Avoid useless sprintf
-0fc93fd livedisplay: Replace defines with enums and constexpr
-aeb3428 livedisplay: Switch to stream.fail
-f747017 livedisplay: Avoid 'using ::std' in Utils
-98adb03 livedisplay: Remove unused exists helper function
-
-   * packages/apps/Settings/
-341f816 Merge remote-tracking branch 'bdogg718k/oreo' into oreo
-356ba2a Change Mi 5s maintainer (#941)
-
-   * vendor/qcom/opensource/cryptfs_hw/
-5292f9b cryptfs_hw: add missing logging tag
-
-====================
-     04-30-2018
-====================
-
-
-   * build/make/
-f8d9a1f Merge remote-tracking branch 'rr/oreo' into HEAD
-53154ba releasetools: ota_from_target_files: add FullOTA_PostValidate
-e4d09f3 build: Remove duplicate zip command
-
-   * device/oneplus/oneplus3/
-30ef34e Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/qcom/sepolicy/
-43a2cc0 Merge remote-tracking branch 'rr/oreo' into oreo
-59c5667 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/rr/sepolicy/
-05ada16 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/xiaomi/kenzo/
-b5fc335 kenzo: remove shims
-bdb63e8 [dnm] kenzo: Remove sepolicy
-94120e4 kenzo: Set build fingerprint instead of overriding it
-70bb320 Revert "Revert "kenzo: Drop fp wrapper to dynamically select fp HAL""
-9bf848c kenzo: Update for oreo
-7eb92ee kenzo: audio: Add speaker + bt-sco combo device
-3d1bd25 kenzo: bluetooth: Force disable sco enhanced sync commands
-b21d0bc kenzo: copy audio configs to vendor
-53ec254 Revert "kenzo: Drop fp wrapper to dynamically select fp HAL"
-53c60f4 kenzo: copy hals. conf to vendor
-00e2798 kenzo: decommonize thermal libs
-6381d7a kenzo: inherit common_full_phone from vendor/lineage
-e6abebc kenzo: Remove unused acdb files
-8d56ce7 kenzo: Add time service blobs
-914afaa kenzo: Remove modem assert
-
-   * device/xiaomi/msm8956-common/
-799dec7 [dnm] msm8956: selinux permissive
-be2d565 msm8956: use binderized aw2013 hal and livedisplay hal
-25f0a52 msm8956: Add custom biometrics to fix goodix fpsensor
-e893f6c msm8956: convert audio_effects.conf to audio_effects.xml
-7085465 msm8956: remove deprecated flag
-fb60fdc msm8956 Doze: Build with AAPT2
-5353c5b msm8956: Doze: Re-integrate into Settings
-8886477 msm8956: Doze: Apply LineageOS rebrand
-008467e msm8956: Doze: Hide features if unsupported
-0703714 msm8956: Doze: Require non-wake up proximity sensor
-04c03d3 msm8956: Doze: Refactor
-af80471 msm8956: Doze: Perform operations as current user
-9316904 msm8956: doze: Protect com.android.systemui.doze.pulse
-c4db6c2 msm8956: doze: Set different timings for wave and pocket detection
-274ce6b msm8956: doze: Cleanup
-f9126d8 msm8956: Use MIUI poweroff charging animation
-a20ebde mido: Add dummy android.hidl.manager@1.0
-2e0f454 msm8956: Nuke BOARD_USES_QC_TIME_SERVICES flag
-72cdf61 msm8956: build textclassifier
-f4a958e msm8956: Build a dummy android.hidl.base@1.0 for Oreo blobs
-b4f2e04 msm8956: update overlays
-f9c1997 msm8956: Update prop for oreo
-2c2f7a7 msm8956: add slpi symlinks
-18b5651 msm8956: Update RFS symlinks
-e97bb53 msm8956: Enable config_dynamic_bind_ims
-a3e74c4 msm8956: lineagehw: Apply LineageOS rebrand
-9fa54f8 msm8956-common: init: update for 8.1
-a622fba msm8956: camera: Add libgui as shared library
-fe759f1 msm8956: camera: mm-camera-interface: Camera Daemon late start issue fix
-0ddbc7a Camera2:HAL1:fix HAL1 callback cookie 1. fix HAL1 memory callback cookie for Treble change 2. remove checking for VANILLA_HAL definition for O upgrade now    for initial bring up, until the removal of the TARGET_USE_AOSP    flag in devie mkfile.
-df1f745 msm8956: camera: Added LOCAL_VENDOR_MODULE to set output path of the binaries
-7e7745c msm8956: camera: Vendor Seperation
-56f3266 msm8956: fix camera Build
-638a217 msm8956: Add initila manifest and compatibility_matrix
-5104dc5 msm8956: Switch to config.fs
-1faeb22 msm8956: Update configs
-0068793 msm8956: Clean media profiles for aosp
-1987d2a msm8956: Update data-ipa-cfg-mgr
-87d0fd0 msm8956: gps: Clean up and remove useless autoconf scripts
-7754aa3 msm8956: update gps hal
-ba00526 msm8956: update blob list
-66ecada msm8956: Add hidl packages and their dependency
-bcd2b8b msm8956: Update rootdir from caf
-8b5505a msm8956: Update extraction tools to match latest template
-
-   * frameworks/base/
-43ead6d Merge pull request #1 from bdogg718k/oreo-markup
-a90d449 finally fix up source for good
-11aafaf Revert "Ambient and statusbar media tickers: code fixes and improvements"
-a00ee6e Revert "Clean-up merge and make small fix"
-8112a3e Revert "Extra space..not needed"
-a0b58a8 Revert "fix some derps"
-c491361 fix some derps
-cdc0a59 Choose a custom editor app for screenshot notification edit button [1/2]
-d0cab38 Screenshot: add "Markup" edit action support
-
-   * frameworks/native/
-ed729d1 Merge branch 'oreo' of https://github.com/ResurrectionRemix/frameworks_native into oreo
-ebc6433 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * hardware/lineage/interfaces/
-0d11531 livedisplay: Make ColorBackend a regular object
-
-   * kernel/oneplus/msm8996/
-310e70b caesium_defconfig: Enable CONFIG_THERMAL_MONITOR_SIMPLE
-6739004 msm: thermal: simple: Fix incorrect notifier priority
-6adb7f9 msm: thermal: simple: Clean up preprocessor defines
-cbe569a msm: thermal: simple: Clean up ugly for loop
-ef19610 msm: thermal: simple: Ensure validate_cpu_freq() only uses valid freqs
-637adb4 msm: thermal: simple: Dynamically generate thermal zone sysfs nodes
-291d7b2 msm: thermal: simple: Restore the user's maxfreq after throttling
-c0aed97 msm: thermal: simple: Make get_valid_cpufreq() usage hotplug-safe
-189a262 msm: thermal: simple: Make worker and notifier logic more robust
-6e1cf04 msm: thermal: simple: Remove user_maxfreq feature
-48a8d00 msm: thermal: simple: Fix checkpatch.pl warnings and errors
-6ae5dfb msm: thermal: simple: Validate throttle frequencies
-282fd7e msm: thermal: simple: Increase max. number of thermal zones to 12
-7158142 msm: thermal: simple: Add support for individual freqs per cluster
-daf682f msm: thermal: simple: Remove WQ_NON_REENTRANT
-7b1b996 msm: thermal: simple: Fix lack of throttling when temp suddenly jumps
-2086214 msm: thermal: simple: Remove unnecessary continue
-2cc9f3c msm: thermal: simple: Use fixed-width integer types for local variables
-43cd3cd msm: thermal: simple: Add support for 8 thermal throttle zones
-c3c7c5f msm: thermal: simple: Refactor code style
-8f06813 msm: thermal: simple: Set minfreq to maxfreq if minfreq > maxfreq
-0fe11c1 msm: thermal: simple: Remove inefficient code
-e2dc9ac msm: thermal: simple: Use VADC device for temperature polling
-bbe98cb msm: thermal: simple: Clean up some variable naming
-d0490a0 msm: thermal: simple: Add sysfs node to manually control maxfreq
-0309aee msm: thermal: simple: Remove unnecessary check
-46c856a0 thermal: msm: simple: Clean up 'enabled' sysfs node
-a83673f thermal: msm: simple: Fix on/off switch
-cb75779 thermal: Add simple standalone MSM thermal solution
-0bdff19 cpufreq_interactive: Fixup screen_off_max disable
-449b9ba Revert "misc: Update from OB32/OB23 kernel source"
-
-   * packages/apps/Settings/
-528dd90 Add Redmi Note 5 Pro (Whyred)
-c4c1f90 Merge pull request #1 from bdogg718k/oreo-markup
-2bd2495 fix ANOTHER derp
-e81a0de Choose a custom editor app for screenshot notification edit button [2/2]
-
-   * system/core/
-19ec7aa Merge branch 'oreo' of https://github.com/ResurrectionRemix/system_core into HEAD
-2e64d40 Merge branch 'lineage-15.1' into HEAD
-
-   * system/sepolicy/
-3877083 Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_system_sepolicy into HEAD
-b498774 Merge branch 'lineage-15.1' into HEAD
-
-   * vendor/rr/
-619b1b4 Merge branch 'oreo' into HEAD
-480bf41 Fix migration from pre-O for AndroidTV devices (2/2)
-7f6970a Add Nvidia enhancements soong flag
-7ac3d95 lineage: qcom: Enable media extensions for all QC devices
-7ee1626 soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
-a83e239 apn: Update APNs for MetroPCS
-
-   * vendor/xiaomi/
-04047e7 Initial kenzo and msm8956-common
 
