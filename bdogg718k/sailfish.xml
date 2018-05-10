@@ -2,23 +2,23 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <sailfish>
-<Filename>RR-O-v6.0.0-20180318-sailfish-Official.zip</Filename>
+<Filename>RR-O-v6.0.0-20180507-sailfish-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/pixelXL/RR-O-v6.0.0-20180318-sailfish-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/pixel/RR-O-v6.0.0-20180507-sailfish-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
-  description="Download a Build">http://downloads.resurrectionremix.com/pixelXL/</BuildUrl>
+  description="Download a Build">http://downloads.resurrectionremix.com/pixel/</BuildUrl>
 <VendorImgsUrl
   id="vendor.imgs"
   title="Vendor.imgs"
-  description="Download latest vendor image">https://drive.google.com/file/d/1x3A6SgCsf1q866BJr_tg392V978a6cUB/view?usp=sharing</VendorImgsUrl>
+  description="Download latest vendor image">https://drive.google.com/file/d/110992fqoIi-dOs0bEpyn1PnXkPwb4gw8/view?usp=sharing</VendorImgsUrl>
 <GAppsUrl
   id="GApps"
   title="Open GApps"
-  description="Download Open GApps">https://opengapps.org</GAppsUrl>
+  description="Download Open GApps">https://androidfilehost.com/?fid=890129502657594387</GAppsUrl>
 <ChangelogUrl
   id="changelog"
   title="Changelog"
