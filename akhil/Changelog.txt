@@ -39,9 +39,6 @@ fd66371 apns: Adjust MetroPCS apn to allow USB tether
    * packages/apps/Settings/
 a715a94 fix of the fall of Settings when the screen is rotated, if we are in STATUS BAR - Network traffic.
 
-   * vendor/xiaomi/
-f0477ee tissot: Update blobs
-
 ====================
      05-11-2018
 ====================
@@ -67,6 +64,9 @@ eb6ca2a Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_system
 
    * system/netd/
 7bb7576 [3/3] NetD : Allow passing in interface names for wifi/data app restriction
+
+   * vendor/xiaomi/
+f0477ee tissot: Update blobs
 
 ====================
      05-10-2018
