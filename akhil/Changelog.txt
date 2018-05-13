@@ -3,7 +3,47 @@
 
 
 ====================
-     05-10-2018
+     05-13-2018
+====================
+
+
+   * build/make/
+b63dc82 Move away from USE_HOST flag and introduce $BINARY_EXEC
+
+   * build/soong/
+aa31b02 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * frameworks/base/
+11bbe52 Merge pull request #227 from alex9yust/oreo
+
+   * hardware/lineage/interfaces/
+2536667 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+
+   * packages/apps/Dialer/
+85c8704 Show proper call duration
+
+   * vendor/rr/
+f65745c apn: Fix typo in Rogers roaming protocol
+fd66371 apns: Adjust MetroPCS apn to allow USB tether
+0dafaa1 lineage: Remove FFmpeg plugin remnants
+
+====================
+     05-12-2018
+====================
+
+
+   * frameworks/base/
+1fcd8e2 setting the correct value for Control ringtone volume after reboot.
+0053d47 fix sleepless kernel mWakefulness may be ASLEEP, DREAMING and DOZING for sleep. but checked only ASLEEP.
+
+   * packages/apps/Settings/
+a715a94 fix of the fall of Settings when the screen is rotated, if we are in STATUS BAR - Network traffic.
+
+   * vendor/xiaomi/
+f0477ee tissot: Update blobs
+
+====================
+     05-11-2018
 ====================
 
    * android/
@@ -14,28 +54,22 @@ bab0aa4 manifest: android-8.1.0_r20 -> android-8.1.0_r26
 0ebc1f3 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/build into HEAD
 
    * frameworks/base/
-c1b3ea1 base: fix deep sleep
-56d96500 base: squash revert some BoostFramework related patches
 25635e9 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD
 
    * frameworks/native/
 057eef0 Merge branch 'lineage-15.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
-   * hardware/lineage/interfaces/
-655ecf5 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
-
-   * packages/apps/Dialer/
-847f4c3 Show proper call duration
-
    * packages/services/Telephony/
 b998b02 Suspend Actions [2/3]
-eba0616 Merge tag 'android-8.1.0_r26' into lineage-15.1
 
    * system/core/
 eb6ca2a Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_system_core into HEAD
 
+   * system/netd/
+7bb7576 [3/3] NetD : Allow passing in interface names for wifi/data app restriction
+
 ====================
-     05-09-2018
+     05-10-2018
 ====================
 
 
@@ -43,19 +77,16 @@ eb6ca2a Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_system
 a5a83e1 scripts: wireguard: specify srctree for out of tree builds
 ed28856 net: wireguard: Add tools to import source automatically
 
+   * packages/services/Telephony/
+eba0616 Merge tag 'android-8.1.0_r26' into lineage-15.1
+
 ====================
-     05-08-2018
+     05-09-2018
 ====================
 
 
    * frameworks/av/
 acdef2d Merge tag 'android-8.1.0_r26' into lineage-15.1
-
-   * frameworks/base/
-230be9d Merge remote-tracking branch 'github/oreo' into HEAD
-1a7a860 Add support for getAtr api
-09231de Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-edb50f1 Revert "Add RR logo to empty recents view"
 
    * frameworks/native/
 d20af86 Merge tag 'android-8.1.0_r26' into lineage-15.1
@@ -94,9 +125,35 @@ d20af86 Merge tag 'android-8.1.0_r26' into lineage-15.1
 ecaa481 Merge tag 'android-8.1.0_r26' into lineage-15.1
 
 ====================
+     05-08-2018
+====================
+
+
+   * frameworks/base/
+230be9d Merge remote-tracking branch 'github/oreo' into HEAD
+1a7a860 Add support for getAtr api
+09231de Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
+edb50f1 Revert "Add RR logo to empty recents view"
+
+   * hardware/qcom/bt-caf/
+90fd648 Load bluetooth firmwares from /vendor
+
+====================
      05-07-2018
 ====================
 
+
+   * build/make/
+be25f12 core: config: Use host flex if requested
+
+   * build/soong/
+cbaad37 Allow providing flex and bison binaries
+
+   * device/oneplus/oneplus3/
+f09f20a Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * device/qcom/sepolicy/
+356caf3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
 
    * frameworks/base/
 a504d40 Merge pull request #224 from shahan-mik3/oreo
@@ -106,9 +163,6 @@ a504d40 Merge pull request #224 from shahan-mik3/oreo
 7deaa90 TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater
 2f295af Add support of new HIDL service
 
-   * hardware/qcom/bt-caf/
-90fd648 Load bluetooth firmwares from /vendor
-
    * packages/apps/DUI/
 552e047 Pulse: Add bar animation smoothing [2/3]
 
@@ -117,35 +171,7 @@ cd0ff10 Pulse: Add bar animation smoothing [3/3]
 2940121 Add Edge Gestures and smart pixels to nav layout
 6120ab3 Add edge gestures (2/2)
 
-====================
-     05-06-2018
-====================
-
-
-   * build/make/
-be25f12 core: config: Use host flex if requested
-
-   * device/oneplus/oneplus3/
-f09f20a Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/qcom/sepolicy/
-356caf3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-
-   * packages/apps/Settings/
-
    * vendor/rr/
 9507693 prebuilts: Fix Telfort apn
 2922c35 apns: updated entries for Koodo
-
-====================
-     05-05-2018
-====================
-
-
-====================
-     05-04-2018
-====================
-
 
