@@ -3,175 +3,115 @@
 
 
 ====================
-     05-13-2018
+     05-20-2018
 ====================
 
 
-   * build/make/
-b63dc82 Move away from USE_HOST flag and introduce $BINARY_EXEC
+   * device/oneplus/oneplus3/
+6f68a54 Merge branch 'lineage-15.1' into HEAD
 
-   * build/soong/
-aa31b02 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+   * device/xiaomi/kenzo/
+340652e kenzo: disable sco enahnced command
 
    * frameworks/base/
-11bbe52 Merge pull request #227 from alex9yust/oreo
+528873d Merge pull request #229 from shahan-mik3/oreo
 
-   * hardware/lineage/interfaces/
-2536667 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
-
-   * packages/apps/Dialer/
-85c8704 Show proper call duration
-
-   * vendor/rr/
-f65745c apn: Fix typo in Rogers roaming protocol
-fd66371 apns: Adjust MetroPCS apn to allow USB tether
-0dafaa1 lineage: Remove FFmpeg plugin remnants
-
-====================
-     05-12-2018
-====================
-
-
-   * frameworks/base/
-1fcd8e2 setting the correct value for Control ringtone volume after reboot.
-0053d47 fix sleepless kernel mWakefulness may be ASLEEP, DREAMING and DOZING for sleep. but checked only ASLEEP.
+   * lineage-sdk/
+11efd13 Merge pull request #1 from shahan-mik3/oreo
 
    * packages/apps/Settings/
-a715a94 fix of the fall of Settings when the screen is rotated, if we are in STATUS BAR - Network traffic.
+2335144 Merge pull request #961 from shahan-mik3/oreo
 
 ====================
-     05-11-2018
+     05-19-2018
+====================
+
+
+   * packages/apps/Gallery2/
+1a8915f Add new rule about watermark
+
+====================
+     05-18-2018
+====================
+
+
+   * frameworks/base/
+d256dc8 Add an option to force pre-O apps to use full screen aspect ratio
+
+   * lineage-sdk/
+9e46c31 sdk: Add an option to force pre-O apps to use full screen aspect ratio
+
+   * packages/apps/Settings/
+58b9158 Settings: Add an option to force pre-O apps to use full screen aspect ratio
+
+====================
+     05-17-2018
+====================
+
+
+   * packages/apps/Settings/
+c4edc55 Add Samsung A3 2017
+
+====================
+     05-16-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+71ec784 Revert "op3: Adjust lmk parameters"
+
+   * frameworks/opt/telephony/
+b30f20a Don't assume 3GPP as active app on CDMA with LTE device
+
+   * kernel/oneplus/msm8996/
+e543a3d Merge tag 'TitillatingTangerine' into oreo
+bbd633a Merge tag 'v3.18.109' into XOS-8.1
+7eac0d4 Linux 3.18.109
+3c320b0 tracing/uprobe_event: Fix strncpy corner case
+3d9c108 can: kvaser_usb: Increase correct stats counter in kvaser_usb_rx_can_msg()
+30041c8 tracing: Fix regex_match_front() to not over compare the test string
+e496070 libata: Apply NOLPM quirk for SanDisk SD7UB3Q*G1001 SSDs
+ee39500 rfkill: gpio: fix memory leak in probe error path
+a24bce4 tcp: fix TCP_REPAIR_QUEUE bound checking
+d55b31c perf: Remove superfluous allocation error check
+03e5211 soreuseport: initialise timewait reuseport field
+fbbbfa5 net: fix uninit-value in __hw_addr_add_ex()
+471a441 net: initialize skb->peeked when cloning
+dd0306f net: fix rtnh_ok()
+24e7995 netlink: fix uninit-value in netlink_sendmsg
+7c6b9b5 usb: musb: host: fix potential NULL pointer dereference
+98db87d USB: serial: visor: handle potential invalid device configuration
+613ac78 NET: usb: qmi_wwan: add support for ublox R410M PID 0x90b2
+fe73842 RDMA/mlx5: Protect from shift operand overflow
+b73892f ALSA: aloop: Add missing cable lock to ctl API callbacks
+a69e608 ALSA: aloop: Mark paused device as inactive
+2937092 ALSA: seq: Fix races at MIDI encoding in snd_virmidi_output_trigger()
+f92cb23 ALSA: pcm: Check PCM state at xfern compat ioctl
+a4e89ef perf session: Fix undeclared 'oe'
+2e9cbae perf/core: Fix the perf_cpu_time_max_percent check
+a88e99b percpu: include linux/sched.h for cond_resched()
+
+   * packages/overlays/Resurrection/
+c69789c Merge pull request #1 from mcdachpappe/blacktheme
+
+====================
+     05-15-2018
+====================
+
+
+   * external/json-c/
+6aa3e16 libjson: Remove dependency on kernel headers
+
+   * vendor/oneplus/
+a685893 oneplus2: Hex-edit sound trigger blob correctly
+
+====================
+     05-14-2018
 ====================
 
    * android/
-5ea2644 Switch to our netd fork
-bab0aa4 manifest: android-8.1.0_r20 -> android-8.1.0_r26
+7f32855 Addd bc to the list of required packages (#120)
 
-   * build/make/
-0ebc1f3 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/build into HEAD
-
-   * frameworks/base/
-25635e9 Merge tag 'android-8.1.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD
-
-   * frameworks/native/
-057eef0 Merge branch 'lineage-15.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
-   * packages/services/Telephony/
-b998b02 Suspend Actions [2/3]
-
-   * system/core/
-eb6ca2a Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_system_core into HEAD
-
-   * system/netd/
-7bb7576 [3/3] NetD : Allow passing in interface names for wifi/data app restriction
-
-   * vendor/xiaomi/
-f0477ee tissot: Update blobs
-
-====================
-     05-10-2018
-====================
-
-
-   * kernel/xiaomi/msm8956/
-a5a83e1 scripts: wireguard: specify srctree for out of tree builds
-ed28856 net: wireguard: Add tools to import source automatically
-
-   * packages/services/Telephony/
-eba0616 Merge tag 'android-8.1.0_r26' into lineage-15.1
-
-====================
-     05-09-2018
-====================
-
-
-   * frameworks/av/
-acdef2d Merge tag 'android-8.1.0_r26' into lineage-15.1
-
-   * frameworks/native/
-d20af86 Merge tag 'android-8.1.0_r26' into lineage-15.1
-
-   * hardware/qcom/fm/
-
-   * packages/apps/AudioFX/
-
-   * packages/apps/Dialer/
-
-   * packages/apps/Eleven/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/Gallery2/
-
-   * packages/apps/LockClock/
-
-   * packages/apps/Messaging/
-
-   * packages/apps/Profiles/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/Snap/
-
-   * packages/apps/Terminal/
-
-   * packages/inputmethods/LatinIME/
-
-   * packages/providers/DownloadProvider/
-
-   * packages/services/Telephony/
-
-   * system/core/
-ecaa481 Merge tag 'android-8.1.0_r26' into lineage-15.1
-
-====================
-     05-08-2018
-====================
-
-
-   * frameworks/base/
-230be9d Merge remote-tracking branch 'github/oreo' into HEAD
-1a7a860 Add support for getAtr api
-09231de Merge branch 'oreo' of https://github.com/ResurrectionRemix/android_frameworks_base into oreo
-edb50f1 Revert "Add RR logo to empty recents view"
-
-   * hardware/qcom/bt-caf/
-90fd648 Load bluetooth firmwares from /vendor
-
-====================
-     05-07-2018
-====================
-
-
-   * build/make/
-be25f12 core: config: Use host flex if requested
-
-   * build/soong/
-cbaad37 Allow providing flex and bison binaries
-
-   * device/oneplus/oneplus3/
-f09f20a Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * device/qcom/sepolicy/
-356caf3 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
-
-   * frameworks/base/
-a504d40 Merge pull request #224 from shahan-mik3/oreo
-3c27e73 Pulse: Add bar animation smoothing [1/3]
-
-   * frameworks/opt/telephony/
-7deaa90 TelephonyComponentFactory: Overload makeSubscriptionInfoUpdater
-2f295af Add support of new HIDL service
-
-   * packages/apps/DUI/
-552e047 Pulse: Add bar animation smoothing [2/3]
-
-   * packages/apps/Settings/
-cd0ff10 Pulse: Add bar animation smoothing [3/3]
-2940121 Add Edge Gestures and smart pixels to nav layout
-6120ab3 Add edge gestures (2/2)
-
-   * vendor/rr/
-9507693 prebuilts: Fix Telfort apn
-2922c35 apns: updated entries for Koodo
+   * vendor/oneplus/
+270ac23 oneplus2: Move bluetooth firmware to /vendor/firmware
 
