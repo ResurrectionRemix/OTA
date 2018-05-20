@@ -10,11 +10,17 @@
    * device/oneplus/oneplus3/
 6f68a54 Merge branch 'lineage-15.1' into HEAD
 
+   * device/rr/sepolicy/
+c5c81f9 sepolicy: Label aw2013 HIDL light HAL
+
    * device/xiaomi/kenzo/
 340652e kenzo: disable sco enahnced command
 
    * frameworks/base/
 528873d Merge pull request #229 from shahan-mik3/oreo
+
+   * hardware/lineage/interfaces/
+d9c8119 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
 
    * lineage-sdk/
 11efd13 Merge pull request #1 from shahan-mik3/oreo
@@ -102,9 +108,6 @@ c69789c Merge pull request #1 from mcdachpappe/blacktheme
    * external/json-c/
 6aa3e16 libjson: Remove dependency on kernel headers
 
-   * vendor/oneplus/
-a685893 oneplus2: Hex-edit sound trigger blob correctly
-
 ====================
      05-14-2018
 ====================
@@ -113,5 +116,6 @@ a685893 oneplus2: Hex-edit sound trigger blob correctly
 7f32855 Addd bc to the list of required packages (#120)
 
    * vendor/oneplus/
+a685893 oneplus2: Hex-edit sound trigger blob correctly
 270ac23 oneplus2: Move bluetooth firmware to /vendor/firmware
 
