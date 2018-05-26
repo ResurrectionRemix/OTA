@@ -7,7 +7,13 @@
 ====================
 
 
+   * device/rr/sepolicy/
+b3cfa88 sepolicy: Label aw2013 HIDL light HAL
+
    * frameworks/base/
+
+   * hardware/lineage/interfaces/
+ff7e193 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
 
    * kernel/oneplus/msm8996/
 dd4d167 Merge tag 'HumongousHuckleberry' into oreo
