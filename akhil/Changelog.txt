@@ -3,15 +3,108 @@
 
 
 ====================
-     05-20-2018
+     05-26-2018
+====================
+
+
+   * frameworks/base/
+
+   * kernel/oneplus/msm8996/
+dd4d167 Merge tag 'HumongousHuckleberry' into oreo
+fdef609 Merge tag 'v3.18.110' into XOS-8.1
+b87af3a Linux 3.18.110
+b233cc9 x86/kexec: Avoid double free_page() upon do_kexec_load() failure
+f9322eb hfsplus: stop workqueue when fill_super() failed
+a77831e cfg80211: limit wiphy names to 128 bytes
+58b7ce6 scsi: sg: allocate with __GFP_ZERO in sg_build_indirect()
+badf15c scsi: libsas: defer ata device eh commands to libata
+f7a4463 ext2: fix a block leak
+8561164 tcp: purge write queue in tcp_connect_init()
+332d1b9 net: test tailroom before appending to linear skb
+21bcf30 ARM: 8772/1: kprobes: Prohibit kprobes on get_user functions
+e5f28fe tick/broadcast: Use for_each_cpu() specially on UP kernels
+8414385 ARM: 8771/1: kprobes: Prohibit kprobes on do_undefinstr
+56bd852 efi: Avoid potential crashes, fix the 'struct efi_pci_io_protocol_32' definition for mixed mode
+4ef8259 powerpc/powernv: Fix NVRAM sleep in invalid context when crashing
+f7b7273 tracing/x86/xen: Remove zero data size trace events trace_xen_mmu_flush_tlb{_all}
+dc64981 powerpc: Don't preempt_disable() in show_cpuinfo()
+8bfbeb8 ALSA: control: fix a redundant-copy issue
+4caf3f0 ALSA: usb: mixer: volume quirk for CM102-A+/102S+
+41585e8 usbip: usbip_host: fix bad unlock balance during stub_probe()
+d1641e5 usbip: usbip_host: fix NULL-ptr deref and use-after-free errors
+d0f35e2 usbip: fix error handling in stub_probe()
+3d355e2 usbip: usbip_host: run rebind from exit when module is removed
+55c9990 usbip: usbip_host: delete device from busid_table after rebind
+72f8ba7 usbip: usbip_host: refine probe and disconnect debug msgs to be useful
+9535063 kernel/exit.c: avoid undefined behaviour when calling wait4()
+46736d5 pipe: cap initial pipe capacity according to pipe-max-size limit
+8ef1995 l2tp: revert "l2tp: fix missing print session offset info"
+50a8b06 Revert "ARM: dts: imx6qdl-wandboard: Fix audio channel swap"
+a92d857 lockd: lost rollback of set_grace_period() in lockd_down_net()
+5adf47b qmi_wwan: do not steal interfaces from class drivers
+6723603 sctp: delay the authentication for the duplicated cookie-echo chunk
+c0b1359 sctp: fix the issue that the cookie-ack with auth can't get processed
+7081fa7 tcp: ignore Fast Open on repair mode
+954db9a bonding: do not allow rlb updates to invalid mac
+3293c85 tg3: Fix vunmap() BUG_ON() triggered from tg3_free_consistent().
+defbbf4 sctp: use the old asoc when making the cookie-ack chunk in dupcook_d
+2e7d9d7 r8169: fix powering up RTL8168h
+cd38252 net: support compat 64-bit time in {s,g}etsockopt
+8beff8d net_sched: fq: take care of throttled flows before reuse
+0a754ea net/mlx4_en: Verify coalescing parameters are in range
+7ac9e8f net: ethernet: sun: niu set correct packet size in skb
+018c802 llc: better deal with too small mtu
+fb10481 ipv4: fix memory leaks in udp_sendmsg, ping_v4_sendmsg
+7eaa949 dccp: fix tasklet usage
+32037ab bridge: check iface upper dev when setting master via ioctl
+683e952 8139too: Use disable_irq_nosync() in rtl8139_poll_controller()
+
+   * packages/apps/Settings/
+
+====================
+     05-25-2018
+====================
+
+
+   * kernel/oneplus/msm8996/
+8d03908 UPSTREAM: arm64: make label allocation style consistent in tishift
+73d2ad4 UPSTREAM: arm64: Implement __lshrti3 library function
+4b3aee8 BACKPORT: arm64: support __int128 on gcc 5+
+9f3d083 arm64: strcmp: align to 64B cache line
+4b24d8b UPSTREAM: kernel/signal.c: avoid undefined behaviour in kill_something_info
+
+====================
+     05-24-2018
+====================
+
+
+   * hardware/lineage/lineagehw/
+76982bf lineagehw: Introduce Reader mode backend
+
+   * vendor/oneplus/
+e0fd1fe op3: Update blobs from OB36/OB27
+
+====================
+     05-23-2018
+====================
+
+
+   * vendor/xiaomi/
+2e84125 msm8953-common: move thermal config to common tree
+c607643 msm8953-common: Add missing vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
+
+====================
+     05-22-2018
+====================
+
+
+====================
+     05-21-2018
 ====================
 
 
    * device/oneplus/oneplus3/
 6f68a54 Merge branch 'lineage-15.1' into HEAD
-
-   * device/rr/sepolicy/
-c5c81f9 sepolicy: Label aw2013 HIDL light HAL
 
    * device/xiaomi/kenzo/
 340652e kenzo: disable sco enahnced command
@@ -19,103 +112,29 @@ c5c81f9 sepolicy: Label aw2013 HIDL light HAL
    * frameworks/base/
 528873d Merge pull request #229 from shahan-mik3/oreo
 
-   * hardware/lineage/interfaces/
-d9c8119 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
+   * hardware/qcom/audio-caf/msm8952/
+61ebd0f Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.11' into lineage-15.1-caf-8952
+
+   * hardware/qcom/media-caf/msm8952/
+892df5c Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.11' into lineage-15.1-caf-8952
 
    * lineage-sdk/
 11efd13 Merge pull request #1 from shahan-mik3/oreo
+
+   * packages/apps/Recorder/
+5191f7d Recorder: update assets to use rounded style
+a1220a7 Recorder: support down to api24
 
    * packages/apps/Settings/
 2335144 Merge pull request #961 from shahan-mik3/oreo
 
 ====================
-     05-19-2018
+     05-20-2018
 ====================
 
 
-   * packages/apps/Gallery2/
-1a8915f Add new rule about watermark
-
-====================
-     05-18-2018
-====================
-
-
-   * frameworks/base/
-d256dc8 Add an option to force pre-O apps to use full screen aspect ratio
-
-   * lineage-sdk/
-9e46c31 sdk: Add an option to force pre-O apps to use full screen aspect ratio
-
-   * packages/apps/Settings/
-58b9158 Settings: Add an option to force pre-O apps to use full screen aspect ratio
-
-====================
-     05-17-2018
-====================
-
-
-   * packages/apps/Settings/
-c4edc55 Add Samsung A3 2017
-
-====================
-     05-16-2018
-====================
-
-
-   * device/oneplus/oneplus3/
-71ec784 Revert "op3: Adjust lmk parameters"
-
-   * frameworks/opt/telephony/
-b30f20a Don't assume 3GPP as active app on CDMA with LTE device
-
-   * kernel/oneplus/msm8996/
-e543a3d Merge tag 'TitillatingTangerine' into oreo
-bbd633a Merge tag 'v3.18.109' into XOS-8.1
-7eac0d4 Linux 3.18.109
-3c320b0 tracing/uprobe_event: Fix strncpy corner case
-3d9c108 can: kvaser_usb: Increase correct stats counter in kvaser_usb_rx_can_msg()
-30041c8 tracing: Fix regex_match_front() to not over compare the test string
-e496070 libata: Apply NOLPM quirk for SanDisk SD7UB3Q*G1001 SSDs
-ee39500 rfkill: gpio: fix memory leak in probe error path
-a24bce4 tcp: fix TCP_REPAIR_QUEUE bound checking
-d55b31c perf: Remove superfluous allocation error check
-03e5211 soreuseport: initialise timewait reuseport field
-fbbbfa5 net: fix uninit-value in __hw_addr_add_ex()
-471a441 net: initialize skb->peeked when cloning
-dd0306f net: fix rtnh_ok()
-24e7995 netlink: fix uninit-value in netlink_sendmsg
-7c6b9b5 usb: musb: host: fix potential NULL pointer dereference
-98db87d USB: serial: visor: handle potential invalid device configuration
-613ac78 NET: usb: qmi_wwan: add support for ublox R410M PID 0x90b2
-fe73842 RDMA/mlx5: Protect from shift operand overflow
-b73892f ALSA: aloop: Add missing cable lock to ctl API callbacks
-a69e608 ALSA: aloop: Mark paused device as inactive
-2937092 ALSA: seq: Fix races at MIDI encoding in snd_virmidi_output_trigger()
-f92cb23 ALSA: pcm: Check PCM state at xfern compat ioctl
-a4e89ef perf session: Fix undeclared 'oe'
-2e9cbae perf/core: Fix the perf_cpu_time_max_percent check
-a88e99b percpu: include linux/sched.h for cond_resched()
-
-   * packages/overlays/Resurrection/
-c69789c Merge pull request #1 from mcdachpappe/blacktheme
-
-====================
-     05-15-2018
-====================
-
-
-   * external/json-c/
-6aa3e16 libjson: Remove dependency on kernel headers
-
-====================
-     05-14-2018
-====================
-
-   * android/
-7f32855 Addd bc to the list of required packages (#120)
-
-   * vendor/oneplus/
-a685893 oneplus2: Hex-edit sound trigger blob correctly
-270ac23 oneplus2: Move bluetooth firmware to /vendor/firmware
+   * packages/apps/Recorder/
+53a7880 Recorder: update deprecated methods to new ones
+b768a6a Recorder: update aar libs
+b73f5b6 Recorder: update gradle deps
 
