@@ -3,11 +3,17 @@
 
 
 ====================
-     06-02-2018
+     06-03-2018
 ====================
 
 
+   * device/rr/sepolicy/
+96ce5d2 sepolicy: Label aw2013 HIDL light HAL
+
    * frameworks/base/
+
+   * hardware/lineage/interfaces/
+64abcb9 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
 
    * lineage-sdk/
 
@@ -22,12 +28,12 @@
    * packages/services/OmniJaws/
 
 ====================
+     06-02-2018
+====================
+
+
+====================
      06-01-2018
-====================
-
-
-====================
-     05-31-2018
 ====================
 
 
@@ -40,11 +46,8 @@ f451da6 Revert "vti4: Don't override MTU passed on link creation via IFLA_MTU"
    * packages/apps/Eleven/
 d378526 Eleven: Catch unsupported bitmap exception
 
-   * packages/providers/ContactsProvider/
-44ba9b9 CallLogDatabase: Bump the version and try to re-run the version 5 upgrade path
-
 ====================
-     05-30-2018
+     05-31-2018
 ====================
 
 
@@ -242,28 +245,33 @@ f69c8ff KVM: Fix spelling mistake: "cop_unsuable" -> "cop_unusable"
 
    * packages/apps/Settings/
 
+   * packages/providers/ContactsProvider/
+44ba9b9 CallLogDatabase: Bump the version and try to re-run the version 5 upgrade path
+
+====================
+     05-30-2018
+====================
+
+
+   * packages/apps/Settings/
+7815df0 Rom about update
+
+   * vendor/oneplus/
+1de8dda msm8998: update blobs from 5.1.2
+
 ====================
      05-29-2018
 ====================
 
 
    * packages/apps/Settings/
-7815df0 Rom about update
 0cd8ac0 Merge pull request #959 from root2raj/oreo
-
-   * vendor/oneplus/
-1de8dda msm8998: update blobs from 5.1.2
-
-====================
-     05-28-2018
-====================
-
 
    * vendor/oneplus/
 0894ad9 oneplus2: move msm_irqbalance.conf to device
 
 ====================
-     05-27-2018
+     05-28-2018
 ====================
 
    * android/
