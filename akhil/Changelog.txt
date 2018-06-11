@@ -1,311 +1,182 @@
 
- ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+ ▼ Resurrection Remix Oreo Ver 6.1.0 Changelog
 
 
 ====================
-     06-03-2018
-====================
-
-
-   * device/rr/sepolicy/
-96ce5d2 sepolicy: Label aw2013 HIDL light HAL
-
-   * frameworks/base/
-
-   * hardware/lineage/interfaces/
-64abcb9 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
-
-   * lineage-sdk/
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-
-   * packages/services/OmniJaws/
-
-====================
-     06-02-2018
-====================
-
-
-====================
-     06-01-2018
-====================
-
-
-   * kernel/oneplus/msm8996/
-b860a38 Merge tag 'GalacticGuava_r2' into oreo
-a4e962a Merge tag 'v3.18.112' into XOS-8.1
-b0b357c Linux 3.18.112
-f451da6 Revert "vti4: Don't override MTU passed on link creation via IFLA_MTU"
-
-   * packages/apps/Eleven/
-d378526 Eleven: Catch unsupported bitmap exception
-
-====================
-     05-31-2018
-====================
-
-
-   * frameworks/base/
-
-   * kernel/oneplus/msm8996/
-c9762a1 Merge tag 'GalacticGuava' into oreo
-bb53b26 Merge tag 'v3.18.111' into XOS-8.1
-b56ba5a kernel: Remove bogus changes to magic values
-e053dbc power: bq27541: Expose full charge capacity and cycle count to userspace
-8eb1ef0 Linux 3.18.111
-96239f4 kdb: make "mdr" command repeat
-4543d30 regulator: of: Add a missing 'of_node_put()' in an error handling path of 'of_regulator_match()'
-2c57160 scsi: lpfc: Fix frequency of Release WQE CQEs
-093feb2 scsi: lpfc: Fix soft lockup in lpfc worker thread during LIP testing
-26faa84 scsi: lpfc: Fix issue_lip if link is disabled
-90059d0 netlabel: If PF_INET6, check sk_buff ip header version
-ba0c7ae audit: return on memory error to avoid null pointer dereference
-11d549e clk: samsung: exynos3250: Fix PLL rates
-f114cce clk: samsung: exynos5250: Fix PLL rates
-a5314e0 clk: samsung: exynos5260: Fix PLL rates
-5317222 clk: samsung: s3c2410: Fix PLL rates
-225f6c4 media: cx25821: prevent out-of-bounds read on array card
-e997393 udf: Provide saner default for invalid uid / gid
-5771618 PCI: Add function 1 DMA alias quirk for Marvell 88SE9220
-8bdc529 serial: arc_uart: Fix out-of-bounds access through DT alias
-e70f6af serial: fsl_lpuart: Fix out-of-bounds access through DT alias
-3f7945c serial: imx: Fix out-of-bounds access through serial port index
-580bcda serial: samsung: Fix out-of-bounds access through serial port index
-8984c74 serial: xuartps: Fix out-of-bounds access through DT alias
-75d852e rtc: tx4939: avoid unintended sign extension on a 24 bit shift
-3c31faa staging: rtl8192u: return -ENOMEM on failed allocation of priv->oldaddr
-9215e5a media: em28xx: USB bulk packet size fix
-f8c61fe dmaengine: pl330: fix a race condition in case of threaded irqs
-0256494 media: s3c-camif: fix out-of-bounds array access
-fdf0b92 media: cx23885: Set subdev host data to clk_freq pointer
-681e8cc media: cx23885: Override 888 ImpactVCBe crystal frequency
-a5f46bb ALSA: vmaster: Propagate slave error
-40c1020 usb: gadget: composite: fix incorrect handling of OS desc requests
-10bedea usb: gadget: udc: change comparison to bitshift when dealing with a mask
-0fdfc3f cdrom: do not call check_disk_change() inside cdrom_open()
-67fa456 hwmon: (pmbus/adm1275) Accept negative page register values
-68f70a8 hwmon: (pmbus/max8688) Accept negative page register values
-92a1e6a perf/core: Fix perf_output_read_group()
-e1acc9f powerpc: Add missing prototype for arch_irq_work_raise()
-a7289f6 usb: gadget: ffs: Let setup() return USB_GADGET_DELAYED_STATUS
-6858abe usb: dwc2: Fix interval type issue
-d36edd4 PCI: Restore config space on runtime resume despite being unbound
-a1ff9f1 MIPS: ath79: Fix AR724X_PLL_REG_PCIE_CONFIG offset
-7b98944 xhci: zero usb device slot_id member when disabling and freeing a xhci slot
-87f5b4f i2c: mv64xxx: Apply errata delay only in standard mode
-c814922 ACPICA: acpi: acpica: fix acpi operand cache leak in nseval.c
-43f9785 ACPICA: Events: add a return on failure from acpi_hw_register_read
-7afa3b1 bcache: quit dc->writeback_thread when BCACHE_DEV_DETACHING is set
-b895aea zorro: Set up z->dev.dma_mask for the DMA API
-f60da70 usb: dwc3: Update DWC_usb31 GTXFIFOSIZ reg fields
-c688b28 arm: dts: socfpga: fix GIC PPI warning
-bc3c404 virtio-net: Fix operstate for virtio when no VIRTIO_NET_F_STATUS
-477c193 ima: Fallback to the builtin hash algorithm
-00cef02 ath10k: Fix kernel panic while using worker (ath10k_sta_rc_update_wk)
-ff98be4 net/mlx5: Protect from command bit overflow
-adef5f7 tools/thermal: tmon: fix for segfault
-6759440 powerpc/perf: Fix kernel address leak via sampling registers
-9d2d68f2 powerpc/perf: Prevent kernel address leak to userspace via BHRB buffer
-6631ce1 hwmon: (nct6775) Fix writing pwmX_mode
-8482ee5 parisc/pci: Switch LBA PCI bus from Hard Fail to Soft Fail mode
-2231cc4 m68k: set dma and coherent masks for platform FEC ethernets
-1699271 powerpc/mpic: Check if cpu_possible() in mpic_physmask()
-c893df8 ACPI: acpi_pad: Fix memory leak in power saving threads
-6ba5432 xen/acpi: off by one in read_acpi_id()
-84901fa btrfs: fix lockdep splat in btrfs_alloc_subvolume_writers
-0ad62f3 Btrfs: fix copy_items() return value when logging an inode
-860f7a0 btrfs: tests/qgroup: Fix wrong tree backref level
-bcc3631 sparc64: Make atomic_xchg() an inline function rather than a macro.
-3f2e615 KVM: VMX: raise internal error for exception during invalid protected mode state
-e42acd5 sched/rt: Fix rq->clock_update_flags < RQCF_ACT_SKIP warning
-a0270cd btrfs: Fix possible softlock on single core machines
-7253c77 Btrfs: fix NULL pointer dereference in log_dir_items
-b56cd693 Btrfs: bail out on error during replay_dir_deletes
-1d79b1d mm: fix races between address_space dereference and free in page_evicatable
-824c819 mm/ksm: fix interaction with THP
-4d6ceac dp83640: Ensure against premature access to PHY registers after reset
-dd38f46 scsi: aacraid: Insure command thread is not recursively stopped
-0fb0e25 Force log to disk before reading the AGF during a fstrim
-ab01cff sr: get/drop reference to device in revalidate and check_events
-c8199e3 swap: divide-by-zero when zero length swap file on ssd
-b4b8334 fs/proc/proc_sysctl.c: fix potential page fault while unregistering sysctl table
-af794b7 sh: fix debug trap failure to process signals before return to user
-8035424 net: mvneta: fix enable of all initialized RXQs
-dbbe95b net: Fix untag for vlan packets without ethernet header
-65bdc34 llc: properly handle dev_queue_xmit() return value
-e42c5cc net-usb: add qmi_wwan if on lte modem wistron neweb d18q1
-4582e6d net: qmi_wwan: add BroadMobi BM806U 2020:2033
-d6d9306 batman-adv: fix packet loss for broadcasted DHCP packets to a server
-d0fb1d2 batman-adv: fix multicast-via-unicast transmission with AP isolation
-b850675 selftests: ftrace: Add a testcase for probepoint
-053a459 selftests: ftrace: Add a testcase for string type with kprobe_event
-1f8c76a selftests: ftrace: Add probe event argument syntax testcase
-36f5b18 mm/mempolicy.c: avoid use uninitialized preferred_node
-08a049c vti4: Don't override MTU passed on link creation via IFLA_MTU
-4929eda vti4: Don't count header length twice on tunnel setup
-06b3c3f batman-adv: fix header size check in batadv_dbg_arp()
-480739c net: Fix vlan untag for bridge and vlan_dev with reorder_hdr off
-5d76473 netfilter: ebtables: fix erroneous reject of last rule
-e2cad74 USB: OHCI: Fix NULL dereference in HCDs using HCD_LOCAL_MEM
-7f4ac64 xen: xenbus: use put_device() instead of kfree()
-db57535b fbdev: Fixing arbitrary kernel leak in case FBIOGETCMAP_SPARC in sbusfb_ioctl_helper().
-a60caea8 scsi: sd: Keep disk read-only when re-reading partition
-3d418b7 usb: musb: call pm_runtime_{get,put}_sync before reading vbus registers
-3b40952 e1000e: allocate ring descriptors with dma_zalloc_coherent
-34ec8d5 e1000e: Fix check_for_link return value with autoneg off
-089e299 watchdog: f71808e_wdt: Fix magic close handling
-7361dfb Btrfs: send, fix issuing write op when processing hole in no data mode
-2f08745 xen/pirq: fix error path cleanup when binding MSIs
-c5f01c6 net/tcp/illinois: replace broken algorithm reference link
-ec99dec sit: fix IFLA_MTU ignored on NEWLINK
-5214026 bcache: fix kcrashes with fio in RAID5 backend dev
-e821841 r8152: fix tx packets accounting
-0fe836b clocksource/drivers/fsl_ftm_timer: Fix error return checking
-0f3eca6 netfilter: ebtables: convert BUG_ONs to WARN_ONs
-2ffa55e batman-adv: invalidate checksum on fragment reassembly
-7806534 batman-adv: fix packet checksum in receive path
-4f5862c md/raid1: fix NULL pointer dereference
-7b86d81 media: dmxdev: fix error code for invalid ioctls
-836053f x86/topology: Update the 'cpu cores' field in /proc/cpuinfo correctly across CPU hotplug operations
-ce5555a locking/xchg/alpha: Fix xchg() and cmpxchg() memory ordering bugs
-85dc640 regulatory: add NUL to request alpha2
-9fac7f8 smsc75xx: fix smsc75xx_set_features()
-300adcc ARM: OMAP: Fix dmtimer init for omap1
-0ef50f0 s390/cio: clear timer when terminating driver I/O
-3e9b3e7 s390/cio: fix return code after missing interrupt
-9afcd54 kernel/relay.c: limit kmalloc size to KMALLOC_MAX_SIZE
-ddcaf25 locking/xchg/alpha: Add unconditional memory barrier to cmpxchg()
-854d971 drm/exynos: fix comparison to bitshift when dealing with a mask
-6524a8d md raid10: fix NULL deference in handle_write_completed()
-d7680dd mac80211: round IEEE80211_TX_STATUS_HEADROOM up to multiple of 4
-39e221c NFC: llcp: Limit size of SDP URI
-4a7cc64 ARM: OMAP1: clock: Fix debugfs_create_*() usage
-f5441ff ARM: OMAP3: Fix prm wake interrupt for resume
-5ab7e72 scsi: qla4xxx: skip error recovery in case of register disconnect.
-6d05919 scsi: aacraid: fix shutdown crash when init fails
-21323aa selftests: memfd: add config fragment for fuse
-d72c90b usb: gadget: fsl_udc_core: fix ep valid checks
-3a7976c usb: gadget: f_uac2: fix bFirstInterface in composite gadget
-44d731a scsi: qla2xxx: Avoid triggering undefined behavior in qla2x00_mbx_completion()
-57ee386 scsi: mptfusion: Add bounds check in mptctl_hp_targetinfo()
-f7c0603 scsi: sym53c8xx_2: iterator underflow in sym_getsync()
-34bd6e7 scsi: bnx2fc: Fix check in SCSI completion handler for timed out request
-1da0681 scsi: ufs: Enable quirk to ignore sending WRITE_SAME command
-617d715 irqchip/gic-v3: Change pr_debug message to pr_devel
-0ee08b0 bcache: return attach error when no cache set exist
-11d1a3d bcache: fix for data collapse after re-attaching an attached device
-e2febcb bcache: fix for allocator and register thread race
-c969aa8 bcache: properly set task state in bch_writeback_thread()
-635716d cifs: silence compiler warnings showing up with gcc-8.0.0
-1a159e9 proc: fix /proc/*/map_files lookup
-6af42d1 xen/grant-table: Use put_page instead of free_page
-162180a MIPS: TXx9: use IS_BUILTIN() for CONFIG_LEDS_CLASS
-4c53640 ACPI: processor_perflib: Do not send _PPC change notification if not ready
-a78a787 firmware: dmi_scan: Fix handling of empty DMI strings
-c9d86aa x86/power: Fix swsusp_arch_resume prototype
-2ab6382 IB/ipoib: Fix for potential no-carrier state
-0a07b78 mm: pin address_space before dereferencing it while isolating an LRU page
-97c7900 asm-generic: provide generic_pmdp_establish()
-1a60f2e mm/mempolicy: add nodes_empty check in SYSC_migrate_pages
-7f81272 mm/mempolicy: fix the check of nodemask from user
-15ac59a ocfs2/acl: use 'ip_xattr_sem' to protect getting extended attribute
-2c09ffc ocfs2: return -EROFS to mount.ocfs2 if inode block is invalid
-3de8b7d RDMA/mlx5: Avoid memory leak in case of XRCD dealloc failure
-42c43e3 jffs2: Fix use-after-free bug in jffs2_iget()'s error handling path
-eb8c17a HID: roccat: prevent an out of bounds read in kovaplus_profile_activated()
-92bd116 scsi: fas216: fix sense buffer initialization
-f1becd4 btrfs: Fix out of bounds access in btrfs_search_slot
-81efefe kconfig: Fix expr_free() E_NOT leak
-219badd kconfig: Fix automatic menu creation mem leak
-02d4589 kconfig: Don't leak main menus during parsing
-b107e54 watchdog: sp5100_tco: Fix watchdog disable bit
-da6f78a nfs: Do not convert nfs_idmap_cache_timeout to jiffies
-db21a7b dm thin: fix documentation relative to low water mark threshold
-19a4ddc tools lib traceevent: Fix get_field_str() for dynamic strings
-0806f6e PCI: Add function 1 DMA alias quirk for Marvell 9128
-ec8e8ef tracing/hrtimer: Fix tracing bugs by taking all clock bases and modes into account
-682c267 kvm: x86: fix KVM_XEN_HVM_CONFIG ioctl
-3e622a5 ASoC: au1x: Fix timeout tests in au1xac97c_ac97_read()
-a56126d firewire-ohci: work around oversized DMA reads on JMicron controllers
-50ecbf9 kernel/signal.c: avoid undefined behaviour in kill_something_info
-bbab099 xen-swiotlb: fix the check condition for xen_swiotlb_free_coherent
-db660dc libata: Blacklist some Sandisk SSDs for NCQ
-b90b641 do d_instantiate/unlock_new_inode combinations safely
-fac7c7e aio: fix io_destroy(2) vs. lookup_ioctx() race
-6d29216 affs_lookup(): close a race with affs_remove_link()
-f69c8ff KVM: Fix spelling mistake: "cop_unsuable" -> "cop_unusable"
-5a19b37 MIPS: Fix ptrace(2) PTRACE_PEEKUSR and PTRACE_POKEUSR accesses to o32 FGRs
-0c58783 MIPS: ptrace: Expose FIR register through FP regset
-
-   * packages/apps/Settings/
-
-   * packages/providers/ContactsProvider/
-44ba9b9 CallLogDatabase: Bump the version and try to re-run the version 5 upgrade path
-
-====================
-     05-30-2018
-====================
-
-
-   * packages/apps/Settings/
-7815df0 Rom about update
-
-   * vendor/oneplus/
-1de8dda msm8998: update blobs from 5.1.2
-
-====================
-     05-29-2018
-====================
-
-
-   * packages/apps/Settings/
-0cd8ac0 Merge pull request #959 from root2raj/oreo
-
-   * vendor/oneplus/
-0894ad9 oneplus2: move msm_irqbalance.conf to device
-
-====================
-     05-28-2018
+     06-11-2018
 ====================
 
    * android/
-cb480ca Add Jelly back (#118)
+6744938 manifest: android-8.1.0_r26 -> android-8.1.0_r30
+c5ead4f manifest: Track own external/libvorbis
 
-   * hardware/qcom/audio-caf/msm8996/
-bf635ea qcom-audio: Fixes for VNDK_VERSION=current
-f52e463 Add libhardware_headers and libsystem_headers to modules
-7f8f618 Make libqcomvoiceprocessing build with the VNDK.
-acdb6be Make libqcomvisualizer build with the VNDK.
-fa595db Make libqcompostprocbundle build with the VNDK.
-50a2bf6 Build audio.primary.* with BOARD_VNDK_VERSION
+   * build/make/
+391cf9c build: Add new variable to hold generic build properties
+fb1a406 core: Remove deprecated kernel header dependency path warning
+cc183a1 build: Clean up makefile hook inclusions
+afa5bbb build: Include LineageOS specific properties in build.prop
+d7f06cc Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/build into HEAD
 
-   * hardware/qcom/display-caf/msm8996/
-cde9bfa libqdutils: Fix for VNDK_VERSION=current
-74965a3 Build libdisplayconfig with VNDK
-34eb948 Add GLESv3 as a dependency.
-a177cc4 Fix libcutils private headers
-8378513 Build libqdMetaData with BOARD_VNDK_VERSION
-0e995bc Build lights.msm8996 with the VNDK.
-e63a93b Use header lib instead of using global include path
-c709334 Mark msm8996 modules LOCAL_VENDOR_MODULE
+   * device/rr/sepolicy/
+9de5f95 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
 
-   * hardware/qcom/media-caf/msm8996/
-3a79c5c vdec: Fixes for VNDK_VERSION=current
-153c039 Build libOmxVdec and libOmxVenc with BOARD_VNDK_VERSION
-8d8553b Build libstagefrighthw with BOARD_VNDK_VERSION
-a8471c7 Add libutils to msm8996 modules
+   * frameworks/av/
+5e433d7 Merge tag 'android-8.1.0_r30' into lineage-15.1
 
-   * hardware/qcom/wlan-caf/
-0a42dd7 Make wcnss_service build with the VNDK.
+   * frameworks/base/
+c14d0a1 base: introduce trust interface
+
+   * frameworks/native/
+bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
+
+   * frameworks/opt/telephony/
+ccbfdae Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * hardware/interfaces/
+8184564 Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * lineage-sdk/
+42eb263 TrustInterface: Remove useless check
+5f75487 TrustInterface: Fix default root access value
+3f0c299 Fix config.xml indentation
+d55299f sdk: Introduce Trust Interface
+
+   * packages/apps/LineageParts/
+e72903f LineageParts: fix Trust onBoarding completion when clicking
+6ce4474 LineageParts: introduce Trust interface
 
    * packages/apps/Settings/
-7faf108a Fix ScreenShot Editor APP FC
-b00f05f Merge pull request #965 from LMMFHHO/oreo
-09d0825 Merge pull request #963 from itsHardStyl3r/oreo
+b91f8b1 Settings: add Trust interface hook
+
+   * packages/providers/MediaProvider/
+6fde9ca Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * packages/providers/UserDictionaryProvider/
+d35f80e Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * system/bt/
+2e5099c Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * vendor/rr/
+012d15b main_version: Refactor for RR
+9fb4077 rr: main.mk: fix after f8422996
+9e3ccf4 RR: changelog for 6.1
+62124e5 Merge branch 'oreo' into HEAD
+8e41a55 vendor: introduce Trust interface
+4d7b0cd lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
+f842299 build: Clean up makefile inclusions
+5f576c4 apns: Add UPC Mobile
+a4a63e6 build: Use TOPDIR, not TOP
+6186073 clear_vars: Remove Maven leftovers
+4945c55 build: Remove HTTP_PREBUILT
+e64f286 build: Remove maven make rules
+8df42a7 rr: update for v6.1.0
+
+====================
+     06-10-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+f66d76e livedisplay: Correct macro copypasta
+
+   * packages/apps/Jelly/
+6432e80 Jelly: Add support for multiple windows
+
+====================
+     06-09-2018
+====================
+
+
+   * packages/apps/Settings/
+f97842b Change oreo device maintainer to me (#976)
+
+====================
+     06-08-2018
+====================
+
+
+   * hardware/lineage/interfaces/
+ac865c8 livedisplay: Remove unused using statements
+412bc94 livedisplay: Move LegacyMMController inclusion to impl
+
+   * lineage-sdk/
+e07772c Revert "lineage-sdk: Switch back to AOSP TwilightService"
+55dc83d Add led capability LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS
+
+   * packages/apps/Settings/
+03f5715 Add on7xelte to oficial (#975)
+
+====================
+     06-07-2018
+====================
+
+
+   * frameworks/base/
+0ca7d5a Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/base into oreo
+
+   * packages/apps/Settings/
+5101662 Add Asus Zenfone Max Pro M1 (X00TD) (#974)
+
+====================
+     06-06-2018
+====================
+
+
+   * packages/apps/Settings/
+2dc1d88 Add Redmi 2 Maintainer (#972)
+
+====================
+     06-05-2018
+====================
+
+
+   * device/qcom/sepolicy/
+5f24467 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
+
+   * device/rr/sepolicy/
+0c9e3c9 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
+
+   * frameworks/base/
+24ac5bc Update text size of overflow number view
+b5b6906 SystemUI: update heads up, sync and volume panel drawables
+3da2470 SystemUI: Don't append app name to file on lockscreen
+d5288de SystemUI: Enable dualTarget on CellularTile
+6deca18 Make it possible to hide signal strength via Carrier Config
+6d634da SystemUI: add navbar button layout inversion tuning
+
+   * frameworks/native/
+9dc672b Merge https://github.com/LineageOS/android_frameworks_native into oreo
+
+   * lineage-sdk/
+dd6f451 lineage-sdk: Add backend for reading enhancement
+a6666e1 lineage-sdk: Switch back to AOSP TwilightService
+
+   * packages/apps/Dialer/
+dada2e7 Merge https://github.com/LineageOS/android_packages_apps_Dialer into oreo
+
+   * packages/apps/LineageParts/
+fbf21d0 LiveDisplay: Set Reading Mode switch preference as non-persistent
+aeeb69a LineageParts: Add Reader mode frontend
+bcb540b LineageParts: make volume button re-orient functionality act based on relevant input
+
+   * packages/apps/Settings/
+15af046 Merge pull request #973 from Astridxx/patch-1
+d7d2900 Update Turkish translation
+
+   * packages/apps/Snap/
+5438ac6 SnapdragonCamera: Panorama, replace border drawable
+a5d7aea Snap: remove unused shutter buttons
+
+   * packages/services/Telecomm/
+8f6294a Merge https://github.com/LineageOS/android_packages_services_Telecomm into oreo
+
+   * system/core/
+b058bb9 Merge https://github.com/LineageOS/android_system_core into oreo
+
+   * vendor/rr/
+52cb504 Fix RR properties for splitted vendor devices (#113)
+eb598d6 lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
+730343c apns: Add UPC Mobile
+184986f verity: Implement verity tool
 
