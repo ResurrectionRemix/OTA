@@ -18,7 +18,24 @@ afa5bbb build: Include LineageOS specific properties in build.prop
 d7f06cc Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/build into HEAD
 
    * device/rr/sepolicy/
+98afc79 sepolicy: Label aw2013 HIDL light HAL
 9de5f95 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
+
+   * device/xiaomi/kenzo/
+39714c0 kenzo: track msm8956-common locally
+0ed21c4 kenzo: track msm8956-common from AOSiP-Devices github
+ce8b816 Merge branch 'oreo-mr1' of ssh://github.com/aosip-Devices/device_xiaomi_kenzo into HEAD
+3e58678 add and fix sepolicy
+
+   * device/xiaomi/msm8956-common/
+aec0dae msm8956-common: random commit message but at this point in life, I just don't care
+6e4a423 sepolicy: add hal_fingerprint_default
+0538474 selinux=enforsing
+af6c0f9 fixes sepolicy, init.com.rc
+127b269 fix bluetooth mac address
+aeb7ab6 fix init.qcom.rc
+a341313 add and fix sepolicy
+7ae37ec msm8956-common: use kernel-based exfat
 
    * frameworks/av/
 5e433d7 Merge tag 'android-8.1.0_r30' into lineage-15.1
@@ -34,6 +51,9 @@ ccbfdae Merge tag 'android-8.1.0_r30' into lineage-15.1
 
    * hardware/interfaces/
 8184564 Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * hardware/lineage/interfaces/
+6841cca lineage/interfaces: Add aw2013 lights HIDL HAL implementation
 
    * lineage-sdk/
 42eb263 TrustInterface: Remove useless check
@@ -112,9 +132,6 @@ e07772c Revert "lineage-sdk: Switch back to AOSP TwilightService"
 ====================
 
 
-   * frameworks/base/
-0ca7d5a Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/base into oreo
-
    * packages/apps/Settings/
 5101662 Add Asus Zenfone Max Pro M1 (X00TD) (#974)
 
@@ -122,6 +139,9 @@ e07772c Revert "lineage-sdk: Switch back to AOSP TwilightService"
      06-06-2018
 ====================
 
+
+   * frameworks/base/
+0ca7d5a Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/base into oreo
 
    * packages/apps/Settings/
 2dc1d88 Add Redmi 2 Maintainer (#972)
