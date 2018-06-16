@@ -3,12 +3,135 @@
 
 
 ====================
+     06-16-2018
+====================
+
+
+   * bootable/recovery/
+7a92646 recovery: Add resize2fs
+
+   * device/oneplus/oneplus3/
+845aaee Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_device_oneplus_oneplus3 into HEAD
+
+   * device/qcom/sepolicy/
+4e72121 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
+
+   * frameworks/base/
+2ffe68a SystemUI: Add Lineage statusbar item holder
+9ea9e0b Sometimes this happens when changing the theme (#234)
+
+   * lineage-sdk/
+ce9185e lineage-sdk: Add LineageStatusBarItem interfaces
+
+   * packages/apps/LineageParts/
+2021bb5 Exclude trust onboarding from recents
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/apps/Settings/
+ba69025 Add Samsung A3 2016 (#984)
+22620b4 Kenzo maintainer change
+6052bec Update pt-PT cm_strings
+5e83a70 Fixes in strings/translations
+
+   * vendor/rr/
+81417b0 lineage: qcom: Set thermal & vr HAL pathmaps
+91d783b repopick: Update SSH queries result to match HTTP queries
+
+====================
+     06-15-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+7872ef0 op3/t: display: update s6e3fa5's standard profile from ob29.
+
+   * hardware/lineage/interfaces/
+995cd62 livedisplay: Use RAII semantics for ColorBackend initialization
+35484bb livedisplay: Move initialization of mActiveModeId to constructor
+af12c6e livedisplay: Convert controller singletons to regular objects
+21c71ae livedisplay: Move Color::check function to implementation
+cfd7b99 livedisplay: Don't use a singleton for Color service
+d6be15d livedisplay: Fix bogus print
+
+   * vendor/oneplus/
+e30bddc msm8998-common: Update makefile
+
+====================
+     06-14-2018
+====================
+
+
+   * device/oneplus/oneplus3/
+bf757af op3: Remove libcamera_parameters_shim.so
+b50924a op3: Update blobs from OB37/OB28
+7116441 op3: Set vendor security patch level
+
+   * hardware/lineage/interfaces/
+8127346 Revert "livedisplay: Don't use singletons for the stack"
+
+   * packages/apps/Nfc/
+45d2faf NFC: Clean duplicated and unknown permissions
+
+   * vendor/oneplus/
+e52a4eb op3: Update blobs from OB37/OB28
+
+====================
+     06-13-2018
+====================
+
+
+   * device/qcom/sepolicy/
+2d49cb5 common: Fix labelling of lcd-backlight
+
+   * kernel/oneplus/msm8996/
+a143559 Merge tag 'PuzzlingPumpkin' into oreo
+2e72b9e Merge tag 'v3.18.113' into XOS-8.1
+3176776 Linux 3.18.113
+bc4225d rtnetlink: validate attributes in do_setlink()
+e384b14 team: use netdev_features_t instead of u32
+dcd71a2 net/mlx4: Fix irq-unsafe spinlock usage
+7f56a98 net: usb: cdc_mbim: add flag FLAG_SEND_ZLP
+6c2d8d7 net/packet: refine check for priv area size
+c9912b7 isdn: eicon: fix a missing-check bug
+8c79f73 ip6mr: only set ip6mr_table from setsockopt when ip6mr_new_table succeeds
+843e5ed enic: set DMA mask to 47 bit
+19775c9 dccp: don't free ccid2_hc_tx_sock struct in dccp_disconnect()
+fde5217c bnx2x: use the right constant
+1a16822 drm: set FMODE_UNSIGNED_OFFSET for drm files
+3bbdc2a mmap: relax file size limit for regular files
+bf3ff10 mmap: introduce sane default mmap limits
+6d64aec mm: fix the NULL mapping case in __isolate_lru_page()
+43e631b fix io_destroy()/aio_complete() race
+d4dd8e5 drm/i915: Disable LVDS on Radiant P845
+38de6ff MIPS: ptrace: Fix PTRACE_PEEKUSR requests for 64-bit FGRs
+c783057 tcp: avoid integer overflows in tcp_rcv_space_adjust()
+4ff12f8 cfg80211: further limit wiphy names to 64 bytes
+b1ebe5e selinux: KASAN: slab-out-of-bounds in xattr_getsecurity
+7ca1225 tracing: Fix crash when freeing instances with event triggers
+
+====================
+     06-12-2018
+====================
+
+
+   * bootable/recovery/
+afc6454 recovery: Do not load time from /persist
+6ac3bb4 recovery: New install/progress animation
+
+   * packages/apps/Settings/
+5690ad9 Angler Maintainer Changes (#981)
+
+====================
      06-11-2018
 ====================
 
    * android/
 6744938 manifest: android-8.1.0_r26 -> android-8.1.0_r30
 c5ead4f manifest: Track own external/libvorbis
+
+   * bionic/
+8e024ad linker: Make shim reference path absolute
 
    * build/make/
 391cf9c build: Add new variable to hold generic build properties
@@ -17,25 +140,11 @@ cc183a1 build: Clean up makefile hook inclusions
 afa5bbb build: Include LineageOS specific properties in build.prop
 d7f06cc Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/build into HEAD
 
+   * device/oneplus/oneplus3/
+82a00bb Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
    * device/rr/sepolicy/
-98afc79 sepolicy: Label aw2013 HIDL light HAL
 9de5f95 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
-
-   * device/xiaomi/kenzo/
-39714c0 kenzo: track msm8956-common locally
-0ed21c4 kenzo: track msm8956-common from AOSiP-Devices github
-ce8b816 Merge branch 'oreo-mr1' of ssh://github.com/aosip-Devices/device_xiaomi_kenzo into HEAD
-3e58678 add and fix sepolicy
-
-   * device/xiaomi/msm8956-common/
-aec0dae msm8956-common: random commit message but at this point in life, I just don't care
-6e4a423 sepolicy: add hal_fingerprint_default
-0538474 selinux=enforsing
-af6c0f9 fixes sepolicy, init.com.rc
-127b269 fix bluetooth mac address
-aeb7ab6 fix init.qcom.rc
-a341313 add and fix sepolicy
-7ae37ec msm8956-common: use kernel-based exfat
 
    * frameworks/av/
 5e433d7 Merge tag 'android-8.1.0_r30' into lineage-15.1
@@ -43,17 +152,11 @@ a341313 add and fix sepolicy
    * frameworks/base/
 c14d0a1 base: introduce trust interface
 
-   * frameworks/native/
-bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
-
    * frameworks/opt/telephony/
 ccbfdae Merge tag 'android-8.1.0_r30' into lineage-15.1
 
    * hardware/interfaces/
 8184564 Merge tag 'android-8.1.0_r30' into lineage-15.1
-
-   * hardware/lineage/interfaces/
-6841cca lineage/interfaces: Add aw2013 lights HIDL HAL implementation
 
    * lineage-sdk/
 42eb263 TrustInterface: Remove useless check
@@ -66,6 +169,10 @@ e72903f LineageParts: fix Trust onBoarding completion when clicking
 6ce4474 LineageParts: introduce Trust interface
 
    * packages/apps/Settings/
+1bf4f05 Zuk Maintainer Changes
+8099ba6 Privacy Guard: Add icon for VPN permission
+3c7f254 Privacy Guard: Avoid NPE when tinting permission icons
+a71cbe7 Move BQ phone into the right catagory (#977)
 b91f8b1 Settings: add Trust interface hook
 
    * packages/providers/MediaProvider/
@@ -76,6 +183,9 @@ d35f80e Merge tag 'android-8.1.0_r30' into lineage-15.1
 
    * system/bt/
 2e5099c Merge tag 'android-8.1.0_r30' into lineage-15.1
+
+   * vendor/oneplus/
+091cb11 oneplus2: kang netmgrd and libnetmgr from kenzo
 
    * vendor/rr/
 012d15b main_version: Refactor for RR
@@ -97,106 +207,19 @@ e64f286 build: Remove maven make rules
 ====================
 
 
-   * hardware/lineage/interfaces/
-f66d76e livedisplay: Correct macro copypasta
-
-   * packages/apps/Jelly/
-6432e80 Jelly: Add support for multiple windows
-
-====================
-     06-09-2018
-====================
-
-
-   * packages/apps/Settings/
-f97842b Change oreo device maintainer to me (#976)
-
-====================
-     06-08-2018
-====================
-
-
-   * hardware/lineage/interfaces/
-ac865c8 livedisplay: Remove unused using statements
-412bc94 livedisplay: Move LegacyMMController inclusion to impl
-
-   * lineage-sdk/
-e07772c Revert "lineage-sdk: Switch back to AOSP TwilightService"
-55dc83d Add led capability LIGHTS_ADJUSTABLE_BATTERY_LED_BRIGHTNESS
-
-   * packages/apps/Settings/
-03f5715 Add on7xelte to oficial (#975)
-
-====================
-     06-07-2018
-====================
-
-
-   * packages/apps/Settings/
-5101662 Add Asus Zenfone Max Pro M1 (X00TD) (#974)
-
-====================
-     06-06-2018
-====================
-
-
-   * frameworks/base/
-0ca7d5a Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/base into oreo
-
-   * packages/apps/Settings/
-2dc1d88 Add Redmi 2 Maintainer (#972)
-
-====================
-     06-05-2018
-====================
-
-
-   * device/qcom/sepolicy/
-5f24467 Merge https://github.com/LineageOS/android_device_qcom_sepolicy into oreo
-
-   * device/rr/sepolicy/
-0c9e3c9 Merge https://github.com/LineageOS/android_device_lineage_sepolicy into oreo
-
-   * frameworks/base/
-24ac5bc Update text size of overflow number view
-b5b6906 SystemUI: update heads up, sync and volume panel drawables
-3da2470 SystemUI: Don't append app name to file on lockscreen
-d5288de SystemUI: Enable dualTarget on CellularTile
-6deca18 Make it possible to hide signal strength via Carrier Config
-6d634da SystemUI: add navbar button layout inversion tuning
+   * bionic/
+7bc47fc linker: Remove unused find_libraries declaration
 
    * frameworks/native/
-9dc672b Merge https://github.com/LineageOS/android_frameworks_native into oreo
+bd40653 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/frameworks/native into oreo
 
-   * lineage-sdk/
-dd6f451 lineage-sdk: Add backend for reading enhancement
-a6666e1 lineage-sdk: Switch back to AOSP TwilightService
+   * hardware/lineage/interfaces/
+18f4e8d livedisplay: Don't use singletons for the stack
+f66d76e livedisplay: Correct macro copypasta
 
-   * packages/apps/Dialer/
-dada2e7 Merge https://github.com/LineageOS/android_packages_apps_Dialer into oreo
-
-   * packages/apps/LineageParts/
-fbf21d0 LiveDisplay: Set Reading Mode switch preference as non-persistent
-aeeb69a LineageParts: Add Reader mode frontend
-bcb540b LineageParts: make volume button re-orient functionality act based on relevant input
-
-   * packages/apps/Settings/
-15af046 Merge pull request #973 from Astridxx/patch-1
-d7d2900 Update Turkish translation
-
-   * packages/apps/Snap/
-5438ac6 SnapdragonCamera: Panorama, replace border drawable
-a5d7aea Snap: remove unused shutter buttons
-
-   * packages/services/Telecomm/
-8f6294a Merge https://github.com/LineageOS/android_packages_services_Telecomm into oreo
-
-   * system/core/
-b058bb9 Merge https://github.com/LineageOS/android_system_core into oreo
-
-   * vendor/rr/
-52cb504 Fix RR properties for splitted vendor devices (#113)
-eb598d6 lineage: qcom: Enable TARGET_USES_COLOR_METADATA for msm8937 & msm8953
-730343c apns: Add UPC Mobile
-184986f verity: Implement verity tool
+   * hardware/qcom/power/
+a67c703 power: Remove unused list utils
+0a53ddc power: Remove interaction_with_handle
+f9d6801 power: Remove unused ondemand related functions
+7fc57d1 power: Remove support for msm-dcvs governor
 
