@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <kenzo>
-<Filename>RR-O-v6.1.0-20180611-kenzo-Official.zip</Filename>
+<Filename>RR-O-v6.1.0-20180619-kenzo-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/kenzo/RR-O-v6.1.0-20180611-kenzo-Official.zip</LatestBuildUrl>
+  description="Download Latest Build. Attention! new maintainer">http://downloads.resurrectionremix.com/kenzo/RR-O-v6.1.0-20180619-kenzo-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
@@ -18,8 +18,7 @@
 <ChangelogUrl
   id="changelog"
   title="Changelog"
-  description="View Changelogs">https://github.com/ResurrectionRemix/OTA/blob/master/akhil/Changelog.txt</ChangelogUrl>
+  description="View Changelogs">http://downloads.resurrectionremix.com/kenzo/RR-O-v6.1.0-20180619-kenzo-Official-Changelog.txt</ChangelogUrl>
 </kenzo>
 </Stable>
 </SlimOTA>
-    
