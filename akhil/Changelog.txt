@@ -3,205 +3,66 @@
 
 
 ====================
-     06-27-2018
+     07-15-2018
 ====================
 
-
-   * device/oneplus/oneplus3/
-e42e52e Merge branch 'lineage-15.1' into HEAD
-556ae16 op3: doze: use ExecutorService for listener registration
-2f73dee op3: Drop deprecated OpenGLRenderer props
-
-   * vendor/nxp/opensource/external/libnfc-nci/
-ae86e8d Build nfc_nci.nqx.default with BOARD_VNDK_VERSION
-
-====================
-     06-26-2018
-====================
-
-
-   * external/toybox/
-4841a34 toybox: Add install to symlinks
-
-   * hardware/qcom/audio-caf/msm8998/
-2957f2e hal: Fix VNDK_VERSION=current build for a2dp extension
-d9c1cb8 hal: Fix VNDK_VERSION=current build for msm8916
-
-   * vendor/nxp/opensource/external/libnfc-nci/
-801109e Revert "Fix description path for libnqp61-jcop-kit and move to vendor"
-
-   * vendor/nxp/opensource/packages/apps/Nfc/
-9625348 Revert "Look for libnqp61-jcop-kit.so in the vendor"
-
-====================
-     06-25-2018
-====================
-
-
-   * frameworks/opt/telephony/
-a448840 Revert "Don't assume 3GPP as active app on CDMA with LTE device"
-
-====================
-     06-24-2018
-====================
-
-   * android/
-3588a30 manifest: update rr remote
-b0ac8aa manifest: set review URL
-
-   * device/oneplus/oneplus3/
-f6c3837 op3: Enable auto brightness by default
-84b8fcb oneplus3: releasetools: Split up getting android-info.txt
-
-   * device/qcom/sepolicy/
-7290a34 sepolicy: Allow perf HAL to set freq props
-c601ff4 legacy: allow gnss to create dir for xtra data
-a5d6ea2 legacy: Add rules for init.qcom.bt.sh
-
-   * device/rr/sepolicy/
-e7e4f0c Add pocket judge selinux policy
-594be08 sepolicy: Add policy for edgegestureservice
-eef1865 sepolicy: update for rr
 
    * frameworks/base/
-86d9a45 Stop crashing qs tiles during boot
-4a4369d Don't show confirm dialog on disable Cellular QS tile
-
-   * packages/apps/Snap/
-1dccab4 Snap: turn developer category title into a translatable string
-
-   * system/sepolicy/
-6a2b401 sepolicy: allow update_engine to bypass neverallows for backuptool
-
-   * vendor/rr/
-1a0485e rr: update backuptool checks
-b6562c7 addonsu: Fix package for modern devices
-ff5b90e backuptool: introduce addon.d script versioning
-68f7ef0 vendor: add custom backuptools and postinstall script for A/B OTAs
-8bac5f6 apns-conf: Remove obsolete APNs for PT carriers
-88a7815 vendor: update repopick to work with RR's gerrit
-
-====================
-     06-23-2018
-====================
-
-   * android/
-03b3832 snippets: rr.xml: cleanup
-
-   * device/oneplus/oneplus3/
-1d188e6 op3: Enable VoLTE to enable calling over LTE for Vodafone India - Mumbai
-
-   * kernel/oneplus/msm8996/
-5ed1893 Merge tag 'SizzlingStrawberries' into oreo
 
    * lineage-sdk/
-b4c2ab6 lineage-sdk: Add vendor platform signature overlay
+
+   * packages/apps/DUI/
+
+   * packages/apps/ResurrectionOTA/
+
+   * packages/services/OmniJaws/
 
 ====================
-     06-22-2018
+     07-14-2018
 ====================
 
 
-   * bionic/
-ed4c3a6 bionic: Sort and cache hosts file data for fast lookup
-
-   * bootable/recovery/
-ac258a4 update_verifier: skip verity to determine successful on lineage builds
-97d1ae9 Add runtime checks for A/B vs traditional updates
-bc57208 recovery: Scale logo image if necessary
-45e8b03 recovery: minui: Implement image scaling
-118d848 recovery: Allow bypassing signature verification on non-release builds
-e895ce4 recovery: Allow detecting user/release build at compile time
-cd840c4 recovery: Rework sideload threading code for flexibility
-
-   * device/oneplus/oneplus3/
-ab594de op3: Remove references to deleted dhcpcd.conf
-f139afa op3: data-ipa-cfg-mgr: Sync with LA.UM.6.5.r1-08900-8x96.0
-362d3b6 op3: Fix typo from CodeAurora in the QTI whitelist
-
-   * device/oppo/common/
-c8c628f Add/fix pt-PT translations
-
-   * device/rr/sepolicy/
-c9b0d95 sepolicy: add rules for updater and update_engine
-37422f7 common: add update_engine policies
-41ac4fa sepolicy: Label aw2013 HIDL light HAL
-
-   * hardware/lineage/interfaces/
-1951e03 lineage/interfaces: Add aw2013 lights HIDL HAL implementation
-
-   * hardware/qcom/audio-caf/msm8974/
-e43a121 visualizer: Build with BOARD_VNDK_VERSION
-3c29a7e voice_processing: Build with BOARD_VNDK_VERSION
-9ee58e7 post_proc: Build with BOARD_VNDK_VERSION
-ded474f mm-audio: Build with BOARD_VNDK_VERSION
-4325e02 hal: Build with BOARD_VNDK_VERSION
-
-   * hardware/qcom/media-caf/msm8974/
-7d2d0cb Build libstagefrighthw with BOARD_VNDK_VERSION
-
-   * kernel/oneplus/msm8996/
-3004fd6 UPSTREAM: sched/loadavg: Use {READ,WRITE}_ONCE() for sample window
+   * hardware/qcom/power/
+64de35f power: Allow devices disabling power stats completely
 
    * packages/apps/Settings/
-eb8ec76 Remove A6020 as OFFICIAL
-60bd552 Official GSI Images
-
-   * vendor/oneplus/
-76ed698 bacon: Remove unused camera firmware
+ca23d6d Update maintainer for merlin
 
 ====================
-     06-21-2018
+     07-13-2018
 ====================
 
 
-   * bootable/recovery/
-896f9d3 recovery: Allow device specific backlight path
-ebb529c recovery: Add statusbar margin for panels with rounded corners
-
-   * hardware/qcom/audio-caf/msm8916/
-8747be1 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
-
-   * hardware/qcom/display-caf/msm8916/
-e7f8039 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
-
-   * hardware/qcom/media-caf/msm8916/
-55e0ac7 Merge remote-tracking branch 'caf/LA.BR.1.2.9.1_rb1.5' into lineage-15.1-caf-8916
-
-   * kernel/oneplus/msm8996/
-43aed94 Merge tag 'for-greg-3.18-20062018' into XOS-8.1
-
 ====================
-     06-20-2018
+     07-12-2018
 ====================
 
 
-   * kernel/oneplus/msm8996/
-3a2f1f8 fs: sync: Avoid calling fdget without fdput
-c96b5dd Fix invalid permissions
-cda3467 Added fsync on/off support.
-8345f59 BACKPORT: tcp: do not overshoot window_clamp in tcp_rcv_space_adjust()
-fd81e4b ANDROID: sdcardfs: fix potential crash when reserved_mb is not zero
+   * frameworks/av/
+2ad1834 Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
+0f5a5ed Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCallback..
+
+   * vendor/rr/
+5ca74b1 Remove the Official selection from script
 
 ====================
-     06-19-2018
+     07-11-2018
 ====================
 
 
-   * device/oneplus/oneplus3/
-67b508d op3: overlay: Remove config_enableAutoPowerModes
-468741a op3: gps: Move XTRA_SERVER entries to overlays
-1d9b1bb op3: Set voice call volume steps to 7
-3bca003 op3: Media volume: from 15 to 25 steps
-4f363af op3: remove multiuser overlays, these are common now
+   * packages/apps/Settings/
+bb5a36a Update device maintainer for YU Yureka Black(garlic)
 
-   * frameworks/base/
-0c9df02 Merge pull request #236 from alex9yust/oreo
-31bd24b SyetmUI: fix the behavior of QS with isDualTarget=true
+====================
+     07-10-2018
+====================
+
 
    * hardware/qcom/fm/
 
-   * packages/apps/AudioFX/
+   * packages/apps/Eleven/
+
+   * packages/apps/FMRadio/
 
    * packages/apps/Gallery2/
 
@@ -213,18 +74,18 @@ fd81e4b ANDROID: sdcardfs: fix potential crash when reserved_mb is not zero
 
    * packages/apps/Snap/
 
+   * packages/apps/Terminal/
+
+   * packages/providers/WeatherProvider/
+
+   * system/update_engine/
+7e347c2 update_engine: Add performance mode
+
 ====================
-     06-18-2018
+     07-09-2018
 ====================
 
 
-   * bootable/recovery/
-85b7010 recovery: Do not show emulated when data is encrypted
-
-   * frameworks/base/
-d3ec073 Merge pull request #235 from alex9yust/oreo
-b6e1661 start ScreenStateService after reboot It is necessary for the Suspend Actions from Miscellaneous settings.
-
-   * hardware/lineage/interfaces/
-2b941ed livedisplay: Fix uninitialized default PA
+   * system/security/
+169fff0 key_store:Using euid instead of uid when upgrade wifi blobs
 
