@@ -3,181 +3,99 @@
 
 
 ====================
-     07-22-2018
+     07-30-2018
 ====================
 
    * android/
-828060c manifest: Switch to forked external/libdrm
-2d95bf6 Add hardware/lineage/telephony to the manifest
+ecf9898 Enable LineageCustomizer
 
    * build/make/
-7d0effa build: Never set persist.sys.usb.config=none in recovery
-
-   * device/rr/sepolicy/
-1163616 sepolicy: recovery: Allow (re)mounting system
-
-   * frameworks/base/
-690ae71 frameworks/base: squash import translations from LineageOS
-
-   * lineage-sdk/
-e4c84e1 Add vendor security patch level to device info
-eda2ae7 ProfileManager: Make PROFILE_SELECTED broadcast explicit
-
-   * packages/apps/Contacts/
-867a3a7 Revert "Automatically set SIM number to my profile"
-
-   * packages/apps/DUI/
-
-   * packages/apps/Dialer/
-cc5dc5f Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
-
-   * packages/apps/Settings/
-4ccdf37 [1/2] Add vendor security patch level to device info
-9810665 Settings: squash update translations from LineageOS
-
-   * system/core/
-2385c9f core: Lockscreen Charging info (1/3)
-
-   * system/sepolicy/
-7e7228a Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
-
-   * vendor/rr/
-406a251 kernel: Allow installing modules on system
-90462d8 privapp-permissions: Add new Dialer permissions
-c90d6a3 addonsu: Fix installation on TWRP A/B
-347060d apns: sprint: Default to legacy n.*, allow x.* as an alternative
-
-====================
-     07-21-2018
-====================
-
-
-====================
-     07-20-2018
-====================
-
-
-====================
-     07-19-2018
-====================
-
-
-   * packages/apps/Dialer/
-b9d2a3a Re-add call recording.
-
-====================
-     07-18-2018
-====================
-
-
-====================
-     07-17-2018
-====================
-
-
-   * frameworks/native/
-73be23d Revert "InputDispatcher: On keypress, deliver keycode to pokeUserActivity"
-50886a0 Revert "PowerManager.h: Define USER_ACTIVITY_FLAG values"
-
-   * hardware/lineage/telephony/
-24f40ad telephony: Actually pull in telephony-ext into final build
-
-   * packages/apps/Recorder/
-07eb6ad Recorder: Use native functions to get H264 info
-
-   * packages/apps/Settings/
-90023a5 settings: Add platform and RAM to "Model & Hardware" dialogue
-cafb6b8 DisplaySettings: Allow devices to opt out from lift to wake detection
-865dbc8 Settings: handle decrypting larger pattern sizes for sw600dp
-
-====================
-     07-16-2018
-====================
-
-
-   * build/make/
-6e02efb build: Allow devices to provide prebuilt vbmeta image
-b6748fa build: recovery: add vendor to exclusion list
-
-   * device/qcom/sepolicy/
-6c5a9ef Allow binderized keymaster HAL access to firmware files.
-
-   * device/rr/sepolicy/
-237ca13 Make fuseblk use vfat context
+2f96522 core: config: Use host ijar if requested
+4509180 dex2oat: disable multithreading for WSL
+1f9d4d6 Add detection for WSL
+349911a Adapt ijar for WSL
 
    * frameworks/base/
-2d0e747 Disable warning in StaticLayout
-d783d4e Don't spoil printservice log if not needed
-6da1fb7 Don't crash if there is IR HAL is not declared
-12e3f4b Fix janky traffic indicator tint
-4b2e667 Fix broadcast receiver leak issue
-6c8a24c base: recents: properly size task lock icon in stock recents
-0d49c9d Check for null path in getInternalPathForUser
-164c789 ScanRecord.getServiceData NPE fix
-d4ffa2c Return null if a provider died before acquisition
-42b4e4b MtpDatabase: Fix potential NULL dereference errors
-adb9085 core: ChooserActivity: fix android crash from null object
-ef18b2d fix synchronization bug when notification enqueue/cancel
-7c89073 Themes: fix vpn status dialog
-152f3bc Move BT state to OFF when BLE app count is zero
-c35ab59 Account: Fix the risk of sqliteconnection leak
-0985684 base: SystemUI: center roaming indicator correctly
-3b333e5 SystemUI: stop filling logcat with useless stacktrace
-61e4a35 Release SQLite page cache as much as it can
-ada22db Remove unused calling for better performance
-c7ad2b0 core: Fix long overflow issue in NetworkStats
-c5665c1 Fix problems caused by multithreading in VibratorService
-fb3ccee SystemUI: Wallpaper is black or cut in half vertically
-8d7cb27 SystemUI: Keyguard: fix sim pin
-ed7c02a SystemUI: Fix Data Usage tile to match Settings
-83f2f66 Speed up the speed of computer MTP query
-b3321d7 Fix a 'memory leak'
-8d97e42 Location: Skip processing when reciever pointer is null
-f96972b SystemUI: require auth for adb wireless
-4918f1b base: limit direct share targets to reduce lag
-
-   * hardware/lineage/telephony/
-0f1392f Cleanup usage of static
-27c445e Return proper value for isDsdaEnabled
+b44aaa3 Proper supplementary service notification handling (1/5).
 
    * lineage-sdk/
-eeedd60 styles: do not enforce permission when it's not needed
-52327bb sdk: Trust: better warnings management
-2f82f79 Regen lineage_current
-1c89928 lineage-sdk: Introduce TelephonyExtUtils
-3b194b4 Trust: warn if build is signed with insecure keys
-de27973 TrustInterface: Handle unsupported encryption state
-c9aece2 Trust: add action to disable alerts to notifications
 
-   * packages/apps/DUI/
+   * packages/apps/Dialer/
+2e4c33a Proper supplementary service notification handling (5/5).
+9c5a911 Re-add call statistics.
+0f4ccb2 Allow per-call account selection.
 
    * packages/apps/LineageParts/
-0b1c696 parts: Trust: better warnings management
-00f4bfa LineageParts: Complete and correct SMS limits port
-179c9b4 parts: add SMS rate limit setting
-92d3a99 Align trust onboarding welcome change
-a1ec635 Parts: expose toggle for disabling trust alerts
+58478f2 LineageParts: res: Delete duplicated and unused strings
 
-   * packages/apps/ResurrectionOTA/
+   * packages/apps/Settings/
 
-   * packages/services/OmniJaws/
+   * packages/services/Telecomm/
+246a165 Proper supplementary service notification handling (3/5)
+
+   * packages/services/Telephony/
+c27def3 Proper supplementary service notification handling (4/5).
+
+   * system/core/
+498c2dd bsdgrep: for -r, use the working directory if none specified
 
    * vendor/rr/
-3098b31 extract_utils: Newline love for adb extraction
-201e171 apns: sprint mms: mms.sprintpcs.com > oap7.sprintpcs.com
-dfc742c apns: sprint: n.ispsn -> x.ispsn
-34b3f58 build: Add support for sdm845 platform
-a146fcf envsetup: Filter unique push paths in dopush
-2089e8c envsetup: Fix adb recovery state detections
-8c664c0 extract_utils: make get_file() able to search paths with and w/o /system prefix
-f96411c extract_utils: extract(): fix src not being searched in "src:dst;args" spec
-2d86bf7 extract_utils: extract(): rename DEST variable to VENDOR_REPO_FILE
-8be64ee extract_utils: extract(): rename ARGS variable to SPEC_ARGS
-041190a extract_utils: extract(): rename FILE variable to SPEC_SRC_FILE
-86d1f20 extract_utils: extract(): rename FROM variable to SPEC_DST_FILE
-73e25dd extract_utils: create src_file() function to mirror behavior of target_file()
-441d8af extract_utils: prefix_match(): do not strip target_args from its output
-0a0db4a extract_utils: target_file() and target_args() cleanup
-184690b Revert "extract_files: Add support for paths without system/"
-89aaf94 Revert "extract_utils: Fix makefile generation issues"
+46f261b ATV: Build LineageCustomizer
+95ca5f6 prebuilt: apn: Sprint 2: Drop http definition from MMSC proxy
+a4e98c8 tools: Bump baksmali/smali to v2.2.4
+4f6b313 config/common: Organize filesystems tools
+eeae7bc prebuilt: apn: Sprint 2: Make IPv6 MMS Proxy default for the apn
+e2b60df config/common: Remove BluetoothExt from PRODUCT_PACKAGES
+
+====================
+     07-29-2018
+====================
+
+
+   * packages/apps/Jelly/
+5cfd61b Jelly: Show a Snackbar when removing an HistoryItem
+
+   * packages/apps/SnapdragonCamera2/
+ba3a7a1 add notch_size config
+
+====================
+     07-28-2018
+====================
+
+
+   * system/tools/hidl/
+2626915 Add DT_UNKNOWN handling
+4b19c46 Revert "Use stat() to determine file type from readdir()"
+
+====================
+     07-27-2018
+====================
+
+
+   * frameworks/av/
+fefb0b1 NdkMediaCodec: add AMediaCodec_getBufferFormat
+
+====================
+     07-26-2018
+====================
+
+
+====================
+     07-25-2018
+====================
+
+
+   * hardware/qcom/power/
+651aa0f power-8084: rework power profiles
+
+====================
+     07-24-2018
+====================
+
+
+   * hardware/ril-caf/
+5380335 libril: Protect against NULL unsolicited response function
+
+   * packages/apps/Email/
+8e69d0e Remove max aspect ratio.
 

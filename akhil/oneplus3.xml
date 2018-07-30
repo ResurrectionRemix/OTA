@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
 <Stable>
 <oneplus3>
-<Filename>RR-O-v6.1.0-20180722-oneplus3-Official.zip</Filename>
+<Filename>RR-O-v6.1.0-20180730-oneplus3-Official.zip</Filename>
 <LatestBuildUrl
   id="latestbuild"
   title="Latest Build"
-  description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-O-v6.1.0-20180722-oneplus3-Official.zip</LatestBuildUrl>
+  description="Download Latest Build">http://downloads.resurrectionremix.com/oneplus3/RR-O-v6.1.0-20180730-oneplus3-Official.zip</LatestBuildUrl>
 <BuildUrl
   id="build"
   title="Build"
