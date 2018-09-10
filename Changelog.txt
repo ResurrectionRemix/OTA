@@ -1,406 +1,401 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
+ ▼ Resurrection Remix Oreo Ver 6.2.0 Changelog
 
 
- ▼ 07/23/2017
+====================
+     09-10-2018
+====================
 
 
- ▪ project frameworks/base/
+   * frameworks/base/
 
- ▪ project hardware/qcom/fm/
+   * packages/apps/LineageParts/
 
- ▪ project kernel/oneplus/msm8996/
- ▪ ef36442 oneplus3: regenerate defconfig
- ▪ 11d4f15 ARM: dts: 15801: Move 0x29 to dsi on command
+   * packages/apps/ResurrectionOTA/
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ 7c47fc5 Merge branch 'nougat-upstream' into nougat
- ▪ 8262ad9 gitignore: add output directory to list
+   * packages/apps/Settings/
 
- ▪ project packages/apps/AudioFX/
+   * packages/services/OmniJaws/
 
- ▪ project packages/apps/Bluetooth/
+   * vendor/rr/
+60e0fa68 kernel: Set CROSS_COMPILE_ARM32 if using aarch64
+15f2a71d RR: bump version to 6.2.0
 
- ▪ project packages/apps/CMBugReport/
+====================
+     09-09-2018
+====================
 
- ▪ project packages/apps/Camera2/
 
- ▪ project packages/apps/CellBroadcastReceiver/
+====================
+     09-08-2018
+====================
 
- ▪ project packages/apps/DUI/
+   * android/
+6d2f4fa manifest: android-8.1.0_r43 -> android-8.1.0_r46
 
- ▪ project packages/apps/Dialer/
+   * build/make/
+054cae01b Merge tag 'android-8.1.0_r46' into oreo
 
- ▪ project packages/apps/Eleven/
+   * device/rr/sepolicy/
+af04e5e Add pocket judge selinux policy
+6bcb84e sepolicy: Add policy for edgegestureservice
+b3d3da7 sepolicy: update for rr
 
- ▪ project packages/apps/Gallery2/
+   * frameworks/base/
+ee44dbf4934 Merge tag 'android-8.1.0_r46' into oreo
 
- ▪ project packages/apps/Jelly/
+   * packages/apps/Settings/
+1d1062af6c Merge tag 'android-8.1.0_r46' into oreo
 
- ▪ project packages/apps/PackageInstaller/
+   * system/sepolicy/
+688b82ac Merge tag 'android-8.1.0_r46' into oreo
 
- ▪ project packages/apps/Recorder/
+====================
+     09-07-2018
+====================
 
- ▪ project packages/apps/ResurrectionOTA/
 
- ▪ project packages/apps/Settings/
+   * frameworks/base/
+6d46a1e9638 [1/3] base: make outline the default weather icon pack
 
- ▪ project packages/apps/SetupWizard/
+   * packages/apps/OmniStyle/
+985d154 [2/3] OmniStyle: make outline the default icon package
 
- ▪ project packages/apps/Snap/
+   * packages/apps/Settings/
+065c541571 Add enchilada maintainer
 
- ▪ project packages/apps/Terminal/
+====================
+     09-06-2018
+====================
 
- ▪ project packages/providers/WeatherProvider/
 
- ▪ project packages/resources/devicesettings/
+   * frameworks/base/
+63100fb8a74 fix color in the volume dialog for the inactive element
 
- ▪ project packages/services/OmniJaws/
+   * frameworks/opt/telephony/
+8dc51c0a1 TelephonyComponentFactory: Fix SubscriptionInfoUpdater overloading
 
- ▪ project vendor/cm/
- ▪ 982208b DeskClock: switch to version 5.0.1 (3745617)
+   * hardware/qcom/display-caf/msm8996/
+56d639dfa Fix Buffer Overflow in Vendor Service display.qservice
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+   * hardware/qcom/display-caf/msm8998/
+7a01a094b Fix Buffer Overflow in Vendor Service display.qservice
 
- ▼ 07/22/2017
+   * hardware/qcom/display-caf/sdm845/
+1e16c6d9b Fix Buffer Overflow in Vendor Service display.qservice
 
+   * hardware/qcom/media-caf/apq8084/
+330d85272 mm-video-v4l2: Protect buffer access and increase input buffer size
 
- ▪ project frameworks/base/
- ▪ 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
- ▪ 6f90390 Merge pull request #204 from AndropaX/patch-4
- ▪ 51cc188 DeviceInfoUtils: decentralize processor Regex
+   * hardware/qcom/media-caf/msm8974/
+0acdb944c mm-video-v4l2: Protect buffer access and increase input buffer size
 
- ▪ project packages/apps/DUI/
- ▪ 6515568 Fix custom button icon making touch and animation area smaller [1/3]
+   * prebuilts/clang/host/linux-x86/
+88d4aa3 Merge tag 'android-8.1.0_r46' into oreo-mr1
 
- ▪ project packages/apps/Jelly/
- ▪ b8270d7 Jelly: Allow to display pages in full screen mode
+====================
+     09-05-2018
+====================
 
- ▪ project packages/apps/Settings/
- ▪ 2353503 Fix custom button icon making touch and animation area smaller [3/3]
- ▪ 4f8d736 Merge pull request #825 from AndropaX/patch-2
- ▪ 5cd394f Add processor model in device info screen (2/2)
 
- ▼ 07/21/2017
+   * frameworks/av/
+a7e6e1d1a Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
+   * hardware/broadcom/wlan/
+8c96d23 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
- ▪ project android/
- ▪ eedb930 Remove ahbottomnavigation
+   * hardware/qcom/display/
+27b78f208 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
- ▪ project device/oneplus/oneplus3/
- ▪ 0279c26 Merge branch 'laos/cm-14.1' into akhil
+   * hardware/qcom/media/
+85d5d95bf Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
- ▪ project frameworks/base/
- ▪ 021e65a DeviceInfoUtils: Expand Processor string #3
- ▪ a700be4 Fix new Processor regex in Nexus 4
- ▪ 3aa1c51 BootReceiver: check console-ramoops-0
- ▪ f27f73e Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ 7e09920 PowerProfile: allow overriding default power profile
- ▪ e5e8dad Revert "PowerProfile: allow reading from a file instead of resource"
- ▪ 3008b48 Add processor info in device info screen (1/2)
+   * packages/providers/DownloadProvider/
+aced9e9 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
- ▪ project kernel/xiaomi/msm8956/
- ▪ b4b37dd gitignore: add output directory to list
- ▪ e9ab8e8 mm: fix missing immediate expression at operand 1 dsb
- ▪ ab8f914 Merge remote-tracking branch 'uck/LA.BR.1.3.6_rb1.20' into nougat-upstream
- ▪ 21fc106 Sorry, you looked a bit out of place :P
- ▪ f52da53 kenzo: enable console, disable modules, regenerate
- ▪ 922ca60 Dominator: appended dtb ftw!
- ▪ 422ad60 prima: Update to LA.BR.1.3.6_rb1.19
- ▪ e172e36 display: add a simple api to query the display state (on/off)
- ▪ 341514c kenzo: regenerate defconfig
- ▪ 4f94ac6 Revert "ASoC: wcd9335: add analog headphone gain"
- ▪ 5659f95 mmc: clk_scaling: set scale_down_in_low_wr_load to 1 by default
- ▪ 2942d6a mmc: clk_scaling: add sysfs for avoiding scale down in write
- ▪ 7f53767 mm: slub: Default slub_max_order to 0
- ▪ 919ac4b tcp_cubic: do not set epoch_start in the future
- ▪ 6370c37 tcp_cubic: better follow cubic curve after idle period
- ▪ 521e9a7 tcp: fix timing issue in CUBIC slope calculation
- ▪ c98fbf5 cpuidle: don't disable cpuidle when entering suspend
- ▪ c69426b kgsl: convert some workqueues to use kthreads original commit: https://github.com/android/kernel_msm/commit/1a7a93bd33f48a369de29f6f2b56251127bf6ab4 adreno_dispatch_work and _kgsl_event_worker are both low-latency low-runtime functions that are in the critical path of GPU rendering. Moving them out of workqueues and into a dedicated FIFO kthread avoids significant jitter.
- ▪ 3a29665 mdss: move to a kthread for vsync_retire_work_handler original commit: https://github.com/android/kernel_msm/commit/91fd2c322af5c111309e343e7d58f6e5e1841823 vsync_retire_work_handler is in the critical display path and should never be delayed because of other non-FIFO work.
-
- ▪ project packages/apps/Jelly/
- ▪ 54d8d10 Jelly: Remove unused variable in SearchBarController
- ▪ 063d6a9 Jelly: Use proper popup background attr
- ▪ ca27881 Jelly: Add "search in page" feature
-
- ▪ project packages/apps/Settings/
- ▪ 88342d3 Add maintainer for lenovo k6/power (#824)
-
- ▪ project system/sepolicy/
- ▪ 34cc176 interfacer: Allow interfacer to find content_service
- ▪ 72d06e9 Add policy to fix interfacer derp on boot
- ▪ 458839a sepolicy: Allow system_server to set theme_prop
- ▪ 86e3f9d sepolicy: add file and domain trans to interfacer
- ▪ caa8674 Welcome to Theme Interfacer! [2/2]
- ▪ 3890c0e sepolicy: Redo masquerade rules
- ▪ 1f43bf4 sepolicy: Fix application of bootanimation
- ▪ d9cc632 sepolicy: allow masquerade to read and write theme assets
- ▪ 0a3d0fc sepolicy: rename masquerade domain and allow JobService in system_server
- ▪ 5ac375f initial policy edits for masquerade to operate rootless
- ▪ 2965e98 sepolicy: fix themed sounds
- ▪ 8edd6b3 sepolicy: fix themed boot animation
- ▪ a03a002 Introduce sepolicy exceptions for theme assets
- ▪ 13c7a73 OMS7-N: Add service 'overlay' to service_contexts
- ▪ 39875f9 Add policy to SELinux to allow ViPER4Android in enforcing mode
- ▪ 1820ef3 RR: 7.1 fix
- ▪ 40ebd92 sepolicy: Allow platform_app to run su_exec() (1/2)
- ▪ 6606f8c sepolicy: Allow system_server to run su_exec() (1/2)
- ▪ 1f5ad77 sepolicy: Allow system_app to run su_exec()
- ▪ f73b438 sepolicy: Allow remount /system
-
- ▪ project vendor/cm/
- ▪ 715986b Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
- ▪ bc96cad repopick: Add 'reset' option
- ▪ 5a5e439 kernel: Add savedefconfig target
- ▪ 4438599 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
- ▪ 5b71695 repopick: don't bail on drafts
- ▪ 82a5e5a prebuilt: update Magisk Manager 5.1.1 (#96)
-
- ▼ 07/20/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ aa65a3d op3: Add 3T specific power profile
-
- ▼ 07/19/2017
-
-
- ▪ project hardware/qcom/fm/
- ▪ 165ef42 FM: Use some sane colors
-
- ▪ project vendor/cm/
- ▪ ac577f3 Update prebuilts to latest versions (#95)
-
- ▼ 07/18/2017
-
-
- ▪ project frameworks/base/
- ▪ 8320284 SEEMP: Adding auth framework for outgoing SMS messages.
- ▪ 7490b95 SEEMP: Adding auth framework for outgoing SMS messages.
- ▪ bdfc59e ScreenCap : Add jpeg support
- ▪ df6580a Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 5567b4f BACKPORT: PM / sleep: Go direct_complete if driver has no callbacks
- ▪ b459a52 soc: qcom: Fix uninitialized variables and prints in rpm stats and log
- ▪ f20bf3b soc: q6dspv2: apr: fix client registration refcount
- ▪ 1eb50f9 msm: camera: isp : Fix race condition in close sequence
- ▪ 8921835 cpu-hotplug: Always use real time scheduling when hotplugging a CPU
- ▪ 3504557 arm64: make default ARM64_DMA_IOMMU_ALIGNMENT as 9
- ▪ 269c791 msm: ipa: Fix race condition between shared memory
- ▪ 0cea805 msm: mdss: Use a high priority WQ for irq_done work
- ▪ 2d34c51 msm: mdss: Don't constantly fire interrupts for DSI status check
- ▪ aa90f97 workqueue: add cancel_work()
- ▪ ae3f42f thermal-core: Fix invalid sensor data being accepted
- ▪ 401a141 DTS: Reduce msm-core polling rate to 100ms
- ▪ c0b111d msm: mdss: Wait for VSYNC after continuous splash handoff
- ▪ a46403f UPSTREAM: PM / sleep: Re-implement suspend-to-idle handling
- ▪ 004d47e cpuidle: lpm-levels: Update suspend wake time
- ▪ 360dcdd alarmtimer: Program mpm wakeup time in milliseconds
- ▪ f2ba9f2 crypto: arm64/crc32 - merge CRC32 and PMULL instruction based drivers
- ▪ 8af30b2 crypto: arm64/chacha20 - implement NEON version based on SSE3 code
- ▪ 91eca1f crypto: arm64/crc32 - accelerated support based on x86 SSE implementation
- ▪ b25ec53 crypto: arm64/crct10dif - port x86 SSE implementation to arm64
- ▪ fbd0623 crypto: sha1 - implement base layer for SHA-1
- ▪ 77d9897 arm64: crypto: Improve target optimization flags
- ▪ ad90d19 Makefile: Support CRC and Crypto hardware instructions
- ▪ 148013a usb: gadget: function: f_fs: pass companion descriptor along
- ▪ 86b8ef9 mm: compaction: Add automatic compaction mechanism
- ▪ 666bec0 workqueue: Implement delayed_work_busy()
- ▪ 02b7eb2 mdss: Remove dedicated wq for early_wakeup_clk_work
- ▪ f6f1d75 cpufreq: interactive governor drops bits in time calculation
- ▪ 683f22a kthread: Backport queuing_blocked()
- ▪ f8d9ab9 interactive: avoid calling usecs_to_jiffies() repeatedly
- ▪ 9143f73 arm64: strcmp: align to 64B cache line
- ▪ ed23e7b mm: Set aggressive read_ahead size for bootup
- ▪ f94748eb cpu-boost: Boost priority of notifier_block
- ▪ 7fc2d44 cpufreq: interactive: Skip timer when policy->min == policy->max
- ▪ dc84304 misc: Fix some memory leaks
- ▪ 43ac0c4 fs/sync.c: make sync_file_range(2) use WB_SYNC_NONE writeback
- ▪ 71113e6 crypto: prepare to replace non-blocking pool with a Chacha20-based CRNG
- ▪ dd36a94 crypto: chacha20poly1305 - Skip encryption/decryption for 0-len
- ▪ dd8ace9 crypto: chacha20poly1305 - Add an IPsec variant for RFC7539 AEAD
- ▪ b43bf8e crypto: poly1305 - Export common Poly1305 helpers
- ▪ f62fd4d crypto: poly1305 - Pass key as first two message blocks to each desc_ctx
- ▪ 22b1b16 crypto: testmgr - Add draft-ietf-ipsecme-chacha20-poly1305 test vector
- ▪ f8bf797 crypto: testmgr - Add ChaCha20-Poly1305 test vectors from RFC7539
- ▪ 0e9b8d3 crypto: testmgr - Add Poly1305 test vectors from RFC7539
- ▪ 0b74362 crypto: testmgr - Add ChaCha20 test vectors from RFC7539
- ▪ 85ed994 crypto: chacha20 - Export common ChaCha20 helpers
- ▪ 97191bb crypto: aead - Add crypto_aead_set_reqsize helper
- ▪ 24e8af9 crypto: poly1305 - Add a generic Poly1305 authenticator implementation
- ▪ f044607 crypto: chacha20 - Add a generic ChaCha20 stream cipher implementation
- ▪ e988d5d crypto: chacha20poly1305 - Add a ChaCha20-Poly1305 AEAD construction, RFC7539
- ▪ fe4215c once: make helper generic for calling functions once
- ▪ d24e71e net: move net_get_random_once to lib
- ▪ 2e48da1 mm/page_alloc.c: calculate 'available' memory in a separate function
- ▪ e53c21e proc: meminfo: estimate available memory more conservatively
- ▪ 53d6f99 mm: get rid of 'vmalloc_info' from /proc/meminfo
- ▪ eb11eca vfs: conditionally clear close-on-exec flag
- ▪ 897d17d locking/spinlocks: Force inlining of spinlock ops
- ▪ 6997039 mm/mempolicy.c: convert the shared_policy lock to a rwlock
- ▪ c5a5166 arm64: eliminate the .eh_frame sections from vmlinux and kernel modules
- ▪ 83df0d9 rcu: Don't disable CPU hotplug during OOM notifiers
-
- ▪ project packages/apps/Settings/
- ▪ 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
- ▪ 61a20bc Fix up Suspend actions fragment summary string value
-
- ▪ project vendor/cm/
- ▪ e4a1100 Add Proper Magisk 13.2 zip
- ▪ a860ae3 Delete this corrupt zip
-
- ▼ 07/17/2017
-
-
- ▪ project device/oneplus/oneplus3/
- ▪ c707c3a op3: Pin camera HAL blob
- ▪ 4dab60e op3: Add camera shim to always disable QuadraCfa mode
- ▪ 23bcbdb op3: Update from OB19
- ▪ 9fd9351 op3: Assert on modem build time-stamp
- ▪ ea2917a recovery: Use project pathmap for recovery
- ▪ 9fdd488 op3: Calculate TrustZone size at runtime
- ▪ 2dd0506 op3: Adapt recovery updater lib to new recovery code.
- ▪ 8abb422 op3: assert: Add support for bootdevice symlinks
- ▪ f710096 op3: Fix multi version TrustZone support
- ▪ eb46898 op3: Remove useless parameter
- ▪ 50b35b1 op3: Add assertions on TrustZone version
-
- ▪ project frameworks/base/
- ▪ 33fb4dd RecentsView: Hiding membar, memtext and fab on drag start.
- ▪ b66c326 Connectivity: Fix format arguments
- ▪ 9fcae18 SystemUI: Fix Notification Background Color Issue
- ▪ 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
-
- ▪ project kernel/oneplus/msm8996/
- ▪ 7200f19 fs, seq_file: fallback to vmalloc instead of oom kill processes
- ▪ b5a4915 crypto: testmgr - Wrap the LHS in expressions of the form !x == y
- ▪ 95cec67 crypto: pcomp - Constify (de)compression parameters
- ▪ 9a890f8 power: make sync on suspend optional
- ▪ 8c4d2e5 pm: supsend: read suspend time from timekeeping
- ▪ 7d01883 inotify: Fix erroneous update of bit count
- ▪ b2acf99 vfs: add d_canonical_path for stacked filesystem support
- ▪ cb9b920 procfs: fixes pthread cross-thread naming if !PR_DUMPABLE
- ▪ a683711 fuse: Add support for d_canonical_path
- ▪ 0535995 msm: vidc: Compare ion_handles rather than fds
- ▪ d51824e msm: mdss: change retire fence signaling
- ▪ 0266dcf mm: adjust page migration heuristic
- ▪ 5745070 sched: fix task-priority when using SCHED_RESET_ON_FORK
- ▪ 4512d9c trace: add CONFIG_DISABLE_TRACE_PRINTK option
- ▪ b3a211a Revert "USB: dwc3: msm: Kill tasklet before disabling irq in suspend"
- ▪ 9d30403 mdss: queue input handler functions to a high prio wq
- ▪ 90d4f9a usb: dwc3-msm: Remove indefinite wakeup
- ▪ edc09be oneplus3: regenerate defconfig
- ▪ ad753a8 CHROMIUM: android: binder: Fix potential scheduling-while-atomic
- ▪ 75c5274 binder: add barrier before enable preemption
- ▪ 2c2df84e android: binder: remove useless preemption disable on target_wait
- ▪ 7fe5c26 android: binder: Disable preemption while holding the global binder lock.
- ▪ 85329af fs/file.c: don't acquire files->file_lock in fd_install()
- ▪ e46fb13 power: Make fingerprintd thaw hack more efficient
- ▪ 78368ae misc: queue work of some msm drivers on system_power_efficient_wq
- ▪ 3ea5ef1 firmware_class: make firmware caching configurable
- ▪ 963c039 msm: kgsl: Report correct GPU frequency in sysfs
- ▪ a51224a kgsl: Increase priority of RT thread
- ▪ 11d7cb7 mdss: Update RT priority
- ▪ 5deada3 mdss: rotator: Use FIFO kthread for rotator work
- ▪ 28327fb perf: disable cross_hotplug for l2 cache pmu.
- ▪ 78b2195 Revert "Makefile: Enable ld fix for cortex-a53 errata 843419"
- ▪ c15ed00 Makefile: opt-out from 835769/843419 errata fixes
- ▪ 65dc645 Makefile: Optimize for Cortex-A57
- ▪ 500eff8c drivers: cpuidle: lpm-levels: Enable Sleep prediction
- ▪ 32e5424 cpuidle: lpm-levels: Consider cluster history for LPM selection
- ▪ 0d82cc1 cpuidle: lpm-levels: Consider history during LPM selection
- ▪ be74361 lpm-levels: Compute minimum residencies for LPM levels
- ▪ 488223f clockevents: Provide explicit broadcast oneshot control functions
- ▪ 298b496 clockevents: Provide explicit broadcast control functions
- ▪ 28c77ea Revert "adjust Makefile"
- ▪ 8b7b4fe Revert "Makefile: Optimize"
- ▪ 7e8da43 qseecom: micro optimization for module detection
- ▪ b00611d block: Make CFQ default to IOPS mode on SSDs
- ▪ 601acbd arm64: topology: fix cpu power calculation
- ▪ 7c0f52f arm64: lib: memory utilities optimization
- ▪ 426168b qcacld: don't warn about unused declarations
- ▪ 7eb9c73e qcacld-2.0: disable the debug flag for smaller code size
- ▪ 319af18 sdcardfs: Change magic value
- ▪ 90fb503 ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
- ▪ 8b05191 Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
- ▪ d4de7bd f2fs: include seq_file.h for sysfs.c
- ▪ 4c7bc28 f2fs: Don't clear SGID when inheriting ACLs
- ▪ 9e830ed f2fs: remove extra inode_unlock() in error path
- ▪ 67ba14a fscrypt: add support for AES-128-CBC
- ▪ 12cb9b4 fscrypt: inline fscrypt_free_filename()
- ▪ bb7f31c f2fs: make more close to v4.13-rc1
- ▪ 04e1a4d f2fs: support plain user/group quota
- ▪ cc96829 f2fs: avoid deadlock caused by lock order of page and lock_op
- ▪ db368bb f2fs: use spin_{,un}lock_irq{save,restore}
- ▪ 956644f f2fs: relax migratepage for atomic written page
- ▪ ad49a21 f2fs: don't count inode block in in-memory inode.i_blocks
- ▪ 29e329e Revert "f2fs: fix to clean previous mount option when remount_fs"
- ▪ c9199cc f2fs: do not set LOST_PINO for renamed dir
- ▪ 6ce33a4 f2fs: do not set LOST_PINO for newly created dir
- ▪ 8c57408 f2fs: skip ->writepages for {mete,node}_inode during recovery
- ▪ de5dcb2 f2fs: introduce __check_sit_bitmap
- ▪ 2b89762 f2fs: stop gc/discard thread in prior during umount
- ▪ f7ddce1 f2fs: introduce reserved_blocks in sysfs
- ▪ 8de209d f2fs: avoid redundant f2fs_flush after remount
- ▪ b16f0b1 f2fs: report # of free inodes more precisely
- ▪ 4e198f6 f2fs: add ioctl to do gc with target block address
- ▪ 2ccdc3b f2fs: don't need to check encrypted inode for partial truncation
- ▪ 165f6d1 f2fs: measure inode.i_blocks as generic filesystem
- ▪ b862a39 f2fs: set CP_TRIMMED_FLAG correctly
- ▪ 618c524 f2fs: require key for truncate(2) of encrypted file
- ▪ 5adb415 f2fs: move sysfs code from super.c to fs/f2fs/sysfs.c
- ▪ c4ba155 f2fs: clean up sysfs codes
- ▪ 268d31e f2fs: fix wrong error number of fill_super
- ▪ 538143b f2fs: fix to show injection rate in ->show_options
- ▪ 53ebc27 f2fs: Fix a return value in case of error in 'f2fs_fill_super'
- ▪ b44f64f f2fs: use proper variable name
- ▪ d08f5e3 f2fs: fix to avoid panic when encountering corrupt node
- ▪ f0bf888 f2fs: don't track newly allocated nat entry in list
- ▪ ee85814 f2fs: add f2fs_bug_on in __remove_discard_cmd
- ▪ 2cbb944 f2fs: introduce __wait_one_discard_bio
- ▪ 65fb57f f2fs: dax: fix races between page faults and truncating pages
- ▪ f07a017 f2fs: simplify the way of calulating next nat address
- ▪ 0ae12d5 f2fs: sanity check size of nat and sit cache
- ▪ 6b22c25 f2fs: fix a panic caused by NULL flush_cmd_control
- ▪ d8c128a f2fs: remove the unnecessary cast for PTR_ERR
- ▪ 7f9f2da f2fs: remove false-positive bug_on
- ▪ 988b4e8 f2fs: Do not issue small discards in LFS mode
- ▪ ac46568 f2fs: don't bother checking for encryption key in ->write_iter()
- ▪ 491d764 f2fs: don't bother checking for encryption key in ->mmap()
- ▪ 0a8d3d5 f2fs: wait discard IO completion without cmd_lock held
- ▪ fa4bdf4 f2fs: wake up all waiters in f2fs_submit_discard_endio
- ▪ 457056a f2fs: show more info if fail to issue discard
- ▪ a79f389 f2fs: introduce io_list for serialize data/node IOs
- ▪ fdc4b44 f2fs: split wio_mutex
- ▪ 416f5dc f2fs: combine huge num of discard rb tree consistence checks
- ▪ c367ba9 f2fs: fix a bug caused by NULL extent tree
- ▪ a015a09 f2fs: try to freeze in gc and discard threads
- ▪ 8153e6b f2fs: add a new function get_ssr_cost
- ▪ 52a6939 f2fs: declare load_free_nid_bitmap static
- ▪ 25c4f1e f2fs: avoid f2fs_lock_op for IPU writes
- ▪ 0db7da6 f2fs: split bio cache
- ▪ c713642 f2fs: use fio instead of multiple parameters
- ▪ 695fcd4 f2fs: remove unnecessary read cases in merged IO flow
- ▪ a7b5cb3 f2fs: use f2fs_submit_page_bio for ra_meta_pages
- ▪ d60557a f2fs: make sure f2fs_gc returns consistent errno
- ▪ 98e308b f2fs: load inode's flag from disk
- ▪ 71f6680 f2fs: sanity check checkpoint segno and blkoff
- ▪ 0b3c68e f2fs, block_dump: give WRITE direction to submit_bio
- ▪ 4583bd4 sched: always use blk_schedule_flush_plug in io_schedule_out
- ▪ 84f51db sched: Prevent recursion in io_schedule()
- ▪ 9d832b2 f2fs: use WRITE_SYNC for REQ_SYNC
- ▪ 28910e9 f2fs: enable f2fs_migrate_page
-
- ▪ project packages/apps/Gallery2/
- ▪ d9f1451 Gallery: Fix potential crash
- ▪ 8af515d Gallery2: Switch to navigationbar from support libs
-
- ▪ project packages/apps/Settings/
- ▪ 09611a0 Settings:Configurable Keyguard & bouncer alpha [2/2]
-
- ▪ project vendor/oneplus/
- ▪ d86f1a8 op3: Hex-edit camera HAL for QuadraCfa shim
+   * system/bt/
+b0a7c138 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * system/libhidl/
+dcab148 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+====================
+     09-04-2018
+====================
+
+
+   * packages/services/OmniJaws/
+360a582 OmniJaws: fix theme for widget configure acitvity
+53eadec OmniJaws: reduce minimal size of widget
+b3a3225 OmniJawas: add current weather condition widget
+
+====================
+     09-03-2018
+====================
+
+
+====================
+     09-02-2018
+====================
+
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     09-01-2018
+====================
+
+
+====================
+     08-31-2018
+====================
+
+
+   * build/make/
+586592d4f Also check if BOARD_KERNEL_SEPARATED_DTBO is set
+
+   * packages/apps/Messaging/
+
+   * packages/providers/DownloadProvider/
+7a51050 Fix plural translatability for download speed
+
+   * packages/services/Telecomm/
+b6fe13a8 Telecom: Properly depend on Lineage SDK
+
+   * packages/services/Telephony/
+
+   * vendor/rr/
+ac23becd lineage: enable roundIcons by default
+37ff5c12 lineage: Disable IPv4 for T-Mobile (and MetroPCS) domestically
+
+====================
+     08-30-2018
+====================
+
+
+   * hardware/qcom/power/
+1be7662 power-8916: fix using wrong array size in perform_hint_action
+
+====================
+     08-29-2018
+====================
+
+
+   * packages/apps/Email/
+fd45e565b Don't request battery optimization exemption if not needed.
+
+====================
+     08-28-2018
+====================
+
+   * android/
+7c0d8ed rr: manifest: track updated clang repository from AOSiP GitHub
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     08-27-2018
+====================
+
+
+   * external/openssh/
+7e0e3db2 Disable StrictModes
+825d447b Add Android support
+bcbd12e5 Revert "upstream: Ensure that D mod (P-1) and D mod (Q-1) are calculated in"
+
+   * packages/apps/Profiles/
+4958985 Profiles: Properly depend on Lineage SDK
+
+====================
+     08-26-2018
+====================
+
+
+   * packages/apps/AudioFX/
+c71c96c AudioFX: Properly depend on Lineage SDK
+
+====================
+     08-25-2018
+====================
+
+
+   * device/rr/sepolicy/
+52da0cb selinux: add domain for Gallery
+e61f6cd selinux: add domain for snap
+
+====================
+     08-24-2018
+====================
+
+
+====================
+     08-23-2018
+====================
+
+
+   * device/qcom/sepolicy/
+c673533 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * external/openssh/
+71508e06 shorten temporary SSH_REGRESS_TMP path
+26739cf5 rebuild dependencies
+ff729025 fix path in distclean target
+7fef173c upstream: memleak introduced in r1.83; from Colin Watson
+
+   * external/p7zip/
+6d3db82 Actual working support for building on Android
+1aa1dce Use a sane naming convention for the shared library
+6619bec Fix CVE-2018-10115
+6d75c8f Fix CVE-2018-5996
+0a45d87 Fix CVE-2017-17969
+9d1f86e Fix CVE-2016-9296
+591bf76 Import p7zip 16.02
+
+   * frameworks/av/
+01ccfc12f mediascanner: Accept .opus file extension.
+
+   * frameworks/base/
+
+   * frameworks/native/
+ed8976d95 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_frameworks_native into HEAD
+
+   * lineage-sdk/
+bfea90d sdk: Add migration for /missing/ custom button actions
+e14deb8 Regen lineage_current
+
+   * packages/apps/Gallery2/
+8ccbc4f78 Gallery: use platform cert
+
+   * packages/apps/LineageParts/
+4d4583c Fix Trust strings again
+f0bfea5 LineageParts: Fix unescaped quote in trust_feature_security_patches_explain
+2ad4688 Trust: String changes for accuracy of language
+2030f81 LineageParts: Add missing recycle() calls
+27ae53d LineageParts: Add missing cursor close
+0cbd274 LineageParts: add one finger swipe up from home gesture string
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+ae27a9f2c Snap: use platform cert
+
+   * vendor/rr/
+88bb767c build: Add dtbo task
+feb76961 config/common: Clean up debug packages
+
+====================
+     08-22-2018
+====================
+
+
+   * external/openssh/
+b8ae02a2 upstream: AIX reports the CODESET as "ISO8859-1" in the POSIX locale.
+bc44ee08 	modified:   openbsd-compat/port-uw.c 	remove obsolete and un-needed include
+
+====================
+     08-21-2018
+====================
+
+
+====================
+     08-20-2018
+====================
+
+
+   * external/openssh/
+829fc28a Missing unistd.h for regress/mkdtemp.c
+
+   * packages/apps/Settings/
+09d0b0c1b0 Update herolte maintainer
+
+   * packages/apps/Snap/
+
+====================
+     08-19-2018
+====================
+
+
+   * packages/apps/Eleven/
+fd34342 Eleven: bump to api26
+
+   * packages/apps/Snap/
+159d79bdc CameraSettings: Do not crash if zoom ratios are not exposed
+
+====================
+     08-18-2018
+====================
+
+
+====================
+     08-17-2018
+====================
+
+
+   * external/openssh/
+c8313e49 update version numbers in anticipation of release
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Email/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+====================
+     08-16-2018
+====================
+
+
+   * vendor/rr/
+d020f6ac soong_config: Add TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE
+
+====================
+     08-15-2018
+====================
+
+
+   * frameworks/av/
+691c91706 OMXNodeInstance: Allow dynamic native handle for shared mem buffer
+
+====================
+     08-14-2018
+====================
+
+
+   * external/openssh/
+477b49a3 configure: work around GCC shortcoming on Cygwin
+b0917945 cygwin: add missing stdarg.h include
+
+   * packages/apps/Settings/
+a096f26e22 Update ZenFone 3 maintainer
+
+   * packages/apps/Snap/
+516483bf0 Snap: Allow quickreader to work with secure device
 

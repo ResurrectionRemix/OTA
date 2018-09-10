@@ -1,101 +1,401 @@
 
- ▼ Resurrection Remix Oreo Ver 6.1.0 Changelog
+ ▼ Resurrection Remix Oreo Ver 6.2.0 Changelog
 
 
 ====================
-     07-30-2018
+     09-10-2018
 ====================
 
-   * android/
-ecf9898 Enable LineageCustomizer
-
-   * build/make/
-2f96522 core: config: Use host ijar if requested
-4509180 dex2oat: disable multithreading for WSL
-1f9d4d6 Add detection for WSL
-349911a Adapt ijar for WSL
 
    * frameworks/base/
-b44aaa3 Proper supplementary service notification handling (1/5).
-
-   * lineage-sdk/
-
-   * packages/apps/Dialer/
-2e4c33a Proper supplementary service notification handling (5/5).
-9c5a911 Re-add call statistics.
-0f4ccb2 Allow per-call account selection.
 
    * packages/apps/LineageParts/
-58478f2 LineageParts: res: Delete duplicated and unused strings
+
+   * packages/apps/ResurrectionOTA/
 
    * packages/apps/Settings/
 
-   * packages/services/Telecomm/
-246a165 Proper supplementary service notification handling (3/5)
-
-   * packages/services/Telephony/
-c27def3 Proper supplementary service notification handling (4/5).
-
-   * system/core/
-498c2dd bsdgrep: for -r, use the working directory if none specified
+   * packages/services/OmniJaws/
 
    * vendor/rr/
-46f261b ATV: Build LineageCustomizer
-95ca5f6 prebuilt: apn: Sprint 2: Drop http definition from MMSC proxy
-a4e98c8 tools: Bump baksmali/smali to v2.2.4
-4f6b313 config/common: Organize filesystems tools
-eeae7bc prebuilt: apn: Sprint 2: Make IPv6 MMS Proxy default for the apn
-e2b60df config/common: Remove BluetoothExt from PRODUCT_PACKAGES
+60e0fa68 kernel: Set CROSS_COMPILE_ARM32 if using aarch64
+15f2a71d RR: bump version to 6.2.0
 
 ====================
-     07-29-2018
+     09-09-2018
 ====================
 
 
-   * packages/apps/Jelly/
-5cfd61b Jelly: Show a Snackbar when removing an HistoryItem
-
-   * packages/apps/SnapdragonCamera2/
-ba3a7a1 add notch_size config
-
 ====================
-     07-28-2018
+     09-08-2018
 ====================
 
+   * android/
+6d2f4fa manifest: android-8.1.0_r43 -> android-8.1.0_r46
 
-   * system/tools/hidl/
-2626915 Add DT_UNKNOWN handling
-4b19c46 Revert "Use stat() to determine file type from readdir()"
+   * build/make/
+054cae01b Merge tag 'android-8.1.0_r46' into oreo
+
+   * device/rr/sepolicy/
+af04e5e Add pocket judge selinux policy
+6bcb84e sepolicy: Add policy for edgegestureservice
+b3d3da7 sepolicy: update for rr
+
+   * frameworks/base/
+ee44dbf4934 Merge tag 'android-8.1.0_r46' into oreo
+
+   * packages/apps/Settings/
+1d1062af6c Merge tag 'android-8.1.0_r46' into oreo
+
+   * system/sepolicy/
+688b82ac Merge tag 'android-8.1.0_r46' into oreo
 
 ====================
-     07-27-2018
+     09-07-2018
+====================
+
+
+   * frameworks/base/
+6d46a1e9638 [1/3] base: make outline the default weather icon pack
+
+   * packages/apps/OmniStyle/
+985d154 [2/3] OmniStyle: make outline the default icon package
+
+   * packages/apps/Settings/
+065c541571 Add enchilada maintainer
+
+====================
+     09-06-2018
+====================
+
+
+   * frameworks/base/
+63100fb8a74 fix color in the volume dialog for the inactive element
+
+   * frameworks/opt/telephony/
+8dc51c0a1 TelephonyComponentFactory: Fix SubscriptionInfoUpdater overloading
+
+   * hardware/qcom/display-caf/msm8996/
+56d639dfa Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/display-caf/msm8998/
+7a01a094b Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/display-caf/sdm845/
+1e16c6d9b Fix Buffer Overflow in Vendor Service display.qservice
+
+   * hardware/qcom/media-caf/apq8084/
+330d85272 mm-video-v4l2: Protect buffer access and increase input buffer size
+
+   * hardware/qcom/media-caf/msm8974/
+0acdb944c mm-video-v4l2: Protect buffer access and increase input buffer size
+
+   * prebuilts/clang/host/linux-x86/
+88d4aa3 Merge tag 'android-8.1.0_r46' into oreo-mr1
+
+====================
+     09-05-2018
 ====================
 
 
    * frameworks/av/
-fefb0b1 NdkMediaCodec: add AMediaCodec_getBufferFormat
+a7e6e1d1a Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/broadcom/wlan/
+8c96d23 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/display/
+27b78f208 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * hardware/qcom/media/
+85d5d95bf Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * packages/providers/DownloadProvider/
+aced9e9 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * system/bt/
+b0a7c138 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
+
+   * system/libhidl/
+dcab148 Merge tag 'android-8.1.0_r46' into staging/lineage-15.1_merge-android-8.1.0_r46
 
 ====================
-     07-26-2018
+     09-04-2018
+====================
+
+
+   * packages/services/OmniJaws/
+360a582 OmniJaws: fix theme for widget configure acitvity
+53eadec OmniJaws: reduce minimal size of widget
+b3a3225 OmniJawas: add current weather condition widget
+
+====================
+     09-03-2018
 ====================
 
 
 ====================
-     07-25-2018
+     09-02-2018
+====================
+
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     09-01-2018
+====================
+
+
+====================
+     08-31-2018
+====================
+
+
+   * build/make/
+586592d4f Also check if BOARD_KERNEL_SEPARATED_DTBO is set
+
+   * packages/apps/Messaging/
+
+   * packages/providers/DownloadProvider/
+7a51050 Fix plural translatability for download speed
+
+   * packages/services/Telecomm/
+b6fe13a8 Telecom: Properly depend on Lineage SDK
+
+   * packages/services/Telephony/
+
+   * vendor/rr/
+ac23becd lineage: enable roundIcons by default
+37ff5c12 lineage: Disable IPv4 for T-Mobile (and MetroPCS) domestically
+
+====================
+     08-30-2018
 ====================
 
 
    * hardware/qcom/power/
-651aa0f power-8084: rework power profiles
+1be7662 power-8916: fix using wrong array size in perform_hint_action
 
 ====================
-     07-24-2018
+     08-29-2018
 ====================
 
-
-   * hardware/ril-caf/
-5380335 libril: Protect against NULL unsolicited response function
 
    * packages/apps/Email/
-8e69d0e Remove max aspect ratio.
+fd45e565b Don't request battery optimization exemption if not needed.
+
+====================
+     08-28-2018
+====================
+
+   * android/
+7c0d8ed rr: manifest: track updated clang repository from AOSiP GitHub
+
+   * frameworks/base/
+
+   * packages/apps/Settings/
+
+====================
+     08-27-2018
+====================
+
+
+   * external/openssh/
+7e0e3db2 Disable StrictModes
+825d447b Add Android support
+bcbd12e5 Revert "upstream: Ensure that D mod (P-1) and D mod (Q-1) are calculated in"
+
+   * packages/apps/Profiles/
+4958985 Profiles: Properly depend on Lineage SDK
+
+====================
+     08-26-2018
+====================
+
+
+   * packages/apps/AudioFX/
+c71c96c AudioFX: Properly depend on Lineage SDK
+
+====================
+     08-25-2018
+====================
+
+
+   * device/rr/sepolicy/
+52da0cb selinux: add domain for Gallery
+e61f6cd selinux: add domain for snap
+
+====================
+     08-24-2018
+====================
+
+
+====================
+     08-23-2018
+====================
+
+
+   * device/qcom/sepolicy/
+c673533 Merge remote-tracking branch 'LineageOS/lineage-15.1' into HEAD
+
+   * external/openssh/
+71508e06 shorten temporary SSH_REGRESS_TMP path
+26739cf5 rebuild dependencies
+ff729025 fix path in distclean target
+7fef173c upstream: memleak introduced in r1.83; from Colin Watson
+
+   * external/p7zip/
+6d3db82 Actual working support for building on Android
+1aa1dce Use a sane naming convention for the shared library
+6619bec Fix CVE-2018-10115
+6d75c8f Fix CVE-2018-5996
+0a45d87 Fix CVE-2017-17969
+9d1f86e Fix CVE-2016-9296
+591bf76 Import p7zip 16.02
+
+   * frameworks/av/
+01ccfc12f mediascanner: Accept .opus file extension.
+
+   * frameworks/base/
+
+   * frameworks/native/
+ed8976d95 Merge branch 'lineage-15.1' of git://github.com/LineageOS/android_frameworks_native into HEAD
+
+   * lineage-sdk/
+bfea90d sdk: Add migration for /missing/ custom button actions
+e14deb8 Regen lineage_current
+
+   * packages/apps/Gallery2/
+8ccbc4f78 Gallery: use platform cert
+
+   * packages/apps/LineageParts/
+4d4583c Fix Trust strings again
+f0bfea5 LineageParts: Fix unescaped quote in trust_feature_security_patches_explain
+2ad4688 Trust: String changes for accuracy of language
+2030f81 LineageParts: Add missing recycle() calls
+27ae53d LineageParts: Add missing cursor close
+0cbd274 LineageParts: add one finger swipe up from home gesture string
+
+   * packages/apps/Settings/
+
+   * packages/apps/Snap/
+ae27a9f2c Snap: use platform cert
+
+   * vendor/rr/
+88bb767c build: Add dtbo task
+feb76961 config/common: Clean up debug packages
+
+====================
+     08-22-2018
+====================
+
+
+   * external/openssh/
+b8ae02a2 upstream: AIX reports the CODESET as "ISO8859-1" in the POSIX locale.
+bc44ee08 	modified:   openbsd-compat/port-uw.c 	remove obsolete and un-needed include
+
+====================
+     08-21-2018
+====================
+
+
+====================
+     08-20-2018
+====================
+
+
+   * external/openssh/
+829fc28a Missing unistd.h for regress/mkdtemp.c
+
+   * packages/apps/Settings/
+09d0b0c1b0 Update herolte maintainer
+
+   * packages/apps/Snap/
+
+====================
+     08-19-2018
+====================
+
+
+   * packages/apps/Eleven/
+fd34342 Eleven: bump to api26
+
+   * packages/apps/Snap/
+159d79bdc CameraSettings: Do not crash if zoom ratios are not exposed
+
+====================
+     08-18-2018
+====================
+
+
+====================
+     08-17-2018
+====================
+
+
+   * external/openssh/
+c8313e49 update version numbers in anticipation of release
+
+   * packages/apps/Camera2/
+
+   * packages/apps/CertInstaller/
+
+   * packages/apps/DocumentsUI/
+
+   * packages/apps/Email/
+
+   * packages/apps/ExactCalculator/
+
+   * packages/apps/Gallery2/
+
+   * packages/apps/Jelly/
+
+   * packages/apps/ManagedProvisioning/
+
+   * packages/apps/Nfc/
+
+   * packages/apps/PackageInstaller/
+
+   * packages/apps/PhoneCommon/
+
+   * packages/apps/TvSettings/
+
+   * packages/apps/UnifiedEmail/
+
+   * packages/inputmethods/LatinIME/
+
+   * packages/providers/DownloadProvider/
+
+====================
+     08-16-2018
+====================
+
+
+   * vendor/rr/
+d020f6ac soong_config: Add TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE
+
+====================
+     08-15-2018
+====================
+
+
+   * frameworks/av/
+691c91706 OMXNodeInstance: Allow dynamic native handle for shared mem buffer
+
+====================
+     08-14-2018
+====================
+
+
+   * external/openssh/
+477b49a3 configure: work around GCC shortcoming on Cygwin
+b0917945 cygwin: add missing stdarg.h include
+
+   * packages/apps/Settings/
+a096f26e22 Update ZenFone 3 maintainer
+
+   * packages/apps/Snap/
+516483bf0 Snap: Allow quickreader to work with secure device
 
